@@ -5,6 +5,8 @@ import config from './config/environment';
 
 const App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
+
+
   podModulePrefix: config.podModulePrefix,
   Resolver
 });
