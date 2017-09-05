@@ -1,9 +1,10 @@
 /* eslint-env node */
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'anfema',
+    podModulePrefix: 'anfema/ui',
     environment,
     rootURL: '/',
     locationType: 'auto',

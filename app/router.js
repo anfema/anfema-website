@@ -2,11 +2,17 @@ import Ember from 'ember';
 import config from './config/environment';
 
 const Router = Ember.Router.extend({
-  location: config.locationType,
-  rootURL: config.rootURL
+	location: config.locationType,
+	rootURL: config.rootURL,
 });
 
-Router.map(function() {
+// eslint-disable-next-line array-callback-return
+Router.map(function () {
+	this.route('projects');
+	this.route('project', { path: 'project/:project_id' });
 });
 
 export default Router;
+
+// TODO
+//     //"ember-cli-fastboot": "^1.0.5",
