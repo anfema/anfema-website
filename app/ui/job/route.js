@@ -3,17 +3,17 @@ import TranslationFile from 'anfema/locales/en/translations';
 
 export default Route.extend({
 	beforeModel(params) {
-		if (!(TranslationFile.hasOwnProperty(params.state.params.project.project_id))) {
+		if (!(TranslationFile.hasOwnProperty(params.state.params.job.job_id))) {
 			this.transitionTo('index');
 		}
 	},
 
 	model(params) {
-		const pId = params.project_id;
+		const jId = params.job_id;
 
 		return {
-			pHeader: TranslationFile.pHeader,
-			title: TranslationFile[pId].title,
+			jHeader: TranslationFile.jHeader,
+			title: TranslationFile[jId].title,
 		};
 	},
 });

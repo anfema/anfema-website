@@ -1,9 +1,16 @@
 export default {
-	header: 'Project Details',
+	pHeader: 'Project Details',
 	project1: {
-		title: 'Project 1',
+		title: 'Project One',
 	},
 	project2: {
-		title: 'Project 2',
+		title: 'Project Two',
+	},
+	jHeader: 'Job Details',
+	job1: {
+		title: 'Job One',
+	},
+	job2: {
+		title: 'Job Two',
 	},
 };
