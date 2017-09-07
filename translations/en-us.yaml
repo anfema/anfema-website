@@ -41,7 +41,7 @@ homepage:
       id: 'knauf'
       title: 'Knauf / AMF'
       titleSub: 'Lookbook App'
-  projectDetails:
+  project:
     bmw:
       id: 'bmw'
       title: 'BMW'

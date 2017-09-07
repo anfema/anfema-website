@@ -1,12 +1,4 @@
 import Route from '@ember/routing/route';
-import { inject } from '@ember/service';
+import PrefixMixin from 'anfema/mixins/prefix-mixin'
 
-export default Route.extend({
-	intl: inject(),
-	prefix: '',
-	model() {
-		return {
-			prefix: 'homepage.jobs.',
-		};
-	},
-});
+export default Route.extend(PrefixMixin, {});
