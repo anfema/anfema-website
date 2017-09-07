@@ -1,19 +1,20 @@
 {{outlet}}
-<h1>{{model.jHeader}} - {{model.title}}</h1>
+<h1>{{t (concat model.prefix 'title')}}</h1>
+<h2>{{t (concat model.prefix 'titleSub')}}</h2>
 <ul>
 	<li>
 		{{#link-to 'jobs'}}
-			<button>Back</button>
+			<button>{{t (concat model.prefix 'back')}}</button>
 		{{/link-to}}
 	</li>
 	<li>
 		{{#link-to 'index'}}
-			<button>Landing Page</button>
+			<button>{{t (concat model.prefix 'landing')}}</button>
 		{{/link-to}}
 	</li>
 	<li>
 		{{#link-to 'contact'}}
-			<button>Contact us</button>
+			<button>{{t (concat model.prefix 'contact')}}</button>
 		{{/link-to}}
 	</li>
 </ul>

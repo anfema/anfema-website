@@ -1,9 +1,10 @@
-<h1>Imprint</h1>
+<h1>{{t (concat model.prefix 'title')}}</h1>
 <ul>
 	<li>
 		{{#link-to 'index'}}
-			<button>Landing Page</button>
+			<button>{{t (concat model.prefix 'landing')}}</button>
 		{{/link-to}}
 	</li>
 </ul>
+<p>{{t (concat model.prefix 'description')}}</p>
 {{outlet}}

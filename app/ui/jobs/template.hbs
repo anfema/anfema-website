@@ -1,23 +1,23 @@
-<h1>Jobs</h1>
+<h1>{{t (concat model.prefix 'title')}}</h1>
 <ul>
 	<li>
 		{{#link-to 'index'}}
-			<button>Back</button>
+			<button>{{t (concat model.prefix 'back')}}</button>
 		{{/link-to}}
 	</li>
 	<li>
 		{{#link-to 'contact'}}
-			<button>Contact us</button>
+			<button>{{t (concat model.prefix 'contact')}}</button>
 		{{/link-to}}
 	</li>
 	<li>
-		{{#link-to 'job' 'job1'}}
-			<button>Job One</button>
+		{{#link-to 'job' 'ios'}}
+			<button>{{t (concat model.prefix 'ios.title')}}</button>
 		{{/link-to}}
 	</li>
 	<li>
-		{{#link-to 'job' 'job2'}}
-			<button>Job Two</button>
+		{{#link-to 'job' 'android'}}
+			<button>{{t (concat model.prefix 'android.title')}}</button>
 		{{/link-to}}
 	</li>
 </ul>

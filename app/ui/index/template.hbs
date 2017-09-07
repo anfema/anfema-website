@@ -1,26 +1,32 @@
-<h1>Landing Page</h1>
+<h1>{{t (concat model.prefix 'title')}}</h1>
+<h2>{{t (concat model.prefix 'titleSub')}}</h2>
 
 <ul>
 	<li>
 		{{#link-to 'projects'}}
-			<button>Projects</button>
+			<button>{{t (concat model.prefix 'projects')}}</button>
 		{{/link-to}}
 	</li>
 	<li>
 		{{#link-to 'jobs'}}
-			<button>Jobs</button>
+			<button>{{t (concat model.prefix 'jobs')}}</button>
 		{{/link-to}}
 	</li>
 	<li>
 		{{#link-to 'imprint'}}
-			<button>Imprint</button>
+			<button>{{t (concat model.prefix 'imprint')}}</button>
 		{{/link-to}}
 	</li>
 	<li>
 		{{#link-to 'contact'}}
-			<button>Contact us</button>
+			<button>{{t (concat model.prefix 'contact')}}</button>
 		{{/link-to}}
 	</li>
 </ul>
+
+<h3>{{t (concat model.prefix 'header01')}}</h3>
+<p>{{t (concat model.prefix 'text01')}}</p>
+<h3>{{t (concat model.prefix 'header02')}}</h3>
+<p>{{t (concat model.prefix 'text02')}}</p>
 
 {{outlet}}
