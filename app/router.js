@@ -12,7 +12,6 @@ Router.map(function () {
 	this.route('project', { path: 'project/:id' });
 	this.route('contact');
 	this.route('jobs');
-	this.route('job', { path: 'job/:id' });
 	this.route('imprint');
 });
 
