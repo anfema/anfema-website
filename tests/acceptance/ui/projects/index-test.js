@@ -27,8 +27,4 @@ describe('Acceptance | ui/projects/index', function () {
 		expect(find('[data-test-projects-list]')).to.exist;
 		expect(findAll('[data-test-project]').length).to.equal(3);
 	});
-
-	it('shows a title, description and matching color for a project', async function () {
-		// TODO: Create proper test
-	});
 });
