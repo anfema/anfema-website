@@ -96,37 +96,6 @@ homepage:
       id: 'android'
       title: 'Student Intern Android Development (f/m/*)'
       titleSub: 'Starting 2018'
-  jobDetails:
-    ios:
-      id: 'ios'
-      title: 'Student Intern iOS Development (f/m/*)'
-      titleSub: 'Starting 2018'
-      back: 'Back'
-      landing: 'Landing Page'
-      contact: 'Contact us'
-    iosMobile:
-      title: 'Student Intern iOS Development (f/m/*)'
-      link01: 'Contact us'
-      link02: 'Back'
-      header01: 'header 01'
-      text01: 'text 01'
-      header02: 'header 02'
-      text02: 'text 02'
-    android:
-      id: 'android'
-      title: 'Student Intern Android Development (f/m/*)'
-      titleSub: 'Starting 2018'
-      back: 'Back'
-      landing: 'Landing Page'
-      contact: 'Contact us'
-    androidMobile:
-      title: 'Student Intern Android Development (f/m/*)'
-      link01: 'Contact us'
-      link02: 'Back'
-      header01: 'header 01'
-      text01: 'text 01'
-      header02: 'header 02'
-      text02: 'text 02'
   contact:
    title: 'Contact'
    description: 'contact description'
