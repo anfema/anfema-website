@@ -4,9 +4,9 @@ import { setupTest } from 'ember-mocha';
 
 describe('Unit | Route | application', function () {
 	setupTest('route:application', {
-		// needs: [
-		// 	'controller:foo',
-		// ],
+		needs: [
+			'service:intl',
+		],
 	});
 
 	it('exists', function () {
