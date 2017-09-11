@@ -1,0 +1,6 @@
+@include font-face('/fonts/CalibreWeb-Regular', 'Calibre Web', 400, normal);
+@include font-face('/fonts/CalibreWeb-RegularItalic', 'Calibre Web', 400, italic);
+
+// We replace Bold with Semibold cuts for readability reasons
+@include font-face('/fonts/CalibreWeb-Semibold', 'Calibre Web', 700, normal);
+@include font-face('/fonts/CalibreWeb-SemiboldItalic', 'Calibre Web', 700, italic);

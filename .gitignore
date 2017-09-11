@@ -22,3 +22,20 @@ testem.log
 .node_modules.ember-try/
 bower.json.ember-try
 package.json.ember-try
+
+# Webfonts
+/public/fonts/*.eof
+/public/fonts/*.woff
+/public/fonts/*.woff2
+CalibreWeb-SemiboldItalic.woff2
+CalibreWeb-SemiboldItalic.woff
+CalibreWeb-Semibold.woff2
+CalibreWeb-SemiboldItalic.eot
+CalibreWeb-RegularItalic.woff2
+CalibreWeb-Semibold.eot
+CalibreWeb-Semibold.woff
+CalibreWeb-Regular.woff2
+CalibreWeb-RegularItalic.eot
+CalibreWeb-RegularItalic.woff
+CalibreWeb-Regular.eot
+CalibreWeb-Regular.woff
