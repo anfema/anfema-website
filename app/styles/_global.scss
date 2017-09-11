@@ -1,0 +1,17 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	color: $color-text;
+	background: $color-background;
+}
+
+html {
+	font-size: 62.5%; // Resets rem size to 10px
+}
+
+body {
+	font-family: 'Calibre Web', Helvetica, Arial, sans-serif;
+	font-size: 1.6rem;
+	line-height: 2rem;
+}
