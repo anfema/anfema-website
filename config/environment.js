@@ -1,5 +1,4 @@
 /* eslint-env node */
-'use strict';
 
 module.exports = function (environment) {
 	const ENV = {
@@ -26,8 +25,8 @@ module.exports = function (environment) {
 			defaultLocale: 'de',
 		},
 		pageTitle: {
-			replace: true
-		}
+			replace: true,
+		},
 	};
 
 	if (environment === 'development') {
@@ -50,7 +49,7 @@ module.exports = function (environment) {
 	}
 
 	if (environment === 'production') {
-
+		//
 	}
 
 	return ENV;
