@@ -8,7 +8,8 @@ A short introduction of this app could easily go here.
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
+* [Node.js](https://nodejs.org/)
+* [Yarn](https://yarnpkg.com)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
@@ -16,7 +17,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * `cd anfema`
-* `npm install`
+* `yarn install`
 
 ## Running / Development
 
@@ -27,10 +28,14 @@ You will need the following things properly installed on your computer.
 
 Make use of the many generators for code, try `ember help generate` for more details
 
+This project uses pods. `--pods` is enabled by default. Use `--no-pods` for models, helpers, utils, mixins, and services.
+
 ### Running Tests
 
 * `ember test`
 * `ember test --server`
+
+This project uses [ember-mocha](https://github.com/emberjs/ember-mocha) with [ember-native-dom-helpers](https://github.com/cibernox/ember-native-dom-helpers) and [ember-test-selectors](https://github.com/simplabs/ember-test-selectors) for testing.
 
 ### Building
 

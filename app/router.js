@@ -8,7 +8,7 @@ const Router = EmberRouter.extend({
 
 // eslint-disable-next-line array-callback-return
 Router.map(function () {
-	this.route('projects');
+	this.route('projects', function () {});
 	this.route('project', { path: 'project/:id' });
 	this.route('imprint');
 });
