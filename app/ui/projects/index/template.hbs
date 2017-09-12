@@ -1,1 +1,11 @@
-{{outlet}}
+<h1>Projects</h1>
+
+<ul data-test-projects-list>
+	{{#each model.projects as |project|}}
+		<li data-test-project>
+			<h2>{{project.client}}</h2>
+			<p>{{project.title}}</p>
+			{{#link-to 'projects.details' project.id}}{{project.client}}{{/link-to}}
+		</li>
+	{{/each}}
+</ul>
