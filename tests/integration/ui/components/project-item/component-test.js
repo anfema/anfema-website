@@ -20,6 +20,9 @@ describe('Integration | Component | project item', function () {
 
 		this.render(hbs`{{project-item 'projects.details' 'bmw7series'}}`);
 
+		// TODO: add tests for all project components
+		// TODO: check for elements to be visible
+
 		expect(this.$()).to.have.length(1);
 	});
 });
