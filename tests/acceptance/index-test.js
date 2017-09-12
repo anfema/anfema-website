@@ -37,6 +37,7 @@ describe('Acceptance | ui/index', function() {
 
 		// show query param
 		await click('.content-slider__navigation a:nth-of-type(2)');
+
 		expect(
 			find('.content-slider__navigation a:nth-of-type(2)').search.match(/service=(\w+)/)
 		).to.include(currentURL().match(/service=(\w+)/)[1]);
