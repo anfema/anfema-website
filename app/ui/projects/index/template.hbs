@@ -1,5 +1,14 @@
-<div data-test-projects-list>
+<h1>Projects</h1>
+
+<ul data-test-projects-list>
 	{{#each model.projects as |project|}}
-		{{#project-item 'projects.details' project.id project=project}}{{/project-item}}
+	{{!-- TODO change blockstyle form, override link-to method--}}
+		{{#project-item
+				'projects.details'
+				project.id
+				tagName='li'
+				project=project
+				data-test-project-item=true}}
+		{{/project-item}}
 	{{/each}}
-</div>
+</ul>

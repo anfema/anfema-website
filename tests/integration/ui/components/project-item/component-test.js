@@ -1,28 +1,33 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
+import { assert, expect } from 'chai';
+import { it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
+import { find } from 'ember-native-dom-helpers';
 
 describe('Integration | Component | project item', function () {
 	setupComponentTest('project-item', {
 		integration: true,
 	});
 
-	it('renders', function () {
-		// Set any properties with this.set('myProperty', 'value');
-		// Handle any actions with this.on('myAction', function (val) { ... });
-		// Template block usage:
-		// this.render(hbs`
-		// 	{{#project-item}}
-		// 		template content
-		// 	{{/project-item}}
-		// `);
-
-		this.render(hbs`{{project-item 'projects.details' 'bmw7series'}}`);
-
-		// TODO: add tests for all project components
-		// TODO: check for elements to be visible
-
-		expect(this.$()).to.have.length(1);
+	beforeEach(function () {
+		this.set('project', {
+			id: 'bmw7series',
+			client: 'BMW',
+			title: '7 Series Presenter App',
+			color: '#F00',
+		});
+		this.render(hbs`
+			{{#project-item 'projects.details' project.id project=project data-test-project-item=true}}
+			{{/project-item}}
+		`);
 	});
+
+	it('renders', async function () {
+		expect(find('[data-test-project-item]')).to.exist;
+		assert.equal(await find('[data-test-project-item-client]').innerHTML, this.get('project').client);
+		assert.equal(await find('[data-test-project-item-title]').innerHTML, this.get('project').title);
+		assert.equal(await find('[data-test-project-item-color]').innerHTML, this.get('project').color);
+	});
+
+	// TODO change block style of component!
 });
