@@ -25,6 +25,6 @@ describe('Acceptance | ui/projects/index', function () {
 		await visit('/projects');
 
 		expect(find('[data-test-projects-list]')).to.exist;
-		expect(findAll('[data-test-project]').length).to.equal(3);
+		expect(findAll('[data-test-project]').length).to.equal(8);
 	});
 });

@@ -1,21 +1,3 @@
-<h1>{{t (concat model.prefix 'title')}}</h1>
-
-<ul>
-	<li>
-		{{#link-to 'index'}}
-			<button>{{t (concat model.prefix 'back')}}</button>
-		{{/link-to}}
-	</li>
-	<li>
-		{{#link-to 'project' 'bmw'}}
-			<button>{{t (concat model.prefix 'bmw.title')}}</button>
-		{{/link-to}}
-	</li>
-	<li>
-		{{#link-to 'project' 'knauf'}}
-			<button>{{t (concat model.prefix 'knauf.title')}}</button>
-		{{/link-to}}
-	</li>
-</ul>
+<h1>Projects</h1>
 
 {{outlet}}
