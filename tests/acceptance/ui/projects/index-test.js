@@ -1,14 +1,15 @@
-import { describe, it, beforeEach, afterEach } from 'mocha';
+import { afterEach, beforeEach, describe, it } from 'mocha';
 import { expect } from 'chai';
 import startApp from 'anfema/tests/helpers/start-app';
 import destroyApp from 'anfema/tests/helpers/destroy-app';
-import { find, findAll } from 'ember-native-dom-helpers';
+import { find } from 'ember-native-dom-helpers';
 
 describe('Acceptance | ui/projects/index', function () {
 	let application;
 
-	beforeEach(function () {
+	beforeEach(async function () {
 		application = startApp();
+		await visit('/projects');
 	});
 
 	afterEach(function () {
@@ -16,15 +17,16 @@ describe('Acceptance | ui/projects/index', function () {
 	});
 
 	it('can visit /projects', async function () {
-		await visit('/projects');
-
 		expect(currentURL()).to.equal('/projects');
 	});
 
-	it('renders a list of projects', async function () {
-		await visit('/projects');
+	// TODO @f.pichler redirection tests not possible in integration tests?
+	it('can visit /projects subroute', async function () {
+		await click('[data-test-project-item]');
+		expect(find('[data-test-project-detail-page]')).to.exist;
+	});
 
+	it('renders a list of projects', function () {
 		expect(find('[data-test-projects-list]')).to.exist;
-		expect(findAll('[data-test-project]').length).to.equal(8);
 	});
 });
