@@ -24,9 +24,9 @@ describe('Integration | Component | project item', function () {
 
 	it('renders', async function () {
 		expect(find('[data-test-project-item]')).to.exist;
-		assert.equal(await find('[data-test-project-item-client]').innerHTML, this.get('project').client);
-		assert.equal(await find('[data-test-project-item-title]').innerHTML, this.get('project').title);
-		assert.equal(await find('[data-test-project-item-color]').innerHTML, this.get('project').color);
+		assert.equal(await find('[data-test-project-item-client]').innerText, this.get('project').client);
+		assert.equal(await find('[data-test-project-item-title]').innerText, this.get('project').title);
+		assert.equal(await find('[data-test-project-item-color]').innerText, this.get('project').color);
 	});
 
 	// TODO change block style of component!
