@@ -12,16 +12,15 @@ describe('Integration | Component | info footer', function () {
 	it('renders', function () {
 		this.render(hbs`{{info-footer}}`);
 
-		expect(findAll('.p-street-address')).to.have.lengthOf(2);
-		expect(findAll('.p-locality')).to.have.lengthOf(2);
-		expect(findAll('.p-country-name')).to.have.lengthOf(2);
-		expect(findAll('[data-test-footer-header]')).to.have.lengthOf(2);
-		expect(findAll('[data-test-footer-fax]')).to.exist;
-		expect(findAll('[data-test-footer-language-select]')).to.exist;
-		expect(findAll('[data-test-footer-anfema]')).to.exist;
-		expect(findAll('[data-test-footer-imprint]')).to.exist;
-		expect(find('.u-logo')).to.exist;
-		expect(find('.u-email')).to.exist;
-		expect(findAll('.p-tel')).to.exist;
+		expect(findAll('[data-test-footer-header]').length).to.equal(2);
+		expect(findAll('[data-test-footer-phone-fax]').length).to.equal(2);
+		expect(findAll('[data-test-footer-street]').length).to.equal(2);
+		expect(findAll('[data-test-footer-city]').length).to.equal(2);
+		expect(findAll('[data-test-footer-country]').length).to.equal(2);
+		expect(find('[data-test-footer-imprint]')).to.exist;
+		expect(find('[data-test-footer-logo]')).to.exist;
+		expect(find('[data-test-footer-anfema]')).to.exist;
+		expect(find('[data-test-footer-mail]')).to.exist;
+		expect(find('[data-test-footer-language-select]')).to.exist;
 	});
 });
