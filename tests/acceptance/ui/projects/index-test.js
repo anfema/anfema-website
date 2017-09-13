@@ -20,10 +20,9 @@ describe('Acceptance | ui/projects/index', function () {
 		expect(currentURL()).to.equal('/projects');
 	});
 
-	// TODO @f.pichler redirection tests not possible in integration tests?
 	it('can visit /projects subroute', async function () {
 		await click('[data-test-project-item]');
-		expect(find('[data-test-project-detail-page]')).to.exist;
+		expect(currentURL()).to.equal('/projects/bmw7series');
 	});
 
 	it('renders a list of projects', function () {
