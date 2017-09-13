@@ -1,2 +1,3 @@
-<button {{action 'setLocale' 'de'}}>de</button>
-<button {{action 'setLocale' 'en-us'}}>en-us</button>
+<button {{action 'setLocale' 'de'}} data-test-language-select-de>{{t 'homepage.languages.german'}}</button>
+<button {{action 'setLocale' 'en-us'}} data-test-language-select-en>{{t 'homepage.languages.english'}}</button>
+<p data-test-language-selected hidden>{{t 'homepage.languages.selected'}}</p>

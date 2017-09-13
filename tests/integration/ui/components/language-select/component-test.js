@@ -2,6 +2,7 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
+import { find } from 'ember-native-dom-helpers';
 
 describe('Integration | Component | language select', function () {
 	setupComponentTest('language-select', {
@@ -9,17 +10,11 @@ describe('Integration | Component | language select', function () {
 	});
 
 	it('renders', function () {
-		// Set any properties with this.set('myProperty', 'value');
-		// Handle any actions with this.on('myAction', function (val) { ... });
-		// Template block usage:
-		// this.render(hbs`
-		// 	{{#language-select}}
-		// 		template content
-		// 	{{/language-select}}
-		// `);
-
-		this.render(hbs`{{language-select}}`);
-
-		expect(this.$()).to.have.length(1);
+		this.render(hbs`
+			{{language-select data-test-language-select=true}}
+		`);
+		expect(find('[data-test-language-select]')).to.exist;
+		expect(find('[data-test-language-select-de]')).to.exist;
+		expect(find('[data-test-language-select-en]')).to.exist;
 	});
 });
