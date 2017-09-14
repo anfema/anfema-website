@@ -7,32 +7,39 @@ export default Route.extend(PrefixMixin, {
 	model() {
 		return {
 			prefix: this.get('prefix'),
-			services: {
-				concept: {
+			services: [
+				{
+					id: 'concept',
 					title: 'concept title',
 					text: 'concept text',
-				},
-				design: {
+					hidden: false,
+				}, {
+					id: 'design',
 					title: 'design title',
 					text: 'design text',
-				},
-				development: {
+					hidden: true,
+				}, {
+					id: 'development',
 					title: 'development title',
 					text: 'development text',
-				},
-				consulting: {
+					hidden: true,
+				}, {
+					id: 'consulting',
 					title: 'consulting title',
 					text: 'consulting text',
-				},
-				support: {
+					hidden: true,
+				}, {
+					id: 'support',
 					title: 'support title',
 					text: 'support text',
-				},
-				management: {
+					hidden: true,
+				}, {
+					id: 'management',
 					title: 'management title',
 					text: 'management text',
+					hidden: true,
 				},
-			},
+			],
 		};
 	},
 });
