@@ -1,0 +1,13 @@
+.content-slider {
+	&__navigation {
+		a.active {
+			color: red;
+		}
+	}
+
+	&-slide {
+		&--active {
+			color: red;
+		}
+	}
+}
