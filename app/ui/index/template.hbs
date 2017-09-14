@@ -19,6 +19,13 @@
 <h3>{{t (concat model.prefix 'header02')}}</h3>
 <p>{{t (concat model.prefix 'text02')}}</p>
 
-{{services-slider service=(mut service) services=model.services data-test-service=true}}
+{{#link-to "index" data-test-content-link-concept (query-params service="concept")}}concept{{/link-to}}
+{{#link-to "index" data-test-content-link-design (query-params service="design")}}design{{/link-to}}
+{{#link-to "index" data-test-content-link-development (query-params service="development")}}development{{/link-to}}
+{{#link-to "index" data-test-content-link-consulting (query-params service="consulting")}}consulting{{/link-to}}
+{{#link-to "index" data-test-content-link-support (query-params service="support")}}support{{/link-to}}
+{{#link-to "index" data-test-content-link-management (query-params service="management")}}management{{/link-to}}
+
+{{content-slider content=model.services param=service}}
 
 {{outlet}}
