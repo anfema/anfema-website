@@ -1,3 +1,17 @@
-<button {{action 'setLocale' 'de'}} data-test-language-select-de>{{t 'homepage.languages.german'}}</button>
-<button {{action 'setLocale' 'en-us'}} data-test-language-select-en>{{t 'homepage.languages.english'}}</button>
-<p data-test-language-selected hidden>{{t 'homepage.languages.selected'}}</p>
+<button
+	type="button"
+	class="language-select-button {{if isDe 'language-select-button--active'}}"
+	data-test-locale='de'
+	{{action 'setLocale' 'de'}}
+>
+	{{t 'component.language-select.action.de'}}
+</button>
+
+<button
+	type="button"
+	class="language-select-button {{if isEn 'language-select-button--active'}}"
+	data-test-locale='en-us'
+	{{action 'setLocale' 'en-us'}}
+>
+	{{t 'component.language-select.action.en'}}
+</button>

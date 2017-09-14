@@ -5,6 +5,7 @@ export default Route.extend({
 	intl: service(),
 
 	beforeModel() {
-		return this.get('intl').setLocale('en-us');
+		// TODO: Define default language by browser header / navigator (must work in Fastboot as well)
+		return this.get('intl').setLocale('de');
 	},
 });

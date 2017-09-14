@@ -20,17 +20,6 @@ describe('Acceptance | ui/index', function () {
 		expect(currentURL()).to.equal('/');
 	});
 
-	it('changes language', async function () {
-		await click('[data-test-language-select-de]');
-		assert.equal(await find('[data-test-language-selected]')[0].innerHTML, 'de');
-		await click('[data-test-language-select-en]');
-		assert.equal(await find('[data-test-language-selected]')[0].innerHTML, 'en');
-	});
-
-	it('has default language english', async function () {
-		assert.equal(await find('[data-test-language-selected]')[0].innerHTML, 'en');
-	});
-
 	it('can visit /imprint from footer', async function () {
 		await click('[data-test-footer-imprint]');
 		expect(currentURL()).to.equal('/imprint');

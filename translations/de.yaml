@@ -110,7 +110,8 @@ homepage:
   imprintMobile:
     title: 'Impressum (m)'
     description: 'imprint-description (ger)'
-  languages:
-    german: DE
-    english: EN
-    selected: de
+component:
+  language-select:
+    action:
+      de: 'DE'
+      en: 'EN'
