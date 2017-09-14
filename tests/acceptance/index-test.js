@@ -20,6 +20,11 @@ describe('Acceptance | index', function () {
 		expect(currentURL()).to.equal('/');
 	});
 
+	it('can visit /imprint from footer', async function () {
+		await click('[data-test-footer-imprint]');
+		expect(find('[data-test-imprint-page]')).to.exist;
+	});
+
 	it('renders content items correctly', async function () {
 		// all content items visible
 		expect(find('[data-test-content-link-concept]')).to.exist;
