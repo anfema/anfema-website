@@ -1,6 +1,20 @@
-{{#each content as |item|}}
-	<div data-test-content-item hidden={{item.hidden}}>
-		<h1>{{item.title}}</h1>
-		<p>{{item.text}}</p>
-	</div>
-{{/each}}
+<nav class="content-slider__navigation">
+	{{#each contents as |content|}}
+		{{!-- TODO: Make query param dynamic, will probably need a custom
+			helper or better a subclass --}}
+		{{#link-to 'index' (query-params service=content.id)
+			class='content-slider__navigation-link'
+		}}
+			{{get content labelKey}}
+		{{/link-to}}
+	{{/each}}
+</nav>
+
+<div class="content-slider__content">
+	{{#each contents as |content|}}
+		{{#content-slider-slide content=content selected=selected}}
+			<h2>{{content.title}}</h2>
+			<div>{{content.text}}</div>
+		{{/content-slider-slide}}
+	{{/each}}
+</div>

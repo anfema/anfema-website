@@ -9,19 +9,57 @@ describe('Integration | Component | content slider', function () {
 		integration: true,
 	});
 
+	const content = [{
+		id: 'concept',
+		title: 'concept title',
+		text: 'concept text',
+		hidden: false,
+	}];
+
 	beforeEach(function () {
-		this.set('content', [{
-			id: 'concept',
-			title: 'concept title',
-			text: 'concept text',
-			hidden: false,
-		}]);
+		this.set('content', content);
 	});
 
 	it('renders', function () {
 		this.render(hbs`
-			{{content-slider content=content param=''}}
+			{{content-slider
+				contents=content
+				labelKey='title'
+			}}
 		`);
-		expect(find('[data-test-content-item]')).to.exist;
+
+		expect(find('.content-slider')).to.exist;
+	});
+
+	it('renders a navigation bar', function () {
+		this.render(hbs`
+			{{content-slider
+				contents=content
+				labelKey='title'
+			}}
+		`);
+
+		expect(find('.content-slider__navigation')).to.exist;
+
+		const link = find('.content-slider__navigation-link');
+
+		expect(link).to.exist;
+		expect(link.innerText).to.equal('concept title');
+
+		// TODO: Check query-param in an acceptance test if necessary
+	});
+
+	it('renders a list of contents', function () {
+		this.render(hbs`
+			{{content-slider
+				contents=content
+				labelKey='title'
+			}}
+		`);
+
+		const contentElement = find('.content-slider__content');
+
+		expect(contentElement).to.exist;
+		expect(contentElement.children).to.be.lengthOf(content.length);
 	});
 });
