@@ -15,11 +15,6 @@ describe('Integration | Component | content slider', function () {
 			title: 'concept title',
 			text: 'concept text',
 			hidden: false,
-		}, {
-			id: 'design',
-			title: 'design title',
-			text: 'design text',
-			hidden: true,
 		}]);
 	});
 
