@@ -4,6 +4,8 @@
 
 // Environemnt
 @import '_environment/box-sizing';
+@import '_environment/grid';
+@import '_environment/typography';
 @import '_environment/webfonts';
 
 // Global styles
@@ -13,6 +15,8 @@
 @import 'components/content-slider';
 
 // Partials
+@import 'partials/lp-cover';
+@import 'partials/lp-section';
 
 // Layouts
 

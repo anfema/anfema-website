@@ -1,0 +1,22 @@
+$width: 92.8rem;
+$screen: 102.4rem;
+$offset: ($screen - $width) / $screen / 2 * 100%;
+
+.grid {
+	display: grid;
+	grid-template-columns:
+		[full-start] minmax($offset, 1fr)
+		[main-start] minmax(0, $width / 8)
+		[text-start] repeat(5, minmax(0, $width / 8))
+		[text-end] repeat(2, minmax(0, $width / 8))
+		[main-end] minmax($offset, 1fr)
+		[full-end];
+
+	& > * {
+		grid-column: text;
+	}
+}
+
+.grid--alt {
+	background: #F5F4F2;
+}
