@@ -1,10 +1,7 @@
 <nav class="content-slider__navigation">
 	{{#each contents as |content|}}
-		{{!-- TODO: Make query param dynamic, will probably need a custom
-			helper or better a subclass --}}
-		{{#link-to 'index' (query-params service=content.id)
-			class='content-slider__navigation-link'
-		}}
+	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
+		{{#link-to 'index' (query-params service=content.id) class='content-slider__navigation-link'}}
 			{{get content labelKey}}
 		{{/link-to}}
 	{{/each}}

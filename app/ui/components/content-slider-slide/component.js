@@ -8,7 +8,7 @@ export default Component.extend({
 	],
 
 	content: null,
-	activeContent: null,
+	selected: null,
 
 	isActive: computed('content.id', 'selected', function () {
 		return this.get('content.id') === this.get('selected');

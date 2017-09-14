@@ -18,27 +18,19 @@ describe('Integration | Component | content slider', function () {
 
 	beforeEach(function () {
 		this.set('content', content);
-	});
-
-	it('renders', function () {
 		this.render(hbs`
 			{{content-slider
 				contents=content
 				labelKey='title'
 			}}
 		`);
+	});
 
+	it('renders', function () {
 		expect(find('.content-slider')).to.exist;
 	});
 
 	it('renders a navigation bar', function () {
-		this.render(hbs`
-			{{content-slider
-				contents=content
-				labelKey='title'
-			}}
-		`);
-
 		expect(find('.content-slider__navigation')).to.exist;
 
 		const link = find('.content-slider__navigation-link');
@@ -50,13 +42,6 @@ describe('Integration | Component | content slider', function () {
 	});
 
 	it('renders a list of contents', function () {
-		this.render(hbs`
-			{{content-slider
-				contents=content
-				labelKey='title'
-			}}
-		`);
-
 		const contentElement = find('.content-slider__content');
 
 		expect(contentElement).to.exist;
