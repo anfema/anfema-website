@@ -2,10 +2,13 @@
 
 <ul data-test-projects-list>
 	{{#each model.projects as |project|}}
-		<li data-test-project>
-			<h2>{{project.client}}</h2>
-			<p>{{project.title}}</p>
-			{{#link-to 'projects.details' project.id}}{{project.client}}{{/link-to}}
-		</li>
+	{{!-- TODO change blockstyle form, override link-to method--}}
+		{{#project-item
+				'projects.details'
+				project.id
+				tagName='li'
+				project=project
+				data-test-project-item=true}}
+		{{/project-item}}
 	{{/each}}
 </ul>
