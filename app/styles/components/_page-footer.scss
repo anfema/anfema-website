@@ -73,38 +73,3 @@
 		grid-column-start: meta;
 	}
 }
-
-/*
-<div class="u-logo">
-<img src="/img/logo.svg" width="130" height="60" alt="anfema">
-</div>
-
-<h3 data-test-footer-header>Munich Office</h3>
-
-<p class="p-adr adr h-adr">
-<span class="p-street-address">Seitzstr. 16</span><br>
-<span class="p-postal-code">80538</span> <span class="p-locality">Munich</span><br>
-<span class="p-country-name">Germany</span>
-</p>
-
-<h3 data-test-footer-header>Augsburg Office</h3>
-
-<p class="p-adr adr h-adr">
-<span class="p-street-address">Bahnhofstr. 10</span><br>
-<span class="p-postal-code">86150</span> <span class="p-locality">Augsburg</span><br>
-<span class="p-country-name">Germany</span>
-</p>
-
-<a class="u-email" href="maito:contact@anfe.ma">contact@anfe.ma</a>
-
-<p class="p-tel"><span class="type">Phone</span> <span class="value">+49 89 55269932</span></p>
-
-<p data-test-footer-fax>Fax +49 89 55269933</p>
-
-{{language-select data-test-footer-language-select=true}}
-
-<p data-test-footer-anfema>1998 – 2017 anfema GmbH</p>
-
-{{#link-to 'imprint' data-test-footer-imprint}}Imprint{{/link-to}}
-
-*/
