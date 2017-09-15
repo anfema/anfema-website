@@ -7,7 +7,6 @@ export default Route.extend(PrefixMixin, {
 	model() {
 		return {
 			prefix: this.get('prefix'),
-
 			services: [
 				{
 					id: 'concept',
@@ -40,6 +39,28 @@ export default Route.extend(PrefixMixin, {
 					text: 'management text',
 				},
 			],
+			team: [
+				{
+					id: 'team1',
+					title: '#1',
+					text: 'team1 text',
+				},
+				{
+					id: 'agile',
+					title: '#2',
+					text: 'agile text',
+				},
+				{
+					id: 'team2',
+					title: '#3',
+					text: 'team2 text',
+				},
+				{
+					id: 'team3',
+					title: '#4',
+					text: 'team3 text',
+				},
+			],
 		};
 	},
 
@@ -47,5 +68,6 @@ export default Route.extend(PrefixMixin, {
 		this._super(...arguments);
 
 		controller.set('service', model.services[0].id);
+		controller.set('team', model.team[0].id);
 	},
 });

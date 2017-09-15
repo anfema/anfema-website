@@ -29,7 +29,7 @@ describe('Acceptance | ui/index', function () {
 		expect(find('.content-slider')).to.exist;
 
 		// just one slide active
-		expect(findAll('.content-slider-slide--active').length).to.equal(1);
+		expect(findAll('.content-slider-slide--active')).to.have.lengthOf(1);
 
 		// no query param yet
 		expect(currentURL()).to.equal('/');
@@ -38,5 +38,20 @@ describe('Acceptance | ui/index', function () {
 		await click('.content-slider__navigation a:nth-of-type(2)');
 		expect(find('.content-slider__navigation a:nth-of-type(2)').search.match(/service=(\w+)/))
 			.to.include(currentURL().match(/service=(\w+)/)[1]);
+	});
+
+	it('can navigate between folder items', async function () {
+		expect(find('.content-folder')).to.exist;
+
+		// just one slide active
+		expect(findAll('.content-folder-item--active')).to.have.lengthOf(1);
+
+		// no query param yet
+		expect(currentURL()).to.equal('/');
+
+		// show query param
+		await click('.content-folder__navigation a:nth-of-type(2)');
+		expect(find('.content-folder__navigation a:nth-of-type(2)').search.match(/team=(\w+)/))
+			.to.include(currentURL().match(/team=(\w+)/)[1]);
 	});
 });

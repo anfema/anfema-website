@@ -1,0 +1,14 @@
+/* TODO replace */
+.content-folder {
+	&__navigation {
+		a.active {
+			color: green;
+		}
+	}
+
+	&-item {
+		&--active {
+			color: green;
+		}
+	}
+}
