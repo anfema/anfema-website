@@ -4,13 +4,13 @@ import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import { find, findAll } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | info footer', function () {
-	setupComponentTest('info-footer', {
+describe('Integration | Component | page footer', function () {
+	setupComponentTest('page-footer', {
 		integration: true,
 	});
 
 	it('renders', function () {
-		this.render(hbs`{{info-footer}}`);
+		this.render(hbs`{{page-footer}}`);
 
 		expect(findAll('.p-street-address')).to.have.lengthOf(2);
 		expect(findAll('.p-locality')).to.have.lengthOf(2);
