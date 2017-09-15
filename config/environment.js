@@ -25,7 +25,9 @@ module.exports = function (environment) {
 			defaultLocale: 'de',
 		},
 		pageTitle: {
-			replace: true,
+			separator: ' - ',
+			prepend: true,
+			replace: false,
 		},
 	};
 

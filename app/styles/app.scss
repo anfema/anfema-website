@@ -1,9 +1,12 @@
 // Configuration
+@import '_config/_functions/inline-svg';
 @import '_config/_mixins/webfonts';
 @import '_config/variables';
 
 // Environemnt
 @import '_environment/box-sizing';
+@import '_environment/grid';
+@import '_environment/typography';
 @import '_environment/webfonts';
 
 // Global styles
@@ -12,8 +15,11 @@
 // Components
 @import 'components/content-slider';
 @import 'components/content-folder';
+@import 'components/page-footer';
 
 // Partials
+@import 'partials/lp-cover';
+@import 'partials/lp-section';
 
 // Layouts
 

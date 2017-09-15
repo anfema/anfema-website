@@ -1,0 +1,31 @@
+.lp-cover {
+	height: 100vh;
+	color: $color-text-inverted;
+	background: linear-gradient(to bottom, #292929, #363636);
+	grid-template-rows:
+		[full-start] 1fr
+		[middle-start] fit-content(8.2rem)
+		[middle-end] 1fr
+		[full-end];
+
+	h1 {
+		align-self: center;
+		margin: 0;
+		font-size: 11rem;
+		line-height: 8.2rem;
+		text-transform: uppercase;
+		grid-column: main;
+		grid-row: middle;
+	}
+
+	p {
+		margin-top: 3rem;
+		color: #939393;
+		font-size: 2.5rem;
+		line-height: 3rem;
+		grid-column-end: text;
+		grid-column-start: main;
+		grid-row-end: full-end;
+		grid-row-start: middle-end;
+	}
+}
