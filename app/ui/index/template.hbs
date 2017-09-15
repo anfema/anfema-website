@@ -1,28 +1,37 @@
-<h1>{{t (concat model.prefix 'title')}}</h1>
-<h2>{{t (concat model.prefix 'titleSub')}}</h2>
+{{title 'Striving for Perfection'}}
 
 <ul>
 	<li>
-		{{#link-to 'projects'}}
-			<button>{{t (concat model.prefix 'projects')}}</button>
-		{{/link-to}}
-	</li>
-	<li>
-		{{#link-to 'imprint'}}
-			<button>{{t (concat model.prefix 'imprint')}}</button>
-		{{/link-to}}
+		{{#link-to 'projects'}}{{t (concat model.prefix 'projects')}}{{/link-to}}
 	</li>
 </ul>
 
-<h3>{{t (concat model.prefix 'header01')}}</h3>
-<p>{{t (concat model.prefix 'text01')}}</p>
-<h3>{{t (concat model.prefix 'header02')}}</h3>
-<p>{{t (concat model.prefix 'text02')}}</p>
+<section class="grid lp-cover">
+	<h1>Striving for Perfection</h1>
+	<p>anfema is a highly capable team avidly creating individual and&nbsp;sophisticated digital solutions. </p>
+</section>
 
-{{content-slider
+<section class="grid lp-section">
+	<header>
+		<a id="1-philosophy">01</a>
+		<h2>Understanding customers like no&nbsp;other</h2>
+	</header>
+
+	<p>We think nothing of generalised approach. Instead, putting ourselves in your position, we understand your processes and needs before we’ll jointly develop a strategy. This way, we ensure that our customised software becomes a solution that makes your life more convenient. </p>
+
+	<h3>Innovation and Usability are our Identity</h3>
+
+	<p>We love technology! Indulging in our passion, we bring your ideas and procedures up to date, and, in combination with our focus on user-friendliness, we enable your processes’ optimisation and the better achievement of your goals. </p>
+
+	<p>anfema - that’s the incredibly good job we do as a result of our team’s diverse experience and their multidisciplinary competencies. </p>
+</section>
+
+<div class="grid grid--alt">
+	{{content-slider
 		contents=model.services
 		labelKey='title'
 		selected=service
-}}
+	}}
+</div>
 
 {{outlet}}
