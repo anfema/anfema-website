@@ -3,7 +3,7 @@
 </div>
 
 <div class="page-footer__office">
-	<h3 data-test-footer-header>Munich Office</h3>
+	<h3 class="page-footer__office-title">Munich Office</h3>
 
 	<p class="p-adr adr h-adr">
 		<span class="p-street-address">Seitzstr. 16</span><br>
@@ -13,7 +13,7 @@
 </div>
 
 <div class="page-footer__office">
-	<h3 data-test-footer-header>Augsburg Office</h3>
+	<h3 class="page-footer__office-title">Augsburg Office</h3>
 
 	<p class="p-adr adr h-adr">
 		<span class="p-street-address">Bahnhofstr. 10</span><br>
@@ -35,5 +35,5 @@
 
 	<p class="copyright">1998&nbsp;&ndash;&nbsp;{{year}} anfema&nbsp;GmbH</p>
 
-	<p class="imprint">{{#link-to 'imprint'}}Imprint{{/link-to}}</p>
+	<p class="imprint">{{#link-to 'imprint' data-test-footer-imprint=true}}Imprint{{/link-to}}</p>
 </div>

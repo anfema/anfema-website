@@ -22,6 +22,7 @@ describe('Acceptance | ui/index', function () {
 
 	it('can visit /imprint from footer', async function () {
 		await click('[data-test-footer-imprint]');
+
 		expect(currentURL()).to.equal('/imprint');
 	});
 
