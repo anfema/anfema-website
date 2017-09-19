@@ -1,6 +1,6 @@
 /* eslint-env node */
 
-module.exports = function (/* env */) {
+module.exports = function(/* env */) {
 	return {
 		/**
 		 * The locales that are application supports.

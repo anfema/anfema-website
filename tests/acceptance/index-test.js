@@ -4,29 +4,29 @@ import startApp from 'anfema/tests/helpers/start-app';
 import destroyApp from 'anfema/tests/helpers/destroy-app';
 import { click, find, findAll } from 'ember-native-dom-helpers';
 
-describe('Acceptance | ui/index', function () {
+describe('Acceptance | ui/index', function() {
 	let application;
 
-	beforeEach(async function () {
+	beforeEach(async function() {
 		application = startApp();
 		await visit('/');
 	});
 
-	afterEach(function () {
+	afterEach(function() {
 		destroyApp(application);
 	});
 
-	it('can visit /index', function () {
+	it('can visit /index', function() {
 		expect(currentURL()).to.equal('/');
 	});
 
-	it('can visit /imprint from footer', async function () {
+	it('can visit /imprint from footer', async function() {
 		await click('[data-test-footer-imprint]');
 
 		expect(currentURL()).to.equal('/imprint');
 	});
 
-	it('can navigate between slides', async function () {
+	it('can navigate between slides', async function() {
 		expect(find('.content-slider')).to.exist;
 
 		// just one slide active
@@ -37,11 +37,12 @@ describe('Acceptance | ui/index', function () {
 
 		// show query param
 		await click('.content-slider__navigation a:nth-of-type(2)');
-		expect(find('.content-slider__navigation a:nth-of-type(2)').search.match(/service=(\w+)/))
-			.to.include(currentURL().match(/service=(\w+)/)[1]);
+		expect(
+			find('.content-slider__navigation a:nth-of-type(2)').search.match(/service=(\w+)/)
+		).to.include(currentURL().match(/service=(\w+)/)[1]);
 	});
 
-	it('can navigate between folder items', async function () {
+	it('can navigate between folder items', async function() {
 		expect(find('.content-folder')).to.exist;
 
 		// just one slide active
@@ -52,7 +53,8 @@ describe('Acceptance | ui/index', function () {
 
 		// show query param
 		await click('.content-folder__navigation a:nth-of-type(2)');
-		expect(find('.content-folder__navigation a:nth-of-type(2)').search.match(/team=(\w+)/))
-			.to.include(currentURL().match(/team=(\w+)/)[1]);
+		expect(
+			find('.content-folder__navigation a:nth-of-type(2)').search.match(/team=(\w+)/)
+		).to.include(currentURL().match(/team=(\w+)/)[1]);
 	});
 });

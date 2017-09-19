@@ -4,9 +4,7 @@
 		font-style: $style;
 		font-weight: $weight;
 		src: url($url + '.eot');
-		src:
-			url($url + '.eot?#iefix') format('embedded-opentype'),
-			url($url + '.woff') format('woff'),
-			url($url + '.woff2') format('woff2');
+		src: url($url + '.eot?#iefix') format('embedded-opentype'),
+			url($url + '.woff') format('woff'), url($url + '.woff2') format('woff2');
 	}
 }
