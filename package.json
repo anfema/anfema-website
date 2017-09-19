@@ -13,7 +13,7 @@
     "build": "ember build",
     "eslint": "eslint .",
     "eslint-fix": "eslint . --fix",
-    "fix": "eslint . --fix && stylelint app/styles/**/*.scss --fix",
+    "fix": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write && eslint . --fix && stylelint app/styles/**/*.scss --fix",
     "prettier": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write",
     "start": "ember server",
     "stylelint": "stylelint app/styles/**/*.scss",
@@ -64,7 +64,7 @@
     "loader.js": "~4.2.3",
     "prettier": "^1.7.0",
     "stylelint": "~7.11.1",
-    "stylelint-config-anfema": "~4.4.2",
+    "stylelint-config-anfema": "~6.0.0",
     "stylelint-order": "~0.5.0"
   },
   "engines": {

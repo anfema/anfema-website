@@ -1,14 +1,14 @@
 .page-footer {
 	display: grid;
-	padding-bottom: 6rem;
-	color: $color-text-inverted;
-	background: #292929 linear-gradient(to bottom, #292929, #363636);
 	grid-auto-flow: dense;
 	grid-template-columns: minmax($offset, 1fr) [footer-start]
 		minmax($offset, $width-content-large / 6) [office1] minmax(0, $width-content-large / 6)
 		[office2] minmax(0, $width-content-large / 6) [contact]
 		minmax(0, $width-content-large / 6 * 1.7) [meta] minmax(0, $width-content-large / 6 * 1.3)
 		[footer-end] minmax($offset, 1fr);
+	padding-bottom: 6rem;
+	color: $color-text-inverted;
+	background: #292929 linear-gradient(to bottom, #292929, #363636);
 
 	a {
 		&,
@@ -30,9 +30,9 @@
 	// This is done to have a pixel perfect logo in the browser and allows a user to drag the regular
 	// logo (the black version) to their desktop
 	.u-logo {
-		margin: 4.4rem 0 0;
-		grid-column-end: office1;
 		grid-column-start: footer-start;
+		grid-column-end: office1;
+		margin: 4.4rem 0 0;
 
 		img {
 			display: block;
@@ -47,13 +47,13 @@
 	}
 
 	&__office {
-		grid-column-end: office2;
 		grid-column-start: office1;
+		grid-column-end: office2;
 	}
 
 	&__office:nth-of-type(2) {
-		grid-column-end: contact;
 		grid-column-start: office2;
+		grid-column-end: contact;
 	}
 
 	&__meta,
@@ -62,13 +62,13 @@
 	}
 
 	&__contact {
-		grid-column-end: meta;
 		grid-column-start: contact;
+		grid-column-end: meta;
 	}
 
 	&__meta {
-		text-align: right;
-		grid-column-end: footer-end;
 		grid-column-start: meta;
+		grid-column-end: footer-end;
+		text-align: right;
 	}
 }
