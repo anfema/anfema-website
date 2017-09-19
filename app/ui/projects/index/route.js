@@ -9,7 +9,8 @@ export default Route.extend({
 					client: 'BMW',
 					title: '7 Series Presenter App',
 					color: '#F00',
-				}, {
+				},
+				{
 					id: 'knauf',
 					client: 'Knauf AMF',
 					title: 'Lookbook App',
@@ -35,7 +36,7 @@ export default Route.extend({
 				},
 				{
 					id: 'tods',
-					client: 'TOD\'S',
+					client: "TOD'S",
 					title: 'Shoe Configurator App',
 					color: '#F00',
 				},

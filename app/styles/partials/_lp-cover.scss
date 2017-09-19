@@ -2,10 +2,7 @@
 	height: 100vh;
 	color: $color-text-inverted;
 	background: linear-gradient(to bottom, #292929, #363636);
-	grid-template-rows:
-		[full-start] 1fr
-		[middle-start] fit-content(8.2rem)
-		[middle-end] 1fr
+	grid-template-rows: [full-start] 1fr [middle-start] fit-content(8.2rem) [middle-end] 1fr
 		[full-end];
 
 	h1 {

@@ -7,11 +7,9 @@
 		position: relative;
 		display: grid;
 		grid-column: main;
-		grid-template-columns:
-			[main-start] minmax(0, $width-content-large / 8)
-			[text-start] repeat(5, minmax(0, $width-content-large / 8))
-			[text-end] repeat(2, minmax(0, $width-content-large / 8))
-			[main-end];
+		grid-template-columns: [main-start] minmax(0, $width-content-large / 8) [text-start]
+			repeat(5, minmax(0, $width-content-large / 8)) [text-end]
+			repeat(2, minmax(0, $width-content-large / 8)) [main-end];
 
 		> a {
 			position: absolute;

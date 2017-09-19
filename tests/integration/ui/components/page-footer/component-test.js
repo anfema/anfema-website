@@ -4,12 +4,12 @@ import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import { find, findAll } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | page footer', function () {
+describe('Integration | Component | page footer', function() {
 	setupComponentTest('page-footer', {
 		integration: true,
 	});
 
-	it('renders', function () {
+	it('renders', function() {
 		this.render(hbs`{{page-footer}}`);
 
 		expect(findAll('.p-street-address')).to.have.lengthOf(2);

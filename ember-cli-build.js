@@ -3,7 +3,7 @@ const autoprefixer = require('autoprefixer');
 const mqpacker = require('css-mqpacker');
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-module.exports = function (defaults) {
+module.exports = function(defaults) {
 	const app = new EmberApp(defaults, {
 		postcssOptions: {
 			compile: {

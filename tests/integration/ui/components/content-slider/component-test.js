@@ -4,19 +4,21 @@ import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import { find } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | content slider', function () {
+describe('Integration | Component | content slider', function() {
 	setupComponentTest('content-slider', {
 		integration: true,
 	});
 
-	const content = [{
-		id: 'concept',
-		title: 'concept title',
-		text: 'concept text',
-		hidden: false,
-	}];
+	const content = [
+		{
+			id: 'concept',
+			title: 'concept title',
+			text: 'concept text',
+			hidden: false,
+		},
+	];
 
-	beforeEach(function () {
+	beforeEach(function() {
 		this.set('content', content);
 		this.render(hbs`
 			{{content-slider
@@ -26,11 +28,11 @@ describe('Integration | Component | content slider', function () {
 		`);
 	});
 
-	it('renders', function () {
+	it('renders', function() {
 		expect(find('.content-slider')).to.exist;
 	});
 
-	it('renders a navigation bar', function () {
+	it('renders a navigation bar', function() {
 		expect(find('.content-slider__navigation')).to.exist;
 
 		const link = find('.content-slider__navigation-link');
@@ -41,7 +43,7 @@ describe('Integration | Component | content slider', function () {
 		// TODO: Check query-param in an acceptance test if necessary
 	});
 
-	it('renders a list of contents', function () {
+	it('renders a list of contents', function() {
 		const contentElement = find('.content-slider__content');
 
 		expect(contentElement).to.exist;

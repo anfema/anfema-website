@@ -2,14 +2,14 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupTest } from 'ember-mocha';
 
-describe('Unit | Route | index', function () {
+describe('Unit | Route | index', function() {
 	setupTest('route:index', {
 		// needs: [
 		// 	'controller:foo',
 		// ],
 	});
 
-	it('exists', function () {
+	it('exists', function() {
 		const route = this.subject();
 
 		// TODO @f.pichler
