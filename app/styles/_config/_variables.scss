@@ -1,8 +1,15 @@
+// Colors
 $color-text: #312833;
-$color-text-inverted: #ffffff;
-$color-background: #ffffff;
-$color-brand-1: #ffca27;
+$color-text-inverted: #FFFFFF;
+$color-background: #FFFFFF;
+$color-brand-1: #FFCA27;
 
-$color-href: #5a07f0;
-$color-href-hover: #9053fe;
-$color-href-active: #4900cc;
+$color-href: #5A07F0;
+$color-href-hover: #9053FE;
+$color-href-active: #4900CC;
+
+// Grid
+$grid-width-content-large: 92.8rem;
+$grid-screen: 102.4rem;
+$grid-offset-small: 1.6rem;
+$grid-offset-medium: ($grid-screen - $grid-width-content-large) / $grid-screen / 2 * 100%;
