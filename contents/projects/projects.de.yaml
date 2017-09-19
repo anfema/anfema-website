@@ -1,0 +1,13 @@
+projects.de:
+  dir: 'projects'
+  title: 'Portfolio'
+  contact: 'Kontakt'
+  back: 'Zurück'
+  bmw:
+    id: 'bmw'
+    title: 'BMW'
+    titleSub: '7 Series Presenter App'
+  knauf:
+    id: 'knauf'
+    title: 'Knauf / AMF'
+    titleSub: 'Lookbook App'

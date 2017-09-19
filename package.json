@@ -72,5 +72,10 @@
   "engines": {
     "node": "6.* || >= 7.*"
   },
-  "private": true
+  "private": true,
+  "ember-addon": {
+    "paths": [
+      "lib/static-content"
+    ]
+  }
 }

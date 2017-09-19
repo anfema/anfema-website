@@ -1,0 +1,13 @@
+{
+  "name": "static-content",
+  "keywords": [
+    "ember-addon"
+  ],
+  "ember-addon": {
+    "after": [
+      "broccoli-asset-rev"
+    ]
+  },
+  "dependencies": {
+  }
+}
