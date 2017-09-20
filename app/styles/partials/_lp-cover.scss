@@ -1,8 +1,8 @@
 .lp-cover {
 	@include grid-base;
+	height: 100vh;
 
 	overflow: hidden;
-	height: 100vh;
 	grid-template-rows: [full-start] 1fr [middle-start] fit-content(8.2rem) [middle-end] 1fr
 		[full-end];
 	color: $color-text-inverted;
@@ -21,8 +21,7 @@
 
 	p {
 		grid-column: 1 / -1;
-		grid-row-start: middle-end;
-		grid-row-end: full-end;
+		grid-row: middle-end / full-end;
 		margin-top: 3rem;
 		color: #939393;
 		font-size: 2.5rem;

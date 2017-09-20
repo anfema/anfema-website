@@ -72,6 +72,6 @@ $min-offset: 0.01rem;
  */
 @mixin media-print {
 	@media only print {
-
+		@content;
 	}
 }

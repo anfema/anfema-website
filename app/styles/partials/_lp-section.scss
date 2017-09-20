@@ -22,6 +22,7 @@
 		> a {
 			position: absolute;
 			left: 0;
+			transform: translateX(-45%);
 			color: $color-brand-1;
 			font-size: 20rem;
 			font-weight: 700;
@@ -29,13 +30,12 @@
 			text-align: center;
 			pointer-events: none;
 			user-select: none;
-			transform: translateX(-45%);
 
 			@include media-l-min {
 				left: 12.5%;
+				transform: translateX(-50%);
 				font-size: 40rem;
 				line-height: 34rem;
-				transform: translateX(-50%);
 			}
 		}
 
@@ -47,12 +47,12 @@
 	}
 
 	h2 {
-		margin: 8rem 0 1rem;
 		grid-column: 1 / -1;
+		margin: 8rem 0 1rem;
 
 		@include media-l-min {
-			margin: 17.5rem 0 1rem;
 			grid-column: 2 / -1;
+			margin: 17.5rem 0 1rem;
 		}
 	}
 }
