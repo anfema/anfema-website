@@ -1,4 +1,14 @@
 .lp-section {
+	@include grid-base;
+
+	& > * {
+		grid-column: 1 / -1;
+
+		@include media-l-min {
+			grid-column: 2 / span 5;
+		}
+	}
+
 	& + * {
 		margin-top: 10rem;
 	}
@@ -6,21 +16,27 @@
 	header {
 		position: relative;
 		display: grid;
-		grid-column: main;
-		grid-template-columns:
-			[main-start] minmax(0, $grid-width-content-large / 8)
-			[text-start] repeat(5, minmax(0, $grid-width-content-large / 8))
-			[text-end] repeat(2, minmax(0, $grid-width-content-large / 8))
-			[main-end];
+		grid-column: 1 / -1;
+		grid-template-columns: repeat(8, 1fr);
 
 		> a {
 			position: absolute;
+			left: 0;
 			color: $color-brand-1;
-			font-size: 40rem;
+			font-size: 20rem;
 			font-weight: 700;
-			line-height: 34rem;
+			line-height: 18rem;
+			text-align: center;
 			pointer-events: none;
 			user-select: none;
+			transform: translateX(-45%);
+
+			@include media-l-min {
+				left: 12.5%;
+				font-size: 40rem;
+				line-height: 34rem;
+				transform: translateX(-50%);
+			}
 		}
 
 		> *,
@@ -31,8 +47,12 @@
 	}
 
 	h2 {
-		margin: 17.5rem 0 1rem;
-		grid-column-end: main;
-		grid-column-start: text;
+		margin: 8rem 0 1rem;
+		grid-column: 1 / -1;
+
+		@include media-l-min {
+			margin: 17.5rem 0 1rem;
+			grid-column: 2 / -1;
+		}
 	}
 }
