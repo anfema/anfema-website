@@ -1,0 +1,77 @@
+$breakpoint-s: 42rem;
+$breakpoint-m: 103rem;
+$min-offset: 0.01rem;
+
+/**
+ * Generate a minimum width media query at a slight offset to the breakpoint
+ * to migitate overlapping with a maxium media query of the same breakpoint
+ * @private
+ */
+@mixin -media-min($breakpoint: 100%, $offset: $min-offset) {
+	@media screen and (min-width: $breakpoint + $offset) {
+		@content;
+	}
+}
+
+/**
+ * Generate a maxium width media query
+ */
+@mixin -media-max($breakpoint) {
+	@media screen and (max-width: $breakpoint) {
+		@content;
+	}
+}
+
+/**
+ * The smallest size media query, applies only to small width screens
+ */
+@mixin media-s-max {
+	@include -media-max($breakpoint-s) {
+		@content;
+	}
+}
+
+/**
+ * Applies to anything larger than the small width screens
+ */
+@mixin media-s-min {
+	@include -media-min($breakpoint-s) {
+		@content;
+	}
+}
+
+/**
+ * Applies only to small to large width screens
+ */
+@mixin media-s-l {
+	@media (min-width: $breakpoint-s + $min-offset) and (max-width: $breakpoint-m) {
+		@content;
+	}
+}
+
+/**
+ * Appliesto screens up to a large width screen
+ */
+@mixin media-l-max {
+	@include -media-max($breakpoint-m) {
+		@content;
+	}
+}
+
+/**
+ * Applies to screens larger than a large width screen
+ */
+@mixin media-l-min {
+	@include -media-min($breakpoint-m) {
+		@content;
+	}
+}
+
+/**
+ * Applies to print only
+ */
+@mixin media-print {
+	@media only print {
+		@content;
+	}
+}
