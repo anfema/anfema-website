@@ -1,25 +1,11 @@
 .page-footer {
-	display: grid;
-	padding: 0 2rem 6rem;
+	padding: 0 1.6rem 6rem;
 	padding-bottom: 6rem;
 	color: $color-text-inverted;
 	background: #292929 linear-gradient(to bottom, #292929, #363636);
 	justify-content: center;
-	align-items: start;
-	// grid-auto-flow: dense;
 
-	// grid-template-columns:
-	// 	minmax($grid-offset-small, 1fr)
-	// 	[footer-start] minmax($grid-offset-medium, 50%)
-	// 	[center] minmax($grid-offset-medium, 50%)
-	// 	[footer-end] minmax($grid-offset-small, 1fr);
-
-	// @include media-s-min {
-		grid-template-columns:
-			[footer-start]
-			repeat(auto-fill, minmax(16rem, 1fr))
-			[footer-end];
-	// }
+	@include grid-base;
 
 	@include media-s-max {
 		font-size: 1.6rem;
@@ -52,7 +38,7 @@
 	.u-logo {
 		margin: 3.4rem 0 0 -1rem;
 
-		grid-column: 1 / span 1;
+		grid-column: 1 / -1;
 
 		@include media-s-min {
 			margin: 4.4rem 0 0;
@@ -69,21 +55,11 @@
 	}
 
 	&__office {
-		// grid-column-start: footer-start;
-		// grid-column-end: center;
-
-		@include media-s-min {
-			grid-column: 3 / span 1;
-		}
+		grid-column: 1 / 5;
 	}
 
-	&__office:nth-of-type(2) {
-		// grid-column-start: center;
-		// grid-column-end: footer-end;
-
-		@include media-s-min {
-			grid-column: 2 / span 1;
-		}
+	&__office + &__office {
+		grid-column: 5 / -1;
 	}
 
 	&__meta,
@@ -96,19 +72,10 @@
 	}
 
 	&__contact {
-		// grid-column: 1 / span 1;
-
-		// @media screen and (min-width: 6 * 16rem) {
-			grid-column: -3 / span 1;
-		// }
+		grid-column: 1 / span 4;
 	}
 
 	&__meta {
-		grid-column: -2 / span 1;
-
-		@include media-s-min {
-			text-align: right;
-			grid-column: -2 / span 1;
-		}
+		grid-column: 5 / span 4;
 	}
 }
