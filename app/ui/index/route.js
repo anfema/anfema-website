@@ -61,6 +61,32 @@ export default Route.extend(PrefixMixin, {
 					text: 'team3 text',
 				},
 			],
+			jobs: [
+				{
+					title: 'Student Intern Android Development (f/m/*)',
+					description: 'Starting 2018',
+					details_link: '#',
+					team: 'android',
+				},
+				{
+					title: 'Student Intern iOS Development (f/m/*)',
+					description: 'Starting 2018',
+					details_link: '#',
+					team: 'ios',
+				},
+				{
+					title: 'Senior Python Developer (f/m/*)',
+					description: 'Starting 2018',
+					details_link: '#',
+					team: 'python',
+				},
+				{
+					title: 'Office Manager (f/m/*)',
+					description: 'Starting 2018',
+					details_link: '#',
+					team: 'office',
+				},
+			],
 		};
 	},
 
