@@ -56,6 +56,16 @@ This project uses pods. `--pods` is enabled by default. Use `--no-pods` for mode
 
 
 
+### Linting
+
+This project uses [ESLint](https://eslint.org), [Stylelint](https://stylelint.io) and [Prettier](https://prettier.io) to ensure tidy code. 
+
+Please enable the appropriate plugins in your editor. 
+
+There are scripts in `package.json` which can be used to run the in-repo versions of these tools. You can also use `yarn run fix` to run all three tools at once. We recommend to do so before committing or pushing to the git origin.
+
+
+
 ### Running Tests
 
 * `ember test`

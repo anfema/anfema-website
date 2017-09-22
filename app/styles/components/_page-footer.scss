@@ -12,6 +12,10 @@
 		line-height: 3rem;
 	}
 
+	@include media-l-min {
+		grid-template-columns: repeat(3, 1fr) 2fr 1fr;
+	}
+
 	a {
 		&,
 		&:link,
@@ -43,6 +47,10 @@
 			margin: 4.4rem 0 0;
 		}
 
+		@include media-l-min {
+			grid-column-end: span 1;
+		}
+
 		img {
 			display: block;
 			width: 13rem;
@@ -57,10 +65,18 @@
 
 	&__office {
 		grid-column: 1 / 5;
+
+		@include media-l-min {
+			grid-column: 2 / span 1;
+		}
 	}
 
 	&__office + &__office {
 		grid-column: 5 / -1;
+
+		@include media-l-min {
+			grid-column: 3 / span 1;
+		}
 	}
 
 	&__meta,
@@ -73,10 +89,18 @@
 	}
 
 	&__contact {
-		grid-column: 1 / span 4;
+		grid-column: 1 / -1;
+
+		@include media-l-min {
+			grid-column: -3 / span 1;
+		}
 	}
 
 	&__meta {
-		grid-column: 5 / span 4;
+		grid-column: 1 / -1;
+
+		@include media-l-min {
+			grid-column: -2 / span 1;
+		}
 	}
 }
