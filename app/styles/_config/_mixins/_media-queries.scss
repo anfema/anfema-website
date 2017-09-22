@@ -1,6 +1,6 @@
-$breakpoint-s: 42rem;
-$breakpoint-m: 103rem;
-$min-offset: 0.01rem;
+$breakpoint-s: 420px;
+$breakpoint-l: 1030px;
+$min-offset: 1px;
 
 /**
  * Generate a minimum width media query at a slight offset to the breakpoint
@@ -44,7 +44,7 @@ $min-offset: 0.01rem;
  * Applies only to small to large width screens
  */
 @mixin media-s-l {
-	@media (min-width: $breakpoint-s + $min-offset) and (max-width: $breakpoint-m) {
+	@media (min-width: $breakpoint-s + $min-offset) and (max-width: $breakpoint-l) {
 		@content;
 	}
 }
@@ -53,7 +53,7 @@ $min-offset: 0.01rem;
  * Appliesto screens up to a large width screen
  */
 @mixin media-l-max {
-	@include -media-max($breakpoint-m) {
+	@include -media-max($breakpoint-l) {
 		@content;
 	}
 }
@@ -62,7 +62,7 @@ $min-offset: 0.01rem;
  * Applies to screens larger than a large width screen
  */
 @mixin media-l-min {
-	@include -media-min($breakpoint-m) {
+	@include -media-min($breakpoint-l) {
 		@content;
 	}
 }
