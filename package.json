@@ -45,7 +45,7 @@
     "ember-cli-sri": "~2.1.0",
     "ember-cli-stylelint": "~0.15.0",
     "ember-export-application-global": "~2.0.0",
-    "ember-fetch": "~3.3.1",
+    "ember-fetch": "^3.4.0",
     "ember-intl": "~2.31.1",
     "ember-load-initializers": "~1.0.0",
     "ember-native-dom-helpers": "~0.5.4",
