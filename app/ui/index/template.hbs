@@ -33,27 +33,28 @@
 
 <div class="grid grid--alt">
 	{{content-slider
-			contents=model.services
-			labelKey='title'
-			selected=service
+		contents=model.services
+		labelKey='title'
+		selected=service
 	}}
 </div>
 
 <div class="grid grid--alt">
 	{{content-folder
-			contents=model.team
-			labelKey='title'
-			selected=team
+		contents=model.team
+		labelKey='title'
+		selected=team
 	}}
 </div>
 
 <div>
 	{{#each model.jobs as |job|}}
 		{{job-application
-				title=job.title
-				description=job.description
-				details_link=job.details_link
-				team=job.team}}
+			title=job.title
+			description=job.description
+			details_link=job.details_link
+			team=job.team
+		}}
 	{{/each}}
 </div>
 
