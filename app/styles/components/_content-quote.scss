@@ -1,0 +1,28 @@
+.content-quote {
+	grid-column: 1 / span 4;
+	background-color: $color-grey-light;
+
+	h2 {
+		grid-column: 1 / 2;
+	}
+
+	&__quotationmark {
+		//width: 209px;
+		//height: 400px;
+		opacity: 0.06;
+		font-family: Calibre;
+		font-size: 480px;
+		font-weight: bold;
+		line-height: 0.83;
+		text-align: left;
+		color: $color-grey;
+	}
+
+	&--quotationmark-open {
+		text-align: left;
+	}
+
+	&--quotationmark-close {
+		text-align: right;
+	}
+}

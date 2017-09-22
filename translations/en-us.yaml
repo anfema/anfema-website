@@ -115,3 +115,6 @@ component:
     action:
       de: 'DE'
       en: 'EN'
+  contet-quote:
+    action:
+      showProject: 'View project'
