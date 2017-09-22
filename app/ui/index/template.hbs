@@ -47,4 +47,16 @@
 	}}
 </div>
 
+<div>
+	{{#each model.jobs as |job|}}
+		{{job-application
+			title=job.title
+			description=job.description
+			details_link=job.details_link
+			team=job.team
+		}}
+	{{/each}}
+</div>
+
+
 {{outlet}}
