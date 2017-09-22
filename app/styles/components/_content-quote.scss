@@ -1,28 +1,52 @@
 .content-quote {
-	grid-column: 1 / span 4;
+	@include grid-base;
+
+	padding: 8rem 0;
 	background-color: $color-grey-light;
 
-	h2 {
-		grid-column: 1 / 2;
+	blockquote {
+		grid-column: 3 / -2;
+		margin: 4rem 0;
+		font-size: 3.4rem;
+	}
+
+	cite {
+		grid-column: -5 / span 3;
+		text-align: right;
+		font-size: 1.8rem;
 	}
 
 	&__quotationmark {
-		//width: 209px;
-		//height: 400px;
+		display: block;
+		height: 0;
 		opacity: 0.06;
-		font-family: Calibre;
-		font-size: 480px;
+		font-size: 20rem;
 		font-weight: bold;
-		line-height: 0.83;
+		line-height: 40rem;
 		text-align: left;
 		color: $color-grey;
 	}
 
-	&--quotationmark-open {
-		text-align: left;
+	.quotationmark--open {
+		grid-column: 2 / span 1;
 	}
 
-	&--quotationmark-close {
+	.quotationmark--closed {
 		text-align: right;
+		grid-column: -2 / span 1;
+	}
+
+	.content-quote__project,
+	.content-quote__project:visited {
+		grid-column: 2 / 4;
+		text-decoration: none;
+		font-size: 1.8rem;
+		font-weight: 600;
+		text-align: left;
+		color: $color-brand-2;
+
+		&hover {
+			color: $color-brand-1;
+		}
 	}
 }

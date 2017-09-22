@@ -1,17 +1,7 @@
-{{#each contents as |content|}}
-<span class="content-quote__quotationmark content-quote--quotationmark-open">“</span>
-    <h2 class="quote-text">{{content.quote_text}}</h2>
-    <span class="content-quote__quotationmark content-quote--quotationmark-close">”</span>
-    <p class="quote-source">{{content.quote_source}}</p>
-    {{#if content.project}}
-        {{#link-to 'projects.details' (query-params id=content.project) class=''}}
-            {{#if content.quote_link_label}}
-                {{content.quote_link_label}}
-            {{else}}
-                {{t 'component.contet-quote.action.showProject'}}
-            {{/if}}
-        {{/link-to}}
-    {{/if}}
-{{/each}}
+<span class="content-quote__quotationmark quotationmark--open">“</span>
+<blockquote class="quote-text">{{{quoteText}}}</blockquote>
+<span class="content-quote__quotationmark quotationmark--closed">”</span>
 
-{{yield}}
+<cite class="quote-source">{{{quoteSource}}}</cite> {{#if projectId}} {{#link-to 'projects.details' projectId class='content-quote__project'}}
+{{#if projectLinkLabel}} {{projectLinkLabel}} {{else}} {{t 'component.contet-quote.action.showProject'}} {{/if}} {{/link-to}}
+{{/if}} {{yield}}

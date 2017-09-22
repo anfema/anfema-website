@@ -7,37 +7,20 @@
 </ul>
 
 {{content-lp-cover headline='Striving for Perfection' subtitle='anfema is a highly capable team avidly creating individual
-and&nbsp;sophisticated digital solutions.' }}
+and&nbsp;sophisticated digital solutions.' }} {{content-lp-text anchorId=contentText1.id sectionLabel=contentText1.sectionLabel
+title=contentText1.title content=contentText1.content }} {{content-lp-text anchorId=contentText2.id sectionLabel=contentText2.sectionLabel
+title=contentText2.title content=contentText2.content }} {{content-quote quoteText='anfema know what they do, how to do it,
+and they do it damn fast. — One of the best partners in App development I’ve ever seen.' quoteSource='Dominik Mandl, Online
+Marketing Manager<br>Knauf AMF GmbH & Co. KG' projectLinkLabel='View the project' projectId='knauf'}}
 
-{{content-lp-text
-	anchorId=contentText1.id
-	sectionLabel=contentText1.sectionLabel
-	title=contentText1.title
-	content=contentText1.content
-}}
-
-{{content-lp-text
-	anchorId=contentText2.id
-	sectionLabel=contentText2.sectionLabel
-	title=contentText2.title
-	content=contentText2.content
-}}
-
-{{content-quote
-	contents=model.quote
-    project='project'
-    projectLinkLabel='projectLinkLabel'
-}}
+<br>
+<br>
 
 <div class="grid grid--alt">
 	{{content-slider contents=services labelKey='title' selected=service }}
 </div>
 
-{{content-lp-text
-	anchorId=contentText3.id
-	sectionLabel=contentText3.sectionLabel
-	title=contentText3.title
-	content=contentText3.content
+{{content-lp-text anchorId=contentText3.id sectionLabel=contentText3.sectionLabel title=contentText3.title content=contentText3.content
 }}
 
 <div class="grid grid--alt">
@@ -45,14 +28,8 @@ and&nbsp;sophisticated digital solutions.' }}
 </div>
 
 <div>
-	{{#each model.jobs as |job|}}
-		{{job-application
-			title=job.title
-			description=job.description
-			details_link=job.details_link
-			team=job.team
-		}}
-	{{/each}}
+	{{#each model.jobs as |job|}} {{job-application title=job.title description=job.description details_link=job.details_link
+	team=job.team }} {{/each}}
 </div>
 
 {{outlet}}
