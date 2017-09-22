@@ -23,8 +23,16 @@ describe('Integration | Component | content lp cover', function() {
 
 		expect(find('.content-lp-cover')).to.exist;
 		expect(find('.content-lp-cover h1')).to.exist;
-		expect(find('.content-lp-cover h1').innerText).to.equal('foo');
+		expect(
+			find('.content-lp-cover h1')
+				.innerText.toLowerCase()
+				.trim()
+		).to.equal('foo');
 		expect(find('.content-lp-cover p')).to.exist;
-		expect(find('.content-lp-cover p').innerText).to.equal('bar');
+		expect(
+			find('.content-lp-cover p')
+				.innerText.toLowerCase()
+				.trim()
+		).to.equal('bar');
 	});
 });
