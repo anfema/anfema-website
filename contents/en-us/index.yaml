@@ -1,0 +1,136 @@
+sections:
+  -
+    component: 'content-lp-cover'
+    title: 'striving for perfection'
+    content: |
+      anfema are a highly capable team who avidly create individual and sophisticated digital solutions.
+
+  -
+    component: 'content-lp-text'
+    id: 1-philosophy
+    title: Understanding Customers Like No Other
+    content: |
+      <p>We think nothing of generalised approach. Instead, putting ourselves in your position, we understand your
+      processes and needs before we’ll jointly develop a strategy. This way, we ensure that our customised software
+      becomes a solution that makes your life more convenient.</p>
+
+      <h3>Innovation and Usability are our Identity</h3>
+
+      <p>We love technology! Indulging in our passion, we bring your ideas and procedures up to date, and, in combination
+      with our focus on user-friendliness, we enable your processes’ optimisation and the better achievement of your
+      goals.</p>
+
+      <p>anfema - that’s the incredibly good job we do as a result of our team’s diverse experience and their
+      multidisciplinary competencies.</p>
+
+  -
+    component: 'content-quote'
+    quoteText: |
+      anfema know what they do, how to do it, and they do it damn fast. One of the best partners in App
+      development I’ve ever seen.
+    quoteSource: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+    project: knauf
+    projectLinkLabel: View project
+
+  -
+    component: 'content-lp-text'
+    id: 2-philosophy
+    title: Innovation. Enthusiasm. Drive. Team Spirit. Commitment. Diversity. Quality.
+    content: |
+      <p>Our services impress with quality and design, our team excels due to their profound
+      expertise revealing the years of experience gained in ambitious projects across diverse industries.</p>
+
+      <p>Internally, we trust in proven workflows, whereas in project management we keep relying on customer focus,
+      flexibility and individuality. This conjunction creates the space in which we accomplish superior solutions!</p>
+
+  -
+    component: 'content-slider'
+    services:
+      -
+        id: 'concept'
+        title: 'Simplifying Processes, Maximising Benefits'
+        text: |
+          By structured synchronising of your idea, our expertise and the end users’ needs, we create a concept that is
+          equally anticipatory and individual - and therewith the foundation for software that does what it says on
+          the tin.
+
+      -
+        id: 'design'
+        title: 'Usability, Creativity & Innovation'
+        text: |
+          Creating innovative visual designs and intuitive user interfaces, we bring the concept to life. Characterised
+          by maximal usability, our work regularly goes beyond our clients’ every expectation of just how good user
+          experience can be.
+
+      -
+        id: 'development'
+        title: 'Custom-made & High Quality'
+        text: |
+          Your expectations are high? So are ours! Our team of developers impresses with their extensive skill set,
+          vast experience and uncompromising accuracy. Striving for perfection, we get to the core of your idea and
+          open up undreamed-of possibilities.
+
+      -
+        id: 'consulting'
+        title: 'Experience, Expertise & Foresight'
+        text: |
+          New technologies make our hearts skip a beat! As we constantly and happily explore the broad spectrum of
+          options, we know exactly which possible solutions are suitable for you, and add maximum value to your
+          project by providing honest and professional input.
+
+      -
+        id: 'support'
+        title: 'Continually Progressive'
+        text: |
+          Knowing that a system will only be future-proof if it’s being serviced following its release, we act in a
+          far-sighted and proactive way. The anticipation of emerging changes in the digital world allows us to nip
+          future problems in the bud.
+
+      -
+        id: 'management'
+        title: 'Customer-focused & Direct'
+        text: |
+          We rely on technically adept management, who put themselves in your position to fully understand your
+          requirements, and directly work out solutions. As your partner, we’ll assist you starting from the concept
+          and throughout the whole life cycle of the project, thus guaranteeing its long-term success.
+
+  -
+    component: 'content-lp-text'
+    id: 3-philosophy
+    title: 'According to our team, these are the top 4 reasons why you should join us:'
+
+  -
+    component: 'content-folder'
+    team:
+      -
+        id: 'team1'
+        title: 'Reason #1 A Great Team'
+        text: |
+          We are a diverse and dynamic team characterised by our impressive skill set and demand of high standards
+          as well as by our unusually strong team spirit and motivation. Not only do we treat each other friendly,
+          but we are friends! As such, we enjoy common activities like cooking, eating or table soccer in our
+          everyday office life.
+      -
+        id: 'team2'
+        title: 'Reason #2 Innovative Projects and the Most Recent Technologies'
+        text: |
+          We deliver digital developments across the full stack, servicing a large variety of industries. As a result,
+          we enjoy varying daily work routines featuring future-oriented and exciting projects which offer great
+          potential for development. For both work equipment and the applications used in our projects we rely on the
+          most recent technologies.
+      -
+        id: 'team3'
+        title: 'Reason #3 Agile Structures and Potential for Development'
+        text: |
+          At anfema, flexibility doesn't only involve acting on the dynamics of the digital industry. It also means
+          agile team structures which are adjustable to current projects and methodologies of development. We are open
+          to great ideas, and we value innovation and creativity instead of rigid hierarchies. If you possess these
+          qualities and work independently, you can drive change and there will be no limits to either your
+          acquisition of skills or your personal and professional development.
+      -
+        id: 'team4'
+        title: 'Reason #4 Superb Location and Company Culture '
+        text: |
+          Both of our offices are centrally located in the promising and lively cities of Munich and Augsburg.
+          This makes for a short commute and adds to a great work-life-balance. In combination with flexible work
+          hours, comfortable offices, and drinks provided free of charge, this makes for an enjoyable work climate.

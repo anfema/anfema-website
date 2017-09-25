@@ -1,10 +1,139 @@
-title: 'Titel'
-titleSub: 'titleSub (ger)'
-header01: 'header01 (ger)'
-text01: 'text01 (ger)'
-header02: 'header02 (ger)'
-text02: 'text02 (ger)'
-contact: 'Kontakt'
-imprint: 'Impressum'
-projects: 'Projekte'
-jobs: 'Stellenanzeigen'
+sections:
+  -
+    component: 'content-lp-cover'
+    title: 'striving for perfection'
+    content: |
+      anfema ist ein außergewöhnliches Team, das mit Begeisterung individuelle und hervorragende digitale
+      Lösungen erstellt.
+
+  -
+    component: 'content-lp-text'
+    id: 1-philosophy
+    title: Wir verstehen unsere Kunden wie kein Anderer
+    content: |
+      <p>Von pauschalen Ansätzen halten wir nichts. Wir wollen uns in Ihre Prozesse und Bedürfnisse eindenken, bevor
+      wir gemeinsam eine Strategie entwickeln. So stellen wir sicher, dass maßgeschneiderte Software zur Lösung wird,
+      die Sie bequemer durchs Leben gehen lässt.</p>
+
+      <h3>Innovation und Usability sind unsere Identität</h3>
+
+      <p>Wir lieben Technologie! Als Digitalagentur leben wir diese Leidenschaft aus, indem wir Ideen und Vorgänge
+      an den Puls der Zeit anpassen. In Kombination mit unserem Fokus auf Benutzerfreundlichkeit ermöglichen wir
+      so eine Optimierung Ihrer Prozesse und das bessere Erreichen Ihrer Ziele.</p>
+
+      <p>anfema steht für die unfassbar gute Arbeit, die wir aufgrund der vielfältigen Erfahrungen und der
+      fachübergreifenden Kompetenzen unseres Teams liefern.</p>
+
+  -
+    component: 'content-quote'
+    quoteText: |
+     anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in
+     der App Entwicklung, denen ich je begegnet bin.
+    quoteSource: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+    project: knauf
+    projectLinkLabel: Projekt ansehen
+
+  -
+    component: 'content-lp-text'
+    id: 2-philosophy
+    title: Innovation. Begeisterung. Dynamik. Zusammenhalt. Hingabe. Vielfältigkeit. Qualität.
+    content: |
+      <p>Unsere Leistungen bestechen durch Qualität und Design, unser Team durch die tiefgreifende Expertise, in der
+      sich die jahrelange Erfahrung aus anspruchsvollen Projekten in unterschiedlichsten Branchen manifestiert hat.</p>
+
+      <p>Während wir intern auf bewährte Workflows zurückgreifen, setzen wir im Projektmanagement weiterhin auf
+      Kundennähe, Flexibilität und Individualität und schaffen damit Überragendes! </p>
+
+  -
+    component: 'content-slider'
+    services:
+      -
+        id: 'concept'
+        title: 'Prozesse vereinfachen, Nutzen maximieren'
+        text: |
+          Durch das durchdachte Synchronisieren Ihrer Idee, unseres Sachverstands und der Bedürfnisse der Nutzer
+          schaffen wir ein Konzept, das ebenso vorausschauend wie individuell ist - und damit die Grundlage für
+          Software, die hält, was sie verspricht.
+
+      -
+        id: 'design'
+        title: 'Usability, Kreativität & Innovation'
+        text: |
+          Mit innovativem Visual Design und intuitiven User Interfaces erwecken wir das Konzept zum Leben. Unsere
+          Werke zeichnen sich durch maximale Benutzerfreundlichkeit aus und sprengen nicht selten die
+          Vorstellungskraft unserer Kunden dahingehend, wie gut User Experience sein kann.
+
+      -
+        id: 'development'
+        title: 'Maßgeschneidert & hochqualitativ'
+        text: |
+          Sie erwarten Großes? Das sollten Sie auch! Unser Entwicklerteam besticht durch sein extensives Skill Set,
+          unzählige Erfahrungen, und kompromisslose Genauigkeit. Im Streben nach Perfektion treffen wir Ihre Idee auf
+          den Punkt und eröffnen Ihnen damit ungeahnte Möglichkeiten.
+
+      -
+        id: 'consulting'
+        title: 'Erfahrung, Sachverstand & Weitblick'
+        text: |
+          Neue Technologien lassen unser Herz höher schlagen! Weil wir das breite Spektrum an Optionen ständig und
+          mit Freude erkunden, wissen wir genau, welche Lösungen für Sie geeignet sind und erzeugen durch unseren
+          ehrlichen, fachkundigen Input den größtmöglichen Mehrwert für Ihr Projekt.
+
+      -
+        id: 'support'
+        title: 'Dauerhaft fortschrittlich'
+        text: |
+         Zukunftsträchtig ist ein System nur dann, wenn es auch nach seiner Release gepflegt wird. Wir agieren
+         vorausschauend und proaktiv, antizipieren entstehende Veränderungen in der digitalen Welt, und ersticken
+         Probleme so bereits im Keim.
+
+      -
+        id: 'management'
+        title: 'Kundennah & ohne Umwege'
+        text: |
+          Wir setzen auf technisch versiertes Management, das sich in Ihre Bedürfnisse eindenkt und Lösungen direkt
+          erarbeitet. Als Partner stehen wir Ihnen damit von der Konzeption an und über den gesamten Lebenszyklus des
+          Projekts hinweg zur Seite und sichern so dessen langfristigen Erfolg.
+
+  -
+    component: 'content-lp-text'
+    id: 3-philosophy
+    title: 'Hier sind die 4 wichtigsten Gründe, warum Du laut unseres Teams bei uns einsteigen solltest:'
+
+  -
+    component: 'content-folder'
+    team:
+      -
+        id: 'team1'
+        title: 'Grund #1 Ein großartiges Team'
+        text: |
+          Wir sind ein bunt gemischtes und dynamisches Team, das sich durch hohe Ansprüche und ein beeindruckendes
+          Skill Set aus mehreren Fachrichtungen ebenso auszeichnet, wie durch Zusammenhalt und Motivation. Wir gehen
+          nicht nur freundlich sondern freundschaftlich miteinander um. So gehören gemeinsames Kochen, Essen und
+          Kickern zu unserem Büroalltag.
+      -
+        id: 'team2'
+        title: 'Grund #2 Innovative Projekte mit neuesten Technologien'
+        text: |
+          Wir bedienen das gesamte Spektrum digitaler Entwicklungen und bewegen uns dabei in verschiedensten
+          Branchen. Dies verspricht einen abwechslungsreichen Arbeitsalltag mit spannenden, zukunftsorientierten
+          Projekten, die großes Entwicklungspotenzial bieten. Dafür bauen wir auf den Einsatz neuester und
+          vielfältiger Technologien - sowohl in der Arbeitsausstattung als auch in der Anwendung für unsere Projekte.
+
+      -
+        id: 'team3'
+        title: 'Grund #3 Agile Strukturen und großes Entwicklungspotenzial'
+        text: |
+          Flexibilität bedeutet für uns nicht nur, auf die Dynamik der digitalen Branche zu reagieren. Auch innerhalb
+          unseres Teams werden Strukturen an aktuelle Projekte und die besten Entwicklungsmethodiken angepasst. Guten
+          Ideen stehen wir offen gegenüber. Hier zählen Innovation und Kreativität statt starrer Hierarchien. Wer
+          diese Qualitäten mitbringt und selbstständig sowie eigenverantwortlich arbeitet, kann Veränderungen
+          vorantreiben. Steilen Lernkurven und persönlichen und professionellen Entwicklungen sind damit keine
+          Grenzen gesetzt.
+      -
+        id: 'team4'
+        title: 'Grund #4 Unschlagbare Lage und Firmenkultur'
+        text: |
+          Unsere beiden Büros liegen im Zentrum von München und Augsburg - zwei Städte, die sehr viel bieten! Neben
+          kurzen Arbeitswegen verspricht dies eine optimale Work-Life-Balance. Flexible Arbeitszeiten, schöne und
+          komfortable Büroräume sowie kostenlose Getränke tragen außerdem zu einer entspannten Arbeitsatmosphäre bei.
