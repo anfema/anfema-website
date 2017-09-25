@@ -8,6 +8,7 @@ sections:
   -
     component: 'content-lp-text'
     id: 1-philosophy
+    section_number: '01'
     title: Understanding Customers Like No Other
     content: |
       <p>We think nothing of generalised approach. Instead, putting ourselves in your position, we understand your
@@ -35,6 +36,7 @@ sections:
   -
     component: 'content-lp-text'
     id: 2-philosophy
+    section_number: '02'
     title: Innovation. Enthusiasm. Drive. Team Spirit. Commitment. Diversity. Quality.
     content: |
       <p>Our services impress with quality and design, our team excels due to their profound
@@ -97,6 +99,7 @@ sections:
   -
     component: 'content-lp-text'
     id: 3-philosophy
+    section_number: '03'
     title: 'According to our team, these are the top 4 reasons why you should join us:'
 
   -

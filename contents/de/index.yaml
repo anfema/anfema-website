@@ -9,6 +9,7 @@ sections:
   -
     component: 'content-lp-text'
     id: 1-philosophy
+    section_number: '01'
     title: Wir verstehen unsere Kunden wie kein Anderer
     content: |
       <p>Von pauschalen Ansätzen halten wir nichts. Wir wollen uns in Ihre Prozesse und Bedürfnisse eindenken, bevor
@@ -36,6 +37,7 @@ sections:
   -
     component: 'content-lp-text'
     id: 2-philosophy
+    section_number: '02'
     title: Innovation. Begeisterung. Dynamik. Zusammenhalt. Hingabe. Vielfältigkeit. Qualität.
     content: |
       <p>Unsere Leistungen bestechen durch Qualität und Design, unser Team durch die tiefgreifende Expertise, in der
@@ -99,6 +101,7 @@ sections:
     component: 'content-lp-text'
     id: 3-philosophy
     title: 'Hier sind die 4 wichtigsten Gründe, warum Du laut unseres Teams bei uns einsteigen solltest:'
+    section_number: '03'
 
   -
     component: 'content-folder'
