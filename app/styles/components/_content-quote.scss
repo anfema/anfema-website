@@ -1,0 +1,63 @@
+.content-quote {
+	@include grid-base;
+
+	position: relative;
+	padding: 8rem 0;
+	background-color: $color-grey-light;
+
+	&__text {
+		grid-column: 3 / -2;
+		margin: 4rem 0;
+		font-size: 3.4rem;
+		font-weight: 600;
+		line-height: 1.03;
+	}
+
+	&__source {
+		grid-column: -5 / span 3;
+		color: $color-grey;
+		font-size: 1.8rem;
+		text-align: right;
+	}
+
+	&__quotationmark {
+		display: block;
+		height: 0;
+		color: $color-grey-darker;
+		opacity: 0.06;
+		font-size: 55rem;
+		font-weight: 900;
+		line-height: 40rem;
+		text-align: left;
+	}
+
+	.quotationmark--open {
+		position: absolute;
+		grid-column: 2 / span 1;
+	}
+
+	.quotationmark--closed {
+		position: absolute;
+		grid-column: -2 / span 1;
+		text-align: right;
+	}
+
+	// TODO: move this to environment/typography when global link stylings are defined
+	.content-quote__project {
+		&,
+		&:link,
+		&:visited {
+			grid-column: 2 / 4;
+			color: $color-brand-2;
+			font-size: 1.8rem;
+			font-weight: 600;
+			text-align: left;
+			text-decoration: none;
+		}
+
+		&:focus,
+		&:hover {
+			color: $color-brand-1;
+		}
+	}
+}

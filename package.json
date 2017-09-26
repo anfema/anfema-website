@@ -4,6 +4,7 @@
   "description": "A brand new website for https://anfe.ma",
   "license": "MIT",
   "author": "anfema GmbH",
+  "main": "server/index.js",
   "directories": {
     "doc": "doc",
     "test": "tests"
