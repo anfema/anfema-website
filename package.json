@@ -15,6 +15,7 @@
     "eslint-fix": "eslint . --fix",
     "fix": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write && eslint . --fix && stylelint app/styles/**/*.scss --fix",
     "prettier": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write",
+    "fastboot": "node ./server/index.js",
     "start": "ember server",
     "stylelint": "stylelint app/styles/**/*.scss",
     "stylelint-fix": "stylelint app/styles/**/*.scss --fix",
@@ -30,7 +31,6 @@
     "ember-cli": "~2.15.0",
     "ember-cli-app-version": "~3.0.0",
     "ember-cli-babel": "~6.7.1",
-    "ember-cli-babili": "~0.2.0",
     "ember-cli-chai": "~0.4.0",
     "ember-cli-dependency-checker": "~2.0.0",
     "ember-cli-eslint": "~4.0.0",
@@ -44,6 +44,7 @@
     "ember-cli-shims": "~1.1.0",
     "ember-cli-sri": "~2.1.0",
     "ember-cli-stylelint": "~0.15.0",
+    "ember-cli-uglify": "^1.2.0",
     "ember-export-application-global": "~2.0.0",
     "ember-fetch": "^3.4.0",
     "ember-intl": "~2.31.1",
@@ -61,7 +62,7 @@
     "eslint-plugin-chai-expect": "~1.1.1",
     "eslint-plugin-chai-friendly": "~0.4.0",
     "eslint-plugin-ember": "~4.3.0",
-    "eslint-plugin-import": "~2.7.0",
+    "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-prettier": "^2.3.1",
     "loader.js": "~4.2.3",
     "prettier": "^1.7.0",
@@ -77,5 +78,9 @@
     "paths": [
       "lib/static-content"
     ]
+  },
+  "dependencies": {
+    "fastboot-app-server": "^1.0.2",
+    "rc": "^1.2.1"
   }
 }

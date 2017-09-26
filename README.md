@@ -46,15 +46,11 @@ This list will likely shrink in the future. Do not commit these files under any 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-
-
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
 
 This project uses pods. `--pods` is enabled by default. Use `--no-pods` for models, helpers, utils, mixins, and services.
-
-
 
 ### Linting
 
@@ -63,8 +59,6 @@ This project uses [ESLint](https://eslint.org), [Stylelint](https://stylelint.io
 Please enable the appropriate plugins in your editor. 
 
 There are scripts in `package.json` which can be used to run the in-repo versions of these tools. You can also use `yarn run fix` to run all three tools at once. We recommend to do so before committing or pushing to the git origin.
-
-
 
 ### Running Tests
 
@@ -80,7 +74,11 @@ This project uses [ember-mocha](https://github.com/emberjs/ember-mocha) with [em
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Use `yarn run fastboot` to run our standalone FastBoot server based on [fastboot-app-server](https://github.com/ember-fastboot/fastboot-app-server). See their README for documentation of available params. Our server uses [rc](https://github.com/dominictarr/rc) for configuration.
+
+```sh
+yarn run fastboot --port=31337 --host=anfe.ma
+```
 
 
 
