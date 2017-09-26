@@ -4,8 +4,10 @@ export default Component.extend({
 	tagName: 'section',
 	classNames: ['content-quote'],
 
-	quoteText: null,
-	quoteSource: null,
-	projectId: null,
-	projectLinkLabel: null,
+	// data: {
+	// 	text: null,
+	// 	source: null,
+	// 	projectId: null,
+	// 	projectLinkLabel: null,
+	// },
 });

@@ -1,19 +1,19 @@
 <span class="content-quote__quotationmark quotationmark--open">“</span>
 
-<blockquote class="quote-text">
-	{{{quoteText}}}
+<blockquote class="content-quote__text">
+	{{{data.text}}}
 </blockquote>
 
 <span class="content-quote__quotationmark quotationmark--closed">”</span>
 
-<cite class="quote-source">
-	{{{quoteSource}}}
+<cite class="content-quote__source">
+	{{{data.source}}}
 </cite>
 
-{{#if projectId}}
-	{{#link-to 'projects.details' projectId class='content-quote__project'}}
-		{{#if projectLinkLabel}}
-			{{projectLinkLabel}}
+{{#if data.projectId}}
+	{{#link-to 'projects.details' data.projectId class='content-quote__project'}}
+		{{#if data.projectLinkLabel}}
+			{{data.projectLinkLabel}}
 		{{else}}
 			{{t 'component.contet-quote.action.showProject'}}
 		{{/if}}
