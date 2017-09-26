@@ -6,4 +6,6 @@ module.exports = rc('anfema-website-server', {
 	host: '127.0.0.1',
 	port: 4000,
 	sandboxGlobals: {},
+	debounceDelay: 1000,
+	saneOptions: {},
 });

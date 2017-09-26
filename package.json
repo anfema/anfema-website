@@ -81,6 +81,7 @@
   },
   "dependencies": {
     "fastboot-app-server": "^1.0.2",
+    "fastboot-watch-notifier": "^3.0.0",
     "rc": "^1.2.1"
   }
 }
