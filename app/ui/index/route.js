@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 import PrefixMixin from 'anfema/mixins/prefix-mixin';
 import fetch from 'fetch';
-import {inject as service} from '@ember/service';
+import { inject as service } from '@ember/service';
 
 export default Route.extend(PrefixMixin, {
 	fastboot: service(),
