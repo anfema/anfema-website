@@ -11,6 +11,7 @@
 @function url-encode($string) {
 	// stylelint-disable string-quotes
 	$map: (
+		'	': '',
 		'%': '%25',
 		'<': '%3C',
 		'>': '%3E',

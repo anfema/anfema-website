@@ -1,5 +1,6 @@
 @mixin grid-base {
 	display: grid;
+	overflow: hidden;
 	grid-column-gap: 1.6rem;
 	grid-template-columns: repeat(8, 1fr);
 	justify-content: center;

@@ -14,10 +14,15 @@
 		grid-template-rows: 1fr fit-content(8.2rem) 1fr;
 		background: #363636 no-repeat;
 		background-image: inline-svg(
-				'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="lp-cover__logo"><g
-					fill="none"><polygon fill="#FFB200" points="44.445 66.667 33.333 100 0 100 22.223 33.333 33.333 0 66.667 16.667 100 100 66.667 100"/><polygon
-					fill="#FEA000" points="33.333 100 0 100 22.223 33.333"/><polygon fill="#FF8F00" points="44.388 66.667 33.277 100 22.167 33.333"/><polygon
-					fill="#FFB200" points="66.61 100 22.167 33.333 33.277 0"/><polygon fill="#FFCA27" points="66.667 16.667 33.333 0 66.667 100 100 100"/></g></svg>'
+				'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+					<g fill="none">
+						<polygon fill="#FFB200" points="8 12 6 18 0 18 4 6 6 0 18 3 18 18 12 18"/>
+						<polygon fill="#FEA000" points="6 18 0 18 4 6"/>
+						<polygon fill="#FF8F00" points="8 12 6 18 4 6"/>
+						<polygon fill="#FFB200" points="12 18 4 6 6 0"/>
+						<polygon fill="#FFCA27" points="12 3 6 0 12 18 18 18"/>
+					</g>
+				</svg>'
 			),
 			linear-gradient(to bottom, #292929, #363636);
 		background-position: right calc(-57vh + 20%) center, center;
@@ -44,10 +49,15 @@
 			margin: 0 -1.6rem;
 			padding: 0 1.6rem;
 			background: inline-svg(
-					'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="lp-cover__logo"><g
-					fill="none"><polygon fill="#FFB200" points="44.445 66.667 33.333 100 0 100 22.223 33.333 33.333 0 66.667 16.667 100 100 66.667 100"/><polygon
-					fill="#FEA000" points="33.333 100 0 100 22.223 33.333"/><polygon fill="#FF8F00" points="44.388 66.667 33.277 100 22.167 33.333"/><polygon
-					fill="#FFB200" points="66.61 100 22.167 33.333 33.277 0"/><polygon fill="#FFCA27" points="66.667 16.667 33.333 0 66.667 100 100 100"/></g></svg>'
+					'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+						<g fill="none">
+							<polygon fill="#FFB200" points="8 12 6 18 0 18 4 6 6 0 18 3 18 18 12 18"/>
+							<polygon fill="#FEA000" points="6 18 0 18 4 6"/>
+							<polygon fill="#FF8F00" points="8 12 6 18 4 6"/>
+							<polygon fill="#FFB200" points="12 18 4 6 6 0"/>
+							<polygon fill="#FFCA27" points="12 3 6 0 12 18 18 18"/>
+						</g>
+					</svg>'
 				)
 				no-repeat right calc(-32vh + 20%) bottom;
 			background-size: calc(90vh - 6rem) auto;
