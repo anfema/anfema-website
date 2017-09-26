@@ -12,18 +12,18 @@
 
 	<div class="logo-container__content content-slider__slidewindow">
 		<div class="content-slider__slider" style="{{sliderStyle}}">
-			{{#content-slider-slide data=previousSlide}}
+			{{#service-slide data=previousSlide}}
 				<h2>{{previousSlide.title}}</h2>
 				<div>{{previousSlide.text}}</div>
-			{{/content-slider-slide}}
-			{{#content-slider-slide data=currentSlide selected=true}}
+			{{/service-slide}}
+			{{#service-slide data=currentSlide selected=true}}
 				<h2>{{currentSlide.title}}</h2>
 				<div>{{currentSlide.text}}</div>
-			{{/content-slider-slide}}
-			{{#content-slider-slide data=nextSlide}}
+			{{/service-slide}}
+			{{#service-slide data=nextSlide}}
 				<h2>{{nextSlide.title}}</h2>
 				<div>{{nextSlide.text}}</div>
-			{{/content-slider-slide}}
+			{{/service-slide}}
 		</div>
 	</div>
 
