@@ -10,6 +10,8 @@ export default Component.extend({
 	 * props
 	 */
 
+	/** @type {string} */
+	slideComponentName: undefined,
 	/** @type {object} */
 	data: null,
 	/** @type {string} data.id*/

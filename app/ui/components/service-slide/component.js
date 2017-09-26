@@ -4,6 +4,6 @@ import { computed } from '@ember/object';
 export default Component.extend({
 	classNameBindings: ['isActive:content-slider-slide--active'],
 
-	content: null,
+	data: undefined,
 	selected: false,
 });
