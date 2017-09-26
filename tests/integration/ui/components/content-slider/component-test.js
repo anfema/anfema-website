@@ -24,7 +24,7 @@ describe('Integration | Component | content slider', function() {
 	beforeEach(function() {
 		this.set('data', data);
 		this.render(hbs`
-			{{content-slider data=data labelKey='title'}}
+			{{content-slider data=data}}
 		`);
 	});
 

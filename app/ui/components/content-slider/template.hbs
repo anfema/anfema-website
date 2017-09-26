@@ -7,11 +7,38 @@
 	{{/each}}
 </nav>
 
-<div class="content-slider__content">
-	{{#each data.services as |content|}}
-		{{#content-slider-slide content=content selected=selected}}
-			<h2>{{content.title}}</h2>
-			<div>{{content.text}}</div>
-		{{/content-slider-slide}}
-	{{/each}}
+<div class="logo-container">
+	{{anfema-logo step=logoStep options=(hash outlineMode=false strokeWidth=20 )}}
+
+	<div class="logo-container__content content-slider__slidewindow">
+		<div class="content-slider__slider" style="{{sliderStyle}}">
+			{{#content-slider-slide data=previousSlide}}
+				<h2>{{previousSlide.title}}</h2>
+				<div>{{previousSlide.text}}</div>
+			{{/content-slider-slide}}
+			{{#content-slider-slide data=currentSlide selected=true}}
+				<h2>{{currentSlide.title}}</h2>
+				<div>{{currentSlide.text}}</div>
+			{{/content-slider-slide}}
+			{{#content-slider-slide data=nextSlide}}
+				<h2>{{nextSlide.title}}</h2>
+				<div>{{nextSlide.text}}</div>
+			{{/content-slider-slide}}
+		</div>
+	</div>
+
+	<button class="content-slider__button content-slider__prev"
+		type="button"
+		disabled={{previousDisabled}}
+		{{action "slideToPrevious" bubbles=false}}
+		>
+		<img src="img/arrow-left.svg" class="arrow-left">
+	</button>
+	<button class="content-slider__button content-slider__next"
+		type="button"
+		disabled={{nextDisabled}}
+		{{action "slideToNext" bubbles=false}}
+		>
+		<img src="img/arrow-right.svg" class="arrow-right">
+	</button>
 </div>
