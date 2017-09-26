@@ -2,62 +2,142 @@
 	@include grid-base;
 
 	position: relative;
-	padding: 8rem 0;
+	overflow: hidden;
+	padding-top: 3rem;
+	padding-bottom: 0;
 	background-color: $color-grey-light;
 
+	@include media-l-min {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
 	&__text {
-		grid-column: 3 / -2;
+		position: relative;
+		z-index: 0;
+		grid-column: 2 / -1;
 		margin: 4rem 0;
-		font-size: 3.4rem;
-		font-weight: 600;
-		line-height: 1.03;
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 2.5rem;
+
+		@include media-l-min {
+			grid-column: 3 / -2;
+			font-size: 3.4rem;
+			line-height: 3.5rem;
+		}
+
+		& ~ * {
+			position: relative;
+			z-index: 1;
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			display: block;
+			overflow: visible;
+			color: $color-grey-darker;
+			opacity: 0.06;
+			font-size: 24rem;
+			font-weight: 700;
+			line-height: 24rem;
+			text-align: left;
+			vertical-align: middle;
+			pointer-events: none;
+			user-select: none;
+
+			@include media-l-min {
+				font-size: 55rem;
+				line-height: 40rem;
+			}
+		}
+
+		&::before {
+			top: -8rem;
+			left: -5rem;
+			content: '“';
+
+			@include media-l-min {
+				top: -8rem;
+				left: -13rem;
+			}
+		}
+
+		&::after {
+			top: -8rem;
+			right: 0;
+			text-align: right;
+			content: '”';
+
+			@include media-l-min {
+				top: -8rem;
+				right: -12rem;
+			}
+		}
 	}
 
 	&__source {
-		grid-column: -5 / span 3;
+		grid-column: 1 / -1;
 		color: $color-grey;
 		font-size: 1.8rem;
 		text-align: right;
-	}
 
-	&__quotationmark {
-		display: block;
-		height: 0;
-		color: $color-grey-darker;
-		opacity: 0.06;
-		font-size: 55rem;
-		font-weight: 900;
-		line-height: 40rem;
-		text-align: left;
-	}
-
-	.quotationmark--open {
-		position: absolute;
-		grid-column: 2 / span 1;
-	}
-
-	.quotationmark--closed {
-		position: absolute;
-		grid-column: -2 / span 1;
-		text-align: right;
+		@include media-l-min {
+			grid-column: -5 / span 3;
+		}
 	}
 
 	// TODO: move this to environment/typography when global link stylings are defined
 	.content-quote__project {
+		display: block;
+		grid-column: 1 / -1;
+		margin: 3rem 0 0;
+		padding: 2rem 0;
+		font-size: 1.8rem;
+		text-align: left;
+
+		@include media-l-min {
+			grid-column: 2 / span 2;
+			grid-row: 2 / span 1;
+			margin: 0;
+			padding: 0;
+		}
+
 		&,
 		&:link,
 		&:visited {
-			grid-column: 2 / 4;
 			color: $color-brand-2;
-			font-size: 1.8rem;
-			font-weight: 600;
-			text-align: left;
+			font-weight: 700;
 			text-decoration: none;
 		}
 
 		&:focus,
 		&:hover {
 			color: $color-brand-1;
+		}
+	}
+}
+
+html[lang='de'] {
+	.content-quote__text {
+		&:before {
+			top: auto;
+			content: '„';
+
+			@include media-l-max {
+				bottom: 5rem;
+				left: -1rem;
+			}
+
+			@include media-l-min {
+				bottom: -3rem;
+				left: -13rem;
+			}
+		}
+
+		&:after {
+			content: '“';
 		}
 	}
 }
