@@ -1,6 +1,7 @@
 .content-quote {
 	@include grid-base;
 
+	position: relative;
 	padding: 8rem 0;
 	background-color: $color-grey-light;
 
@@ -8,30 +9,35 @@
 		grid-column: 3 / -2;
 		margin: 4rem 0;
 		font-size: 3.4rem;
+		line-height: 1.03;
+		font-weight: 600;
 	}
 
 	cite {
 		grid-column: -5 / span 3;
 		text-align: right;
 		font-size: 1.8rem;
+		color: $color-grey;
 	}
 
 	&__quotationmark {
 		display: block;
 		height: 0;
 		opacity: 0.06;
-		font-size: 20rem;
-		font-weight: bold;
+		font-size: 55rem;
+		font-weight: 900;
 		line-height: 40rem;
 		text-align: left;
-		color: $color-grey;
+		color: $color-grey-darker;
 	}
 
 	.quotationmark--open {
+		position: absolute;
 		grid-column: 2 / span 1;
 	}
 
 	.quotationmark--closed {
+		position: absolute;
 		text-align: right;
 		grid-column: -2 / span 1;
 	}
