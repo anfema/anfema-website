@@ -6,60 +6,21 @@
 	</li>
 </ul>
 
-{{content-lp-cover
-	headline='Striving for Perfection'
-	subtitle='anfema is a highly capable team avidly creating individual and&nbsp;sophisticated digital solutions.'
-}}
+{{#each model.sections as |data|}}
+	{{#if data.services}}
+		<div class="grid grid--alt">
+			{{component data.component data=data labelKey='title' selected=service}}
+		</div>
+	{{else if data.team}}
+		<div class="grid grid--alt">
+			{{component data.component data=data labelKey='title' selected=team}}
+		</div>
+	{{else}}
+		{{component data.component data=data}}
+	{{/if}}
+{{/each}}
 
-{{content-lp-text
-	anchorId=contentText1.id
-	sectionLabel=contentText1.sectionLabel
-	title=contentText1.title
-	content=contentText1.content
-}}
-
-{{content-lp-text
-	anchorId=contentText2.id
-	sectionLabel=contentText2.sectionLabel
-	title=contentText2.title
-	content=contentText2.content
-}}
-
-{{content-quote
-	data=(hash
-		text='anfema know what they do, how to do it, and they do it damn fast. — One of the best partners in App development I’ve ever seen.'
-		source='Dominik Mandl, Online Marketing Manager<br>Knauf AMF GmbH & Co. KG'
-		projectLinkLabel='View the project'
-		projectId='knauf'
-	)
-}}
-
-<br>
-<br>
-
-<div class="grid grid--alt">
-	{{content-slider
-		contents=services
-		labelKey='title'
-		selected=service
-	}}
-</div>
-
-{{content-lp-text
-	anchorId=contentText3.id
-	sectionLabel=contentText3.sectionLabel
-	title=contentText3.title
-	content=contentText3.content
-}}
-
-<div class="grid grid--alt">
-	{{content-folder
-		contents=teams
-		labelKey='title'
-		selected=team
-	}}
-</div>
-
+{{!--
 <div>
 	{{#each model.jobs as |job|}}
 		{{job-application
@@ -70,5 +31,5 @@
 		}}
 	{{/each}}
 </div>
-
+--}}
 {{outlet}}

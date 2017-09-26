@@ -1,13 +1,13 @@
 sections:
   -
     component: 'content-lp-cover'
-    title: 'striving for perfection'
-    content: |
+    headline: 'striving for perfection'
+    subtitle: |
       anfema are a highly capable team who avidly create individual and sophisticated digital solutions.
 
   -
     component: 'content-lp-text'
-    id: 1-philosophy
+    anchorId: 1-philosophy
     sectionLabel: '01'
     title: Understanding Customers Like No Other
     content: |
@@ -24,18 +24,18 @@ sections:
       <p>anfema - that’s the incredibly good job we do as a result of our team’s diverse experience and their
       multidisciplinary competencies.</p>
 
-  -
-    component: 'content-quote'
-    quoteText: |
-      anfema know what they do, how to do it, and they do it damn fast. One of the best partners in App
-      development I’ve ever seen.
-    quoteSource: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
-    project: knauf
-    projectLinkLabel: View project
+#  -
+#    component: 'content-quote'
+#    quoteText: |
+#      anfema know what they do, how to do it, and they do it damn fast. One of the best partners in App
+#      development I’ve ever seen.
+#    quoteSource: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+#    project: knauf
+#    projectLinkLabel: View project
 
   -
     component: 'content-lp-text'
-    id: 2-philosophy
+    anchorId: 2-philosophy
     sectionLabel: '02'
     title: Innovation. Enthusiasm. Drive. Team Spirit. Commitment. Diversity. Quality.
     content: |
@@ -98,7 +98,7 @@ sections:
 
   -
     component: 'content-lp-text'
-    id: 3-philosophy
+    anchorId: 3-philosophy
     sectionLabel: '03'
     title: 'According to our team, these are the top 4 reasons why you should join us:'
 

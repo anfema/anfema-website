@@ -1,5 +1,5 @@
 <nav class="content-slider__navigation">
-	{{#each contents as |content|}}
+	{{#each data.services as |content|}}
 	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
 		{{#link-to 'index' (query-params service=content.id) class='content-slider__navigation-link'}}
 			{{get content labelKey}}
@@ -8,7 +8,7 @@
 </nav>
 
 <div class="content-slider__content">
-	{{#each contents as |content|}}
+	{{#each data.services as |content|}}
 		{{#content-slider-slide content=content selected=selected}}
 			<h2>{{content.title}}</h2>
 			<div>{{content.text}}</div>
