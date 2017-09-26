@@ -1,7 +1,23 @@
 <span class="content-quote__quotationmark quotationmark--open">“</span>
-<blockquote class="quote-text">{{{quoteText}}}</blockquote>
+
+<blockquote class="quote-text">
+	{{{quoteText}}}
+</blockquote>
+
 <span class="content-quote__quotationmark quotationmark--closed">”</span>
 
-<cite class="quote-source">{{{quoteSource}}}</cite> {{#if projectId}} {{#link-to 'projects.details' projectId class='content-quote__project'}}
-{{#if projectLinkLabel}} {{projectLinkLabel}} {{else}} {{t 'component.contet-quote.action.showProject'}} {{/if}} {{/link-to}}
-{{/if}} {{yield}}
+<cite class="quote-source">
+	{{{quoteSource}}}
+</cite>
+
+{{#if projectId}}
+	{{#link-to 'projects.details' projectId class='content-quote__project'}}
+		{{#if projectLinkLabel}}
+			{{projectLinkLabel}}
+		{{else}}
+			{{t 'component.contet-quote.action.showProject'}}
+		{{/if}}
+	{{/link-to}}
+{{/if}}
+
+{{yield}}
