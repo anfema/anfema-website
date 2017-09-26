@@ -1,10 +1,10 @@
-import {expect} from 'chai';
-import {describe, it} from 'mocha';
-import {setupComponentTest} from 'ember-mocha';
+import { expect } from 'chai';
+import { describe, it } from 'mocha';
+import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
-import {find, findAll} from 'ember-native-dom-helpers';
+import { find, findAll } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | job application', function () {
+describe('Integration | Component | job application', function() {
 	setupComponentTest('job-application', {
 		integration: true,
 	});
@@ -15,11 +15,11 @@ describe('Integration | Component | job application', function () {
 			description: 'Starting Mid 2018',
 			details_link: '#',
 			team: 'Android',
-			apply_link: 'jobs+android@anfe.ma'
+			apply_link: 'jobs+android@anfe.ma',
 		},
 	];
 
-	it('renders', function () {
+	it('renders', function() {
 		this.set('job', job);
 		this.render(hbs`
 			{{job-application
@@ -35,5 +35,4 @@ describe('Integration | Component | job application', function () {
 		expect(find('.job-application__apply_link')).to.exist;
 		expect(find('.job-application')).to.exist;
 	});
-
 });

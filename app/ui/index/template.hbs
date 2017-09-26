@@ -9,42 +9,44 @@
 {{content-lp-cover headline='Striving for Perfection' subtitle='anfema is a highly capable team avidly creating individual
 and&nbsp;sophisticated digital solutions.' }}
 
-<section class="lp-section">
-	<header>
-		<a id="1-philosophy">01</a>
-		<h2>Understanding customers like no&nbsp;other</h2>
-	</header>
+{{content-lp-text
+	anchorId=contentText1.id
+	sectionLabel=contentText1.sectionLabel
+	title=contentText1.title
+	content=contentText1.content
+}}
 
-	<p>We think nothing of generalised approach. Instead, putting ourselves in your position, we understand your
-		processes and
-		needs before we’ll jointly develop a strategy. This way, we ensure that our customised software becomes a
-		solution that
-		makes your life more convenient. </p>
-
-	<h3>Innovation and Usability are our Identity</h3>
-
-	<p>We love technology! Indulging in our passion, we bring your ideas and procedures up to date, and, in combination
-		with our
-		focus on user-friendliness, we enable your processes’ optimisation and the better achievement of your
-		goals. </p>
-
-	<p>anfema - that’s the incredibly good job we do as a result of our team’s diverse experience and their
-		multidisciplinary competencies.
-	</p>
-</section>
+{{content-lp-text
+	anchorId=contentText2.id
+	sectionLabel=contentText2.sectionLabel
+	title=contentText2.title
+	content=contentText2.content
+}}
 
 <div class="grid grid--alt">
-	{{content-slider contents=model.sections.4.services labelKey='title' selected=service }}
+	{{content-slider contents=services labelKey='title' selected=service }}
 </div>
 
+{{content-lp-text
+	anchorId=contentText3.id
+	sectionLabel=contentText3.sectionLabel
+	title=contentText3.title
+	content=contentText3.content
+}}
+
 <div class="grid grid--alt">
-	{{content-folder contents=model.sections.6.team labelKey='title' selected=team }}
+	{{content-folder contents=teams labelKey='title' selected=team }}
 </div>
 
 <div>
-	{{#each model.jobs as |job|}} {{job-application title=job.title description=job.description
-	                                                details_link=job.details_link
-	                                                team=job.team }} {{/each}}
+	{{#each model.jobs as |job|}}
+		{{job-application
+			title=job.title
+			description=job.description
+			details_link=job.details_link
+			team=job.team
+		}}
+	{{/each}}
 </div>
 
 {{outlet}}
