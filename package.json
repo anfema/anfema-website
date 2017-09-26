@@ -22,11 +22,11 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "~7.1.4",
     "babel-eslint": "~7.2.3",
     "broccoli-asset-rev": "~2.4.5",
     "chai": "~4.1.2",
-    "css-mqpacker": "^6.0.1",
+    "css-mqpacker": "~6.0.1",
     "ember-addon-anfema-blueprints": "~0.4.0",
     "ember-cli": "~2.15.0",
     "ember-cli-app-version": "~3.0.0",
@@ -39,14 +39,14 @@
     "ember-cli-htmlbars-inline-precompile": "~1.0.0",
     "ember-cli-inject-live-reload": "~1.4.1",
     "ember-cli-mocha": "~0.14.4",
-    "ember-cli-postcss": "^3.5.2",
+    "ember-cli-postcss": "~3.5.2",
     "ember-cli-sass": "~7.0.0",
     "ember-cli-shims": "~1.1.0",
     "ember-cli-sri": "~2.1.0",
     "ember-cli-stylelint": "~0.15.0",
-    "ember-cli-uglify": "^1.2.0",
+    "ember-cli-uglify": "~2.0.0-beta.2",
     "ember-export-application-global": "~2.0.0",
-    "ember-fetch": "^3.4.0",
+    "ember-fetch": "~3.4.0",
     "ember-intl": "~2.31.1",
     "ember-load-initializers": "~1.0.0",
     "ember-native-dom-helpers": "~0.5.4",
@@ -55,17 +55,17 @@
     "ember-source": "~2.15.0",
     "ember-test-selectors": "~0.3.7",
     "eslint": "~4.6.1",
-    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-config-airbnb-base": "~12.0.0",
     "eslint-config-anfema": "~4.0.0",
-    "eslint-config-prettier": "^2.5.0",
+    "eslint-config-prettier": "~2.5.0",
     "eslint-plugin-babel": "~4.1.2",
     "eslint-plugin-chai-expect": "~1.1.1",
     "eslint-plugin-chai-friendly": "~0.4.0",
     "eslint-plugin-ember": "~4.3.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-import": "~2.7.0",
+    "eslint-plugin-prettier": "~2.3.1",
     "loader.js": "~4.2.3",
-    "prettier": "^1.7.0",
+    "prettier": "~1.7.0",
     "stylelint": "~8.1.1",
     "stylelint-config-anfema": "~6.0.0",
     "stylelint-order": "~0.6.0"
@@ -80,8 +80,8 @@
     ]
   },
   "dependencies": {
-    "fastboot-app-server": "^1.0.2",
-    "fastboot-watch-notifier": "^3.0.0",
-    "rc": "^1.2.1"
+    "fastboot-app-server": "~1.0.2",
+    "fastboot-watch-notifier": "~3.0.0",
+    "rc": "~1.2.1"
   }
 }
