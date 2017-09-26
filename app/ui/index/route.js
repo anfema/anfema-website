@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 import PrefixMixin from 'anfema/mixins/prefix-mixin';
 import fetch from 'fetch';
-import { inject as service } from '@ember/service';
+import {inject as service} from '@ember/service';
 
 export default Route.extend(PrefixMixin, {
 	fastboot: service(),
@@ -33,8 +33,8 @@ export default Route.extend(PrefixMixin, {
 			controller.set('contentText1', contentText1);
 			controller.set('contentText2', contentText2);
 			controller.set('contentText3', contentText3);
-			controller.set('service_arr', services.services);
-			controller.set('team_arr', team.team);
+			controller.set('services', services.services);
+			controller.set('teams', team.team);
 		}
 	},
 });

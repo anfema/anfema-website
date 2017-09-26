@@ -10,41 +10,41 @@
 and&nbsp;sophisticated digital solutions.' }}
 
 {{content-lp-text
-		anchor_id=contentText1.id
-		section_number=contentText1.section_number
-		title=contentText1.title
-		content=contentText1.content
+	anchorId=contentText1.id
+	sectionLabel=contentText1.sectionLabel
+	title=contentText1.title
+	content=contentText1.content
 }}
 
 {{content-lp-text
-		anchor_id=contentText2.id
-		section_number=contentText2.section_number
-		title=contentText2.title
-		content=contentText2.content
+	anchorId=contentText2.id
+	sectionLabel=contentText2.sectionLabel
+	title=contentText2.title
+	content=contentText2.content
 }}
 
 <div class="grid grid--alt">
-	{{content-slider contents=service_arr labelKey='title' selected=service }}
+	{{content-slider contents=services labelKey='title' selected=service }}
 </div>
 
 {{content-lp-text
-		anchor_id=contentText3.id
-		section_number=contentText3.section_number
-		title=contentText3.title
-		content=contentText3.content
+	anchorId=contentText3.id
+	sectionLabel=contentText3.sectionLabel
+	title=contentText3.title
+	content=contentText3.content
 }}
 
 <div class="grid grid--alt">
-	{{content-folder contents=team_arr labelKey='title' selected=team }}
+	{{content-folder contents=teams labelKey='title' selected=team }}
 </div>
 
 <div>
 	{{#each model.jobs as |job|}}
 		{{job-application
-				title=job.title
-				description=job.description
-				details_link=job.details_link
-				team=job.team
+			title=job.title
+			description=job.description
+			details_link=job.details_link
+			team=job.team
 		}}
 	{{/each}}
 </div>

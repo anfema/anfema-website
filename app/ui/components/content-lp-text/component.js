@@ -1,11 +1,11 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-	classNames: ['lp-section'],
+	classNames: ['content-lp-section'],
 	tagName: 'section',
 
-	anchor_id: null,
+	anchorId: null,
 	title: null,
 	content: null,
-	section_number: null,
+	sectionLabel: null,
 });
