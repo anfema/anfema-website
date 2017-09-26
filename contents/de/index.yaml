@@ -46,6 +46,7 @@ sections:
       Kundennähe, Flexibilität und Individualität und schaffen damit Überragendes! </p>
 
   -
+    id: 'services'
     component: 'content-slider'
     services:
       -
