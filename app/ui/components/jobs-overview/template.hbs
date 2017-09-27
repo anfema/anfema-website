@@ -1,0 +1,8 @@
+{{#each data.jobs as |job|}}
+	{{job-application
+		title=job.title
+		description=job.description
+		detailsLink=job.detailsLink
+		team=job.team
+	}}
+{{/each}}

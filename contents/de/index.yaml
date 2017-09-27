@@ -35,7 +35,7 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 2-philosophy
+    anchorId: 2-services
     sectionLabel: '02'
     title: Innovation. Begeisterung. Dynamik. Zusammenhalt. Hingabe. Vielfältigkeit. Qualität.
     content: |
@@ -98,7 +98,7 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 3-philosophy
+    anchorId: 3-team
     title: 'Hier sind die 4 wichtigsten Gründe, warum Du laut unseres Teams bei uns einsteigen solltest:'
     sectionLabel: '03'
 
@@ -139,3 +139,30 @@ sections:
           Unsere beiden Büros liegen im Zentrum von München und Augsburg - zwei Städte, die sehr viel bieten! Neben
           kurzen Arbeitswegen verspricht dies eine optimale Work-Life-Balance. Flexible Arbeitszeiten, schöne und
           komfortable Büroräume sowie kostenlose Getränke tragen außerdem zu einer entspannten Arbeitsatmosphäre bei.
+
+  -
+    component: 'jobs-overview'
+    jobs:
+      -
+        title: 'Praktikum Android Development (f/m/*)'
+        description: 'Ab 2018'
+        detailsLink: '#'
+        team: 'android'
+
+      -
+        title: 'Praktikum iOS Development (f/m/*)'
+        description: 'Ab 2018'
+        detailsLink: '#'
+        team: 'ios'
+
+      -
+        title: 'Senior Python Developer (f/m/*)'
+        description: 'Ab 2018'
+        detailsLink: '#'
+        team: 'python'
+
+      -
+        title: 'Office Manager (f/m/*)'
+        description: 'Ab 2018'
+        detailsLink: '#'
+        team: 'office'
