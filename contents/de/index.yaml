@@ -47,7 +47,7 @@ sections:
 
   -
     id: 'services'
-    component: 'content-slider'
+    component: 'services-content'
     services:
       -
         id: 'concept'

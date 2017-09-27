@@ -19,6 +19,8 @@ export default Component.extend({
 	/** @type {boolean} */
 	cycle: true,
 
+	onChange: undefined,
+
 	/*
 	 * state
 	 */
@@ -113,24 +115,16 @@ export default Component.extend({
 		slideToPrevious() {
 			const currentIndex = this.get('currentIndex');
 
-			if (this.cycle || currentIndex > 0) {
-				this.setProperties({
-					selected: this.data[mod(currentIndex - 1, this.data.length)].id,
-					slideOffset: -1,
-					dragStartPosition: undefined
-				});
+			if (this.onChange && (this.cycle || this.currentIndex > 0)) {
+				this.onChange(this.data[mod(currentIndex - 1, this.data.length)].id);
 			}
 		},
 
 		slideToNext() {
 			const currentIndex = this.get('currentIndex');
 
-			if (this.cycle || currentIndex < this.data.length - 1) {
-				this.setProperties({
-					selected: this.data[mod(currentIndex + 1, this.data.length)].id,
-					slideOffset: 1,
-					dragStartPosition: undefined
-				});
+			if (this.onChange && (this.cycle || this.currentIndex < this.data.length - 1)) {
+				this.onChange(this.data[mod(currentIndex + 1, this.data.length)].id);
 			}
 		},
 	},
@@ -222,31 +216,12 @@ export default Component.extend({
 			const sliderWidth = this.element.querySelector('.content-slider__slidewindow').clientWidth;
 
 			if (Math.abs(offset) / sliderWidth > 0.3) {
-				if (offset > 0) {
-					if (this.cycle || currentIndex > 0) {
-						this.setProperties({
-							selected: this.data[mod(currentIndex - 1, this.data.length)].id,
-							slideOffset: -1,
-							// dragOffset: 0,
-							dragStartPosition: -this.dragStartPosition
-						});
-					}
-					else {
-						// TODO
-					}
+				if (this.onChange && offset > 0 && (this.cycle || currentIndex > 0)) {
+					this.onChange(this.data[mod(currentIndex - 1, this.data.length)].id);
+
 				}
-				else {
-					if (this.cycle || currentIndex < this.data.length - 1) {
-						this.setProperties({
-							selected: this.data[mod(currentIndex + 1, this.data.length)].id,
-							slideOffset: 1,
-							// dragOffset: 0,
-							dragStartPosition: -this.dragStartPosition
-						});
-					}
-					else {
-						// TODO
-					}
+				else if (this.onChange && offset < 0 && (this.cycle || currentIndex < this.data.length - 1)) {
+					this.onChange(this.data[mod(currentIndex + 1, this.data.length)].id);
 				}
 			}
 			else {

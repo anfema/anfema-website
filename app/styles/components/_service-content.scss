@@ -1,0 +1,21 @@
+.service-content {
+	& > .menu-strip {
+		height: 90px;
+	}
+
+	&__slider {
+		height: 510px;
+	}
+
+	&__background {
+		position: absolute;
+	}
+
+	& .anfema-logo {
+		// position: absolute;
+		right: 0;
+		top: 75px;
+		width: 460px;
+		height: 340px;
+	}
+}
