@@ -25,14 +25,14 @@ sections:
       <p>anfema steht für die unfassbar gute Arbeit, die wir aufgrund der vielfältigen Erfahrungen und der
       fachübergreifenden Kompetenzen unseres Teams liefern.</p>
 
-#  -
-#    component: 'content-quote'
-#    quoteText: |
-#     anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in
-#     der App Entwicklung, denen ich je begegnet bin.
-#    quoteSource: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
-#    project: knauf
-#    projectLinkLabel: Projekt ansehen
+  -
+    component: 'content-quote'
+    text: |
+     anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in
+     der App Entwicklung, denen ich je begegnet bin.
+    source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+    projectId: knauf
+    projectLinkLabel: Projekt ansehen
 
   -
     component: 'content-lp-text'

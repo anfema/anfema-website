@@ -24,14 +24,14 @@ sections:
       <p>anfema - that’s the incredibly good job we do as a result of our team’s diverse experience and their
       multidisciplinary competencies.</p>
 
-#  -
-#    component: 'content-quote'
-#    quoteText: |
-#      anfema know what they do, how to do it, and they do it damn fast. One of the best partners in App
-#      development I’ve ever seen.
-#    quoteSource: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
-#    project: knauf
-#    projectLinkLabel: View project
+  -
+    component: 'content-quote'
+    text: |
+      anfema know what they do, how to do it, and they do it damn fast. One of the best partners in App
+      development I’ve ever seen.
+    source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+    projectId: knauf
+    projectLinkLabel: View project
 
   -
     component: 'content-lp-text'
