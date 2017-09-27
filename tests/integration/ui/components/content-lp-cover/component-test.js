@@ -9,6 +9,12 @@ describe('Integration | Component | content lp cover', function() {
 		integration: true,
 	});
 
+	const data = {
+		headline: 'foo',
+		subtitle: '<p>bar</p>',
+		component: 'content-lp-cover',
+	};
+
 	it('renders', function() {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.on('myAction', function (val) { ... });
@@ -19,7 +25,9 @@ describe('Integration | Component | content lp cover', function() {
 		// 	{{/content-lp-cover}}
 		// `);
 
-		this.render(hbs`{{content-lp-cover headline="foo" subtitle="<p>bar</p>"}}`);
+		this.set('data', data);
+
+		this.render(hbs`{{content-lp-cover data=data}}`);
 
 		expect(find('.content-lp-cover')).to.exist;
 		expect(find('.content-lp-cover h1')).to.exist;

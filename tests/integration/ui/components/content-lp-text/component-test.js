@@ -9,6 +9,14 @@ describe('Integration | Component | content lp text', function() {
 		integration: true,
 	});
 
+	const data = {
+		anchorId: '1-philosophy',
+		component: 'content-lp-text',
+		content: 'bar',
+		sectionLabel: '01',
+		title: 'foo',
+	};
+
 	it('renders', function() {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.on('myAction', function (val) { ... });
@@ -19,14 +27,9 @@ describe('Integration | Component | content lp text', function() {
 		// 	{{/content-lp-text}}
 		// `);
 
-		this.render(hbs`
-			{{content-lp-text
-				anchorId='1-philosophy'
-				sectionLabel='01'
-				title='foo'
-				content='bar'
-			}}
-		`);
+		this.set('data', data);
+
+		this.render(hbs`{{content-lp-text data=data}}`);
 
 		expect(find('.content-lp-section')).to.exist;
 		expect(find('.content-lp-section a')).to.exist;
