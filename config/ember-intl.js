@@ -9,13 +9,13 @@ module.exports = function(/* env */) {
 		 * where ember-intl is able to look them up (<project root>/translations/).
 		 *
 		 * If the project relies on side-loading translations, then you must explicitly
-		 * list out the locales. i.e: ['en-us', 'en-gb', 'fr-fr']
+		 * list out the locales. i.e: ['en', 'en-gb', 'fr-fr']
 		 *
 		 * @property locales
 		 * @type {Array?}
 		 * @default "null"
 		 */
-		locales: ['de', 'en-us'],
+		locales: ['de', 'en'],
 
 		/**
 		 * baseLocale is used to determine if translation keys are missing from other locales.

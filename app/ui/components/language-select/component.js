@@ -9,7 +9,7 @@ export default Component.extend({
 
 	locale: readOnly('intl.locale.0'),
 
-	isEn: equal('locale', 'en-us'),
+	isEn: equal('locale', 'en'),
 	isDe: equal('locale', 'de'),
 
 	actions: {

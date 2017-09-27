@@ -24,12 +24,12 @@ describe('Integration | Component | language select', function() {
 			{{language-select}}
 		`);
 
-		await click('[data-test-locale="en-us"]');
+		await click('[data-test-locale="en"]');
 
 		expect(find('[data-test-locale=de]').className).to.not.include(
 			'language-select-button--active'
 		);
-		expect(find('[data-test-locale=en-us]').className).to.include(
+		expect(find('[data-test-locale=en]').className).to.include(
 			'language-select-button--active'
 		);
 
@@ -38,7 +38,7 @@ describe('Integration | Component | language select', function() {
 		expect(find('[data-test-locale=de]').className).to.include(
 			'language-select-button--active'
 		);
-		expect(find('[data-test-locale=en-us]').className).to.not.include(
+		expect(find('[data-test-locale=en]').className).to.not.include(
 			'language-select-button--active'
 		);
 	});
