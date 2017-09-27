@@ -1,17 +1,19 @@
-<nav class="content-folder__navigation">
+{{!--<nav class="content-folder__navigation">
 	{{#each data.team as |content|}}
-	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
 		{{#link-to 'index' (query-params team=content.id) class='content-folder__navigation-link'}}
 			{{get content labelKey}}
 		{{/link-to}}
 	{{/each}}
-</nav>
+</nav>--}}
 
 <div class="content-folder__content">
 	{{#each data.team as |content|}}
-		{{#content-folder-item content=content selected=selected}}
-			<h2>{{content.title}}</h2>
-			<div>{{content.text}}</div>
-		{{/content-folder-item}}
+		{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
+			{{#content-folder-item content=content selected=selected}}
+				{{#link-to 'index' (query-params team=content.id) class='content-folder__navigation-link'}}
+					<h2>{{content.title}}</h2>
+				{{/link-to}}
+				<div>{{content.text}}</div>
+			{{/content-folder-item}}
 	{{/each}}
 </div>
