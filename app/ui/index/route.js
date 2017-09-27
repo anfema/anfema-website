@@ -11,9 +11,7 @@ export default Route.extend(PrefixMixin, {
 
 	model() {
 		if (!this.get('fastboot.isFastBoot')) {
-			return fetch(`/contents/${this.get('intl.locale')[0]}/index.json`).then(response =>
-				response.json()
-			);
+			return fetch(`/contents/${this.get('intl.locale')[0]}/index.json`).then(response => response.json());
 		}
 		//TODO retrieve model in fastboot
 	},

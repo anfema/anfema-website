@@ -14,8 +14,25 @@ export default Component.extend({
 			return;
 		}
 
-		window.addEventListener('scroll', () =>
-			throttle(this, () => this.set('scrollTop', window.scrollY), 200)
-		);
+		this._scrollEventListener = () =>
+			throttle(
+				this,
+				() => {
+					if (!this.isDestroyed) {
+						this.set('scrollTop', window.scrollY);
+					}
+				},
+				200
+			);
+
+		window.addEventListener('scroll', this._scrollEventListener);
+	},
+
+	willRemoveElement() {
+		if (!window) {
+			return;
+		}
+
+		window.removeEventListener('scroll', this._scrollEventListener);
 	},
 });
