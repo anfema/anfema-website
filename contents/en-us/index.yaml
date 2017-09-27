@@ -34,7 +34,7 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 2-philosophy
+    anchorId: 2-services
     sectionLabel: '02'
     title: Innovation. Enthusiasm. Drive. Team Spirit. Commitment. Diversity. Quality.
     content: |
@@ -97,7 +97,7 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 3-philosophy
+    anchorId: 3-team
     sectionLabel: '03'
     title: 'According to our team, these are the top 4 reasons why you should join us:'
 
@@ -136,3 +136,30 @@ sections:
           Both of our offices are centrally located in the promising and lively cities of Munich and Augsburg.
           This makes for a short commute and adds to a great work-life-balance. In combination with flexible work
           hours, comfortable offices, and drinks provided free of charge, this makes for an enjoyable work climate.
+
+  -
+    component: 'job-advertisements'
+    jobs:
+      -
+        title: 'Student Intern Android Development (f/m/*)'
+        description: 'Starting 2018'
+        detailsLink: '#'
+        team: 'android'
+
+      -
+        title: 'Student Intern iOS Development (f/m/*)'
+        description: 'Starting 2018'
+        detailsLink: '#'
+        team: 'ios'
+
+      -
+        title: 'Senior Python Developer (f/m/*)'
+        description: 'Starting 2018'
+        detailsLink: '#'
+        team: 'python'
+
+      -
+        title: 'Office Manager (f/m/*)'
+        description: 'Starting 2018'
+        detailsLink: '#'
+        team: 'office'
