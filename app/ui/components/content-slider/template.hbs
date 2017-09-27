@@ -1,8 +1,13 @@
 <nav class="content-slider__navigation">
 	{{#each data.services as |content|}}
 	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
+<<<<<<< HEAD
 		{{#link-to 'language' (query-params service=content.id) class='content-slider__navigation-link'}}
 			{{get content labelKey}}
+=======
+		{{#link-to 'index' (query-params service=content.id) class='content-slider__navigation-link'}}
+			{{content.id}}
+>>>>>>> FEATURE: Fix and style slider button bar
 		{{/link-to}}
 	{{/each}}
 </nav>

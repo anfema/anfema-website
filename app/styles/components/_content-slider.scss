@@ -1,28 +1,30 @@
 .content-slider {
 	&__navigation {
 		width: 100%;
+		height: 75px;
 		display: flex;
 		flex-wrap: nowrap;
 		overflow: hidden;
 
 		a#{&}-link {
-			color: $color-brand-1;
-			flex: 0 0 auto;
+			transition: color 200ms;
 			text-transform: uppercase;
 			font-weight: bold;
+			flex: 0 0 auto;
+			vertical-align: baseline;
+
+			color: $color-brand-1;
+			font-weight: bold;
 			text-decoration: none;
+
 			padding: 20px 0 20px;
-			margin-right: 20px;
+			margin: 0 20px 0 0;
 
 			&.active {
 				color: $color-text;
 			}
-		}
 
-		& > li {
-			list-style: none;
-			text-transform: uppercase;
-			font-weight: bold;
+			// TODO define hover state
 		}
 	}
 
@@ -69,7 +71,7 @@
 		width: 100%;
 		flex-wrap: nowrap;
 		align-items: stretch;
-		transition: all 0.4s;
+		transition: transform 0.4s;
 	}
 
 	&__slide {
