@@ -5,6 +5,7 @@ export default Component.extend({
 
 	title: null,
 	description: null,
-	details_link: null,
 	team: null,
+	detailsLink: null,
+	detailsLinkLabel: null,
 });
