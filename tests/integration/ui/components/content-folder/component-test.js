@@ -9,20 +9,23 @@ describe('Integration | Component | content folder', function() {
 		integration: true,
 	});
 
-	const content = [
-		{
-			id: 'team',
-			title: 'team title',
-			text: 'team text',
-			hidden: false,
-		},
-	];
+	const data = {
+		component: 'content-folder',
+		team: [
+			{
+				id: 'team',
+				title: 'team title',
+				text: 'team text',
+				hidden: false,
+			},
+		],
+	};
 
 	beforeEach(function() {
-		this.set('content', content);
+		this.set('data', data);
 		this.render(hbs`
 			{{content-folder
-				contents=content
+				data=data
 				labelKey='title'
 			}}
 		`);
@@ -45,6 +48,6 @@ describe('Integration | Component | content folder', function() {
 		const contentElement = find('.content-folder__content');
 
 		expect(contentElement).to.exist;
-		expect(contentElement.children).to.be.lengthOf(content.length);
+		expect(contentElement.children).to.be.lengthOf(data.team.length);
 	});
 });

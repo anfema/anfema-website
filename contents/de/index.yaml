@@ -1,14 +1,14 @@
 sections:
   -
     component: 'content-lp-cover'
-    title: 'striving for perfection'
-    content: |
+    headline: 'striving for perfection'
+    subtitle: |
       anfema ist ein außergewöhnliches Team, das mit Begeisterung individuelle und hervorragende digitale
       Lösungen erstellt.
 
   -
     component: 'content-lp-text'
-    id: 1-philosophy
+    anchorId: 1-philosophy
     sectionLabel: '01'
     title: Wir verstehen unsere Kunden wie kein Anderer
     content: |
@@ -27,16 +27,16 @@ sections:
 
   -
     component: 'content-quote'
-    quoteText: |
+    text: |
      anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in
      der App Entwicklung, denen ich je begegnet bin.
-    quoteSource: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
-    project: knauf
+    source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+    projectId: knauf
     projectLinkLabel: Projekt ansehen
 
   -
     component: 'content-lp-text'
-    id: 2-philosophy
+    anchorId: 2-philosophy
     sectionLabel: '02'
     title: Innovation. Begeisterung. Dynamik. Zusammenhalt. Hingabe. Vielfältigkeit. Qualität.
     content: |
@@ -99,7 +99,7 @@ sections:
 
   -
     component: 'content-lp-text'
-    id: 3-philosophy
+    anchorId: 3-philosophy
     title: 'Hier sind die 4 wichtigsten Gründe, warum Du laut unseres Teams bei uns einsteigen solltest:'
     sectionLabel: '03'
 

@@ -9,22 +9,22 @@ describe('Integration | Component | content slider', function() {
 		integration: true,
 	});
 
-	const content = [
-		{
-			id: 'concept',
-			title: 'concept title',
-			text: 'concept text',
-			hidden: false,
-		},
-	];
+	const data = {
+		component: 'content-slider',
+		services: [
+			{
+				id: 'concept',
+				title: 'concept title',
+				text: 'concept text',
+				hidden: false,
+			},
+		],
+	};
 
 	beforeEach(function() {
-		this.set('content', content);
+		this.set('data', data);
 		this.render(hbs`
-			{{content-slider
-				contents=content
-				labelKey='title'
-			}}
+			{{content-slider data=data labelKey='title'}}
 		`);
 	});
 
@@ -47,6 +47,6 @@ describe('Integration | Component | content slider', function() {
 		const contentElement = find('.content-slider__content');
 
 		expect(contentElement).to.exist;
-		expect(contentElement.children).to.be.lengthOf(content.length);
+		expect(contentElement.children).to.be.lengthOf(data.services.length);
 	});
 });

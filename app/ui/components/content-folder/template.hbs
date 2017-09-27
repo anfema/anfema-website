@@ -1,5 +1,5 @@
 <nav class="content-folder__navigation">
-	{{#each contents as |content|}}
+	{{#each data.team as |content|}}
 	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
 		{{#link-to 'index' (query-params team=content.id) class='content-folder__navigation-link'}}
 			{{get content labelKey}}
@@ -8,7 +8,7 @@
 </nav>
 
 <div class="content-folder__content">
-	{{#each contents as |content|}}
+	{{#each data.team as |content|}}
 		{{#content-folder-item content=content selected=selected}}
 			<h2>{{content.title}}</h2>
 			<div>{{content.text}}</div>
