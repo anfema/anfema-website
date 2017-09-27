@@ -1,0 +1,6 @@
+{{#each items as |item|}}
+	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass--}}
+	{{#link-to 'index' (query-params service=item.id) class='menu-strip__link'}}
+		{{item.id}}
+	{{/link-to}}
+{{/each}}

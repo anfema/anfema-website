@@ -23,6 +23,8 @@ export default Component.extend({
 	 * state
 	 */
 
+	/** @type {Object} */
+	oldAttrs: undefined,
 	/** @type {number | undefined} */
 	dragStartPosition: undefined,
 	/** @type {number} */
@@ -131,6 +133,44 @@ export default Component.extend({
 				});
 			}
 		},
+	},
+
+	/*
+	 * lifecycle
+	 */
+
+	init() {
+		this._super(...arguments)
+		this.oldAttrs = [];
+	},
+
+	didReceiveAttrs() {
+		// idea from https://gist.github.com/buschtoens/708611e904dd515716080305405d86c9
+		this._super(...arguments);
+
+		const attrNames = ['selectedId', 'data'];
+		const oldAttrs = this.get('oldAttrs');
+		const newAttrs = this.getProperties(attrNames);
+
+		if (oldAttrs['selectedId'] !== newAttrs['selectedId'] &&
+			oldAttrs['data'] === newAttrs['data'])
+		{
+			const oldIndex = this.data.findIndex(content => content.id === oldAttrs['selectedId']);
+			const newIndex = this.data.findIndex(content => content.id === newAttrs['selectedId']);
+
+			const delta = newIndex - oldIndex;
+
+			if (delta < 0) {
+				this.set('slideOffset', -1);
+			}
+			else if (delta > 0) {
+				this.set('slideOffset', 1);
+			}
+		}
+
+		attrNames.forEach((name) => {
+			oldAttrs[name] = newAttrs[name];
+		});
 	},
 
 	/*
