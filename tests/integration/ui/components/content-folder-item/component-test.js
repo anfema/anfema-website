@@ -25,12 +25,10 @@ describe('Integration | Component | content folder item', function() {
 			{{content-folder-item content=content selected=selected}}
 		`);
 
-		expect(find('.content-folder-item').classList.contains('content-folder-item--active')).to.be
-			.true;
+		expect(find('.content-folder-item').classList.contains('content-folder-item--active')).to.be.true;
 
 		this.set('selected', 'second');
 
-		expect(find('.content-folder-item').classList.contains('content-folder-item--active')).to.be
-			.false;
+		expect(find('.content-folder-item').classList.contains('content-folder-item--active')).to.be.false;
 	});
 });

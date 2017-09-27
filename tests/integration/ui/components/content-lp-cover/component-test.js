@@ -15,6 +15,10 @@ describe('Integration | Component | content lp cover', function() {
 		component: 'content-lp-cover',
 	};
 
+	beforeEach(function() {
+		this.container.lookup('service:intl').setLocale('de');
+	});
+
 	it('renders', function() {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.on('myAction', function (val) { ... });

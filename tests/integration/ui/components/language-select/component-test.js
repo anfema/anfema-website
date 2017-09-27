@@ -9,6 +9,10 @@ describe('Integration | Component | language select', function() {
 		integration: true,
 	});
 
+	beforeEach(function() {
+		this.container.lookup('service:intl').setLocale('de');
+	});
+
 	it('renders language select for DE and EN', function() {
 		this.render(hbs`
 			{{language-select}}
@@ -26,20 +30,12 @@ describe('Integration | Component | language select', function() {
 
 		await click('[data-test-locale="en"]');
 
-		expect(find('[data-test-locale=de]').className).to.not.include(
-			'language-select-button--active'
-		);
-		expect(find('[data-test-locale=en]').className).to.include(
-			'language-select-button--active'
-		);
+		expect(find('[data-test-locale=de]').className).to.not.include('language-select-button--active');
+		expect(find('[data-test-locale=en]').className).to.include('language-select-button--active');
 
 		await click('[data-test-locale="de"]');
 
-		expect(find('[data-test-locale=de]').className).to.include(
-			'language-select-button--active'
-		);
-		expect(find('[data-test-locale=en]').className).to.not.include(
-			'language-select-button--active'
-		);
+		expect(find('[data-test-locale=de]').className).to.include('language-select-button--active');
+		expect(find('[data-test-locale=en]').className).to.not.include('language-select-button--active');
 	});
 });
