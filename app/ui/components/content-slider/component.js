@@ -12,10 +12,10 @@ export default Component.extend({
 
 	/** @type {string} */
 	slideComponentName: undefined,
-	/** @type {object} */
+	/** @type {object[]} */
 	data: null,
-	/** @type {string} data.id*/
-	selectedId: null,
+	/** @type {object} */
+	selected: null,
 	/** @type {boolean} */
 	cycle: true,
 
@@ -35,12 +35,12 @@ export default Component.extend({
 	dragOffset: 0,
 
 	/** @returns {number} */
-	currentIndex: computed('data.@each', 'selectedId', function () {
-		return this.get('data').findIndex(data => data.id === this.get('selectedId'));
+	currentIndex: computed('data.@each', 'selected', function () {
+		return this.get('data').findIndex(data => data === this.get('selected'));
 	}),
 
 	/** @returns {number} */
-	logoStep: computed('data.@each', 'selectedId', function() {
+	logoStep: computed('data.@each', 'selected', function() {
 		return this.get('currentSlide').logoStep;
 	}),
 
@@ -67,8 +67,8 @@ export default Component.extend({
 	}),
 
 	/** @returns {object} */
-	currentSlide: computed('data.@each', 'selectedId', function () {
-		return this.get('data').find(data => data.id === this.get('selectedId'));
+	currentSlide: computed('data.@each', 'selected', function () {
+		return this.get('data').find(data => data === this.get('selected'));
 	}),
 
 	/** @returns {object} */
@@ -84,7 +84,7 @@ export default Component.extend({
 	}),
 
 	/** @returns {number} */
-	sliderStyle: computed('selectedId', 'dragOffset', 'dragStartPosition', 'slideOffset', function () {
+	sliderStyle: computed('selected', 'dragOffset', 'dragStartPosition', 'slideOffset', function () {
 		const userIsInteracting = this.dragStartPosition !== undefined;
 		const initTransition = this.slideOffset !== 0;
 
@@ -116,7 +116,7 @@ export default Component.extend({
 			const currentIndex = this.get('currentIndex');
 
 			if (this.onChange && (this.cycle || this.currentIndex > 0)) {
-				this.onChange(this.data[mod(currentIndex - 1, this.data.length)].id);
+				this.onChange(this.data[mod(currentIndex - 1, this.data.length)]);
 			}
 		},
 
@@ -124,7 +124,7 @@ export default Component.extend({
 			const currentIndex = this.get('currentIndex');
 
 			if (this.onChange && (this.cycle || this.currentIndex < this.data.length - 1)) {
-				this.onChange(this.data[mod(currentIndex + 1, this.data.length)].id);
+				this.onChange(this.data[mod(currentIndex + 1, this.data.length)]);
 			}
 		},
 	},
@@ -142,15 +142,15 @@ export default Component.extend({
 		// idea from https://gist.github.com/buschtoens/708611e904dd515716080305405d86c9
 		this._super(...arguments);
 
-		const attrNames = ['selectedId', 'data'];
+		const attrNames = ['selected', 'data'];
 		const oldAttrs = this.get('oldAttrs');
 		const newAttrs = this.getProperties(attrNames);
 
-		if (oldAttrs['selectedId'] !== newAttrs['selectedId'] &&
+		if (oldAttrs['selected'] !== newAttrs['selected'] &&
 			oldAttrs['data'] === newAttrs['data'])
 		{
-			const oldIndex = this.data.findIndex(content => content.id === oldAttrs['selectedId']);
-			const newIndex = this.data.findIndex(content => content.id === newAttrs['selectedId']);
+			const oldIndex = this.data.findIndex(content => content === oldAttrs['selected']);
+			const newIndex = this.data.findIndex(content => content === newAttrs['selected']);
 
 			const delta = newIndex - oldIndex;
 
@@ -217,11 +217,11 @@ export default Component.extend({
 
 			if (Math.abs(offset) / sliderWidth > 0.3) {
 				if (this.onChange && offset > 0 && (this.cycle || currentIndex > 0)) {
-					this.onChange(this.data[mod(currentIndex - 1, this.data.length)].id);
+					this.onChange(this.data[mod(currentIndex - 1, this.data.length)]);
 
 				}
 				else if (this.onChange && offset < 0 && (this.cycle || currentIndex < this.data.length - 1)) {
-					this.onChange(this.data[mod(currentIndex + 1, this.data.length)].id);
+					this.onChange(this.data[mod(currentIndex + 1, this.data.length)]);
 				}
 			}
 			else {

@@ -5,7 +5,14 @@ export default Component.extend({
 	classNames: ['service-content'],
 
 	data: undefined,
+
 	selectedId: undefined,
+
+	selected: computed('selectedId', function() {
+		return this.selectedId
+			? this.data.find(service => service.id === this.selectedId)
+			: this.data[0];
+	}),
 
 	logoStep: computed('data', 'selectedId', function() {
 		const currentId = this.get('selectedId');
@@ -17,7 +24,7 @@ export default Component.extend({
 	actions: {
 		slideChanged(e) {
 			// console.log("onChange", e);
-			this.set('selectedId', e);
+			this.set('selectedId', e.id);
 		}
 	}
 });
