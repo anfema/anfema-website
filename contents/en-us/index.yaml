@@ -138,7 +138,7 @@ sections:
           hours, comfortable offices, and drinks provided free of charge, this makes for an enjoyable work climate.
 
   -
-    component: 'jobs-overview'
+    component: 'job-advertisements'
     jobs:
       -
         title: 'Student Intern Android Development (f/m/*)'

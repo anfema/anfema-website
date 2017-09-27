@@ -5,12 +5,12 @@ import hbs from 'htmlbars-inline-precompile';
 import { find, findAll } from 'ember-native-dom-helpers';
 
 describe('Integration | Component | jobs overview', function() {
-	setupComponentTest('jobs-overview', {
+	setupComponentTest('job-advertisements', {
 		integration: true,
 	});
 
 	const data = {
-		component: 'jobs-overview',
+		component: 'job-advertisements',
 		jobs: [
 			{
 				description: 'Ab 2018',
@@ -24,15 +24,15 @@ describe('Integration | Component | jobs overview', function() {
 	beforeEach(function() {
 		this.set('data', data);
 
-		this.render(hbs`{{jobs-overview data=data}}`);
+		this.render(hbs`{{job-advertisements data=data}}`);
 	});
 
 	it('renders', function() {
-		expect(find('.jobs-overview')).to.exist;
+		expect(find('.job-advertisements')).to.exist;
 	});
 
 	it('renders a list of job applications', function() {
-		const overviewElement = find('.jobs-overview');
+		const overviewElement = find('.job-advertisements');
 
 		expect(overviewElement.children).to.have.lengthOf(data.jobs.length);
 	});

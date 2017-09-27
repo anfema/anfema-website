@@ -141,7 +141,7 @@ sections:
           komfortable Büroräume sowie kostenlose Getränke tragen außerdem zu einer entspannten Arbeitsatmosphäre bei.
 
   -
-    component: 'jobs-overview'
+    component: 'job-advertisements'
     jobs:
       -
         title: 'Praktikum Android Development (f/m/*)'

@@ -122,3 +122,7 @@ component:
   contet-quote:
     action:
       showProject: 'Projekt ansehen'
+  job-advertisements-item:
+    action:
+      details: 'Details'
+      apply: 'Bewerben'

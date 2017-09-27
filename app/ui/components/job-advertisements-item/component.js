@@ -1,7 +1,7 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-	classNames: ['job-application'],
+	classNames: ['job-advertisements-item'],
 
 	title: null,
 	description: null,
