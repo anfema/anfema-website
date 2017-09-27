@@ -1,14 +1,49 @@
 /* TODO replace */
+@keyframes accordion-animation{
+	from {height: 0;}
+	to {height: 100%;}
+}
+
 .content-folder {
-	&__navigation {
-		a.active {
-			color: green;
-		}
+	a {
+		text-decoration: none;
 	}
 
+
 	&-item {
+		a {
+			overflow-y: hidden;
+		}
+
+		a h2 {
+			height: 6.3rem;
+			margin: 2.5rem 0;
+			font-size: 13rem;
+			font-weight: 600;
+			color: $color-grey-lighter;
+			line-height: 0.77;
+			letter-spacing: -0.3rem;
+			text-align: right;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		div {
+			height: 0;
+			overflow: hidden;
+			transition: height 5s ease-in;
+		}
+
 		&--active {
-			color: green;
+
+			div {
+				height: 100%;
+				//transition: border-color .25s ease-in;
+				//animation: accordion-animation 1s normal forwards ease-in-out
+				/* animation-name: accordion-animation;
+				animation-iteration-count: 1;
+				animation-duration: 1s; */
+			}
 		}
 	}
 }
