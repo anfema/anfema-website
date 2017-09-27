@@ -119,6 +119,9 @@ component:
     action:
       de: 'DE'
       en: 'EN'
+  content-lp-cover:
+    action:
+      scrollDown: 'Mehr erfahren'
   contet-quote:
     action:
       showProject: 'Projekt ansehen'
