@@ -31,7 +31,6 @@ sections:
       development I’ve ever seen.
     source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
     projectId: knauf
-    projectLinkLabel: View project
 
   -
     component: 'content-lp-text'

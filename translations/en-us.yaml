@@ -1,3 +1,7 @@
+index:
+  nav:
+    projects: 'Projects'
+
 homepage:
   index:
     title: 'Landing Page'

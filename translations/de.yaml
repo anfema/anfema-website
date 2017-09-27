@@ -1,3 +1,7 @@
+index:
+  nav:
+    projects: 'Projekte'
+
 homepage:
   index:
     title: 'Startseite'
