@@ -22,6 +22,8 @@ describe('Integration | Component | jobs overview', function() {
 	};
 
 	beforeEach(function() {
+		this.container.lookup('service:intl').setLocale('de');
+
 		this.set('data', data);
 
 		this.render(hbs`{{job-advertisements data=data}}`);

@@ -9,6 +9,10 @@ describe('Integration | Component | page footer', function() {
 		integration: true,
 	});
 
+	beforeEach(function() {
+		this.container.lookup('service:intl').setLocale('de');
+	});
+
 	it('renders', function() {
 		this.render(hbs`{{page-footer}}`);
 

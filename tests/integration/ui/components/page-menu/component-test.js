@@ -9,6 +9,10 @@ describe('Integration | Component | page menu', function() {
 		integration: true,
 	});
 
+	beforeEach(function() {
+		this.container.lookup('service:intl').setLocale('de');
+	});
+
 	it('renders a logo', function() {
 		this.render(hbs`{{page-menu}}`);
 

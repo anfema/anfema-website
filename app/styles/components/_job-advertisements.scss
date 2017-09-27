@@ -1,0 +1,63 @@
+.job-advertisements {
+	@include grid-base;
+
+	padding-top: 26vw;
+	padding-bottom: 2rem;
+	background: #292929;
+}
+
+.job-advertisements-item {
+	position: relative;
+	overflow: hidden;
+	grid-column: 1 / -1;
+	margin: 0;
+	padding: 1rem;
+	background: $color-background;
+
+	@include media-l-min {
+		grid-column: 2 / span 3;
+		margin: 0 -1.6rem;
+		padding: 1rem 1.6rem;
+
+		&:nth-child(even) {
+			grid-column: 5 / span 3;
+		}
+	}
+
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+
+	h3 {
+		margin: 0;
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.job-advertisements-item__description {
+		margin-bottom: 2.5rem;
+	}
+
+	.job-advertisements-item__team {
+		position: absolute;
+		bottom: -4rem;
+		left: calc(1.6rem + 12.5%);
+		z-index: 0;
+		margin: 0;
+		color: $color-grey-light;
+		font-size: 20rem;
+		font-weight: 700;
+		line-height: 12rem;
+		text-transform: uppercase;
+	}
+
+	a {
+		font-weight: 700;
+		text-decoration: none;
+	}
+}

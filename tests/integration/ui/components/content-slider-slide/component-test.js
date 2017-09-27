@@ -25,12 +25,10 @@ describe('Integration | Component | content slider slide', function() {
 			{{content-slider-slide content=content selected=selected}}
 		`);
 
-		expect(find('.content-slider-slide').classList.contains('content-slider-slide--active')).to
-			.be.true;
+		expect(find('.content-slider-slide').classList.contains('content-slider-slide--active')).to.be.true;
 
 		this.set('selected', 'second');
 
-		expect(find('.content-slider-slide').classList.contains('content-slider-slide--active')).to
-			.be.false;
+		expect(find('.content-slider-slide').classList.contains('content-slider-slide--active')).to.be.false;
 	});
 });

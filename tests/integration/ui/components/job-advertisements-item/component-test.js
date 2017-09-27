@@ -19,6 +19,10 @@ describe('Integration | Component | job application', function() {
 		},
 	];
 
+	beforeEach(function() {
+		this.container.lookup('service:intl').setLocale('de');
+	});
+
 	it('renders', function() {
 		this.set('job', job);
 		this.render(hbs`
