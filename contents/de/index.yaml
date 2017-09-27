@@ -51,6 +51,7 @@ sections:
       -
         id: 'concept'
         title: 'Prozesse vereinfachen, Nutzen maximieren'
+        logoStep: 0
         text: |
           Durch das durchdachte Synchronisieren Ihrer Idee, unseres Sachverstands und der Bedürfnisse der Nutzer
           schaffen wir ein Konzept, das ebenso vorausschauend wie individuell ist - und damit die Grundlage für
@@ -59,6 +60,7 @@ sections:
       -
         id: 'design'
         title: 'Usability, Kreativität & Innovation'
+        logoStep: 1
         text: |
           Mit innovativem Visual Design und intuitiven User Interfaces erwecken wir das Konzept zum Leben. Unsere
           Werke zeichnen sich durch maximale Benutzerfreundlichkeit aus und sprengen nicht selten die
@@ -67,6 +69,7 @@ sections:
       -
         id: 'development'
         title: 'Maßgeschneidert & hochqualitativ'
+        logoStep: 2
         text: |
           Sie erwarten Großes? Das sollten Sie auch! Unser Entwicklerteam besticht durch sein extensives Skill Set,
           unzählige Erfahrungen, und kompromisslose Genauigkeit. Im Streben nach Perfektion treffen wir Ihre Idee auf
@@ -75,6 +78,7 @@ sections:
       -
         id: 'consulting'
         title: 'Erfahrung, Sachverstand & Weitblick'
+        logoStep: 3
         text: |
           Neue Technologien lassen unser Herz höher schlagen! Weil wir das breite Spektrum an Optionen ständig und
           mit Freude erkunden, wissen wir genau, welche Lösungen für Sie geeignet sind und erzeugen durch unseren
@@ -83,6 +87,7 @@ sections:
       -
         id: 'support'
         title: 'Dauerhaft fortschrittlich'
+        logoStep: 4
         text: |
          Zukunftsträchtig ist ein System nur dann, wenn es auch nach seiner Release gepflegt wird. Wir agieren
          vorausschauend und proaktiv, antizipieren entstehende Veränderungen in der digitalen Welt, und ersticken
@@ -91,6 +96,7 @@ sections:
       -
         id: 'management'
         title: 'Kundennah & ohne Umwege'
+        logoStep: 5
         text: |
           Wir setzen auf technisch versiertes Management, das sich in Ihre Bedürfnisse eindenkt und Lösungen direkt
           erarbeitet. Als Partner stehen wir Ihnen damit von der Konzeption an und über den gesamten Lebenszyklus des
