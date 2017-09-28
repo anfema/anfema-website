@@ -1,19 +1,13 @@
-{{!--<nav class="content-folder__navigation">
-	{{#each data.team as |content|}}
-		{{#link-to 'index' (query-params team=content.id) class='content-folder__navigation-link'}}
-			{{get content labelKey}}
-		{{/link-to}}
-	{{/each}}
-</nav>--}}
-
-<div class="content-folder__content">
-	{{#each data.team as |content|}}
-		{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
-			{{#content-folder-item content=content selected=selected}}
-				{{#link-to 'index' (query-params team=content.id) class='content-folder__navigation-link'}}
-					<h2>{{content.title}}</h2>
-				{{/link-to}}
-				<div>{{content.text}}</div>
-			{{/content-folder-item}}
-	{{/each}}
-</div>
+{{#each data.team as |content|}}
+	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
+		{{#content-folder-item content=content selected=selected}}
+			{{#link-to 'index' (query-params team=content.id) onClick="toggleFolder(this)" class='content-folder__navigation-link'}}
+				<span>{{get content labelKey}}</span>
+				{{!--<span>#1</span>--}}
+			{{/link-to}}
+			<div class="content-folder__content">
+				<h3>{{content.title}}</h3>
+				{{content.text}}
+			</div>
+		{{/content-folder-item}}
+{{/each}}
