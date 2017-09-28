@@ -20,11 +20,6 @@ describe('Acceptance | ui/projects/index', function() {
 		expect(currentURL()).to.equal('/projects');
 	});
 
-	it('can visit /projects subroute', async function() {
-		await click('[data-test-project-item]');
-		expect(currentURL()).to.equal('/projects/bmw7series');
-	});
-
 	it('renders a list of projects', function() {
 		expect(find('[data-test-projects-list]')).to.exist;
 	});
