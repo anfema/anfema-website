@@ -7,6 +7,7 @@ module.exports = function(environment) {
 		environment,
 		rootURL: '/',
 		locationType: 'auto',
+
 		EmberENV: {
 			FEATURES: {
 				// Here you can enable experimental features on an ember canary build
@@ -17,13 +18,20 @@ module.exports = function(environment) {
 				Date: false,
 			},
 		},
+
 		APP: {
 			// Here you can pass flags/options to your application instance
 			// when it is created
 		},
+
+		fastboot: {
+			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/],
+		},
+
 		i18n: {
 			defaultLocale: 'de',
 		},
+
 		pageTitle: {
 			separator: ' - ',
 			prepend: true,
