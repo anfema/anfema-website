@@ -1,13 +1,13 @@
 <h1>Projects</h1>
 
 <ul data-test-projects-list>
-	{{#each model.projects as |project|}}
+	{{#each model.files as |project|}}
 	{{!-- TODO change blockstyle form, override link-to method--}}
 		{{#project-item
 				'projects.details'
-				project.id
+				project.meta.id
 				tagName='li'
-				project=project
+				project=project.meta
 				data-test-project-item=true}}
 		{{/project-item}}
 	{{/each}}
