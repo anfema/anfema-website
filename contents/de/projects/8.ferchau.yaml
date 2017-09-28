@@ -3,3 +3,28 @@ meta:
   client: "Ferchau"
   title: 'Augmented Reality App'
   id: 'ferchau'
+sections:
+  -
+    component: 'content-lp-text'
+    title: Ferchau Augmented Reality App
+    content: |
+      <h3>Einleitung / Aufgabe</h3>
+      <p>Technik zum Anfassen: Mit der Augmented Reality App lassen sich sieben 3D-Modelle aus dem vielfältigen technischen Leistungsspektrum von FERCHAU aus allen Perspektiven entdecken. Um die Modelle „zum Leben zu erwecken“ scannt man mit der Tablet- oder Handy-Kamera und der App spezielle Marker. Auf diesen Markern entstehen - integriert in das aktuell erfasste Abbild der unmittelbaren Umgebung - die verschiedenen virtuellen Modelle wie Hubschrauber, Schiff oder Roboter-Arm. Die App gibt damit eindrucksvoll Einblicke in die Arbeits- und Produktwelt von FERCHAU und informiert interaktiv über die Bereiche, in denen die Firma aktiv ist.</p>
+
+      <h3>Herausforderung</h3>
+      <p>Die Herausforderung der FERCHAU App bestand in der detaillierten und realistischen Darstellung der 3D-Modelle bei gleichzeitig hoher Bildwiederholrate. Zur Erstellung der dreidimensionalen Objekte ist ein sicheres, schnelles Tracking der verwendeten Marker darüber hinaus unbedingt erforderlich. </p>
+
+      <h3>Lösung</h3>
+      <p>Durch die Nutzung der mächtigen 3D-Engine Unity3D in Kombination mit speziell angepassten Shadern ist die visuelle Performance der App durchweg sehr hoch. Das eingesetzte Augmented Reality-SDK der führenden AR-Plattform Vuforia sorgt für ein sicheres und performantes Tracken der Marker. Außerdem gewährt Vuforia maximale gestalterische Freiheit und ermöglichte damit ein charakteristisches Design der 3D-Modelle, das die Marke FERCHAU widerspiegelt.</p>
+
+      <h3>Technologie</h3>
+      <p>Um ein möglichst breites Publikum zu bedienen, wurde die FERCHAU App nativ sowohl in Swift für iOs (universell für iPhones, iPads und iPod Touch), als auch für Android Phones und Tablets entwickelt, Die Game Engine Unity3D bildet zusammen mit dem AR-SDK Vuforia die Basis der Applikation. Als internationaler Branchenführer bietet Unity3D optimiertes Shading und leistungsstarkes Rendering. Damit ermöglicht es die Konstruktion von realitätsnahen Animationen, und deren Einbettung in die reale Welt in Echtzeit.</p>
+
+      <h3>Testimonial</h3>
+      <p>“Wir schätzen sehr, dass ihr mega Cracks seid und bauen unsere Konzepte voll auf euer Know-how auf.”
+         Martin Spengler
+         Creative Technologist
+         LAB BINÆR GBR, Partner im Projekt Ferchau</p>
+
+      <h3>Laufzeit</h3>
+      <p>Januar 2014 - September 2016</p>
