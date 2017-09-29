@@ -1,30 +1,30 @@
-import {afterEach, beforeEach, describe, it} from 'mocha';
-import {expect} from 'chai';
+import { afterEach, beforeEach, describe, it } from 'mocha';
+import { expect } from 'chai';
 import startApp from 'anfema/tests/helpers/start-app';
 import destroyApp from 'anfema/tests/helpers/destroy-app';
-import {click, find, findAll} from 'ember-native-dom-helpers';
+import { click, find, findAll } from 'ember-native-dom-helpers';
 
-describe('Acceptance | ui/index', function () {
+describe('Acceptance | ui/index', function() {
 	let application;
 	const defaultLocale = 'de';
 	const landingPage = `/${defaultLocale}`;
 
-	beforeEach(function () {
+	beforeEach(function() {
 		application = startApp();
 	});
 
-	afterEach(function () {
+	afterEach(function() {
 		destroyApp(application);
 	});
 
-	it('redirects index to /language with default locale', async function () {
+	it('redirects index to /language with default locale', async function() {
 		await visit('/');
 
 		expect(currentURL()).to.not.equal('/');
 		expect(currentURL()).to.equal(`/${defaultLocale}`);
 	});
 
-	it('can visit /imprint from footer', async function () {
+	it('can visit /imprint from footer', async function() {
 		await visit(landingPage);
 
 		await click('[data-test-footer-imprint]');
@@ -32,7 +32,7 @@ describe('Acceptance | ui/index', function () {
 		expect(currentURL()).to.equal(`${landingPage}/imprint`);
 	});
 
-	it('can navigate between slides', async function () {
+	it('can navigate between slides', async function() {
 		await visit(landingPage);
 
 		expect(find('.content-slider')).to.exist;
@@ -51,7 +51,7 @@ describe('Acceptance | ui/index', function () {
 		);
 	});
 
-	it('can navigate between folder items', async function () {
+	it('can navigate between folder items', async function() {
 		await visit(landingPage);
 
 		expect(find('.content-folder')).to.exist;

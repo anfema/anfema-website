@@ -2,12 +2,12 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupTest } from 'ember-mocha';
 
-describe('Unit | Route | language', function () {
+describe('Unit | Route | language', function() {
 	setupTest('route:language', {
 		needs: ['service:intl'],
 	});
 
-	it('exists', function () {
+	it('exists', function() {
 		const route = this.subject();
 
 		expect(route).to.be.ok;

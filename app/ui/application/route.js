@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import {inject as service} from '@ember/service';
+import { inject as service } from '@ember/service';
 import config from 'anfema/config/environment';
 
 export default Route.extend({
