@@ -10,8 +10,6 @@ describe('Unit | Route | application', function() {
 	it('exists', function() {
 		const route = this.subject();
 
-		// TODO @f.pichler
-		//	eslint-disable-next-line no-unused-expressions
 		expect(route).to.be.ok;
 	});
 });

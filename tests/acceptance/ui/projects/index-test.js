@@ -6,10 +6,12 @@ import { find } from 'ember-native-dom-helpers';
 
 describe('Acceptance | ui/projects/index', function() {
 	let application;
+	const defaultLocale = 'de';
+	const landingPage = `/${defaultLocale}`;
 
 	beforeEach(async function() {
 		application = startApp();
-		await visit('/projects');
+		await visit(`${landingPage}/projects`);
 	});
 
 	afterEach(function() {
@@ -17,7 +19,7 @@ describe('Acceptance | ui/projects/index', function() {
 	});
 
 	it('can visit /projects', async function() {
-		expect(currentURL()).to.equal('/projects');
+		expect(currentURL()).to.equal(`${landingPage}/projects`);
 	});
 
 	it('renders a list of projects', function() {

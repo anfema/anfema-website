@@ -1,7 +1,7 @@
 <nav class="content-folder__navigation">
 	{{#each data.team as |content|}}
 	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
-		{{#link-to 'index' (query-params team=content.id) class='content-folder__navigation-link'}}
+		{{#link-to 'language' (query-params team=content.id) class='content-folder__navigation-link'}}
 			{{get content labelKey}}
 		{{/link-to}}
 	{{/each}}

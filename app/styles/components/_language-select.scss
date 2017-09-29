@@ -1,0 +1,21 @@
+.language-select {
+	a {
+		& + * {
+			&:before {
+				content: '/\00a0';
+			}
+		}
+	}
+
+	.language-select-button {
+		text-decoration: none;
+
+		&--active {
+			&,
+			&:link,
+			&:visited {
+				color: #9b9b9b;
+			}
+		}
+	}
+}

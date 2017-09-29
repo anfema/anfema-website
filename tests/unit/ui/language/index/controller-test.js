@@ -2,9 +2,9 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupTest } from 'ember-mocha';
 
-describe('Unit | Controller | index', function() {
-	setupTest('controller:index', {
-		// needs: ['controller:foo'],
+describe('Unit | Controller | language/index', function() {
+	setupTest('controller:language/index', {
+		needs: ['service:staticContent'],
 	});
 
 	// Replace this with your real tests.

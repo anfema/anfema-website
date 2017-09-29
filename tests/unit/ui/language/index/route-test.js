@@ -2,11 +2,9 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupTest } from 'ember-mocha';
 
-describe('Unit | Route | imprint', function() {
-	setupTest('route:imprint', {
-		// needs: [
-		// 	'controller:foo',
-		// ],
+describe('Unit | Route | language/index', function() {
+	setupTest('route:language/index', {
+		needs: ['service:staticContent'],
 	});
 
 	it('exists', function() {

@@ -7,11 +7,14 @@ const Router = EmberRouter.extend({
 });
 
 // eslint-disable-next-line array-callback-return
+
 Router.map(function() {
-	this.route('projects', function() {
-		this.route('details', { path: '/:project_id' });
+	this.route('language', { path: '/:language_id' }, function() {
+		this.route('projects', { path: '/projects', resetNamespace: true }, function() {
+			this.route('detail', { path: '/:project_id' });
+		});
+		this.route('imprint', { path: '/imprint', resetNamespace: true });
 	});
-	this.route('imprint');
 });
 
 export default Router;
