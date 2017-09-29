@@ -9,6 +9,7 @@ describe('Integration | Component | content folder item', function() {
 		integration: true,
 	});
 
+
 	it('renders', function() {
 		this.render(hbs`
 			{{content-folder-item}}
