@@ -19,18 +19,17 @@ export default Component.extend({
 	/** @type {boolean} */
 	cycle: true,
 
-	onChange: undefined,
+	onPrevious: undefined,
+	onNext: undefined,
 
 	/*
 	 * state
 	 */
 
-	/** @type {Object} */
-	oldAttrs: undefined,
 	/** @type {number | undefined} */
 	dragStartPosition: undefined,
 	/** @type {number} */
-	slideOffset: 0,
+	slideDirection: 0,
 	/** @type {number} */
 	dragOffset: 0,
 	/** @type {boolean} */
@@ -47,17 +46,21 @@ export default Component.extend({
 	}),
 
 	/** @returns {boolean} */
-	previousDisabled: computed('cycle', 'currentIndex', function() {
-		return !this.cycle && this.get('currentIndex') <= 0;
+	previousDisabled: computed('cycle', 'currentIndex', 'isTransitioning', function() {
+		const currentIndex = this.get('currentIndex');
+
+		return (!this.cycle && currentIndex < 0) || this.isTransitioning;
 	}),
 
 	/** @returns {boolean} */
-	nextDisabled: computed('cycle', 'data', 'currentIndex', function() {
-		return !this.cycle && this.get('currentIndex') >= this.data.length - 1;
+	nextDisabled: computed('cycle', 'data', 'currentIndex', 'isTransitioning', function() {
+		const currentIndex = this.get('currentIndex');
+
+		return (!this.cycle && currentIndex > this.data.length - 1) || this.isTransitioning;
 	}),
 
 	/** @returns {object} */
-	previousSlide: computed('data.@each', 'currentIndex', function() {
+	previousSlide: computed('cycle', 'data.@each', 'currentIndex', function() {
 		const currentIndex = this.get('currentIndex');
 
 		if (this.cycle || currentIndex > 0) {
@@ -74,7 +77,7 @@ export default Component.extend({
 	}),
 
 	/** @returns {object} */
-	nextSlide: computed('data.@each', 'currentIndex', function() {
+	nextSlide: computed('cycle', 'data.@each', 'currentIndex', function() {
 		const currentIndex = this.get('currentIndex');
 
 		if (this.cycle || currentIndex < this.data.length - 1) {
@@ -86,28 +89,29 @@ export default Component.extend({
 	}),
 
 	/** @returns {number} */
-	sliderStyle: computed('selected', 'dragOffset', 'dragStartPosition', 'slideOffset', function () {
+	sliderStyle: computed('selected', 'dragOffset', 'dragStartPosition', 'slideDirection', function () {
 		const userIsInteracting = this.dragStartPosition !== undefined;
-		const initTransition = this.slideOffset !== 0;
+		const initTransition = this.slideDirection !== 0;
+		const wasDragging = this.dragOffset !== 0 && !userIsInteracting;
 
 		//  0: right slide
 		// -1: middle slide
 		// -2: left slide
-		const fullOffset = (this.slideOffset - 1) * 100;
-		const pixelOffset = (this.dragStartPosition !== undefined) ? this.dragOffset : 0;
+		const fullOffset = (this.slideDirection - 1) * 100;
 
-		if (initTransition) {
+		if (initTransition || wasDragging) {
 			// immediately trigger a rerender to transition to the center pane
-			Ember.run.later(this, () => {
+			Ember.run.next(this, () => {
 				this.setProperties({
-					slideOffset: 0,
-					dragStartPosition: undefined
+					slideDirection: 0,
+					dragStartPosition: undefined,
+					dragOffset: 0,
 				});
-			}, 0);
+			});
 		}
 
 		return htmlSafe(
-			`transform: translate(calc(${fullOffset}% + ${pixelOffset}px));` +
+			`transform: translate(calc(${fullOffset}% + ${this.dragOffset}px));` +
 			// disable transition while user is interacting
 			(initTransition || userIsInteracting ? 'transition: none;' : '')
 		);
@@ -125,16 +129,16 @@ export default Component.extend({
 		slideToPrevious() {
 			const currentIndex = this.get('currentIndex');
 
-			if (this.onChange && (this.cycle || this.currentIndex > 0)) {
-				this.onChange(this.data[mod(currentIndex - 1, this.data.length)]);
+			if (this.onPrevious && (this.cycle || this.currentIndex > 0)) {
+				this.onPrevious(this.data[mod(currentIndex - 1, this.data.length)]);
 			}
 		},
 
 		slideToNext() {
 			const currentIndex = this.get('currentIndex');
 
-			if (this.onChange && (this.cycle || this.currentIndex < this.data.length - 1)) {
-				this.onChange(this.data[mod(currentIndex + 1, this.data.length)]);
+			if (this.onNext && (this.cycle || this.currentIndex < this.data.length - 1)) {
+				this.onNext(this.data[mod(currentIndex + 1, this.data.length)]);
 			}
 		},
 	},
@@ -156,42 +160,6 @@ export default Component.extend({
 			.addEventListener('transitionend', this.onTransitionEnd);
 	},
 
-	didReceiveAttrs() {
-		// idea from https://gist.github.com/buschtoens/708611e904dd515716080305405d86c9
-		this._super(...arguments);
-
-		const attrNames = ['selected', 'data'];
-		const oldAttrs = this.get('oldAttrs');
-		const newAttrs = this.getProperties(attrNames);
-
-		if (oldAttrs['selected'] !== newAttrs['selected'] &&
-			oldAttrs['data'] === newAttrs['data'])
-		{
-			const oldIndex = this.data.findIndex(content => content === oldAttrs['selected']);
-			const newIndex = this.data.findIndex(content => content === newAttrs['selected']);
-
-			const delta = newIndex - oldIndex;
-
-			if (delta < 0) {
-				this.setProperties({
-					slideOffset: -1,
-					isTransitioning: true
-				});
-
-			}
-			else if (delta > 0) {
-				this.setProperties({
-					slideOffset: 1,
-					isTransitioning: true
-				});
-			}
-		}
-
-		attrNames.forEach((name) => {
-			oldAttrs[name] = newAttrs[name];
-		});
-	},
-
 	willDestroyElement() {
 		this.element.querySelector('.content-slider__slider')
 			.removeEventListener('transitionend', this.onTransitionEnd);
@@ -205,21 +173,19 @@ export default Component.extend({
 		this.startDrag(e.touches[0].clientX);
 	},
 	touchEnd(e) {
-		this.endDrag(e.target);
+		this.endDrag();
 	},
 	touchMove(e) {
-		if (this.dragStartPosition !== undefined) {
-			this.updateDrag(e.touches[0].clientX)
-		}
+		this.updateDrag(e.touches[0].clientX)
 	},
 	mouseDown(e) {
 		this.startDrag(e.clientX);
 	},
 	mouseUp(e) {
-		this.endDrag(e.target);
+		this.endDrag();
 	},
 	mouseLeave(e) {
-		this.endDrag(e.target);
+		this.endDrag();
 	},
 	mouseMove(e) {
 		this.updateDrag(e.clientX);
@@ -239,26 +205,26 @@ export default Component.extend({
 		}
 	},
 
-	endDrag(element) {
+	endDrag() {
 		if (this.dragStartPosition !== undefined) {
 			const offset = this.get('dragOffset');
 			const currentIndex = this.get('currentIndex');
 			const sliderWidth = this.element.querySelector('.content-slider__slidewindow').clientWidth;
 
 			if (Math.abs(offset) / sliderWidth > 0.3) {
-				if (this.onChange && offset > 0 && (this.cycle || currentIndex > 0)) {
-					this.onChange(this.data[mod(currentIndex - 1, this.data.length)]);
-
+				if (this.onPrevious && offset > 0 && (this.cycle || currentIndex > 0)) {
+					this.onPrevious(this.data[mod(currentIndex - 1, this.data.length)]);
 				}
-				else if (this.onChange && offset < 0 && (this.cycle || currentIndex < this.data.length - 1)) {
-					this.onChange(this.data[mod(currentIndex + 1, this.data.length)]);
+				else if (this.onNext && offset < 0 && (this.cycle || currentIndex < this.data.length - 1)) {
+					this.onNext(this.data[mod(currentIndex + 1, this.data.length)]);
 				}
+				this.setProperties({
+					dragStartPosition: undefined,
+				});
 			}
 			else {
 				this.setProperties({
 					dragStartPosition: undefined,
-					dragOffset: 0,
-					slideOffset: 0
 				});
 			}
 		}
@@ -269,8 +235,7 @@ export default Component.extend({
 	 * @argument newPos {number}
 	*/
 	updateDrag(newPos) {
-		// might be != 0 on initializing transition to center
-		if (this.slideOffset === 0) {
+		if (this.dragStartPosition !== undefined && this.slideDirection === 0) {
 			this.set('dragOffset', newPos - this.dragStartPosition);
 		}
 	},

@@ -6,7 +6,9 @@
 	slideComponentName='service-slide'
 	data=data
 	selected=selected
-	onChange=(action 'slideChanged')
+	slideDirection=slideDirection
+	onPrevious=(action 'previousSlide')
+	onNext=(action 'nextSlide')
 	}}
 	{{anfema-logo class="service-content__background" step=logoStep options=(hash outlineMode=false strokeWidth=20)}}
 {{/content-slider}}

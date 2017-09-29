@@ -8,6 +8,8 @@ export default Component.extend({
 
 	selectedId: undefined,
 
+	slideDirection: 0,
+
 	selected: computed('selectedId', function() {
 		return this.selectedId
 			? this.data.find(service => service.id === this.selectedId)
@@ -22,9 +24,18 @@ export default Component.extend({
 	}),
 
 	actions: {
-		slideChanged(e) {
-			// console.log("onChange", e);
-			this.set('selectedId', e.id);
+		previousSlide(slide) {
+			this.setProperties({
+				selectedId: slide.id,
+				slideDirection: -1
+			});
+		},
+
+		nextSlide(slide) {
+			this.setProperties({
+				selectedId: slide.id,
+				slideDirection: 1
+			});
 		}
 	}
 });
