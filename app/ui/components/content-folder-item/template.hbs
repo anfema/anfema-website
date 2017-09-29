@@ -1,1 +1,12 @@
+{{#link-to 'index' (query-params team=content.id) class='content-folder__navigation-link'}}
+	<span>{{content.title}}</span>
+	{{!--<span>#1</span>--}}
+{{/link-to}}
+
+<div class="content-folder-item__content">
+	<h3>{{content.title}}</h3>
+
+	{{content.text}}
+</div>
+
 {{yield}}
