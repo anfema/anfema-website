@@ -1,17 +1,15 @@
-<button
-	type="button"
-	class="language-select-button {{if isDe 'language-select-button--active'}}"
-	data-test-locale='de'
-	{{action 'setLocale' 'de'}}
->
-	{{t 'component.language-select.action.de'}}
-</button>
+{{link-to
+	(t 'component.language-select.action.de')
+	router.currentRouteName
+	'de'
+	class='language-select-button language-select-button--de'
+	activeClass='language-select-button--active'
+}}
 
-<button
-	type="button"
-	class="language-select-button {{if isEn 'language-select-button--active'}}"
-	data-test-locale='en'
-	{{action 'setLocale' 'en'}}
->
-	{{t 'component.language-select.action.en'}}
-</button>
+{{link-to
+	(t 'component.language-select.action.en')
+	router.currentRouteName
+	'en'
+	class='language-select-button language-select-button--en'
+	activeClass='language-select-button--active'
+}}
