@@ -11,11 +11,5 @@ export default Route.extend(PrefixMixin, {
 
 	setupController(controller, model) {
 		this._super(...arguments);
-
-		const services = model.sections.find(section => section.component === 'content-slider');
-		const team = model.sections.find(section => section.component === 'content-folder');
-
-		controller.set('service', services.services[0].id); // TODO @f.pichler this does not work anymore
-		controller.set('team', team.team[0].id); // TODO @f.pichler this does not work anymore
 	},
 });
