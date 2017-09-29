@@ -4,9 +4,7 @@ import { setupTest } from 'ember-mocha';
 
 describe('Unit | Route | projects/detail', function () {
 	setupTest('route:projects/detail', {
-		// needs: [
-		// 	'controller:foo',
-		// ],
+		needs: ['service:staticContent'],
 	});
 
 	it('exists', function () {

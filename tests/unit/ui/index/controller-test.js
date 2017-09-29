@@ -11,8 +11,6 @@ describe('Unit | Controller | index', function() {
 	it('exists', function() {
 		const controller = this.subject();
 
-		// TODO @f.pichler
-		//	eslint-disable-next-line no-unused-expressions
 		expect(controller).to.be.ok;
 	});
 });
