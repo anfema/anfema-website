@@ -3,23 +3,18 @@
 		<ul></ul>
 		<ul>
 			<li>
-				{{#link-to 'index'}}{{t 'projects.detail.nav.back'}}{{/link-to}}
+				{{#link-to 'language'}}{{t 'projects.detail.nav.back'}}{{/link-to}}
 			</li>
 		</ul>
 	{{/page-menu}}
-<h1>Projects</h1>
 
-{{link-to 'Back' 'language'}}
-
-<ul data-test-projects-list>
 	{{#each model.files as |project|}}
 	{{!-- TODO change blockstyle form, override link-to method--}}
 		{{#project-item
 				'projects.detail'
 				project.meta.id
 				tagName='div'
-				project=project.meta
-				class="project-item"}}
+				project=project.meta}}
 		{{/project-item}}
 	{{/each}}
 </div>
