@@ -1,36 +1,47 @@
 import Component from '@ember/component';
-import {inject as service} from '@ember/service';
-import {equal, readOnly} from '@ember/object/computed';
+import { inject as service } from '@ember/service';
+import { equal, readOnly } from '@ember/object/computed';
 
 export default Component.extend({
 	classNames: ['language-select'],
 	router: service(),
-	intl: service(),
 
-	locale: readOnly('intl.locale.0'),
+	locale: readOnly('intl.locale'),
 
 	isEn: equal('locale', 'en'),
 	isDe: equal('locale', 'de'),
 
 	actions: {
 		setLocale(locale) {
-			let currentRouteName = this.get('router').get('currentRouteName');
-			const currentUrl = this.get('router').urlFor(currentRouteName);
+			// Please note that the code below is using private APIs and *will* brake in future
+			// releases of Ember.js. This is okay, as future release hopefully provide a working
+			// transitionTo method for the router service as well as an easier way to collect
+			// necessary params.
+			//
+			//  — f.pichler
+			//
+			const router = this.get('router');
+			const currentRoute = router.get('currentRouteName');
+			const routerParams = router._router.currentState.routerJs.state.params;
+			const params = [];
 
-			this.get('intl').setLocale(locale);
+			for (const key in routerParams) {
+				if (routerParams.hasOwnProperty(key)) {
+					const param = routerParams[key];
 
-			if (new RegExp('projects/.').test(currentUrl)) {
-				const project = currentUrl.substring(currentUrl.lastIndexOf('/') + 1);
-
-				this.get('router').transitionTo(currentRouteName, locale, project);
-			} else {
-				this.get('router').transitionTo('language', locale, {
-					queryParams: {
-						service: null,
-						team: null,
+					for (const paramKey in param) {
+						if (paramKey === 'language_id') {
+							params.push(locale);
+						} else {
+							params.push(param[paramKey]);
+						}
 					}
-				});
+				}
 			}
+
+			router.transitionTo(router.get('currentRouteName'), ...params, {
+				queryParams: router._router.currentState.routerJs.state.queryParamsFor[currentRoute],
+			});
 		},
 	},
 });

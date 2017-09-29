@@ -7,7 +7,7 @@ export default Route.extend({
 
 	beforeModel(transition) {
 		const intl = this.get('intl');
-		const defaultLang = config.i18n.defaultLocale; // TODO @f.pichler can we use this?
+		const defaultLang = config.i18n.defaultLocale;
 
 		// redirect to en index route
 		if (!transition.params.language || !transition.params.language.language_id) {
