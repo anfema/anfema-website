@@ -2,6 +2,11 @@ index:
   nav:
     projects: 'Projekte'
 
+projects:
+  detail:
+    nav:
+      back: 'Zurück'
+
 homepage:
   index:
     title: 'Startseite'

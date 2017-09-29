@@ -1,16 +1,20 @@
-<h1>Projects</h1>
+<div class="project-overview">
+	{{#page-menu}}
+		<ul></ul>
+		<ul>
+			<li>
+				{{#link-to 'language'}}{{t 'projects.detail.nav.back'}}{{/link-to}}
+			</li>
+		</ul>
+	{{/page-menu}}
 
-{{link-to 'Back' 'language'}}
-
-<ul data-test-projects-list>
 	{{#each model.files as |project|}}
 	{{!-- TODO change blockstyle form, override link-to method--}}
 		{{#project-item
 				'projects.detail'
 				project.meta.id
-				tagName='li'
-				project=project.meta
-				data-test-project-item=true}}
+				tagName='div'
+				project=project.meta}}
 		{{/project-item}}
 	{{/each}}
-</ul>
+</div>
