@@ -50,7 +50,7 @@ $min-offset: 1px;
 }
 
 /**
- * Appliesto screens up to a large width screen
+ * Applies to screens up to a large width screen
  */
 @mixin media-l-max {
 	@include -media-max($breakpoint-l) {
