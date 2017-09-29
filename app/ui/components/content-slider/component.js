@@ -33,6 +33,8 @@ export default Component.extend({
 	slideOffset: 0,
 	/** @type {number} */
 	dragOffset: 0,
+	/** @type {boolean} */
+	isTransitioning: false,
 
 	/** @returns {number} */
 	currentIndex: computed('data.@each', 'selected', function () {
@@ -111,6 +113,14 @@ export default Component.extend({
 		);
 	}),
 
+	sliderExtraClass: computed('dragStartPosition', 'isTransitioning', function () {
+		const userIsInteracting = this.dragStartPosition !== undefined;
+
+		return userIsInteracting || this.isTransitioning
+			? 'content-slider__slider__transitioning'
+			: 'content-slider__slider__steady';
+	}),
+
 	actions: {
 		slideToPrevious() {
 			const currentIndex = this.get('currentIndex');
@@ -136,6 +146,14 @@ export default Component.extend({
 	init() {
 		this._super(...arguments)
 		this.oldAttrs = [];
+		this.onTransitionEnd = () => {
+			this.set('isTransitioning', false);
+		}
+	},
+
+	didInsertElement() {
+		this.element.querySelector('.content-slider__slider')
+			.addEventListener('transitionend', this.onTransitionEnd);
 	},
 
 	didReceiveAttrs() {
@@ -155,16 +173,28 @@ export default Component.extend({
 			const delta = newIndex - oldIndex;
 
 			if (delta < 0) {
-				this.set('slideOffset', -1);
+				this.setProperties({
+					slideOffset: -1,
+					isTransitioning: true
+				});
+
 			}
 			else if (delta > 0) {
-				this.set('slideOffset', 1);
+				this.setProperties({
+					slideOffset: 1,
+					isTransitioning: true
+				});
 			}
 		}
 
 		attrNames.forEach((name) => {
 			oldAttrs[name] = newAttrs[name];
 		});
+	},
+
+	willDestroyElement() {
+		this.element.querySelector('.content-slider__slider')
+			.removeEventListener('transitionend', this.onTransitionEnd);
 	},
 
 	/*

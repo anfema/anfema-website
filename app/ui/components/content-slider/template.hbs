@@ -1,41 +1,30 @@
-<nav class="content-slider__navigation">
-	{{#each data.services as |content|}}
-	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
-		{{#link-to 'language' (query-params service=content.id) class='content-slider__navigation-link'}}
-			{{get content labelKey}}
-		{{/link-to}}
-	{{/each}}
-</nav>
+{{yield}}
 
-<div class="logo-container">
-	{{yield}}
-
-	<div class="logo-container__content content-slider__slidewindow">
-		<div class="content-slider__slider" style="{{sliderStyle}}">
-			<div class="content-slider__slide">
-				{{component slideComponentName data=previousSlide}}
-			</div>
-			<div class="content-slider__slide">
-				{{component slideComponentName data=currentSlide selected=true}}
-			</div>
-			<div class="content-slider__slide">
-				{{component slideComponentName data=nextSlide}}
-			</div>
+<div class="content-slider__slidewindow">
+	<div class="content-slider__slider {{sliderExtraClass}}" style="{{sliderStyle}}">
+		<div class="content-slider__slide">
+			{{component slideComponentName data=previousSlide}}
+		</div>
+		<div class="content-slider__slide content-slider__slide__active">
+			{{component slideComponentName data=currentSlide selected=true}}
+		</div>
+		<div class="content-slider__slide">
+			{{component slideComponentName data=nextSlide}}
 		</div>
 	</div>
-
-	<button class="content-slider__button content-slider__prev"
-		type="button"
-		disabled={{previousDisabled}}
-		{{action "slideToPrevious" bubbles=false}}
-		>
-		<img src="img/arrow-left.svg" class="arrow-left">
-	</button>
-	<button class="content-slider__button content-slider__next"
-		type="button"
-		disabled={{nextDisabled}}
-		{{action "slideToNext" bubbles=false}}
-		>
-		<img src="img/arrow-right.svg" class="arrow-right">
-	</button>
 </div>
+
+<button class="content-slider__button content-slider__prev"
+	type="button"
+	disabled={{previousDisabled}}
+	{{action "slideToPrevious" bubbles=false}}
+	>
+	<img src="img/arrow-left.svg" class="arrow-left">
+</button>
+<button class="content-slider__button content-slider__next"
+	type="button"
+	disabled={{nextDisabled}}
+	{{action "slideToNext" bubbles=false}}
+	>
+	<img src="img/arrow-right.svg" class="arrow-right">
+</button>
