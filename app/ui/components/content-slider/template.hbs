@@ -1,29 +1,30 @@
 {{yield}}
 
 <div class="content-slider__slidewindow">
-	<div class="content-slider__slider {{sliderExtraClass}}" style="{{sliderStyle}}">
+	<div class="content-slider__slider {{_sliderExtraClass}}" style="{{_sliderStyle}}">
 		<div class="content-slider__slide">
-			{{component slideComponentName data=previousSlide}}
+			{{component slideComponentName data=_previousSlide}}
 		</div>
 		<div class="content-slider__slide content-slider__slide__active">
-			{{component slideComponentName data=currentSlide selected=true}}
+			{{component slideComponentName data=_currentSlide selected=true}}
 		</div>
 		<div class="content-slider__slide">
-			{{component slideComponentName data=nextSlide}}
+			{{component slideComponentName data=_nextSlide}}
 		</div>
 	</div>
 </div>
 
 <button class="content-slider__button content-slider__prev"
 	type="button"
-	disabled={{previousDisabled}}
+	disabled={{_previousDisabled}}
 	{{action "slideToPrevious" bubbles=false}}
 	>
 	<img src="img/arrow-left.svg" class="arrow-left">
 </button>
+
 <button class="content-slider__button content-slider__next"
 	type="button"
-	disabled={{nextDisabled}}
+	disabled={{_nextDisabled}}
 	{{action "slideToNext" bubbles=false}}
 	>
 	<img src="img/arrow-right.svg" class="arrow-right">
