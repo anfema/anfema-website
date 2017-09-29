@@ -3,26 +3,25 @@
 }
 
 .content-folder {
-
 	&-item {
 		a {
-			overflow-y: hidden;
-			text-decoration: none;
 			display: block;
+			text-decoration: none;
+			overflow-y: hidden;
 		}
 
 		a span {
 			display: inline-block;
 			height: 6.3rem;
+			float: right;
+			overflow: hidden;
 			margin: 1.5rem 0;
+			color: #f5f4f2;
 			font-size: 13rem;
 			font-weight: 600;
-			color: #f5f4f2;
 			line-height: 0.77;
 			letter-spacing: -0.3rem;
-			float: right;
 			white-space: nowrap;
-			overflow: hidden;
 			transition: color 0.5s;
 		}
 
@@ -38,8 +37,20 @@
 
 		grid-template-rows: 1fr fit-content(2rem);
 	} */
+}
 
-	.content-folder-item--active {
+.content-folder-item {
+	&__content {
+		height: 0;
+		overflow: hidden;
+		transition: height 1s;
+	}
+
+	&--active {
+		.content-folder-item__content {
+			height: auto;
+		}
+
 		a span {
 			color: #f90;
 		}
