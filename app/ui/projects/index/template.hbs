@@ -1,3 +1,12 @@
+<div class="project-overview">
+	{{#page-menu}}
+		<ul></ul>
+		<ul>
+			<li>
+				{{#link-to 'index'}}{{t 'projects.detail.nav.back'}}{{/link-to}}
+			</li>
+		</ul>
+	{{/page-menu}}
 <h1>Projects</h1>
 
 {{link-to 'Back' 'language'}}
@@ -8,9 +17,9 @@
 		{{#project-item
 				'projects.detail'
 				project.meta.id
-				tagName='li'
+				tagName='div'
 				project=project.meta
-				data-test-project-item=true}}
+				class="project-item"}}
 		{{/project-item}}
 	{{/each}}
-</ul>
+</div>
