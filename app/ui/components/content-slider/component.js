@@ -34,6 +34,7 @@ export default Component.extend({
 	_dragOffset: 0,
 	/** @type {boolean} */
 	_isTransitioning: false,
+	_oldSelected: undefined,
 
 	/** @returns {number} */
 	_currentIndex: computed('data.@each', 'selected', function () {
@@ -49,14 +50,14 @@ export default Component.extend({
 	_previousDisabled: computed('cycle', '_currentIndex', '_isTransitioning', function() {
 		const currentIndex = this.get('_currentIndex');
 
-		return (!this.cycle && currentIndex < 0) || this._isTransitioning;
+		return this._isTransitioning || (!this.cycle && currentIndex === 0);
 	}),
 
 	/** @returns {boolean} */
 	_nextDisabled: computed('cycle', 'data', '_currentIndex', '_isTransitioning', function() {
 		const currentIndex = this.get('_currentIndex');
 
-		return (!this.cycle && currentIndex > this.data.length - 1) || this._isTransitioning;
+		return this._isTransitioning || (!this.cycle && currentIndex === this.data.length - 1);
 	}),
 
 	/** @returns {object} */
@@ -123,16 +124,16 @@ export default Component.extend({
 		slideToPrevious() {
 			const currentIndex = this.get('_currentIndex');
 
-			if (this.onPrevious && (this.cycle || this._currentIndex > 0)) {
-				this.onPrevious(this.data[mod(currentIndex - 1, this.data.length)]);
+			if (this.cycle || this._currentIndex > 0) {
+				this.transitionToPrevious();
 			}
 		},
 
 		slideToNext() {
 			const currentIndex = this.get('_currentIndex');
 
-			if (this.onNext && (this.cycle || this._currentIndex < this.data.length - 1)) {
-				this.onNext(this.data[mod(currentIndex + 1, this.data.length)]);
+			if (this.cycle || this._currentIndex < this.data.length - 1) {
+				this.transitionToNext();
 			}
 		},
 	},
@@ -144,19 +145,33 @@ export default Component.extend({
 	init() {
 		this._super(...arguments)
 		this.oldAttrs = [];
-		this.onTransitionEnd = () => {
-			this.set('_isTransitioning', false);
+		this.onTransitionEnd = (e) => {
+			if (e.propertyName === 'transform') {
+				this.set('_isTransitioning', false);
+			}
 		}
 	},
 
+	didReceiveAttrs() {
+		this._super(...arguments);
+		if (this._oldSelected === this.selected) {
+			this.set('_isTransitioning', true);
+		}
+		this._oldSelected = this.selected;
+	},
+
 	didInsertElement() {
-		this.element.querySelector('.content-slider__slider')
-			.addEventListener('transitionend', this.onTransitionEnd);
+		const element = this.element.querySelector('.content-slider__slider');
+
+		element.addEventListener('transitionend', this.onTransitionEnd);
+		element.addEventListener('transitioncancel', this.onTransitionEnd);
 	},
 
 	willDestroyElement() {
-		this.element.querySelector('.content-slider__slider')
-			.removeEventListener('transitionend', this.onTransitionEnd);
+		const element = this.element.querySelector('.content-slider__slider');
+
+		element.removeEventListener('transitionend', this.onTransitionEnd);
+		element.removeEventListener('transitioncancel', this.onTransitionEnd);
 	},
 
 	/*
@@ -191,10 +206,10 @@ export default Component.extend({
 
 	/** @argument startPos {number} */
 	startDrag(startPos) {
-		if (this._dragStartPosition === undefined) {
+		if (this._dragStartPosition === undefined && !this._isTransitioning) {
 			this.setProperties({
 				_dragStartPosition: startPos,
-				_dragOffset: 0
+				_dragOffset: 0,
 			});
 		}
 	},
@@ -202,15 +217,14 @@ export default Component.extend({
 	endDrag() {
 		if (this._dragStartPosition !== undefined) {
 			const offset = this.get('_dragOffset');
-			const _currentIndex = this.get('_currentIndex');
 			const sliderWidth = this.element.querySelector('.content-slider__slidewindow').clientWidth;
 
 			if (Math.abs(offset) / sliderWidth > 0.3) {
-				if (this.onPrevious && offset > 0 && (this.cycle || _currentIndex > 0)) {
-					this.onPrevious(this.data[mod(_currentIndex - 1, this.data.length)]);
+				if (offset > 0 && (this.cycle || currentIndex > 0)) {
+					this.transitionToPrevious();
 				}
-				else if (this.onNext && offset < 0 && (this.cycle || _currentIndex < this.data.length - 1)) {
-					this.onNext(this.data[mod(_currentIndex + 1, this.data.length)]);
+				else if (this.onNext && offset < 0 && (this.cycle || currentIndex < this.data.length - 1)) {
+					this.transitionToNext();
 				}
 				this.setProperties({
 					_dragStartPosition: undefined,
@@ -230,9 +244,35 @@ export default Component.extend({
 	*/
 	updateDrag(newPos) {
 		if (this._dragStartPosition !== undefined && this.slideDirection === 0) {
-			this.set('_dragOffset', newPos - this._dragStartPosition);
+			this.setProperties({
+				_dragOffset: newPos - this._dragStartPosition,
+				_isTransitioning: true,
+			});
+
 		}
 	},
+
+	transitionToPrevious() {
+		const currentIndex = this.get('_currentIndex');
+		const prevSlide = this.data[mod(currentIndex - 1, this.data.length)];
+
+		if (this.onPrevious) {
+			this.onPrevious(prevSlide);
+		}
+		// TODO
+		this.set('_isTransitioning', true);
+	},
+
+	transitionToNext() {
+		const currentIndex = this.get('_currentIndex');
+		const nextSlide = this.data[mod(currentIndex + 1, this.data.length)];
+
+		if (this.onPrevious) {
+			this.onNext(nextSlide);
+		}
+		// TODO
+		this.set('_isTransitioning', true);
+	}
 });
 
 function mod(n, m) {
