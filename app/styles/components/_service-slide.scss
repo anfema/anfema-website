@@ -3,8 +3,8 @@
 	width: 100%;
 
 	h1 {
-		margin-top: 140px;
-		font-size: 30px;
+		font-size: 28px;
+		line-height: 30px;
 	}
 
 	&__text {
@@ -13,17 +13,49 @@
 
 	&__billboard {
 		transition: opacity 200ms;
-		left: 480px;
 		color: white;
-		font-size: 180px;
 		font-weight: bold;
 		text-transform: uppercase;
 		position: absolute;
-		top: 230px;
-		opacity: 0.0;
 	}
 
-	.content-slider__slider__steady .content-slider__slide__active &__billboard {
-		opacity: 1.0;
+	// desktop
+	@include media-s-min {
+		h1 {
+			margin-top: 140px;
+		}
+
+		&__billboard {
+			left: 480px;
+			right: 0;
+			font-size: 180px;
+			top: 230px;
+			opacity: 0.0;
+		}
+
+		.content-slider__slider__steady .content-slider__slide__active &__billboard {
+			opacity: 1.0;
+		}
+	}
+
+	// mobile
+	@include media-s-max {
+		h1 {
+			margin-top: 200px;
+		}
+
+		&__billboard {
+			top: 42px;
+			left: 0;
+			right: 0;
+			height: auto;
+			overflow: hidden;
+			font-size: 50px;
+			line-height: 70px;
+			text-align: center;
+		}
+
+		.content-slider__slider__steady .content-slider__slide__active &__billboard {
+		}
 	}
 }
