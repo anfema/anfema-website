@@ -1,14 +1,16 @@
-{{menu-strip items=data}}
+{{menu-strip items=data selected=_selected onChange=(action 'itemSelected')}}
 
 {{#content-slider
 	class='service-content__slider'
 	cycle=true
 	slideComponentName='service-slide'
 	data=data
-	selected=selected
-	slideDirection=slideDirection
+	selected=_selected
+	slideDirection=_slideDirection
 	onPrevious=(action 'previousSlide')
 	onNext=(action 'nextSlide')
 	}}
-	{{anfema-logo class="service-content__background" step=logoStep options=(hash outlineMode=false strokeWidth=20)}}
+	{{anfema-logo class="service-content__background"
+		step=_logoStep
+		options=(hash outlineMode=false strokeWidth=20)}}
 {{/content-slider}}
