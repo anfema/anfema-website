@@ -1,6 +1,8 @@
 {{#each items as |item|}}
-	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass--}}
-	{{#link-to 'index' (query-params service=item.id) class='menu-strip__link'}}
+	{{#link-to 'index'
+		invokeAction=(action 'onItemSelected' item)
+		class=(if (equals item selected) 'menu-strip__link menu-strip__link__active' 'menu-strip__link')
+		}}
 		{{item.id}}
 	{{/link-to}}
 {{/each}}

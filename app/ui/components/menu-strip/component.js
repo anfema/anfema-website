@@ -4,6 +4,18 @@ export default Component.extend({
 	tagName: 'nav',
 	classNames: ['menu-strip'],
 
-	/** @type {object} */
+	/** @type {object[]} */
 	items: null,
+	/** @type {object} */
+	selected: undefined,
+
+	onChange: undefined,
+
+	actions: {
+		onItemSelected(item) {
+			if (this.onChange && this.selected !== item) {
+				this.onChange(item);
+			}
+		}
+	}
 });
