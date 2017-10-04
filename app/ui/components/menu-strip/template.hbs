@@ -1,8 +1,12 @@
-{{#each items as |item|}}
-	{{#link-to 'index'
-		invokeAction=(action 'onItemSelected' item)
-		class=(if (equals item selected) 'menu-strip__link menu-strip__link__active' 'menu-strip__link')
-		}}
-		{{item.id}}
-	{{/link-to}}
-{{/each}}
+<nav class="menu-strip__slider" style="{{_sliderStyle}}">
+	{{#each items as |item|}}
+		{{#link-to 'language.index'
+			(query-params service=item.id)
+			invokeAction=(action 'onItemSelected' item)
+			class='menu-strip__link'
+			activeClass='menu-strip__link__active'
+			}}
+			{{item.id}}
+		{{/link-to}}
+	{{/each}}
+</nav>
