@@ -3,7 +3,7 @@ import { throttle } from '@ember/runloop';
 import { gt } from '@ember/object/computed';
 
 export default Component.extend({
-	classNameBindings: [':page-menu', 'isFloating:page-menu--floating'],
+	classNameBindings: ['isFloating:page-menu--floating'],
 
 	scrollTop: 0,
 

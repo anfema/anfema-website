@@ -37,7 +37,6 @@ function scrollToAnimated(to, callback, duration = 500) {
 }
 
 export default Component.extend({
-	classNames: ['content-lp-cover'],
 	tagName: 'section',
 
 	data: null,
