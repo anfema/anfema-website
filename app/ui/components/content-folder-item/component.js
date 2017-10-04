@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import { computed } from '@ember/object';
 
 export default Component.extend({
-	classNameBindings: [':content-folder-item', 'isActive:content-folder-item--active'],
+	classNameBindings: ['isActive:content-folder-item--active'],
 
 	content: null,
 	selected: null,
