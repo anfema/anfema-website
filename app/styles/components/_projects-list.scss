@@ -1,0 +1,11 @@
+.projects-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 2rem;
+	padding-top: 7rem;
+	background: $color-background;
+}
+
+.projects-list-item {
+	column-span: span 1;
+}

@@ -14,4 +14,10 @@ body {
 	font-family: 'Calibre Web', Helvetica, Arial, sans-serif;
 	font-size: 1.6rem;
 	line-height: 2rem;
+
+	transition: background-color 0.3s ease-in;
+}
+
+.page {
+	padding: 0.01rem 0;
 }
