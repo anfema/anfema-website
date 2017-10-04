@@ -31,22 +31,22 @@ describe('Integration | Component | content lp text', function() {
 
 		this.render(hbs`{{content-lp-text data=data}}`);
 
-		expect(find('.content-lp-section')).to.exist;
-		expect(find('.content-lp-section a')).to.exist;
+		expect(find('.content-lp-text')).to.exist;
+		expect(find('.content-lp-text a')).to.exist;
 		expect(
-			find('.content-lp-section a')
+			find('.content-lp-text a')
 				.innerText.toLowerCase()
 				.trim()
 		).to.equal('01');
-		expect(find('.content-lp-section h2')).to.exist;
+		expect(find('.content-lp-text h2')).to.exist;
 		expect(
-			find('.content-lp-section h2')
+			find('.content-lp-text h2')
 				.innerText.toLowerCase()
 				.trim()
 		).to.equal('foo');
-		expect(find('.content-lp-section__content')).to.exist;
+		expect(find('.content-lp-text__content')).to.exist;
 		expect(
-			find('.content-lp-section__content')
+			find('.content-lp-text__content')
 				.innerText.toLowerCase()
 				.trim()
 		).to.equal('bar');
