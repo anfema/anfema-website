@@ -5,7 +5,9 @@ export function initialize(application) {
 		init() {
 			this._super(...arguments);
 
-			this.classNames = [this.toString().split(':')[1]];
+			this.classNames = [
+				this._debugContainerKey ? this._debugContainerKey.split(':')[1] : this.toString().split(':')[1],
+			];
 		},
 	});
 }
