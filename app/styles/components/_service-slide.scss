@@ -12,11 +12,11 @@
 	}
 
 	&__billboard {
-		transition: opacity 200ms;
-		color: white;
-		font-weight: bold;
-		text-transform: uppercase;
 		position: absolute;
+		color: white;
+		font-weight: 600;
+		text-transform: uppercase;
+		transition: opacity 200ms;
 	}
 
 	// desktop
@@ -26,11 +26,11 @@
 		}
 
 		&__billboard {
-			left: 480px;
-			right: 0;
-			font-size: 180px;
 			top: 230px;
+			right: 0;
+			left: 480px;
 			opacity: 0.0;
+			font-size: 180px;
 		}
 
 		.content-slider__slider__steady .content-slider__slide__active &__billboard {
@@ -46,16 +46,13 @@
 
 		&__billboard {
 			top: 42px;
-			left: 0;
 			right: 0;
+			left: 0;
 			height: auto;
 			overflow: hidden;
 			font-size: 50px;
 			line-height: 70px;
 			text-align: center;
-		}
-
-		.content-slider__slider__steady .content-slider__slide__active &__billboard {
 		}
 	}
 }

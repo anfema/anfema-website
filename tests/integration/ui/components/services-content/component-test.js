@@ -8,6 +8,28 @@ describe('Integration | Component | services content', function () {
 		integration: true,
 	});
 
+	const services = [
+		{
+			id: 'concept',
+			title: 'concept title',
+			text: 'concept text',
+			hidden: false,
+		},
+		{
+			id: 'id2',
+			title: 'title 2',
+			text: 'text 2',
+			hidden: false,
+		},
+		{
+			id: 'id3',
+			title: 'title 3',
+			text: 'text 3',
+			hidden: false,
+		}
+	];
+
+
 	it('renders', function () {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.on('myAction', function (val) { ... });
@@ -17,9 +39,8 @@ describe('Integration | Component | services content', function () {
 		// 		template content
 		// 	{{/services-content}}
 		// `);
-
-		this.render(hbs`{{services-content}}`);
-
-		expect(this.$()).to.have.length(1);
+		this.set('services', services);
+		this.render(hbs`{{services-content data=services}}`);
+		expect(find('.service-content')).to.exist;
 	});
 });

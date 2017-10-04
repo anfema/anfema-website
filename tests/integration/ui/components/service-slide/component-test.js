@@ -16,21 +16,4 @@ describe('Integration | Component | service slide', function() {
 
 		expect(find('.service-slide')).to.exist;
 	});
-
-	it('renders an active slide if the id matches the selected id', function() {
-		this.set('content', { id: 'first' });
-		this.set('selected', 'first');
-
-		this.render(hbs`
-			{{service-slide content=content selected=selected}}
-		`);
-
-		expect(find('.service-slide').classList.contains('service-slide--active')).to
-			.be.true;
-
-		this.set('selected', 'second');
-
-		expect(find('.service-slide').classList.contains('service-slide--active')).to
-			.be.false;
-	});
 });

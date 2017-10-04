@@ -9,22 +9,31 @@ describe('Integration | Component | content slider', function() {
 		integration: true,
 	});
 
-	const data = {
-		component: 'content-slider',
-		services: [
-			{
-				id: 'concept',
-				title: 'concept title',
-				text: 'concept text',
-				hidden: false,
-			},
-		],
-	};
+	const services = [
+		{
+			id: 'concept',
+			title: 'concept title',
+			text: 'concept text',
+			hidden: false,
+		},
+		{
+			id: 'id2',
+			title: 'title 2',
+			text: 'text 2',
+			hidden: false,
+		},
+		{
+			id: 'id3',
+			title: 'title 3',
+			text: 'text 3',
+			hidden: false,
+		}
+	];
 
 	beforeEach(function() {
-		this.set('data', data);
+		this.set('services', services);
 		this.render(hbs`
-			{{content-slider data=data}}
+			{{content-slider data=services}}
 		`);
 	});
 
@@ -32,21 +41,14 @@ describe('Integration | Component | content slider', function() {
 		expect(find('.content-slider')).to.exist;
 	});
 
-	it('renders a navigation bar', function() {
-		expect(find('.content-slider__navigation')).to.exist;
+	it('renders the correct active slide ', function () {
+		this.set('data', services);
+		this.set('selected', services[0]);
 
-		const link = find('.content-slider__navigation-link');
+		this.render(hbs`
+			{{content-slider slideComponentName="service-slide" data=services selected=selected}}
+		`);
 
-		expect(link).to.exist;
-		expect(link.innerText).to.equal('concept title');
-
-		// TODO: Check query-param in an acceptance test if necessary
-	});
-
-	it('renders a list of contents', function() {
-		const contentElement = find('.content-slider__content');
-
-		expect(contentElement).to.exist;
-		expect(contentElement.children).to.be.lengthOf(data.services.length);
+		expect(find('.content-slider__slide__active h1').textContent).to.equal(services[0].title);
 	});
 });
