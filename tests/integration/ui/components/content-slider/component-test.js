@@ -27,7 +27,7 @@ describe('Integration | Component | content slider', function() {
 			title: 'title 3',
 			text: 'text 3',
 			hidden: false,
-		}
+		},
 	];
 
 	beforeEach(function() {
@@ -41,7 +41,7 @@ describe('Integration | Component | content slider', function() {
 		expect(find('.content-slider')).to.exist;
 	});
 
-	it('renders the correct active slide ', function () {
+	it('renders the correct active slide ', function() {
 		this.set('data', services);
 		this.set('selected', services[0]);
 

@@ -16,6 +16,6 @@ export default Component.extend({
 			if (this.onChange && this.selected !== item) {
 				this.onChange(item);
 			}
-		}
-	}
+		},
+	},
 });
