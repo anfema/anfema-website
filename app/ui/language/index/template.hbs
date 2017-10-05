@@ -16,9 +16,7 @@
 
 {{#each model.sections as |data|}}
 	{{#if data.services}}
-		<div class="grid grid--alt">
-			{{component data.component data=data.services selectedId=service}}
-		</div>
+		{{component data.component data=data.services selectedId=service}}
 	{{else if data.team}}
 		<div class="grid grid--alt">
 			{{component data.component data=data labelKey='title' selected=team}}
