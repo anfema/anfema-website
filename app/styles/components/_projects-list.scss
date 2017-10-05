@@ -1,11 +1,75 @@
 .projects-list {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	margin: 2rem;
 	padding-top: 7rem;
 	background: $color-background;
+
+	@include media-l-min {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 .projects-list-item {
+	position: relative;
 	column-span: span 1;
+	padding-bottom: 150%;
+	color: $color-text-inverted;
+	background-color: $color-text;
+
+	&__inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 1.5rem 2rem;
+		overflow: hidden;
+	}
+
+	&__client {
+		margin: 0;
+		font-size: 2.4rem;
+		line-height: 3rem;
+
+		@include media-l-min {
+			font-size: 3rem;
+			line-height: 3.6rem;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		font-size: 1.8rem;
+		line-height: 2rem;
+		font-weight: 400;
+
+		@include media-l-min {
+			font-size: 1.8rem;
+			line-height: 2rem;
+		}
+	}
+
+	&__client-background {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 180%;
+		padding: 0;
+		transform-origin: 0% 100%;
+		transform: rotate(-56.3deg) translateY(83%); // arccos( (b² + c² - a²) / (2bc) )
+		opacity: 0.1;
+		font-size: 2 * 27.3vw;
+		font-weight: 700;
+		line-height: 2 * 27.3vw;
+		text-align: center;
+		text-transform: uppercase;
+		overflow: hidden;
+		white-space: nowrap;
+
+		@include media-l-min {
+			font-size: 27.3vw;
+			line-height: 27.3vw;
+		}
+	}
 }
