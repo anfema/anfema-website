@@ -2,6 +2,7 @@
 @import '_config/_functions/inline-svg';
 @import '_config/_mixins/grid';
 @import '_config/_mixins/media-queries';
+@import '_config/_mixins/shadows';
 @import '_config/_mixins/webfonts';
 @import '_config/variables';
 
@@ -24,6 +25,7 @@
 @import 'components/language-select';
 @import 'components/page-footer';
 @import 'components/page-menu';
+@import 'components/projects-list';
 @import 'components/service-slide';
 @import 'components/services-content';
 @import 'components/menu-strip';
@@ -33,4 +35,3 @@
 // Layouts
 
 // Pages
-@import 'pages/_project-overview';

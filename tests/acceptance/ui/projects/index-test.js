@@ -23,6 +23,6 @@ describe('Acceptance | ui/projects/index', function() {
 	});
 
 	it('renders a list of projects', function() {
-		expect(find('.project-overview')).to.exist;
+		expect(find('.projects-list')).to.exist;
 	});
 });
