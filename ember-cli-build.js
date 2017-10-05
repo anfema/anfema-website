@@ -6,7 +6,7 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
 	const app = new EmberApp(defaults, {
 		fingerprint: {
-			exclude: ['contents/fastboot-data.js'],
+			exclude: ['contents/fastboot-data.js', 'favicon.ico'],
 		},
 		postcssOptions: {
 			compile: {

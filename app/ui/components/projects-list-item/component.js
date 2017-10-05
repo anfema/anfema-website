@@ -4,6 +4,7 @@ import { computed } from '@ember/object';
 
 export default Component.extend({
 	fastboot: service(),
+	headData: service(),
 
 	project: null,
 
@@ -41,42 +42,15 @@ export default Component.extend({
 		this.setStyle();
 	},
 
-	didInsertElement() {
-		if (!this.get('fastboot.isFastBoot')) {
-			this.createStyle();
-			this.setStyle();
-		}
-	},
-
 	willDestroyElement() {
-		if (!this.get('fastboot.isFastBoot')) {
-			this.destroyStyle();
-		}
-	},
-
-	createStyle() {
-		const styleElement = document.createElement('style');
-
-		styleElement.id = this.styleId();
-
-		document.head.appendChild(styleElement);
-
-		this._styleElement = styleElement;
-	},
-
-	destroyStyle() {
-		this._styleElement.parentNode.removeChild(this._styleElement);
-	},
-
-	styleId() {
-		return `${this.elementId}-style`;
+		this.destroyStyle();
 	},
 
 	setStyle() {
-		if (!this._styleElement) {
-			return;
-		}
+		this.get('headData.projectsListItemStyles').addObject(this.get('headStyle'));
+	},
 
-		this._styleElement.innerHTML = this.get('headStyle');
+	destroyStyle() {
+		this.get('headData.projectsListItemStyles').removeObject(this.get('headStyle'));
 	},
 });
