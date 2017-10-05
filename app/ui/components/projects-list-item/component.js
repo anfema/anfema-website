@@ -1,15 +1,22 @@
-import Component from '@ember/component';
+import LinkComponent from '@ember/routing/link-component';
 import { inject as service } from '@ember/service';
 import { computed } from '@ember/object';
+import { scheduleOnce } from '@ember/runloop';
 
-export default Component.extend({
+const ProjectsListItem = LinkComponent.extend({
 	fastboot: service(),
 	headData: service(),
+
+	classNameBindings: ['projectIdClass'],
 
 	project: null,
 
 	bodyHoverClass: computed('project.id', function() {
 		return `hover-${this.get('project.id')}`;
+	}),
+
+	projectIdClass: computed('project.id', function() {
+		return `${this.componentClassName}--${this.get('project.id')}`;
 	}),
 
 	headStyle: computed('project.{color,id}', function() {
@@ -20,11 +27,11 @@ export default Component.extend({
 
 		return `
 			.${bodyHoverClass} {
-				background-color: ${color};
+				background: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), ${color};
 			}
 
-			.project-list-item--${project}:focus,
-			.project-list-item--${project}:hover {
+			.${this.componentClassName}--${project}:focus,
+			.${this.componentClassName}--${project}:hover {
 				background-color: ${color};
 			}
 		`;
@@ -39,6 +46,10 @@ export default Component.extend({
 	},
 
 	didReceiveAttrs() {
+		this.set('params', ['', 'projects.detail', this.get('project.id')]);
+
+		this._super(...arguments);
+
 		this.setStyle();
 	},
 
@@ -47,10 +58,16 @@ export default Component.extend({
 	},
 
 	setStyle() {
-		this.get('headData.projectsListItemStyles').addObject(this.get('headStyle'));
+		scheduleOnce('afterRender', () => {
+			this.get('headData.projectsListItemStyles').addObject(this.get('headStyle'));
+		});
 	},
 
 	destroyStyle() {
-		this.get('headData.projectsListItemStyles').removeObject(this.get('headStyle'));
+		scheduleOnce('afterRender', () => {
+			this.get('headData.projectsListItemStyles').removeObject(this.get('headStyle'));
+		});
 	},
 });
+
+export default ProjectsListItem;
