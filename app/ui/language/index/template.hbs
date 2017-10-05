@@ -18,7 +18,7 @@
 	{{#if data.services}}
 		{{component data.component data=data.services selectedId=service}}
 	{{else if data.team}}
-		<div class="grid grid--alt">
+		<div class="team">
 			{{component data.component data=data labelKey='title' selected=team}}
 		</div>
 	{{else}}

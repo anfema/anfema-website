@@ -1,47 +1,44 @@
 .team {
-	padding: 0;
-
-	.content-folder {
-		grid-column: 1 / span 8;
-	}
+	padding-left: 0;
 }
 
 .content-folder-item {
 	a.content-folder__navigation-link {
-		@include grid-base;
-
-		display: grid;
-		grid-template-columns: repeat(8, 1fr);
+		display: flex;
+		width: 100%;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
 		padding-left: 0 !important;
 		text-decoration: none;
-		overflow-y: hidden;
 	}
 
 	.content-folder__navigation-link span {
-		display: block;
 		font-weight: 600;
-		white-space: nowrap;
 		transition: color 0.5s;
 	}
 
 	.content-folder__navigation-link .title {
+		display: block;
+		width: 100%;
 		height: 6.8rem;
 		overflow: hidden;
-		grid-column: 1 / span 7;
 		margin: 1.5rem 0;
 		color: #f5f4f2;
 		font-size: 13rem;
 		line-height: 0.77;
 		letter-spacing: -0.3rem;
-		text-align: right;
+		white-space: nowrap;
+		direction: rtl;
 	}
 
 	.content-folder__navigation-link .pagination {
-		grid-column: -2 / span 1;
+		width: 12.5%;
+		margin-right: 3.7%;
 		margin-bottom: 0;
 		color: $color-brand-1;
 		font-size: 10rem;
 		line-height: 0.7;
+		text-align: right;
 	}
 
 	.content-folder-item__content {
