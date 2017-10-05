@@ -14,7 +14,7 @@ export default Component.extend({
 		this._super(...arguments);
 		this.onResize = () => {
 			this._logo.updateCanvas();
-		}
+		};
 	},
 
 	didReceiveAttrs() {
@@ -24,8 +24,7 @@ export default Component.extend({
 	},
 
 	didInsertElement() {
-		this._logo = new AnfemaLogo(this.get('element'), this.options)
-			.reset(this.step);
+		this._logo = new AnfemaLogo(this.get('element'), this.options).reset(this.step);
 
 		// TODO use ResizeObserver when they are available
 		window.addEventListener('resize', this.onResize);

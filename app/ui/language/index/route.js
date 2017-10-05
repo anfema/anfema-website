@@ -1,8 +1,7 @@
 import Route from '@ember/routing/route';
-import PrefixMixin from 'anfema/mixins/prefix-mixin';
 import { inject as service } from '@ember/service';
 
-export default Route.extend(PrefixMixin, {
+export default Route.extend({
 	staticContent: service(),
 
 	model() {
