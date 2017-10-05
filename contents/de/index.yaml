@@ -114,7 +114,8 @@ sections:
     team:
       -
         id: 'team1'
-        title: 'Grund #1 Ein großartiges Team'
+        pagination: '#1'
+        title: 'Ein großartiges Team'
         text: |
           Wir sind ein bunt gemischtes und dynamisches Team, das sich durch hohe Ansprüche und ein beeindruckendes
           Skill Set aus mehreren Fachrichtungen ebenso auszeichnet, wie durch Zusammenhalt und Motivation. Wir gehen
@@ -122,7 +123,8 @@ sections:
           Kickern zu unserem Büroalltag.
       -
         id: 'team2'
-        title: 'Grund #2 Innovative Projekte mit neuesten Technologien'
+        pagination: '#2'
+        title: 'Innovative Projekte mit neuesten Technologien'
         text: |
           Wir bedienen das gesamte Spektrum digitaler Entwicklungen und bewegen uns dabei in verschiedensten
           Branchen. Dies verspricht einen abwechslungsreichen Arbeitsalltag mit spannenden, zukunftsorientierten
@@ -131,7 +133,8 @@ sections:
 
       -
         id: 'team3'
-        title: 'Grund #3 Agile Strukturen und großes Entwicklungspotenzial'
+        pagination: '#3'
+        title: 'Agile Strukturen und großes Entwicklungspotenzial'
         text: |
           Flexibilität bedeutet für uns nicht nur, auf die Dynamik der digitalen Branche zu reagieren. Auch innerhalb
           unseres Teams werden Strukturen an aktuelle Projekte und die besten Entwicklungsmethodiken angepasst. Guten
@@ -141,7 +144,8 @@ sections:
           Grenzen gesetzt.
       -
         id: 'team4'
-        title: 'Grund #4 Unschlagbare Lage und Firmenkultur'
+        pagination: '#4'
+        title: 'Unschlagbare Lage und Firmenkultur'
         text: |
           Unsere beiden Büros liegen im Zentrum von München und Augsburg - zwei Städte, die sehr viel bieten! Neben
           kurzen Arbeitswegen verspricht dies eine optimale Work-Life-Balance. Flexible Arbeitszeiten, schöne und

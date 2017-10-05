@@ -35,19 +35,10 @@ describe('Integration | Component | content folder', function() {
 		expect(find('.content-folder')).to.exist;
 	});
 
-	it('renders a navigation bar', function() {
-		expect(find('.content-folder__navigation')).to.exist;
+	// it('renders a list of contents', function() {
+	// 	const contentElement = find('.content-folder__content');
 
-		const link = find('.content-folder__navigation-link');
-
-		expect(link).to.exist;
-		expect(link.innerText).to.equal('team title');
-	});
-
-	it('renders a list of contents', function() {
-		const contentElement = find('.content-folder__content');
-
-		expect(contentElement).to.exist;
-		expect(contentElement.children).to.be.lengthOf(data.team.length);
-	});
+	// 	expect(contentElement).to.exist;
+	// 	expect(contentElement.children).to.be.lengthOf(data.team.length);
+	// });
 });

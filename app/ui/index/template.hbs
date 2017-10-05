@@ -1,1 +1,31 @@
+{{title 'Striving for Perfection'}}
+
+{{#page-menu}}
+	<ul>
+		<li><a href="#1-philosophy">1</a></li>
+		<li><a href="#2-services">2</a></li>
+		<li><a href="#3-team">3</a></li>
+	</ul>
+
+	<ul>
+		<li>
+			{{#link-to 'projects'}}{{t 'index.nav.projects'}}{{/link-to}}
+		</li>
+	</ul>
+{{/page-menu}}
+
+{{#each model.sections as |data|}}
+	{{#if data.services}}
+		<div class="grid grid--alt">
+			{{component data.component data=data labelKey='title' selected=service}}
+		</div>
+	{{else if data.team}}
+		<div class="team">
+			{{component data.component data=data labelKey='title' selected=team}}
+		</div>
+	{{else}}
+		{{component data.component data=data}}
+	{{/if}}
+{{/each}}
+
 {{outlet}}
