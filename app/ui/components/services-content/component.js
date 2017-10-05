@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import { computed } from '@ember/object';
 
 export default Component.extend({
-	classNames: ['service-content'],
+	classNames: ['services-content'],
 
 	data: undefined,
 	selectedId: undefined,
