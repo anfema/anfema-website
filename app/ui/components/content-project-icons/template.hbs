@@ -1,0 +1,6 @@
+{{yield}}
+<h2 class="content-project-icons__title">{{data.title}}</h2>
+{{#each data.icons as |icon|}}
+	<img class="content-project-icons__icon" src="/img/{{icon}}.svg" alt="{{icon}}">
+{{/each}}
+<p class="content-project-icons__text">{{data.text}}</p>
