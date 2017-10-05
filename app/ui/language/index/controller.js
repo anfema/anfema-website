@@ -8,7 +8,7 @@ export default Controller.extend({
 	staticContent: service(),
 
 	service: computed(function() {
-		return this._findFirstIdByComponent('content-slider', 'services.0.id');
+		return this._findFirstIdByComponent('services-content', 'services.0.id');
 	}),
 
 	team: computed(function() {

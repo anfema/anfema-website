@@ -45,11 +45,13 @@ sections:
       flexibility and individuality. This conjunction creates the space in which we accomplish superior solutions!</p>
 
   -
-    component: 'content-slider'
+    id: 'services'
+    component: 'services-content'
     services:
       -
         id: 'concept'
         title: 'Simplifying Processes, Maximising Benefits'
+        logoStep: 0
         text: |
           By structured synchronising of your idea, our expertise and the end users’ needs, we create a concept that is
           equally anticipatory and individual - and therewith the foundation for software that does what it says on
@@ -58,6 +60,7 @@ sections:
       -
         id: 'design'
         title: 'Usability, Creativity & Innovation'
+        logoStep: 1
         text: |
           Creating innovative visual designs and intuitive user interfaces, we bring the concept to life. Characterised
           by maximal usability, our work regularly goes beyond our clients’ every expectation of just how good user
@@ -66,6 +69,7 @@ sections:
       -
         id: 'development'
         title: 'Custom-made & High Quality'
+        logoStep: 2
         text: |
           Your expectations are high? So are ours! Our team of developers impresses with their extensive skill set,
           vast experience and uncompromising accuracy. Striving for perfection, we get to the core of your idea and
@@ -74,6 +78,7 @@ sections:
       -
         id: 'consulting'
         title: 'Experience, Expertise & Foresight'
+        logoStep: 3
         text: |
           New technologies make our hearts skip a beat! As we constantly and happily explore the broad spectrum of
           options, we know exactly which possible solutions are suitable for you, and add maximum value to your
@@ -82,6 +87,7 @@ sections:
       -
         id: 'support'
         title: 'Continually Progressive'
+        logoStep: 4
         text: |
           Knowing that a system will only be future-proof if it’s being serviced following its release, we act in a
           far-sighted and proactive way. The anticipation of emerging changes in the digital world allows us to nip
@@ -90,6 +96,7 @@ sections:
       -
         id: 'management'
         title: 'Customer-focused & Direct'
+        logoStep: 5
         text: |
           We rely on technically adept management, who put themselves in your position to fully understand your
           requirements, and directly work out solutions. As your partner, we’ll assist you starting from the concept
