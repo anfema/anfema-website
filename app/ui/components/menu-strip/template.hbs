@@ -1,12 +1,11 @@
-<nav class="menu-strip__slider" style="{{_sliderStyle}}">
+<nav class="menu-strip__slider">
 	{{#each items as |item|}}
-		{{#link-to 'language.index'
-			(query-params service=item.id)
-			invokeAction=(action 'onItemSelected' item)
-			class='menu-strip__link'
-			activeClass='menu-strip__link__active'
+		{{#menu-strip-link
+			queryParams=(hash service=item.id)
+			activeClass='menu-strip-link__active'
+			onClick=(action 'onItemSelected' item)
 			}}
 			{{item.id}}
-		{{/link-to}}
+		{{/menu-strip-link}}
 	{{/each}}
 </nav>

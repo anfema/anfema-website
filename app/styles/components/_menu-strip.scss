@@ -1,6 +1,9 @@
+.menu-strip.is-interacting {
+	scroll-behavior: auto;
+}
+
 .menu-strip {
 	width: 100%;
-	// overflow-x: hidden;
 	overflow: hidden;
 	scroll-behavior: smooth;
 
@@ -8,33 +11,31 @@
 		display: flex;
 		width: 100%;
 		height: 100%;
-		overflow: hidden;
 		flex-wrap: nowrap;
-		transition: transform 0.4s;
+	}
+}
+
+.menu-strip-link {
+	display: flex;
+	align-items: center;
+	padding: 0 $grid-offset-small 0 $grid-offset-small;
+	color: $color-brand-1;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color 200ms;
+
+	&__active {
+		color: $color-text;
 	}
 
-	a#{&}__link {
-		display: flex;
-		align-items: center;
-		margin: 0 20px 0 0;
-		color: $color-brand-1;
-		font-weight: 400;
-		text-decoration: none;
-		text-transform: uppercase;
-		transition: color 200ms;
+	// TODO define hover state
 
-		&__active {
-			color: $color-text;
-		}
+	@include media-s-min {
+		flex: 1 1 auto;
+	}
 
-		// TODO define hover state
-
-		@include media-s-min {
-			flex: 1 1 auto;
-		}
-
-		@include media-s-max {
-			flex: 0 0 auto;
-		}
+	@include media-s-max {
+		flex: 0 0 auto;
 	}
 }
