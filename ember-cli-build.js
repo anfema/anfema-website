@@ -29,5 +29,9 @@ module.exports = function(defaults) {
 		},
 	});
 
+	app.import('node_modules/fontfaceonload/dist/fontfaceonload.js', {
+		using: [{ transformation: 'amd', as: 'font-face-onload' }],
+	});
+
 	return app.toTree();
 };
