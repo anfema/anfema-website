@@ -2,8 +2,7 @@
 	display: grid;
 	overflow: hidden;
 	grid-template-columns: repeat(2, 1fr);
-	margin: 2rem;
-	padding-top: 7rem;
+	margin: 7rem 4rem 4rem;
 	background: $color-background;
 
 	@include shadow-floating;
