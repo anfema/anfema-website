@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupTest } from 'ember-mocha';
 
-describe('Unit | Controller | language/index', function() {
-	setupTest('controller:language/index', {
+describe('Unit | Controller | language', function() {
+	setupTest('controller:language', {
 		needs: ['service:staticContent'],
 	});
 
