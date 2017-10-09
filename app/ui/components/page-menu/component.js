@@ -6,9 +6,10 @@ export default Component.extend({
 	classNameBindings: ['isTransparent:page-menu--transparent'],
 
 	scrollTop: 0,
+	forceOpaque: false,
 
-	isTransparent: computed('scrollTop', function() {
-		return this.get('scrollTop') === 0;
+	isTransparent: computed('scrollTop', 'forceOpaque', function() {
+		return !this.forceOpaque && this.get('scrollTop') === 0;
 	}),
 
 	willInsertElement() {
