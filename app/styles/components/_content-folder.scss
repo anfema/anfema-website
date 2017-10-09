@@ -1,7 +1,3 @@
-.team {
-	padding-left: 0;
-}
-
 .content-folder-item {
 	a.content-folder__navigation-link {
 		display: flex;
@@ -10,6 +6,14 @@
 		justify-content: flex-end;
 		padding-left: 0 !important;
 		text-decoration: none;
+
+		&.active .pagination {
+			color: #ffb200;
+		}
+
+		&:hover .pagination {
+			color: #fea000;
+		}
 	}
 
 	.content-folder__navigation-link span {
