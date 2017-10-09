@@ -3,6 +3,8 @@ import { computed } from '@ember/object';
 import Ember from 'ember';
 import { htmlSafe } from '@ember/string';
 
+const FlickProportion = 0.15;
+
 export default Component.extend({
 	classNames: ['content-slider'],
 
@@ -217,7 +219,7 @@ export default Component.extend({
 			const offset = this.get('_dragOffset');
 			const sliderWidth = this.element.querySelector('.content-slider__slidewindow').clientWidth;
 
-			if (Math.abs(offset) / sliderWidth > 0.3) {
+			if (Math.abs(offset) / sliderWidth > FlickProportion) {
 				if (offset > 0 && (this.cycle || currentIndex > 0)) {
 					this.transitionToPrevious();
 				} else if (this.onNext && offset < 0 && (this.cycle || currentIndex < this.data.length - 1)) {
