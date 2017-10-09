@@ -18,9 +18,7 @@
 	{{#if data.services}}
 		{{component data.component data=data.services selectedId=service}}
 	{{else if data.team}}
-		<section>
-			{{component data.component data=data labelKey='title' selected=team}}
-		</section>
+		{{component data.component data=data labelKey='title' selected=team}}
 	{{else}}
 		{{component data.component data=data}}
 	{{/if}}

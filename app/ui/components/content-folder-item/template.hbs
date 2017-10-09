@@ -3,9 +3,9 @@
 	<p>{{content.text}}</p>
 </div>
 
-{{#link-to 'language.index' (query-params team=content.id) class=(concat "content-folder__navigation-link navigation-link-" index)}}
-		<span class="content-folder__title" aria-hidden=true>{{content.title}}</span>
-		<span class="content-folder__pagination">{{content.pagination}}</span>
-	{{/link-to}}
+{{#link-to 'language.index' (query-params team=content.id) class=(concat 'content-folder__navigation-link content-folder__navigation-link-' index)}}
+	<span class="content-folder__title" aria-hidden=true>{{content.title}}</span>
+	<span class="content-folder__pagination">{{content.pagination}}</span>
+{{/link-to}}
 
 {{yield}}
