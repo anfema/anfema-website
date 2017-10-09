@@ -7,36 +7,34 @@ export default Component.extend({
 
 	scrollTop: 0,
 
-	startTransparent: false,
-
-	isTransparent: computed('scrollTop', 'startTransparent', function() {
-		return this.get('startTransparent') && this.get('scrollTop') === 0;
+	isTransparent: computed('scrollTop', function() {
+		return this.get('scrollTop') === 0;
 	}),
 
+	willInsertElement() {
+		this._updateScrollPosition();
+	},
+
 	didInsertElement() {
-		if (!window) {
-			return;
-		}
-
-		this._scrollEventListener = () =>
-			throttle(
+		if (window) {
+			this._scrollEventListener = () => throttle(
 				this,
-				() => {
-					if (!this.isDestroyed) {
-						this.set('scrollTop', window.scrollY);
-					}
-				},
-				200
-			);
+				() => this._updateScrollPosition(),
+				200);
 
-		window.addEventListener('scroll', this._scrollEventListener);
+			window.addEventListener('scroll', this._scrollEventListener);
+		}
 	},
 
 	willRemoveElement() {
-		if (!window) {
-			return;
+		if (window) {
+			window.removeEventListener('scroll', this._scrollEventListener);
 		}
-
-		window.removeEventListener('scroll', this._scrollEventListener);
 	},
+
+	_updateScrollPosition() {
+		if (!this.isDestroyed) {
+			this.set('scrollTop', window.scrollY);
+		}
+	}
 });
