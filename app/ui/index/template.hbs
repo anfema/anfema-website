@@ -20,9 +20,7 @@
 			{{component data.component data=data labelKey='title' selected=service}}
 		</div>
 	{{else if data.team}}
-		<div class="team">
-			{{component data.component data=data labelKey='title' selected=team}}
-		</div>
+		{{component data.component data=data labelKey='title' selected=team}}
 	{{else}}
 		{{component data.component data=data}}
 	{{/if}}

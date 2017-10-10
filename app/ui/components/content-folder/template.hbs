@@ -1,4 +1,3 @@
-{{#each data.team as |content|}}
-	{{!-- TODO: Make query param dynamic, will probably need a custom helper or better a subclass --}}
+{{#each data.team as |content index|}}
 	{{content-folder-item content=content selected=selected}}
 {{/each}}
