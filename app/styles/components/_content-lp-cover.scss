@@ -8,7 +8,7 @@
 	color: $color-text-inverted;
 	background: #363636 linear-gradient(to bottom, #292929, #363636) no-repeat;
 
-	@include media-l-min {
+	@include media-large-min {
 		height: 96vh;
 		grid-template-rows: 1fr fit-content(8.2rem) 1fr;
 		background: #363636 no-repeat;
@@ -39,7 +39,7 @@
 		grid-row: 2 / span 1;
 		align-self: center;
 
-		@include media-l-max {
+		@include media-large-max {
 			display: grid;
 			height: 75vh;
 			grid-row: 1 / span 1;
@@ -74,11 +74,11 @@
 		text-shadow: 0 2px 5px rgba(49, 41, 51, 0.1), 0 1px 2px rgba(49, 41, 51, 0.17);
 		text-transform: uppercase;
 
-		@include media-l-max {
+		@include media-large-max {
 			grid-row: 3 / span 1;
 		}
 
-		@include media-l-min {
+		@include media-large-min {
 			font-size: 10.8vmax;
 			line-height: 0.8;
 			letter-spacing: 0.02em;
@@ -93,11 +93,11 @@
 		font-size: 1.9rem;
 		line-height: 2.5rem;
 
-		@include media-l-max {
+		@include media-large-max {
 			grid-row: -1 / span 1;
 		}
 
-		@include media-l-min {
+		@include media-large-min {
 			font-size: 2.5rem;
 			line-height: 3rem;
 		}

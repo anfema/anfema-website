@@ -19,3 +19,10 @@ $grid-width-content-large: 92.8rem;
 $grid-screen: 102.4rem;
 $grid-offset-small: 1.6rem;
 $grid-offset-medium: ($grid-screen - $grid-width-content-large) / $grid-screen / 2 * 100%;
+$grid-offset-large: 3.6rem;
+
+// Breakpoints
+$breakpoint-small-medium: 420px;
+$breakpoint-medium-large: 780px;
+$breakpoint-large-xlarge: 1300px;
+$breakpoint-xlarge-xxlarge: 1600px;

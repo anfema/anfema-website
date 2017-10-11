@@ -2,7 +2,7 @@
 	font-size: 1.6rem;
 	line-height: 2.5rem;
 
-	@include media-l-min {
+	@include media-large-min {
 		font-size: 1.7rem;
 		line-height: 2.5rem;
 	}
@@ -61,7 +61,7 @@
 		line-height: 3rem;
 		text-transform: uppercase;
 
-		@include media-l-min {
+		@include media-large-min {
 			font-size: 3.6rem;
 			line-height: 4rem;
 		}

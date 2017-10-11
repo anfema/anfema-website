@@ -21,7 +21,7 @@
 	}
 
 	// desktop
-	@include media-s-min {
+	@include media-small-min {
 		h1 {
 			margin-top: 140px;
 		}
@@ -40,7 +40,7 @@
 	}
 
 	// mobile
-	@include media-s-max {
+	@include media-small-max {
 		h1 {
 			margin-top: 200px;
 		}

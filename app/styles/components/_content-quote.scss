@@ -7,7 +7,7 @@
 	padding-bottom: 0;
 	background-color: $color-grey-light;
 
-	@include media-l-min {
+	@include media-large-min {
 		padding-top: 8rem;
 		padding-bottom: 8rem;
 	}
@@ -20,7 +20,7 @@
 		font-weight: 700;
 		line-height: 2.5rem;
 
-		@include media-l-min {
+		@include media-large-min {
 			grid-column: 3 / -2;
 			font-size: 3.4rem;
 			line-height: 3.5rem;
@@ -45,7 +45,7 @@
 			pointer-events: none;
 			user-select: none;
 
-			@include media-l-min {
+			@include media-large-min {
 				font-size: 55rem;
 				line-height: 40rem;
 			}
@@ -56,7 +56,7 @@
 			left: -5rem;
 			content: '“';
 
-			@include media-l-min {
+			@include media-large-min {
 				top: -8rem;
 				left: -13rem;
 			}
@@ -68,7 +68,7 @@
 			text-align: right;
 			content: '”';
 
-			@include media-l-min {
+			@include media-large-min {
 				top: -8rem;
 				right: -12rem;
 			}
@@ -81,7 +81,7 @@
 		font-size: 1.8rem;
 		text-align: right;
 
-		@include media-l-min {
+		@include media-large-min {
 			grid-column: -5 / span 3;
 		}
 	}
@@ -95,7 +95,7 @@
 		font-size: 1.8rem;
 		text-align: left;
 
-		@include media-l-min {
+		@include media-large-min {
 			grid-column: 2 / span 2;
 			grid-row: 2 / span 1;
 			margin: 0;
@@ -123,12 +123,12 @@ html[lang='de'] {
 			top: auto;
 			content: '„';
 
-			@include media-l-max {
+			@include media-large-max {
 				bottom: 5rem;
 				left: -1rem;
 			}
 
-			@include media-l-min {
+			@include media-large-min {
 				bottom: -3rem;
 				left: -13rem;
 			}

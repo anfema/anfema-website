@@ -16,7 +16,7 @@
 	}
 
 	// desktop
-	@include media-s-min {
+	@include media-small-min {
 		&__slider {
 			height: 510px;
 		}
@@ -36,7 +36,7 @@
 	}
 
 	// mobile
-	@include media-s-max {
+	@include media-small-max {
 		&__slider {
 			height: 460px;
 		}
