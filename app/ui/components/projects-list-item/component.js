@@ -11,23 +11,25 @@ const ProjectsListItem = LinkComponent.extend({
 
 	project: null,
 
-	bodyHoverClass: computed('project.id', function() {
-		return `hover-${this.get('project.id')}`;
+	hoverClass: computed('project.id', function() {
+		return `shade--hover-${this.get('project.id')}`;
 	}),
 
 	projectIdClass: computed('project.id', function() {
 		return `${this.componentClassName}--${this.get('project.id')}`;
 	}),
 
+	shadeElement: null,
+
 	headStyle: computed('project.{color,id}', function() {
 		const color = this.get('project.color');
-		const className = this.get('bodyHoverClass');
+		const className = this.get('hoverClass');
 		const project = this.get('project.id');
-		const bodyHoverClass = this.get('bodyHoverClass');
+		const hoverClass = this.get('hoverClass');
 
 		return `
-			.${bodyHoverClass} {
-				background: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), ${color};
+			.${hoverClass} {
+				background-color: ${color};
 			}
 
 			.${this.componentClassName}--${project}:focus,
@@ -38,11 +40,11 @@ const ProjectsListItem = LinkComponent.extend({
 	}),
 
 	mouseEnter() {
-		document.body.classList.add(this.get('bodyHoverClass'));
+		this.get('shadeElement').classList.add(this.get('hoverClass'));
 	},
 
 	mouseLeave() {
-		document.body.classList.remove(this.get('bodyHoverClass'));
+		this.get('shadeElement').classList.remove(this.get('hoverClass'));
 	},
 
 	didReceiveAttrs() {
@@ -51,6 +53,10 @@ const ProjectsListItem = LinkComponent.extend({
 		this._super(...arguments);
 
 		this.setStyle();
+	},
+
+	didInsertElement() {
+		this.set('shadeElement', document.querySelector('.shade'));
 	},
 
 	willDestroyElement() {

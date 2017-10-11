@@ -1,16 +1,32 @@
 .projects-list {
 	position: fixed;
-	top: 0; bottom: 0; left: 0; right: 0;
+	top: 0.5rem;
+	right: 0.5rem;
+	left: 0.5rem;
 	display: grid;
+	height: calc(100vh - 1rem);
 	overflow: hidden;
 	grid-template-columns: repeat(2, 1fr);
-	padding: 7rem 1rem 1rem;
-	background-color: rgba(200, 100, 0, 0.5);
+	padding: 5.4rem 0 0;
+	background: $color-background;
 
 	@include shadow-floating;
 
 	@include media-large-min {
+		top: 1rem;
+		right: 2.8rem;
+		left: 2.8rem;
 		grid-template-columns: repeat(4, 1fr);
+		padding-top: 6rem;
+	}
+
+	&__page-menu {
+		position: absolute;
+
+		.page-menu__bar {
+			margin: 0;
+			box-shadow: none;
+		}
 	}
 }
 
