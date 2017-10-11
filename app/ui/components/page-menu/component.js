@@ -18,10 +18,7 @@ export default Component.extend({
 
 	didInsertElement() {
 		if (window) {
-			this._scrollEventListener = () => throttle(
-				this,
-				() => this._updateScrollPosition(),
-				200);
+			this._scrollEventListener = () => throttle(this, () => this._updateScrollPosition(), 200);
 
 			window.addEventListener('scroll', this._scrollEventListener);
 		}
@@ -37,5 +34,5 @@ export default Component.extend({
 		if (!this.isDestroyed) {
 			this.set('scrollTop', window.scrollY);
 		}
-	}
+	},
 });

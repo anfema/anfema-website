@@ -5,11 +5,13 @@ export default Route.extend({
 	intl: service(),
 	staticContent: service(),
 
-	beforeModel(transition) {
-		return this.get('intl').setLocale(transition.params.language.language_id);
-	},
+	model({ language_id }) {
+		if (this.get('intl.locales').indexOf(language_id) < 0) {
+			this.transitionTo('index');
+		}
 
-	model() {
-		return this.get('staticContent').read('/index');
+		this.get('intl').setLocale(language_id);
+
+		return null;
 	},
 });

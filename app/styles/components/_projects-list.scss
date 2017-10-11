@@ -16,6 +16,7 @@
 		top: 1rem;
 		right: 2.8rem;
 		left: 2.8rem;
+		height: calc(100vh - 2rem);
 		grid-template-columns: repeat(4, 1fr);
 		padding-top: 6rem;
 	}
@@ -32,9 +33,17 @@
 
 .projects-list-item {
 	position: relative;
-	color: $color-text-inverted;
 	background-color: $color-text;
 	column-span: span 1;
+
+	&,
+	&:link,
+	&:visited,
+	&:focus,
+	&:hover,
+	&:active {
+		color: $color-text-inverted;
+	}
 
 	&__inner {
 		position: absolute;

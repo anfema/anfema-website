@@ -1,19 +1,1 @@
-
-
-{{title 'Striving for Perfection'}}
-
-{{#each model.sections as |data|}}
-	{{#if data.services}}
-		<div class="grid grid--alt">
-			{{component data.component data=data.services selectedId=service}}
-		</div>
-	{{else if data.team}}
-		<div class="grid grid--alt">
-			{{component data.component data=data labelKey='title' selected=team}}
-		</div>
-	{{else}}
-		{{component data.component data=data}}
-	{{/if}}
-{{/each}}
-
 {{outlet}}

@@ -4,6 +4,14 @@ import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import { click, find, findAll } from 'ember-native-dom-helpers';
 import EmberObject from '@ember/object';
+import Service from '@ember/service';
+
+const routerStub = Service.extend({
+	// eslint-disable-next-line ember/avoid-leaking-state-in-components
+	_router: {
+		currentURL: '/de',
+	},
+});
 
 describe('Integration | Component | language select', function() {
 	setupComponentTest('language-select', {
@@ -11,6 +19,8 @@ describe('Integration | Component | language select', function() {
 	});
 
 	beforeEach(function() {
+		this.register('service:router', routerStub);
+		this.inject.service('router', { as: 'router' });
 		this.container.lookup('service:intl').setLocale('de');
 	});
 

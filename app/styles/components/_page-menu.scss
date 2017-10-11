@@ -1,6 +1,4 @@
 .page-menu {
-	@include grid-base;
-
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -13,12 +11,17 @@
 		display: flex;
 		grid-column: 1 / -1;
 		justify-content: space-between;
-		margin: 1rem -0.6rem;
-		padding: 0.5rem 2rem 0.5rem 0.6rem;
+		margin: 0.5rem;
+		padding: 0.2rem 1rem 0.2rem 0;
 		background: rgba(255, 255, 255, 1);
 		box-shadow: 0 2px 5px 0 rgba(49, 41, 51, 0.1), 0 1px 2px 0 rgba(49, 41, 51, 0.17),
 			0 5px 20px 0 rgba(49, 41, 51, 0.15);
 		transition: box-shadow 0.5s ease-out, background 0.25s ease-in;
+
+		@include media-large-min {
+			margin: 1rem 2.8rem;
+			padding: 0.5rem 2rem 0.5rem 0.6rem;
+		}
 	}
 
 	&__logo {
