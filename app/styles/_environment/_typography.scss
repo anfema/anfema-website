@@ -1,29 +1,21 @@
+a {
+	&,
+	&:link,
+	&:visited {
+		color: $color-href;
+	}
+
+	&:focus,
+	&:hover {
+		color: $color-href-hover;
+	}
+
+	&:active {
+		color: $color-href-active;
+	}
+}
+
 [class*='content-'] {
-	font-size: 1.6rem;
-	line-height: 2.5rem;
-
-	@include media-large-min {
-		font-size: 1.7rem;
-		line-height: 2.5rem;
-	}
-
-	a {
-		&,
-		&:link,
-		&:visited {
-			color: $color-href;
-		}
-
-		&:focus,
-		&:hover {
-			color: $color-href-hover;
-		}
-
-		&:active {
-			color: $color-href-active;
-		}
-	}
-
 	p,
 	ul,
 	ol,

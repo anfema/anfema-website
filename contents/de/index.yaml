@@ -110,21 +110,23 @@ sections:
     sectionLabel: '03'
 
   -
-    component: 'content-folder'
-    team:
+    component: 'content-lp-team'
+    reasons:
       -
-        id: 'team1'
+        id: 'great-team'
         pagination: '#1'
         title: 'Ein großartiges Team'
+        shortTitle: 'Großartiges Team'
         text: |
           Wir sind ein bunt gemischtes und dynamisches Team, das sich durch hohe Ansprüche und ein beeindruckendes
           Skill Set aus mehreren Fachrichtungen ebenso auszeichnet, wie durch Zusammenhalt und Motivation. Wir gehen
           nicht nur freundlich sondern freundschaftlich miteinander um. So gehören gemeinsames Kochen, Essen und
           Kickern zu unserem Büroalltag.
       -
-        id: 'team2'
+        id: 'innovative-projects'
         pagination: '#2'
         title: 'Innovative Projekte mit neuesten Technologien'
+        shortTitle: 'Innovative Projekte'
         text: |
           Wir bedienen das gesamte Spektrum digitaler Entwicklungen und bewegen uns dabei in verschiedensten
           Branchen. Dies verspricht einen abwechslungsreichen Arbeitsalltag mit spannenden, zukunftsorientierten
@@ -132,9 +134,10 @@ sections:
           vielfältiger Technologien - sowohl in der Arbeitsausstattung als auch in der Anwendung für unsere Projekte.
 
       -
-        id: 'team3'
+        id: 'structures-and-potential'
         pagination: '#3'
         title: 'Agile Strukturen und großes Entwicklungspotenzial'
+        shortTitle: 'Agile Strukturen'
         text: |
           Flexibilität bedeutet für uns nicht nur, auf die Dynamik der digitalen Branche zu reagieren. Auch innerhalb
           unseres Teams werden Strukturen an aktuelle Projekte und die besten Entwicklungsmethodiken angepasst. Guten
@@ -143,9 +146,10 @@ sections:
           vorantreiben. Steilen Lernkurven und persönlichen und professionellen Entwicklungen sind damit keine
           Grenzen gesetzt.
       -
-        id: 'team4'
+        id: 'location-and-culture'
         pagination: '#4'
         title: 'Unschlagbare Lage und Firmenkultur'
+        shortTitle: 'Unschlagbare Firmenkultur'
         text: |
           Unsere beiden Büros liegen im Zentrum von München und Augsburg - zwei Städte, die sehr viel bieten! Neben
           kurzen Arbeitswegen verspricht dies eine optimale Work-Life-Balance. Flexible Arbeitszeiten, schöne und
