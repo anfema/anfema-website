@@ -20,15 +20,6 @@ describe('Integration | Component | content lp cover', function() {
 	});
 
 	it('renders', function() {
-		// Set any properties with this.set('myProperty', 'value');
-		// Handle any actions with this.on('myAction', function (val) { ... });
-		// Template block usage:
-		// this.render(hbs`
-		// 	{{#content-lp-cover}}
-		// 		template content
-		// 	{{/content-lp-cover}}
-		// `);
-
 		this.set('data', data);
 
 		this.render(hbs`{{content-lp-cover data=data}}`);
