@@ -4,7 +4,7 @@
 	& > * {
 		grid-column: 1 / -1;
 
-		@include media-l-min {
+		@include media-large-min {
 			grid-column: 2 / span 5;
 		}
 	}

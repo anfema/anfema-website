@@ -5,22 +5,26 @@ import hbs from 'htmlbars-inline-precompile';
 import Service from '@ember/service';
 
 const routerStub = Service.extend({
-	urlFor: function () { return 'http://url'},
-	isActive: function() { return false },
+	urlFor: function() {
+		return 'http://url';
+	},
+	isActive: function() {
+		return false;
+	},
 	currentRouteName: 'http://test',
 });
 
-describe('Integration | Component | menu strip link', function () {
+describe('Integration | Component | menu strip link', function() {
 	setupComponentTest('menu-strip-link', {
 		integration: true,
 	});
 
-	beforeEach(function () {
+	beforeEach(function() {
 		this.register('service:router', routerStub);
 		this.inject.service('router', { as: 'router' });
 	});
 
-	it('renders', function () {
+	it('renders', function() {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.on('myAction', function (val) { ... });
 		// Template block usage:

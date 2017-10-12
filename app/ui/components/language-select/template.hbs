@@ -2,14 +2,12 @@
 	(t 'component.language-select.action.de')
 	router.currentRouteName
 	'de'
-	class='language-select-button language-select-button--de'
-	activeClass='language-select-button--active'
+	class=(concat 'language-select-button language-select-button--de ' (unless isEnglish 'language-select-button--active'))
 }}
 
 {{link-to
 	(t 'component.language-select.action.en')
 	router.currentRouteName
 	'en'
-	class='language-select-button language-select-button--en'
-	activeClass='language-select-button--active'
+	class=(concat 'language-select-button language-select-button--en ' (if isEnglish 'language-select-button--active'))
 }}

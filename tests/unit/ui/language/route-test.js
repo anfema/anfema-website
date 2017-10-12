@@ -4,7 +4,7 @@ import { setupTest } from 'ember-mocha';
 
 describe('Unit | Route | language', function() {
 	setupTest('route:language', {
-		needs: ['service:intl'],
+		needs: ['service:intl', 'service:staticContent'],
 	});
 
 	it('exists', function() {

@@ -13,14 +13,25 @@ html {
 body {
 	font-family: 'Calibre Web', Arial, sans-serif;
 	font-size: 1.6rem;
-	line-height: 2rem;
-	transition: background-color 0.3s ease-in;
+	line-height: 2.5rem;
+
+	@include media-large-min {
+		font-size: 1.7rem;
+		line-height: 2.5rem;
+	}
 
 	@include webfont-error {
 		font-family: Arial, sans-serif;
 	}
+
+	& > .ember-view {
+		display: grid;
+		min-height: 100vh;
+		grid-template-rows: 1fr minmax(0, max-content);
+	}
 }
 
 .page {
+	overflow: hidden;
 	padding: 0.01rem 0;
 }

@@ -1,5 +1,5 @@
 {{#projects-list projects=model.files}}
-	{{#page-menu}}
+	{{#page-menu forceOpaque=true class="projects-list__page-menu"}}
 		<ul>
 			<li>
 				{{#link-to 'language'}}{{t 'projects.detail.nav.back'}}{{/link-to}}

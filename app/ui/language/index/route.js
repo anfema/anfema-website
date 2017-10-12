@@ -7,8 +7,4 @@ export default Route.extend({
 	model() {
 		return this.get('staticContent').read('/index');
 	},
-
-	setupController(controller, model) {
-		this._super(...arguments);
-	},
 });

@@ -31,11 +31,11 @@
 
 	// TODO define hover state
 
-	@include media-s-min {
+	@include media-small-min {
 		flex: 1 1 auto;
 	}
 
-	@include media-s-max {
+	@include media-small-max {
 		flex: 0 0 auto;
 	}
 }

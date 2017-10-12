@@ -6,12 +6,12 @@
 	color: $color-text-inverted;
 	background: #292929 linear-gradient(to bottom, #292929, #363636);
 
-	@include media-s-max {
+	@include media-small-max {
 		font-size: 1.6rem;
 		line-height: 3rem;
 	}
 
-	@include media-l-min {
+	@include media-large-min {
 		grid-template-columns: repeat(3, 1fr) 2fr 1fr;
 	}
 
@@ -26,7 +26,7 @@
 	h3 {
 		margin: 3rem 0 0;
 
-		@include media-s-min {
+		@include media-small-min {
 			margin: 6rem 0 1rem;
 		}
 	}
@@ -42,11 +42,11 @@
 		grid-column: 1 / -1;
 		margin: 3.4rem 0 0 -1rem;
 
-		@include media-s-min {
+		@include media-small-min {
 			margin: 4.4rem 0 0;
 		}
 
-		@include media-l-min {
+		@include media-large-min {
 			grid-column-end: span 1;
 		}
 
@@ -65,7 +65,7 @@
 	&__office {
 		grid-column: 1 / 5;
 
-		@include media-l-min {
+		@include media-large-min {
 			grid-column: 2 / span 1;
 		}
 	}
@@ -73,7 +73,7 @@
 	&__office + &__office {
 		grid-column: 5 / -1;
 
-		@include media-l-min {
+		@include media-large-min {
 			grid-column: 3 / span 1;
 		}
 	}
@@ -82,7 +82,7 @@
 	&__contact {
 		margin-top: 2rem;
 
-		@include media-s-min {
+		@include media-small-min {
 			margin-top: 9rem;
 		}
 	}
@@ -90,7 +90,7 @@
 	&__contact {
 		grid-column: 1 / -1;
 
-		@include media-l-min {
+		@include media-large-min {
 			grid-column: -3 / span 1;
 		}
 	}
@@ -98,7 +98,7 @@
 	&__meta {
 		grid-column: 1 / -1;
 
-		@include media-l-min {
+		@include media-large-min {
 			grid-column: -2 / span 1;
 		}
 	}

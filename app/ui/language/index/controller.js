@@ -1,6 +1,23 @@
 import Controller from '@ember/controller';
-import { computed, get } from '@ember/object';
 import { inject as service } from '@ember/service';
+import { computed, get } from '@ember/object';
+import { oneWay } from '@ember/object/computed';
+
+/**
+ * Find the id for the first item in a list of contents
+ *
+ * @param {any} model
+ * @param {String} name
+ * @param {String} path
+ * @returns {String} id
+ */
+function findByComponentNameAndPath(model, name, path) {
+	if (model && model.sections) {
+		return get(model.sections.find(s => s.component === name), path);
+	}
+
+	return null;
+}
 
 export default Controller.extend({
 	queryParams: ['service', 'team'],
@@ -8,22 +25,18 @@ export default Controller.extend({
 	staticContent: service(),
 
 	service: computed(function() {
-		return this._findFirstIdByComponent('services-content', 'services.0.id');
+		return findByComponentNameAndPath(
+			this.get('staticContent').readShoebox('/index'),
+			'services-content',
+			'services.0.id'
+		);
 	}),
 
 	team: computed(function() {
-		return this._findFirstIdByComponent('content-folder', 'team.0.id');
+		return findByComponentNameAndPath(
+			this.get('staticContent').readShoebox('/index'),
+			'content-lp-team',
+			'reasons.0.id'
+		);
 	}),
-
-	_findFirstIdByComponent(name, path) {
-		const content = this.get('staticContent').readShoebox('/index');
-
-		if (content) {
-			const id = get(content.sections.find(section => section.component === name), path);
-
-			return id;
-		}
-
-		return null;
-	},
 });

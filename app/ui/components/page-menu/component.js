@@ -1,38 +1,38 @@
 import Component from '@ember/component';
 import { throttle } from '@ember/runloop';
-import { gt } from '@ember/object/computed';
+import { computed } from '@ember/object';
 
 export default Component.extend({
-	classNameBindings: ['isFloating:page-menu--floating'],
+	classNameBindings: ['isTransparent:page-menu--transparent'],
 
 	scrollTop: 0,
+	forceOpaque: false,
 
-	isFloating: gt('scrollTop', 0),
+	isTransparent: computed('scrollTop', 'forceOpaque', function() {
+		return !this.forceOpaque && this.get('scrollTop') === 0;
+	}),
+
+	willInsertElement() {
+		this._updateScrollPosition();
+	},
 
 	didInsertElement() {
-		if (!window) {
-			return;
+		if (window) {
+			this._scrollEventListener = () => throttle(this, () => this._updateScrollPosition(), 200);
+
+			window.addEventListener('scroll', this._scrollEventListener);
 		}
-
-		this._scrollEventListener = () =>
-			throttle(
-				this,
-				() => {
-					if (!this.isDestroyed) {
-						this.set('scrollTop', window.scrollY);
-					}
-				},
-				200
-			);
-
-		window.addEventListener('scroll', this._scrollEventListener);
 	},
 
 	willRemoveElement() {
-		if (!window) {
-			return;
+		if (window) {
+			window.removeEventListener('scroll', this._scrollEventListener);
 		}
+	},
 
-		window.removeEventListener('scroll', this._scrollEventListener);
+	_updateScrollPosition() {
+		if (!this.isDestroyed) {
+			this.set('scrollTop', window.scrollY);
+		}
 	},
 });

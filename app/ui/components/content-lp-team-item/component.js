@@ -3,13 +3,13 @@ import { computed } from '@ember/object';
 import { next } from '@ember/runloop';
 
 export default Component.extend({
-	classNameBindings: ['isActive:content-folder-item--active'],
+	classNameBindings: ['isActive:content-lp-team-item--active'],
 
-	content: null,
-	selected: null,
+	// data: null,
+	// selected: null,
 
-	isActive: computed('content.id', 'selected', function() {
-		return this.get('content.id') === this.get('selected');
+	isActive: computed('data.id', 'selected', function() {
+		return this.get('data.id') === this.get('selected');
 	}),
 
 	didReceiveAttrs() {
@@ -22,7 +22,7 @@ export default Component.extend({
 	},
 
 	didInsertElement() {
-		this._content = this.element.querySelector('.content-folder-item__content');
+		this._content = this.element.querySelector('.content-lp-team-item__content');
 
 		this._contentTransitionEnd = event => {
 			if (this.get('isActive')) {

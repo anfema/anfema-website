@@ -3,10 +3,15 @@ import { inject as service } from '@ember/service';
 
 export default Route.extend({
 	intl: service(),
+	staticContent: service(),
 
-	beforeModel(transition) {
-		return this.get('intl').setLocale(transition.params.language.language_id);
+	model({ language_id }) {
+		if (this.get('intl.locales').indexOf(language_id) < 0) {
+			this.transitionTo('index');
+		}
+
+		this.get('intl').setLocale(language_id);
+
+		return null;
 	},
-
-	model() {},
 });

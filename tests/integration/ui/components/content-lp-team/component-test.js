@@ -4,14 +4,14 @@ import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import { find } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | content folder', function() {
-	setupComponentTest('content-folder', {
+describe('Integration | Component | content lp team', function() {
+	setupComponentTest('content-lp-team', {
 		integration: true,
 	});
 
 	const data = {
-		component: 'content-folder',
-		team: [
+		component: 'content-lp-team',
+		reasons: [
 			{
 				id: 'team',
 				title: 'team title',
@@ -24,7 +24,7 @@ describe('Integration | Component | content folder', function() {
 	beforeEach(function() {
 		this.set('data', data);
 		this.render(hbs`
-			{{content-folder
+			{{content-lp-team
 				data=data
 				labelKey='title'
 			}}
@@ -32,11 +32,11 @@ describe('Integration | Component | content folder', function() {
 	});
 
 	it('renders', function() {
-		expect(find('.content-folder')).to.exist;
+		expect(find('.content-lp-team')).to.exist;
 	});
 
 	// it('renders a list of contents', function() {
-	// 	const contentElement = find('.content-folder__content');
+	// 	const contentElement = find('.content-lp-team__content');
 
 	// 	expect(contentElement).to.exist;
 	// 	expect(contentElement.children).to.be.lengthOf(data.team.length);

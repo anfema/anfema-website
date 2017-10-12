@@ -1,7 +1,7 @@
-{{title 'Striving for Perfection'}}
+{{title (t 'index.title')}}
 
-{{#page-menu}}
-	<ul>
+{{#page-menu startTransparent=true}}
+	<ul class="page-menu__lp-jump">
 		<li><a href="#1-philosophy">1</a></li>
 		<li><a href="#2-services">2</a></li>
 		<li><a href="#3-team">3</a></li>
@@ -16,9 +16,11 @@
 
 {{#each model.sections as |data|}}
 	{{#if data.services}}
-		{{component data.component data=data.services selectedId=service}}
-	{{else if data.team}}
-		{{component data.component data=data labelKey='title' selected=team}}
+		<div class="grid grid--alt">
+			{{component data.component data=data.services selectedId=service}}
+		</div>
+	{{else if data.reasons}}
+		{{component data.component data=data selected=team}}
 	{{else}}
 		{{component data.component data=data}}
 	{{/if}}

@@ -1,24 +1,49 @@
 .projects-list {
+	position: fixed;
+	top: 0.5rem;
+	right: 0.5rem;
+	left: 0.5rem;
 	display: grid;
+	height: calc(100vh - 1rem);
 	overflow: hidden;
 	grid-template-columns: repeat(2, 1fr);
-	margin: 2rem;
-	padding-top: 7rem;
+	padding: 5.4rem 0 0;
 	background: $color-background;
 
 	@include shadow-floating;
 
-	@include media-l-min {
+	@include media-large-min {
+		top: 1rem;
+		right: 2.8rem;
+		left: 2.8rem;
+		height: calc(100vh - 2rem);
 		grid-template-columns: repeat(4, 1fr);
+		padding-top: 6rem;
+	}
+
+	&__page-menu {
+		position: absolute;
+
+		.page-menu__bar {
+			margin: 0;
+			box-shadow: none;
+		}
 	}
 }
 
 .projects-list-item {
 	position: relative;
-	padding-bottom: 150%;
-	color: $color-text-inverted;
 	background-color: $color-text;
 	column-span: span 1;
+
+	&,
+	&:link,
+	&:visited,
+	&:focus,
+	&:hover,
+	&:active {
+		color: $color-text-inverted;
+	}
 
 	&__inner {
 		position: absolute;
@@ -35,7 +60,7 @@
 		font-size: 2.4rem;
 		line-height: 3rem;
 
-		@include media-l-min {
+		@include media-large-min {
 			font-size: 3rem;
 			line-height: 3.6rem;
 		}
@@ -47,7 +72,7 @@
 		font-weight: 400;
 		line-height: 2rem;
 
-		@include media-l-min {
+		@include media-large-min {
 			font-size: 1.8rem;
 			line-height: 2rem;
 		}
@@ -70,7 +95,7 @@
 		text-transform: uppercase;
 		white-space: nowrap;
 
-		@include media-l-min {
+		@include media-large-min {
 			font-size: 27.3vw;
 			line-height: 27.3vw;
 		}

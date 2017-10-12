@@ -2,10 +2,13 @@ import Component from '@ember/component';
 import { computed } from '@ember/object';
 import Ember from 'ember';
 import { htmlSafe } from '@ember/string';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
 	classNames: ['menu-strip'],
 	classNameBindings: ['isInteracting'],
+
+	fastboot: service(),
 
 	/** @type {object[]} */
 	items: null,
@@ -24,7 +27,7 @@ export default Component.extend({
 	_isTransitioning: false,
 	_oldSelected: undefined,
 
-	isInteracting: computed('_dragStartPosition', function () {
+	isInteracting: computed('_dragStartPosition', function() {
 		return this._dragStartPosition !== undefined;
 	}),
 
@@ -35,19 +38,22 @@ export default Component.extend({
 			if (this._dragOffset === 0 && this.onChange && this.selected !== item) {
 				this.onChange(item);
 			}
-		}
+		},
 	},
 
 	init() {
-		this._super(...arguments)
+		this._super(...arguments);
+
 		this.oldAttrs = [];
 	},
 
 	didReceiveAttrs() {
 		this._super(...arguments);
+
 		if (this._oldSelected !== this.selected) {
 			this.scrollToSelectedItem();
 		}
+
 		this._oldSelected = this.selected;
 	},
 
@@ -65,7 +71,7 @@ export default Component.extend({
 		this.endDrag();
 	},
 	touchMove(e) {
-		this.updateDrag(e.touches[0].clientX)
+		this.updateDrag(e.touches[0].clientX);
 	},
 	mouseDown(e) {
 		this.startDrag(e.clientX);
@@ -101,7 +107,7 @@ export default Component.extend({
 		if (this._dragStartPosition !== undefined) {
 			this.setProperties({
 				_dragStartPosition: undefined,
-				_scrollPosition: 0
+				_scrollPosition: 0,
 			});
 		}
 	},
@@ -110,18 +116,26 @@ export default Component.extend({
 	 * @argument newPos {number}
 	 */
 	updateDrag(newPos) {
+		if (this.get('fastboot.isFastBoot')) {
+			return;
+		}
+
 		if (this._dragStartPosition !== undefined) {
 			const offset = this._dragStartPosition - newPos;
 
 			this.setProperties({
 				_dragOffset: offset,
-			})
+			});
 
 			this.element.scrollLeft = this._scrollPosition + offset;
 		}
 	},
 
 	scrollToSelectedItem() {
+		if (this.get('fastboot.isFastBoot')) {
+			return;
+		}
+
 		const index = this.items.findIndex(item => item === this.selected);
 
 		if (index != -1 && this.element) {
@@ -137,4 +151,3 @@ export default Component.extend({
 		}
 	},
 });
-
