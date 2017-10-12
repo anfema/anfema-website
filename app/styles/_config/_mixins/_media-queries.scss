@@ -44,7 +44,7 @@ $breakpoint-offset: 1px;
  * Alias to media-small-max
  */
 @mixin media-small {
-	@include media-small {
+	@include media-small-min {
 		@content;
 	}
 }
