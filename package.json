@@ -55,6 +55,7 @@
     "ember-resolver": "~4.0.0",
     "ember-source": "~2.15.3",
     "ember-test-selectors": "~0.3.7",
+    "ember-wormhole": "^0.5.2",
     "eslint": "~4.6.1",
     "eslint-config-airbnb-base": "~12.0.0",
     "eslint-config-anfema": "~4.0.1",

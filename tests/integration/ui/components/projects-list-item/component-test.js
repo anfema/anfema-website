@@ -5,10 +5,7 @@ import hbs from 'htmlbars-inline-precompile';
 import { find } from 'ember-native-dom-helpers';
 import Service from '@ember/service';
 import { A } from '@ember/array';
-
-const headDataStub = Service.extend({
-	projectsListItemStyles: A(),
-});
+import headData from 'anfema/services/head-data';
 
 describe('Integration | Component | projects list item', function() {
 	setupComponentTest('projects-list-item', {
@@ -18,7 +15,7 @@ describe('Integration | Component | projects list item', function() {
 	const project = { client: 'BMW', color: '#0096DA', id: 'bmw7series', title: '7 Series Presenter App' };
 
 	beforeEach(function() {
-		this.register('service:head-data', headDataStub);
+		this.register('service:head-data', headData);
 		this.inject.service('head-data', { as: 'headData' });
 		this.set('project', project);
 	});
@@ -53,16 +50,16 @@ describe('Integration | Component | projects list item', function() {
 	});
 
 	it('adds and removes it’s style to the headData service', function() {
-		expect(this.get('headData.projectsListItemStyles')).to.have.lengthOf(0);
+		expect(this.get('headData.inlineStyles')).to.have.lengthOf(0);
 
 		this.set('show', true);
 		this.render(hbs`{{#if show}}{{projects-list-item project=project}}{{/if}}`);
 
-		expect(this.get('headData.projectsListItemStyles')).to.have.lengthOf(1);
-		expect(this.get('headData.projectsListItemStyles.0')).to.match(/#0096DA/);
+		expect(this.get('headData.inlineStyles')).to.have.lengthOf(1);
+		expect(this.get('headData.inlineStyles.0')).to.match(/#0096DA/);
 
 		this.set('show', false);
 
-		expect(this.get('headData.projectsListItemStyles')).to.have.lengthOf(0);
+		expect(this.get('headData.inlineStyles')).to.have.lengthOf(0);
 	});
 });

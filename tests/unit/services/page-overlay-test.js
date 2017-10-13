@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupTest } from 'ember-mocha';
 
-describe('Unit | Service | shade', function() {
-	setupTest('service:shade', {
+describe('Unit | Service | page overlay', function() {
+	setupTest('service:page-overlay', {
 		// needs: ['service:foo'],
 	});
 

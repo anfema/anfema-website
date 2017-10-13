@@ -1,7 +1,11 @@
-{{link-to 'Back' 'projects.index'}}
+{{#page-overlay}}
+	{{#project-detail backgroundColor='#F00'}}
+		{{link-to 'Back' 'projects.index'}}
 
-{{#each model.sections as |data|}}
-	{{component data.component data=data}}
-{{/each}}
+		{{#each model.sections as |data|}}
+			{{component data.component data=data}}
+		{{/each}}
+	{{/project-detail}}
+{{/page-overlay}}
 
 {{outlet}}

@@ -4,7 +4,7 @@ import { setupTest } from 'ember-mocha';
 
 describe('Unit | Controller | application', function() {
 	setupTest('controller:application', {
-		needs: ['service:shade'],
+		needs: [],
 	});
 
 	// Replace this with your real tests.

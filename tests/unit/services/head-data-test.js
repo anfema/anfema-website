@@ -15,9 +15,9 @@ describe('Unit | Service | head data', function() {
 		expect(service).to.be.ok;
 	});
 
-	it('has an empty list of projectsItemStyles', function() {
+	it('has an empty list of inlineStyles', function() {
 		const service = this.subject();
 
-		expect(service.get('projectsListItemStyles')).to.be.an.instanceOf(Array);
+		expect(service.get('inlineStyles')).to.be.an.instanceOf(Array);
 	});
 });
