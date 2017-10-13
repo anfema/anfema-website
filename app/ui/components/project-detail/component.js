@@ -1,14 +1,17 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
+import { alias } from '@ember/object/computed';
 
 export default Component.extend({
 	headData: service(),
 
-	backgroundColor: null,
+	data: null,
 
-	headStyle: computed('backgroundColor', function() {
-		const color = this.get('backgroundColor');
+	color: alias('data.meta.color'),
+
+	headStyle: computed('color', function() {
+		const color = this.get('color');
 
 		if (!color) {
 			return null;
@@ -19,12 +22,8 @@ export default Component.extend({
 				background-color: ${color};
 			}
 
-			.page-overlay .page-menu__bar {
-				box-shadow:
-					0 2px 5px 0 rgba(49, 41, 51, 0.1),
-					0 1px 2px 0 rgba(49, 41, 51, 0.17),
-					0 5px 20px 0 rgba(49, 41, 51, 0.15),
-					0 -2rem 1rem 1rem ${color};
+			.page-overlay .page-menu:before {
+				box-shadow: 0 0 2rem 3rem ${color};
 			}
 		`;
 	}),
