@@ -92,10 +92,6 @@ ul.page-menu__lp-jump {
 	@include media-medium-max {
 		display: none;
 	}
-
-	& > li:hover {
-		cursor: pointer;
-	}
 }
 
 .page-menu--transparent {

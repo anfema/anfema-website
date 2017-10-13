@@ -25,6 +25,16 @@ export default Controller.extend({
 
 	staticContent: service(),
 
+	jumpSections: computed('model.sections.@each', function() {
+		return this.get('model.sections').reduce((acc, section) => {
+			if (section.anchorId) {
+				acc.push(section);
+			}
+
+			return acc;
+		}, []);
+	}),
+
 	service: computed(function() {
 		return findByComponentNameAndPath(
 			this.get('staticContent').readShoebox('/index'),
