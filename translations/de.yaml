@@ -8,118 +8,6 @@ projects:
     nav:
       back: 'Zurück'
 
-homepage:
-  index:
-    title: 'Startseite'
-    titleSub: 'titleSub (ger)'
-    header01: 'header01 (ger)'
-    text01: 'text01 (ger)'
-    header02: 'header02 (ger)'
-    text02: 'text02 (ger)'
-    contact: 'Kontakt'
-    imprint: 'Impressum'
-    projects: 'Projekte'
-    jobs: 'Stellenanzeigen'
-  indexMobile:
-    title: 'index title (m)'
-    titleSub: 'index sub title'
-    header01: 'header 01'
-    text01: 'text 01'
-    header02: 'header 02'
-    text02: 'text 02'
-  projects:
-    title: 'Portfolio (ger)'
-    contact: 'Kontakt'
-    back: 'Zurück'
-    bmw:
-      id: 'bmw'
-      title: 'BMW (ger)'
-      titleSub: '7 Series Presenter App'
-    knauf:
-      id: 'knauf'
-      title: 'Knauf / AMF (ger)'
-      titleSub: 'Lookbook App'
-  projectsMobile:
-    title: 'Portfolio'
-    back: 'Zurück'
-    contact: '-'
-    bmw:
-      id: 'bmw'
-      title: 'BMW'
-      titleSub: '7 Series Presenter App'
-    knauf:
-      id: 'knauf'
-      title: 'Knauf / AMF'
-      titleSub: 'Lookbook App'
-  project:
-    bmw:
-      id: 'bmw'
-      title: 'BMW'
-      titleSub: '7 Series Presenter App'
-      back: 'Zurück'
-      landing: 'Startseite'
-      contact: 'Kontakt'
-    bmwMobile:
-      title: 'BMW 7er Series Presenter'
-      link01: 'Contact us'
-      link02: 'Back'
-      header01: 'header 01'
-      text01: 'text 01'
-      header02: 'header 02'
-      text02: 'text 02'
-    knauf:
-      id: 'knauf'
-      title: 'Knauf / AMF'
-      titleSub: 'Lookbook App'
-      back: 'Zurück'
-      landing: 'Startseite'
-      contact: 'Kontakt'
-    knaufMobile:
-      title: 'Knauf / AMF'
-      link01: 'Contact us'
-      link02: 'Back'
-      header01: 'header 01'
-      text01: 'text 01'
-      header02: 'header 02'
-      text02: 'text 02'
-  jobs:
-    title: 'Stellenanzeigen'
-    contact: 'Kontakt'
-    back: 'Zurück'
-    ios:
-      id: 'ios'
-      title: 'Praktikum iOS Development (f/m/*)'
-      titleSub: 'Start 2018'
-    android:
-      id: 'android'
-      title: 'Praktikum Android Development (f/m/*)'
-      titleSub: 'Start 2018'
-  jobsMobile:
-    title: 'Stellenanzeigen'
-    contact: '-'
-    back: 'Zurück'
-    ios:
-      id: 'ios'
-      title: 'Praktikum iOS Development (f/m/*)'
-      titleSub: 'Start 2018'
-    android:
-      id: 'android'
-      title: 'Praktikum Android Development (f/m/*)'
-      titleSub: 'Start 2018'
-  contact:
-   title: 'Kontakt'
-   description: 'contact description (ger)'
-   landing: 'Startseite'
-  contactMobile:
-    title: 'Kontakt'
-    description: 'contact description'
-  imprint:
-   title: 'Impressum'
-   description: 'imprint-description (ger)'
-   landing: 'Startseite'
-  imprintMobile:
-    title: 'Impressum (m)'
-    description: 'imprint-description (ger)'
 component:
   language-select:
     action:
@@ -128,7 +16,7 @@ component:
   content-lp-cover:
     action:
       scrollDown: 'Mehr erfahren'
-  contet-quote:
+  content-quote:
     action:
       showProject: 'Projekt ansehen'
   job-advertisements-item:

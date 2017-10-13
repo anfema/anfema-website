@@ -67,7 +67,7 @@ describe('Integration | Component | content quote', function() {
 
 		expect(find('.content-quote__project')).to.exist;
 		expect(find('.content-quote__project').innerText.trim()).to.match(
-			/component\.contet\-quote\.action\.showProject/
+			/component\.content\-quote\.action\.showProject/
 		);
 	});
 });
