@@ -1,9 +1,20 @@
 .job-advertisements {
 	@include grid-base;
 
-	padding-top: 26vw;
+	padding-top: 394 / 630 * 100% * 0.85; // 85% of the height of the scaled image
 	padding-bottom: 2rem;
-	background: #292929;
+	background: #292929 50% 0 no-repeat;
+	background-image: url(/img/jobs-420@2x.jpg);
+	background-size: 100% auto;
+
+	@include media-medium-min {
+		padding-top: 1200 / 2560 * 100% * 0.75;
+		background-image: url(/img/jobs-780@2x.jpg);
+	}
+
+	@include media-large-min {
+		background-image: url(/img/jobs.jpg);
+	}
 }
 
 .job-advertisements-item {
