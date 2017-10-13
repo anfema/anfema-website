@@ -16,18 +16,18 @@ You will need the following things properly installed on your computer.
 
 To properly render the text, you have to copy the Calibre Webfonts into `/public/fonts`. We only use the following files:
 
-* CalibreWeb-SemiboldItalic.woff2
-* CalibreWeb-SemiboldItalic.woff
-* CalibreWeb-Semibold.woff2
-* CalibreWeb-SemiboldItalic.eot
-* CalibreWeb-RegularItalic.woff2
-* CalibreWeb-Semibold.eot
-* CalibreWeb-Semibold.woff
+* CalibreWeb-Regular.eot
+* CalibreWeb-Regular.woff
 * CalibreWeb-Regular.woff2
 * CalibreWeb-RegularItalic.eot
 * CalibreWeb-RegularItalic.woff
-* CalibreWeb-Regular.eot
-* CalibreWeb-Regular.woff
+* CalibreWeb-RegularItalic.woff2
+* CalibreWeb-Semibold.eot
+* CalibreWeb-Semibold.woff
+* CalibreWeb-Semibold.woff2
+* CalibreWeb-SemiboldItalic.eot
+* CalibreWeb-SemiboldItalic.woff
+* CalibreWeb-SemiboldItalic.woff2
 
 This list will likely shrink in the future. Do not commit these files under any circumstance.
 
@@ -71,14 +71,6 @@ This project uses [ember-mocha](https://github.com/emberjs/ember-mocha) with [em
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-Use `yarn run fastboot` to run our standalone FastBoot server based on [fastboot-app-server](https://github.com/ember-fastboot/fastboot-app-server). See their README for documentation of available params. Our server uses [rc](https://github.com/dominictarr/rc) for configuration.
-
-```sh
-yarn run fastboot --port=31337 --host=anfe.ma
-```
 
 
 

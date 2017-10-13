@@ -16,7 +16,6 @@
     "eslint-fix": "eslint . --fix",
     "fix": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write && eslint . --fix && stylelint app/styles/**/*.scss --fix",
     "prettier": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write",
-    "fastboot": "node ./server/index.js",
     "start": "ember serve",
     "stylelint": "stylelint app/styles/**/*.scss",
     "stylelint-fix": "stylelint app/styles/**/*.scss --fix",
@@ -81,10 +80,5 @@
     "paths": [
       "lib/static-content"
     ]
-  },
-  "dependencies": {
-    "fastboot-app-server": "~1.0.2",
-    "fastboot-watch-notifier": "~3.0.0",
-    "rc": "~1.2.1"
   }
 }
