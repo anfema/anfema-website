@@ -8,118 +8,6 @@ projects:
     nav:
       back: 'Back'
 
-homepage:
-  index:
-    title: 'Landing Page'
-    titleSub: 'titleSub'
-    header01: 'header01'
-    text01: 'text01'
-    header02: 'header02'
-    text02: 'text02'
-    contact: 'Contact us'
-    imprint: 'Imprint'
-    projects: 'Projects'
-    jobs: 'Jobs'
-  indexMobile:
-    title: 'index title (m)'
-    titleSub: 'index sub title'
-    header01: 'header 01'
-    text01: 'text 01'
-    header02: 'header 02'
-    text02: 'text 02'
-  projects:
-    title: 'Portfolio'
-    contact: 'Contact us'
-    back: 'Back'
-    bmw:
-      id: 'bmw'
-      title: 'BMW'
-      titleSub: '7 Series Presenter App'
-    knauf:
-      id: 'knauf'
-      title: 'Knauf / AMF'
-      titleSub: 'Lookbook App'
-  projectsMobile:
-    title: 'Portfolio'
-    contact: '-'
-    back: 'Back'
-    bmw:
-      id: 'bmw'
-      title: 'BMW'
-      titleSub: '7 Series Presenter App'
-    knauf:
-      id: 'knauf'
-      title: 'Knauf / AMF'
-      titleSub: 'Lookbook App'
-  project:
-    bmw:
-      id: 'bmw'
-      title: 'BMW'
-      titleSub: '7 Series Presenter App'
-      back: 'Back'
-      landing: 'Landing Page'
-      contact: 'Contact us'
-    bmwMobile:
-      title: 'BMW 7er Series Presenter'
-      link01: 'Contact us'
-      link02: 'Back'
-      header01: 'header 01'
-      text01: 'text 01'
-      header02: 'header 02'
-      text02: 'text 02'
-    knauf:
-      id: 'knauf'
-      title: 'Knauf / AMF'
-      titleSub: 'Lookbook App'
-      back: 'Back'
-      landing: 'Landing Page'
-      contact: 'Contact us'
-    knaufMobile:
-      title: 'Knauf / AMF'
-      link01: 'Contact us'
-      link02: 'Back'
-      header01: 'header 01'
-      text01: 'text 01'
-      header02: 'header 02'
-      text02: 'text 02'
-  jobs:
-    title: 'Jobs'
-    contact: 'Contact us'
-    back: 'Back'
-    ios:
-      id: 'ios'
-      title: 'Student Intern iOS Development (f/m/*)'
-      titleSub: 'Starting 2018'
-    android:
-      id: 'android'
-      title: 'Student Intern Android Development (f/m/*)'
-      titleSub: 'Starting 2018'
-  jobsMobile:
-    title: 'Jobs'
-    contact: '-'
-    back: 'Back'
-    ios:
-      id: 'ios'
-      title: 'Student Intern iOS Development (f/m/*)'
-      titleSub: 'Starting 2018'
-    android:
-      id: 'android'
-      title: 'Student Intern Android Development (f/m/*)'
-      titleSub: 'Starting 2018'
-  contact:
-   title: 'Contact'
-   description: 'contact description'
-   landing: 'Landing Page'
-  contactMobile:
-    title: 'Contact (m)'
-    description: 'contact description'
-  imprint:
-   title: 'Imprint'
-   description: 'imprint-description'
-   landing: 'Landing Page'
-  imprintMobile:
-    title: 'Imprint (m)'
-    description: 'imprint-description'
 component:
   language-select:
     action:
@@ -128,7 +16,7 @@ component:
   content-lp-cover:
     action:
       scrollDown: 'More'
-  contet-quote:
+  content-quote:
     action:
       showProject: 'View project'
   job-advertisements-item:
