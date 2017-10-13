@@ -28,7 +28,7 @@
 	}
 
 	&__navigation-link {
-		@include base-padding;
+		@include offset-base-padding;
 
 		display: flex;
 		width: 100%;

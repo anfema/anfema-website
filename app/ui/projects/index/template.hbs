@@ -1,9 +1,11 @@
-{{#projects-list projects=model.files}}
-	{{#page-menu forceOpaque=true class="projects-list__page-menu"}}
+{{#page-overlay}}
+	{{#page-menu forceOpaque=true class="page-menu--flat"}}
 		<ul>
 			<li>
 				{{#link-to 'language'}}{{t 'projects.detail.nav.back'}}{{/link-to}}
 			</li>
 		</ul>
 	{{/page-menu}}
-{{/projects-list}}
+
+	{{projects-list projects=model.files}}
+{{/page-overlay}}
