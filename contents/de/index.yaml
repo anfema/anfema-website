@@ -8,7 +8,8 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 1-philosophy
+    anchorId: 'philosophie'
+    anchorLabel: '1'
     sectionLabel: '01'
     title: Wir verstehen unsere Kunden wie kein Anderer
     content: |
@@ -35,7 +36,8 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 2-services
+    anchorId: 'leistungen'
+    anchorLabel: '2'
     sectionLabel: '02'
     title: Innovation. Begeisterung. Dynamik. Zusammenhalt. Hingabe. Vielfältigkeit. Qualität.
     content: |
@@ -105,7 +107,8 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 3-team
+    anchorId: 'team'
+    anchorLabel: '3'
     title: 'Hier sind die 4 wichtigsten Gründe, warum Du laut unseres Teams bei uns einsteigen solltest:'
     sectionLabel: '03'
 

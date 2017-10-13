@@ -2,9 +2,9 @@
 
 {{#page-menu startTransparent=true}}
 	<ul class="page-menu__lp-jump">
-		<li><a href="#1-philosophy">1</a></li>
-		<li><a href="#2-services">2</a></li>
-		<li><a href="#3-team">3</a></li>
+		{{#each jumpSections as |section|}}
+			<li><a href="#{{section.anchorId}}" onclick={{action 'scrollToSection'}}>{{section.anchorLabel}}</a></li>
+		{{/each}}
 	</ul>
 
 	<ul>

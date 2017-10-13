@@ -10,7 +10,7 @@ describe('Integration | Component | content lp text', function() {
 	});
 
 	const data = {
-		anchorId: '1-philosophy',
+		anchorId: 'philosophy',
 		component: 'content-lp-text',
 		content: 'bar',
 		sectionLabel: '01',

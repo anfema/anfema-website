@@ -2,6 +2,7 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { computed, get } from '@ember/object';
 import { oneWay } from '@ember/object/computed';
+import scrollToAnimated from 'anfema/utils/scroll-to-animated';
 
 /**
  * Find the id for the first item in a list of contents
@@ -24,6 +25,16 @@ export default Controller.extend({
 
 	staticContent: service(),
 
+	jumpSections: computed('model.sections.@each', function() {
+		return this.get('model.sections').reduce((acc, section) => {
+			if (section.anchorId) {
+				acc.push(section);
+			}
+
+			return acc;
+		}, []);
+	}),
+
 	service: computed(function() {
 		return findByComponentNameAndPath(
 			this.get('staticContent').readShoebox('/index'),
@@ -39,4 +50,13 @@ export default Controller.extend({
 			'reasons.0.id'
 		);
 	}),
+
+	actions: {
+		scrollToSection(event) {
+			event.preventDefault();
+			scrollToAnimated(
+				document.body.scrollTop + document.querySelector(event.srcElement.hash).getBoundingClientRect().top
+			);
+		},
+	},
 });
