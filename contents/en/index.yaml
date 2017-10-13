@@ -7,7 +7,7 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 1-philosophy
+    anchorId: philosophy
     sectionLabel: '01'
     title: Understanding Customers Like No Other
     content: |
@@ -34,7 +34,7 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 2-services
+    anchorId: services
     sectionLabel: '02'
     title: Innovation. Enthusiasm. Drive. Team Spirit. Commitment. Diversity. Quality.
     content: |
@@ -104,7 +104,7 @@ sections:
 
   -
     component: 'content-lp-text'
-    anchorId: 3-team
+    anchorId: team
     sectionLabel: '03'
     title: 'According to our team, these are the top 4 reasons why you should join us:'
 

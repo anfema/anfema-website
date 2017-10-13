@@ -42,8 +42,11 @@ export default Controller.extend({
 	}),
 
 	actions: {
-		scrollToSection(id) {
-			scrollToAnimated(document.body.scrollTop + document.getElementById(id).getBoundingClientRect().top);
+		scrollToSection(event) {
+			event.preventDefault();
+			scrollToAnimated(
+				document.body.scrollTop + document.querySelector(event.srcElement.hash).getBoundingClientRect().top
+			);
 		},
 	},
 });
