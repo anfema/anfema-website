@@ -2,6 +2,7 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { computed, get } from '@ember/object';
 import { oneWay } from '@ember/object/computed';
+import scrollToAnimated from 'anfema/utils/scroll-to-animated';
 
 /**
  * Find the id for the first item in a list of contents
@@ -39,4 +40,10 @@ export default Controller.extend({
 			'reasons.0.id'
 		);
 	}),
+
+	actions: {
+		scrollToSection(id) {
+			scrollToAnimated(document.body.scrollTop + document.getElementById(id).getBoundingClientRect().top);
+		},
+	},
 });
