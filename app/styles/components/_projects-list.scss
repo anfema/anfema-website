@@ -4,9 +4,6 @@
 	overflow: hidden;
 	grid-template-columns: repeat(2, 1fr);
 	padding: 5.4rem 0 0;
-	background: $color-background;
-
-	@include shadow-floating;
 
 	@include media-large-min {
 		height: calc(100vh - 2rem);

@@ -4,6 +4,11 @@ index:
     projects: 'Projects'
 
 projects:
+  title: 'Projects'
+
+  index:
+    nav:
+      back: 'Back'
   detail:
     nav:
       back: 'Back'
