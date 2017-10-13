@@ -8,15 +8,23 @@ export default Component.extend({
 	backgroundColor: null,
 
 	headStyle: computed('backgroundColor', function() {
-		const backgroundColor = this.get('backgroundColor');
+		const color = this.get('backgroundColor');
 
-		if (!backgroundColor) {
+		if (!color) {
 			return null;
 		}
 
 		return `
 			.page-overlay-shade {
-				background-color: ${backgroundColor};
+				background-color: ${color};
+			}
+
+			.page-overlay .page-menu__bar {
+				box-shadow:
+					0 2px 5px 0 rgba(49, 41, 51, 0.1),
+					0 1px 2px 0 rgba(49, 41, 51, 0.17),
+					0 5px 20px 0 rgba(49, 41, 51, 0.15),
+					0 -2rem 1rem 1rem ${color};
 			}
 		`;
 	}),
