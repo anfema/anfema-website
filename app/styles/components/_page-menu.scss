@@ -83,6 +83,7 @@
 
 		header {
 			width: 100%;
+			padding-left: 1rem;
 			color: $color-text-lighter;
 		}
 	}
@@ -111,8 +112,6 @@ ul.page-menu__lp-jump {
 }
 
 .breadcrumbs {
-	padding-left: 1rem;
-
 	* {
 		white-space: nowrap;
 	}
