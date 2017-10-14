@@ -20,3 +20,11 @@ before_install:
 
 install:
   - yarn install --non-interactive --pure-lockfile --frozen-lockfile --production=false
+
+after_success:
+  tar -czf dist.tgz dist
+
+  if [ "$TRAVIS_BRANCH" = "develop" -o -n "$TRAVIS_TAG" ]; then
+    scp dist.tgz $DEPLOY_USER_DEV@$DEPLOY_HOST_DEV:$DEPLOY_PATH_DEV
+    ssh $DEPLOY_USER_DEV@$DEPLOY_HOST_DEV "~/bin/deploy.sh > ~/log/deploy.log";
+  fi;
