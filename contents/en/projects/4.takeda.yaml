@@ -3,31 +3,43 @@ meta:
   client: "Takeda"
   title: 'Voice to Patients Web & App'
   id: 'takeda'
+  span: 'July 2016 to date'
+  hidden: true
 sections:
   -
-    component: 'content-lp-text'
-    title: Takeda “Voice to Patients”
+    component: 'project-cover'
+    img: '#'
+    title: 'Takeda Voice to Patients'
+  -
+    component: 'project-text'
     content: |
-      <h3>Einleitung / Aufgabe</h3>
+      <h3>Assignment</h3>
+
       <p>Operating internationally, Japan’s largest pharmaceutical company, Takeda, is one of the most significant firms in their industry. In the course of a non-profit project, Takeda provides patient organisations for chronic diseases with a platform for patients to record the course of their disease. Being the first of its kind, the project is intended to enable the assessment of different methods’ therapeutic efficacy based on internationally aggregated data. Ultimately, methods of treatment shall be advanced. The pooled data solely belong to the respective patient organisation; Takeda itself doesn’t have any access. Patients can grant encrypted access to their physician in order to facilitate the better analysis of their disease process. Besides the web platform, an app was developed for iOS and Android for patients to track daily activities which might correlate with the course of their disease.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Challenge</h3>
 
-      <h3>Herausforderung</h3>
       <p>Due to stringent data protection requirements, each entity of the licensed platform must be deployed on servers within the respective patient organisation’s country fulfilling tight access restrictions. The most challenging part of the project is the anonymised aggregation and filtering of the data collected by all the globally active entities. For its deployment in numerous patient organisations around the world, meeting the strict requirements for both security and stability is just as essential as the platform’s internationalisation. In order to support the analysis of the aggregated data, it ought to be visualisable in dynamic graphs and statistics. Finally, the interface, too, must facilitate data exchange with existing statistical institutions.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Solution</h3>
 
-      <h3>Lösung</h3>
-      <p>In addition to the platforms, anfema implemented a middleware-server, which - via a complex system of authentication - grips all country-specific data and aggregates them accordingly. In order to fulfill the requirement for internationalisation, a management platform allowing the individualisation of all texts was implemented.
-         Data used for the graphs and statistics was kept compatible while a standard was defined. In order to enable a range of graphic renditions, several rendering components were developed. Finally, on the server-side, we conducted a lot of configuration management so as to allow the convenient administration of the deployment processes in various countries.</p>
+      <p>In addition to the platforms, anfema implemented a middleware-server, which - via a complex system of authentication - grips all country-specific data and aggregates them accordingly. In order to fulfill the requirement for internationalisation, a management platform allowing the individualisation of all texts was implemented.</p>
 
-      <h3>Technologie</h3>
-      <p>The mapping of all required safety mechanisms is facilitated by the combination of Python and the web framework Django. Backends and middleware communicate with the front ends via a RESTful API.
-         Choosing native development for the iOS and Android apps doesn’t only enable them meeting numerous requirements including offline-functionality. The possibility for trouble-free integration of expansions (for such as the Apple Watch), makes the project increasingly future-proof.</p>
+      <p>Data used for the graphs and statistics was kept compatible while a standard was defined. In order to enable a range of graphic renditions, several rendering components were developed. Finally, on the server-side, we conducted a lot of configuration management so as to allow the convenient administration of the deployment processes in various countries.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Technology</h3>
+      <p>The mapping of all required safety mechanisms is facilitated by the combination of Python and the web framework Django. Backends and middleware communicate with the front ends via a RESTful API.</p>
 
-      <h3>Testimonial</h3>
-      <p>
-       “anfema’s professionalism and competencies allowed us to leave the entire development process to them. Excelling at every stage from design to deployment, they developed a system that fits our needs without exception. Simply superb!”
-       Meni Styliadou,
-       Vice President, Head of Government Affairs and Public Policy Europe & Canada, Takeda Pharmaceuticals International AG
-      </p>
-
-      <h3>Laufzeit</h3>
-      <p>July 2016 to date</p>
+      <p>Choosing native development for the iOS and Android apps doesn’t only enable them meeting numerous requirements including offline-functionality. The possibility for trouble-free integration of expansions (for such as the Apple Watch), makes the project increasingly future-proof.</p>
+  -
+    component: 'content-quote'
+    source: |
+      Meni Styliadou, Vice President, Head of Government Affairs and Public Policy Europe & Canada, Takeda Pharmaceuticals International AG
+    content: |
+      <p>anfema’s professionalism and competencies allowed us to leave the entire development process to them. Excelling at every stage from design to deployment, they developed a system that fits our needs without exception. Simply superb!</p>

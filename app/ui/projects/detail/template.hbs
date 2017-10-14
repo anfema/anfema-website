@@ -13,9 +13,9 @@
 		</ul>
 	{{/page-menu}}
 
-	{{#project-detail backgroundColor=model.meta.color}}
+	{{#project-detail data=model}}
 		{{#each model.sections as |data|}}
-			{{component data.component data=data}}
+			{{component data.component data=data meta=model.meta}}
 		{{/each}}
 	{{/project-detail}}
 {{/page-overlay}}

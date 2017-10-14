@@ -1,5 +1,7 @@
 {{yield}}
 
 {{#each projects as |project|}}
-	{{projects-list-item project=project.meta}}
+	{{#unless project.meta.hidden}}
+		{{projects-list-item project=project.meta}}
+	{{/unless}}
 {{/each}}

@@ -1,0 +1,31 @@
+.project-cover {
+	@include offset-content-bottom;
+
+	&__artwork {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+
+	&__header {
+		@include grid-base;
+
+		h2 {
+			grid-column: 2 / -2;
+			margin-top: 3rem;
+			margin-bottom: 0;
+			font-size: 3.6rem;
+			line-height: 4rem;
+			text-transform: uppercase;
+
+			@include media-medium-min {
+				margin-top: 5rem;
+			}
+		}
+
+		p {
+			grid-column: 2 / span 5;
+		}
+	}
+}

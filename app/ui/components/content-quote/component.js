@@ -5,7 +5,7 @@ export default Component.extend({
 	classNames: ['content-quote'],
 
 	// data: {
-	// 	text: null,
+	// 	content: null,
 	// 	source: null,
 	// 	projectId: null,
 	// 	projectLinkLabel: null,

@@ -14,3 +14,23 @@
 		margin: 1rem 2.8rem;
 	}
 }
+
+@mixin offset-menu-height {
+	padding-top: 5.4rem;
+
+	@include media-medium-min {
+		padding-top: 6rem;
+	}
+}
+
+@mixin offset-content-bottom {
+	padding-bottom: 8rem;
+
+	@include media-medium-min {
+		padding-bottom: 10rem;
+	}
+
+	@include media-xlarge-min {
+		padding-bottom: 12rem;
+	}
+}

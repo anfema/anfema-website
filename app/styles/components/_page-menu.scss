@@ -83,6 +83,7 @@
 
 		header {
 			width: 100%;
+			padding-left: 1rem;
 			color: $color-text-lighter;
 		}
 	}
@@ -110,18 +111,7 @@ ul.page-menu__lp-jump {
 	}
 }
 
-.page-menu--flat {
-	position: absolute;
-
-	.page-menu__bar {
-		margin: 0;
-		box-shadow: none;
-	}
-}
-
 .breadcrumbs {
-	padding-left: 1rem;
-
 	* {
 		white-space: nowrap;
 	}

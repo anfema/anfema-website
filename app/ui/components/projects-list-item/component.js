@@ -30,6 +30,10 @@ const ProjectsListItem = LinkComponent.extend({
 				background-color: ${color};
 			}
 
+			.${hoverClass} ~ .page-overlay .page-menu:before {
+				box-shadow: 0 0 2rem 3rem ${color};
+			}
+
 			.${this.componentClassName}--${project}:focus,
 			.${this.componentClassName}--${project}:hover {
 				background-color: ${color};

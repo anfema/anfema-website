@@ -1,0 +1,12 @@
+.project-text {
+	@include grid-base;
+	@include offset-content-bottom;
+
+	.project-text__content {
+		grid-column: 2 / span 5;
+	}
+
+	&--alt {
+		background: $color-background-darker;
+	}
+}

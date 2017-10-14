@@ -5,7 +5,6 @@ index:
 
 projects:
   title: 'Projects'
-
   index:
     nav:
       back: 'Back'
@@ -28,3 +27,5 @@ component:
     action:
       details: 'Details'
       apply: 'Apply'
+  project-detail:
+    title: 'anfema Projects'

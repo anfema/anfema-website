@@ -3,30 +3,38 @@ meta:
   client: 'BMW'
   title: '7 Series Presenter App'
   id: 'bmw7series'
+  span: 'September 2014 - September 2015'
 sections:
   -
-    component: 'content-lp-text'
-    title: BMW 7 Series Presenter
+    component: 'project-cover'
+    img: 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
+    title: 'BMW 7 Series Presenter App'
+  -
+    component: 'project-text'
     content: |
-      <h3>Einleitung / Aufgabe</h3>
+      <h3>Assignment</h3>
+
       <p>Sportiness, driving pleasure and comfort - three attributes the premium car manufacturer BMW has always been renowned for. The latest edition of the BMW 7 Series, however, takes luxury in the automotive area to a completely new level. anfema designed and developed an iPad app which aptly presents the car’s innovative features. The app impresses with an unusual, yet intuitive control concept, artistic perfection and the integration of interactive media, all of which convey the comfort and pleasure of the BMW 7 Series.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Challenge</h3>
 
-      <h3>Herausforderung</h3>
       <p>The challenging part about the BMW 7 Series application was to comprehensibly present the elegance, comfort and features of the car. Given the product’s internationality, multilingualism and the support of layout variants for markets such as the United Arab Emirates are among the app’s essential features. As, throughout the app's development, the car itself was top secret, secure data management needed to be safeguarded at all times.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Solution</h3>
 
-      <h3>Lösung</h3>
       <p>In order to guarantee the best possible outcome, and so as to fulfill the requirements concerning both diversity of content and the app’s layout, our team developed a tailor-made data management system in-house. The BMW 7 Series Presenter is an iPad app designed for the global market of authorised dealers, which enables them to provide interested customers with exclusive insights. Not only does it inform about production and the car’s features with various subjects and interactive content in 10 different languages. Moreover, the app allows the user to immerse themselves in the world of the BMW 7 Series.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Technology</h3>
 
-      <h3>Technologie</h3>
       <p>The BMW 7 Series Presenter was developed in Swift for iOS. A specially developed server backend based on Django guarantees the fast and reliable delivery of new content, and controls the required security functions.</p>
-
-      <h3>Testimonial</h3>
-      <p>
-        "Cooperation with anfema is excellent both in terms of content and implementation. The great thing about anfema besides quality is the rapidity they realise projects with. That’s why they continue to be one of our much appreciated partners.“
-        Gunther Janeck
-        Head of BMW Product Argumentation
-        BMW Group
-      </p>
-
-      <h3>Laufzeit</h3>
-      <p>September 2014 - September 2015</p>
+  -
+    component: 'content-quote'
+    source: Gunther Janeck, Head of BMW Product Argumentation, BMW Group
+    content: |
+      <p>Cooperation with anfema is excellent both in terms of content and implementation. The great thing about anfema besides quality is the rapidity they realise projects with. That’s why they continue to be one of our much appreciated partners.</p>

@@ -1,33 +1,42 @@
 meta:
   color: '#FF7F27'
   client: "Pingonaut"
-  title: 'Kidswatch Web & App'
+  title: 'Kidswatch Platform & Apps'
   id: 'pingonaut'
+  span: 'May 2016 to date'
 sections:
   -
-    component: 'content-lp-text'
-    title: Pingonaut Kidswatch
+    component: 'project-cover'
+    img: '#'
+    title: 'Pingonaut KidsWatch Platform and Apps'
+  -
+    component: 'project-text'
     content: |
-      <h3>Einleitung / Aufgabe</h3>
+      <h3>Assignment</h3>
+
       <p>Pingonaut is a newly founded company specialised in the sales of devices for positioning. Their first product is a locatable kids’ watch intended for children aged 5-10. Combined with specially developed (web) apps, the watch’s functions needed to be adapted to the age of its target group. It was anfema’s task to develop an app that enables the worried user to constantly keep in touch with their child via (voice) messages or voice calls and to (retrospectively) track their movement on a map. Using geofences, parents can define safe zones, will be notified via PUSH if their child enters or leaves such areas, and thus will stay updated on their child’s whereabouts.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Challenge</h3>
 
-      <h3>Herausforderung</h3>
-      <p>Pingonaut Kidswatch was our first-ever project to require the server backend to perform a flow of communication not only with the app, but also with the related hardware, or rather, firmware: Complex information requested from the Chinese-made watches needs to be accurately analysed, reliably processed and securely transferred.
-         As the time of the project’s initiation was concurrent with the outset of the product development itself, our software development was exposed to dynamic prioritisation, frequent changes in requirements, tight deadlines and a limited budget. Furthermore, the project demanded the set out of the requirements linked to the sales of electronic products in Germany as well as the rather difficult communication with the hardware manufacturer in China.</p>
+      <p>Pingonaut Kidswatch was our first-ever project to require the server backend to perform a flow of communication not only with the app, but also with the related hardware, or rather, firmware: Complex information requested from the Chinese-made watches needs to be accurately analysed, reliably processed and securely transferred.</p>
 
-      <h3>Lösung</h3>
+      <p>As the time of the project’s initiation was concurrent with the outset of the product development itself, our software development was exposed to dynamic prioritisation, frequent changes in requirements, tight deadlines and a limited budget. Furthermore, the project demanded the set out of the requirements linked to the sales of electronic products in Germany as well as the rather difficult communication with the hardware manufacturer in China.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Solution</h3>
+
       <p>Our team’s great adaptability, their wide range of knowledge, and their excellent analytical skills, all were decisive for the project’s success. In response to a highly uncertain market volume for the Kidswatch’s launch, anfema scaled the server system horizontally ensuring its trouble-free expansion at any given time. In addition, we automated the entire server deployment so as to enable the system’s roll out on any number of servers. As a result of in-depth research of diverse mobile phone providers’ specifications and their integration into our software, a fully functional microservices-based system could be integrated into the European market. The Pingonaut Kidswatch is distinguished by software made and hosted in Germany conforming to the standards and data privacy of German law.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Technology</h3>
 
-      <h3>Technologie</h3>
       <p>The Pingonaut Kids app was developed in native code for both iOS and Android. It’s backend PostgreSQL database simultaneously serves as the micro services’ message broker. An inexpensive alternative to GoogleMaps, Mapbox provides a learning API which uses both radio cells and WLANs for positioning.Node.js simultaneously and steadily maintains numerous (all or part idle) connections without blocking.</p>
-
-      <h3>Testimonial</h3>
-      <p>
-        “If it wasn’t for anfema, there wouldn’t be a Kidswatch. The concept they created is thought through right down to the last detail, the platform they developed doesn’t leave a single question unanswered and exceeds all expectations. Expressing gigantic know-how, unusual flexibility and unlimited dedication, anfema is definitely is one of the best agencies in the digital industry.”
-        Stefan Hampel
-        Chief Operating Officer
-        Lokato GmbH
-      </p>
-
-      <h3>Laufzeit</h3>
-      <p>May 2016 - date</p>
+  -
+    component: 'content-quote'
+    source: 'Stefan Hampel, Chief Operating Officer, Lokato GmbH'
+    content: |
+      <p>If it wasn’t for anfema, there wouldn’t be a Kidswatch. The concept they created is thought through right down to the last detail, the platform they developed doesn’t leave a single question unanswered and exceeds all expectations. Expressing gigantic know-how, unusual flexibility and unlimited dedication, anfema is definitely is one of the best agencies in the digital industry.</p>

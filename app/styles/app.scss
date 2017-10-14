@@ -8,6 +8,7 @@
 @import '_config/_mixins/webfonts';
 
 // Environemnt
+@import '_environment/aux';
 @import '_environment/box-sizing';
 @import '_environment/grid';
 @import '_environment/typography';
@@ -18,19 +19,22 @@
 
 // Components
 @import 'components/content-lp-cover';
-@import 'components/content-lp-text';
 @import 'components/content-lp-team';
+@import 'components/content-lp-text';
 @import 'components/content-quote';
 @import 'components/content-slider';
 @import 'components/job-advertisements';
 @import 'components/language-select';
+@import 'components/menu-strip';
 @import 'components/page-footer';
 @import 'components/page-menu';
 @import 'components/page-overlay';
+@import 'components/project-cover';
+@import 'components/project-detail';
+@import 'components/project-text';
 @import 'components/projects-list';
 @import 'components/service-slide';
 @import 'components/services-content';
-@import 'components/menu-strip';
 
 // Partials
 

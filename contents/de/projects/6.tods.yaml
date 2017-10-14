@@ -1,30 +1,40 @@
 meta:
   color: '#342524'
-  client: "TOD'S"
+  client: "TOD’S"
   title: 'Shoe Configurator App'
   id: 'tods'
+  span: 'Juni 2015 - heute'
 sections:
   -
-    component: 'content-lp-text'
-    title: TOD'S Schuh-Konfigurator
+    component: 'project-cover'
+    img: '#'
+    title: 'TOD’S Schuh-Konfigurator'
+  -
+    component: 'project-text'
     content: |
-      <h3>Einleitung / Aufgabe</h3>
+      <h3>Aufgabe</h3>
+
       <p>Personalisierte Schuhe selbst konfigurieren: Unter diesem Motto steht die App „TOD’S Custom Made“ des italienischen Herstellers. Zusammen mit einem Store-Mitarbeiter kann der Kunde hier seinen Schuh individuell nach seinem Geschmack gestalten und anschließend bestellen. Zusätzlich bietet die App dem Benutzer interessante Details über die Geschichte und die Marke TOD'S. Die TOD'S-App wurde als interaktiver Einkaufsbegleiter konzipiert, der die Qualität des Produkts und das Lebensgefühl der Marke widerspiegeln soll. Gleichzeitig muss die App performant und leicht zu bedienen sein, um den Verkäufer vor Ort zu unterstützen und ein angenehmes Verkaufsklima zu schaffen.</p>
-
+  -
+    component: 'project-text'
+    content: |
       <h3>Herausforderung</h3>
+
       <p>Die Herausforderung bei diesem Projekt war es, eine speicherplatzsparend und dennoch performante Lösung zu entwickeln, die die rund 16 Millionen unterschiedlichen Schuh-Konfigurationen in einer App abbilden kann. Zusätzlich müssen die Inhalte auch ohne bestehende Internetverbindung verfügbar sein, sodass Schuhe offline konfiguriert und bestellt werden können.</p>
-
+  -
+    component: 'project-text'
+    content: |
       <h3>Lösung</h3>
+
       <p>Um die Funktionalität der App im Offline-Modus zu garantieren, werden alle benötigten Daten beim ersten Login auf das Gerät heruntergeladen. Als Grafikformat wird WebP eingesetzt, da der verfügbare Speicherplatz auf iPads für verbreitete Alternativformate nicht ausreicht. Selbst Bestellungen können offline angelegt und auf dem Gerät gespeichert werden und werden schließlich bei bestehender Internetverbindung übermittelt. Eine Internetverbindung ist darüber hinaus lediglich für Updates der Preise und die Ergänzung neuer Modelle erforderlich.</p>
-
+  -
+    component: 'project-text'
+    content: |
       <h3>Technologie</h3>
+
       <p>Die App wurde ausschließlich für Apple iPads in Swift umgesetzt. Eine Serverkomponente auf Basis von ASP.NET liefert die benötigten Daten und verwaltet Bestellungen und Konfigurationen. Durch eine entsprechende Planung und Anlage der Datenstruktur kann das System jederzeit und einfach um neue Produktkategorien und Modelle erweitert werden.</p>
-
-      <h3>Testimonial</h3>
-      <p>“Ich möchte die Gelegenheit gerne dazu nutzen, jedem einzelnen von euch zu gratulieren und zu danken für eure geistige Arbeit, die Mühe und allem Voran eure unbezahlbare Coolness, d.h. eure Geduld und kontinuierliche Motivation. Nochmals vielen Dank für eure grenzenlosen Bemühungen!”
-         Sebastian André Borowski
-         Program Manager
-         Dassault Systèmes 3DEXCITE, unser Partner im TOD’s Projekt</p>
-
-      <h3>Laufzeit</h3>
-      <p>Juni 2015 - heute </p>
+  -
+    component: 'content-quote'
+    source: 'Sebastian André Borowski, Program Manager, Dassault Systèmes 3DEXCITE, unser Partner im TOD’s Projekt'
+    content: |
+      <p>Ich möchte die Gelegenheit gerne dazu nutzen, jedem einzelnen von euch zu gratulieren und zu danken für eure geistige Arbeit, die Mühe und allem Voran eure unbezahlbare Coolness, d.h. eure Geduld und kontinuierliche Motivation. Nochmals vielen Dank für eure grenzenlosen Bemühungen!</p>
