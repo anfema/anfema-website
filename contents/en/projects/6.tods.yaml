@@ -1,10 +1,14 @@
 meta:
   color: '#342524'
-  client: "TOD'S"
+  client: "TOD’S"
   title: 'Shoe Configurator App'
   id: 'tods'
   span: 'June 2015 to date'
 sections:
+  -
+    component: 'project-cover'
+    img: '#'
+    title: 'TOD’S Shoe Configurator'
   -
     component: 'project-text'
     content: |

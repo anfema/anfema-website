@@ -1,10 +1,14 @@
 meta:
   color: '#FF7F27'
   client: "Pingonaut"
-  title: 'Kidswatch Web & App'
+  title: 'Kidswatch Platform & Apps'
   id: 'pingonaut'
   span: 'May 2016 to date'
 sections:
+  -
+    component: 'project-cover'
+    img: '#'
+    title: 'Pingonaut KidsWatch Platform and Apps'
   -
     component: 'project-text'
     content: |

@@ -6,6 +6,10 @@ meta:
   span: 'Early 2014 to date'
 sections:
   -
+    component: 'project-cover'
+    img: '#'
+    title: 'MyStaffPilot Platform and Office'
+  -
     component: 'project-text'
     content: |
       <h3>Assignment</h3>

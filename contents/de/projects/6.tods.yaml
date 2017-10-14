@@ -1,13 +1,14 @@
 meta:
   color: '#342524'
-  client: "TOD'S"
+  client: "TOD’S"
   title: 'Shoe Configurator App'
   id: 'tods'
   span: 'Juni 2015 - heute'
 sections:
   -
     component: 'project-cover'
-    src: '#'
+    img: '#'
+    title: 'TOD’S Schuh-Konfigurator'
   -
     component: 'project-text'
     content: |

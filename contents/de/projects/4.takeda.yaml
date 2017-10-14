@@ -8,7 +8,8 @@ meta:
 sections:
   -
     component: 'project-cover'
-    src: '#'
+    img: '#'
+    title: 'Takeda Voice to Patients'
   -
     component: 'project-text'
     content: |

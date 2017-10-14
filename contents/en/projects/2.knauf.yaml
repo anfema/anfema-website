@@ -6,6 +6,10 @@ meta:
   span: 'March 2015 to date'
 sections:
   -
+    component: 'project-cover'
+    img: '#'
+    title: 'Knauf / AMF Lookbook'
+  -
     component: 'project-text'
     content: |
       <h3>Assignment</h3>

@@ -7,7 +7,8 @@ meta:
 sections:
   -
     component: 'project-cover'
-    src: '#'
+    img: '#'
+    title: 'MyStaffPilot Plattform und Innendienst'
   -
     component: 'project-text'
     content: |
@@ -24,6 +25,7 @@ sections:
     component: 'project-text'
     content: |
       <h3>Lösung</h3>
+
       <p>Ausschlaggebend für die erfolgreiche Konzipierung und Umsetzung des Systems ist die enge Zusammenarbeit mit dem Kunden. Aufgrund persönlicher Kundenbetreuung durch technisch versierte Projektmanager konnte eine komplett auf die Ansprüche des Kunden konzipierte, individuelle, technische Lösung erarbeitet werden. Diese ermöglicht auch weiterhin die stetige Erweiterung und Anbindung neuer und maßgeschneiderter Features.</p>
   -
     component: 'project-text'

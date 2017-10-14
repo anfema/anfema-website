@@ -12,13 +12,11 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
-    "eslint": "eslint .",
-    "eslint-fix": "eslint . --fix",
-    "fix": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write && eslint . --fix && stylelint app/styles/**/*.scss --fix",
-    "prettier": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write",
+    "eslint": "./node_modules/.bin/eslint .",
+    "fix": "./node_modules/.bin/prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write && ./node_modules/.bin/eslint . --fix && ./node_modules/.bin/stylelint app/styles/**/*.scss --fix",
+    "prettier": "./node_modules/.bin/prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write",
     "start": "ember serve",
-    "stylelint": "stylelint app/styles/**/*.scss",
-    "stylelint-fix": "stylelint app/styles/**/*.scss --fix",
+    "stylelint": "./node_modules/.bin/stylelint app/styles/**/*.scss",
     "test": "ember test"
   },
   "devDependencies": {

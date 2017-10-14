@@ -6,6 +6,10 @@ meta:
   span: 'July 2014 to date'
 sections:
   -
+    component: 'project-cover'
+    img: '#'
+    title: 'IDnow'
+  -
     component: 'project-text'
     content: |
       <h3>Assignment</h3>

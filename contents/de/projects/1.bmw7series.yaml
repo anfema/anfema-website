@@ -8,7 +8,6 @@ sections:
   -
     component: 'project-cover'
     img: 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
-    imgAlt:
     title: 'BMW 7 Series Presenter App'
   -
     component: 'project-text'

@@ -6,6 +6,10 @@ meta:
   span: 'January 2014 - September 2016'
 sections:
   -
+    component: 'project-cover'
+    img: '#'
+    title: 'Ferchau Augmented Reality'
+  -
     component: 'project-text'
     content: |
       <h3>Assignment</h3>
