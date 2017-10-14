@@ -10,19 +10,19 @@ describe('Integration | Component | content quote', function() {
 	});
 
 	const data = {
-		text: 'text',
+		content: 'text',
 		source: 'source',
 		projectId: 'projectId',
 		projectLinkLabel: 'projectLinkLabel',
 	};
 
 	const dataWithNoLink = {
-		text: 'text',
+		content: 'text',
 		source: 'source',
 	};
 
 	const dataWithNoCustomLinkLabel = {
-		text: 'text',
+		content: 'text',
 		source: 'source',
 		projectId: 'projectId',
 	};
@@ -39,7 +39,7 @@ describe('Integration | Component | content quote', function() {
 		await this.render(hbs`{{content-quote data=data}}`);
 
 		expect(find('.content-quote__text')).to.exist;
-		expect(find('.content-quote__text').innerText.trim()).to.equal(data.text);
+		expect(find('.content-quote__text').innerText.trim()).to.equal(data.content);
 	});
 
 	it('Renders quote-source', async function() {

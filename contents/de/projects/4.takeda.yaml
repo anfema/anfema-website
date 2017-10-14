@@ -7,11 +7,12 @@ meta:
   hidden: true
 sections:
   -
-    component: 'content-lp-text'
-    title: Takeda “Voice to Patients”
+    component: 'project-cover'
+    src: '#'
+  -
     component: 'project-text'
     content: |
-      <h3>Einleitung / Aufgabe</h3>
+      <h3>Aufgabe</h3>
 
       <p>Takeda zählt als international tätiger und größter japanischer Pharmakonzern zu den bedeutendsten Unternehmen seiner Branche. Im Rahmen eines Non-Profit-Projekts stellt Takeda Patientenorganisationen für chronische Krankheiten eine Plattform zur Verfügung, bei der die Patienten ihren Krankheitsverlauf festhalten können. Als erstes Projekt seiner Art soll es der Forschung ermöglichen, anhand international aggregierter Daten zu evaluieren, ob und in welchem Ausmaß medizinische Behandlungsmethoden erfolgreich sind. Ziel ist außerdem, die Verbesserung von Therapien voranzutreiben. Die aggregierten Daten gehören ausschließlich der jeweiligen Patientenorganisation; Takeda selbst hat keinen Zugriff. Zur besseren Analyse ihres Krankheitsverlaufs können Patienten ihrem Arzt einen verschlüsselten Zugang zur Patientenakte gewähren. Zusätzlich zur Webplattform sollte eine App für iOS und Android entwickelt werden. Der Patient kann darüber tägliche Aktivitäten tracken, die möglicherweise mit dem Krankheitsverlauf korrelieren.</p>
   -
@@ -36,6 +37,6 @@ sections:
     component: 'content-quote'
     source: |
       Meni Styliadou, Direktorin für Regierungsangelegenheiten und Rechtsordnung für Europa & Kanada, Takeda Pharmaceuticals International AG
-    text: |
+    content: |
       <p>anfema’s Professionalität und Kompetenzen haben es uns erlaubt, den gesamten Entwicklungsprozess in ihre Hände zu legen. Vom Design bis hin zum Deployment beeindruckt anfema in jeder Disziplin und hat so ein System entwickelt, das ohne Einschränkungen auf unsere Bedürfnisse zugeschnitten ist. Einfach überragend!</p>
 

@@ -3,30 +3,34 @@ meta:
   client: "TOD'S"
   title: 'Shoe Configurator App'
   id: 'tods'
+  span: 'June 2015 to date'
 sections:
   -
-    component: 'content-lp-text'
-    title: TOD’S SHOE CONFIGURATOR
+    component: 'project-text'
     content: |
-      <h3>Einleitung / Aufgabe</h3>
+      <h3>Assignment</h3>
+
       <p>TOD’s is an Italian shoe and leather goods manufacturer renowned for remarkable craftsmanship and quality. The idea of the “TOD’S Custom Made” app is to enable in-store configuration of personalised shoes: Together with a store assistant customers can create individual shoes according to their taste, and order them subsequently. Designed to act as an interactive shopping assistant, the TOD’S app reflects the brand’s lifestyle and their products’ supreme quality, and provides interesting details about the brand and its history. Characterised by fast performance and ease of use, the app supports the shop assistant on location and facilitates a convenient shopping experience.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Challenge</h3>
 
-      <h3>Herausforderung</h3>
       <p>The challenging part about this project was to develop a storage space efficient yet high-performance solution that can reproduce 16 million different shoe configurations in one app. Moreover, all content must be available without existing internet connection so that shoes can be configured and ordered offline.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Solution</h3>
 
-      <h3>Lösung</h3>
       <p>In order to guarantee the app’s offline functionality, all required data is downloaded to the device upon the first login. The image file format WebP proved to be an ideal solution where storage space on iPads wasn’t sufficient to support alternative formats. Even purchase orders can be created offline, are saved locally on the device and transmitted as soon as an internet connection is established. Apart from that, connection to the internet is only necessary for updates of prices and the addition of new models.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Technology</h3>
 
-      <h3>Technologie</h3>
       <p>The app was developed in Swift and exclusively for Apple iPads. A server component based on ASP.NET provides the required data and manages purchase orders and configurations. Anticipatory planning and the respective set-up of the data structure facilitate the system’s easy extension by further product categories and models at any time.</p>
-
-      <h3>Testimonial</h3>
-      <p>
-        “I would like to use this opportunity to congratulate and thank each of you for your brainwork, effort and - most importantly - your ‘priceless cool’, i.e. your patience and continuous motivation. Once again, thank you very much for your endless effort!”
-        Sebastian André Borowski
-        Program Manager
-        Dassault Systèmes 3DEXCITE, our partner in the TOD’s project
-      </p>
-
-      <h3>Laufzeit</h3>
-      <p>June 2015 to date</p>
+  -
+    component: 'content-quote'
+    source: 'Sebastian André Borowski, Program Manager, Dassault Systèmes 3DEXCITE, our partner in the TOD’s project'
+    content: |
+      <p>I would like to use this opportunity to congratulate and thank each of you for your brainwork, effort and - most importantly - your ‘priceless cool’, i.e. your patience and continuous motivation. Once again, thank you very much for your endless effort!</p>

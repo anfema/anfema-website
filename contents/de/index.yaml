@@ -28,7 +28,7 @@ sections:
 
   -
     component: 'content-quote'
-    text: |
+    content: |
      anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in
      der App Entwicklung, denen ich je begegnet bin.
     source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG

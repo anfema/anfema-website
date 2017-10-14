@@ -4,7 +4,6 @@ meta:
   title: 'Plattform'
   id: 'mystaffpilot'
   span: 'Anfang 2014 - heute'
-  hidden: true
 sections:
   -
     component: 'project-cover'
@@ -12,7 +11,7 @@ sections:
   -
     component: 'project-text'
     content: |
-      <h3>Einleitung / Aufgabe</h3>
+      <h3>Aufgabe</h3>
 
       <p>Als Qualitätsführer unter den Promotions-Agenturen im deutschsprachigen Raum bietet POOL. DIE AGENTUR. seit über 30 Jahren kundenindividuell konzipierte und hochprofessionell gesteuerte Promotions an. In Zusammenarbeit mit dem Kunden hat anfema die Promoter Plattform MYSTAFFPILOT entwickelt und betreut und erweitert diese seitdem. Die erarbeitete Lösung umfasst eine öffentliche Android App und ein öffentliches Web-Portal für Promoter, sowie eine interne Anwendung. Damit werden die umfangreichen Prozesse vollständig abgedeckt - vom Rekrutierungsprozess zukünftiger Promoter über das Terminmanagement aller Aufträge und des eingesetzten Personals bis hin zur Rechnungsstellung. Mehrere tausend Nutzer verwenden das System regelmäßig.</p>
   -

@@ -6,10 +6,12 @@ meta:
   span: September 2014 - September 2015
 sections:
   -
-    component: 'content-project-cover'
-    src: '#'
+    component: 'project-cover'
+    img: 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
+    imgAlt:
+    title: 'BMW 7 Series Presenter App'
   -
-    component: 'content-project-text'
+    component: 'project-text'
     content: |
       <h3>Aufgabe</h3>
 
@@ -19,19 +21,20 @@ sections:
       ein außergewöhnliches, intuitives Bedienkonzept, gestalterische Perfektion und die Integration interaktiver
       Medien, die den Komfort und den Spaß des BMW 7er auf das Tablet übertragen.</p>
   -
-    component: 'content-project-text'
+    component: 'project-text'
+    useAlternateColor: true
     content: |
       <h3>Herausforderung</h3>
 
       <p>Die Herausforderung bei dieser Applikation bestand darin, die Eleganz, den Komfort und die Eigenschaften des Fahrzeugs verständlich zu präsentieren. Mehrsprachigkeit und die Unterstützung von Layout-Varianten für Märkte wie die Vereinigte Arabische Emirate waren aufgrund der Internationalität des Produkts unbedingt erforderlich. Da das Fahrzeug während der Entwicklungsphase der App noch streng geheim war, musste darüber hinaus eine sichere Datenhaltung gewährleistet werden.</p>
   -
-    component: 'content-project-text'
+    component: 'project-text'
     content: |
       <h3>Lösung</h3>
 
       <p>Um das bestmögliche Ergebnis zu garantieren, entwickelten wir ein eigens angepasstes Datenmanagement-System, das den Ansprüchen, der Datenvielfalt und dem Layout der App gerecht wird. Der BMW 7 Series Presenter ist eine iPad-App für den weltweiten Markt an BMW-Vertragshändlern, die interessierten Kunden exklusive Einblicke in den neuen BMW 7er gewährt. Durch verschiedene Themenbereiche und interaktive Inhalte vermittelt sie nicht nur Informationen über die Produktion und Fahrzeugeigenschaften auf 10 verschiedenen Sprachen. Vielmehr erlaubt die App dem User das Eintauchen in die Welt des 7er BMW. </p>
   -
-    component: 'content-project-text'
+    component: 'project-text'
     content: |
       <h3>Technologien</h3>
 
@@ -39,7 +42,7 @@ sections:
   -
     component: 'content-quote'
     source: Gunther Janeck, CoC Fuhrpark, BMW Group
-    text: |
+    content: |
       <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend. </p>
 
       <p>Großartig an der anfema ist neben der Qualität auch die Schnelligkeit, mit der sie Projekte verwirklicht. Deshalb ist und bleibt sie einer unserer viel geschätzten Partner.</p>

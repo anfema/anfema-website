@@ -4,15 +4,14 @@ meta:
   title: 'Shoe Configurator App'
   id: 'tods'
   span: 'Juni 2015 - heute'
-  hidden: true
 sections:
   -
-    component: 'content-lp-text'
-    title: TOD'S Schuh-Konfigurator
+    component: 'project-cover'
+    src: '#'
   -
     component: 'project-text'
     content: |
-      <h3>Einleitung / Aufgabe</h3>
+      <h3>Aufgabe</h3>
 
       <p>Personalisierte Schuhe selbst konfigurieren: Unter diesem Motto steht die App „TOD’S Custom Made“ des italienischen Herstellers. Zusammen mit einem Store-Mitarbeiter kann der Kunde hier seinen Schuh individuell nach seinem Geschmack gestalten und anschließend bestellen. Zusätzlich bietet die App dem Benutzer interessante Details über die Geschichte und die Marke TOD'S. Die TOD'S-App wurde als interaktiver Einkaufsbegleiter konzipiert, der die Qualität des Produkts und das Lebensgefühl der Marke widerspiegeln soll. Gleichzeitig muss die App performant und leicht zu bedienen sein, um den Verkäufer vor Ort zu unterstützen und ein angenehmes Verkaufsklima zu schaffen.</p>
   -
@@ -36,5 +35,5 @@ sections:
   -
     component: 'content-quote'
     source: 'Sebastian André Borowski, Program Manager, Dassault Systèmes 3DEXCITE, unser Partner im TOD’s Projekt'
-    text: |
+    content: |
       <p>Ich möchte die Gelegenheit gerne dazu nutzen, jedem einzelnen von euch zu gratulieren und zu danken für eure geistige Arbeit, die Mühe und allem Voran eure unbezahlbare Coolness, d.h. eure Geduld und kontinuierliche Motivation. Nochmals vielen Dank für eure grenzenlosen Bemühungen!</p>
