@@ -39,3 +39,6 @@ CalibreWeb-RegularItalic.eot
 CalibreWeb-RegularItalic.woff
 CalibreWeb-Regular.eot
 CalibreWeb-Regular.woff
+
+# Deploy
+/.travis/id_rsa

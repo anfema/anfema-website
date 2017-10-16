@@ -1,30 +1,25 @@
----
 language: node_js
 node_js:
-  - "6"
-
+- '6'
 sudo: false
 dist: trusty
-
 addons:
   chrome: stable
-
 cache:
   yarn: true
   directories:
-    - $HOME/.npm
-
+  - "$HOME/.npm"
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
-
+- openssl aes-256-cbc -K $encrypted_2f2f1b9d8185_key -iv $encrypted_2f2f1b9d8185_iv
+  -in ./.travis/id_rsa.enc -out ./.travis/id_rsa -d
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH=$HOME/.yarn/bin:$PATH
 install:
-  - yarn install --non-interactive --pure-lockfile --frozen-lockfile --production=false
-
-after_success:
-  tar -czf dist.tgz dist
-
-  if [ "$TRAVIS_BRANCH" = "develop" -o -n "$TRAVIS_TAG" ]; then
-    scp dist.tgz $DEPLOY_USER_DEV@$DEPLOY_HOST_DEV:$DEPLOY_PATH_DEV
-    ssh $DEPLOY_USER_DEV@$DEPLOY_HOST_DEV "~/bin/deploy.sh > ~/log/deploy.log";
-  fi;
+- yarn install --non-interactive --pure-lockfile --frozen-lockfile --production=false
+script:
+- ember test
+deploy:
+- skip_cleanup: true
+  provider: "./.travis/deploy-dev.sh"
+  on:
+    branch: develop
