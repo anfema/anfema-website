@@ -30,4 +30,5 @@ deploy:
   script: ".travis/deploy-develop.sh"
   on:
     branch: develop
-
+notifications:
+  email: false
