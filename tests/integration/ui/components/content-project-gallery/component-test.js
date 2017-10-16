@@ -31,6 +31,6 @@ describe('Integration | Component | content project gallery', function() {
 		// `);
 
 		expect(findAll('.content-project-gallery__image')).to.have.lengthOf(data.images.length);
-		expect(findAll('.content-project-gallery__image')[0].getAttribute('src')).to.equal('/img/foo.svg');
+		expect(findAll('.content-project-gallery__image')[0].getAttribute('src')).to.equal('foo');
 	});
 });

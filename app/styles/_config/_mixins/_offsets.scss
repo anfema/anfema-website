@@ -23,6 +23,18 @@
 	}
 }
 
+@mixin offset-content-top {
+	padding-top: 8rem;
+
+	@include media-medium-min {
+		padding-top: 10rem;
+	}
+
+	@include media-xlarge-min {
+		padding-top: 12rem;
+	}
+}
+
 @mixin offset-content-bottom {
 	padding-bottom: 8rem;
 
