@@ -1,7 +1,7 @@
-{{#ember-wormhole to=pageOverlay.destinationElementId}}
+{{#to-elsewhere name="page"}}
 	<div class="page-overlay-shade {{computedClassName}}"></div>
 
 	<div class="page-overlay">
 		{{yield}}
 	</div>
-{{/ember-wormhole}}
+{{/to-elsewhere}}
