@@ -5,22 +5,28 @@ sudo: false
 dist: trusty
 addons:
   chrome: stable
+  ssh_known_hosts:
+    - banana.anfema.net
 cache:
   yarn: true
   directories:
   - "$HOME/.npm"
 before_install:
-- openssl aes-256-cbc -K $encrypted_2f2f1b9d8185_key -iv $encrypted_2f2f1b9d8185_iv
-  -in ./.travis/id_rsa.enc -out ./.travis/id_rsa -d
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH=$HOME/.yarn/bin:$PATH
 install:
 - yarn install --non-interactive --pure-lockfile --frozen-lockfile --production=false
 script:
 - ember test
+before_deploy:
+- openssl aes-256-cbc -K $encrypted_2f2f1b9d8185_key -iv $encrypted_2f2f1b9d8185_iv
+  -in ./.travis/id_rsa.enc -out /tmp/deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/deploy_rsa
+- ssh-add /tmp/deploy_rsa
 deploy:
-- skip_cleanup: true
-  provider: script
+- provider: script
   script: ".travis/deploy-develop.sh"
   on:
     branch: develop
+

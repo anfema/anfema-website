@@ -128,6 +128,10 @@ acorn@^5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.1.2.tgz#911cb53e036807cf0fa778dc5d370fbd864246d7"
 
+adm-zip@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/adm-zip/-/adm-zip-0.4.7.tgz#8606c2cbf1c426ce8c8ec00174447fd49b6eafc1"
+
 after@0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.1.tgz#ab5d4fb883f596816d3515f8f791c0af486dd627"
@@ -2667,6 +2671,15 @@ ember-cli-deploy-display-revisions@^1.0.0:
     moment "^2.18.0"
     rsvp "^3.5.0"
 
+ember-cli-deploy-fastboot-app-server@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-deploy-fastboot-app-server/-/ember-cli-deploy-fastboot-app-server-0.0.2.tgz#040de86c1672df846d7822d3f162f99aab601b27"
+  dependencies:
+    adm-zip "^0.4.7"
+    ember-cli-deploy-plugin "^0.2.9"
+    rimraf "^2.6.1"
+    rsvp "^3.6.0"
+
 ember-cli-deploy-gzip@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ember-cli-deploy-gzip/-/ember-cli-deploy-gzip-1.0.1.tgz#aab2e5ffb1eb120e264d2e50d7583691fe207c54"
@@ -2687,7 +2700,7 @@ ember-cli-deploy-manifest@^1.1.0:
     minimatch "^3.0.3"
     rsvp "^3.5.0"
 
-ember-cli-deploy-plugin@0.2.9, ember-cli-deploy-plugin@^0.2.1, ember-cli-deploy-plugin@^0.2.3, ember-cli-deploy-plugin@^0.2.6:
+ember-cli-deploy-plugin@0.2.9, ember-cli-deploy-plugin@^0.2.1, ember-cli-deploy-plugin@^0.2.3, ember-cli-deploy-plugin@^0.2.6, ember-cli-deploy-plugin@^0.2.9:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/ember-cli-deploy-plugin/-/ember-cli-deploy-plugin-0.2.9.tgz#a3d395b8adad7ef68d8bacdd0b0f4a61bcf9e651"
   dependencies:
