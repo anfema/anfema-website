@@ -20,6 +20,7 @@ script:
 - ember test
 deploy:
 - skip_cleanup: true
-  provider: "./.travis/deploy-dev.sh"
+  provider: script
+  script: ".travis/deploy-develop.sh"
   on:
     branch: develop
