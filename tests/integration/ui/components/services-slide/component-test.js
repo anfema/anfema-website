@@ -4,16 +4,16 @@ import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import { find } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | service slide', function() {
-	setupComponentTest('service-slide', {
+describe('Integration | Component | services slide', function() {
+	setupComponentTest('services-slide', {
 		integration: true,
 	});
 
 	it('renders', function() {
 		this.render(hbs`
-			{{service-slide }}
+			{{services-slide}}
 		`);
 
-		expect(find('.service-slide')).to.exist;
+		expect(find('.services-slide')).to.exist;
 	});
 });

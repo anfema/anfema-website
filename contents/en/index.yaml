@@ -48,7 +48,7 @@ sections:
 
   -
     id: 'services'
-    component: 'services-content'
+    component: 'content-lp-services'
     services:
       -
         id: 'concept'

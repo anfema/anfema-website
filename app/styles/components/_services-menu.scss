@@ -1,0 +1,62 @@
+.services-menu {
+	height: 2rem + 2rem + 2rem;
+	overflow: hidden;
+
+	@include media-medium-min {
+		height: 3.5rem + 2rem + 3.5rem;
+	}
+
+	&__scroll {
+		min-width: 100%;
+		overflow: auto;
+
+		@include media-medium-min {
+			height: 3.5rem + 2rem + 3.5rem + 2rem;
+		}
+	}
+
+	&__slider {
+		@include offset-base-padding;
+
+		display: flex;
+		min-width: 100%;
+		justify-content: space-between;
+	}
+}
+
+.services-menu-link {
+	padding: 2rem 0;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	@include media-small-max {
+		padding-right: 2rem;
+	}
+
+	@include media-medium-min {
+		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
+	}
+
+	&,
+	&:link,
+	&:visited {
+		color: $color-brand-1;
+	}
+
+	&:focus,
+	&:hover {
+		color: $color-brand-2;
+	}
+
+	&:active,
+	&--active &--active:link,
+	&--active:visited,
+	&--active:active {
+		color: $color-text;
+	}
+
+	& + * {
+		margin-left: 3rem;
+	}
+}

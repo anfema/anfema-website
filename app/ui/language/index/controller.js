@@ -1,7 +1,7 @@
 import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { computed, get } from '@ember/object';
-import { oneWay } from '@ember/object/computed';
+import { oneWay, readOnly } from '@ember/object/computed';
 import scrollToAnimated from 'anfema/utils/scroll-to-animated';
 
 /**
@@ -25,8 +25,10 @@ export default Controller.extend({
 
 	staticContent: service(),
 
-	jumpSections: computed('model.sections.@each', function() {
-		return this.get('model.sections').reduce((acc, section) => {
+	sections: readOnly('model.sections'),
+
+	jumpSections: computed('sections.@each', function() {
+		return this.get('sections').reduce((acc, section) => {
 			if (section.anchorId) {
 				acc.push(section);
 			}
@@ -38,7 +40,7 @@ export default Controller.extend({
 	service: computed(function() {
 		return findByComponentNameAndPath(
 			this.get('staticContent').readShoebox('/index'),
-			'services-content',
+			'content-lp-services',
 			'services.0.id'
 		);
 	}),

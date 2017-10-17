@@ -1,0 +1,56 @@
+.content-lp-services {
+	background-color: $color-grey-light;
+
+	& > .services-menu {
+		height: 9rem;
+	}
+
+	.content-slider {
+		&__button {
+			opacity: 0.5;
+		}
+	}
+
+	&__background {
+		position: absolute;
+	}
+
+	// desktop
+	@include media-small-min {
+		&__slider {
+			height: 51rem;
+		}
+
+		.content-slider {
+			&__button {
+				display: none;
+			}
+		}
+
+		& .anfema-logo {
+			top: 7.5rem;
+			right: 0;
+			width: 46rem;
+			height: 34rem;
+		}
+	}
+
+	// mobile
+	@include media-small-max {
+		&__slider {
+			height: 46rem;
+		}
+
+		.content-slider {
+			&__button {
+				height: 16rem;
+			}
+		}
+
+		& .anfema-logo {
+			top: 0;
+			width: 100%;
+			height: 16rem;
+		}
+	}
+}

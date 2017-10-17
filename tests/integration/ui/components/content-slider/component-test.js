@@ -46,7 +46,7 @@ describe('Integration | Component | content slider', function() {
 		this.set('selected', services[0]);
 
 		this.render(hbs`
-			{{content-slider slideComponentName="service-slide" data=services selected=selected}}
+			{{content-slider slideComponentName="services-slide" data=services selected=selected}}
 		`);
 
 		expect(find('.content-slider__slide__active h1').textContent).to.equal(services[0].title);

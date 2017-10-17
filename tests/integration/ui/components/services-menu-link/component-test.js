@@ -3,6 +3,7 @@ import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import Service from '@ember/service';
+import { find } from 'ember-native-dom-helpers';
 
 const routerStub = Service.extend({
 	urlFor: function() {
@@ -14,8 +15,8 @@ const routerStub = Service.extend({
 	currentRouteName: 'http://test',
 });
 
-describe('Integration | Component | menu strip link', function() {
-	setupComponentTest('menu-strip-link', {
+describe('Integration | Component | services menu link', function() {
+	setupComponentTest('services-menu-link', {
 		integration: true,
 	});
 
@@ -25,17 +26,8 @@ describe('Integration | Component | menu strip link', function() {
 	});
 
 	it('renders', function() {
-		// Set any properties with this.set('myProperty', 'value');
-		// Handle any actions with this.on('myAction', function (val) { ... });
-		// Template block usage:
-		// this.render(hbs`
-		// 	{{#menu-strip-link}}
-		// 		template content
-		// 	{{/menu-strip-link}}
-		// `);
+		this.render(hbs`{{services-menu-link queryParams=(hash service=test)}}`);
 
-		this.render(hbs`{{menu-strip-link queryParams=(hash service=test)}}`);
-
-		expect(this.$()).to.have.length(1);
+		expect(find('.services-menu-link')).to.have.length(1);
 	});
 });

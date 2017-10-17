@@ -1,0 +1,24 @@
+{{services-menu
+	items=data
+	selected=_selected
+	onChange=(action 'itemSelected')
+}}
+
+{{#content-slider
+	class='content-lp-services__slider'
+	cycle=true
+	slideComponentName='services-slide'
+	data=data
+	selected=_selected
+	slideDirection=_slideDirection
+	onPrevious=(action 'previousSlide')
+	onNext=(action 'nextSlide')
+}}
+	{{anfema-logo
+		class="content-lp-services__background"
+		step=_logoStep
+		options=(hash outlineMode=false strokeWidth=20)
+	}}
+{{/content-slider}}
+
+{{yield}}
