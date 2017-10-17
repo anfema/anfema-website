@@ -10,9 +10,14 @@ describe('Integration | Component | content project video', function() {
 	});
 
 	const data = {
-		title: 'title',
-		text: 'text',
-		videoPath: 'path-to-video',
+		width: 684,
+		height: 513,
+		videos: [
+			{
+				path: 'path-to-video',
+				type: 'mp4',
+			}
+		],
 	};
 
 	beforeEach(function() {
@@ -32,8 +37,9 @@ describe('Integration | Component | content project video', function() {
 		// 	{{/content-project-video}}
 		// `);
 
-		expect(find('.content-project-video__title').innerText.trim()).to.equal('title');
-		expect(find('.content-project-video__text').innerText.trim()).to.equal('text');
-		expect(findAll('.content-project-video__video')[0].getAttribute('src')).to.equal('path-to-video');
+		expect(find('.content-project-video__video').getAttribute('width')).to.equal('684');
+		expect(find('.content-project-video__video').getAttribute('height')).to.equal('513');
+		expect(find('source').getAttribute('type')).to.equal('video/mp4');
+		expect(find('source').getAttribute('src')).to.equal('path-to-video');
 	});
 });

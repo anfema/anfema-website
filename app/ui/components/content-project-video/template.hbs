@@ -1,4 +1,6 @@
 {{yield}}
-<h3 class="content-project-video__title">{{data.title}}</h3>
-<p class="content-project-video__text">{{data.text}}</p>
-<video class="content-project-video__video" src="{{data.videoPath}}"/>
+<video width="{{data.width}}" height="{{data.height}}" class="content-project-video__video" poster="{{data.poster}}" controls controlsList="nodownload">
+{{#each data.videos as |video|}}
+	<source src="{{video.path}}" type="video/{{video.type}}">
+{{/each}}
+</video>

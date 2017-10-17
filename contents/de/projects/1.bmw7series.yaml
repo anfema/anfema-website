@@ -33,6 +33,23 @@ sections:
 
       <p>Um das bestmögliche Ergebnis zu garantieren, entwickelten wir ein eigens angepasstes Datenmanagement-System, das den Ansprüchen, der Datenvielfalt und dem Layout der App gerecht wird. Der BMW 7 Series Presenter ist eine iPad-App für den weltweiten Markt an BMW-Vertragshändlern, die interessierten Kunden exklusive Einblicke in den neuen BMW 7er gewährt. Durch verschiedene Themenbereiche und interaktive Inhalte vermittelt sie nicht nur Informationen über die Produktion und Fahrzeugeigenschaften auf 10 verschiedenen Sprachen. Vielmehr erlaubt die App dem User das Eintauchen in die Welt des 7er BMW. </p>
   -
+    component: 'content-project-video'
+    useAlternateColor: true
+    width: 684
+    height: 513
+    poster: '/img/bmw_video_preview 800x600.jpg'
+    videos:
+    -
+      path: '/video/bmw7series/bmw_02_800x600.mp4'
+      type: 'mp4'
+    -
+      path: '/video/bmw7series/bmw_02.oggtheora.ogv'
+      type: 'ogv'
+    -
+      path: '/video/bmw7series/bmw_02.webmsd.webm'
+      type: 'webm'
+
+  -
     component: 'project-text'
     content: |
       <h3>Technologien</h3>
