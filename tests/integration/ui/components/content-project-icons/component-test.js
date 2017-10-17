@@ -41,6 +41,6 @@ describe('Integration | Component | content project icons', function() {
 				.trim()
 		).to.equal('bar');
 		expect(findAll('.content-project-icons__icon')).to.have.lengthOf(4);
-		expect(findAll('.content-project-icons__icon')[0].getAttribute('src')).to.equal('/img/icon-foo.svg');
+		expect(findAll('.content-project-icons__icon')[0].getAttribute('src')).to.equal('icon-foo');
 	});
 });
