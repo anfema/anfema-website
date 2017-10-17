@@ -1,13 +1,11 @@
-{{link-to
-	(t 'component.language-select.action.de')
-	router.currentRouteName
-	'de'
-	class=(concat 'language-select-button language-select-button--de ' (unless isEnglish 'language-select-button--active'))
-}}
+<a onclick={{action 'onLinkClick' 'de'}}
+	class={{concat 'language-select-button language-select-button--de ' (unless isEnglish 'language-select-button--active')}}
+	href={{germanLink}}>
+	{{t 'component.language-select.action.de'}}
+</a>
 
-{{link-to
-	(t 'component.language-select.action.en')
-	router.currentRouteName
-	'en'
-	class=(concat 'language-select-button language-select-button--en ' (if isEnglish 'language-select-button--active'))
-}}
+<a onclick={{action 'onLinkClick' 'en'}}
+	class={{concat 'language-select-button language-select-button--en ' (if isEnglish 'language-select-button--active')}}
+	href={{englishLink}}>
+	{{t 'component.language-select.action.en'}}
+</a>
