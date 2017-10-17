@@ -24,14 +24,13 @@ sections:
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:
-      - 'icon.svg'
-      - 'icon.svg'
-      - 'icon.svg'
-      - 'icon.svg'
+      - 'http://via.placeholder.com/100x100'
+      - 'http://via.placeholder.com/100x100'
+      - 'http://via.placeholder.com/100x100'
+      - 'http://via.placeholder.com/100x100'
     text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
   -
     component: 'project-text'
-    useAlternateColor: true
     content: |
       <h3>Herausforderung</h3>
 
