@@ -1,5 +1,6 @@
 .job-advertisements {
 	@include grid-base;
+	overflow: hidden;
 
 	padding-top: 394 / 630 * 100% * 0.85; // 85% of the height of the scaled image
 	padding-bottom: 2rem;
