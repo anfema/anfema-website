@@ -16,7 +16,7 @@ describe('Integration | Component | content project video', function() {
 			{
 				path: 'path-to-video',
 				type: 'mp4',
-			}
+			},
 		],
 	};
 

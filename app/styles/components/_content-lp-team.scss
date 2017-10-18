@@ -33,13 +33,13 @@
 	&__navigation-link {
 		position: relative;
 
-		@include offset-base-padding;
-
 		display: block;
 		width: 100%;
+		overflow: hidden;
 		padding-left: 0;
 		text-decoration: none;
-		overflow: hidden;
+
+		@include offset-base-padding;
 
 		@include media-large-min {
 			padding-left: 0;
@@ -71,14 +71,13 @@
 		font-size: 13rem;
 		line-height: 0.77;
 		letter-spacing: -0.3rem;
-		white-space: nowrap;
 		text-align: right;
 		white-space: nowrap;
 	}
 
 	&__pagination {
-		float: right;
 		width: 1.1em;
+		float: right;
 		font-size: 10rem;
 		line-height: 7rem;
 		text-align: left;
