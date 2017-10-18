@@ -15,8 +15,7 @@
 		display: flex;
 		max-width: 52rem;
 		grid-column: span 4;
-		flex-direction: row;
-		flex-wrap: wrap;
+		flex-flow: wrap row;
 		justify-content: center;
 		margin: 5rem 0 3rem;
 		justify-self: center;

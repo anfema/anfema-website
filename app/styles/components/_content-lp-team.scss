@@ -1,8 +1,11 @@
 .content-lp-team {
-	//
+	overflow: hidden;
+	// display: none;
 }
 
 .content-lp-team-item {
+	width: 100%;
+	overflow: hidden;
 	color: #f5f4f2;
 
 	&__content {
@@ -28,15 +31,15 @@
 	}
 
 	&__navigation-link {
-		@include offset-base-padding;
+		position: relative;
 
-		display: flex;
+		display: block;
 		width: 100%;
-		flex-flow: row nowrap;
-		align-items: flex-end;
-		justify-content: flex-end;
+		overflow: hidden;
 		padding-left: 0;
 		text-decoration: none;
+
+		@include offset-base-padding;
 
 		@include media-large-min {
 			padding-left: 0;
@@ -49,35 +52,35 @@
 		&:active {
 			color: inherit;
 		}
+	}
 
-		span {
-			display: inline-block;
-			color: inherit;
-			font-weight: 600;
-			vertical-align: bottom;
-			transition: color 0.5s;
-		}
+	&__title,
+	&__pagination {
+		display: block;
+		color: inherit;
+		font-weight: 600;
+		transition: color 0.5s;
 	}
 
 	&__title {
-		display: block;
-		width: 100%;
-		height: 6.8rem;
-		overflow: hidden;
+		position: absolute;
+		top: 0;
+		right: 1.5em;
 		margin: 0;
 		color: inherit;
-		font-size: 13rem !important;
-		line-height: 0.77 !important;
+		font-size: 13rem;
+		line-height: 0.77;
 		letter-spacing: -0.3rem;
+		text-align: right;
 		white-space: nowrap;
-		direction: rtl;
 	}
 
 	&__pagination {
-		margin-left: 3rem;
+		width: 1.1em;
+		float: right;
 		font-size: 10rem;
 		line-height: 7rem;
-		text-align: right;
+		text-align: left;
 	}
 
 	&--active {
