@@ -35,6 +35,15 @@ sections:
       <h3>Herausforderung</h3>
 
       <p>Die Herausforderung bei dieser Applikation bestand darin, die Eleganz, den Komfort und die Eigenschaften des Fahrzeugs verständlich zu präsentieren. Mehrsprachigkeit und die Unterstützung von Layout-Varianten für Märkte wie die Vereinigte Arabische Emirate waren aufgrund der Internationalität des Produkts unbedingt erforderlich. Da das Fahrzeug während der Entwicklungsphase der App noch streng geheim war, musste darüber hinaus eine sichere Datenhaltung gewährleistet werden.</p>
+
+  -
+    component: 'content-project-triptych'
+    useAlternateColor: true
+    images:
+      - 'http://via.placeholder.com/736x492'
+      - 'http://via.placeholder.com/736x492'
+      - 'http://via.placeholder.com/736x492'
+
   -
     component: 'project-text'
     content: |

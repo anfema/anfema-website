@@ -10,11 +10,21 @@ describe('Integration | Component | content project triptych', function() {
 	});
 
 	const data = {
-		title: 'title',
-		text: 'text',
-		coverImg: 'foo',
-		leftImg: 'bar',
-		rightImg: 'baz',
+		component: 'content-project-triptych',
+		defaults: {
+			width: 800,
+			height: 600,
+		},
+		images: [
+			'http://via.placeholder.com/736x492',
+			'http://via.placeholder.com/736x492',
+			{
+				url: 'http://via.placeholder.com/736x492',
+				width: 508,
+				height: 380,
+			},
+		],
+		useAlternateColor: true,
 	};
 
 	beforeEach(function() {
@@ -34,10 +44,7 @@ describe('Integration | Component | content project triptych', function() {
 		// 	{{/content-project-triptych}}
 		// `);
 
-		expect(find('.content-project-triptych__title').innerText.trim()).to.equal('title');
-		expect(find('.content-project-triptych__text').innerText.trim()).to.equal('text');
-		expect(findAll('.content-project-triptych__coverImg')[0].getAttribute('src')).to.equal('/img/foo.svg');
-		expect(findAll('.content-project-triptych__leftImg')[0].getAttribute('src')).to.equal('/img/bar.svg');
-		expect(findAll('.content-project-triptych__rightImg')[0].getAttribute('src')).to.equal('/img/baz.svg');
+		expect(findAll('.content-project-triptych__side-img-1')[0].getAttribute('width')).to.equal('800');
+		expect(findAll('.content-project-triptych__side-img-2')[0].getAttribute('height')).to.equal('380');
 	});
 });
