@@ -50,6 +50,6 @@ describe('Integration | Component | services menu', function() {
 		this.set('services', services);
 		this.render(hbs`{{services-menu items=services}}`);
 
-		expect(find('.services-menu')).to.have.length(1);
+		expect(find('.services-menu')).to.exist;
 	});
 });

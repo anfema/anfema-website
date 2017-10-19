@@ -28,6 +28,6 @@ describe('Integration | Component | services menu link', function() {
 	it('renders', function() {
 		this.render(hbs`{{services-menu-link queryParams=(hash service=test)}}`);
 
-		expect(find('.services-menu-link')).to.have.length(1);
+		expect(find('.services-menu-link')).to.exist;
 	});
 });
