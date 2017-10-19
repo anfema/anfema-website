@@ -5,6 +5,40 @@ DEPLOY_PAYLOAD="$DEPLOY_TIMESTAMP.tgz"
 
 cd $TRAVIS_BUILD_DIR
 
+echo "Downloading Webfonts"
+pushd public/fonts
+
+	WEBFONTS_BASE_URL='https://www-static.anfe.ma/2017/webfonts/'
+	WEBFONTS=(
+		'CalibreWeb-Regular.eot'
+		'CalibreWeb-RegularItalic.eot'
+		'CalibreWeb-RegularItalic.woff'
+		'CalibreWeb-RegularItalic.woff2'
+		'CalibreWeb-Regular.woff'
+		'CalibreWeb-Regular.woff2'
+		'CalibreWeb-Semibold.eot'
+		'CalibreWeb-SemiboldItalic.eot'
+		'CalibreWeb-SemiboldItalic.woff'
+		'CalibreWeb-SemiboldItalic.woff2'
+		'CalibreWeb-Semibold.woff'
+		'CalibreWeb-Semibold.woff2'
+	)
+
+	for i in "${WEBFONTS[@]}"; do
+		# We could use travis caching here, but I don't see the point for 49KB in total
+		# if [ ! -f $i ]; then
+			URL="$WEBFONTS_BASE_URL$i"
+
+			echo "Downloading $URL"
+			curl $URL -O -s &
+		# else
+		# 	echo "Skipped download: $i already exists"
+		# fi
+	done
+
+	wait
+popd
+
 echo "Building Ember Application"
 ember build --env=production || exit 1
 
