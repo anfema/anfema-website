@@ -7,6 +7,8 @@ module.exports = function(defaults) {
 	const app = new EmberApp(defaults, {
 		fingerprint: {
 			exclude: ['contents/fastboot-data.js', 'favicon.ico'],
+			extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'woff', 'woff2', 'eot'],
+			replaceExtensions: ['html', 'css', 'js', 'xml'],
 		},
 		postcssOptions: {
 			compile: {

@@ -12,32 +12,37 @@ export default Component.extend({
 	activeClass: null,
 	onClick: null,
 
-	_router: service('router'),
+	router: service('router'),
 
-	href: computed('queryParams', '_router.currentRouteName', function() {
-		const router = this.get('_router');
+	href: computed('queryParams', 'router.currentRouteName', function() {
+		const router = this.get('router');
 
 		return router.urlFor(router.get('currentRouteName'), {
 			queryParams: this.get('queryParams'),
 		});
 	}),
 
-	click(e) {
-		if (this.onClick) {
-			e.preventDefault();
-			this.onClick(e);
+	click(event) {
+		if (this.get('onClick')) {
+			event.preventDefault();
+
+			this.get('onClick')(event);
 		}
 	},
 
-	isActive: computed('activeClass', 'queryParams', '_router.currentURL', function() {
-		const router = this.get('_router');
+	onClick() {},
+
+	isActive: computed('activeClass', 'queryParams', 'router.currentURL', function() {
+		const router = this.get('router');
 		const activeClass = this.activeClass ? this.activeClass : 'menu-strip-link__active';
 		const currentQueryParams = parseQueryParams(get(window, 'location.search'));
-		const queryParams = this.get('queryParams');
+		const service = this.get('queryParams.service');
 
 		// TODO use version below, when https://github.com/emberjs/ember.js/pull/15613/files
 		// is merged
-		const isActive = Object.keys(queryParams).every(key => currentQueryParams[key] === this.queryParams[key]);
+		let isActive =
+			(currentQueryParams.service && currentQueryParams.service === service) ||
+			(service === 'concept' && !currentQueryParams.service);
 
 		// const isActive = router.isActive(router.get('currentRouteName'), {
 		// 	queryParams: this.get('queryParams')

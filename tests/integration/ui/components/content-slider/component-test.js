@@ -31,9 +31,10 @@ describe('Integration | Component | content slider', function() {
 	];
 
 	beforeEach(function() {
-		this.set('services', services);
+		this.set('data', services);
+
 		this.render(hbs`
-			{{content-slider data=services}}
+			{{content-slider data=data}}
 		`);
 	});
 
@@ -42,13 +43,18 @@ describe('Integration | Component | content slider', function() {
 	});
 
 	it('renders the correct active slide ', function() {
-		this.set('data', services);
 		this.set('selected', services[0]);
 
 		this.render(hbs`
-			{{content-slider slideComponentName="service-slide" data=services selected=selected}}
+			{{content-slider
+				slideComponentName="services-slide"
+				data=data
+				selected=selected
+			}}
 		`);
 
-		expect(find('.content-slider__slide__active h1').textContent).to.equal(services[0].title);
+		expect(find('.content-slider__slide--active .services-slide__headline').textContent).to.equal(
+			services[0].title
+		);
 	});
 });

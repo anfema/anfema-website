@@ -1,0 +1,15 @@
+<div class="services-menu__scroll">
+	<nav class="services-menu__slider">
+		{{#each items as |item|}}
+			{{#services-menu-link
+				queryParams=(hash service=item.id)
+				activeClass='services-menu-link--active'
+				onClick=(action 'onItemClicked' item)
+			}}
+				{{item.id}}
+			{{/services-menu-link}}
+		{{/each}}
+	</nav>
+</div>
+
+{{yield}}

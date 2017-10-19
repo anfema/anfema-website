@@ -3,6 +3,7 @@ import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import Service from '@ember/service';
+import { find } from 'ember-native-dom-helpers';
 
 const routerStub = Service.extend({
 	urlFor: function() {
@@ -35,8 +36,8 @@ const services = [
 	},
 ];
 
-describe('Integration | Component | menu strip', function() {
-	setupComponentTest('menu-strip', {
+describe('Integration | Component | services menu', function() {
+	setupComponentTest('services-menu', {
 		integration: true,
 	});
 
@@ -47,8 +48,8 @@ describe('Integration | Component | menu strip', function() {
 
 	it('renders', function() {
 		this.set('services', services);
-		this.render(hbs`{{menu-strip items=services}}`);
+		this.render(hbs`{{services-menu items=services}}`);
 
-		expect(this.$()).to.have.length(1);
+		expect(find('.services-menu')).to.exist;
 	});
 });

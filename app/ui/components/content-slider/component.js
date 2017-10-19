@@ -30,17 +30,27 @@ export default Component.extend({
 	 * state
 	 */
 
-	/** @type {number | undefined} */
+	/**
+	 * @type {number | undefined}
+	 */
 	_dragStartPosition: undefined,
-	/** @type {number} */
+
+	/**
+	 * @type {number}
+	 */
 	_dragOffset: 0,
-	/** @type {boolean} */
+
+	/**
+	 * @type {boolean}
+	 */
 	_isTransitioning: false,
 	_oldSelected: undefined,
 
 	/** @returns {number} */
 	_currentIndex: computed('data.@each', 'selected', function() {
-		return this.data.findIndex(data => data === this.selected);
+		const selected = this.get('selected');
+
+		return this.get('data').findIndex(data => data === selected);
 	}),
 
 	/** @returns {number} */
@@ -51,15 +61,18 @@ export default Component.extend({
 	/** @returns {boolean} */
 	_previousDisabled: computed('cycle', '_currentIndex', '_isTransitioning', function() {
 		const currentIndex = this.get('_currentIndex');
+		const cycle = this.get('cycle');
 
-		return this._isTransitioning || (!this.cycle && currentIndex === 0);
+		return this._isTransitioning || (!cycle && currentIndex === 0);
 	}),
 
 	/** @returns {boolean} */
 	_nextDisabled: computed('cycle', 'data', '_currentIndex', '_isTransitioning', function() {
 		const currentIndex = this.get('_currentIndex');
+		const data = this.get('data');
+		const cycle = this.get('cycle');
 
-		return this._isTransitioning || (!this.cycle && currentIndex === this.data.length - 1);
+		return this._isTransitioning || (!cycle && currentIndex === data.length - 1);
 	}),
 
 	/** @returns {object} */
@@ -71,7 +84,7 @@ export default Component.extend({
 
 	/** @returns {object} */
 	_currentSlide: computed('data.@each', 'selected', function() {
-		return this.data.find(data => data === this.selected);
+		return this.get('data').find(data => data === this.selected);
 	}),
 
 	/** @returns {object} */
@@ -116,8 +129,8 @@ export default Component.extend({
 		const userIsInteracting = this._dragStartPosition !== undefined;
 
 		return userIsInteracting || this._isTransitioning
-			? 'content-slider__slider__transitioning'
-			: 'content-slider__slider__steady';
+			? 'content-slider__slider--transitioning'
+			: 'content-slider__slider--steady';
 	}),
 
 	actions: {
@@ -141,7 +154,6 @@ export default Component.extend({
 	/*
 	 * lifecycle
 	 */
-
 	init() {
 		this._super(...arguments);
 		this.oldAttrs = [];
