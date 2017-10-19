@@ -21,6 +21,15 @@ sections:
       <h3>Challenge</h3>
 
       <p>The challenging part about the BMW 7 Series application was to comprehensibly present the elegance, comfort and features of the car. Given the product’s internationality, multilingualism and the support of layout variants for markets such as the United Arab Emirates are among the app’s essential features. As, throughout the app's development, the car itself was top secret, secure data management needed to be safeguarded at all times.</p>
+
+  -
+    component: 'content-project-triptych'
+    useAlternateColor: true
+    images:
+      - 'http://via.placeholder.com/736x492'
+      - 'http://via.placeholder.com/736x492'
+      - 'http://via.placeholder.com/736x492'
+
   -
     component: 'project-text'
     content: |

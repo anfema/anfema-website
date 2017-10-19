@@ -6,17 +6,14 @@
 @import '_config/_mixins/offsets';
 @import '_config/_mixins/shadows';
 @import '_config/_mixins/webfonts';
-
 // Environemnt
 @import '_environment/aux';
 @import '_environment/box-sizing';
 @import '_environment/grid';
 @import '_environment/typography';
 @import '_environment/webfonts';
-
 // Global styles
 @import 'global';
-
 // Components
 @import 'components/content-lp-cover';
 @import 'components/content-lp-team';
@@ -32,6 +29,7 @@
 @import 'components/project-cover';
 @import 'components/project-detail';
 @import 'components/project-gallery';
+@import 'components/project-triptych';
 @import 'components/project-icons';
 @import 'components/project-text';
 @import 'components/project-video';
