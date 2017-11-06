@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
+    img: 'https://www-static.anfe.ma/2017/projects/bmw7series/cover.jpg'
     title: 'BMW 7 Series Presenter App'
   -
     component: 'project-text'
@@ -71,23 +71,55 @@ sections:
     component: 'project-text'
     content: |
       <h3>Technologien</h3>
-
       <p>Die App wurde als Innovationsprodukt mit Swift für iOS entwickelt. Ein eigenes Server-Backend basierend auf Django garantiert eine schnelle und zuverlässige Auslieferung neuer Inhalte und kontrolliert die erforderlichen Sicherheitsmaßnahmen.</p>
   -
     component: 'content-quote'
     source: Gunther Janeck, CoC Fuhrpark, BMW Group
     content: |
       <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend. </p>
-
       <p>Großartig an der anfema ist neben der Qualität auch die Schnelligkeit, mit der sie Projekte verwirklicht. Deshalb ist und bleibt sie einer unserer viel geschätzten Partner.</p>
-
   -
     component: 'content-project-gallery'
     defaults:
-      width: 584
-      height: 438
+      image-srcset:
+        width: 736
+        height: 543
     images:
-      - 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
-      - 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
-      - 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
-      - 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
+      -
+        src:
+          -
+            url: http://via.placeholder.com/736x543
+            width: 736
+          -
+            url: http://via.placeholder.com/584x438
+            width: 584
+          -
+            url: http://via.placeholder.com/684x513
+            width: 684
+          -
+            url: 'http://via.placeholder.com/388x292'
+            width: 388
+      -
+        src:
+          - http://via.placeholder.com/200x100
+          - http://via.placeholder.com/100x100
+          - http://via.placeholder.com/100x100
+          -
+            url: 'http://via.placeholder.com/100x100'
+            width: 600
+      -
+        src:
+          - http://via.placeholder.com/200x200
+          - http://via.placeholder.com/100x100
+          - http://via.placeholder.com/100x100
+          -
+            url: 'http://via.placeholder.com/100x100'
+            width: 600
+      -
+        src:
+          - http://via.placeholder.com/200x100
+          - http://via.placeholder.com/100x100
+          - http://via.placeholder.com/100x100
+          -
+            url: 'http://via.placeholder.com/100x100'
+            width: 600
