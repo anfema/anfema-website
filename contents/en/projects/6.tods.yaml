@@ -7,34 +7,68 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: '#'
+    img: 'https://www-static.anfe.ma/2017/projects/tods/cover-large.jpg'
     title: 'TOD’S Shoe Configurator'
   -
     component: 'project-text'
     content: |
       <h3>Assignment</h3>
 
-      <p>TOD’s is an Italian shoe and leather goods manufacturer renowned for remarkable craftsmanship and quality. The idea of the “TOD’S Custom Made” app is to enable in-store configuration of personalised shoes: Together with a store assistant customers can create individual shoes according to their taste, and order them subsequently. Designed to act as an interactive shopping assistant, the TOD’S app reflects the brand’s lifestyle and their products’ supreme quality, and provides interesting details about the brand and its history. Characterised by fast performance and ease of use, the app supports the shop assistant on location and facilitates a convenient shopping experience.</p>
+      <p>TOD’s is an Italian shoe and leather goods manufacturer renowned for remarkable craftsmanship and quality.
+      The idea of the “TOD’S Custom Made” app is to enable in-store configuration of personalised shoes: Together with
+      a store assistant customers can create individual shoes according to their taste, and order them subsequently.
+      Designed to act as an interactive shopping assistant, the TOD’S app reflects the brand’s lifestyle and their
+      products’ supreme quality, and provides interesting details about the brand and its history. Characterised by
+      fast performance and ease of use, the app supports the shop assistant on location and facilitates a convenient
+      shopping experience.</p>
+  -
+      component: 'content-quote'
+      source: 'Sebastian André Borowski, Program Manager, Dassault Systèmes 3DEXCITE, our partner in the TOD’s project'
+      content: |
+        <p>I would like to use this opportunity to congratulate and thank each of you for your brainwork, effort and -
+        most importantly - your ‘priceless cool’, i.e. your patience and continuous motivation. Once again, thank you
+        very much for your endless effort!</p>
   -
     component: 'project-text'
     content: |
       <h3>Challenge</h3>
 
-      <p>The challenging part about this project was to develop a storage space efficient yet high-performance solution that can reproduce 16 million different shoe configurations in one app. Moreover, all content must be available without existing internet connection so that shoes can be configured and ordered offline.</p>
+      <p>The challenging part about this project was to develop a storage space efficient yet high-performance
+      solution that can reproduce 16 million different shoe configurations in one app. Moreover, all content must
+      be available without existing internet connection so that shoes can be configured and ordered offline.</p>
+  -
+    component: 'content-project-triptych'
+    useAlternateColor: true
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/tods/triptych-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/tods/triptych-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/tods/triptych-2-large.jpg'
   -
     component: 'project-text'
     content: |
       <h3>Solution</h3>
 
-      <p>In order to guarantee the app’s offline functionality, all required data is downloaded to the device upon the first login. The image file format WebP proved to be an ideal solution where storage space on iPads wasn’t sufficient to support alternative formats. Even purchase orders can be created offline, are saved locally on the device and transmitted as soon as an internet connection is established. Apart from that, connection to the internet is only necessary for updates of prices and the addition of new models.</p>
+      <p>In order to guarantee the app’s offline functionality, all required data is downloaded to the device upon
+      the first login. The image file format WebP proved to be an ideal solution where storage space on iPads wasn’t
+      sufficient to support alternative formats. Even purchase orders can be created offline, are saved locally on the
+      device and transmitted as soon as an internet connection is established. Apart from that, connection to the
+      internet is only necessary for updates of prices and the addition of new models.</p>
+  -
+    component: 'content-project-gallery'
+    defaults:
+      width: 584
+      height: 438
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-2-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-4-large.jpg'
   -
     component: 'project-text'
     content: |
       <h3>Technology</h3>
 
-      <p>The app was developed in Swift and exclusively for Apple iPads. A server component based on ASP.NET provides the required data and manages purchase orders and configurations. Anticipatory planning and the respective set-up of the data structure facilitate the system’s easy extension by further product categories and models at any time.</p>
-  -
-    component: 'content-quote'
-    source: 'Sebastian André Borowski, Program Manager, Dassault Systèmes 3DEXCITE, our partner in the TOD’s project'
-    content: |
-      <p>I would like to use this opportunity to congratulate and thank each of you for your brainwork, effort and - most importantly - your ‘priceless cool’, i.e. your patience and continuous motivation. Once again, thank you very much for your endless effort!</p>
+      <p>The app was developed in Swift and exclusively for Apple iPads. A server component based on ASP.NET provides
+      the required data and manages purchase orders and configurations. Anticipatory planning and the respective set-up
+      of the data structure facilitate the system’s easy extension by further product categories and
+      models at any time.</p>
