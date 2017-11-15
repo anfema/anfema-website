@@ -12,7 +12,7 @@ sections:
   -
     component: 'project-text'
     content: |
-      <h3>Einleitung / Aufgabe</h3>
+      <h3>Aufgabe</h3>
 
       <p>Technik zum Anfassen: Mit der Augmented Reality App lassen sich sieben 3D-Modelle aus dem vielfältigen
       technischen Leistungsspektrum von FERCHAU aus allen Perspektiven entdecken. Um die Modelle „zum Leben zu
