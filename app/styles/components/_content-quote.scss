@@ -122,17 +122,14 @@ html[lang='de'] {
 	.content-quote__text {
 		&:before {
 			top: auto;
+			bottom: 0;
 			content: '„';
 
-			@include media-large-max {
-				bottom: 5rem;
+			@include media-medium-max {
+				bottom: -5rem;
 				left: -1rem;
 			}
 
-			@include media-large-min {
-				bottom: -3rem;
-				left: -13rem;
-			}
 		}
 
 		&:after {
