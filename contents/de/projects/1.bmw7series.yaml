@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
+    img: 'https://www-static.anfe.ma/2017/projects/bmw7series/cover-large.jpg'
     title: 'BMW 7 Series Presenter App'
   -
     component: 'project-text'
@@ -15,7 +15,8 @@ sections:
       <h3>Aufgabe</h3>
 
       <p>Die Marke BMW steht seit jeher für Sportlichkeit, Fahrspaß und Komfort. Mit der Neuauflage des BMW 7er
-      definierte der Premium-Automobilhersteller Luxus im Fahrzeugbereich neu. Für eine angemessene Präsentation des
+      definierte der Premium-Automobilhersteller Luxus im Fahrzeugbereich neu.</p>
+      <p>Für eine angemessene Präsentation des
       Fahrzeugs und seiner innovativen Features wurde eine iPad-App konzipiert und entwickelt. Die App besticht durch
       ein außergewöhnliches, intuitives Bedienkonzept, gestalterische Perfektion und die Integration interaktiver
       Medien, die den Komfort und den Spaß des BMW 7er auf das Tablet übertragen.</p>
@@ -24,10 +25,10 @@ sections:
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:
-      - 'http://via.placeholder.com/100x100'
-      - 'http://via.placeholder.com/100x100'
-      - 'http://via.placeholder.com/100x100'
-      - 'http://via.placeholder.com/100x100'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-1.svg'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-2.svg'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-3.svg'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-4.svg'
     text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
   -
     component: 'project-text'
@@ -40,9 +41,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'http://via.placeholder.com/736x492'
-      - 'http://via.placeholder.com/736x492'
-      - 'http://via.placeholder.com/736x492'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-2-large.jpg'
 
   -
     component: 'project-text'
@@ -55,16 +56,16 @@ sections:
     useAlternateColor: true
     width: 684
     height: 513
-    poster: '/img/bmw_video_preview 800x600.jpg'
+    poster: 'https://www-static.anfe.ma/2017/projects/bmw7series/video-preview.jpg'
     videos:
     -
-      path: '/video/bmw7series/bmw_02_800x600.mp4'
+      path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.mp4'
       type: 'mp4'
     -
-      path: '/video/bmw7series/bmw_02.oggtheora.ogv'
+      path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.ogv'
       type: 'ogv'
     -
-      path: '/video/bmw7series/bmw_02.webmsd.webm'
+      path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.webm'
       type: 'webm'
 
   -
@@ -87,7 +88,7 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
-      - 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
-      - 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
-      - 'https://anfe.ma/static/2017/projects/bmw7series/cover.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-2-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-4-large.jpg'
