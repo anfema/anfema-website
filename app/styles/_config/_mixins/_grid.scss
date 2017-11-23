@@ -11,3 +11,11 @@
 		grid-column-gap: 3.2rem;
 	}
 }
+
+@mixin grid-gallery {
+	position: relative;
+	display: grid;
+	overflow: hidden;
+	grid-column-gap: 0;
+	grid-template-columns: repeat(8, 1fr);
+}

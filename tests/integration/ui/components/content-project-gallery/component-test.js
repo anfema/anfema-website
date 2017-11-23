@@ -10,6 +10,10 @@ describe('Integration | Component | content project gallery', function() {
 	});
 
 	const data = {
+		defaults: {
+			width: 584,
+			height: 438,
+		},
 		images: ['foo', 'bar', 'baz', 'qux'],
 	};
 
@@ -30,7 +34,7 @@ describe('Integration | Component | content project gallery', function() {
 		// 	{{/content-project-gallery}}
 		// `);
 
-		expect(findAll('.content-project-gallery__image')).to.have.lengthOf(data.images.length);
-		expect(findAll('.content-project-gallery__image')[0].getAttribute('src')).to.equal('foo');
+		expect(findAll('.content-project-gallery__landscape-default')).to.have.lengthOf(data.images.length);
+		expect(findAll('.content-project-gallery__landscape-default')[0].getAttribute('src')).to.equal('foo');
 	});
 });

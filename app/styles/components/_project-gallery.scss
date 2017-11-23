@@ -1,24 +1,125 @@
 .content-project-gallery {
-	@include grid-base;
 	@include offset-content-top;
 	@include offset-content-bottom;
+	@include grid-gallery;
 
-	&__image {
+	> * {
 		height: auto;
-		max-width: 100%;
+		margin-bottom: 3.2rem;
+		padding-right: 1.6rem;
+		padding-left: 1.6rem;
+	}
+
+	//orientation-no_of_images-image_index
+	&__portrait-default-0 {
+		width: 200%;
+		grid-column: 1/2;
+		justify-self: right;
+	}
+
+	&__portrait-default-1 {
+		width: 100%;
+		grid-column: 2/4;
+	}
+
+	&__portrait-default-2 {
+		width: 100%;
+		grid-column: 4/6;
+	}
+
+	&__portrait-default-3 {
+		width: 100%;
+		grid-column: 6/8;
+	}
+
+	&__portrait-default-4 {
+		width: 200%;
+		grid-column: 8/9;
+		justify-self: left;
+	}
+
+	&__landscape-default {
+		width: 100%;
 		grid-column: span 4;
-		margin-bottom: 3.6rem;
+	}
+
+	&__landscape-1 {
+		position: relative;
+		right: -4.8rem;
+		width: 100%;
+		grid-column: 3 /span 6;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__landscape-5-0 {
+		width: 100%;
+		grid-column: 1/span 4;
+		justify-self: right;
+	}
+
+	&__landscape-5-1 {
+		width: 100%;
+		grid-column: 5 / span 4;
+		justify-self: left;
+	}
+
+	&__landscape-5-2 {
+		width: 200%;
+		grid-column: span 2 / 3;
+		justify-self: right;
+	}
+
+	&__landscape-5-3 {
+		width: 100%;
+		grid-column: 3/span 4;
+	}
+
+	&__landscape-5-4 {
+		width: 200%;
+		grid-column: 7/span 2;
+		justify-self: left;
 	}
 }
 
 @include media-medium-max {
 	.content-project-gallery {
-		padding-right: $grid-offset-medium;
-		padding-left: $grid-offset-medium;
-
-		&__image {
+		> * {
 			grid-column: span 8;
-			justify-self: center;
+		}
+
+		&__portrait-default-0 {
+			width: 200%;
+			grid-column: 1/3;
+		}
+
+		&__portrait-default-1 {
+			width: 100%;
+			grid-column: 3/7;
+		}
+
+		&__portrait-default-2 {
+			width: 200%;
+			grid-column: 7/9;
+		}
+
+		&__portrait-default-3 {
+			width: 100%;
+			grid-column: 1/5;
+		}
+
+		&__portrait-default-4 {
+			width: 100%;
+			grid-column: 5/9;
+		}
+
+		&__landscape-5-2,
+		&__landscape-5-4 {
+			width: 100%;
+		}
+
+		&__landscape-1 {
+			grid-column: 3 /span 6;
 		}
 	}
 }
