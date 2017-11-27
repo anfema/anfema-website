@@ -1,4 +1,6 @@
 {{yield}}
 {{#each images as |image|}}
-	<img class="content-project-gallery__image" src="{{image.url}}" alt="{{image.alt}}" width="{{image.width}}" height="{{image.height}}">
+	<img class="content-project-gallery__{{image.layout}}" src="{{image.url}}" alt="{{image.alt}}"
+	     width="{{image.width}}"
+	     height="{{image.height}}">
 {{/each}}
