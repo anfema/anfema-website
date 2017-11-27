@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: '#'
+    img: 'https://www-static.anfe.ma/2017/projects/idnow/cover-large.jpg'
     title: 'IDnow'
   -
     component: 'project-text'
@@ -16,11 +16,28 @@ sections:
 
       <p>Deeming postal identity verification (“postident”) obsolete, the Munich-based Startup IDnow specialised in developing a digital solution that simplifies the extensive - and partially complicated - process. Using IDnow’s technology, the customer is, for example, spared a time-consuming trip to the post office. The online ident procedure is a secure, officially recognised and legal standard for identity verification. The user-friendly app and the specially developed SDK succeed in making identity and legitimation verification faster, more effective and available from anywhere.</p>
   -
+    component: 'content-project-icons'
+    useAlternateColor: true
+    title: 'Custom Icon Set'
+    icons:
+      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-1.svg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-2.svg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-3.svg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-4.svg'
+    text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
+  -
     component: 'project-text'
     content: |
       <h3>Challenge</h3>
 
       <p>anfema’s task in this project was to implement the online ident procedure in a user-friendly and platform independent way - for smart phones, tablets, PCs and laptops. Considering the system’s processing of sensitive data, it was a key requirement to ensure maximum data security.</p>
+  -
+    component: 'content-project-triptych'
+    useAlternateColor: true
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/idnow/triptych-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/triptych-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/triptych-2-large.jpg'
   -
     component: 'project-text'
     content: |
@@ -28,14 +45,25 @@ sections:
 
       <p>Using a straightforward navigation concept, the user interface was implemented in a simple and well-arranged way, speeding up the identification process yet again. In order to provide future customers with the highest degree of integrability, core functions were developed as a software development kit. Thus, customers can easily integrate the digital identity verification process into their existing systems, allowing for direct use. In order to guarantee maximum data security, a combination of cross-platform and platform independent components was applied - among them code obfuscation, prevention of caching inputs and encryption of all API requests.</p>
   -
+    component: 'content-quote'
+    source: |
+      Sebastian Bärhold, Managing Director & Co-Founder, IDnow GmbH
+    content: |
+      <p>anfema’s solution impresses with utmost usability. Your team understood exactly what we, the agents and the users needed, implemented it purposefully, and thereby made an essential contribution to our idea’s realisation and efficiency.</p>
+  -
     component: 'project-text'
     content: |
       <h3>Technology</h3>
 
       <p>The apps and the software development kit were developed in native code for both Android and iOS. The video process itself is based on two technologies: While communication between the apps and the agents is implemented through WebSockets, the bidirectional audio and video transmission is facilitated by Icelink WebRTC.</p>
   -
-    component: 'content-quote'
-    source: |
-      Sebastian Bärhold, Managing Director & Co-Founder, IDnow GmbH
-    content: |
-      <p>aanfema’s solution impresses with utmost usability. Your team understood exactly what we, the agents and the users needed, implemented it purposefully, and thereby made an essential contribution to our idea’s realisation and efficiency.</p>
+    component: 'content-project-gallery'
+    defaults:
+      width: 584
+      height: 438
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-2-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-4-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-5-large.jpg'
