@@ -49,8 +49,8 @@ sections:
   -
     component: 'content-project-gallery'
     defaults:
-      width: 584
-      height: 438
+      width: 400
+      height: 600
     images:
       - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-1-large.jpg'
       - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-2-large.jpg'
