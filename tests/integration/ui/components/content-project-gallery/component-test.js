@@ -34,7 +34,7 @@ describe('Integration | Component | content project gallery', function() {
 		// 	{{/content-project-gallery}}
 		// `);
 
-		expect(findAll('.content-project-gallery__landscape-default')).to.have.lengthOf(data.images.length);
-		expect(findAll('.content-project-gallery__landscape-default')[0].getAttribute('src')).to.equal('foo');
+		expect(findAll('.content-project-gallery__image--landscape-default')).to.have.lengthOf(data.images.length);
+		expect(findAll('.content-project-gallery__image--landscape-default')[0].getAttribute('src')).to.equal('foo');
 	});
 });
