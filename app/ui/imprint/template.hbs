@@ -1,3 +1,13 @@
-<h1 data-test-imprint-page></h1>
+{{title model.meta.title}}
+
+{{#page-menu forceOpaque=true class="page-menu--flat"}}
+	<ul>
+		<li>
+			{{#link-to 'language'}}{{t 'projects.index.nav.back'}}{{/link-to}}
+		</li>
+	</ul>
+{{/page-menu}}
+
+{{{model.content}}}
 
 {{outlet}}
