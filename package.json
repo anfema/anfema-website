@@ -1,6 +1,6 @@
 {
   "name": "anfema",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A brand new website for https://anfe.ma",
   "license": "MIT",
   "author": "anfema GmbH",
@@ -42,7 +42,7 @@
     "ember-cli-shims": "~1.2.0",
     "ember-cli-sri": "~2.1.0",
     "ember-cli-stylelint": "~1.0.0",
-    "ember-cli-uglify": "~2.0.0-beta.2",
+    "ember-cli-uglify": "~2.0.0",
     "ember-elsewhere": "^1.0.2",
     "ember-export-application-global": "~2.0.0",
     "ember-fetch": "~3.4.0",
@@ -67,7 +67,7 @@
     "loader.js": "~4.6.0",
     "prettier": "~1.9.2",
     "remarkable": "^1.7.1",
-    "stylelint": "~8.3.1",
+    "stylelint": "~8.4.0",
     "stylelint-config-anfema": "~6.0.2",
     "stylelint-order": "~0.8.0"
   },
