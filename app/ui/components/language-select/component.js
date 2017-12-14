@@ -28,7 +28,12 @@ export default Component.extend({
 	actions: {
 		onLinkClick(targetLang, event) {
 			event.preventDefault();
+
 			this.get('router').transitionTo(generateLangUrl(this.get('router'), targetLang));
+
+			if (window && window.scrollTo) {
+				window.scrollTo(0, 0);
+			}
 		},
 	},
 });
