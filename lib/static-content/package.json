@@ -17,6 +17,8 @@
     "exists-sync": "0.0.4",
     "json-stable-stringify": "~1.0.1",
     "js-yaml": "~3.10.0",
-    "mkdirp": "~0.5.1"
+    "mkdirp": "~0.5.1",
+    "traverse": "^0.6.6",
+    "remarkable": "^1.7.1"
   }
 }

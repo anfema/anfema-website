@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
-import { find, findAll } from 'ember-native-dom-helpers';
+import { findAll } from 'ember-native-dom-helpers';
 
 describe('Integration | Component | content project gallery', function() {
 	setupComponentTest('content-project-gallery', {
@@ -34,7 +34,11 @@ describe('Integration | Component | content project gallery', function() {
 		// 	{{/content-project-gallery}}
 		// `);
 
-		expect(findAll('.content-project-gallery__image--landscape-default')).to.have.lengthOf(data.images.length);
-		expect(findAll('.content-project-gallery__image--landscape-default')[0].getAttribute('src')).to.equal('foo');
+		expect(findAll('.content-project-gallery__image--landscape-default')).to.have.lengthOf(
+			data.images.length
+		);
+		expect(
+			findAll('.content-project-gallery__image--landscape-default')[0].getAttribute('src')
+		).to.equal('foo');
 	});
 });

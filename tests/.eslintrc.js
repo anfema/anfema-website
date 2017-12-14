@@ -1,3 +1,3 @@
 module.exports = {
-	extends: 'anfema/prettier-ember-tests-mocha',
+	extends: 'anfema/ember-tests-mocha',
 };

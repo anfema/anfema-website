@@ -9,7 +9,9 @@ export default Component.extend({
 
 	_slideDirection: 0,
 	_selected: computed('data.@each', 'selectedId', function() {
-		return this.selectedId ? this.data.find(service => service.id === this.selectedId) : this.data[0];
+		return this.selectedId
+			? this.data.find(service => service.id === this.selectedId)
+			: this.data[0];
 	}),
 	_logoStep: computed('data.@each', 'selectedId', function() {
 		const currentService = this.get('data').find(service => service.id === this.selectedId);

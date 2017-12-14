@@ -53,8 +53,8 @@ describe('Integration | Component | content slider', function() {
 			}}
 		`);
 
-		expect(find('.content-slider__slide--active .services-slide__headline').textContent).to.equal(
-			services[0].title
-		);
+		expect(
+			find('.content-slider__slide--active .services-slide__headline').textContent
+		).to.equal(services[0].title);
 	});
 });

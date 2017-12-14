@@ -6,10 +6,10 @@ import Service from '@ember/service';
 import { find } from 'ember-native-dom-helpers';
 
 const routerStub = Service.extend({
-	urlFor: function() {
+	urlFor() {
 		return 'http://url';
 	},
-	isActive: function() {
+	isActive() {
 		return false;
 	},
 	currentRouteName: 'http://test',

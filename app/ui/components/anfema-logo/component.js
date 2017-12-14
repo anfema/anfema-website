@@ -12,6 +12,7 @@ export default Component.extend({
 
 	init() {
 		this._super(...arguments);
+
 		this.onResize = () => {
 			this._logo.updateCanvas();
 		};

@@ -1,15 +1,15 @@
 import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { computed, get } from '@ember/object';
-import { oneWay, readOnly } from '@ember/object/computed';
+import { readOnly } from '@ember/object/computed';
 import scrollToAnimated from 'anfema/utils/scroll-to-animated';
 
 /**
  * Find the id for the first item in a list of contents
  *
- * @param {any} model
- * @param {String} name
- * @param {String} path
+ * @param {any} model a model
+ * @param {String} name the component name
+ * @param {String} path the path
  * @returns {String} id
  */
 function findByComponentNameAndPath(model, name, path) {
@@ -57,7 +57,8 @@ export default Controller.extend({
 		scrollToSection(event) {
 			event.preventDefault();
 			scrollToAnimated(
-				document.body.scrollTop + document.querySelector(event.srcElement.hash).getBoundingClientRect().top
+				document.body.scrollTop +
+					document.querySelector(event.srcElement.hash).getBoundingClientRect().top
 			);
 		},
 	},

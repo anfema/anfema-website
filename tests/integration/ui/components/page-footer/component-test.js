@@ -1,8 +1,8 @@
-import { expect } from 'chai';
+// import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
-import hbs from 'htmlbars-inline-precompile';
-import { find, findAll } from 'ember-native-dom-helpers';
+// import hbs from 'htmlbars-inline-precompile';
+// import { find, findAll } from 'ember-native-dom-helpers';
 
 describe('Integration | Component | page footer', function() {
 	setupComponentTest('page-footer', {

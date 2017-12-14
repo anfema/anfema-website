@@ -5,6 +5,10 @@ import { htmlSafe } from '@ember/string';
 
 const FlickProportion = 0.15;
 
+function mod(n, m) {
+	return (n % m + m) % m;
+}
+
 export default Component.extend({
 	classNames: ['content-slider'],
 
@@ -79,7 +83,9 @@ export default Component.extend({
 	_previousSlide: computed('cycle', 'data.@each', '_currentIndex', function() {
 		const currentIndex = this.get('_currentIndex');
 
-		return this.cycle || currentIndex > 0 ? this.data[mod(currentIndex - 1, this.data.length)] : undefined;
+		return this.cycle || currentIndex > 0
+			? this.data[mod(currentIndex - 1, this.data.length)]
+			: undefined;
 	}),
 
 	/** @returns {object} */
@@ -97,33 +103,40 @@ export default Component.extend({
 	}),
 
 	/** @returns {number} */
-	_sliderStyle: computed('selected', '_dragOffset', '_dragStartPosition', 'slideDirection', function() {
-		const userIsInteracting = this._dragStartPosition !== undefined;
-		const initTransition = this.slideDirection !== 0;
-		const wasDragging = this._dragOffset !== 0 && !userIsInteracting;
+	_sliderStyle: computed(
+		'selected',
+		'_dragOffset',
+		'_dragStartPosition',
+		'slideDirection',
+		function() {
+			const userIsInteracting = this._dragStartPosition !== undefined;
+			const initTransition = this.slideDirection !== 0;
+			const wasDragging = this._dragOffset !== 0 && !userIsInteracting;
 
-		//  0: right slide
-		// -1: middle slide
-		// -2: left slide
-		const fullOffset = (this.slideDirection - 1) * 100;
+			//  0: right slide
+			// -1: middle slide
+			// -2: left slide
+			const fullOffset = (this.slideDirection - 1) * 100;
 
-		if (initTransition || wasDragging) {
-			// immediately trigger a rerender to transition to the center pane
-			Ember.run.next(this, () => {
-				this.setProperties({
-					slideDirection: 0,
-					_dragStartPosition: undefined,
-					_dragOffset: 0,
+			if (initTransition || wasDragging) {
+				// immediately trigger a rerender to transition to the center pane
+				Ember.run.next(this, () => {
+					this.setProperties({
+						slideDirection: 0,
+						_dragStartPosition: undefined,
+						_dragOffset: 0,
+					});
 				});
-			});
-		}
+			}
 
-		return htmlSafe(
-			`transform: translate(calc(${fullOffset}% + ${this._dragOffset}px));` +
-				// disable transition while user is interacting
-				(initTransition || userIsInteracting ? 'transition: none;' : '')
-		);
-	}),
+			return htmlSafe(
+				`transform: translate(calc(${fullOffset}% + ${this._dragOffset}px));${
+					// disable transition while user is interacting
+					initTransition || userIsInteracting ? 'transition: none;' : ''
+				}`
+			);
+		}
+	),
 
 	_sliderExtraClass: computed('_dragStartPosition', '_isTransitioning', function() {
 		const userIsInteracting = this._dragStartPosition !== undefined;
@@ -135,16 +148,12 @@ export default Component.extend({
 
 	actions: {
 		slideToPrevious() {
-			const currentIndex = this.get('_currentIndex');
-
 			if (this.cycle || this._currentIndex > 0) {
 				this.transitionToPrevious();
 			}
 		},
 
 		slideToNext() {
-			const currentIndex = this.get('_currentIndex');
-
 			if (this.cycle || this._currentIndex < this.data.length - 1) {
 				this.transitionToNext();
 			}
@@ -157,6 +166,7 @@ export default Component.extend({
 	init() {
 		this._super(...arguments);
 		this.oldAttrs = [];
+
 		this.onTransitionEnd = e => {
 			if (e.propertyName === 'transform') {
 				this.set('_isTransitioning', false);
@@ -166,6 +176,7 @@ export default Component.extend({
 
 	didReceiveAttrs() {
 		this._super(...arguments);
+
 		if (this._oldSelected === this.selected) {
 			this.set('_isTransitioning', true);
 		}
@@ -193,7 +204,7 @@ export default Component.extend({
 	touchStart(e) {
 		this.startDrag(e.touches[0].clientX);
 	},
-	touchEnd(e) {
+	touchEnd(/* e */) {
 		this.endDrag();
 	},
 	touchMove(e) {
@@ -202,10 +213,10 @@ export default Component.extend({
 	mouseDown(e) {
 		this.startDrag(e.clientX);
 	},
-	mouseUp(e) {
+	mouseUp(/* e */) {
 		this.endDrag();
 	},
-	mouseLeave(e) {
+	mouseLeave(/* e */) {
 		this.endDrag();
 	},
 	mouseMove(e) {
@@ -216,7 +227,10 @@ export default Component.extend({
 	 * private methods
 	 */
 
-	/** @argument startPos {number} */
+	/**
+	 * @param {Number} startPos starting position
+	 * @return {undefined}
+	 * */
 	startDrag(startPos) {
 		if (this._dragStartPosition === undefined && !this._isTransitioning) {
 			this.setProperties({
@@ -229,12 +243,18 @@ export default Component.extend({
 	endDrag() {
 		if (this._dragStartPosition !== undefined) {
 			const offset = this.get('_dragOffset');
-			const sliderWidth = this.element.querySelector('.content-slider__slidewindow').clientWidth;
+			const currentIndex = this.get('_currentIndex');
+			const sliderWidth = this.element.querySelector('.content-slider__slidewindow')
+				.clientWidth;
 
 			if (Math.abs(offset) / sliderWidth > FlickProportion) {
 				if (offset > 0 && (this.cycle || currentIndex > 0)) {
 					this.transitionToPrevious();
-				} else if (this.onNext && offset < 0 && (this.cycle || currentIndex < this.data.length - 1)) {
+				} else if (
+					this.onNext &&
+					offset < 0 &&
+					(this.cycle || currentIndex < this.data.length - 1)
+				) {
 					this.transitionToNext();
 				}
 				this.setProperties({
@@ -249,9 +269,10 @@ export default Component.extend({
 	},
 
 	/**
-	 * @argument element {HTMLElement}
-	 * @argument newPos {number}
-	*/
+	 * @param {Number} newPos new position
+	 *
+	 * @return {undefined}
+	 */
 	updateDrag(newPos) {
 		if (this._dragStartPosition !== undefined && this.slideDirection === 0) {
 			this.setProperties({
@@ -283,7 +304,3 @@ export default Component.extend({
 		this.set('_isTransitioning', true);
 	},
 });
-
-function mod(n, m) {
-	return (n % m + m) % m;
-}

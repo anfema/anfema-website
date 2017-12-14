@@ -25,10 +25,12 @@ describe('Integration | Component | content lp team item', function() {
 
 		const subject = find('.content-lp-team-item');
 
-		expect(subject.classList.contains('content-lp-team-item--active'), 'Should be active').to.be.true;
+		expect(subject.classList.contains('content-lp-team-item--active'), 'Should be active').to.be
+			.true;
 
 		this.set('selected', 'second');
 
-		expect(subject.classList.contains('content-lp-team-item--active'), 'Should not be active').to.be.false;
+		expect(subject.classList.contains('content-lp-team-item--active'), 'Should not be active')
+			.to.be.false;
 	});
 });

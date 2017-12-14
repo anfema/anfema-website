@@ -2,6 +2,19 @@ import Component from '@ember/component';
 import { inject as service } from '@ember/service';
 import { computed, get } from '@ember/object';
 
+function parseQueryParams(searchString = '') {
+	return searchString
+		.substring(1)
+		.split('&')
+		.reduce((result, next) => {
+			const [k, v] = next.split('=');
+
+			result[decodeURIComponent(k)] = decodeURIComponent(v);
+
+			return result;
+		}, {});
+}
+
 export default Component.extend({
 	tagName: 'a',
 	classNames: ['menu-strip-link'],
@@ -10,7 +23,7 @@ export default Component.extend({
 
 	queryParams: null,
 	activeClass: null,
-	onClick: null,
+	onClick: () => {},
 
 	router: service('router'),
 
@@ -30,17 +43,15 @@ export default Component.extend({
 		}
 	},
 
-	onClick() {},
-
 	isActive: computed('activeClass', 'queryParams', 'router.currentURL', function() {
-		const router = this.get('router');
+		// const router = this.get('router');
 		const activeClass = this.activeClass ? this.activeClass : 'menu-strip-link__active';
 		const currentQueryParams = parseQueryParams(get(window, 'location.search'));
-		const service = this.get('queryParams.service');
+		// const service = this.get('queryParams.service');
 
 		// TODO use version below, when https://github.com/emberjs/ember.js/pull/15613/files
 		// is merged
-		let isActive =
+		const isActive =
 			(currentQueryParams.service && currentQueryParams.service === service) ||
 			(service === 'concept' && !currentQueryParams.service);
 
@@ -51,16 +62,3 @@ export default Component.extend({
 		return isActive ? activeClass : '';
 	}),
 });
-
-function parseQueryParams(searchString = '') {
-	return searchString
-		.substring(1)
-		.split('&')
-		.reduce((result, next) => {
-			const [k, v] = next.split('=');
-
-			result[decodeURIComponent(k)] = decodeURIComponent(v);
-
-			return result;
-		}, {});
-}

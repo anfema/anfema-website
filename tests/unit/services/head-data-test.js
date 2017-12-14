@@ -1,7 +1,6 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupTest } from 'ember-mocha';
-import { A } from '@ember/array';
 
 describe('Unit | Service | head data', function() {
 	setupTest('service:head-data', {

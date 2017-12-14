@@ -1,7 +1,5 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
-import Ember from 'ember';
-import { htmlSafe } from '@ember/string';
+// import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
@@ -62,7 +60,7 @@ export default Component.extend({
 
 	scrollToSelectedItem() {
 		if (this.get('fastboot.isFastBoot')) {
-			return;
+			// TODO
 		}
 	},
 });
