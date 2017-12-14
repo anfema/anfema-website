@@ -4,9 +4,7 @@ import { setupTest } from 'ember-mocha';
 
 describe('Unit | Route | imprint', function() {
 	setupTest('route:imprint', {
-		// needs: [
-		// 	'controller:foo',
-		// ],
+		needs: ['service:staticContent'],
 	});
 
 	it('exists', function() {
