@@ -59,6 +59,10 @@ a {
 		}
 	}
 
+	* + h2 {
+		margin-top: 10rem;
+	}
+
 	h3 {
 		margin: 0 0 1rem;
 		font-size: 2.8rem;
@@ -68,4 +72,8 @@ a {
 	* + h3 {
 		margin-top: 5rem;
 	}
+}
+
+.content-markdown {
+	margin-bottom: 5rem;
 }

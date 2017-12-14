@@ -1,0 +1,7 @@
+.offset-menu {
+	margin-top: 7rem;
+
+	@include media-large-min {
+		margin-top: 10rem;
+	}
+}
