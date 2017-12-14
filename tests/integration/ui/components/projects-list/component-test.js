@@ -12,7 +12,12 @@ describe('Integration | Component | projects list', function() {
 	const projects = [
 		{
 			file: 'bmw7series.json',
-			meta: { client: 'BMW', color: '#0096DA', id: 'bmw7series', title: '7 Series Presenter App' },
+			meta: {
+				client: 'BMW',
+				color: '#0096DA',
+				id: 'bmw7series',
+				title: '7 Series Presenter App',
+			},
 			sorting: '1',
 		},
 		{
@@ -22,17 +27,32 @@ describe('Integration | Component | projects list', function() {
 		},
 		{
 			file: 'idnow.json',
-			meta: { client: 'IDnow', color: '#F85720', id: 'idnow', title: 'Video Identification Web & App' },
+			meta: {
+				client: 'IDnow',
+				color: '#F85720',
+				id: 'idnow',
+				title: 'Video Identification Web & App',
+			},
 			sorting: '3',
 		},
 		{
 			file: 'takeda.json',
-			meta: { client: 'Takeda', color: '#38ABBA', id: 'takeda', title: 'Voice to Patients Web & App' },
+			meta: {
+				client: 'Takeda',
+				color: '#38ABBA',
+				id: 'takeda',
+				title: 'Voice to Patients Web & App',
+			},
 			sorting: '4',
 		},
 		{
 			file: 'mystaffpilot.json',
-			meta: { client: 'MyStaffPilot', color: '#006AC9', id: 'mystaffpilot', title: 'Plattform' },
+			meta: {
+				client: 'MyStaffPilot',
+				color: '#006AC9',
+				id: 'mystaffpilot',
+				title: 'Plattform',
+			},
 			sorting: '5',
 		},
 		{
@@ -42,12 +62,22 @@ describe('Integration | Component | projects list', function() {
 		},
 		{
 			file: 'pingonaut.json',
-			meta: { client: 'Pingonaut', color: '#FF7F27', id: 'pingonaut', title: 'Kidswatch Web & App' },
+			meta: {
+				client: 'Pingonaut',
+				color: '#FF7F27',
+				id: 'pingonaut',
+				title: 'Kidswatch Web & App',
+			},
 			sorting: '7',
 		},
 		{
 			file: 'ferchau.json',
-			meta: { client: 'Ferchau', color: '#EA2E3A', id: 'ferchau', title: 'Augmented Reality App' },
+			meta: {
+				client: 'Ferchau',
+				color: '#EA2E3A',
+				id: 'ferchau',
+				title: 'Augmented Reality App',
+			},
 			sorting: '8',
 		},
 	];

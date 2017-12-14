@@ -14,17 +14,16 @@ export default Route.extend({
 			this.transitionTo('language', defaultLang);
 
 			return intl.setLocale(defaultLang);
-		} else {
-			const paramLanguage = transition.params.language.language_id;
-			const availableLanguages = this.get('intl.locales');
-
-			if (!availableLanguages.includes(paramLanguage)) {
-				this.transitionTo('language', defaultLang);
-
-				return intl.setLocale(defaultLang);
-			} else {
-				return intl.setLocale(transition.params.language.language_id);
-			}
 		}
+		const paramLanguage = transition.params.language.language_id;
+		const availableLanguages = this.get('intl.locales');
+
+		if (!availableLanguages.includes(paramLanguage)) {
+			this.transitionTo('language', defaultLang);
+
+			return intl.setLocale(defaultLang);
+		}
+
+		return intl.setLocale(transition.params.language.language_id);
 	},
 });

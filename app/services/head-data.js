@@ -1,6 +1,5 @@
 import Service from '@ember/service';
 import { A } from '@ember/array';
-import { scheduleOnce } from '@ember/runloop';
 
 export default Service.extend({
 	inlineStyles: A(),

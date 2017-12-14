@@ -24,7 +24,7 @@ export default Component.extend({
 	didInsertElement() {
 		this._content = this.element.querySelector('.content-lp-team-item__content');
 
-		this._contentTransitionEnd = event => {
+		this._contentTransitionEnd = () => {
 			if (this.get('isActive')) {
 				this._setContentHeight('auto');
 			}

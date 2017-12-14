@@ -1,1 +1,3 @@
-export default {};
+const formats = {};
+
+export default formats;

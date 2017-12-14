@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
-import { click, find, findAll } from 'ember-native-dom-helpers';
+import { find, findAll } from 'ember-native-dom-helpers';
 import { generateLangUrl } from 'anfema/ui/components/language-select/component';
 
 const routerStub = {

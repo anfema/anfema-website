@@ -21,7 +21,6 @@ const ProjectsListItem = LinkComponent.extend({
 
 	headStyle: computed('project.{color,id}', function() {
 		const color = this.get('project.color');
-		const className = this.get('hoverClass');
 		const project = this.get('project.id');
 		const hoverClass = this.get('hoverClass');
 

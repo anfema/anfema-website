@@ -1,6 +1,6 @@
 import fontFaceOnload from 'font-face-onload';
 
-export function initialize() {
+function initialize() {
 	if (typeof FastBoot === 'undefined') {
 		fontFaceOnload('Calibre Web', {
 			success() {
@@ -14,7 +14,11 @@ export function initialize() {
 	}
 }
 
-export default {
+const initializer = {
 	name: 'webfonts',
 	initialize,
 };
+
+export { initialize };
+
+export default initializer;

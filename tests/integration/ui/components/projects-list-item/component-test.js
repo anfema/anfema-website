@@ -3,8 +3,6 @@ import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import { find } from 'ember-native-dom-helpers';
-import Service from '@ember/service';
-import { A } from '@ember/array';
 import headData from 'anfema/services/head-data';
 
 describe('Integration | Component | projects list item', function() {
@@ -12,7 +10,12 @@ describe('Integration | Component | projects list item', function() {
 		integration: true,
 	});
 
-	const project = { client: 'BMW', color: '#0096DA', id: 'bmw7series', title: '7 Series Presenter App' };
+	const project = {
+		client: 'BMW',
+		color: '#0096DA',
+		id: 'bmw7series',
+		title: '7 Series Presenter App',
+	};
 
 	beforeEach(function() {
 		this.register('service:head-data', headData);
@@ -41,7 +44,8 @@ describe('Integration | Component | projects list item', function() {
 		// 	'No title text found'
 		// ).to.equal(project.title.toLowerCase());
 
-		expect(find('.projects-list-item__client-background'), 'No background label rendered').to.exist;
+		expect(find('.projects-list-item__client-background'), 'No background label rendered').to
+			.exist;
 		expect(
 			find('.projects-list-item__client-background')
 				.innerText.trim()

@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
-import { find, findAll } from 'ember-native-dom-helpers';
+import { findAll } from 'ember-native-dom-helpers';
 
 describe('Integration | Component | content project triptych', function() {
 	setupComponentTest('content-project-triptych', {
@@ -44,7 +44,11 @@ describe('Integration | Component | content project triptych', function() {
 		// 	{{/content-project-triptych}}
 		// `);
 
-		expect(findAll('.content-project-triptych__side-img-1')[0].getAttribute('width')).to.equal('800');
-		expect(findAll('.content-project-triptych__side-img-2')[0].getAttribute('height')).to.equal('380');
+		expect(findAll('.content-project-triptych__side-img-1')[0].getAttribute('width')).to.equal(
+			'800'
+		);
+		expect(findAll('.content-project-triptych__side-img-2')[0].getAttribute('height')).to.equal(
+			'380'
+		);
 	});
 });

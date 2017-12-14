@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 
-export function initialize(application) {
+function initialize(/* application */) {
 	Component.reopen({
 		init() {
 			this._super(...arguments);
@@ -16,7 +16,11 @@ export function initialize(application) {
 	});
 }
 
-export default {
+const initializer = {
 	name: 'component-classname',
 	initialize,
 };
+
+export { initialize };
+
+export default initializer;

@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, it } from 'mocha';
 import { expect } from 'chai';
 import startApp from 'anfema/tests/helpers/start-app';
 import destroyApp from 'anfema/tests/helpers/destroy-app';
-import { click, find, findAll } from 'ember-native-dom-helpers';
+import { click /*, find, findAll */ } from 'ember-native-dom-helpers';
 
 describe('Acceptance | ui/index', function() {
 	let application;
