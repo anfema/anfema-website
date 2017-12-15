@@ -1,0 +1,48 @@
+@mixin offset-base-padding {
+	padding: 0 1.6rem;
+
+	@include media-large-min {
+		padding-right: 4.8rem;
+		padding-left: 4.8rem;
+	}
+}
+
+@mixin offset-overlay {
+	margin: 0.5rem;
+
+	@include media-medium-min {
+		margin: 1rem 2.8rem;
+	}
+}
+
+@mixin offset-menu-height {
+	padding-top: 5.4rem;
+
+	@include media-medium-min {
+		padding-top: 6rem;
+	}
+}
+
+@mixin offset-content-top {
+	padding-top: 8rem;
+
+	@include media-medium-min {
+		padding-top: 10rem;
+	}
+
+	@include media-xlarge-min {
+		padding-top: 12rem;
+	}
+}
+
+@mixin offset-content-bottom {
+	padding-bottom: 8rem;
+
+	@include media-medium-min {
+		padding-bottom: 10rem;
+	}
+
+	@include media-xlarge-min {
+		padding-bottom: 12rem;
+	}
+}

@@ -1,0 +1,23 @@
+{{title model.meta.title}}
+
+{{#page-overlay}}
+	{{#page-menu forceOpaque=true class="page-menu--flat"}}
+		<header class="breadcrumbs">
+			<span class="breadcrumbs__crumb">{{t 'projects.title'}}</span>
+			<span class="breadcrumbs__separator"> / </span>
+			<span class="breadcrumbs__crumb">{{model.meta.title}}</span>
+		</header>
+
+		<ul>
+			<li>{{link-to (t 'projects.detail.nav.back') 'projects.index'}}</li>
+		</ul>
+	{{/page-menu}}
+
+	{{#project-detail data=model}}
+		{{#each model.sections as |data|}}
+			{{component data.component data=data meta=model.meta}}
+		{{/each}}
+	{{/project-detail}}
+{{/page-overlay}}
+
+{{outlet}}

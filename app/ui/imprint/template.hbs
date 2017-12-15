@@ -1,0 +1,17 @@
+{{title model.meta.title}}
+
+{{#page-menu forceOpaque=true}}
+	<ul>
+		<li>
+			{{#link-to 'language'}}{{t 'projects.index.nav.back'}}{{/link-to}}
+		</li>
+	</ul>
+{{/page-menu}}
+
+<div class="grid offset-menu">
+	<div class="content-markdown">
+	{{{model.content}}}
+	</div>
+</div>
+
+{{outlet}}

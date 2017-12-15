@@ -1,0 +1,138 @@
+.content-quote {
+	@include grid-base;
+
+	position: relative;
+	overflow: hidden;
+	padding-top: 3rem;
+	padding-bottom: 0;
+	background-color: $color-grey-light;
+
+	@include media-large-min {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
+	&__text {
+		position: relative;
+		grid-column: 2 / -1;
+		margin: 4rem 0;
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 2.5rem;
+
+		@include media-large-min {
+			grid-column: 3 / -2;
+			font-size: 3.4rem;
+			line-height: 3.5rem;
+		}
+
+		& ~ * {
+			position: relative;
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			display: block;
+			overflow: visible;
+			color: $color-grey-darker;
+			opacity: 0.06;
+			font-size: 24rem;
+			font-weight: 700;
+			line-height: 24rem;
+			text-align: left;
+			vertical-align: middle;
+			pointer-events: none;
+			user-select: none;
+
+			@include media-large-min {
+				font-size: 55rem;
+				line-height: 40rem;
+			}
+		}
+
+		&::before {
+			top: -8rem;
+			left: -5rem;
+			content: '“';
+
+			@include media-large-min {
+				top: -8rem;
+				left: -13rem;
+			}
+		}
+
+		&::after {
+			top: -8rem;
+			right: 0;
+			text-align: right;
+			content: '”';
+
+			@include media-large-min {
+				top: -8rem;
+				right: -12rem;
+			}
+		}
+	}
+
+	&__source {
+		grid-column: 1 / -1;
+		color: $color-grey;
+		font-size: 1.8rem;
+		font-style: normal;
+		text-align: right;
+
+		@include media-large-min {
+			grid-column: -5 / span 3;
+		}
+	}
+
+	// TODO: move this to environment/typography when global link stylings are defined
+	.content-quote__project {
+		display: block;
+		grid-column: 1 / -1;
+		margin: 3rem 0 0;
+		padding: 2rem 0;
+		font-size: 1.8rem;
+		text-align: left;
+
+		@include media-large-min {
+			grid-column: 2 / span 2;
+			grid-row: 2 / span 1;
+			margin: 0;
+			padding: 0;
+		}
+
+		&,
+		&:link,
+		&:visited {
+			color: $color-brand-2;
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		&:focus,
+		&:hover {
+			color: $color-brand-1;
+		}
+	}
+}
+
+html[lang='de'] {
+	.content-quote__text {
+		&:before {
+			top: auto;
+			bottom: 0;
+			content: '„';
+
+			@include media-medium-max {
+				bottom: -5rem;
+				left: -1rem;
+			}
+		}
+
+		&:after {
+			content: '“';
+		}
+	}
+}

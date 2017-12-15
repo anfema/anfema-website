@@ -1,51 +1,66 @@
 /* eslint-env node */
-'use strict';
 
 module.exports = function(environment) {
-  let ENV = {
-    modulePrefix: 'anfema',
-    environment,
-    rootURL: '/',
-    locationType: 'auto',
-    EmberENV: {
-      FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
-      },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
-    },
+	const ENV = {
+		modulePrefix: 'anfema',
+		podModulePrefix: 'anfema/ui',
+		environment,
+		rootURL: '/',
+		locationType: 'auto',
 
-    APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
-    }
-  };
+		EmberENV: {
+			FEATURES: {
+				// Here you can enable experimental features on an ember canary build
+				// e.g. 'with-controller': true
+			},
+			EXTEND_PROTOTYPES: {
+				// Prevent Ember Data from overriding Date.parse.
+				Date: false,
+			},
+		},
 
-  if (environment === 'development') {
-    // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
-  }
+		APP: {
+			// Here you can pass flags/options to your application instance
+			// when it is created
+		},
 
-  if (environment === 'test') {
-    // Testem prefers this...
-    ENV.locationType = 'none';
+		fastboot: {
+			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/],
+		},
 
-    // keep test console output quieter
-    ENV.APP.LOG_ACTIVE_GENERATION = false;
-    ENV.APP.LOG_VIEW_LOOKUPS = false;
+		i18n: {
+			defaultLocale: 'de',
+		},
 
-    ENV.APP.rootElement = '#ember-testing';
-  }
+		pageTitle: {
+			separator: ' - ',
+			prepend: true,
+			replace: false,
+		},
+	};
 
-  if (environment === 'production') {
+	if (environment === 'development') {
+		// ENV.APP.LOG_RESOLVER = true;
+		// ENV.APP.LOG_ACTIVE_GENERATION = true;
+		// ENV.APP.LOG_TRANSITIONS = true;
+		// ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+		// ENV.APP.LOG_VIEW_LOOKUPS = true;
+	}
 
-  }
+	if (environment === 'test') {
+		// Testem prefers this...
+		ENV.locationType = 'none';
 
-  return ENV;
+		// keep test console output quieter
+		ENV.APP.LOG_ACTIVE_GENERATION = false;
+		ENV.APP.LOG_VIEW_LOOKUPS = false;
+
+		ENV.APP.rootElement = '#ember-testing';
+	}
+
+	if (environment === 'production') {
+		//
+	}
+
+	return ENV;
 };

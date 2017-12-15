@@ -1,0 +1,76 @@
+meta:
+  color: '#EA2E3A'
+  client: "Ferchau"
+  title: 'Augmented Reality App'
+  id: 'ferchau'
+  span: 'January 2014 - September 2016'
+sections:
+  -
+    component: 'project-cover'
+    img: 'https://www-static.anfe.ma/2017/projects/ferchau/cover-large.jpg'
+    title: 'Ferchau Augmented Reality'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Assignment</h3>
+
+      <p>Engineering right at your fingertips: The Augmented Reality App enables the exploring of seven 3D models out
+      of FERCHAU’s diverse technical service portfolio. In order to animate the virtual helicopter, ship or robot arm,
+      special markers are scanned using a phone’s or tablet’s camera. It is on those markers that the models come to
+      life amidst the user’s direct environment. Interactively informing about their innovations, FERCHAU’s app delivers
+      impressive insights into the company’s product range.</p>
+  -
+      component: 'content-quote'
+      source: 'Martin Spengler, Creative Technologist, LAB BINÆR GBR, our partner in the project Ferchau'
+      content: |
+        <p>We very much appreciate that you are incredible geniuses and do completely base our concepts on your
+        know-how.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Challenge</h3>
+
+      <p>The FERCHAU app demanded a particularly detailed and realistic demonstration of the 3D models at a high frame
+      rate. In addition, reliable and fast tracking of the applied markers is indispensable for the creation of the
+      three-dimensional objects.</p>
+  -
+    component: 'content-project-gallery'
+    defaults:
+      width: 584
+      height: 438
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/ferchau/gallery-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/ferchau/gallery-2-large.jpg'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Solution</h3>
+
+      <p>Thanks to a combination of the powerful 3D-engine Unity3D with specially aligned shaders, the app’s visual
+      performance is consistently high. Reliable and high-performance tracking of the markers is enabled by the
+      Augmented Reality SDK of the worldwide leading AR platform Vuforia. Granting a maximum of creative freedom,
+      Vuforia also allowed for a characteristic design of the 3D models that reflects the brand FERCHAU.</p>
+  -
+    component: 'content-project-triptych'
+    useAlternateColor: true
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/ferchau/triptych-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/ferchau/triptych-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/ferchau/triptych-2-large.jpg'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Technology</h3>
+
+      <p>In order to reach as large an audience as possible, the native app was developed in Swift for iOS (universal
+      for iPhones, iPads and iPod Touch) and for Android phones and tablets. In combination, the game engine Unity 3D
+      and the AR SDK Vuforia serve as the app’s basis. Being the international industry leader, Unity 3D provides
+      optimal shading and high-performance rendering. Hence, it enables the construction of realistic animations and
+      their embedding in the real world in real time.</p>
+  -
+    component: 'content-project-gallery'
+    defaults:
+      width: 584
+      height: 438
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/ferchau/technology-large.jpg'

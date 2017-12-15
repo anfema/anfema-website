@@ -1,0 +1,31 @@
+index:
+  title: 'Striving for Perfection'
+  nav:
+    projects: 'Projects'
+
+projects:
+  title: 'Projects'
+  index:
+    nav:
+      back: 'Back'
+  detail:
+    nav:
+      back: 'Back'
+
+component:
+  language-select:
+    action:
+      de: 'DE'
+      en: 'EN'
+  content-lp-cover:
+    action:
+      scrollDown: 'More'
+  content-quote:
+    action:
+      showProject: 'View project'
+  job-advertisements-item:
+    action:
+      details: 'Details'
+      apply: 'Apply'
+  project-detail:
+    title: 'anfema Projects'

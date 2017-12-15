@@ -1,0 +1,57 @@
+.content-lp-text {
+	@include grid-base;
+
+	& > * {
+		grid-column: 1 / -1;
+
+		@include media-large-min {
+			grid-column: 2 / span 5;
+		}
+	}
+
+	& + * {
+		margin-top: 10rem;
+	}
+
+	header {
+		position: relative;
+		display: grid;
+		grid-column: 1 / -1;
+		grid-template-columns: repeat(8, 1fr);
+
+		> a {
+			position: absolute;
+			left: 0;
+			transform: translateX(-45%);
+			color: $color-brand-1;
+			font-size: 20rem;
+			font-weight: 700;
+			line-height: 18rem;
+			text-align: center;
+			pointer-events: none;
+			user-select: none;
+
+			@include media-large-min {
+				left: 12.5%;
+				transform: translateX(-50%);
+				font-size: 40rem;
+				line-height: 34rem;
+			}
+		}
+
+		> *,
+		~ * {
+			position: relative;
+		}
+	}
+
+	h2 {
+		grid-column: 1 / -1;
+		margin: 8rem 0 1rem;
+
+		@include media-large-min {
+			grid-column: 2 / -1;
+			margin: 17.5rem 0 1rem;
+		}
+	}
+}

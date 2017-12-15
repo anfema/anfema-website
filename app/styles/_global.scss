@@ -1,0 +1,46 @@
+*  {
+	&,
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	color: $color-text;
+	background: $color-background;
+}
+
+html {
+	font-size: 62.5%; // Resets rem size to 10px
+}
+
+body {
+	font-family: 'Calibre Web', Arial, sans-serif;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+
+	@include media-large-min {
+		font-size: 1.7rem;
+		line-height: 2.5rem;
+	}
+
+	@include webfont-error {
+		font-family: Arial, sans-serif;
+	}
+
+	& > .ember-view {
+		display: grid;
+		height: 100%;
+		min-height: 100vh;
+		grid-template-rows: 1fr minmax(0, max-content);
+	}
+}
+
+.page {
+	position: relative;
+	overflow: hidden;
+}

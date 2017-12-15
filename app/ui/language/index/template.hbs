@@ -1,0 +1,27 @@
+{{title (t 'index.title')}}
+
+{{#page-menu startTransparent=true}}
+	<ul class="page-menu__lp-jump">
+		{{#each jumpSections as |section|}}
+			<li><a href="#{{section.anchorId}}" onclick={{action 'scrollToSection'}}>{{section.anchorLabel}}</a></li>
+		{{/each}}
+	</ul>
+
+	<ul>
+		<li>
+			{{#link-to 'projects'}}{{t 'index.nav.projects'}}{{/link-to}}
+		</li>
+	</ul>
+{{/page-menu}}
+
+{{#each model.sections as |data|}}
+	{{#if data.services}}
+		{{component data.component data=data.services selectedId=service}}
+	{{else if data.reasons}}
+		{{component data.component data=data selected=team}}
+	{{else}}
+		{{component data.component data=data}}
+	{{/if}}
+{{/each}}
+
+{{outlet}}

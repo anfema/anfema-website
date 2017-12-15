@@ -1,0 +1,123 @@
+.content-lp-team {
+	overflow: hidden;
+	// display: none;
+}
+
+.content-lp-team-item {
+	width: 100%;
+	overflow: hidden;
+	color: #f5f4f2;
+
+	&__content {
+		@include grid-base;
+
+		height: 0;
+		overflow: hidden;
+		box-sizing: border-box;
+		color: $color-text;
+		transition: height 1s;
+
+		* {
+			grid-column: 2 / span 5;
+		}
+
+		:first-child {
+			padding-top: 4rem;
+		}
+
+		:last-child {
+			padding-bottom: 4rem;
+		}
+	}
+
+	&__navigation-link {
+		position: relative;
+
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		padding-left: 0;
+		text-decoration: none;
+
+		@include offset-base-padding;
+
+		@include media-large-min {
+			padding-left: 0;
+		}
+
+		&:link,
+		&:visited,
+		&:focus,
+		&:hover,
+		&:active {
+			color: inherit;
+		}
+	}
+
+	&__title,
+	&__pagination {
+		display: block;
+		color: inherit;
+		font-weight: 600;
+		transition: color 0.5s;
+	}
+
+	&__title {
+		position: absolute;
+		top: 0;
+		right: 1.5em;
+		margin: 0;
+		color: inherit;
+		font-size: 13rem;
+		line-height: 0.77;
+		letter-spacing: -0.3rem;
+		text-align: right;
+		white-space: nowrap;
+	}
+
+	&__pagination {
+		width: 1.1em;
+		float: right;
+		font-size: 10rem;
+		line-height: 7rem;
+		text-align: left;
+	}
+
+	&--active {
+		.content-lp-team-item__content {
+			height: auto;
+		}
+	}
+
+	&:nth-child(1) {
+		.content-lp-team-item__pagination,
+		&:focus,
+		&:hover {
+			color: #ffca27;
+		}
+	}
+
+	&:nth-child(2) {
+		.content-lp-team-item__pagination,
+		&:focus,
+		&:hover {
+			color: #ffb200;
+		}
+	}
+
+	&:nth-child(3) {
+		.content-lp-team-item__pagination,
+		&:focus,
+		&:hover {
+			color: #fea000;
+		}
+	}
+
+	&:nth-child(4) {
+		.content-lp-team-item__pagination,
+		&:focus,
+		&:hover {
+			color: #ffca27;
+		}
+	}
+}

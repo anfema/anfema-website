@@ -1,0 +1,15 @@
+.grid {
+	@include grid-base;
+
+	& > * {
+		grid-column: 1 / -1;
+
+		@include media-large-min {
+			grid-column: 2 / span 5;
+		}
+	}
+}
+
+.grid--alt {
+	background: #f5f4f2;
+}

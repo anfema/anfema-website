@@ -1,0 +1,46 @@
+.content-lp-services {
+	background-color: $color-grey-light;
+
+	& > .services-menu {
+		height: 9rem;
+	}
+
+	.content-slider__button {
+		opacity: 0.5;
+	}
+
+	&__background {
+		position: absolute;
+		top: 0;
+		left: calc(50% - 10vmax);
+		width: 20vmax;
+		height: 20vmax;
+	}
+
+	@include media-medium-max {
+		&__slider {
+			height: 46rem;
+		}
+
+		.content-slider__button {
+			height: calc(20vmax + 3rem / 2);
+		}
+	}
+
+	@include media-large-min {
+		&__slider {
+			height: 51rem;
+		}
+
+		.content-slider__button {
+			display: none;
+		}
+
+		&__background {
+			top: 10%;
+			left: calc(50% + 12.5% / 2);
+			width: 36vmax;
+			height: 80%;
+		}
+	}
+}

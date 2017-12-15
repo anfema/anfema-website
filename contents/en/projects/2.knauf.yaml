@@ -1,0 +1,76 @@
+meta:
+  color: '#F97E33'
+  client: "Knauf / AMF"
+  title: 'Lookbook App'
+  id: 'knauf'
+  span: 'March 2015 to date'
+sections:
+  -
+    component: 'project-cover'
+    img: 'https://www-static.anfe.ma/2017/projects/knauf/cover-large.jpg'
+    title: 'Knauf / AMF Lookbook'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Assignment</h3>
+
+      <p>Knauf AMF is one of the leading manufacturers of innovative ceiling systems worldwide. For an adequate presentation of their wide range of customised and extraordinary system solutions, anfema designed a universal application for tablets and phones, developed in native code for both Android and iOs. Elaborate photographs illustrate impressive architectural projects that were realised in cooperation with Knauf AMF across diverse industries. One of the app’s particularly characteristic features, the 360 degree view, provides the user with an exceptional and comprehensive spatial perception.</p>
+  -
+    component: 'content-project-triptych'
+    useAlternateColor: true
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/knauf/triptych-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/knauf/triptych-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/knauf/triptych-2-large.jpg'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Challenge</h3>
+
+      <p>The challenge in this project was to create a highly informative application, which is well-arranged and easy to use. Allowing the premium photographs to tell their own tale, we intended to use the fewest possible visual control elements. Additionally, it had to be kept in mind that all features would also have to be functional and operable on static presentation displays, e.g. at trade fairs.</p>
+  -
+    component: 'content-project-gallery'
+    defaults:
+      width: 584
+      height: 438
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/knauf/challenge-large.jpg'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Solution</h3>
+
+      <p>Based on the clever construction of a canvas grid system, the Knauf AMF Lookbook relies on intuitive gestural control and uses only few graphic control elements. Throughout the course of the project, this grid was extended in order to enable the integration of additional features and applications. Most noteworthy are the implementation of a sample order section and a special version of the 360 degree view for projects. Operable by both motion and one finger drag, the 360 degree view can also be controlled on static devices, and enables users to experience Knauf AMF’s product range.</p>
+  -
+    component: 'content-quote'
+    source: |
+      Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+    content: |
+      <p>anfema know what they do, how to do it, and they do it damn fast. One of the best partners in app development I’ve ever seen.</p>
+  -
+    component: 'content-project-video'
+    useAlternateColor: true
+    width: 684
+    height: 513
+    poster: 'https://www-static.anfe.ma/2017/projects/knauf/video-preview.jpg'
+    videos:
+      -
+        path: 'https://www-static.anfe.ma/2017/projects/knauf/video.mov'
+        type: 'mov'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Technology</h3>
+
+      <p>The Knauf AMF Lookbook app is dynamically populated by ION, and stands out because of its high performance. anfema’s in-house developed content management system ION enables the client to easily conduct profound changes in the application’s structure and its information content. In addition, data can be locally saved so that the app can also be used offline. In order to generate the 360 degree view, spherical panoramas are projected onto the inner surface of a ball, which can be rotated by the user.</p>
+  -
+    component: 'content-project-gallery'
+    defaults:
+      width: 584
+      height: 438
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-2-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-4-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-5-large.jpg'

@@ -1,0 +1,28 @@
+@mixin font-face($url, $family, $weight: 400, $style: normal) {
+	@font-face {
+		font-family: $family;
+		font-style: $style;
+		font-weight: $weight;
+		src: url($url + '.eot');
+		src: url($url + '.eot?#iefix') format('embedded-opentype'), url($url + '.woff') format('woff'),
+			url($url + '.woff2') format('woff2');
+	}
+}
+
+@mixin webfont-loaded {
+	// stylelint-disable-next-line at-rule-no-unknown
+	@at-root {
+		.webfont-calibre-web--loaded & {
+			@content;
+		}
+	}
+}
+
+@mixin webfont-error {
+	// stylelint-disable-next-line at-rule-no-unknown
+	@at-root {
+		.webfont-calibre-web--error & {
+			@content;
+		}
+	}
+}

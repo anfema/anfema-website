@@ -1,0 +1,170 @@
+$breakpoint-offset: 1px;
+
+/**
+ * Generate a minimum width media query at a slight offset to the breakpoint
+ * to migitate overlapping with a maxium media query of the same breakpoint
+ * @private
+ */
+@mixin -media-from($breakpoint: 100%, $offset: $breakpoint-offset) {
+	@media screen and (min-width: $breakpoint + $offset) {
+		@content;
+	}
+}
+
+/**
+ * Generate a maximum width media query
+ * @private
+ */
+@mixin -media-to($breakpoint) {
+	@media screen and (max-width: $breakpoint) {
+		@content;
+	}
+}
+
+/**
+ * Generate media query only matching between two sizes (start exlusive, end inclusive)
+ * @private
+ */
+@mixin -media-only($previous-breakpoint, $breakpoint) {
+	@media screen and (min-width: $previous-breakpoint + $breakpoint-offset) and (max-width: $breakpoint) {
+		@content;
+	}
+}
+
+/**
+ * Small screens
+ */
+@mixin media-small-max {
+	@include -media-to($breakpoint-small-medium) {
+		@content;
+	}
+}
+
+/**
+ * Alias to media-small-max
+ */
+@mixin media-small {
+	@include media-small-min {
+		@content;
+	}
+}
+
+/**
+ * A noop media query matching any screen size
+*/
+@mixin media-small-min {
+	@media screen and (min-width: 0) {
+		@content;
+	}
+}
+
+/**
+ * At least medium
+ */
+@mixin media-medium-min {
+	@include -media-from($breakpoint-small-medium) {
+		@content;
+	}
+}
+
+/**
+ * At most medium
+ */
+@mixin media-medium-max {
+	@include -media-to($breakpoint-medium-large) {
+		@content;
+	}
+}
+
+/**
+ * Only medium
+ */
+@mixin media-medium {
+	@include -media-only($breakpint-small, $breakpoint-medium-large);
+}
+
+/**
+ * At least xlarge
+ */
+@mixin media-large-min {
+	@include -media-from($breakpoint-medium-large) {
+		@content;
+	}
+}
+
+/**
+ * At most large
+ */
+@mixin media-large-max {
+	@include -media-to($breakpoint-large-xlarge) {
+		@content;
+	}
+}
+
+/**
+ * Only large
+ */
+@mixin media-large {
+	@include -media-only($breakpint-medium-large, $breakpoint-large-xlarge);
+}
+
+/**
+ * At least xlarge
+ */
+@mixin media-xlarge-min {
+	@include -media-from($breakpoint-large-xlarge) {
+		@content;
+	}
+}
+
+/**
+ * At most xlarge
+ */
+@mixin media-xlarge-max {
+	@include -media-to($breakpoint-xlarge-xxlarge) {
+		@content;
+	}
+}
+
+/**
+ * Only xlarge
+ */
+@mixin media-xlarge {
+	@include -media-only($breakpint-large, $breakpoint-xlarge-xxlarge);
+}
+
+/**
+ * At least xxlarge
+ */
+@mixin media-xxlarge-min {
+	@include -media-from($breakpoint-xlarge-xxlarge) {
+		@content;
+	}
+}
+
+/**
+ * Alias to media-xxlarge-min
+ */
+@mixin media-xxlarge {
+	@include media-xxlarge-min {
+		@content;
+	}
+}
+
+/**
+ * A noop media query matching any screen size, will be sorted after media-small-min
+*/
+@mixin media-xxlarge-max {
+	@media screen and (min-width: $breakpoint-offset) {
+		@content;
+	}
+}
+
+/**
+ * Applies to print only
+ */
+@mixin media-print {
+	@media only print {
+		@content;
+	}
+}

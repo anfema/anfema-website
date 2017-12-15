@@ -1,0 +1,107 @@
+.page-footer {
+	@include grid-base;
+
+	position: relative;
+	z-index: 10;
+	justify-content: center;
+	padding: 0 1.6rem 6rem;
+	color: $color-text-inverted;
+	background: $color-footer-top linear-gradient(to bottom, $color-footer-top, $color-footer-bottom);
+
+	@include media-small-max {
+		font-size: 1.6rem;
+		line-height: 3rem;
+	}
+
+	@include media-large-min {
+		grid-template-columns: repeat(3, 1fr) 2fr 1fr;
+	}
+
+	a {
+		&,
+		&:link,
+		&:visited {
+			color: inherit;
+		}
+	}
+
+	h3 {
+		margin: 3rem 0 0;
+
+		@include media-small-min {
+			margin: 6rem 0 1rem;
+		}
+	}
+
+	p {
+		margin: 0;
+	}
+
+	// The white logo is an pixel aligned version optimized for this size, replacing the image behind it.
+	// This is done to have a pixel perfect logo in the browser and allows a user to drag the regular
+	// logo (the black version) to their desktop
+	.u-logo {
+		grid-column: 1 / -1;
+		margin: 3.4rem 0 0 -1rem;
+
+		@include media-small-min {
+			margin: 4.4rem 0 0;
+		}
+
+		@include media-large-min {
+			grid-column-end: span 1;
+		}
+
+		img {
+			display: block;
+			width: 13rem;
+			height: 5rem;
+			overflow: hidden;
+			padding-left: 13rem;
+			background: inline-svg(
+				'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 50"><g fill="#FFFFFF" fill-rule="evenodd"><path d="M54.05 21.05h2.06L59.9 31h-2.1l-.9-2.4h-3.7l-.87 2.4h-2.08l3.81-9.95zm1 2.33l-1.21 3.63h2.43l-1.22-3.63zm16.39-2.33h-2v6.29l-4.38-6.29H63.1V31h2v-6.63L69.8 31h1.63v-9.95zM77.41 31v-3.99h4.23v-1.8H77.4v-2.34h4.57v-1.82h-6.63V31h2.06zm8.06-9.95V31h6.75v-1.83h-4.71v-2.2h4.28v-1.76H87.5v-2.34h4.71v-1.82h-6.75zM101.64 31l2.42-6.5V31h1.96v-9.95h-2.43l-2.64 7.02-2.66-7.02h-2.46V31h1.94v-6.5l2.46 6.5h1.41zm11.38-9.95h2.06l3.8 9.95h-2.1l-.89-2.4h-3.73l-.87 2.4h-2.07l3.8-9.95zm1 2.33l-1.2 3.63h2.42l-1.21-3.63z"/><path fill-rule="nonzero" d="M23.33 30L20 40H10l6.67-20L20 10l10 5 10 25H30l-6.67-10zm-1.67-17.5l9.43 26h6.7l-8.97-22.41-7.16-3.58zm-1.25 1.03l-2.09 6.25 5.53 8.3 4 6-7.44-20.55zm-2.69 8.05l2.25 13.76 2.3-6.92-4.55-6.84zm-1.04 3.12l-4.6 13.8h6.84l.04-.12-2.28-13.68z"/></g></svg>'
+			);
+		}
+	}
+
+	&__office {
+		grid-column: 1 / 5;
+
+		@include media-large-min {
+			grid-column: 2 / span 1;
+		}
+	}
+
+	&__office + &__office {
+		grid-column: 5 / -1;
+
+		@include media-large-min {
+			grid-column: 3 / span 1;
+		}
+	}
+
+	&__meta,
+	&__contact {
+		margin-top: 2rem;
+
+		@include media-small-min {
+			margin-top: 9rem;
+		}
+	}
+
+	&__contact {
+		grid-column: 1 / -1;
+
+		@include media-large-min {
+			grid-column: -3 / span 1;
+		}
+	}
+
+	&__meta {
+		grid-column: 1 / -1;
+
+		@include media-large-min {
+			grid-column: -2 / span 1;
+		}
+	}
+}

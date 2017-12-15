@@ -1,0 +1,8 @@
+{{yield}}
+<h3 class="content-project-icons__title">{{data.title}}</h3>
+<figure class="content-project-icons__container">
+	{{#each data.icons as |icon|}}
+		<img class="content-project-icons__icon" src="{{icon}}" alt="{{icon}}">
+	{{/each}}
+</figure>
+<figcaption class="content-project-icons__text">{{data.text}}</figcaption>

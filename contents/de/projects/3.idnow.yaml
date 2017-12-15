@@ -1,0 +1,69 @@
+meta:
+  color: '#F85720'
+  client: 'IDnow'
+  title: 'Video Identification Web & App'
+  id: 'idnow'
+  span: 'Juli 2014 - heute'
+sections:
+  -
+    component: 'project-cover'
+    img: 'https://www-static.anfe.ma/2017/projects/idnow/cover-large.jpg'
+    title: 'IDnow'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Aufgabe</h3>
+
+      <p>Das Postident Verfahren ist von gestern. Das Münchner Startup Unternehmen IDnow hat sich auf eine digitale Lösung dieses Verfahrens spezialisiert, die den umfangreichen und teils komplizierten Prozess vereinfacht. So spart sich der Kunde von IDnow beispielsweise den lästigen Gang zur nächsten Postfiliale. Das Online-Ident-Verfahren ist ein sicherer, offiziell anerkannter Standard zum Nachweis der eigenen Identität. Die benutzerfreundliche App, sowie das eigens entwickelte SDK schaffen es, die Legitimations- und Identitätsprüfung ortsunabhängig, schneller und effektiver zu machen.</p>
+  -
+    component: 'content-project-icons'
+    useAlternateColor: true
+    title: 'Custom Icon Set'
+    icons:
+      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-1.svg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-2.svg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-3.svg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-4.svg'
+    text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Herausforderung</h3>
+
+      <p>Die Aufgabe bestand darin, das Online-Ident Verfahren userfreundlich und plattformunabhängig (für Smartphones, Tablets, PC und Laptops) umzusetzen. Eine große Herausforderung in diesem Projekt war es, aufgrund der sensiblen Daten die höchste Sicherheit zu gewährleisten.</p>
+  -
+    component: 'content-project-triptych'
+    useAlternateColor: true
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/idnow/triptych-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/triptych-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/triptych-2-large.jpg'
+  -
+    component: 'project-text'
+    content: |
+      <h3>Lösung</h3>
+
+      <p>Das User Interface wurde mittels eines unkomplizierten Navigationskonzepts einfach und übersichtlich umgesetzt. So konnte der Identifizierungsprozess nochmals beschleunigt werden. Um zukünftigen Kunden eine hohe Integrierbarkeit anbieten zu können, wurde die Kernfunktionalität als Software Development Kit entwickelt. Somit können Kunden den Identifizierungsprozess einfach in ihre bestehenden Systeme einpflegen und direkt nutzen. Zur Garantie größtmöglicher Sicherheit wurde eine Kombination zahlreicher plattformabhängiger und -übergreifender Komponenten (u.a. Code Obfuscation, das Unterbinden von Caching oder Mitlesen von Eingaben und die Verschlüsselung aller API Requests) eingesetzt.</p>
+  -
+    component: 'content-quote'
+    source: |
+      Sebastian Bärhold, Managing Director & Co-Founder, IDnow GmbH
+    content: |
+      <p>anfemas Lösung besticht durch maximale Usability. Euer Team hat genau verstanden, was wir, die Agenten und die Nutzer brauchen, dies zielführend umgesetzt und hat damit maßgeblich zur Verwirklichung und Effizienz unserer Idee beigetragen.</p>
+  -
+    component: 'project-text'
+    content: |
+      <h3>Technologie</h3>
+
+      <p>Die Apps und das Software Development Kit wurden nativ unter Android und iOS entwickelt. Die Kommunikation zwischen den Apps und den Agenten während des Videoprozesses wird mit Hilfe von WebSockets umgesetzt, während für die bidirektionale Audio- und Videoübertragung während des Prozesses Icelink WebRTC eingesetzt wird.</p>
+  -
+    component: 'content-project-gallery'
+    defaults:
+      width: 400
+      height: 600
+    images:
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-1-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-2-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-3-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-4-large.jpg'
+      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-5-large.jpg'
