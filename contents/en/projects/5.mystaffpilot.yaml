@@ -4,6 +4,7 @@ meta:
   title: 'Plattform'
   id: 'mystaffpilot'
   span: 'Early 2014 to date'
+  hidden: true
 sections:
   -
     component: 'project-cover'
