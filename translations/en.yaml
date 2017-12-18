@@ -29,3 +29,25 @@ component:
       apply: 'Apply'
   project-detail:
     title: 'anfema Projects'
+  page-footer:
+    offices:
+      munich:
+        title: Main office Munich
+        street: Seitzstr. 16
+        postal: '80538'
+        city: Munich
+        country: Germany
+      augsburg:
+        title: Branch office Augsburg
+        street: Bahnhofstr. 10
+        postal: '86150'
+        city: Augsburg
+        country: Germany
+    email: contact@anfe.ma
+    phone:
+      label: Phone
+      value: +49 89 55269932
+    fax:
+      label: Fax
+      value: +49 89 55269933
+    imprint: Imprint

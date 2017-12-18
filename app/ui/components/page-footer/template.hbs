@@ -3,31 +3,51 @@
 {{/link-to}}
 
 <div class="page-footer__office">
-	<h3 class="page-footer__office-title">Munich Office</h3>
+	<h3 class="page-footer__office-title">{{t 'component.page-footer.offices.munich.title'}}</h3>
 
 	<p class="p-adr adr h-adr">
-		<span class="p-street-address">Seitzstr. 16</span><br>
-		<span class="p-postal-code">80538</span> <span class="p-locality">Munich</span><br>
-		<span class="p-country-name">Germany</span>
+		<span class="p-street-address">{{t 'component.page-footer.offices.munich.street'}}</span>
+
+		<br>
+
+		<span class="p-postal-code">{{t 'component.page-footer.offices.munich.postal'}}</span>
+		<span class="p-locality">{{t 'component.page-footer.offices.munich.city'}}</span>
+
+		<br>
+		<span class="p-country-name">{{t 'component.page-footer.offices.munich.country'}}</span>
 	</p>
 </div>
 
 <div class="page-footer__office">
-	<h3 class="page-footer__office-title">Augsburg Office</h3>
+	<h3 class="page-footer__office-title">{{t 'component.page-footer.offices.augsburg.title'}}</h3>
 
 	<p class="p-adr adr h-adr">
-		<span class="p-street-address">Bahnhofstr. 10</span><br>
-		<span class="p-postal-code">86150</span> <span class="p-locality">Augsburg</span><br>
-		<span class="p-country-name">Germany</span>
+		<span class="p-street-address">{{t 'component.page-footer.offices.augsburg.street'}}</span>
+
+		<br>
+
+		<span class="p-postal-code">{{t 'component.page-footer.offices.augsburg.postal'}}</span>
+		<span class="p-locality">{{t 'component.page-footer.offices.augsburg.city'}}</span>
+
+		<br>
+		<span class="p-country-name">{{t 'component.page-footer.offices.augsburg.country'}}</span>
 	</p>
 </div>
 
 <div class="page-footer__contact">
-	<a class="u-email" href="maito:contact@anfe.ma">contact@anfe.ma</a>
+	<a class="u-email" href="mailto:{{t 'component.page-footer.email'}}">
+		{{t 'component.page-footer.email'}}
+	</a>
 
-	<p class="p-tel"><span class="type">Phone</span> <span class="value">+49 89 55269932</span></p>
+	<p class="p-tel">
+		<span class="type">{{t 'component.page-footer.phone.label'}}</span>
+		<span class="value">{{t 'component.page-footer.phone.value'}}</span>
+	</p>
 
-	<p class="p-tel"><span class="type">Fax</span> <span class="value">+49 89 55269933</span></p>
+	<p class="p-tel">
+		<span class="type">{{t 'component.page-footer.fax.label'}}</span>
+		<span class="value">{{t 'component.page-footer.fax.value'}}</span>
+	</p>
 </div>
 
 <div class="page-footer__meta">
@@ -35,5 +55,9 @@
 
 	<p class="copyright">1998&nbsp;&ndash;&nbsp;{{year}} anfema&nbsp;GmbH</p>
 
-	<p class="imprint">{{#link-to 'imprint' data-test-footer-imprint=true}}Imprint{{/link-to}}</p>
+	<p class="imprint">
+		{{#link-to 'imprint' data-test-footer-imprint=true}}
+			{{t 'component.page-footer.imprint'}}
+		{{/link-to}}
+	</p>
 </div>
