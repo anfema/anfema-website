@@ -627,6 +627,12 @@ babel-plugin-ember-modules-api-polyfill@^2.0.1:
   dependencies:
     ember-rfc176-data "^0.3.0"
 
+babel-plugin-ember-modules-api-polyfill@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-ember-modules-api-polyfill/-/babel-plugin-ember-modules-api-polyfill-2.3.0.tgz#0c01f359658cfb9c797f705af6b09f6220205ae0"
+  dependencies:
+    ember-rfc176-data "^0.3.0"
+
 babel-plugin-eval@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-eval/-/babel-plugin-eval-1.0.1.tgz#a2faed25ce6be69ade4bfec263f70169195950da"
@@ -2448,13 +2454,31 @@ ember-cli-babel@5.1.6:
     ember-cli-version-checker "^1.0.2"
     resolve "^1.1.2"
 
-ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.1.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.1, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2, ember-cli-babel@~6.10.0:
+ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.1.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.1, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
   version "6.10.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.10.0.tgz#81424acd1d97fb13658168121eeb2007d6edee84"
   dependencies:
     amd-name-resolver "0.0.7"
     babel-plugin-debug-macros "^0.1.11"
     babel-plugin-ember-modules-api-polyfill "^2.0.1"
+    babel-plugin-transform-es2015-modules-amd "^6.24.0"
+    babel-polyfill "^6.16.0"
+    babel-preset-env "^1.5.1"
+    broccoli-babel-transpiler "^6.1.2"
+    broccoli-debug "^0.6.2"
+    broccoli-funnel "^1.0.0"
+    broccoli-source "^1.1.0"
+    clone "^2.0.0"
+    ember-cli-version-checker "^2.1.0"
+    semver "^5.4.1"
+
+ember-cli-babel@~6.11.0:
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.11.0.tgz#79cb184bac3c05bfe181ddc306bac100ab1f9493"
+  dependencies:
+    amd-name-resolver "0.0.7"
+    babel-plugin-debug-macros "^0.1.11"
+    babel-plugin-ember-modules-api-polyfill "^2.3.0"
     babel-plugin-transform-es2015-modules-amd "^6.24.0"
     babel-polyfill "^6.16.0"
     babel-preset-env "^1.5.1"
@@ -2527,9 +2551,9 @@ ember-cli-eslint@~4.2.3:
     rsvp "^4.6.1"
     walk-sync "^0.3.0"
 
-ember-cli-fastboot@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-fastboot/-/ember-cli-fastboot-1.1.0.tgz#08bb3b7a2fdaaab6db5b2ae7e59db792c53db690"
+ember-cli-fastboot@~1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-fastboot/-/ember-cli-fastboot-1.1.1.tgz#e12a6ee6c9c0ffecdbf903e8f1c65eb555c09b1a"
   dependencies:
     broccoli-concat "^3.2.2"
     broccoli-funnel "^2.0.0"
@@ -2537,12 +2561,13 @@ ember-cli-fastboot@~1.1.0:
     broccoli-plugin "^1.2.1"
     chalk "^2.0.1"
     ember-cli-babel "^6.7.2"
+    ember-cli-lodash-subset "2.0.1"
     ember-cli-version-checker "^2.0.0"
     fastboot "^1.1.0"
     fastboot-express-middleware "^1.1.0"
-    fs-extra "^4.0.0"
+    fastboot-transform "^0.1.2"
+    fs-extra "^4.0.2"
     json-stable-stringify "^1.0.1"
-    lodash.uniq "^4.2.0"
     md5-hex "^2.0.0"
     silent-error "^1.0.0"
 
@@ -2614,13 +2639,13 @@ ember-cli-legacy-blueprints@^0.1.2:
     rsvp "^3.0.17"
     silent-error "^1.0.0"
 
+ember-cli-lodash-subset@2.0.1, ember-cli-lodash-subset@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-lodash-subset/-/ember-cli-lodash-subset-2.0.1.tgz#20cb68a790fe0fde2488ddfd8efbb7df6fe766f2"
+
 ember-cli-lodash-subset@^1.0.7:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/ember-cli-lodash-subset/-/ember-cli-lodash-subset-1.0.12.tgz#af2e77eba5dcb0d77f3308d3a6fd7d3450f6e537"
-
-ember-cli-lodash-subset@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-lodash-subset/-/ember-cli-lodash-subset-2.0.1.tgz#20cb68a790fe0fde2488ddfd8efbb7df6fe766f2"
 
 ember-cli-mocha@~0.14.4:
   version "0.14.4"
@@ -3182,9 +3207,9 @@ eslint-config-airbnb-base@~12.1.0:
   dependencies:
     eslint-restricted-globals "^0.1.1"
 
-eslint-config-anfema@~5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-anfema/-/eslint-config-anfema-5.0.1.tgz#bb1fd6b77020e2fe8afa2d12e25ddc17d5bb74f8"
+eslint-config-anfema@~5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-anfema/-/eslint-config-anfema-5.1.0.tgz#ca9f09c20aae3780c9a2a23f1300be656662f350"
 
 eslint-config-prettier@~2.9.0:
   version "2.9.0"
@@ -3241,9 +3266,9 @@ eslint-plugin-import@~2.8.0:
     minimatch "^3.0.3"
     read-pkg-up "^2.0.0"
 
-eslint-plugin-prettier@~2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.3.1.tgz#e7a746c67e716f335274b88295a9ead9f544e44d"
+eslint-plugin-prettier@~2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.4.0.tgz#85cab0775c6d5e3344ef01e78d960f166fb93aae"
   dependencies:
     fast-diff "^1.1.1"
     jest-docblock "^21.0.0"
@@ -3551,6 +3576,12 @@ fastboot-express-middleware@^1.1.0:
     fastboot "^1.1.2"
     request "^2.81.0"
 
+fastboot-transform@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/fastboot-transform/-/fastboot-transform-0.1.2.tgz#f910d666ab93e75604492ea655270d1804bc8de7"
+  dependencies:
+    broccoli-stew "^1.5.0"
+
 fastboot@^1.1.0, fastboot@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/fastboot/-/fastboot-1.1.2.tgz#1cb4b6423aacc4339fbf003cc7b6ecabd3083dfa"
@@ -3770,7 +3801,7 @@ fs-extra@^2.0.0:
     graceful-fs "^4.1.2"
     jsonfile "^2.1.0"
 
-fs-extra@^4.0.0, fs-extra@^4.0.1:
+fs-extra@^4.0.0, fs-extra@^4.0.1, fs-extra@^4.0.2:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
   dependencies:
