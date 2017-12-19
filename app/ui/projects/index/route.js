@@ -7,4 +7,9 @@ export default Route.extend({
 	model() {
 		return this.get('staticContent').read('/projects/index');
 	},
+	afterModel() {
+		if (window && window.scrollTo) {
+			window.scrollTo(0, 0);
+		}
+	},
 });
