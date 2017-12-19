@@ -12,6 +12,7 @@ export function generateLangUrl(router, targetLang) {
 
 export default Component.extend({
 	router: service(),
+	scrollTop: service(),
 
 	isEnglish: computed('router._router.currentURL', function() {
 		return (this.get('router._router.currentURL') || '').match(/^\/en/);
@@ -31,9 +32,7 @@ export default Component.extend({
 
 			this.get('router').transitionTo(generateLangUrl(this.get('router'), targetLang));
 
-			if (window && window.scrollTo) {
-				window.scrollTo(0, 0);
-			}
+			this.get('scrollTop').scrollToTop();
 		},
 	},
 });
