@@ -58,8 +58,8 @@ export default Controller.extend({
 			event.preventDefault();
 
 			this.get('win').scrollToAnimated(
-				document.body.scrollTop +
-					document.querySelector(event.srcElement.hash).getBoundingClientRect().top
+				window.pageYOffset +
+					document.querySelector(event.target.hash).getBoundingClientRect().top
 			);
 		},
 	},
