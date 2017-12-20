@@ -3,12 +3,12 @@ import { inject as service } from '@ember/service';
 
 export default Route.extend({
 	staticContent: service(),
-	scrollTop: service(),
+	win: service(),
 
 	model() {
 		return this.get('staticContent').read('/projects/index');
 	},
 	afterModel() {
-		this.get('scrollTop').scrollToTop();
+		this.get('win').scrollToTop();
 	},
 });

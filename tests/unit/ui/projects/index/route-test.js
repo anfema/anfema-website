@@ -4,7 +4,7 @@ import { setupTest } from 'ember-mocha';
 
 describe('Unit | Route | projects/index', function() {
 	setupTest('route:projects/index', {
-		needs: ['service:staticContent', 'service:scrollTop'],
+		needs: ['service:staticContent', 'service:win'],
 	});
 
 	it('exists', function() {

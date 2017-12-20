@@ -2,7 +2,6 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { computed, get } from '@ember/object';
 import { readOnly } from '@ember/object/computed';
-import scrollToAnimated from 'anfema/utils/scroll-to-animated';
 
 /**
  * Find the id for the first item in a list of contents
@@ -24,6 +23,7 @@ export default Controller.extend({
 	queryParams: ['service', 'team'],
 
 	staticContent: service(),
+	win: service(),
 
 	sections: readOnly('model.sections'),
 
@@ -56,7 +56,8 @@ export default Controller.extend({
 	actions: {
 		scrollToSection(event) {
 			event.preventDefault();
-			scrollToAnimated(
+
+			this.get('win').scrollToAnimated(
 				document.body.scrollTop +
 					document.querySelector(event.srcElement.hash).getBoundingClientRect().top
 			);
