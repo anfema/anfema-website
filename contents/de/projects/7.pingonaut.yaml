@@ -11,6 +11,7 @@ sections:
     title: 'Pingonaut KidsWatch Plattform und Apps'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Aufgabe</h3>
 

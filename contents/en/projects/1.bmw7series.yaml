@@ -11,6 +11,7 @@ sections:
     title: 'BMW 7 Series Presenter App'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Assignment</h3>
 

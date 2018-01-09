@@ -12,6 +12,7 @@ sections:
     title: 'MyStaffPilot Plattform und Innendienst'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Aufgabe</h3>
 

@@ -11,6 +11,7 @@ sections:
     title: 'IDnow'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Assignment</h3>
 
