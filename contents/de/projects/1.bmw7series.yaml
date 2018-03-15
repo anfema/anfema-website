@@ -28,7 +28,7 @@ sections:
       - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-2.svg'
       - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-3.svg'
       - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-4.svg'
-    text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
+    text: 'Um die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben, wurden speziell für diese App Icons gestaltet.'
   -
     component: 'project-text'
     content: |
@@ -75,7 +75,7 @@ sections:
       <p>Die App wurde als Innovationsprodukt mit Swift für iOS entwickelt. Ein eigenes Server-Backend basierend auf Django garantiert eine schnelle und zuverlässige Auslieferung neuer Inhalte und kontrolliert die erforderlichen Sicherheitsmaßnahmen.</p>
   -
     component: 'content-quote'
-    source: Gunther Janeck, CoC Fuhrpark, BMW Group
+    source: Gunther Janeck, CoC Fuhrpark BMW Group
     content: |
       <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend. </p>
 
