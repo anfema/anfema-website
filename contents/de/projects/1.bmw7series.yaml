@@ -29,7 +29,7 @@ sections:
       - 'bmw7series-icon-2.svg'
       - 'bmw7series-icon-3.svg'
       - 'bmw7series-icon-4.svg'
-    text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
+    text: 'Um die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben, wurden speziell für diese App Icons gestaltet.'
   -
     component: 'project-text'
     content: |
@@ -87,7 +87,7 @@ sections:
       Sicherheitsmaßnahmen.</p>
   -
     component: 'content-quote'
-    source: Gunther Janeck, CoC Fuhrpark, BMW Group
+    source: Gunther Janeck, CoC Fuhrpark BMW Group
     content: |
       <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend. </p>
 
