@@ -16,10 +16,9 @@ sections:
       <h3>Aufgabe</h3>
 
       <p>Die Marke BMW steht seit jeher für Sportlichkeit, Fahrspaß und Komfort. Mit der Neuauflage des BMW 7er
-      definierte der Premium-Automobilhersteller Luxus im Fahrzeugbereich neu.</p>
-      <p>Für eine angemessene Präsentation des
-      Fahrzeugs und seiner innovativen Features wurde eine iPad-App konzipiert und entwickelt. Die App besticht durch
-      ein außergewöhnliches, intuitives Bedienkonzept, gestalterische Perfektion und die Integration interaktiver
+      definierte der Premium-Automobilhersteller Luxus im Fahrzeugbereich neu. Für eine angemessene Präsentation
+      des Fahrzeugs und seiner innovativen Features wurde eine iPad-App konzipiert und entwickelt. Die App besticht
+      durch ein außergewöhnliches, intuitives Bedienkonzept, gestalterische Perfektion und die Integration interaktiver
       Medien, die den Komfort und den Spaß des BMW 7er auf das Tablet übertragen.</p>
   -
     component: 'content-project-icons'
