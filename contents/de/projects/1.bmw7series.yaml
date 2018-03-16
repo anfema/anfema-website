@@ -87,7 +87,8 @@ sections:
       Sicherheitsmaßnahmen.</p>
   -
     component: 'content-quote'
-    source: Gunther Janeck, CoC Fuhrpark BMW Group
+    source: Gunther Janeck, CoC Fuhrpark<br>
+    BMW Group
     content: |
       <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend. </p>
 
