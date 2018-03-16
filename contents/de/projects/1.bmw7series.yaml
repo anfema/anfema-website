@@ -75,10 +75,9 @@ sections:
       <p>Die App wurde als Innovationsprodukt mit Swift für iOS entwickelt. Ein eigenes Server-Backend basierend auf Django garantiert eine schnelle und zuverlässige Auslieferung neuer Inhalte und kontrolliert die erforderlichen Sicherheitsmaßnahmen.</p>
   -
     component: 'content-quote'
-    source: Gunther Janeck, CoC Fuhrpark<br>
-    BMW Group
+    source: Gunther Janeck, CoC Fuhrpark<br>BMW Group
     content: |
-      <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend. </p>
+      <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend.</p>
 
       <p>Großartig an der anfema ist neben der Qualität auch die Schnelligkeit, mit der sie Projekte verwirklicht. Deshalb ist und bleibt sie einer unserer viel geschätzten Partner.</p>
 

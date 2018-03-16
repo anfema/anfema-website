@@ -47,7 +47,8 @@ sections:
   -
     component: 'content-quote'
     source: |
-      Sebastian Bärhold, Managing Director & Co-Founder IDnow GmbH
+      Sebastian Bärhold, Managing Director & Co-Founder<br>
+      IDnow GmbH
     content: |
       <p>anfemas Lösung besticht durch maximale Usability. Euer Team hat genau verstanden, was wir, die Agenten und die Nutzer brauchen, dies zielführend umgesetzt und hat damit maßgeblich zur Verwirklichung und Effizienz unserer Idee beigetragen.</p>
   -
