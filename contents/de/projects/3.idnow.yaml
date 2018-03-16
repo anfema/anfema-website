@@ -15,7 +15,7 @@ sections:
     content: |
       <h3>Aufgabe</h3>
 
-      <p>Das Postident Verfahren ist von gestern. Das Münchner Startup Unternehmen IDnow hat sich auf eine digitale Lösung dieses Verfahrens spezialisiert, die den umfangreichen und teils komplizierten Prozess vereinfacht. So spart sich der Kunde von IDnow beispielsweise den lästigen Gang zur nächsten Postfiliale. Das Online-Ident-Verfahren ist ein sicherer, offiziell anerkannter Standard zum Nachweis der eigenen Identität. Die benutzerfreundliche App, sowie das eigens entwickelte SDK schaffen es, die Legitimations- und Identitätsprüfung ortsunabhängig, schneller und effektiver zu machen.</p>
+      <p>Das Postident Verfahren ist von gestern. Das Münchner Startup Unternehmen IDnow hat sich auf eine digitale Lösung dieses Verfahrens spezialisiert, die den umfangreichen und teils komplizierten Prozess vereinfacht. So spart sich der Kunde von IDnow beispielsweise den lästigen Gang zur nächsten Postfiliale. Das Online-Ident-Verfahren ist ein sicherer, offiziell anerkannter Standard zum Nachweis der eigenen Identität. Die benutzerfreundliche App sowie das eigens entwickelte SDK schaffen es, die Legitimations- und Identitätsprüfung ortsunabhängig, schneller und effektiver zu machen.</p>
   -
     component: 'content-project-icons'
     useAlternateColor: true
@@ -25,7 +25,7 @@ sections:
       - 'idnow-icon-2.svg'
       - 'idnow-icon-3.svg'
       - 'idnow-icon-4.svg'
-    text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
+    text: 'Entwicklung einer klaren, kundenspezifischen Bildsprache zur Unterstreichung des innovativen Characters des Unternehmens.'
   -
     component: 'project-text'
     content: |
@@ -44,11 +44,11 @@ sections:
     content: |
       <h3>Lösung</h3>
 
-      <p>Das User Interface wurde mittels eines unkomplizierten Navigationskonzepts einfach und übersichtlich umgesetzt. So konnte der Identifizierungsprozess nochmals beschleunigt werden. Um zukünftigen Kunden eine hohe Integrierbarkeit anbieten zu können, wurde die Kernfunktionalität als Software Development Kit entwickelt. Somit können Kunden den Identifizierungsprozess einfach in ihre bestehenden Systeme einpflegen und direkt nutzen. Zur Garantie größtmöglicher Sicherheit wurde eine Kombination zahlreicher plattformabhängiger und -übergreifender Komponenten (u.a. Code Obfuscation, das Unterbinden von Caching oder Mitlesen von Eingaben und die Verschlüsselung aller API Requests) eingesetzt.</p>
+      <p>Das User Interface wurde mittels eines unkomplizierten Navigationskonzepts einfach und übersichtlich umgesetzt. So konnte der Identifizierungsprozess nochmals beschleunigt werden. Um zukünftigen Kunden eine hohe Integrierbarkeit anbieten zu können, wurde die Kernfunktionalität als Software Development Kit entwickelt. Somit können Kunden den Identifizierungsprozess einfach in ihre bestehenden Systeme einpflegen und direkt nutzen. Zur Garantie größtmöglicher Sicherheit wurde eine Kombination zahlreicher plattformabhängiger und -übergreifender Komponenten (unter anderen Code Obfuscation, das Unterbinden von Caching oder Mitlesen von Eingaben und die Verschlüsselung aller API Requests) eingesetzt.</p>
   -
     component: 'content-quote'
     source: |
-      Sebastian Bärhold, Managing Director & Co-Founder, IDnow GmbH
+      Sebastian Bärhold, Managing Director & Co-Founder IDnow GmbH
     content: |
       <p>anfemas Lösung besticht durch maximale Usability. Euer Team hat genau verstanden, was wir, die Agenten und die Nutzer brauchen, dies zielführend umgesetzt und hat damit maßgeblich zur Verwirklichung und Effizienz unserer Idee beigetragen.</p>
   -
