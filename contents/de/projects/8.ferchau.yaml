@@ -22,7 +22,7 @@ sections:
       und Produktwelt von FERCHAU und informiert interaktiv über die Bereiche, in denen die Firma aktiv ist.</p>
   -
     component: 'content-quote'
-    source: 'Martin Spengler, Creative Technologist, LAB BINÆR GBR, Partner im Projekt Ferchau'
+    source: 'Martin Spengler, Creative Technologist<br>LAB BINÆR GBR, unser Partner im Ferchau Projekt'
     content: |
       <p>Wir schätzen sehr, dass ihr mega Cracks seid und bauen unsere Konzepte voll auf euer Know-how auf.</p>
   -
@@ -63,8 +63,8 @@ sections:
     content: |
       <h3>Technologie</h3>
 
-      <p>Um ein möglichst breites Publikum zu bedienen, wurde die FERCHAU App nativ sowohl in Swift für iOs (universell
-      für iPhones, iPads und iPod Touch), als auch für Android Phones und Tablets entwickelt, Die Game Engine Unity3D
+      <p>Um ein möglichst breites Publikum zu bedienen, wurde die FERCHAU App nativ sowohl in Swift für iOS (universell
+      für iPhones, iPads und iPod Touch), als auch für Android Phones und Tablets entwickelt. Die Game Engine Unity3D
       bildet zusammen mit dem AR-SDK Vuforia die Basis der Applikation. Als internationaler Branchenführer bietet
       Unity3D optimiertes Shading und leistungsstarkes Rendering. Damit ermöglicht es die Konstruktion von
       realitätsnahen Animationen, und deren Einbettung in die reale Welt in Echtzeit.</p>
