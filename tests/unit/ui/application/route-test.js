@@ -4,7 +4,7 @@ import { setupTest } from 'ember-mocha';
 
 describe('Unit | Route | application', function() {
 	setupTest('route:application', {
-		needs: ['service:intl'],
+		needs: ['service:intl', 'service:fastboot'],
 	});
 
 	it('exists', function() {
