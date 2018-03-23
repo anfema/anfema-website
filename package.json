@@ -12,12 +12,13 @@
   "repository": "git@github.com:anfema/anfema-website.git",
   "scripts": {
     "build": "ember build",
-    "eslint": "./node_modules/.bin/eslint .",
-    "fix": "./node_modules/.bin/prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write && ./node_modules/.bin/eslint . --fix && ./node_modules/.bin/stylelint app/styles/**/*.scss --fix",
-    "prettier": "./node_modules/.bin/prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write",
+    "fix": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write && eslint . --fix && stylelint app/styles/**/*.scss --fix",
+    "lint:all": "stylelint app/styles/**/*.scss && eslint .",
+    "lint:css": "stylelint app/styles/**/*.scss",
+    "lint:js": "eslint .",
+    "prettier": "prettier '{**/*.{js,scss},.ember-cli,.prettierrc,.watchmanconfig}' --write",
     "start": "ember serve",
-    "stylelint": "./node_modules/.bin/stylelint app/styles/**/*.scss",
-    "test": "ember test"
+    "test:all": "ember test"
   },
   "devDependencies": {
     "autoprefixer": "~7.2.3",
