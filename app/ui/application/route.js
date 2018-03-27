@@ -9,25 +9,26 @@ export default Route.extend({
 	beforeModel(transition) {
 		const intl = this.get('intl');
 		let defaultLang = config.i18n.defaultLocale;
+		let userLang = 'en';
 
 		if (!this.get('fastboot.isFastBoot')) {
 			defaultLang = config.i18n.defaultLocale;
 		} else {
-			const headers = this.get('fastboot.request.headers');
-			const browserLng = headers.get('accept-language');
+			const browserLang = this.get('fastboot.request.headers.accept-language');
+			//console.log('browserLang: ', browserLang);
 
-			if (browserLng === 'de') {
-				defaultLang = browserLng;
+			if (browserLang.match(/de/)) {
+				userLang = browserLang;
 			} else {
-				defaultLang = 'en';
+				userLang = 'en';
 			}
 		}
 
 		// redirect to en index route
 		if (!transition.params.language || !transition.params.language.language_id) {
-			this.transitionTo('language', defaultLang);
+			this.transitionTo('language', userLang);
 
-			return intl.setLocale(defaultLang);
+			return userLang;
 		}
 		const paramLanguage = transition.params.language.language_id;
 		const availableLanguages = this.get('intl.locales');
