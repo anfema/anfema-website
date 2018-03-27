@@ -160,27 +160,27 @@ sections:
 
   -
     component: 'job-advertisements'
-    jobs:
-      -
-        title: 'Praktikum Android Development (f/m/*)'
-        description: 'Ab 2018'
-        detailsLink: '#'
-        team: 'android'
+    # jobs:
+    #   -
+    #     title: 'Praktikum Android Development (f/m/*)'
+    #     description: 'Ab 2018'
+    #     detailsLink: '#'
+    #     team: 'android'
 
-      -
-        title: 'Praktikum iOS Development (f/m/*)'
-        description: 'Ab 2018'
-        detailsLink: '#'
-        team: 'ios'
+    #   -
+    #     title: 'Praktikum iOS Development (f/m/*)'
+    #     description: 'Ab 2018'
+    #     detailsLink: '#'
+    #     team: 'ios'
 
-      -
-        title: 'Senior Python Developer (f/m/*)'
-        description: 'Ab 2018'
-        detailsLink: '#'
-        team: 'python'
+    #   -
+    #     title: 'Senior Python Developer (f/m/*)'
+    #     description: 'Ab 2018'
+    #     detailsLink: '#'
+    #     team: 'python'
 
-      -
-        title: 'Office Manager (f/m/*)'
-        description: 'Ab 2018'
-        detailsLink: '#'
-        team: 'office'
+    #   -
+    #     title: 'Office Manager (f/m/*)'
+    #     description: 'Ab 2018'
+    #     detailsLink: '#'
+    #     team: 'office'
