@@ -50,8 +50,28 @@
 		margin: 8rem 0 1rem;
 
 		@include media-large-min {
-			grid-column: 2 / -1;
+			grid-column: 2 / span 4;
 			margin: 17.5rem 0 1rem;
+		}
+
+		@include media-xlarge-min {
+			grid-column: 2 / span 3;
+		}
+	}
+}
+
+@include media-xlarge-min {
+	.content-lp-text {
+		& > * {
+			grid-column: 2 / span 4;
+		}
+	}
+}
+
+@include media-xxlarge-min {
+	.content-lp-text {
+		& > * {
+			grid-column: 2 / span 3;
 		}
 	}
 }
