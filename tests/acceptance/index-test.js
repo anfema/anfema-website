@@ -8,6 +8,7 @@ describe('Acceptance | ui/index', function() {
 	let application;
 	const defaultLocale = 'de';
 	const landingPage = `/${defaultLocale}`;
+	const userLang = 'hu';
 
 	beforeEach(function() {
 		application = startApp();
@@ -17,11 +18,16 @@ describe('Acceptance | ui/index', function() {
 		destroyApp(application);
 	});
 
-	it('redirects index to /language with default locale', async function() {
+	it('redirects index to /language with user locale', async function() {
 		await visit('/');
 
 		expect(currentURL()).to.not.equal('/');
-		expect(currentURL()).to.equal(`/${defaultLocale}`);
+
+		if (userLang.match(/de/)) {
+			expect(currentURL()).to.equal('/de');
+		} else {
+			expect(currentURL()).to.equal('/en');
+		}
 	});
 
 	it('can visit /imprint from footer', async function() {
