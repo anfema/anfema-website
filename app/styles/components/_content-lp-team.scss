@@ -21,6 +21,18 @@
 			grid-column: 2 / span 5;
 		}
 
+		@include media-xlarge-min {
+			* {
+				grid-column: 2 / span 4;
+			}
+		}
+
+		@include media-xxlarge-min {
+			* {
+				grid-column: 2 / span 3;
+			}
+		}
+
 		:first-child {
 			padding-top: 4rem;
 		}
