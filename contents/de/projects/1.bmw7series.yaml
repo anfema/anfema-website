@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/bmw7series/cover-large.jpg'
+    img: 'cover-bmw.jpg'
     title: 'BMW 7 Series Presenter App'
   -
     component: 'project-text'
@@ -46,9 +46,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-2-large.jpg'
+      - 'triptych-3-bmw.jpg'
+      - 'triptych-1-bmw.jpg'
+      - 'triptych-2-bmw.jpg'
 
   -
     component: 'project-text'
@@ -66,7 +66,7 @@ sections:
     useAlternateColor: true
     width: 684
     height: 513
-    poster: 'https://www-static.anfe.ma/2017/projects/bmw7series/video-preview.jpg'
+    poster: 'video-preview-bmw.jpg'
     videos:
     -
       path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.mp4'
@@ -101,7 +101,7 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-4-large.jpg'
+      - 'gallery-1-bmw.jpg'
+      - 'gallery-2-bmw.jpg'
+      - 'gallery-3-bmw.jpg'
+      - 'gallery-4-bmw.jpg'

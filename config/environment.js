@@ -37,6 +37,16 @@ module.exports = function(environment) {
 			prepend: true,
 			replace: false,
 		},
+
+		'responsive-image': {
+			sourceDir: 'img/generate',
+			destinationDir: 'img/responsive',
+			quality: 80,
+			supportedWidths: [3088, 2488, 1448, 820],
+			removeSourceDir: true,
+			justCopy: false,
+			extensions: ['jpg', 'jpeg', 'png', 'gif'],
+		},
 	};
 
 	if (environment === 'development') {

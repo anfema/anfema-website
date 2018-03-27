@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/pingonaut/cover-large.jpg'
+    img: 'cover-pingonaut.jpg'
     title: 'Pingonaut KidsWatch Plattform und Apps'
   -
     component: 'project-text'
@@ -56,11 +56,11 @@ sections:
       width: 400
       height: 600
     images:
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-4-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-5-large.jpg'
+      - 'gallery-1-pingonaut.jpg'
+      - 'gallery-2-pingonaut.jpg'
+      - 'gallery-3-pingonaut.jpg'
+      - 'gallery-4-pingonaut.jpg'
+      - 'gallery-5-pingonaut.jpg'
   -
     component: 'project-text'
     content: |
@@ -87,9 +87,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/triptych-2-large.jpg'
+      - 'triptych-3-pingonaut.jpg'
+      - 'triptych-1-pingonaut.jpg'
+      - 'triptych-2-pingonaut.jpg'
   -
     component: 'project-text'
     content: |
