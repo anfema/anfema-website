@@ -11,6 +11,7 @@ sections:
     title: 'Knauf / AMF Lookbook'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Aufgabe</h3>
       <p>Knauf AMF ist einer der weltweit größten Produzenten innovativer Deckensysteme. Um das breitgefächerte Spektrum an angepassten Deckenlösungen in einem adäquaten Rahmen zu präsentieren, wurde eine universelle Applikation für Tablets und Phones mit Android bzw. iOS nativ konzipiert. Dabei werden in aufwendigen Fotografien eindrucksvolle Bauprojekte dargestellt, in denen mit Knauf AMF über zahlreiche Sparten hinweg außergewöhnliche architektonische Objekte entstanden. Ein besonders charakteristisches Feature der App ist neben ihrer Leistunggstärke der Einsatz der 360° View, die dem User ein vollumfängliches Raumgefühl vermittelt.</p>

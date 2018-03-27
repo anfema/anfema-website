@@ -1,16 +1,11 @@
 .content-quote {
 	@include grid-base;
+	@include offset-content-bottom;
+	@include offset-content-top;
 
 	position: relative;
 	overflow: hidden;
-	padding-top: 3rem;
-	padding-bottom: 0;
 	background-color: $color-grey-light;
-
-	@include media-large-min {
-		padding-top: 8rem;
-		padding-bottom: 8rem;
-	}
 
 	&__text {
 		position: relative;
@@ -52,24 +47,24 @@
 		}
 
 		&::before {
-			top: -8rem;
+			top: -5rem;
 			left: -5rem;
 			content: '“';
 
 			@include media-large-min {
-				top: -8rem;
+				top: 0;
 				left: -13rem;
 			}
 		}
 
 		&::after {
-			top: -8rem;
+			top: -5rem;
 			right: 0;
 			text-align: right;
 			content: '”';
 
 			@include media-large-min {
-				top: -8rem;
+				top: 0;
 				right: -12rem;
 			}
 		}
