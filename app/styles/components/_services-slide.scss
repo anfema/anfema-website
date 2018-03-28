@@ -56,4 +56,10 @@
 			opacity: 1;
 		}
 	}
+
+	@include media-xlarge-min {
+		&__content {
+			grid-column: 2 / span 3;
+		}
+	}
 }
