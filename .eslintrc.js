@@ -8,13 +8,7 @@ module.exports = {
 
 	overrides: [
 		{
-			files: [
-				'testem.js',
-				'ember-cli-build.js',
-				'config/**/*.js',
-				'lib/*/index.js',
-				'.template-lintrc.js',
-			],
+			files: ['testem.js', 'ember-cli-build.js', 'config/**/*.js', 'lib/*/index.js', '.template-lintrc.js'],
 			parserOptions: {
 				sourceType: 'script',
 				ecmaVersion: 2015,
