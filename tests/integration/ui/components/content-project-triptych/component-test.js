@@ -1,3 +1,4 @@
+import { initialize } from 'ember-responsive-image/instance-initializers/responsive-meta';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
@@ -8,6 +9,9 @@ describe('Integration | Component | content project triptych', function() {
 	setupComponentTest('content-project-triptych', {
 		integration: true,
 	});
+	before(function() {
+		initialize();
+	});
 
 	const data = {
 		component: 'content-project-triptych',
@@ -16,10 +20,10 @@ describe('Integration | Component | content project triptych', function() {
 			height: 600,
 		},
 		images: [
-			'http://via.placeholder.com/736x492',
-			'http://via.placeholder.com/736x492',
+			'gallery-1-bmw.jpg',
+			'gallery-2-bmw.jpg',
 			{
-				url: 'http://via.placeholder.com/736x492',
+				url: 'gallery-3-bmw.jpg',
 				width: 508,
 				height: 380,
 			},
@@ -43,12 +47,8 @@ describe('Integration | Component | content project triptych', function() {
 		// 		template content
 		// 	{{/content-project-triptych}}
 		// `);
-
-		expect(findAll('.content-project-triptych__side-img-1')[0].getAttribute('width')).to.equal(
-			'800'
-		);
-		expect(findAll('.content-project-triptych__side-img-2')[0].getAttribute('height')).to.equal(
-			'380'
+		expect(findAll('.content-project-triptych__side-img-1')[0].getAttribute('src')).to.contain(
+			'/img/responsive/gallery-1-bmw'
 		);
 	});
 });

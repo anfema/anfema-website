@@ -1,3 +1,4 @@
+import { initialize } from 'ember-responsive-image/instance-initializers/responsive-meta';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
@@ -9,9 +10,14 @@ describe('Integration | Component | content project video', function() {
 		integration: true,
 	});
 
+	before(function() {
+		initialize();
+	});
+
 	const data = {
 		width: 684,
 		height: 513,
+		poster: 'video-preview-bmw.jpg',
 		videos: [
 			{
 				path: 'path-to-video',
