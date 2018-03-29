@@ -1,6 +1,6 @@
 import { initialize } from 'ember-responsive-image/instance-initializers/responsive-meta';
 import { expect } from 'chai';
-import { describe, it } from 'mocha';
+import { before, describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import { findAll } from 'ember-native-dom-helpers';
@@ -8,9 +8,6 @@ import { findAll } from 'ember-native-dom-helpers';
 describe('Integration | Component | content project triptych', function() {
 	setupComponentTest('content-project-triptych', {
 		integration: true,
-	});
-	before(function() {
-		initialize();
 	});
 
 	const data = {
@@ -20,16 +17,20 @@ describe('Integration | Component | content project triptych', function() {
 			height: 600,
 		},
 		images: [
-			'gallery-1-bmw.jpg',
-			'gallery-2-bmw.jpg',
+			'test.png',
+			'test2.png',
 			{
-				url: 'gallery-3-bmw.jpg',
+				url: 'test3.png',
 				width: 508,
 				height: 380,
 			},
 		],
 		useAlternateColor: true,
 	};
+
+	before(function() {
+		initialize();
+	});
 
 	beforeEach(function() {
 		this.set('data', data);
@@ -48,7 +49,7 @@ describe('Integration | Component | content project triptych', function() {
 		// 	{{/content-project-triptych}}
 		// `);
 		expect(findAll('.content-project-triptych__side-img-1')[0].getAttribute('src')).to.contain(
-			'/img/responsive/gallery-1-bmw'
+			'/img/responsive/test'
 		);
 	});
 });

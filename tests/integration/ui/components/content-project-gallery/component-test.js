@@ -19,12 +19,7 @@ describe('Integration | Component | content project gallery', function() {
 			width: 584,
 			height: 438,
 		},
-		images: [
-			'gallery-1-bmw.jpg',
-			'gallery-2-bmw.jpg',
-			'gallery-3-bmw.jpg',
-			'gallery-4-bmw.jpg',
-		],
+		images: ['test.png', 'test2.png', 'test3.png', 'test4.png'],
 	};
 
 	beforeEach(function() {
@@ -40,6 +35,6 @@ describe('Integration | Component | content project gallery', function() {
 		);
 		expect(
 			findAll('.content-project-gallery__image--landscape-default')[0].getAttribute('src')
-		).to.contain('/img/responsive/gallery-1-bmw');
+		).to.contain('/img/responsive/test');
 	});
 });

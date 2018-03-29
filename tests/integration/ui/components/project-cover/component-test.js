@@ -11,7 +11,7 @@ describe('Integration | Component | project cover', function() {
 	});
 
 	const data = {
-		img: 'cover-bmw.jpg',
+		img: 'test.png',
 		title: 'BMW 7 Series Presenter App',
 	};
 
@@ -20,12 +20,11 @@ describe('Integration | Component | project cover', function() {
 	});
 
 	it('renders', function() {
-		console.log('data.img: ', data.img);
 		this.set('data', data);
 		this.render(hbs`{{project-cover data=data}}`);
 
 		expect(findAll('.project-cover__artwork')[0].getAttribute('src')).to.contain(
-			'/img/responsive/cover-bmw'
+			'/img/responsive/test'
 		);
 	});
 });
