@@ -1,6 +1,6 @@
 import { initialize } from 'ember-responsive-image/instance-initializers/responsive-meta';
 import { expect } from 'chai';
-import { describe, it } from 'mocha';
+import { before, describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 import { findAll } from 'ember-native-dom-helpers';
@@ -19,12 +19,11 @@ describe('Integration | Component | project cover', function() {
 		initialize();
 	});
 
-	beforeEach(function() {
+	it('renders', function() {
+		console.log('data.img: ', data.img);
 		this.set('data', data);
 		this.render(hbs`{{project-cover data=data}}`);
-	});
 
-	it('renders', function() {
 		expect(findAll('.project-cover__artwork')[0].getAttribute('src')).to.contain(
 			'/img/responsive/cover-bmw'
 		);
