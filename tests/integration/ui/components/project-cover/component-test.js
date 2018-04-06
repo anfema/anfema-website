@@ -24,7 +24,7 @@ describe('Integration | Component | project cover', function() {
 		this.render(hbs`{{project-cover data=data}}`);
 
 		expect(findAll('.project-cover__artwork')[0].getAttribute('src')).to.contain(
-			'/img/responsive/test'
+			'/img/projects/test'
 		);
 	});
 });

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <g fill="none" fill-rule="evenodd" stroke="#262626">
+        <path stroke-dasharray="8,4" d="M4.526 29.73v39.557"/>
+        <path stroke-dasharray="7,4" d="M9.051 20.673v57.714"/>
+        <path stroke-dasharray="6,4" d="M14.482 14.816v69.666"/>
+        <path stroke-dasharray="5,4" d="M19.008 10.303v78.338"/>
+        <path stroke-dasharray="4,4" d="M24.439 7.05v84.969"/>
+        <path stroke-dasharray="2,4" d="M34.395 2.54v93.788"/>
+        <path stroke-dasharray="3,4" d="M28.965 4.464v90.14"/>
+        <path stroke-dasharray="2,4" d="M38.921 1.203v96.873"/>
+        <path stroke-dasharray="0.75,4" d="M44.352.413v98.264"/>
+        <path d="M99.696 49.534c0 27.312-22.214 49.452-49.616 49.452-27.4 0-49.615-22.14-49.615-49.452C.465 22.222 22.68.082 50.08.082c27.402 0 49.616 22.14 49.616 49.452z"/>
+        <path stroke-dasharray="8,4" d="M94.135 69.362V29.804"/>
+        <path stroke-dasharray="7,4" d="M88.704 78.418V20.704"/>
+        <path stroke-dasharray="6,4" d="M84.178 84.276V14.609"/>
+        <path stroke-dasharray="5,4" d="M78.748 88.788V10.45"/>
+        <path stroke-dasharray="4,4" d="M74.222 92.041V7.073"/>
+        <path stroke-dasharray="2,4" d="M64.265 96.553V2.763"/>
+        <path stroke-dasharray="3,4" d="M69.696 94.627V4.487"/>
+        <path stroke-dasharray="2,4" d="M59.74 97.888V1.015"/>
+        <path stroke-dasharray="0.75,4" d="M54.309 98.678V.414"/>
+    </g>
+</svg>

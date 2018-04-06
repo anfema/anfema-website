@@ -49,7 +49,7 @@ describe('Integration | Component | content project triptych', function() {
 		// 	{{/content-project-triptych}}
 		// `);
 		expect(findAll('.content-project-triptych__side-img-1')[0].getAttribute('src')).to.contain(
-			'/img/responsive/test'
+			'/img/projects/test'
 		);
 	});
 });

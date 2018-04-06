@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'cover-ferchau.jpg'
+    img: 'ferchau-cover.jpg'
     title: 'Ferchau Augmented Reality'
   -
     component: 'project-text'
@@ -40,8 +40,8 @@ sections:
       width: 584
       height: 438
     images:
-      - 'gallery-1-ferchau.jpg'
-      - 'gallery-2-ferchau.jpg'
+      - 'ferchau-gallery-1.jpg'
+      - 'ferchau-gallery-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -56,9 +56,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'triptych-3-ferchau.jpg'
-      - 'triptych-1-ferchau.jpg'
-      - 'triptych-2-ferchau.jpg'
+      - 'ferchau-triptych-3.jpg'
+      - 'ferchau-triptych-1.jpg'
+      - 'ferchau-triptych-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -75,4 +75,4 @@ sections:
       width: 584
       height: 438
     images:
-      - 'technology-ferchau.jpg'
+      - 'ferchau-technology.jpg'

@@ -35,6 +35,6 @@ describe('Integration | Component | content project gallery', function() {
 		);
 		expect(
 			findAll('.content-project-gallery__image--landscape-default')[0].getAttribute('src')
-		).to.contain('/img/responsive/test');
+		).to.contain('/img/projects/test');
 	});
 });
