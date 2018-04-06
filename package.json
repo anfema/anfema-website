@@ -52,6 +52,7 @@
     "ember-native-dom-helpers": "~0.5.10",
     "ember-page-title": "~4.0.1",
     "ember-resolver": "~4.5.0",
+    "ember-responsive-image": "^1.0.0-rc.5",
     "ember-source": "~2.17.0",
     "ember-test-selectors": "~0.3.8",
     "eslint": "~4.13.1",

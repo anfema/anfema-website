@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/pingonaut/cover-large.jpg'
+    img: 'pingonaut-cover.jpg'
     title: 'Pingonaut KidsWatch Plattform und Apps'
   -
     component: 'project-text'
@@ -28,10 +28,10 @@ sections:
       useAlternateColor: true
       title: 'Custom Icon Set'
       icons:
-        - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-1.svg'
-        - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-2.svg'
-        - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-3.svg'
-        - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-4.svg'
+        - 'pingonaut-kids-icon-1.svg'
+        - 'pingonaut-kids-icon-2.svg'
+        - 'pingonaut-kids-icon-3.svg'
+        - 'pingonaut-kids-icon-4.svg'
       text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden
       speziell für diese App Icons gestaltet.'
   -
@@ -56,11 +56,11 @@ sections:
       width: 400
       height: 600
     images:
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-4-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-5-large.jpg'
+      - 'pingonaut-gallery-1.jpg'
+      - 'pingonaut-gallery-2.jpg'
+      - 'pingonaut-gallery-3.jpg'
+      - 'pingonaut-gallery-4.jpg'
+      - 'pingonaut-gallery-5.jpg'
   -
     component: 'project-text'
     content: |
@@ -87,9 +87,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/triptych-2-large.jpg'
+      - 'pingonaut-triptych-3.jpg'
+      - 'pingonaut-triptych-1.jpg'
+      - 'pingonaut-triptych-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -107,4 +107,4 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/illustrations.svg'
+      - 'pingonaut-illustrations.svg'

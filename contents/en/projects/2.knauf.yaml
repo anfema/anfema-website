@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/knauf/cover-large.jpg'
+    img: 'cover-knauf.jpg'
     title: 'Knauf / AMF Lookbook'
   -
     component: 'project-text'
@@ -20,9 +20,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/knauf/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/triptych-2-large.jpg'
+      - 'triptych-3-knauf.jpg'
+      - 'triptych-1-knauf.jpg'
+      - 'triptych-2-knauf.jpg'
   -
     component: 'project-text'
     content: |
@@ -35,7 +35,7 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/knauf/challenge-large.jpg'
+      - 'challenge-knauf.jpg'
   -
     component: 'project-text'
     content: |
@@ -53,7 +53,7 @@ sections:
     useAlternateColor: true
     width: 684
     height: 513
-    poster: 'https://www-static.anfe.ma/2017/projects/knauf/video-preview.jpg'
+    poster: 'video-preview-knauf.jpg'
     videos:
       -
         path: 'https://www-static.anfe.ma/2017/projects/knauf/video.m4v'
@@ -76,8 +76,8 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-4-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-5-large.jpg'
+      - 'gallery-1-knauf.jpg'
+      - 'gallery-2-knauf.jpg'
+      - 'gallery-3-knauf.jpg'
+      - 'gallery-4-knauf.jpg'
+      - 'gallery-5-knauf.jpg'
