@@ -24,7 +24,7 @@ sections:
       Verkaufsklima zu schaffen.</p>
   -
       component: 'content-quote'
-      source: 'Sebastian André Borowski, Program Manager, Dassault Systèmes 3DEXCITE, unser Partner im TOD’s Projekt'
+      source: 'Sebastian André Borowski, Program Manager<br>Dassault Systèmes 3DEXCITE, unser Partner im TOD’S Projekt'
       content: |
         <p>Ich möchte die Gelegenheit gerne dazu nutzen, jedem einzelnen von euch zu gratulieren und zu danken für
         eure geistige Arbeit, die Mühe und allem Voran eure unbezahlbare Coolness, d.h. eure Geduld und kontinuierliche
@@ -34,7 +34,7 @@ sections:
     content: |
       <h3>Herausforderung</h3>
 
-      <p>Die Herausforderung bei diesem Projekt war es, eine speicherplatzsparend und dennoch performante Lösung zu
+      <p>Die Herausforderung bei diesem Projekt war es, eine speicherplatzsparende und dennoch performante Lösung zu
       entwickeln, die die rund 16 Millionen unterschiedlichen Schuh-Konfigurationen in einer App abbilden kann.
       Zusätzlich müssen die Inhalte auch ohne bestehende Internetverbindung verfügbar sein, sodass Schuhe offline
       konfiguriert und bestellt werden können.</p>

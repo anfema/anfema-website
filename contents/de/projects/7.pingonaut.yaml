@@ -67,7 +67,7 @@ sections:
       <h3>Lösung</h3>
 
       <p>Maßgebend für den Projekterfolg waren die hohe Anpassungsfähigkeit, das breite Wissensspektrum und die
-      hervorragenden analytischen Fähigkeiten unseres gesamten Teams.Als Antwort auf das ungewisse Marktvolumen
+      hervorragenden analytischen Fähigkeiten unseres gesamten Teams. Als Antwort auf das ungewisse Marktvolumen
       bei Markteinführung der Kidswatch setzte anfema auf ein Serversystem, das sich horizontal skalieren und somit
       problemlos erweitern lässt. Darüber hinaus wurde das Server Deployment komplett automatisiert, sodass das
       System auf beliebig vielen Servern ausgerollt werden kann. Durch intensive Recherche der Spezifikationen
@@ -77,7 +77,7 @@ sections:
       deutschem Recht folgt.</p>
   -
     component: 'content-quote'
-    source: 'Stefan Hampel, Geschäftsführer Vertrieb, Lokato GmbH'
+    source: 'Stefan Hampel, Geschäftsführer Vertrieb<br>Lokato GmbH'
     content: |
       <p>Ohne anfema würde es die Kidswatch nicht geben! anfema hat ein bis ins Detail durchdachtes Konzept geschaffen
       und eine Plattform entwickelt, die keine Fragen offen lässt und alle Erwartungen übertrifft. Mit gigantischem
