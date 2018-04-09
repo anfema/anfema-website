@@ -18,7 +18,6 @@ npm-debug.log*
 yarn-error.log
 testem.log
 .DS_Store
-/public/img/generate
 
 # ember-try
 .node_modules.ember-try/
@@ -41,6 +40,9 @@ CalibreWeb-RegularItalic.eot
 CalibreWeb-RegularItalic.woff
 CalibreWeb-Regular.eot
 CalibreWeb-Regular.woff
+
+# Images
+/public/projects
 
 # Deploy
 /.travis/id_rsa

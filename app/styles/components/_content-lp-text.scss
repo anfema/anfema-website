@@ -1,5 +1,6 @@
 .content-lp-text {
 	@include grid-base;
+	padding: 4rem 1.6rem 0;
 
 	& > * {
 		grid-column: 1 / -1;
