@@ -1,6 +1,6 @@
 <h1 class="aux--hide">{{t 'component.project-detail.title'}}</h1>
 
-<img class="project-cover__artwork" src="{{data.img}}" width="1544" height="780" alt="{{imgAlt}}">
+{{responsive-image image=data.img class="project-cover__artwork" alt=imgAlt}}
 
 <header class="project-cover__header">
 	<h2>{{if data.title data.title meta.title}}</h2>

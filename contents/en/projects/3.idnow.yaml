@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/idnow/cover-large.jpg'
+    img: 'cover-idnow.jpg'
     title: 'IDnow'
   -
     component: 'project-text'
@@ -36,9 +36,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/idnow/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/idnow/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/idnow/triptych-2-large.jpg'
+      - 'triptych-3-idnow.jpg'
+      - 'triptych-1-idnow.jpg'
+      - 'triptych-2-idnow.jpg'
   -
     component: 'project-text'
     content: |
@@ -63,8 +63,8 @@ sections:
       width: 400
       height: 600
     images:
-      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-4-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/idnow/gallery-5-large.jpg'
+      - 'gallery-1-idnow.jpg'
+      - 'gallery-2-idnow.jpg'
+      - 'gallery-3-idnow.jpg'
+      - 'gallery-4-idnow.jpg'
+      - 'gallery-5-idnow.jpg'

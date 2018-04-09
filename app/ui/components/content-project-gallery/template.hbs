@@ -1,7 +1,17 @@
 {{yield}}
+
+
 {{#each images as |image|}}
-	<img class="content-project-gallery__image content-project-gallery__image--{{image.layout}}" src="{{image.url}}"
+	{{#if isVectorImages}}
+		<img class="content-project-gallery__image content-project-gallery__image--{{image.layout}}" src="/graphics/{{image.url}}"
 	     alt="{{image.alt}}"
 	     width="{{image.width}}"
 	     height="{{image.height}}">
+	{{else}}
+		{{responsive-image
+			image=image.url
+			className=(concat "content-project-gallery__image content-project-gallery__image--" image.layout)
+			alt=image.alt}}
+	{{/if}}
+
 {{/each}}
