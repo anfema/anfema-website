@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/bmw7series/cover-large.jpg'
+    img: 'bmw7series-cover.jpg'
     title: 'BMW 7 Series Presenter App'
   -
     component: 'project-text'
@@ -26,56 +26,56 @@ sections:
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-1.svg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-2.svg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-3.svg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-4.svg'
+      - 'bmw7series-icon-1.svg'
+      - 'bmw7series-icon-2.svg'
+      - 'bmw7series-icon-3.svg'
+      - 'bmw7series-icon-4.svg'
     text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
   -
     component: 'project-text'
     content: |
       <h3>Herausforderung</h3>
 
-      <p>Die Herausforderung bei dieser Applikation bestand darin, die Eleganz, den Komfort und die Eigenschaften 
-      des Fahrzeugs verständlich zu präsentieren. Mehrsprachigkeit und die Unterstützung von Layout-Varianten für 
-      Märkte wie die Vereinigte Arabische Emirate waren aufgrund der Internationalität des Produkts unbedingt erforderlich. 
-      Da das Fahrzeug während der Entwicklungsphase der App noch streng geheim war, musste darüber hinaus eine sichere Datenhaltung 
+      <p>Die Herausforderung bei dieser Applikation bestand darin, die Eleganz, den Komfort und die Eigenschaften
+      des Fahrzeugs verständlich zu präsentieren. Mehrsprachigkeit und die Unterstützung von Layout-Varianten für
+      Märkte wie die Vereinigte Arabische Emirate waren aufgrund der Internationalität des Produkts unbedingt erforderlich.
+      Da das Fahrzeug während der Entwicklungsphase der App noch streng geheim war, musste darüber hinaus eine sichere Datenhaltung
       gewährleistet werden.</p>
 
   -
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-2-large.jpg'
+      - 'bmw7series-triptych-3.jpg'
+      - 'bmw7series-triptych-1.jpg'
+      - 'bmw7series-triptych-2.jpg'
 
   -
     component: 'project-text'
     content: |
       <h3>Lösung</h3>
 
-      <p>Um das bestmögliche Ergebnis zu garantieren, entwickelten wir ein eigens angepasstes Datenmanagement-System, das 
-      den Ansprüchen, der Datenvielfalt und dem Layout der App gerecht wird. Der BMW 7 Series Presenter ist eine iPad-App 
-      für den weltweiten Markt an BMW-Vertragshändlern, die interessierten Kunden exklusive Einblicke in den neuen BMW 7er 
-      gewährt. Durch verschiedene Themenbereiche und interaktive Inhalte vermittelt sie nicht nur Informationen über die 
-      Produktion und Fahrzeugeigenschaften auf 10 verschiedenen Sprachen. Vielmehr erlaubt die App dem User das Eintauchen 
+      <p>Um das bestmögliche Ergebnis zu garantieren, entwickelten wir ein eigens angepasstes Datenmanagement-System, das
+      den Ansprüchen, der Datenvielfalt und dem Layout der App gerecht wird. Der BMW 7 Series Presenter ist eine iPad-App
+      für den weltweiten Markt an BMW-Vertragshändlern, die interessierten Kunden exklusive Einblicke in den neuen BMW 7er
+      gewährt. Durch verschiedene Themenbereiche und interaktive Inhalte vermittelt sie nicht nur Informationen über die
+      Produktion und Fahrzeugeigenschaften auf 10 verschiedenen Sprachen. Vielmehr erlaubt die App dem User das Eintauchen
       in die Welt des 7er BMW. </p>
   -
     component: 'content-project-video'
     useAlternateColor: true
     width: 684
     height: 513
-    poster: 'https://www-static.anfe.ma/2017/projects/bmw7series/video-preview.jpg'
+    poster: 'bmw7series-video-preview.jpg'
     videos:
     -
-      path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.mp4'
+      path: 'https://www-static.anfe.ma/2017/projects/bmw7series-video.mp4'
       type: 'mp4'
     -
-      path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.ogv'
+      path: 'https://www-static.anfe.ma/2017/projects/bmw7series-video.ogv'
       type: 'ogv'
     -
-      path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.webm'
+      path: 'https://www-static.anfe.ma/2017/projects/bmw7series-video.webm'
       type: 'webm'
 
   -
@@ -83,8 +83,8 @@ sections:
     content: |
       <h3>Technologien</h3>
 
-      <p>Die App wurde als Innovationsprodukt mit Swift für iOS entwickelt. Ein eigenes Server-Backend basierend auf 
-      Django garantiert eine schnelle und zuverlässige Auslieferung neuer Inhalte und kontrolliert die erforderlichen 
+      <p>Die App wurde als Innovationsprodukt mit Swift für iOS entwickelt. Ein eigenes Server-Backend basierend auf
+      Django garantiert eine schnelle und zuverlässige Auslieferung neuer Inhalte und kontrolliert die erforderlichen
       Sicherheitsmaßnahmen.</p>
   -
     component: 'content-quote'
@@ -92,7 +92,7 @@ sections:
     content: |
       <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend. </p>
 
-      <p>Großartig an der anfema ist neben der Qualität auch die Schnelligkeit, mit der sie Projekte verwirklicht. 
+      <p>Großartig an der anfema ist neben der Qualität auch die Schnelligkeit, mit der sie Projekte verwirklicht.
       Deshalb ist und bleibt sie einer unserer viel geschätzten Partner.</p>
 
   -
@@ -101,7 +101,7 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-4-large.jpg'
+      - 'bmw7series-gallery-1.jpg'
+      - 'bmw7series-gallery-2.jpg'
+      - 'bmw7series-gallery-3.jpg'
+      - 'bmw7series-gallery-4.jpg'

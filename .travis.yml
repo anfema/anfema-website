@@ -42,13 +42,11 @@ before_deploy:
 
 deploy:
   -
-    skip_cleanup: true
     provider: script
     script: "$TRAVIS_BUILD_DIR/.travis/deploy-dev.sh"
     on:
       branch: develop
   -
-    skip_cleanup: true
     provider: script
     script: "$TRAVIS_BUILD_DIR/.travis/deploy-live.sh"
     on:

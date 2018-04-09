@@ -1,13 +1,8 @@
 {{yield}}
 
-<img class="content-project-triptych__side-img-1" src="{{sideImage1.url}}" alt="{{sideImage1.alt}}"
-     width="{{sideImage1.width}}"
-     height="{{sideImage1.height}}">
-<img class="content-project-triptych__cover-img" src="{{cover.url}}" alt="{{cover.alt}}" width="{{cover.width}}"
-     height="{{cover.height}}">
-<img class="content-project-triptych__side-img-2" src="{{sideImage2.url}}" alt="{{sideImage2.alt}}"
-     width="{{sideImage2.width}}"
-     height="{{sideImage2.height}}">
+{{responsive-image image=sideImage1.url class="content-project-triptych__side-img-1" alt=sideImage1.alt}}
+{{responsive-image image=cover.url class="content-project-triptych__cover-img" alt=cover.alt}}
+{{responsive-image image=sideImage2.url class="content-project-triptych__side-img-2" alt=sideImage2.alt}}
 
 
 
