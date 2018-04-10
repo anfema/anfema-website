@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'cover-idnow.jpg'
+    img: 'idnow-cover.jpg'
     title: 'IDnow'
   -
     component: 'project-text'
@@ -21,10 +21,10 @@ sections:
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:
-      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-1.svg'
-      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-2.svg'
-      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-3.svg'
-      - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-4.svg'
+      - 'idnow-icon-1.svg'
+      - 'idnow-icon-2.svg'
+      - 'idnow-icon-3.svg'
+      - 'idnow-icon-4.svg'
     text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
   -
     component: 'project-text'
@@ -36,9 +36,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'triptych-3-idnow.jpg'
-      - 'triptych-1-idnow.jpg'
-      - 'triptych-2-idnow.jpg'
+      - 'idnow-triptych-3.jpg'
+      - 'idnow-triptych-1.jpg'
+      - 'idnow-triptych-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -63,8 +63,8 @@ sections:
       width: 400
       height: 600
     images:
-      - 'gallery-1-idnow.jpg'
-      - 'gallery-2-idnow.jpg'
-      - 'gallery-3-idnow.jpg'
-      - 'gallery-4-idnow.jpg'
-      - 'gallery-5-idnow.jpg'
+      - 'idnow-gallery-1.jpg'
+      - 'idnow-gallery-2.jpg'
+      - 'idnow-gallery-3.jpg'
+      - 'idnow-gallery-4.jpg'
+      - 'idnow-gallery-5.jpg'

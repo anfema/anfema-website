@@ -73,8 +73,8 @@ sections:
       width: 584
       height: 438
     images:
-      - 'knauf-gallery-1.jpg'
-      - 'knauf-gallery-2.jpg'
-      - 'knauf-gallery-3.jpg'
-      - 'knauf-gallery-4.jpg'
-      - 'knauf-gallery-5.jpg'
+      - 'gallery-1-knauf.jpg'
+      - 'gallery-2-knauf.jpg'
+      - 'gallery-3-knauf.jpg'
+      - 'gallery-4-knauf.jpg'
+      - 'gallery-5-knauf.jpg'

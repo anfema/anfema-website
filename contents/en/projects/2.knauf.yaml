@@ -7,7 +7,7 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'cover-knauf.jpg'
+    img: 'knauf-cover.jpg'
     title: 'Knauf / AMF Lookbook'
   -
     component: 'project-text'
@@ -20,9 +20,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'triptych-3-knauf.jpg'
-      - 'triptych-1-knauf.jpg'
-      - 'triptych-2-knauf.jpg'
+      - 'knauf-triptych-3.jpg'
+      - 'knauf-triptych-1.jpg'
+      - 'knauf-triptych-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -35,7 +35,7 @@ sections:
       width: 584
       height: 438
     images:
-      - 'challenge-knauf.jpg'
+      - 'knauf-challenge.jpg'
   -
     component: 'project-text'
     content: |
@@ -53,7 +53,7 @@ sections:
     useAlternateColor: true
     width: 684
     height: 513
-    poster: 'video-preview-knauf.jpg'
+    poster: 'knauf-video-preview.jpg'
     videos:
       -
         path: 'https://www-static.anfe.ma/2017/projects/knauf/video.m4v'
