@@ -6,9 +6,9 @@
 
 	&__side-img-1 {
 		position: absolute;
-		top: (613/1093)*100%;
+		top: (613/1093) * 100%;
 		left: 50%;
-		width: (508/ 780)*100%;
+		width: (508/ 780) * 100%;
 		height: auto;
 		transform: translate(-50%, 0);
 		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
@@ -17,9 +17,9 @@
 
 	&__side-img-2 {
 		position: absolute;
-		top: (100/1093)*100%;
+		top: (100/1093) * 100%;
 		left: 50%;
-		width: (508/ 780)*100%;
+		width: (508/ 780) * 100%;
 		height: auto;
 		transform: translate(-50%, 0);
 		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
@@ -70,7 +70,7 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			width: (656/1244)*100%;
+			width: (656/1244) * 100%;
 			height: auto;
 			transform: translate(-50%, -50%);
 			margin-top: 0;
