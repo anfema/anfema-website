@@ -2,8 +2,6 @@
 
 A brand new website for https://anfe.ma using Ember.js and Fastboot.
 
-
-
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -31,15 +29,16 @@ To properly render the text, you have to copy the Calibre Webfonts into `/public
 
 This list will likely shrink in the future. Do not commit these files under any circumstance.
 
-
-
 ## Installation
 
-* `git clone git@github.com:anfema/anfema-next-website.git`
-* `cd anfema-next-website`
+* `git clone git@github.com:anfema/website.git`
+* `cd website`
 * `yarn install`
 
+## Download assets from homepage@banana.anfema.net:~/source
 
+* Replace `public/projects`
+* Replace `public/fonts`
 
 ## Running / Development
 
@@ -54,9 +53,9 @@ This project uses pods. `--pods` is enabled by default. Use `--no-pods` for mode
 
 ### Linting
 
-This project uses [ESLint](https://eslint.org), [Stylelint](https://stylelint.io) and [Prettier](https://prettier.io) to ensure tidy code. 
+This project uses [ESLint](https://eslint.org), [Stylelint](https://stylelint.io) and [Prettier](https://prettier.io) to ensure tidy code.
 
-Please enable the appropriate plugins in your editor. 
+Please enable the appropriate plugins in your editor.
 
 There are scripts in `package.json` which can be used to run the in-repo versions of these tools. You can also use `yarn run fix` to run all three tools at once. We recommend to do so before committing or pushing to the git origin.
 
@@ -67,12 +66,10 @@ There are scripts in `package.json` which can be used to run the in-repo version
 
 This project uses [ember-mocha](https://github.com/emberjs/ember-mocha) with [ember-native-dom-helpers](https://github.com/cibernox/ember-native-dom-helpers) and [ember-test-selectors](https://github.com/simplabs/ember-test-selectors) for testing.
 
-### Building
+### Building / Deploy
 
-* `ember build` (development)
 * `ember build --environment production` (production)
-
-
+* See internal Wiki documents for deployment using FastBoot
 
 ## Further Reading / Useful Links
 
