@@ -56,13 +56,13 @@ sections:
     poster: 'knauf-video-preview.jpg'
     videos:
       -
-        path: 'https://www-static.anfe.ma/2017/projects/knauf/video.m4v'
+        path: 'knauf-video.m4v'
         type: 'mp4'
       -
-        path: 'https://www-static.anfe.ma/2017/projects/knauf/video.ogv'
+        path: 'knauf-video.ogv'
         type: 'ogv'
       -
-        path: 'https://www-static.anfe.ma/2017/projects/knauf/video.webm'
+        path: 'knauf-video.webm'
         type: 'webm'
   -
     component: 'project-text'
