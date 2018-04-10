@@ -1,6 +1,7 @@
 .project-text {
 	@include grid-base;
 	@include offset-content-bottom;
+	@include offset-content-top;
 
 	.project-text__content {
 		grid-column: 2 / span 5;
@@ -8,5 +9,17 @@
 
 	&--alt {
 		background: $color-background-darker;
+	}
+
+	&--assignment {
+		padding-top: 3rem;
+
+		@include media-medium-min {
+			padding-top: 3rem;
+		}
+
+		@include media-xlarge-min {
+			padding-top: 3rem;
+		}
 	}
 }

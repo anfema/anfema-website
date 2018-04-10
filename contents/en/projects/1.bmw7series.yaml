@@ -7,10 +7,11 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/bmw7series/cover-large.jpg'
+    img: 'bmw7series-cover.jpg'
     title: 'BMW 7 Series Presenter App'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Assignment</h3>
 
@@ -25,10 +26,10 @@ sections:
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-1.svg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-2.svg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-3.svg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/bmw-4.svg'
+      - 'bmw7series-icon-1.svg'
+      - 'bmw7series-icon-2.svg'
+      - 'bmw7series-icon-3.svg'
+      - 'bmw7series-icon-4.svg'
     text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
   -
     component: 'project-text'
@@ -41,9 +42,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/triptych-2-large.jpg'
+      - 'bmw7series-triptych-3.jpg'
+      - 'bmw7series-triptych-1.jpg'
+      - 'bmw7series-triptych-2.jpg'
 
   -
     component: 'project-text'
@@ -56,7 +57,7 @@ sections:
     useAlternateColor: true
     width: 684
     height: 513
-    poster: 'https://www-static.anfe.ma/2017/projects/bmw7series/video-preview.jpg'
+    poster: 'bmw7series-video-preview.jpg'
     videos:
     -
       path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.mp4'
@@ -84,7 +85,7 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/bmw7series/gallery-4-large.jpg'
+      - 'bmw7series-gallery-1.jpg'
+      - 'bmw7series-gallery-2.jpg'
+      - 'bmw7series-gallery-3.jpg'
+      - 'bmw7series-gallery-4.jpg'

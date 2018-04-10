@@ -4,6 +4,10 @@ import { computed } from '@ember/object';
 export default Component.extend({
 	data: null,
 
+	isVectorImages: computed('data.images', function() {
+		return this.get('data.images.0').endsWith('.svg');
+	}),
+
 	images: computed('data.{images,defaults}', function() {
 		const defaults = this.get('data.defaults');
 		const imagesQty = this.get('data.images').length;

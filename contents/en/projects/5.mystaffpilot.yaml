@@ -4,6 +4,7 @@ meta:
   title: 'Plattform'
   id: 'mystaffpilot'
   span: 'Early 2014 to date'
+  hidden: true
 sections:
   -
     component: 'project-cover'
@@ -11,6 +12,7 @@ sections:
     title: 'MyStaffPilot Platform and Office'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Assignment</h3>
 

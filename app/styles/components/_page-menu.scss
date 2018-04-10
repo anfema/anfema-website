@@ -31,7 +31,7 @@
 			0 5px 20px 0 rgba(49, 41, 51, 0.15);
 		transition: box-shadow 0.5s ease-out, background 0.25s ease-in;
 
-		@include media-large-min {
+		@include media-medium-min {
 			margin: 1rem 2.8rem;
 			padding: 0.5rem 2rem 0.5rem 1rem;
 		}

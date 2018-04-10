@@ -9,7 +9,7 @@
 
 	@include media-large-min {
 		height: calc(100vh - 2rem);
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 

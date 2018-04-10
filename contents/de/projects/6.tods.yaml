@@ -7,10 +7,11 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/tods/cover-large.jpg'
+    img: 'tods-cover.jpg'
     title: 'TOD’S Schuh-Konfigurator'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Aufgabe</h3>
 
@@ -23,7 +24,7 @@ sections:
       Verkaufsklima zu schaffen.</p>
   -
       component: 'content-quote'
-      source: 'Sebastian André Borowski, Program Manager, Dassault Systèmes 3DEXCITE, unser Partner im TOD’s Projekt'
+      source: 'Sebastian André Borowski, Program Manager<br>Dassault Systèmes 3DEXCITE, unser Partner im TOD’S Projekt'
       content: |
         <p>Ich möchte die Gelegenheit gerne dazu nutzen, jedem einzelnen von euch zu gratulieren und zu danken für
         eure geistige Arbeit, die Mühe und allem Voran eure unbezahlbare Coolness, d.h. eure Geduld und kontinuierliche
@@ -33,7 +34,7 @@ sections:
     content: |
       <h3>Herausforderung</h3>
 
-      <p>Die Herausforderung bei diesem Projekt war es, eine speicherplatzsparend und dennoch performante Lösung zu
+      <p>Die Herausforderung bei diesem Projekt war es, eine speicherplatzsparende und dennoch performante Lösung zu
       entwickeln, die die rund 16 Millionen unterschiedlichen Schuh-Konfigurationen in einer App abbilden kann.
       Zusätzlich müssen die Inhalte auch ohne bestehende Internetverbindung verfügbar sein, sodass Schuhe offline
       konfiguriert und bestellt werden können.</p>
@@ -41,9 +42,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/tods/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/triptych-2-large.jpg'
+      - 'tods-triptych-3.jpg'
+      - 'tods-triptych-1.jpg'
+      - 'tods-triptych-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -61,10 +62,10 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-4-large.jpg'
+      - 'tods-gallery-1.jpg'
+      - 'tods-gallery-2.jpg'
+      - 'tods-gallery-3.jpg'
+      - 'tods-gallery-4.jpg'
   -
     component: 'project-text'
     content: |

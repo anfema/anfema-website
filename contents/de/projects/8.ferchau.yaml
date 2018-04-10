@@ -7,10 +7,11 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/ferchau/cover-large.jpg'
+    img: 'ferchau-cover.jpg'
     title: 'Ferchau Augmented Reality'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Aufgabe</h3>
 
@@ -22,7 +23,7 @@ sections:
       und Produktwelt von FERCHAU und informiert interaktiv über die Bereiche, in denen die Firma aktiv ist.</p>
   -
     component: 'content-quote'
-    source: 'Martin Spengler, Creative Technologist, LAB BINÆR GBR, Partner im Projekt Ferchau'
+    source: 'Martin Spengler, Creative Technologist<br>LAB BINÆR GBR, unser Partner im Ferchau Projekt'
     content: |
       <p>Wir schätzen sehr, dass ihr mega Cracks seid und bauen unsere Konzepte voll auf euer Know-how auf.</p>
   -
@@ -39,8 +40,8 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/gallery-2-large.jpg'
+      - 'ferchau-gallery-1.jpg'
+      - 'ferchau-gallery-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -55,16 +56,16 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/triptych-2-large.jpg'
+      - 'ferchau-triptych-3.jpg'
+      - 'ferchau-triptych-1.jpg'
+      - 'ferchau-triptych-2.jpg'
   -
     component: 'project-text'
     content: |
       <h3>Technologie</h3>
 
-      <p>Um ein möglichst breites Publikum zu bedienen, wurde die FERCHAU App nativ sowohl in Swift für iOs (universell
-      für iPhones, iPads und iPod Touch), als auch für Android Phones und Tablets entwickelt, Die Game Engine Unity3D
+      <p>Um ein möglichst breites Publikum zu bedienen, wurde die FERCHAU App nativ sowohl in Swift für iOS (universell
+      für iPhones, iPads und iPod Touch), als auch für Android Phones und Tablets entwickelt. Die Game Engine Unity3D
       bildet zusammen mit dem AR-SDK Vuforia die Basis der Applikation. Als internationaler Branchenführer bietet
       Unity3D optimiertes Shading und leistungsstarkes Rendering. Damit ermöglicht es die Konstruktion von
       realitätsnahen Animationen, und deren Einbettung in die reale Welt in Echtzeit.</p>
@@ -74,4 +75,4 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/technology-large.jpg'
+      - 'ferchau-technology.jpg'

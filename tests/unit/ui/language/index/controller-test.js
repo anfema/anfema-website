@@ -4,7 +4,7 @@ import { setupTest } from 'ember-mocha';
 
 describe('Unit | Controller | language/index', function() {
 	setupTest('controller:language/index', {
-		needs: ['service:staticContent'],
+		needs: ['service:staticContent', 'service:win'],
 	});
 
 	// Replace this with your real tests.

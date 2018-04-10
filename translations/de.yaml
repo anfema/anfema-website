@@ -29,3 +29,27 @@ component:
       apply: 'Bewerben'
   project-detail:
     title: 'anfema Projekte'
+  page-footer:
+    offices:
+      munich:
+        title: Zentrale München
+        street: Seitzstr. 16
+        postal: '80538'
+        city: München
+        country: Deutschland
+      augsburg:
+        title: Zweigstelle Augsburg
+        street: Bahnhofstr. 10
+        postal: '86150'
+        city: Augsburg
+        country: Deutschland
+    email: kontakt@anfe.ma
+    phone:
+      label: Telefon
+      value: +49 89 55269932
+    fax:
+      label: Fax
+      value: +49 89 55269933
+    imprint: Impressum
+
+

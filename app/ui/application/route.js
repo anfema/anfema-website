@@ -4,16 +4,31 @@ import config from 'anfema/config/environment';
 
 export default Route.extend({
 	intl: service(),
+	fastboot: service(),
 
 	beforeModel(transition) {
 		const intl = this.get('intl');
-		const defaultLang = config.i18n.defaultLocale;
+		let defaultLang = config.i18n.defaultLocale;
+		let userLang = 'en';
+
+		if (!this.get('fastboot.isFastBoot')) {
+			defaultLang = config.i18n.defaultLocale;
+		} else {
+			const headers = this.get('fastboot.request.headers');
+			const browserLang = headers.get('accept-language');
+
+			if (browserLang.match(/de/)) {
+				userLang = browserLang;
+			} else {
+				userLang = 'en';
+			}
+		}
 
 		// redirect to en index route
 		if (!transition.params.language || !transition.params.language.language_id) {
-			this.transitionTo('language', defaultLang);
+			this.transitionTo('language', userLang);
 
-			return intl.setLocale(defaultLang);
+			return userLang;
 		}
 		const paramLanguage = transition.params.language.language_id;
 		const availableLanguages = this.get('intl.locales');

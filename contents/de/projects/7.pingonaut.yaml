@@ -7,10 +7,11 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/pingonaut/cover-large.jpg'
+    img: 'pingonaut-cover.jpg'
     title: 'Pingonaut KidsWatch Plattform und Apps'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Aufgabe</h3>
 
@@ -27,10 +28,10 @@ sections:
       useAlternateColor: true
       title: 'Custom Icon Set'
       icons:
-        - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-1.svg'
-        - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-2.svg'
-        - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-3.svg'
-        - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-4.svg'
+        - 'pingonaut-kids-icon-1.svg'
+        - 'pingonaut-kids-icon-2.svg'
+        - 'pingonaut-kids-icon-3.svg'
+        - 'pingonaut-kids-icon-4.svg'
       text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden
       speziell für diese App Icons gestaltet.'
   -
@@ -55,18 +56,18 @@ sections:
       width: 400
       height: 600
     images:
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-4-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/gallery-5-large.jpg'
+      - 'pingonaut-gallery-1.jpg'
+      - 'pingonaut-gallery-2.jpg'
+      - 'pingonaut-gallery-3.jpg'
+      - 'pingonaut-gallery-4.jpg'
+      - 'pingonaut-gallery-5.jpg'
   -
     component: 'project-text'
     content: |
       <h3>Lösung</h3>
 
       <p>Maßgebend für den Projekterfolg waren die hohe Anpassungsfähigkeit, das breite Wissensspektrum und die
-      hervorragenden analytischen Fähigkeiten unseres gesamten Teams.Als Antwort auf das ungewisse Marktvolumen
+      hervorragenden analytischen Fähigkeiten unseres gesamten Teams. Als Antwort auf das ungewisse Marktvolumen
       bei Markteinführung der Kidswatch setzte anfema auf ein Serversystem, das sich horizontal skalieren und somit
       problemlos erweitern lässt. Darüber hinaus wurde das Server Deployment komplett automatisiert, sodass das
       System auf beliebig vielen Servern ausgerollt werden kann. Durch intensive Recherche der Spezifikationen
@@ -76,7 +77,7 @@ sections:
       deutschem Recht folgt.</p>
   -
     component: 'content-quote'
-    source: 'Stefan Hampel, Geschäftsführer Vertrieb, Lokato GmbH'
+    source: 'Stefan Hampel, Geschäftsführer Vertrieb<br>Lokato GmbH'
     content: |
       <p>Ohne anfema würde es die Kidswatch nicht geben! anfema hat ein bis ins Detail durchdachtes Konzept geschaffen
       und eine Plattform entwickelt, die keine Fragen offen lässt und alle Erwartungen übertrifft. Mit gigantischem
@@ -86,9 +87,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/triptych-2-large.jpg'
+      - 'pingonaut-triptych-3.jpg'
+      - 'pingonaut-triptych-1.jpg'
+      - 'pingonaut-triptych-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -106,4 +107,4 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/pingonaut/illustrations.svg'
+      - 'pingonaut-illustrations.svg'

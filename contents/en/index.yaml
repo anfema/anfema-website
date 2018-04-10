@@ -116,6 +116,7 @@ sections:
     reasons:
       -
         id: 'great-team'
+        pagination: '#1'
         title: 'A Great Team'
         shortTitle: 'Great Team'
         text: |
@@ -125,6 +126,7 @@ sections:
           everyday office life.
       -
         id: 'innovative-projects'
+        pagination: '#2'
         title: 'Innovative Projects and the Most Recent Technologies'
         shortTitle: 'Projects & Technologies'
         text: |
@@ -134,6 +136,7 @@ sections:
           most recent technologies.
       -
         id: 'structures-and-potential'
+        pagination: '#3'
         title: 'Agile Structures and Potential for Development'
         shortTitle: 'Agile Structures & Learning'
         text: |
@@ -144,6 +147,7 @@ sections:
           acquisition of skills or your personal and professional development.
       -
         id: 'location-and-culture'
+        pagination: '#4'
         title: 'Superb Location and Company Culture '
         shortTitle: 'Location & Culture '
         text: |
@@ -153,27 +157,27 @@ sections:
 
   -
     component: 'job-advertisements'
-    jobs:
-      -
-        title: 'Student Intern Android Development (f/m/*)'
-        description: 'Starting 2018'
-        detailsLink: '#'
-        team: 'android'
+    # jobs:
+    #   -
+    #     title: 'Student Intern Android Development (f/m/*)'
+    #     description: 'Starting 2018'
+    #     detailsLink: '#'
+    #     team: 'android'
 
-      -
-        title: 'Student Intern iOS Development (f/m/*)'
-        description: 'Starting 2018'
-        detailsLink: '#'
-        team: 'ios'
+    #   -
+    #     title: 'Student Intern iOS Development (f/m/*)'
+    #     description: 'Starting 2018'
+    #     detailsLink: '#'
+    #     team: 'ios'
 
-      -
-        title: 'Senior Python Developer (f/m/*)'
-        description: 'Starting 2018'
-        detailsLink: '#'
-        team: 'python'
+    #   -
+    #     title: 'Senior Python Developer (f/m/*)'
+    #     description: 'Starting 2018'
+    #     detailsLink: '#'
+    #     team: 'python'
 
-      -
-        title: 'Office Manager (f/m/*)'
-        description: 'Starting 2018'
-        detailsLink: '#'
-        team: 'office'
+    #   -
+    #     title: 'Office Manager (f/m/*)'
+    #     description: 'Starting 2018'
+    #     detailsLink: '#'
+    #     team: 'office'
