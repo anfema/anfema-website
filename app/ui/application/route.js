@@ -14,8 +14,8 @@ export default Route.extend({
 		if (!this.get('fastboot.isFastBoot')) {
 			defaultLang = config.i18n.defaultLocale;
 		} else {
-			const browserLang = this.get('fastboot.request.headers.accept-language');
-			//console.log('browserLang: ', browserLang);
+			const headers = this.get('fastboot.request.headers');
+			const browserLang = headers.get('accept-language');
 
 			if (browserLang.match(/de/)) {
 				userLang = browserLang;
