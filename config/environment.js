@@ -28,10 +28,6 @@ module.exports = function(environment) {
 			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/],
 		},
 
-		i18n: {
-			defaultLocale: 'de',
-		},
-
 		pageTitle: {
 			separator: ' - ',
 			prepend: true,

@@ -1,44 +1,71 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
-import config from 'anfema/config/environment';
+import { get } from '@ember/object';
 
 export default Route.extend({
 	intl: service(),
 	fastboot: service(),
 
-	beforeModel(transition) {
-		const intl = this.get('intl');
-		let defaultLang = config.i18n.defaultLocale;
-		let userLang = 'en';
+	async beforeModel(transition) {
+		const locales = this.get('intl.locales');
+		const defaultLocale = locales[0];
+
+		let expectedLocale = this._guessLocale(
+			get(transition, 'params.language.language_id'),
+			locales,
+			defaultLocale
+		);
+
+		// Bail if our guess does return an unknown locale
+		if (!locales.includes(expectedLocale)) {
+			this.transitionTo('language', defaultLocale);
+
+			expectedLocale = defaultLocale;
+		}
+
+		await this.intl.setLocale(expectedLocale);
+	},
+
+	_guessLocale(expectedLocale, locales, defaultLocale) {
+		if (expectedLocale && expectedLocale !== 'undefined') {
+			return expectedLocale;
+		}
+
+		if (this.get('fastboot.isFastBoot')) {
+			const headers = this.get('fastboot.request.headers');
+			const acceptLanguage = headers.get('accept-language'); // this is not Ember.get!
+
+			// Bail if headers is empty
+			if (!acceptLanguage) {
+				return defaultLocale;
+			}
+
+			// spreading a set of the values found in the string to extract unique entries
+			const acceptedLanguages = [
+				...new Set(
+					acceptLanguage
+						.split(/,\s?/) // 'accept-language' is a comma separated list
+						.map(lang => lang.substr(0, 2)) // we only care for the 2 letter identifier, not the weight
+				),
+			];
+
+			return acceptedLanguages[0];
+		}
 
 		if (!this.get('fastboot.isFastBoot')) {
-			defaultLang = config.i18n.defaultLocale;
-		} else {
-			const headers = this.get('fastboot.request.headers');
-			const browserLang = headers.get('accept-language');
-
-			if (browserLang.match(/de/)) {
-				userLang = browserLang;
-			} else {
-				userLang = 'en';
-			}
+			return this._guessBrowserLocale();
 		}
 
-		// redirect to en index route
-		if (!transition.params.language || !transition.params.language.language_id) {
-			this.transitionTo('language', userLang);
+		return defaultLocale;
+	},
 
-			return userLang;
-		}
-		const paramLanguage = transition.params.language.language_id;
-		const availableLanguages = this.get('intl.locales');
+	_guessBrowserLocale() {
+		const browserLanguage = (
+			window.navigator.language ||
+			(window.navigator.languages && window.navigator.languages[0]) ||
+			''
+		).substr(0, 2);
 
-		if (!availableLanguages.includes(paramLanguage)) {
-			this.transitionTo('language', defaultLang);
-
-			return intl.setLocale(defaultLang);
-		}
-
-		return intl.setLocale(transition.params.language.language_id);
+		return browserLanguage;
 	},
 });
