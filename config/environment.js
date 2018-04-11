@@ -46,6 +46,11 @@ module.exports = function(environment) {
 			removeSourceDir: true,
 			justCopy: false,
 			extensions: ['jpg', 'jpeg', 'png', 'gif'],
+			lqip: {
+				type: 'inline',
+				width: 150,
+				quality: 50,
+			},
 		},
 	};
 
