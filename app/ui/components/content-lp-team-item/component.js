@@ -9,13 +9,13 @@ export default Component.extend({
 	// selected: null,
 
 	isActive: computed('data.id', 'selected', function() {
-		return this.get('data.id') === this.get('selected');
+		return this.get('data.id') === this.selected;
 	}),
 
 	didReceiveAttrs() {
 		this._setContentHeight();
 
-		if (!this.get('isActive')) {
+		if (!this.isActive) {
 			// Wait one tick, then call setContentHeight again, this time resetting the style
 			next(this, '_setContentHeight', null);
 		}
@@ -25,7 +25,7 @@ export default Component.extend({
 		this._content = this.element.querySelector('.content-lp-team-item__content');
 
 		this._contentTransitionEnd = () => {
-			if (this.get('isActive')) {
+			if (this.isActive) {
 				this._setContentHeight('auto');
 			}
 		};

@@ -9,7 +9,7 @@ export default Component.extend({
 
 	actions: {
 		scrollDown() {
-			this.get('win').scrollToAnimated(window.innerHeight * 0.9);
+			this.win.scrollToAnimated(window.innerHeight * 0.9);
 		},
 	},
 });

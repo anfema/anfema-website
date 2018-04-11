@@ -6,9 +6,8 @@ import { click /*, find, findAll */ } from 'ember-native-dom-helpers';
 
 describe('Acceptance | ui/index', function() {
 	let application;
-	const defaultLocale = 'de';
+	const defaultLocale = 'en';
 	const landingPage = `/${defaultLocale}`;
-	const userLang = 'hu';
 
 	beforeEach(function() {
 		application = startApp();
@@ -23,7 +22,8 @@ describe('Acceptance | ui/index', function() {
 
 		expect(currentURL()).to.not.equal('/');
 
-		if (userLang.match(/de/)) {
+		// TODO: This test is inconclusive - @f.pichler broke this
+		if (window.navigator.language.match(/de/)) {
 			expect(currentURL()).to.equal('/de');
 		} else {
 			expect(currentURL()).to.equal('/en');

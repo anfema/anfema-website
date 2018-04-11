@@ -23,7 +23,7 @@ export default Route.extend({
 			expectedLocale = defaultLocale;
 		}
 
-		await this.intl.setLocale(expectedLocale);
+		await this.get('intl').setLocale(expectedLocale);
 	},
 
 	_guessLocale(expectedLocale, locales, defaultLocale) {
