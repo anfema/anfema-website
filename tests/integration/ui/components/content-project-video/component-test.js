@@ -46,6 +46,6 @@ describe('Integration | Component | content project video', function() {
 		expect(find('.content-project-video__video').getAttribute('width')).to.equal('684');
 		expect(find('.content-project-video__video').getAttribute('height')).to.equal('513');
 		expect(find('source').getAttribute('type')).to.equal('video/mp4');
-		expect(find('source').getAttribute('src')).to.equal('/videos/' + 'path-to-video');
+		expect(find('source').getAttribute('src')).to.equal('/videos/path-to-video');
 	});
 });
