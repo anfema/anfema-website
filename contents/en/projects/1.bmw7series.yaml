@@ -60,13 +60,13 @@ sections:
     poster: 'bmw7series-video-preview.jpg'
     videos:
     -
-      path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.mp4'
+      path: 'bmw7series-video.mp4'
       type: 'mp4'
     -
-      path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.ogv'
+      path: 'bmw7series-video.ogv'
       type: 'ogv'
     -
-      path: 'https://www-static.anfe.ma/2017/projects/bmw7series/video.webm'
+      path: 'bmw7series-video.webm'
       type: 'webm'
   -
     component: 'project-text'
