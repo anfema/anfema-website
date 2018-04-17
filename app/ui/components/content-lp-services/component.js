@@ -14,7 +14,7 @@ export default Component.extend({
 			: this.data[0];
 	}),
 	_logoStep: computed('data.@each', 'selectedId', function() {
-		const currentService = this.get('data').find(service => service.id === this.selectedId);
+		const currentService = this.data.find(service => service.id === this.selectedId);
 
 		return currentService ? currentService.logoStep : 0;
 	}),
@@ -37,7 +37,7 @@ export default Component.extend({
 		},
 
 		itemSelected(slide) {
-			const oldIndex = this.data.findIndex(item => item === this.get('_selected'));
+			const oldIndex = this.data.findIndex(item => item === this._selected);
 			const newIndex = this.data.findIndex(item => item === slide);
 			const direction = oldIndex < newIndex ? 1 : -1;
 

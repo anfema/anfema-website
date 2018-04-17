@@ -42,7 +42,11 @@ CalibreWeb-Regular.eot
 CalibreWeb-Regular.woff
 
 # Images
-/public/projects
+/public/projects/*
+!/public/projects/test.png
+!/public/projects/test2.png
+!/public/projects/test3.png
+!/public/projects/test4.png
 
 # Deploy
 /.travis/id_rsa

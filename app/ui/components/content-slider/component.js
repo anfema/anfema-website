@@ -52,36 +52,36 @@ export default Component.extend({
 
 	/** @returns {number} */
 	_currentIndex: computed('data.@each', 'selected', function() {
-		const selected = this.get('selected');
+		const selected = this.selected;
 
-		return this.get('data').findIndex(data => data === selected);
+		return this.data.findIndex(data => data === selected);
 	}),
 
 	/** @returns {number} */
 	_logoStep: computed('data.@each', 'selected', function() {
-		return this.get('_currentSlide').logoStep;
+		return this._currentSlide.logoStep;
 	}),
 
 	/** @returns {boolean} */
 	_previousDisabled: computed('cycle', '_currentIndex', '_isTransitioning', function() {
-		const currentIndex = this.get('_currentIndex');
-		const cycle = this.get('cycle');
+		const currentIndex = this._currentIndex;
+		const cycle = this.cycle;
 
 		return this._isTransitioning || (!cycle && currentIndex === 0);
 	}),
 
 	/** @returns {boolean} */
 	_nextDisabled: computed('cycle', 'data', '_currentIndex', '_isTransitioning', function() {
-		const currentIndex = this.get('_currentIndex');
-		const data = this.get('data');
-		const cycle = this.get('cycle');
+		const currentIndex = this._currentIndex;
+		const data = this.data;
+		const cycle = this.cycle;
 
 		return this._isTransitioning || (!cycle && currentIndex === data.length - 1);
 	}),
 
 	/** @returns {object} */
 	_previousSlide: computed('cycle', 'data.@each', '_currentIndex', function() {
-		const currentIndex = this.get('_currentIndex');
+		const currentIndex = this._currentIndex;
 
 		return this.cycle || currentIndex > 0
 			? this.data[mod(currentIndex - 1, this.data.length)]
@@ -90,12 +90,12 @@ export default Component.extend({
 
 	/** @returns {object} */
 	_currentSlide: computed('data.@each', 'selected', function() {
-		return this.get('data').find(data => data === this.selected);
+		return this.data.find(data => data === this.selected);
 	}),
 
 	/** @returns {object} */
 	_nextSlide: computed('cycle', 'data.@each', '_currentIndex', function() {
-		const _currentIndex = this.get('_currentIndex');
+		const _currentIndex = this._currentIndex;
 
 		return this.cycle || _currentIndex < this.data.length - 1
 			? this.data[mod(_currentIndex + 1, this.data.length)]
@@ -242,8 +242,8 @@ export default Component.extend({
 
 	endDrag() {
 		if (this._dragStartPosition !== undefined) {
-			const offset = this.get('_dragOffset');
-			const currentIndex = this.get('_currentIndex');
+			const offset = this._dragOffset;
+			const currentIndex = this._currentIndex;
 			const sliderWidth = this.element.querySelector('.content-slider__slidewindow')
 				.clientWidth;
 
@@ -283,7 +283,7 @@ export default Component.extend({
 	},
 
 	transitionToPrevious() {
-		const currentIndex = this.get('_currentIndex');
+		const currentIndex = this._currentIndex;
 		const prevSlide = this.data[mod(currentIndex - 1, this.data.length)];
 
 		if (this.onPrevious) {
@@ -294,7 +294,7 @@ export default Component.extend({
 	},
 
 	transitionToNext() {
-		const currentIndex = this.get('_currentIndex');
+		const currentIndex = this._currentIndex;
 		const nextSlide = this.data[mod(currentIndex + 1, this.data.length)];
 
 		if (this.onPrevious) {

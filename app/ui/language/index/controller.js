@@ -57,7 +57,7 @@ export default Controller.extend({
 		scrollToSection(event) {
 			event.preventDefault();
 
-			this.get('win').scrollToAnimated(
+			this.win.scrollToAnimated(
 				window.pageYOffset +
 					document.querySelector(event.target.hash).getBoundingClientRect().top
 			);

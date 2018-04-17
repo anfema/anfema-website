@@ -10,9 +10,11 @@ module.exports = function(defaults) {
 			extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'woff', 'woff2', 'eot'],
 			replaceExtensions: ['html', 'css', 'js', 'xml'],
 		},
+
 		'ember-cli-uglify': {
 			exclude: ['contents/fastboot-data.js'],
 		},
+
 		postcssOptions: {
 			compile: {
 				enabled: false,
