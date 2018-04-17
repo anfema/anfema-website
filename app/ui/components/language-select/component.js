@@ -1,11 +1,11 @@
 import Component from '@ember/component';
 import { inject as service } from '@ember/service';
-import { computed } from '@ember/object';
+import { computed, get } from '@ember/object';
 
 // Replaces the language code in the current url with target language.
 // Assumes that url contains language code between the first two slashes.
 export function generateLangUrl(router, targetLang) {
-	const currentUrl = router._router.currentURL;
+	const currentUrl = get(router, '_router.currentURL');
 
 	return currentUrl.replace(/^\/(?:(?!\/).)*/g, `/${targetLang}`);
 }

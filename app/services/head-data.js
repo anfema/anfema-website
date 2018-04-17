@@ -9,10 +9,10 @@ export default Service.extend({
 			return;
 		}
 
-		this.get('inlineStyles').addObject(style);
+		this.inlineStyles.addObject(style);
 	},
 
 	removeInlineStyle(style) {
-		this.get('inlineStyles').removeObject(style);
+		this.inlineStyles.removeObject(style);
 	},
 });

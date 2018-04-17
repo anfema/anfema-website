@@ -5,10 +5,10 @@ export default Service.extend({
 	classNames: A(),
 
 	addClass(className) {
-		this.get('classNames').addObject(className);
+		this.classNames.addObject(className);
 	},
 
 	removeClass(className) {
-		this.get('classNames').removeObject(className);
+		this.classNames.removeObject(className);
 	},
 });

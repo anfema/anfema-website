@@ -33,6 +33,10 @@ describe('Integration | Component | content project gallery', function() {
 		expect(findAll('.content-project-gallery__image--landscape-default')).to.have.lengthOf(
 			data.images.length
 		);
+
+		// expect(
+		// 	findAll('.content-project-gallery__image--landscape-default')[0].getAttribute('src')
+		// ).to.contain('data:image/png;base64');
 		expect(
 			findAll('.content-project-gallery__image--landscape-default')[0].getAttribute('src')
 		).to.contain('/img/projects/test');

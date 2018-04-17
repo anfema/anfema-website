@@ -48,6 +48,9 @@ describe('Integration | Component | content project triptych', function() {
 		// 		template content
 		// 	{{/content-project-triptych}}
 		// `);
+		// expect(findAll('.content-project-triptych__side-img-1')[0].getAttribute('src')).to.contain(
+		// 	'data:image/png;base64'
+		// );
 		expect(findAll('.content-project-triptych__side-img-1')[0].getAttribute('src')).to.contain(
 			'/img/projects/test'
 		);

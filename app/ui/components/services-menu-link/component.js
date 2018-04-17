@@ -31,15 +31,15 @@ export default Component.extend({
 		const router = this.get('router');
 
 		return router.urlFor(router.get('currentRouteName'), {
-			queryParams: this.get('queryParams'),
+			queryParams: this.queryParams,
 		});
 	}),
 
 	click(event) {
-		if (this.get('onClick')) {
+		if (this.onClick) {
 			event.preventDefault();
 
-			this.get('onClick')(event);
+			this.onClick(event);
 		}
 	},
 
@@ -53,8 +53,8 @@ export default Component.extend({
 		// is merged
 		const isActive =
 			(currentQueryParams.service &&
-				currentQueryParams.service === this.get('queryParams').service) ||
-			(this.get('queryParams').service === 'concept' && !currentQueryParams.service);
+				currentQueryParams.service === this.queryParams.service) ||
+			(this.queryParams.service === 'concept' && !currentQueryParams.service);
 
 		// const isActive = router.isActive(router.get('currentRouteName'), {
 		// 	queryParams: this.get('queryParams')

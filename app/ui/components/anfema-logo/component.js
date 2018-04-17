@@ -20,12 +20,12 @@ export default Component.extend({
 
 	didReceiveAttrs() {
 		if (this._logo) {
-			this._logo.startToStep(this.get('step'), StepDirection.Shortest);
+			this._logo.startToStep(this.step, StepDirection.Shortest);
 		}
 	},
 
 	didInsertElement() {
-		this._logo = new AnfemaLogo(this.get('element'), this.options).reset(this.step);
+		this._logo = new AnfemaLogo(this.element, this.options).reset(this.step);
 
 		// TODO use ResizeObserver when they are available
 		window.addEventListener('resize', this.onResize);

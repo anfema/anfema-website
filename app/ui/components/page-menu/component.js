@@ -9,7 +9,7 @@ export default Component.extend({
 	forceOpaque: false,
 
 	isTransparent: computed('scrollTop', 'forceOpaque', function() {
-		return !this.forceOpaque && this.get('scrollTop') === 0;
+		return !this.forceOpaque && this.scrollTop === 0;
 	}),
 
 	willInsertElement() {
