@@ -8,7 +8,7 @@ sections:
   -
     component: 'project-cover'
     img: 'https://www-static.anfe.ma/2017/projects/pingonaut/cover-large.jpg'
-    title: 'Pingonaut KidsWatch Plattform und Apps'
+    title: 'Pingonaut KidsWatch Plattform and Apps'
   -
     component: 'project-text'
     content: |
@@ -30,8 +30,7 @@ sections:
       - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-2.svg'
       - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-3.svg'
       - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-4.svg'
-    text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden
-    speziell für diese App Icons gestaltet.'
+    text: 'The app's custom icons are designed to reflect the users' playful character.'
   -
     component: 'project-text'
     content: |
@@ -72,7 +71,7 @@ sections:
       data privacy of German law.</p>
   -
     component: 'content-quote'
-    source: 'Stefan Hampel, Chief Operating Officer, Lokato GmbH'
+    source: 'Stefan Hampel, Chief Operating Officer<br>Lokato GmbH'
     content: |
       <p>If it wasn’t for anfema, there wouldn’t be a Kidswatch. The concept they created is thought through right
       down to the last detail, the platform they developed doesn’t leave a single question unanswered and exceeds
