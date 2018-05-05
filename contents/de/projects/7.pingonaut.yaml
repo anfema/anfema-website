@@ -31,8 +31,7 @@ sections:
         - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-2.svg'
         - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-3.svg'
         - 'https://www-static.anfe.ma/2017/projects/pingonaut/pingonaut-kids-4.svg'
-      text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden
-      speziell für diese App Icons gestaltet.'
+      text: 'Die speziell für die App entworfenen Icons spiegeln den verspielten Charakter der Kids wider.'
   -
     component: 'project-text'
     content: |
