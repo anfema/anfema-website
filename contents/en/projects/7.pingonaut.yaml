@@ -89,9 +89,9 @@ sections:
     content: |
       <h3>Technology</h3>
 
-      <p>The Pingonaut Kids app was developed in native code for both iOS and Android. It’s backend PostgreSQL database
+      <p>The Pingonaut Kids app was developed in native code for both iOS and Android. Its backend PostgreSQL database
       simultaneously serves as the micro services’ message broker. An inexpensive alternative to GoogleMaps, Mapbox
-      provides a learning API which uses both radio cells and WLANs for positioning.Node.js simultaneously and steadily
+      provides a learning API which uses both radio cells and WLANs for positioning. Node.js simultaneously and steadily
       maintains numerous (all or part idle) connections without blocking.</p>
   -
     component: 'content-project-gallery'
