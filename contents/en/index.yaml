@@ -28,9 +28,9 @@ sections:
   -
     component: 'content-quote'
     content: |
-      anfema know what they do, how to do it, and they do it damn fast. One of the best partners in App
+      anfema know what they do, how to do it, and they do it damn fast. One of the best partners in app
       development I’ve ever seen.
-    source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+    source: Dominik Mandl, Online Marketing Manager<br>Knauf AMF GmbH & Co. KG
     projectId: knauf
 
   -
@@ -147,8 +147,7 @@ sections:
         title: 'Superb Location and Company Culture '
         shortTitle: 'Location & Culture '
         text: |
-          Both of our offices are centrally located in the promising and lively cities of Munich and Augsburg.
-          This makes for a short commute and adds to a great work-life-balance. In combination with flexible work
+          Both of our offices are centrally located in the promising and lively cities of Munich and Augsburg. A short commute adds to a great work-life-balance. In combination with flexible work
           hours, comfortable offices, and drinks provided free of charge, this makes for an enjoyable work climate.
 
   -
