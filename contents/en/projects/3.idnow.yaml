@@ -24,7 +24,7 @@ sections:
       - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-2.svg'
       - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-3.svg'
       - 'https://www-static.anfe.ma/2017/projects/idnow/i-dnow-4.svg'
-    text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
+    text: 'Custom design of an explicit visual language for emphasis of the company's innovative character.'
   -
     component: 'project-text'
     content: |
@@ -47,7 +47,7 @@ sections:
   -
     component: 'content-quote'
     source: |
-      Sebastian Bärhold, Managing Director & Co-Founder, IDnow GmbH
+      Sebastian Bärhold, Managing Director & Co-Founder<br>IDnow GmbH
     content: |
       <p>anfema’s solution impresses with utmost usability. Your team understood exactly what we, the agents and the users needed, implemented it purposefully, and thereby made an essential contribution to our idea’s realisation and efficiency.</p>
   -
