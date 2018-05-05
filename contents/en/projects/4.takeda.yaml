@@ -40,6 +40,6 @@ sections:
   -
     component: 'content-quote'
     source: |
-      Meni Styliadou, Vice President, Head of Government Affairs and Public Policy Europe & Canada, Takeda Pharmaceuticals International AG
+      Meni Styliadou, Vice President<br>Head of Government Affairs and Public Policy Europe & Canada, Takeda Pharmaceuticals International AG
     content: |
       <p>anfema’s professionalism and competencies allowed us to leave the entire development process to them. Excelling at every stage from design to deployment, they developed a system that fits our needs without exception. Simply superb!</p>
