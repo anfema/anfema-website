@@ -14,7 +14,7 @@ sections:
     content: |
       <h3>Assignment</h3>
 
-      <p>Knauf AMF is one of the leading manufacturers of innovative ceiling systems worldwide. For an adequate presentation of their wide range of customised and extraordinary system solutions, anfema designed a universal application for tablets and phones, developed in native code for both Android and iOs. Elaborate photographs illustrate impressive architectural projects that were realised in cooperation with Knauf AMF across diverse industries. One of the app’s particularly characteristic features, the 360 degree view, provides the user with an exceptional and comprehensive spatial perception.</p>
+      <p>Knauf AMF is one of the leading manufacturers of innovative ceiling systems worldwide. For an adequate presentation of their wide range of customised and extraordinary system solutions, anfema designed a universal application for tablets and phones, developed in native code for both Android and iOS. Elaborate photographs illustrate impressive architectural projects that were realised in cooperation with Knauf AMF across diverse industries. One of the app’s particularly characteristic features, the 360 degree view, provides the user with an exceptional and comprehensive spatial perception.</p>
   -
     component: 'content-project-triptych'
     useAlternateColor: true
@@ -44,7 +44,7 @@ sections:
   -
     component: 'content-quote'
     source: |
-      Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+      Dominik Mandl, Online Marketing Manager<br>Knauf AMF GmbH & Co. KG
     content: |
       <p>anfema know what they do, how to do it, and they do it damn fast. One of the best partners in app development I’ve ever seen.</p>
   -
