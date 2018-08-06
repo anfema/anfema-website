@@ -1,32 +1,17 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-describe('Integration | Component | page overlay', function() {
-	setupComponentTest('page-overlay', {
-		integration: true,
-	});
+module('Integration | Component | page-overlay', function(hooks) {
+	setupRenderingTest(hooks);
 
-	beforeEach(function() {
-		if (document !== 'undefined') {
-			const foo = document.createElement('div');
+	test('it renders', async function(assert) {
+		// Set any properties with this.set('myProperty', 'value');
+		// Handle any actions with this.set('myAction', function(val) { ... });
 
-			foo.id = 'foo';
+		await render(hbs`{{page-overlay}}`);
 
-			document.body.appendChild(foo);
-		}
-	});
-
-	afterEach(function() {
-		document.getElementById('foo').remove();
-	});
-
-	it('renders', function() {
-		this.container.lookup('service:page-overlay').set('destinationElementId', 'foo');
-
-		this.render(hbs`{{page-overlay}}`);
-
-		expect(find()).to.exist;
+		assert.dom('.page-overlay').exists();
 	});
 });

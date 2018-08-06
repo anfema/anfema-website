@@ -1,16 +1,14 @@
-{
-	"bracketSpacing": true,
-	"jsxBracketSameLine": false,
-	"printWidth": 120,
-	"semi": true,
-	"singleQuote": true,
-	"tabWidth": 4,
-	"trailingComma": "es5",
-	"useTabs": true,
-	"overrides": [
-		{
-			"files": "{.prettierrc,.watchmanconfig,.ember-cli}",
-			"options": { "parser": "json" }
-		}
-	]
-}
+---
+bracketSpacing: true
+jsxBracketSameLine: false
+printWidth: 120
+semi: true
+singleQuote: true
+tabWidth: 4
+trailingComma: es5
+useTabs: true
+overrides:
+- files: "{.watchmanconfig,.ember-cli}"
+  options:
+    parser: json
+

@@ -1,73 +1,26 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { find } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | content quote', function() {
-	setupComponentTest('content-quote', {
-		integration: true,
-	});
+module('Integration | Component | content-quote', function(hooks) {
+	setupRenderingTest(hooks);
 
-	const data = {
-		content: 'text',
-		source: 'source',
-		projectId: 'projectId',
-		projectLinkLabel: 'projectLinkLabel',
-	};
+	test('it renders', async function(assert) {
+		// Set any properties with this.set('myProperty', 'value');
+		// Handle any actions with this.set('myAction', function(val) { ... });
 
-	const dataWithNoLink = {
-		content: 'text',
-		source: 'source',
-	};
+		await render(hbs`{{content-quote}}`);
 
-	const dataWithNoCustomLinkLabel = {
-		content: 'text',
-		source: 'source',
-		projectId: 'projectId',
-	};
+		assert.equal(this.element.textContent.trim(), '');
 
-	beforeEach(function() {
-		this.set('data', data);
-		this.set('dataWithNoLink', dataWithNoLink);
-		this.set('dataWithNoCustomLinkLabel', dataWithNoCustomLinkLabel);
+		// Template block usage:
+		await render(hbs`
+      {{#content-quote}}
+        template block text
+      {{/content-quote}}
+    `);
 
-		this.container.lookup('service:intl').setLocale('de');
-	});
-
-	it('Renders quote content', async function() {
-		await this.render(hbs`{{content-quote data=data}}`);
-
-		expect(find('.content-quote__text')).to.exist;
-		expect(find('.content-quote__text').innerText.trim()).to.equal(data.content);
-	});
-
-	it('Renders quote-source', async function() {
-		await this.render(hbs`{{content-quote data=data}}`);
-
-		expect(find('.content-quote__source')).to.exist;
-		expect(find('.content-quote__source').innerText.trim()).to.equal(data.source);
-	});
-
-	it('Renders no project link if no id given', async function() {
-		await this.render(hbs`{{content-quote data=dataWithNoLink}}`);
-
-		expect(find('.content-quote__project')).to.not.exist;
-	});
-
-	it('Renders project link with custom text', async function() {
-		await this.render(hbs`{{content-quote data=data}}`);
-
-		expect(find('.content-quote__project')).to.exist;
-		expect(find('.content-quote__project').innerText.trim()).to.equal(data.projectLinkLabel);
-	});
-
-	it('Renders project link with default text', async function() {
-		await this.render(hbs`{{content-quote data=dataWithNoCustomLinkLabel}}`);
-
-		expect(find('.content-quote__project')).to.exist;
-		expect(find('.content-quote__project').innerText.trim()).to.match(
-			/component\.content-quote\.action\.showProject/
-		);
+		assert.equal(this.element.textContent.trim(), 'template block text');
 	});
 });

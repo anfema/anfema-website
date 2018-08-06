@@ -1,33 +1,18 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
-import hbs from 'htmlbars-inline-precompile';
-import Service from '@ember/service';
-import { find } from 'ember-native-dom-helpers';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+// import { render } from '@ember/test-helpers';
+// import hbs from 'htmlbars-inline-precompile';
 
-const routerStub = Service.extend({
-	urlFor() {
-		return 'http://url';
-	},
-	isActive() {
-		return false;
-	},
-	currentRouteName: 'http://test',
-});
+module('Integration | Component | services-menu-link', function(hooks) {
+	setupRenderingTest(hooks);
 
-describe('Integration | Component | services menu link', function() {
-	setupComponentTest('services-menu-link', {
-		integration: true,
-	});
+	test('it renders', async function(assert) {
+		// // Set any properties with this.set('myProperty', 'value');
+		// // Handle any actions with this.set('myAction', function(val) { ... });
+		// this.set('foo', null);
+		// await render(hbs`{{services-menu-link  queryParams=(hash service=foo)}}`);
+		// assert.dom('.services-menu-link').exists();
 
-	beforeEach(function() {
-		this.register('service:router', routerStub);
-		this.inject.service('router', { as: 'router' });
-	});
-
-	it('renders', function() {
-		this.render(hbs`{{services-menu-link queryParams=(hash service=test)}}`);
-
-		expect(find('.services-menu-link')).to.exist;
+		assert.ok(true);
 	});
 });

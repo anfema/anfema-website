@@ -28,12 +28,6 @@ module.exports = function(environment) {
 			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/],
 		},
 
-		pageTitle: {
-			separator: ' - ',
-			prepend: true,
-			replace: false,
-		},
-
 		'responsive-image': {
 			sourceDir: 'projects',
 			destinationDir: 'img/projects',
@@ -67,6 +61,7 @@ module.exports = function(environment) {
 		ENV.APP.LOG_VIEW_LOOKUPS = false;
 
 		ENV.APP.rootElement = '#ember-testing';
+		ENV.APP.autoboot = false;
 	}
 
 	if (environment === 'production') {

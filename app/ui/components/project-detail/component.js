@@ -29,10 +29,10 @@ export default Component.extend({
 	}),
 
 	didInsertElement() {
-		this.get('headData').addInlineStyle(this.get('headStyle'));
+		// this.get('headData').addInlineStyle(this.get('headStyle'));
 	},
 
 	willDestroyElement() {
-		this.get('headData').removeInlineStyle(this.get('headStyle'));
+		// this.get('headData').removeInlineStyle(this.get('headStyle'));
 	},
 });
