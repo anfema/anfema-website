@@ -7,11 +7,11 @@
 </cite>
 
 {{#if data.projectId}}
-	{{#link-to 'projects.detail' data.projectId class='content-quote__project'}}
+	{{#link-to "projects.detail" data.projectId class="content-quote__project"}}
 		{{#if data.projectLinkLabel}}
 			{{data.projectLinkLabel}}
 		{{else}}
-			{{t 'component.content-quote.action.showProject'}}
+			{{t "component.content-quote.action.showProject"}}
 		{{/if}}
 	{{/link-to}}
 {{/if}}

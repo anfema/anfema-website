@@ -1,13 +1,13 @@
 {{#page-menu startTransparent=true}}
 	<ul class="page-menu__lp-jump">
 		{{#each jumpSections as |section|}}
-			<li><a href="#{{section.anchorId}}" onclick={{action 'scrollToSection'}}>{{section.anchorLabel}}</a></li>
+			<li><a href="#{{section.anchorId}}" onclick={{action "scrollToSection"}}>{{section.anchorLabel}}</a></li>
 		{{/each}}
 	</ul>
 
 	<ul>
 		<li>
-			{{#link-to 'projects'}}{{t 'index.nav.projects'}}{{/link-to}}
+			{{#link-to "projects"}}{{t "index.nav.projects"}}{{/link-to}}
 		</li>
 	</ul>
 {{/page-menu}}

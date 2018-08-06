@@ -1,14 +1,14 @@
-<h3 class='job-advertisements-item__title'>{{title}}</h3>
+<h3 class="job-advertisements-item__title">{{title}}</h3>
 
-<p class='job-advertisements-item__description'>{{description}}</p>
+<p class="job-advertisements-item__description">{{description}}</p>
 
 <p>
-	<a href='{{detailsLink}}' target='_blank' class='job-advertisements-item__details_link'>
-		{{if detailsLinkLabel detailsLinkLabel (t 'component.job-advertisements-item.action.details')}}
+	<a href={{detailsLink}} target="_blank" rel="noopener" class="job-advertisements-item__details_link">
+		{{if detailsLinkLabel detailsLinkLabel (t "component.job-advertisements-item.action.details")}}
 	</a>
-	<a href='mailto:jobs+{{team}}@anfe.ma' class='job-advertisements-item__apply_link'>
-		{{t 'component.job-advertisements-item.action.apply'}}
+	<a href="mailto:jobs+{{team}}@anfe.ma" class="job-advertisements-item__apply_link">
+		{{t "component.job-advertisements-item.action.apply"}}
 	</a>
 </p>
 
-<p class='job-advertisements-item__team'>{{team}}</p>
+<p class="job-advertisements-item__team">{{team}}</p>
