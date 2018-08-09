@@ -1,44 +1,17 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { find } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | content lp team', function() {
-	setupComponentTest('content-lp-team', {
-		integration: true,
+module('Integration | Component | content-lp-team', function(hooks) {
+	setupRenderingTest(hooks);
+
+	test('it renders', async function(assert) {
+		// Set any properties with this.set('myProperty', 'value');
+		// Handle any actions with this.set('myAction', function(val) { ... });
+
+		await render(hbs`{{content-lp-team}}`);
+
+		assert.dom('.content-lp-team').exists();
 	});
-
-	const data = {
-		component: 'content-lp-team',
-		reasons: [
-			{
-				id: 'team',
-				title: 'team title',
-				text: 'team text',
-				hidden: false,
-			},
-		],
-	};
-
-	beforeEach(function() {
-		this.set('data', data);
-		this.render(hbs`
-			{{content-lp-team
-				data=data
-				labelKey='title'
-			}}
-		`);
-	});
-
-	it('renders', function() {
-		expect(find('.content-lp-team')).to.exist;
-	});
-
-	// it('renders a list of contents', function() {
-	// 	const contentElement = find('.content-lp-team__content');
-
-	// 	expect(contentElement).to.exist;
-	// 	expect(contentElement.children).to.be.lengthOf(data.team.length);
-	// });
 });

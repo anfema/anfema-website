@@ -5,6 +5,18 @@ import { get } from '@ember/object';
 export default Route.extend({
 	intl: service(),
 	fastboot: service(),
+	headData: service(),
+
+	title(tokens) {
+		tokens.reverse();
+		tokens.push('anfema GmbH');
+
+		return tokens.join(' - ');
+	},
+
+	setTitle(title) {
+		this.headData.set('title', title);
+	},
 
 	async beforeModel(transition) {
 		const locales = this.get('intl.locales');

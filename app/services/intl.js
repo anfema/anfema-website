@@ -1,5 +1,6 @@
 import IntlService from 'ember-intl/services/intl';
 import { inject as service } from '@ember/service';
+import getDOM from '../utils/get-dom';
 
 export default IntlService.extend({
 	fastboot: service(),
@@ -7,8 +8,12 @@ export default IntlService.extend({
 	setLocale(locale) {
 		this._super(...arguments);
 
-		if (!this.get('fastboot.isFastBoot')) {
-			document.documentElement.lang = locale;
+		const dom = getDOM(this);
+
+		if (dom) {
+			return;
 		}
+
+		dom.documentElement.setAttribute('lang', locale);
 	},
 });

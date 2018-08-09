@@ -1,7 +1,9 @@
+{{!-- template-lint-disable no-inline-styles --}}
+
 {{yield}}
 
 <div class="content-slider__slidewindow">
-	<div class="content-slider__slider {{_sliderExtraClass}}" style="{{_sliderStyle}}">
+	<div class="content-slider__slider {{_sliderExtraClass}}" style={{_sliderStyle}}>
 		<div class="content-slider__slide">
 			{{component slideComponentName data=_previousSlide}}
 		</div>
@@ -18,7 +20,7 @@
 	type="button"
 	disabled={{_previousDisabled}}
 	{{action "slideToPrevious" bubbles=false}}
-	>
+>
 	<img src="img/arrow-left.svg" alt="arrow-left" class="arrow-left">
 </button>
 
@@ -26,6 +28,6 @@
 	type="button"
 	disabled={{_nextDisabled}}
 	{{action "slideToNext" bubbles=false}}
-	>
+>
 	<img src="img/arrow-right.svg" alt="arrow-right" class="arrow-right">
 </button>

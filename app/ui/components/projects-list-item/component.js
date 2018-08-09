@@ -53,11 +53,11 @@ const ProjectsListItem = LinkComponent.extend({
 
 		this._super(...arguments);
 
-		this.get('headData').addInlineStyle(this.get('headStyle'));
+		// this.get('headData').addInlineStyle(this.get('headStyle'));
 	},
 
 	willDestroyElement() {
-		this.get('headData').removeInlineStyle(this.get('headStyle'));
+		// this.get('headData').removeInlineStyle(this.get('headStyle'));
 	},
 });
 

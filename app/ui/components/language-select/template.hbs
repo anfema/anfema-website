@@ -1,11 +1,11 @@
-<a onclick={{action 'onLinkClick' 'de'}}
-	class={{concat 'language-select-button language-select-button--de ' (unless isEnglish 'language-select-button--active')}}
+<a onclick={{action "onLinkClick" "de"}}
+	class="language-select-button language-select-button--de {{if (is-active "language" "de") "language-select-button--active"}}"
 	href={{germanLink}}>
-	{{t 'component.language-select.action.de'}}
+	{{t "component.language-select.action.de"}}
 </a>
 
-<a onclick={{action 'onLinkClick' 'en'}}
-	class={{concat 'language-select-button language-select-button--en ' (if isEnglish 'language-select-button--active')}}
+<a onclick={{action "onLinkClick" "en"}}
+	class="language-select-button language-select-button--en {{if (is-active "language" "en") "language-select-button--active"}}"
 	href={{englishLink}}>
-	{{t 'component.language-select.action.en'}}
+	{{t "component.language-select.action.en"}}
 </a>

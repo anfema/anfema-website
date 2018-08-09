@@ -222,7 +222,7 @@ export class AnfemaLogo {
 	}
 }
 function mod(n, m) {
-	return (n % m + m) % m;
+	return ((n % m) + m) % m;
 }
 function clamp(p) {
 	return p < 1.0 ? p : 1.0;
