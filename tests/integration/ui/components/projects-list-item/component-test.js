@@ -52,18 +52,4 @@ describe('Integration | Component | projects list item', function() {
 				.toLowerCase()
 		).to.equal(project.client.toLowerCase());
 	});
-
-	it('adds and removes it’s style to the headData service', function() {
-		expect(this.get('headData.inlineStyles')).to.have.lengthOf(0);
-
-		this.set('show', true);
-		this.render(hbs`{{#if show}}{{projects-list-item project=project}}{{/if}}`);
-
-		expect(this.get('headData.inlineStyles')).to.have.lengthOf(1);
-		expect(this.get('headData.inlineStyles.0')).to.match(/#0096DA/);
-
-		this.set('show', false);
-
-		expect(this.get('headData.inlineStyles')).to.have.lengthOf(0);
-	});
 });
