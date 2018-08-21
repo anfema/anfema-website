@@ -1,10 +1,18 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 import { get } from '@ember/object';
+import { makeArray } from '@ember/array';
 
 export default Route.extend({
 	intl: service(),
 	fastboot: service(),
+
+	title(tokens) {
+		tokens = makeArray(tokens);
+		tokens.unshift('Anfema');
+
+		return tokens.reverse().join(' - ');
+	},
 
 	async beforeModel(transition) {
 		const locales = this.get('intl.locales');

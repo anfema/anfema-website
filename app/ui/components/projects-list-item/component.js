@@ -9,10 +9,6 @@ const ProjectsListItem = LinkComponent.extend({
 
 	project: null,
 
-	hoverClass: computed('project.id', function() {
-		return `page-overlay-shade--${this.get('project.id')}`;
-	}),
-
 	projectIdClass: computed('project.id', function() {
 		return `${this.componentClassName}--${this.get('project.id')}`;
 	}),

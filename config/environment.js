@@ -28,10 +28,8 @@ module.exports = function(environment) {
 			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/],
 		},
 
-		pageTitle: {
-			separator: ' - ',
-			prepend: true,
-			replace: false,
+		'ember-cli-head': {
+			suppressBrowserRender: true,
 		},
 
 		'responsive-image': {
