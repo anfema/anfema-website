@@ -28,10 +28,6 @@ module.exports = function(environment) {
 			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/],
 		},
 
-		'ember-cli-head': {
-			suppressBrowserRender: true,
-		},
-
 		'responsive-image': {
 			sourceDir: 'projects',
 			destinationDir: 'img/projects',

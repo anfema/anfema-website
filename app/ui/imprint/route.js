@@ -4,6 +4,10 @@ import { inject as service } from '@ember/service';
 export default Route.extend({
 	staticContent: service(),
 
+	titleToken(model) {
+		return model.meta.title;
+	},
+
 	model() {
 		return this.get('staticContent').read('/imprint');
 	},

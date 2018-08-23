@@ -9,7 +9,7 @@ export default Route.extend({
 
 	title(tokens) {
 		tokens = makeArray(tokens);
-		tokens.unshift('Anfema');
+		tokens.unshift('anfema GmbH');
 
 		return tokens.reverse().join(' - ');
 	},
