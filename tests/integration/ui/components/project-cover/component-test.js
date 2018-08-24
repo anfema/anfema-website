@@ -1,34 +1,19 @@
-import { initialize } from 'ember-responsive-image/instance-initializers/responsive-meta';
-import { expect } from 'chai';
-import { before, describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { findAll } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | project cover', function() {
-	setupComponentTest('project-cover', {
-		integration: true,
-	});
+module('Integration | Component | project-cover', function(hooks) {
+	setupRenderingTest(hooks);
 
-	const data = {
-		img: 'test.png',
-		title: 'BMW 7 Series Presenter App',
-	};
+	test('it renders', async function(assert) {
+		this.set('data', {
+			img: 'test.png',
+			title: 'BMW 7 Series Presenter App',
+		});
 
-	before(function() {
-		initialize();
-	});
+		await render(hbs`{{project-cover data=data}}`);
 
-	it('renders', function() {
-		this.set('data', data);
-		this.render(hbs`{{project-cover data=data}}`);
-
-		// expect(findAll('.project-cover__artwork')[0].getAttribute('src')).to.contain(
-		// 	'data:image/png;base64'
-		// );
-
-		expect(findAll('.project-cover__artwork')[0].getAttribute('src')).to.contain(
-			'/img/projects/test'
-		);
+		assert.dom('.project-cover').exists();
 	});
 });

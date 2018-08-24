@@ -6,7 +6,7 @@ import { htmlSafe } from '@ember/string';
 const FlickProportion = 0.15;
 
 function mod(n, m) {
-	return (n % m + m) % m;
+	return ((n % m) + m) % m;
 }
 
 export default Component.extend({

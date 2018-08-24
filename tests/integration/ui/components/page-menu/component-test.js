@@ -1,29 +1,22 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { find } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | page menu', function() {
-	setupComponentTest('page-menu', {
-		integration: true,
+module('Integration | Component | page-menu', function(hooks) {
+	setupRenderingTest(hooks);
+
+	test('it renders', async function(assert) {
+		// Set any properties with this.set('myProperty', 'value');
+		// Handle any actions with this.set('myAction', function(val) { ... });
+
+		await render(hbs`{{page-menu}}`);
+
+		assert.dom('.page-menu').exists();
+		assert.dom('.page-menu__logo').exists();
+
+		await render(hbs`{{#page-menu}}<ul></ul>{{/page-menu}}`);
+
+		assert.dom('.page-menu__nav ul').exists();
 	});
-
-	beforeEach(function() {
-		this.container.lookup('service:intl').setLocale('de');
-	});
-
-	it('renders a logo', function() {
-		this.render(hbs`{{page-menu}}`);
-
-		expect(find('.page-menu__logo')).to.exist;
-	});
-
-	it('renders a navigation', function() {
-		this.render(hbs`{{#page-menu}}<ul></ul>{{/page-menu}}`);
-
-		expect(find('.page-menu__nav ul')).to.exist;
-	});
-
-	// TODO: Test scroll behavior? Probably better to do in a visual test
 });

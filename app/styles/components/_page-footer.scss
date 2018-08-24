@@ -6,7 +6,8 @@
 	justify-content: center;
 	padding: 0 1.6rem 6rem;
 	color: $color-text-inverted;
-	background: $color-footer-top linear-gradient(to bottom, $color-footer-top, $color-footer-bottom);
+	background: $color-footer-top
+		linear-gradient(to bottom, $color-footer-top, $color-footer-bottom);
 
 	@include media-small-max {
 		font-size: 1.6rem;

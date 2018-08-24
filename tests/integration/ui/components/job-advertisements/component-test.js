@@ -1,41 +1,17 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { find } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | jobs overview', function() {
-	setupComponentTest('job-advertisements', {
-		integration: true,
-	});
+module('Integration | Component | job-advertisements', function(hooks) {
+	setupRenderingTest(hooks);
 
-	const data = {
-		component: 'job-advertisements',
-		jobs: [
-			{
-				description: 'Ab 2018',
-				detailsLink: '#',
-				team: 'android',
-				title: 'Praktikum Android Development (f/m/*)',
-			},
-		],
-	};
+	test('it renders', async function(assert) {
+		// Set any properties with this.set('myProperty', 'value');
+		// Handle any actions with this.set('myAction', function(val) { ... });
 
-	beforeEach(function() {
-		this.container.lookup('service:intl').setLocale('de');
+		await render(hbs`{{job-advertisements}}`);
 
-		this.set('data', data);
-
-		this.render(hbs`{{job-advertisements data=data}}`);
-	});
-
-	it('renders', function() {
-		expect(find('.job-advertisements')).to.exist;
-	});
-
-	it('renders a list of job applications', function() {
-		const overviewElement = find('.job-advertisements');
-
-		expect(overviewElement.children).to.have.lengthOf(data.jobs.length);
+		assert.dom('.job-advertisements').exists();
 	});
 });

@@ -60,7 +60,7 @@ export function elasticEaseOut(value) {
 	}
 	const p = 0.3;
 	const s = p / 4.0;
-	return Math.pow(2.0, -10.0 * value) * Math.sin((value - s) * (2.0 * Math.PI) / p) + 1.0;
+	return Math.pow(2.0, -10.0 * value) * Math.sin(((value - s) * (2.0 * Math.PI)) / p) + 1.0;
 }
 export function elasticEaseIn(value) {
 	if (value == 1.0) {
@@ -69,7 +69,7 @@ export function elasticEaseIn(value) {
 	const p = 0.3;
 	const s = p / 4.0;
 	value -= 1;
-	return -(Math.pow(2.0, 10.0 * value) * Math.sin((value - s) * (2.0 * Math.PI) / p));
+	return -(Math.pow(2.0, 10.0 * value) * Math.sin(((value - s) * (2.0 * Math.PI)) / p));
 }
 export function bounceEaseOut(value) {
 	if (value < 1.0 / 2.75) {
