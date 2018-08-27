@@ -1,25 +1,17 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-describe('Integration | Component | project detail', function() {
-	setupComponentTest('project-detail', {
-		integration: true,
-	});
+module('Integration | Component | project-detail', function(hooks) {
+	setupRenderingTest(hooks);
 
-	it('renders', function() {
+	test('it renders', async function(assert) {
 		// Set any properties with this.set('myProperty', 'value');
-		// Handle any actions with this.on('myAction', function (val) { ... });
-		// Template block usage:
-		// this.render(hbs`
-		// 	{{#project-detail}}
-		// 		template content
-		// 	{{/project-detail}}
-		// `);
+		// Handle any actions with this.set('myAction', function(val) { ... });
 
-		this.render(hbs`{{project-detail}}`);
+		await render(hbs`{{project-detail}}`);
 
-		expect(this.$()).to.have.length(1);
+		assert.dom('.project-detail').exists();
 	});
 });

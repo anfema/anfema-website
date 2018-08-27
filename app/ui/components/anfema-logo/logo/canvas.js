@@ -10,7 +10,8 @@ export function computeScaleFactor(context, options) {
 export function updateCanvas(context, options) {
 	const canvas = context.canvas;
 	const style = canvas.ownerDocument.defaultView.getComputedStyle(canvas);
-	canvas.width = canvas.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+	canvas.width =
+		canvas.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
 	canvas.height = canvas.clientHeight - parseFloat(style.paddingTop);
 	-parseFloat(style.paddingBottom);
 	context.lineJoin = 'round';
