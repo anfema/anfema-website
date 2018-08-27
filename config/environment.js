@@ -28,12 +28,6 @@ module.exports = function(environment) {
 			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/],
 		},
 
-		pageTitle: {
-			separator: ' - ',
-			prepend: true,
-			replace: false,
-		},
-
 		'responsive-image': {
 			sourceDir: 'projects',
 			destinationDir: 'img/projects',
