@@ -7,10 +7,11 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/ferchau/cover-large.jpg'
+    img: 'cover-ferchau.jpg'
     title: 'Ferchau Augmented Reality'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Assignment</h3>
 
@@ -39,8 +40,8 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/gallery-2-large.jpg'
+      - 'gallery-1-ferchau.jpg'
+      - 'gallery-2-ferchau.jpg'
   -
     component: 'project-text'
     content: |
@@ -54,9 +55,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/triptych-2-large.jpg'
+      - 'triptych-3-ferchau.jpg'
+      - 'triptych-1-ferchau.jpg'
+      - 'triptych-2-ferchau.jpg'
   -
     component: 'project-text'
     content: |
@@ -73,4 +74,4 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/ferchau/technology-large.jpg'
+      - 'technology-ferchau.jpg'

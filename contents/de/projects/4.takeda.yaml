@@ -12,6 +12,7 @@ sections:
     title: 'Takeda Voice to Patients'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Aufgabe</h3>
 

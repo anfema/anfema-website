@@ -52,8 +52,9 @@ export default Component.extend({
 		// TODO use version below, when https://github.com/emberjs/ember.js/pull/15613/files
 		// is merged
 		const isActive =
-			(currentQueryParams.service && currentQueryParams.service === service) ||
-			(service === 'concept' && !currentQueryParams.service);
+			(currentQueryParams.service &&
+				currentQueryParams.service === this.get('queryParams').service) ||
+			(this.get('queryParams').service === 'concept' && !currentQueryParams.service);
 
 		// const isActive = router.isActive(router.get('currentRouteName'), {
 		// 	queryParams: this.get('queryParams')

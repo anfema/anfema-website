@@ -7,10 +7,11 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/knauf/cover-large.jpg'
+    img: 'knauf-cover.jpg'
     title: 'Knauf / AMF Lookbook'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Aufgabe</h3>
       <p>Knauf AMF ist einer der weltweit größten Produzenten innovativer Deckensysteme. Um das breitgefächerte Spektrum an angepassten Deckenlösungen in einem adäquaten Rahmen zu präsentieren, wurde eine universelle Applikation für Tablets und Phones mit Android bzw. iOS nativ konzipiert. Dabei werden in aufwendigen Fotografien eindrucksvolle Bauprojekte dargestellt, in denen mit Knauf AMF über zahlreiche Sparten hinweg außergewöhnliche architektonische Objekte entstanden. Ein besonders charakteristisches Feature der App ist neben ihrer Leistunggstärke der Einsatz der 360° View, die dem User ein vollumfängliches Raumgefühl vermittelt.</p>
@@ -18,9 +19,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/knauf/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/triptych-2-large.jpg'
+      - 'knauf-triptych-3.jpg'
+      - 'knauf-triptych-1.jpg'
+      - 'knauf-triptych-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -32,7 +33,7 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/knauf/challenge-large.jpg'
+      - 'knauf-challenge.jpg'
   -
     component: 'project-text'
     content: |
@@ -50,7 +51,7 @@ sections:
     useAlternateColor: true
     width: 684
     height: 513
-    poster: 'https://www-static.anfe.ma/2017/projects/knauf/video-preview.jpg'
+    poster: 'knauf-video-preview.jpg'
     videos:
       -
         path: 'https://www-static.anfe.ma/2017/projects/knauf/video.m4v'
@@ -72,8 +73,8 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-4-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/knauf/gallery-5-large.jpg'
+      - 'knauf-gallery-1.jpg'
+      - 'knauf-gallery-2.jpg'
+      - 'knauf-gallery-3.jpg'
+      - 'knauf-gallery-4.jpg'
+      - 'knauf-gallery-5.jpg'

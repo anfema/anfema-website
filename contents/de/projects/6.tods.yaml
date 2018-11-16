@@ -7,10 +7,11 @@ meta:
 sections:
   -
     component: 'project-cover'
-    img: 'https://www-static.anfe.ma/2017/projects/tods/cover-large.jpg'
+    img: 'tods-cover.jpg'
     title: 'TOD’S Schuh-Konfigurator'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Aufgabe</h3>
 
@@ -41,9 +42,9 @@ sections:
     component: 'content-project-triptych'
     useAlternateColor: true
     images:
-      - 'https://www-static.anfe.ma/2017/projects/tods/triptych-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/triptych-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/triptych-2-large.jpg'
+      - 'tods-triptych-3.jpg'
+      - 'tods-triptych-1.jpg'
+      - 'tods-triptych-2.jpg'
   -
     component: 'project-text'
     content: |
@@ -61,10 +62,10 @@ sections:
       width: 584
       height: 438
     images:
-      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-1-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-2-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-3-large.jpg'
-      - 'https://www-static.anfe.ma/2017/projects/tods/gallery-4-large.jpg'
+      - 'tods-gallery-1.jpg'
+      - 'tods-gallery-2.jpg'
+      - 'tods-gallery-3.jpg'
+      - 'tods-gallery-4.jpg'
   -
     component: 'project-text'
     content: |

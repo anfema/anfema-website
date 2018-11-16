@@ -12,6 +12,7 @@ sections:
     title: 'MyStaffPilot Platform and Office'
   -
     component: 'project-text'
+    assignmentText: true
     content: |
       <h3>Assignment</h3>
 

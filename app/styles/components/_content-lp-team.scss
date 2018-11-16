@@ -1,6 +1,6 @@
 .content-lp-team {
 	overflow: hidden;
-	// display: none;
+	margin-top: 4rem !important;
 }
 
 .content-lp-team-item {
@@ -19,6 +19,18 @@
 
 		* {
 			grid-column: 2 / span 5;
+		}
+
+		@include media-xlarge-min {
+			* {
+				grid-column: 2 / span 4;
+			}
+		}
+
+		@include media-xxlarge-min {
+			* {
+				grid-column: 2 / span 3;
+			}
 		}
 
 		:first-child {

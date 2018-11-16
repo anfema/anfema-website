@@ -1,37 +1,56 @@
+---
 language: node_js
+
 node_js:
-- '6'
+  - "8"
+
 sudo: false
 dist: trusty
+
 addons:
   chrome: stable
   ssh_known_hosts:
     - banana.anfema.net
     - kiwi.anfema.net
+
 cache:
   yarn: true
-  directories:
-  - "$HOME/.npm"
+
+env:
+  global:
+    # See https://git.io/vdao3 for details.
+    - JOBS=1
+
+# before_install:
+  # yarn should already be available on trusty
+  #- curl -o- -L https://yarnpkg.com/install.sh | bash
+  #- export PATH=$HOME/.yarn/bin:$PATH
+
 install:
 - yarn install --non-interactive --pure-lockfile --frozen-lockfile --production=false
+
 script:
-- ember test
+  - yarn lint:all
+  - yarn test:all
+
 before_deploy:
-- openssl aes-256-cbc -K $encrypted_2f2f1b9d8185_key -iv $encrypted_2f2f1b9d8185_iv
-  -in ./.travis/id_rsa.enc -out /tmp/deploy_rsa -d
-- eval "$(ssh-agent -s)"
-- chmod 600 /tmp/deploy_rsa
-- ssh-add /tmp/deploy_rsa
+  - openssl aes-256-cbc -K $encrypted_98989dc28cb9_key -iv $encrypted_98989dc28cb9_iv -in .travis/id_rsa.enc -out /tmp/deploy_rsa -d
+  - eval "$(ssh-agent -s)"
+  - chmod 600 /tmp/deploy_rsa
+  - ssh-add /tmp/deploy_rsa
+  - chmod +x $TRAVIS_BUILD_DIR/.travis/deploy-dev.sh
+
 deploy:
-- skip_cleanup: true
-  provider: script
-  script: ".travis/deploy-dev.sh"
-  on:
-    branch: develop
-- skip_cleanup: true
-  provider: script
-  script: ".travis/deploy-live.sh"
-  on:
-    branch: master
+  -
+    provider: script
+    script: "$TRAVIS_BUILD_DIR/.travis/deploy-dev.sh"
+    on:
+      branch: develop
+  -
+    provider: script
+    script: "$TRAVIS_BUILD_DIR/.travis/deploy-live.sh"
+    on:
+      branch: master
+
 notifications:
   email: false

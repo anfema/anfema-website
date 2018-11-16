@@ -1,29 +1,30 @@
 .content-quote {
 	@include grid-base;
+	@include offset-content-bottom;
+	@include offset-content-top;
 
 	position: relative;
 	overflow: hidden;
-	padding-top: 3rem;
-	padding-bottom: 0;
 	background-color: $color-grey-light;
-
-	@include media-large-min {
-		padding-top: 8rem;
-		padding-bottom: 8rem;
-	}
 
 	&__text {
 		position: relative;
-		grid-column: 2 / -1;
+		//grid-column: 2 / -1;
+		grid-column: 1 / -1;
 		margin: 4rem 0;
 		font-size: 2.4rem;
 		font-weight: 700;
-		line-height: 2.5rem;
+		//line-height: 2.5rem;
+		line-height: 2.8rem;
 
 		@include media-large-min {
 			grid-column: 3 / -2;
 			font-size: 3.4rem;
 			line-height: 3.5rem;
+		}
+
+		@include media-xlarge-min {
+			grid-column: 3 / span 4;
 		}
 
 		& ~ * {
@@ -52,24 +53,24 @@
 		}
 
 		&::before {
-			top: -8rem;
+			top: -5rem;
 			left: -5rem;
 			content: '“';
 
 			@include media-large-min {
-				top: -8rem;
+				top: -9rem;
 				left: -13rem;
 			}
 		}
 
 		&::after {
-			top: -8rem;
+			top: -5rem;
 			right: 0;
 			text-align: right;
 			content: '”';
 
 			@include media-large-min {
-				top: -8rem;
+				top: -9rem;
 				right: -12rem;
 			}
 		}
@@ -84,6 +85,10 @@
 
 		@include media-large-min {
 			grid-column: -5 / span 3;
+		}
+
+		@include media-xlarge-min {
+			grid-column: -5 / span 2;
 		}
 	}
 
@@ -101,6 +106,11 @@
 			grid-row: 2 / span 1;
 			margin: 0;
 			padding: 0;
+		}
+
+		@include media-xlarge-min {
+			grid-column: 3;
+			margin: 0 0 0 -12rem;
 		}
 
 		&,
