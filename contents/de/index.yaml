@@ -160,27 +160,27 @@ sections:
 
   -
     component: 'job-advertisements'
-    # jobs:
-    #   -
-    #     title: 'Praktikum Android Development (f/m/*)'
-    #     description: 'Ab 2018'
-    #     detailsLink: '#'
-    #     team: 'android'
+    jobs:
+      -
+        title: 'UX / UI Designer (f/m/*)'
+        description: 'Ab Sofort'
+        detailsLink: '/job-advertisements/Job_UX-UI_Designer_anfema_Augsburg.pdf'
+        team: 'design'
 
-    #   -
-    #     title: 'Praktikum iOS Development (f/m/*)'
-    #     description: 'Ab 2018'
-    #     detailsLink: '#'
-    #     team: 'ios'
+      -
+        title: 'Senior UX / UI Designer - Vollzeit (f/m/*)'
+        description: 'Ab Sofort'
+        detailsLink: '#'
+        team: 'design'
 
-    #   -
-    #     title: 'Senior Python Developer (f/m/*)'
-    #     description: 'Ab 2018'
-    #     detailsLink: '#'
-    #     team: 'python'
+      -
+        title: 'Werkstudent UX / UI Design (f/m/*)'
+        description: 'Ab Sofort'
+        detailsLink: '#'
+        team: 'design'
 
-    #   -
-    #     title: 'Office Manager (f/m/*)'
-    #     description: 'Ab 2018'
-    #     detailsLink: '#'
-    #     team: 'office'
+      -
+        title: 'Senior Backend Developer - Vollzeit (f/m/*)'
+        description: 'Ab Sofort'
+        detailsLink: '#'
+        team: 'development'

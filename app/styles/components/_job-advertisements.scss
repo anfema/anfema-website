@@ -22,13 +22,12 @@
 	position: relative;
 	overflow: hidden;
 	grid-column: 1 / -1;
-	margin: 0;
 	padding: 1rem;
 	background: $color-background;
 
 	@include media-large-min {
 		grid-column: 2 / span 3;
-		margin: 0 -1.6rem;
+		margin-bottom: 3rem;
 		padding: 1rem 1.6rem;
 
 		&:nth-child(even) {
