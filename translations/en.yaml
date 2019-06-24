@@ -26,7 +26,7 @@ component:
   job-advertisements-item:
     action:
       details: 'Details'
-      apply: 'Apply'
+      email: 'Email'
   project-detail:
     title: 'anfema Projects'
   page-footer:

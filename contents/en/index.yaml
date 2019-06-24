@@ -157,27 +157,27 @@ sections:
 
   -
     component: 'job-advertisements'
-    # jobs:
-    #   -
-    #     title: 'Student Intern Android Development (f/m/*)'
-    #     description: 'Starting 2018'
-    #     detailsLink: '#'
-    #     team: 'android'
+    jobs:
+      -
+        title: 'UX / UI Designer - Fulltime (f/m/*)'
+        description: 'from now on'
+        detailsLink: '/job-advertisements/Job_UX-UI_Designer_anfema_Augsburg.pdf'
+        team: 'design'
 
-    #   -
-    #     title: 'Student Intern iOS Development (f/m/*)'
-    #     description: 'Starting 2018'
-    #     detailsLink: '#'
-    #     team: 'ios'
+      -
+        title: 'Senior UX / UI Designer - Fulltime (f/m/*)'
+        description: 'from now on'
+        detailsLink: '#'
+        team: 'design'
 
-    #   -
-    #     title: 'Senior Python Developer (f/m/*)'
-    #     description: 'Starting 2018'
-    #     detailsLink: '#'
-    #     team: 'python'
+      -
+        title: 'Working Student UX / UI Design (f/m/*)'
+        description: 'from now on'
+        detailsLink: '#'
+        team: 'design'
 
-    #   -
-    #     title: 'Office Manager (f/m/*)'
-    #     description: 'Starting 2018'
-    #     detailsLink: '#'
-    #     team: 'office'
+      -
+        title: 'Senior Backend Developer - Fulltime (f/m/*)'
+        description: 'from now on'
+        detailsLink: '#'
+        team: 'development'
