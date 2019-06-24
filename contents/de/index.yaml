@@ -167,20 +167,20 @@ sections:
         detailsLink: '/job-advertisements/Job_UX-UI_Designer_anfema_Augsburg.pdf'
         team: 'design'
 
-      -
-        title: 'Senior UX / UI Designer - Vollzeit (f/m/*)'
-        description: 'Ab Sofort'
-        detailsLink: '#'
-        team: 'design'
+      # -
+      #   title: 'Senior UX / UI Designer - Vollzeit (f/m/*)'
+      #   description: 'Ab Sofort'
+      #   detailsLink: '#'
+      #   team: 'design'
 
       -
         title: 'Werkstudent UX / UI Design (f/m/*)'
         description: 'Ab Sofort'
-        detailsLink: '#'
+        detailsLink: '/job-advertisements/Werkstudent_Design.pdf'
         team: 'design'
 
-      -
-        title: 'Senior Backend Developer - Vollzeit (f/m/*)'
-        description: 'Ab Sofort'
-        detailsLink: '#'
-        team: 'development'
+      # -
+      #   title: 'Senior Backend Developer - Vollzeit (f/m/*)'
+      #   description: 'Ab Sofort'
+      #   detailsLink: '#'
+      #   team: 'development'

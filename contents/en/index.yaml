@@ -164,20 +164,20 @@ sections:
         detailsLink: '/job-advertisements/Job_UX-UI_Designer_anfema_Augsburg.pdf'
         team: 'design'
 
-      -
-        title: 'Senior UX / UI Designer - Fulltime (f/m/*)'
-        description: 'from now on'
-        detailsLink: '#'
-        team: 'design'
+      # -
+      #   title: 'Senior UX / UI Designer - Fulltime (f/m/*)'
+      #   description: 'from now on'
+      #   detailsLink: '#'
+      #   team: 'design'
 
       -
         title: 'Working Student UX / UI Design (f/m/*)'
         description: 'from now on'
-        detailsLink: '#'
+        detailsLink: '/job-advertisements/Werkstudent_Design.pdf'
         team: 'design'
 
-      -
-        title: 'Senior Backend Developer - Fulltime (f/m/*)'
-        description: 'from now on'
-        detailsLink: '#'
-        team: 'development'
+      # -
+      #   title: 'Senior Backend Developer - Fulltime (f/m/*)'
+      #   description: 'from now on'
+      #   detailsLink: '#'
+      #   team: 'development'
