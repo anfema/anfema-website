@@ -22,12 +22,12 @@ env:
     - JOBS=1
 
 # before_install:
-  # yarn should already be available on trusty
-  #- curl -o- -L https://yarnpkg.com/install.sh | bash
-  #- export PATH=$HOME/.yarn/bin:$PATH
+# yarn should already be available on trusty
+#- curl -o- -L https://yarnpkg.com/install.sh | bash
+#- export PATH=$HOME/.yarn/bin:$PATH
 
 install:
-- yarn install --non-interactive --pure-lockfile --frozen-lockfile --production=false
+  - yarn install --non-interactive --pure-lockfile --frozen-lockfile --production=false
 
 script:
   - yarn lint:all
@@ -41,13 +41,11 @@ script:
 #   - chmod +x $TRAVIS_BUILD_DIR/.travis/deploy-dev.sh
 
 deploy:
-  -
-    provider: script
+  - provider: script
     script: "$TRAVIS_BUILD_DIR/.travis/deploy-dev.sh"
     on:
       branch: develop
-  -
-    provider: script
+  - provider: script
     script: "$TRAVIS_BUILD_DIR/.travis/deploy-live.sh"
     on:
       branch: master
