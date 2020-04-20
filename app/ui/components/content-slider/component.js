@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
-import Ember from 'ember';
+import { next } from '@ember/runloop';
 import { htmlSafe } from '@ember/string';
 
 const FlickProportion = 0.15;
@@ -120,7 +120,7 @@ export default Component.extend({
 
 			if (initTransition || wasDragging) {
 				// immediately trigger a rerender to transition to the center pane
-				Ember.run.next(this, () => {
+				next(this, () => {
 					this.setProperties({
 						slideDirection: 0,
 						_dragStartPosition: undefined,
