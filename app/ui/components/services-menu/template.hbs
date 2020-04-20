@@ -3,8 +3,8 @@
 		{{#each items as |item|}}
 			{{#services-menu-link
 				queryParams=(hash service=item.id)
-				activeClass='services-menu-link--active'
-				onClick=(action 'onItemClicked' item)
+				activeClass="services-menu-link--active"
+				onClick=(action "onItemClicked" item)
 			}}
 				{{item.id}}
 			{{/services-menu-link}}
