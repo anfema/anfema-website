@@ -10,7 +10,7 @@ sections:
     img: 'bmw7series-cover.jpg'
     title: 'BMW 7 Series Presenter App'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     assignmentText: true
     content: |
       <h3>Assignment</h3>
@@ -32,7 +32,7 @@ sections:
       - 'bmw7series-icon-4.svg'
     text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Challenge</h3>
 
@@ -47,7 +47,7 @@ sections:
       - 'bmw7series-triptych-2.jpg'
 
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Solution</h3>
 
@@ -69,7 +69,7 @@ sections:
       path: 'bmw7series-video.webm'
       type: 'webm'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Technology</h3>
 

@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Component | project-text', function(hooks) {
+module('Integration | Component | project-text-left', function(hooks) {
 	setupRenderingTest(hooks);
 
 	test('it renders', async function(assert) {
@@ -13,7 +13,7 @@ module('Integration | Component | project-text', function(hooks) {
 
 		await render(hbs`{{project-text data=data}}`);
 
-		assert.dom('.project-text').exists();
-		assert.dom('.project-text').containsText('foo');
+		assert.dom('.project-text-left').exists();
+		assert.dom('.project-text-left').containsText('foo');
 	});
 });

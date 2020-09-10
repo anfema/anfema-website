@@ -11,26 +11,26 @@ sections:
     img: '#'
     title: 'MyStaffPilot Platform and Office'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     assignmentText: true
     content: |
       <h3>Assignment</h3>
 
       <p>Taking a high-quality approach, POOL. DIE AGENTUR. is one of the leading promotion agencies in the German-speaking region. For 30 years, they have been offering professionally managed promotions based on customised concepts. In cooperation with the client, anfema developed the promoter platform MYSTAFFPILOT, which we have been servicing and extending ever since. The compiled solution comprises a public Android app and a public web portal for promoters as well as an internal application. This combination covers the agency’s extensive processes – from future promoters’ recruiting processes, to the scheduling of all assignments and respective staff, to invoicing. Thousands of people use the system on a regular basis.</p>
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Challenge</h3>
 
       <p>The main challenge in the MYSTAFFPILOT project is the mapping of existing processes and the developing of new processes in the digital platform. Numerous and frequent changes of requirements for, and demands on the system entail the platform’s constant extension, at all times ensuring its existing functionality. Still, data security must be held dear as various groups of people (promoters, in-house staff and the agency’s clients) do have access to the platform which processes personal, private, public and internal data.</p>
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Solution</h3>
 
       <p>The crucial factor for the system’s successful conceptual design and its implementation is the close collaboration with our client. Personal customer advisory service by technically adept project managers enabled the design of an individual, technical solution that meets the client’s every requirement. Furthermore, the developed system allows the continuing expansion and add-on of new, tailor-made features.</p>
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Technology</h3>
 

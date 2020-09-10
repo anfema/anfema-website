@@ -10,7 +10,7 @@ sections:
     img: 'ferchau-cover.jpg'
     title: 'Ferchau Augmented Reality'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     assignmentText: true
     content: |
       <h3>Aufgabe</h3>
@@ -27,7 +27,7 @@ sections:
     content: |
       <p>Wir schätzen sehr, dass ihr mega Cracks seid und bauen unsere Konzepte voll auf euer Know-how auf.</p>
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Herausforderung</h3>
 
@@ -43,7 +43,7 @@ sections:
       - 'ferchau-gallery-1.jpg'
       - 'ferchau-gallery-2.jpg'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Lösung</h3>
 
@@ -60,7 +60,7 @@ sections:
       - 'ferchau-triptych-1.jpg'
       - 'ferchau-triptych-2.jpg'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Technologie</h3>
 

@@ -4,34 +4,46 @@ meta:
   title: 'Plattform'
   id: 'mystaffpilot'
   span: 'Anfang 2014 - heute'
-  hidden: true
+  hidden: false
 sections:
   -
-    component: 'project-cover'
-    img: '#'
-    title: 'MyStaffPilot Plattform und Innendienst'
+    component: 'project-text-left'
+    titleColored: 'MYSTAFFPILOT'
+    titleAfter: 'Plattform'
+    subTitle: '2014 - Heute'
+    img: 'pingonaut-gallery-1.jpg'
+    description: 'Die Staffpilot GmbH hat es sich zur Aufgabe gemacht, für Agenturen mit Promotions ein Portal bereitzustellen. Dieses ermöglicht für die Abwicklung von Promotion-Aufträgen sowohl für die Agenturseite als auch für die Selbständigen einen tollen Rundum-Service. In enger Zusammenarbeit mit der Staffpilot GmbH haben wir dafür die Promoter Plattform MYSTAFFPILOT entwickelt. Diese betreuen und erweitern wir seitdem. Die erarbeitete Lösung umfasst eine öffentliche Android App, iOS App, ein Web-Portal für Promoter, sowie eine interne Anwendung. Damit ist es möglich, die umfangreichen Prozesse vollständig abzudecken: Vom Rekrutierungsprozess zukünftiger Promoter über Terminmanagement aller Aufträge und eingesetzten Personals, bis hin zur Rechnungsstellung. Mehrere tausend Nutzer verwenden das System regelmäßig.'
   -
-    component: 'project-text'
-    assignmentText: true
-    content: |
-      <h3>Aufgabe</h3>
-
-      <p>Als Qualitätsführer unter den Promotions-Agenturen im deutschsprachigen Raum bietet POOL. DIE AGENTUR. seit über 30 Jahren kundenindividuell konzipierte und hochprofessionell gesteuerte Promotions an. In Zusammenarbeit mit dem Kunden hat anfema die Promoter Plattform MYSTAFFPILOT entwickelt und betreut und erweitert diese seitdem. Die erarbeitete Lösung umfasst eine öffentliche Android App und ein öffentliches Web-Portal für Promoter, sowie eine interne Anwendung. Damit werden die umfangreichen Prozesse vollständig abgedeckt - vom Rekrutierungsprozess zukünftiger Promoter über das Terminmanagement aller Aufträge und des eingesetzten Personals bis hin zur Rechnungsstellung. Mehrere tausend Nutzer verwenden das System regelmäßig.</p>
+    component: 'project-text-right'
+    titleColored: 'Challenge'
+    img: 'pingonaut-gallery-1.jpg'
+    description: 'Die größte Challenge bei diesem Projekt ist das Abbilden bestehender und das Erarbeiten neuer Prozesse des Kunden. Vermehrte Änderungen durch Anforderungen und Ansprüche an das System führen dazu, dass die Plattform stetig erweitert und mit neuen Funktionalitäten ausgestattet wird. Datensicherheit muss an höchster Stelle stehen: Verschiedene Personengruppen (Promoter, Innendienst, Kunden des Kunden) haben Zugriff auf die Plattform. Demzufolge werden in der Plattform personenbezogene, private, öffentliche, und interne Daten verarbeitet.'
   -
-    component: 'project-text'
-    content: |
-      <h3>Herausforderung</h3>
-
-      <p>Die größte Challenge im Projekt MYSTAFFPILOT ist das Abbilden bestehender Prozesse und das Erarbeiten neuer Prozesse des Kunden in der digitalen Plattform. Zahlreiche und häufige Änderungen bezüglich der Anforderungen und Ansprüche an das System führen dazu, dass die Plattform unter Berücksichtigung existierender Funktionalitäten stetig erweitert werden muss. Gleichwohl muss der Datensicherheit höchster Stellenwert eingeräumt werden, da verschiedenste Personengruppen (Promoter, der Innendienst und Kunden des Kunden) Zugriff auf die Plattform haben, auf der personenbezogene, private, öffentliche, und interne Daten verarbeitet werden.</p>
+    component: 'project-text-left'
+    titleBefore: 'How we made it '
+    titleColored: 'awesome'
+    img: 'pingonaut-gallery-1.jpg'
+    description: 'Ausschlaggebend für die erfolgreiche Konzipierung und Umsetzung des Systems
+                  ist die enge Zusammenarbeit mit dem Kunden. Persönliche Kundenbetreuung
+                  durch erfahrene Projektmanager führte zu einer individuellen, technischen
+                  Lösung. Die komplett auf die Wünsche des Kunden angepasste Plattform
+                  ermöglicht weiterhin die stetige Erweiterung und Anbindung neuer sowie maßgeschneiderter Features. '
   -
-    component: 'project-text'
+    component: 'content-quote'
+    source: |
+      Iris Naudßus <br>
+      Mitglied der Geschäftsleitung STAFFPILOT GmbH
     content: |
-      <h3>Lösung</h3>
-
-      <p>Ausschlaggebend für die erfolgreiche Konzipierung und Umsetzung des Systems ist die enge Zusammenarbeit mit dem Kunden. Aufgrund persönlicher Kundenbetreuung durch technisch versierte Projektmanager konnte eine komplett auf die Ansprüche des Kunden konzipierte, individuelle, technische Lösung erarbeitet werden. Diese ermöglicht auch weiterhin die stetige Erweiterung und Anbindung neuer und maßgeschneiderter Features.</p>
+      <p>Wir sind mit einer sehr komplexen Aufgabe
+         an die anfema herangetreten: Programmierung
+         einer Plattform, die für unsere Agentur-Partner und Kunden einen Komplett-Service zur Abwicklung von Promotion-Jobs bietet.
+         Die anfema hat die Sätze "geht nicht", "gibt es nicht" nicht in Ihrem Portfolio,  daher haben wir per dato eine unseren Wünschen entsprechende Plattform, die unseren Agenturpartnern und unseren Kunden diesen kompletten Service liefert! Kurzfristige Änderungen und  Erweiterungen werden gut überlegt umgesetzt! Wir freuen uns, die anfema an unserer Seite als langjährigen Dienstleister zu wissen.</p>
   -
-    component: 'project-text'
-    content: |
-      <h3>Technologie</h3>
-
-      <p>Für die Entwicklung des Backends der Plattform wurde auf das etablierte Django Framework zusammen mit einer PostgreSQL Datenbank gesetzt, um den Ansprüchen bezüglich Datenmengen, Sicherheit, als auch der agilen und fortlaufenden Entwicklung gerecht zu werden. Das Frontend setzt sich für Endnutzer aus der mystaffpilot.de Webseite und einer nativen Android App zusammen. Der Innendienst arbeiten im System mit einer modernen single-page Web-Anwendung, die auf Ember.js basiert.<br>Grundlegender Bestandteil dieses Systems ist Cosworth, ein von anfema entwickeltes, Export-funktionales Reporting Tool. Cosworth ermöglicht es, Daten auch außerhalb des Systems - beispielsweise in der Buchhaltung - zu verarbeiten. Dank mehrerer Test- und Staging-Server entwickeln und veröffentlichen wir regelmäßige Updates ohne den laufenden Betrieb zu stören.</p>
+    component: 'project-text-left'
+    titleColored: 'Technology'
+    titleAfter: 'we used'
+    img: 'pingonaut-gallery-1.jpg'
+    description: 'Für die Entwicklung des Backends der Plattform setzen wir auf das etablierte Django Framework zusammen mit einer PostgreSQL Datenbank. Ansprüche hinsichtlich Datenmengen, Sicherheit und der agilen, fortlaufenden Entwicklung können so perfekt bewältigt werden. Das Frontend setzt sich für Endnutzer aus der mystaffpilot.de Webseite und einer nativen Android sowie iOS App zusammen. Der Innendienst arbeitet im System mit einer modernen single-page Web-Anwendung, die auf Ember.js basiert.
+                  Grundlegender Bestandteil des Systems ist Cosworth, ein von anfema entwickeltes
+                  Export-funktionales Reporting Tool. Cosworth ermöglicht es, Daten auch außerhalb des Systems, beispielsweise in der Buchhaltung, zu verarbeiten. Dank mehrerer Test und
+                  Staging-Server entwickeln und veröffentlichen wir regelmäßige Updates ohne den laufenden Betrieb zu stören.'

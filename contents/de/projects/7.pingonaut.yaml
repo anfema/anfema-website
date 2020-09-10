@@ -10,7 +10,7 @@ sections:
     img: 'pingonaut-cover.jpg'
     title: 'Pingonaut KidsWatch Plattform und Apps'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     assignmentText: true
     content: |
       <h3>Aufgabe</h3>
@@ -35,7 +35,7 @@ sections:
       text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden
       speziell für diese App Icons gestaltet.'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Herausforderung</h3>
 
@@ -62,7 +62,7 @@ sections:
       - 'pingonaut-gallery-4.jpg'
       - 'pingonaut-gallery-5.jpg'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Lösung</h3>
 
@@ -91,7 +91,7 @@ sections:
       - 'pingonaut-triptych-1.jpg'
       - 'pingonaut-triptych-2.jpg'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Technologie</h3>
 

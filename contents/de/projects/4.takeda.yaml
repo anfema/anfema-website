@@ -11,26 +11,26 @@ sections:
     img: '#'
     title: 'Takeda Voice to Patients'
   -
-    component: 'project-text'
+    component: 'project-text-left'
     assignmentText: true
     content: |
       <h3>Aufgabe</h3>
 
       <p>Takeda zählt als international tätiger und größter japanischer Pharmakonzern zu den bedeutendsten Unternehmen seiner Branche. Im Rahmen eines Non-Profit-Projekts stellt Takeda Patientenorganisationen für chronische Krankheiten eine Plattform zur Verfügung, bei der die Patienten ihren Krankheitsverlauf festhalten können. Als erstes Projekt seiner Art soll es der Forschung ermöglichen, anhand international aggregierter Daten zu evaluieren, ob und in welchem Ausmaß medizinische Behandlungsmethoden erfolgreich sind. Ziel ist außerdem, die Verbesserung von Therapien voranzutreiben. Die aggregierten Daten gehören ausschließlich der jeweiligen Patientenorganisation; Takeda selbst hat keinen Zugriff. Zur besseren Analyse ihres Krankheitsverlaufs können Patienten ihrem Arzt einen verschlüsselten Zugang zur Patientenakte gewähren. Zusätzlich zur Webplattform sollte eine App für iOS und Android entwickelt werden. Der Patient kann darüber tägliche Aktivitäten tracken, die möglicherweise mit dem Krankheitsverlauf korrelieren.</p>
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Herausforderung</h3>
 
       <p>Aufgrund der hohen Datenschutzanforderungen muss jede Instanz der lizenzierten Plattform auf Servern innerhalb des Landes der jeweiligen Patientenorganisation deployed werden und dabei starke Zugriffsbeschränkungen erfüllen. Größte Herausforderung des Projekts ist die anonymisierte Aggregierung und Filterung der Daten aller weltweit laufenden Instanzen der Plattform. Das Einhalten hoher Sicherheits- und Stabilitätsanforderungen ist dabei ebenso unverzichtbar wie die Internationalisierung der Plattform, da diese bei diversen Patientenorganisationen weltweit ausgerollt wird. Um die Auswertung der aggregierten Daten zu unterstützen, sollen diese als dynamisch erzeugbare Graphen und Statistiken visualisiert werden können. Schließlich muss auch die Schnittstelle in der Lage sein, aggregierte Daten mit bestehenden statistischen Institutionen austauschen zu können.</p>
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Lösung</h3>
 
       <p>Zusätzlich zu den Plattformen wurde ein Middleware-Server realisiert, der über ein komplexes Authentifizierungssystem die Daten aller länderspezifischen Server anonymisiert abgreift und entsprechend aggregiert. Um dem Anspruch der Internationalisierung gerecht zu werden, wurde weiterhin ein Verwaltungsplattform umgesetzt, anhand der es möglich ist, sämtliche Texte der Plattform zu individualisieren. Die Daten für die Graphen und Statistiken wurden kompatibel gehalten während ein Standard definiert wurde. Damit Darstellungsarten gewählt werden können, wurden diverse Graphen-Rendering-Komponenten entwickelt. Schließlich wurde viel serverseitiges Konfigurationsmanagement betrieben, um die Deployment-Prozesse über alle Länder hinweg bequem verwalten zu können.</p>
   -
-    component: 'project-text'
+    component: 'project-text-left'
     content: |
       <h3>Technologie</h3>
 
