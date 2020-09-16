@@ -51,12 +51,6 @@ a {
 	h2 {
 		font-size: 3.2rem;
 		line-height: 3rem;
-		text-transform: uppercase;
-
-		@include media-large-min {
-			font-size: 3.6rem;
-			line-height: 4.4rem;
-		}
 	}
 
 	* + h2 {
