@@ -10,7 +10,7 @@ sections:
     img: 'idnow-cover.jpg'
     title: 'IDnow'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     assignmentText: true
     content: |
       <h3>Assignment</h3>
@@ -27,7 +27,7 @@ sections:
       - 'idnow-icon-4.svg'
     text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Challenge</h3>
 
@@ -40,7 +40,7 @@ sections:
       - 'idnow-triptych-1.jpg'
       - 'idnow-triptych-2.jpg'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Solution</h3>
 
@@ -52,7 +52,7 @@ sections:
     content: |
       <p>anfema’s solution impresses with utmost usability. Your team understood exactly what we, the agents and the users needed, implemented it purposefully, and thereby made an essential contribution to our idea’s realisation and efficiency.</p>
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Technology</h3>
 

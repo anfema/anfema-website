@@ -11,20 +11,20 @@ sections:
     img: '#'
     title: 'Takeda Voice to Patients'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     assignmentText: true
     content: |
       <h3>Assignment</h3>
 
       <p>Operating internationally, Japan’s largest pharmaceutical company, Takeda, is one of the most significant firms in their industry. In the course of a non-profit project, Takeda provides patient organisations for chronic diseases with a platform for patients to record the course of their disease. Being the first of its kind, the project is intended to enable the assessment of different methods’ therapeutic efficacy based on internationally aggregated data. Ultimately, methods of treatment shall be advanced. The pooled data solely belong to the respective patient organisation; Takeda itself doesn’t have any access. Patients can grant encrypted access to their physician in order to facilitate the better analysis of their disease process. Besides the web platform, an app was developed for iOS and Android for patients to track daily activities which might correlate with the course of their disease.</p>
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Challenge</h3>
 
       <p>Due to stringent data protection requirements, each entity of the licensed platform must be deployed on servers within the respective patient organisation’s country fulfilling tight access restrictions. The most challenging part of the project is the anonymised aggregation and filtering of the data collected by all the globally active entities. For its deployment in numerous patient organisations around the world, meeting the strict requirements for both security and stability is just as essential as the platform’s internationalisation. In order to support the analysis of the aggregated data, it ought to be visualisable in dynamic graphs and statistics. Finally, the interface, too, must facilitate data exchange with existing statistical institutions.</p>
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Solution</h3>
 
@@ -32,7 +32,7 @@ sections:
 
       <p>Data used for the graphs and statistics was kept compatible while a standard was defined. In order to enable a range of graphic renditions, several rendering components were developed. Finally, on the server-side, we conducted a lot of configuration management so as to allow the convenient administration of the deployment processes in various countries.</p>
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Technology</h3>
       <p>The mapping of all required safety mechanisms is facilitated by the combination of Python and the web framework Django. Backends and middleware communicate with the front ends via a RESTful API.</p>
