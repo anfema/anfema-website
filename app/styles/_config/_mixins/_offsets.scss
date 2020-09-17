@@ -1,5 +1,10 @@
 @mixin offset-base-padding {
 	padding: 0 1.6rem;
+
+	@include media-large-min {
+		padding-right: 4.8rem;
+		padding-left: 4.8rem;
+	}
 }
 
 @mixin offset-overlay {
