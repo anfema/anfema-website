@@ -1,15 +1,15 @@
 {{#page-overlay}}
-	{{#page-menu forceOpaque=true class="page-menu--flat"}}
-		<header>
-			{{t "projects.title"}}
-		</header>
+{{#page-menu forceOpaque=true class="page-menu--flat"}}
+<header>
+	{{t "projects.title"}}
+</header>
 
-		<ul>
-			<li>
-				{{#link-to "language"}}{{t "projects.index.nav.back"}}{{/link-to}}
-			</li>
-		</ul>
-	{{/page-menu}}
+<ul>
+	<li>
+		{{#link-to "language"}}{{t "projects.index.nav.back"}}{{/link-to}}
+	</li>
+</ul>
+{{/page-menu}}
 
-	{{projects-list projects=model.files}}
+{{projects-list projects=model.files}}
 {{/page-overlay}}
