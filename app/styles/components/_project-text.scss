@@ -2,16 +2,12 @@
 	@include grid-base;
 	@include offset-content-bottom;
 	@include offset-content-top;
+	@include customer-colors;
 
 	&__title,
 	&__description,
 	&__img {
 		grid-column: 1 / span 4;
-	}
-
-	&__title--color {
-		//color: {{meta.color}};
-		color: red;
 	}
 
 	img {
@@ -20,18 +16,6 @@
 
 	&--alt {
 		background: $color-background-darker;
-	}
-
-	&--assignment {
-		padding-top: 3rem;
-
-		@include media-medium-min {
-			padding-top: 3rem;
-		}
-
-		@include media-xlarge-min {
-			padding-top: 3rem;
-		}
 	}
 
 	@include media-medium-min {

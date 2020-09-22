@@ -1,0 +1,10 @@
+@mixin customer-colors {
+    .color {
+        &--mystaffpilot {
+            color: #006AC9;
+        }
+        &--knauf {
+            color: #F97E33; 
+        }
+    }
+}
