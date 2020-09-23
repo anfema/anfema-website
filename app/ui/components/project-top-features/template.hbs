@@ -1,12 +1,12 @@
-<div>
+<div class="project-topFeatures project-topFeatures__test">
  <h2>
   <span>{{data.titleBefore}}</span>
   <span>{{data.titleColored}}</span>
  </h2>
-</div>
 
-{{#each data.topFeatures as |feature|}}
- {{project-topFeatures-item data=feature}}
-{{/each}}
+ {{#each data.topFeatures as |feature|}}
+  {{project-topFeatures-item data=feature selected=selected}}
+ {{/each}}
+</div>
 
 {{yield}}

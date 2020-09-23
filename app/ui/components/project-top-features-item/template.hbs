@@ -1,6 +1,11 @@
-<div>
+<div class="project-topFeatures-item__content">
 	<h3>{{data.title}}</h3>
-	<p>{{data.description}}</p>
+	<p>{{data.text}}</p>
 </div>
+
+{{#link-to "projects.index" (query-params feature=data.id) class="project-topFeatures-item__navigation-link"}}
+	<h3 class="project-topFeatures-item__title" area-hidden="true">{{data.title}}</h3>
+{{/link-to}}
+<p>{{data.description}}</p>
 
 {{yield}}
