@@ -5,8 +5,8 @@ export default Component.extend({
 	// data: null,
 
 	classNameBindings: [
-		'useAlternateColor:project-text-right--alt',
-		'assignmentText:project-text-right--assignment',
+		'useAlternateColor:project-text--alt',
+		'assignmentText:project-text--assignment',
 	],
 
 	useAlternateColor: alias('data.useAlternateColor'),

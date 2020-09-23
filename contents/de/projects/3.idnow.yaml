@@ -10,14 +10,14 @@ sections:
     img: 'idnow-cover.jpg'
     title: 'IDnow'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     assignmentText: true
     content: |
       <h3>Aufgabe</h3>
 
       <p>Das Postident Verfahren ist von gestern. Das Münchner Startup Unternehmen IDnow hat sich auf eine digitale Lösung dieses Verfahrens spezialisiert, die den umfangreichen und teils komplizierten Prozess vereinfacht. So spart sich der Kunde von IDnow beispielsweise den lästigen Gang zur nächsten Postfiliale. Das Online-Ident-Verfahren ist ein sicherer, offiziell anerkannter Standard zum Nachweis der eigenen Identität. Die benutzerfreundliche App sowie das eigens entwickelte SDK schaffen es, die Legitimations- und Identitätsprüfung ortsunabhängig, schneller und effektiver zu machen.</p>
   -
-    component: 'content-project-icons'
+    component: 'project-icons'
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:
@@ -27,7 +27,7 @@ sections:
       - 'idnow-icon-4.svg'
     text: 'Entwicklung einer klaren, kundenspezifischen Bildsprache zur Unterstreichung des innovativen Characters des Unternehmens.'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Herausforderung</h3>
 
@@ -40,7 +40,7 @@ sections:
       - 'idnow-triptych-1.jpg'
       - 'idnow-triptych-2.jpg'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Lösung</h3>
 
@@ -53,7 +53,7 @@ sections:
     content: |
       <p>anfemas Lösung besticht durch maximale Usability. Euer Team hat genau verstanden, was wir, die Agenten und die Nutzer brauchen, dies zielführend umgesetzt und hat damit maßgeblich zur Verwirklichung und Effizienz unserer Idee beigetragen.</p>
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Technologie</h3>
 
