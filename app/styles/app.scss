@@ -2,6 +2,7 @@
 @import '_config/_variables';
 @import '_config/_functions/inline-svg';
 @import '_config/_mixins/grid';
+@import '_config/_mixins/customers';
 @import '_config/_mixins/media-queries';
 @import '_config/_mixins/offsets';
 @import '_config/_mixins/shadows';
@@ -32,8 +33,7 @@
 @import 'components/project-gallery';
 @import 'components/project-triptych';
 @import 'components/project-icons';
-@import 'components/project-text-left';
-@import 'components/project-text-right';
+@import 'components/project-text';
 @import 'components/project-video';
 @import 'components/projects-list';
 @import 'components/services-slide';

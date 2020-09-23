@@ -10,7 +10,7 @@ sections:
     img: 'knauf-cover.jpg'
     title: 'Knauf / AMF Lookbook'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     assignmentText: true
     content: |
       <h3>Assignment</h3>
@@ -24,7 +24,7 @@ sections:
       - 'knauf-triptych-1.jpg'
       - 'knauf-triptych-2.jpg'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Challenge</h3>
 
@@ -37,7 +37,7 @@ sections:
     images:
       - 'knauf-challenge.jpg'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Solution</h3>
 
@@ -65,7 +65,7 @@ sections:
         path: 'knauf-video.webm'
         type: 'webm'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Technology</h3>
 
