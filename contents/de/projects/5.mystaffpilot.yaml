@@ -31,13 +31,12 @@ sections:
                   Lösung. Die komplett auf die Wünsche des Kunden angepasste Plattform
                   ermöglicht weiterhin die stetige Erweiterung und Anbindung neuer sowie maßgeschneiderter Features. '
   -
-    component: 'top-features'
+    component: 'project-topFeatures'
     titleBefore: 'Top'
     titleColored: 'features'
     topFeatures:
       - 
         id: 'feature-one'
-        pagination: '#1'
         img: 'pingonaut-gallery-1.jpg'
         title: 'Kartenansicht'
         description: |
@@ -47,21 +46,18 @@ sections:
           3. Die Bildung von Clustern verstärkt die Übersicht und kann bei Bedarf aufgeteilt werden oder vorab die Hauptinformation liefern.
       - 
         id: 'feature-two'
-        pagination: '#2'
         img: 'pingonaut-gallery-1.jpg'
         title: 'Einmal von allem etwas bitte'
         description: |
           Diese Aussage werden Vertriebsmitarbeiter eher selten bekommen. Somit wächst das Bedürfnis mehrere Artikel zu der Bestellung hinzuzufügen. Da die Produktpalette umfangreich ist, kann die Suche oder die Filter- und Sortierungsmöglichkeit helfen. Eine Schnellübersicht des Artikel liefert direkt die wichtigsten Informationen um den Kunden von einer neuen Sorte zu überzeugen.
       - 
         id: 'feature-three'
-        pagination: '#3'
         img: 'pingonaut-gallery-1.jpg'
         title: 'Zahlen visuell verstehen'
         description: |
           Wie auch bei der Kartenansicht, profitieren die Mitarbeiter bei den Absatzzahlen von einer visuellen Ansicht. Die Zielgruppe kann sich eine Übersicht über die  Produktvielfalt in einem Säulendiagramm anzeigen lassen. Wer sich für einen Jahresvergleich zwischen aktuellem und Vorjahr interessiert, wird hier ebenfalls bedient. Ob diese Ansicht die Marken oder ebenfalls die Artikelvielfalt beinhaltet, liegt in den Bedürfnissen des Mitarbeiters.
       - 
         id: 'feature-four'
-        pagination: '#4'
         img: 'pingonaut-gallery-1.jpg'
         title: '360-Grad-Kundenübersicht'
         description: |

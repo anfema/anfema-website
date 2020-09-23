@@ -1,0 +1,12 @@
+<div>
+    <h2>
+        <span>{{data.titleBefore}}</span>
+        <span>{{data.titleColored}}</span>
+    </h2>
+</div>
+
+{{#each data.topFeatures as |feature|}}
+{{project-topFeatures-item data=feature}}
+{{/each}}
+
+{{yield}}
