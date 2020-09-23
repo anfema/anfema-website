@@ -22,7 +22,7 @@ sections:
       impresses with an unusual, yet intuitive control concept, artistic perfection and the integration of interactive
       media, all of which convey the comfort and pleasure of the BMW 7 Series.</p>
   -
-    component: 'content-project-icons'
+    component: 'project-icons'
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:

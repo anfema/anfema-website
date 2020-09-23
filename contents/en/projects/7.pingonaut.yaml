@@ -23,7 +23,7 @@ sections:
       notified via PUSH if their child enters or leaves such areas, and thus will stay updated on their child’s
       whereabouts.</p>
   -
-    component: 'content-project-icons'
+    component: 'project-icons'
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:

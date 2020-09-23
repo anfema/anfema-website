@@ -8,7 +8,7 @@
 	@include offset-base-padding;
 
 	@include media-medium-min {
-		grid-template-columns: repeat(8, 1fr);
+		grid-template-columns: repeat(12, 1fr);
 	}
 
 	@include media-large-min {

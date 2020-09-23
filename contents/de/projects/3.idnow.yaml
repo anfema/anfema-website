@@ -17,7 +17,7 @@ sections:
 
       <p>Das Postident Verfahren ist von gestern. Das Münchner Startup Unternehmen IDnow hat sich auf eine digitale Lösung dieses Verfahrens spezialisiert, die den umfangreichen und teils komplizierten Prozess vereinfacht. So spart sich der Kunde von IDnow beispielsweise den lästigen Gang zur nächsten Postfiliale. Das Online-Ident-Verfahren ist ein sicherer, offiziell anerkannter Standard zum Nachweis der eigenen Identität. Die benutzerfreundliche App sowie das eigens entwickelte SDK schaffen es, die Legitimations- und Identitätsprüfung ortsunabhängig, schneller und effektiver zu machen.</p>
   -
-    component: 'content-project-icons'
+    component: 'project-icons'
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:

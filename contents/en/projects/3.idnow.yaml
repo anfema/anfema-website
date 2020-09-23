@@ -17,7 +17,7 @@ sections:
 
       <p>Deeming postal identity verification (“postident”) obsolete, the Munich-based Startup IDnow specialised in developing a digital solution that simplifies the extensive - and partially complicated - process. Using IDnow’s technology, the customer is, for example, spared a time-consuming trip to the post office. The online ident procedure is a secure, officially recognised and legal standard for identity verification. The user-friendly app and the specially developed SDK succeed in making identity and legitimation verification faster, more effective and available from anywhere.</p>
   -
-    component: 'content-project-icons'
+    component: 'project-icons'
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:

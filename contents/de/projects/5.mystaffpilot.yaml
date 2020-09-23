@@ -42,11 +42,12 @@ sections:
          einer Plattform, die für unsere Agentur-Partner und Kunden einen Komplett-Service zur Abwicklung von Promotion-Jobs bietet.
          Die anfema hat die Sätze "geht nicht", "gibt es nicht" nicht in Ihrem Portfolio,  daher haben wir per dato eine unseren Wünschen entsprechende Plattform, die unseren Agenturpartnern und unseren Kunden diesen kompletten Service liefert! Kurzfristige Änderungen und  Erweiterungen werden gut überlegt umgesetzt! Wir freuen uns, die anfema an unserer Seite als langjährigen Dienstleister zu wissen.</p>
   -
-    component: 'project-text'
-    orientation: 'left'
+    component: 'project-icons'
     titleColored: 'Technology'
     titleAfter: 'we used'
-    img: 'pingonaut-gallery-1.jpg'
+    img:
+      one: 'pingonaut-gallery-1.jpg'
+      two: 'pingonaut-gallery-3.jpg'
     description: 'Für die Entwicklung des Backends der Plattform setzen wir auf das etablierte Django Framework zusammen mit einer PostgreSQL Datenbank. Ansprüche hinsichtlich Datenmengen, Sicherheit und der agilen, fortlaufenden Entwicklung können so perfekt bewältigt werden. Das Frontend setzt sich für Endnutzer aus der mystaffpilot.de Webseite und einer nativen Android sowie iOS App zusammen. Der Innendienst arbeitet im System mit einer modernen single-page Web-Anwendung, die auf Ember.js basiert.
                   Grundlegender Bestandteil des Systems ist Cosworth, ein von anfema entwickeltes
                   Export-funktionales Reporting Tool. Cosworth ermöglicht es, Daten auch außerhalb des Systems, beispielsweise in der Buchhaltung, zu verarbeiten. Dank mehrerer Test und

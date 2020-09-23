@@ -24,7 +24,7 @@ sections:
       definieren, werden beim Betreten oder Verlassen dieser Bereiche via PUSH benachrichtigt und bleiben so über
       den Aufenthaltsort ihres Kindes up-to-date.</p>
   -
-      component: 'content-project-icons'
+      component: 'project-icons'
       useAlternateColor: true
       title: 'Custom Icon Set'
       icons:

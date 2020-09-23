@@ -21,7 +21,7 @@ sections:
       durch ein außergewöhnliches, intuitives Bedienkonzept, gestalterische Perfektion und die Integration interaktiver
       Medien, die den Komfort und den Spaß des BMW 7er auf das Tablet übertragen.</p>
   -
-    component: 'content-project-icons'
+    component: 'project-icons'
     useAlternateColor: true
     title: 'Custom Icon Set'
     icons:
