@@ -8,6 +8,7 @@ meta:
 sections:
   -
     component: 'project-text'
+    anchorId: 'msp-intro'
     orientation: 'left'
     titleColored: 'MYSTAFFPILOT'
     titleAfter: 'Plattform'
@@ -16,12 +17,14 @@ sections:
     description: 'Die Staffpilot GmbH hat es sich zur Aufgabe gemacht, für Agenturen mit Promotions ein Portal bereitzustellen. Dieses ermöglicht für die Abwicklung von Promotion-Aufträgen sowohl für die Agenturseite als auch für die Selbständigen einen tollen Rundum-Service. In enger Zusammenarbeit mit der Staffpilot GmbH haben wir dafür die Promoter Plattform MYSTAFFPILOT entwickelt. Diese betreuen und erweitern wir seitdem. Die erarbeitete Lösung umfasst eine öffentliche Android App, iOS App, ein Web-Portal für Promoter, sowie eine interne Anwendung. Damit ist es möglich, die umfangreichen Prozesse vollständig abzudecken: Vom Rekrutierungsprozess zukünftiger Promoter über Terminmanagement aller Aufträge und eingesetzten Personals, bis hin zur Rechnungsstellung. Mehrere tausend Nutzer verwenden das System regelmäßig.'
   -
     component: 'project-text'
+    anchorId: 'msp-challenge'
     orientation: 'right'
     titleColored: 'Challenge'
     img: 'pingonaut-gallery-1.jpg'
     description: 'Die größte Challenge bei diesem Projekt ist das Abbilden bestehender und das Erarbeiten neuer Prozesse des Kunden. Vermehrte Änderungen durch Anforderungen und Ansprüche an das System führen dazu, dass die Plattform stetig erweitert und mit neuen Funktionalitäten ausgestattet wird. Datensicherheit muss an höchster Stelle stehen: Verschiedene Personengruppen (Promoter, Innendienst, Kunden des Kunden) haben Zugriff auf die Plattform. Demzufolge werden in der Plattform personenbezogene, private, öffentliche, und interne Daten verarbeitet.'
   -
     component: 'project-text'
+    anchorId: 'msp-awesome'
     orientation: 'left'
     titleBefore: 'How we made it '
     titleColored: 'awesome'
@@ -33,6 +36,7 @@ sections:
                   ermöglicht weiterhin die stetige Erweiterung und Anbindung neuer sowie maßgeschneiderter Features. '
   -
     component: 'project-topFeatures'
+    anchorId: 'msp-topFeatures'
     titleBefore: 'Top'
     titleColored: 'features'
     topFeatures:
@@ -65,6 +69,7 @@ sections:
           Der Rundumblick ist einer der wichtigsten Bedürfnisse unserer Zielgruppe. Unsere Kundendarstellung bietet eine Übersichtsliste der Verträge sowie eine Detailansicht die keine Fragen offen lässt.
   -
     component: 'content-quote'
+    anchorId: 'msp-quote'
     source: |
       Iris Naudßus <br>
       Mitglied der Geschäftsleitung STAFFPILOT GmbH
@@ -75,6 +80,7 @@ sections:
          Die anfema hat die Sätze "geht nicht", "gibt es nicht" nicht in Ihrem Portfolio,  daher haben wir per dato eine unseren Wünschen entsprechende Plattform, die unseren Agenturpartnern und unseren Kunden diesen kompletten Service liefert! Kurzfristige Änderungen und  Erweiterungen werden gut überlegt umgesetzt! Wir freuen uns, die anfema an unserer Seite als langjährigen Dienstleister zu wissen.</p>
   -
     component: 'project-icons'
+    anchorId: 'msp-icons'
     titleColored: 'Technology'
     titleAfter: 'we used'
     img:

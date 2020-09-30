@@ -1,11 +1,15 @@
-<div class="project-topFeatures-item__content">
-	<h3>{{data.title}}</h3>
-	<p>{{data.text}}</p>
-</div>
-
-{{#link-to "projects.index" (query-params feature=data.id) class="project-topFeatures-item__navigation-link"}}
+{{#link-to "projects.detail" (query-params topFeatures=data.id) class="project-topFeatures-item__navigation-link"}}
 	<h3 class="project-topFeatures-item__title" area-hidden="true">{{data.title}}</h3>
 {{/link-to}}
-<p>{{data.description}}</p>
+
+<div class="project-topFeatures-item__img">
+	{{#if data.img}}
+		{{responsive-image image=data.img}}
+	{{/if}}
+</div>
+
+<div class="project-topFeatures-item__content">
+	<p>{{data.description}}</p>
+</div>
 
 {{yield}}
