@@ -10,7 +10,7 @@ sections:
     img: 'knauf-cover.jpg'
     title: 'Knauf / AMF Lookbook'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     assignmentText: true
     content: |
       <h3>Aufgabe</h3>
@@ -23,7 +23,7 @@ sections:
       - 'knauf-triptych-1.jpg'
       - 'knauf-triptych-2.jpg'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Herausforderung</h3>
       <p>Die Herausforderung bestand darin, eine sehr informative Applikation zu schaffen, die Übersichtlichkeit und Bedienkomfort vereint. Um die hochwertigen Fotografien für sich sprechen zu lassen, sollten so wenige visuelle Steuerungselemente wie möglich verwendet werden. Zusätzlich musste bedacht werden, dass alle Features auch auf fest installierten Präsentationsdisplays (bspw. auf Messen) funktional und bedienbar sein müssen.</p>
@@ -35,7 +35,7 @@ sections:
     images:
       - 'knauf-challenge.jpg'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Lösung</h3>
       <p>Mit einem raffiniert angelegten Canvas Grid System setzt das Knauf AMF Lookbook auf intuitive Gestensteuerung und kommt so mit nur wenigen grafischen Steuerungselementen aus. Um zusätzliche Features in die Applikation integrieren zu können, wurde dieses Grid im weiteren Projektverlauf ausgebaut. Besonders nennenswert sind hierbei die Implementierung eines Musterbestellbereichs und einer 360° Ansicht von Projekten. Diese kann mit dem Finger auch auf fest installierten Devices bedient werden und macht die Produktwelten von Knauf AMF damit erlebbar.</p>
@@ -63,7 +63,7 @@ sections:
         path: 'knauf-video.webm'
         type: 'webm'
   -
-    component: 'project-text-left'
+    component: 'project-text'
     content: |
       <h3>Technologie</h3>
       <p>Das Knauf AMF Lookbook wird dynamisch über ION befüllt und besticht durch seine Performance. Das von anfema entwickelte Content Management System ION ermöglicht es dem Kunden problemlos, tiefgreifende Änderungen an der Struktur und am Informationsgehalt der Applikation vorzunehmen. Darüber hinaus können Daten lokal auf den Geräten vorgehalten werden, sodass die App auch offline verwendet werden kann. Für die 360° Ansicht werden sphärische Panoramen auf die Innenfläche einer Kugel projiziert, die der User rotieren kann.</p>

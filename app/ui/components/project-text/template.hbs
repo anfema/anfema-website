@@ -1,0 +1,20 @@
+<div class="project-text__title project-text__title--{{data.orientation}}">
+	<h2>
+		<span>{{data.titleBefore}}</span>
+		<span class="color--{{meta.id}}">{{data.titleColored}}</span>
+		<span>{{data.titleAfter}}</span>
+	</h2>
+	<p>{{data.subTitle}}</p>
+</div>
+
+<div class="project-text__img project-text__img--{{data.orientation}}">
+	{{#if data.img}}
+		{{responsive-image image=data.img}}
+	{{/if}}
+</div>
+
+<div class="project-text__description project-text__description--{{data.orientation}}">
+	<p>{{data.description}}</p>
+</div>
+
+{{yield}}

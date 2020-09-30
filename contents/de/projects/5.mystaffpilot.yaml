@@ -7,21 +7,26 @@ meta:
   hidden: false
 sections:
   -
-    component: "project-header"
+    component: 'project-header'
+    action:
+      scrollDown: 'Mehr erfahren'
   -
-    component: 'project-text-left'
+    component: 'project-text'
+    orientation: 'left'
     titleColored: 'MYSTAFFPILOT'
     titleAfter: 'Plattform'
     subTitle: '2014 - Heute'
     img: 'pingonaut-gallery-1.jpg'
     description: 'Die Staffpilot GmbH hat es sich zur Aufgabe gemacht, für Agenturen mit Promotions ein Portal bereitzustellen. Dieses ermöglicht für die Abwicklung von Promotion-Aufträgen sowohl für die Agenturseite als auch für die Selbständigen einen tollen Rundum-Service. In enger Zusammenarbeit mit der Staffpilot GmbH haben wir dafür die Promoter Plattform MYSTAFFPILOT entwickelt. Diese betreuen und erweitern wir seitdem. Die erarbeitete Lösung umfasst eine öffentliche Android App, iOS App, ein Web-Portal für Promoter, sowie eine interne Anwendung. Damit ist es möglich, die umfangreichen Prozesse vollständig abzudecken: Vom Rekrutierungsprozess zukünftiger Promoter über Terminmanagement aller Aufträge und eingesetzten Personals, bis hin zur Rechnungsstellung. Mehrere tausend Nutzer verwenden das System regelmäßig.'
   -
-    component: 'project-text-right'
+    component: 'project-text'
+    orientation: 'right'
     titleColored: 'Challenge'
     img: 'pingonaut-gallery-1.jpg'
     description: 'Die größte Challenge bei diesem Projekt ist das Abbilden bestehender und das Erarbeiten neuer Prozesse des Kunden. Vermehrte Änderungen durch Anforderungen und Ansprüche an das System führen dazu, dass die Plattform stetig erweitert und mit neuen Funktionalitäten ausgestattet wird. Datensicherheit muss an höchster Stelle stehen: Verschiedene Personengruppen (Promoter, Innendienst, Kunden des Kunden) haben Zugriff auf die Plattform. Demzufolge werden in der Plattform personenbezogene, private, öffentliche, und interne Daten verarbeitet.'
   -
-    component: 'project-text-left'
+    component: 'project-text'
+    orientation: 'left'
     titleBefore: 'How we made it '
     titleColored: 'awesome'
     img: 'pingonaut-gallery-1.jpg'
