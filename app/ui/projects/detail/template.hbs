@@ -13,7 +13,11 @@
 
 	{{#project-detail data=model}}
 		{{#each model.sections as |data|}}
-			{{component data.component data=data meta=model.meta}}
+			{{#if data.features}}
+				{{component data.component data=data selected=topfeatures}}
+			{{else}}
+				{{component data.component data=data meta=model.meta}}
+			{{/if}}
 		{{/each}}
 	{{/project-detail}}
 {{/page-overlay}}

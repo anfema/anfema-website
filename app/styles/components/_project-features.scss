@@ -1,0 +1,47 @@
+.project-features {
+	@include grid-base;
+	@include offset-content-bottom;
+	@include offset-content-top;
+	@include customer-colors;
+
+	overflow: hidden;
+}
+
+.project-features__text,
+.project-features-item {
+	grid-column: 6 / span 6;
+}
+
+.project-features-item {
+	&__navigation-link {
+		position: relative;
+		display: block;
+		width: 100%;
+		//overflow: hidden;
+		text-decoration: none;
+
+		&:focus,
+		&:hover {
+			color: inherit;
+		}
+	}
+
+	&__title {
+		//position: absolute;
+		display: block;
+		transition: color 0.5s;
+	}
+
+	&__content {
+		height: 0;
+		overflow: hidden;
+		color: $color-text;
+		transition: height 1s;
+	}
+
+	&--active {
+		.project-features-item__content {
+			height: auto;
+		}
+	}
+}
