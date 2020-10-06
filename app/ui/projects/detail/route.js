@@ -12,7 +12,7 @@ function findByComponentNameAndPath(model, name, path) {
 }
 
 export default Route.extend({
-	queryParams: 'topFeatures',
+	queryParams: 'topfeatures',
 
 	staticContent: service(),
 	win: service(),
@@ -29,11 +29,11 @@ export default Route.extend({
 		}, []);
 	}),
 
-	topFeatures: computed(function() {
+	topfeatures: computed(function() {
 		return findByComponentNameAndPath(
 			this.get('staticContent').readShoebox('/index'),
-			'top-features',
-			'topFeatures.0.id'
+			'project-features',
+			'features.0.id'
 		);
 	}),
 

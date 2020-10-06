@@ -1,0 +1,16 @@
+{{#link-to "projects.detail" (query-params topfeatures=data.id) class="project-features-item__navigation-link"}}
+	<h3 class="project-features-item__title" area-hidden="false">{{data.title}}</h3>
+{{/link-to}}
+
+<div class="project-features-item__content">
+	<p>{{data.description}}</p>
+
+	<div class="project-features-item__img">
+		{{#if data.img}}
+			{{responsive-image image=data.img}}
+		{{/if}}
+	</div>
+
+</div>
+
+{{yield}}

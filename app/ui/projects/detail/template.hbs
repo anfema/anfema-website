@@ -13,9 +13,8 @@
 
 	{{#project-detail data=model}}
 		{{#each model.sections as |data|}}
-			{{#if data.topFeatures}}
-				{{data.component}}
-				{{component data.component data=data selected=topFeatures}}
+			{{#if data.features}}
+				{{component data.component data=data selectedId=feature-one}}
 			{{else}}
 				{{component data.component data=data meta=model.meta}}
 			{{/if}}

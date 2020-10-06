@@ -3,7 +3,7 @@ import { computed } from '@ember/object';
 import { next } from '@ember/runloop';
 
 export default Component.extend({
-	classNameBindings: ['isActive:project-topFeatures-item--active'],
+	classNameBindings: ['isActive:project-features-item--active'],
 
 	// data: null,
 	// selected: null,
@@ -22,7 +22,7 @@ export default Component.extend({
 	},
 
 	didInsertElement() {
-		this._content = this.element.querySelector('.project-topFeatures-item__content');
+		this._content = this.element.querySelector('.project-features-item__content');
 
 		this._contentTransitionEnd = () => {
 			if (this.isActive) {
