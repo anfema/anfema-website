@@ -3,14 +3,12 @@
 {{/link-to}}
 
 <div class="project-features-item__content">
-	<p>{{data.description}}</p>
-
 	<div class="project-features-item__img">
 		{{#if data.img}}
 			{{responsive-image image=data.img}}
 		{{/if}}
-	</div>
-
+	</div> 
+	<p>{{data.description}}</p>
 </div>
 
 {{yield}}
