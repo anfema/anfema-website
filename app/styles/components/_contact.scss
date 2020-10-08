@@ -1,0 +1,23 @@
+.contact {
+    @include grid-base;
+    @include offset-content-bottom;
+    @include offset-content-top;
+
+    &__content {
+        grid-column: 1 / span 4;
+    }
+
+    &__button {
+        width: auto;
+        padding: 1.7rem;
+        background-color: $color-background; 
+        color: $color-brand-2; 
+        border: 2px solid $color-brand-2;
+    }
+
+    @include media-medium-min {
+        &__content {
+            grid-column: 2 / span 7;
+        }
+    }
+}

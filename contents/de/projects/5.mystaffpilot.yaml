@@ -94,3 +94,8 @@ sections:
                   Grundlegender Bestandteil des Systems ist Cosworth, ein von anfema entwickeltes
                   Export-funktionales Reporting Tool. Cosworth ermöglicht es, Daten auch außerhalb des Systems, beispielsweise in der Buchhaltung, zu verarbeiten. Dank mehrerer Test und
                   Staging-Server entwickeln und veröffentlichen wir regelmäßige Updates ohne den laufenden Betrieb zu stören.'
+  - 
+    component: "contact"
+    title: "Klingt interessant?"
+    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
+    button: "Jetzt kontaktieren"
