@@ -13,14 +13,5 @@ module('Integration | Component | contact', function(hooks) {
 		await render(hbs`{{contact}}`);
 
 		assert.equal(this.element.textContent.trim(), '');
-
-		// Template block usage:
-		await render(hbs`
-      {{#contact}}
-        template block text
-      {{/contact}}
-    `);
-
-		assert.equal(this.element.textContent.trim(), 'template block text');
 	});
 });

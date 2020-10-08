@@ -1,23 +1,35 @@
 .contact {
-    @include grid-base;
-    @include offset-content-bottom;
-    @include offset-content-top;
+	@include grid-base;
+	@include offset-content-bottom;
+	@include offset-content-top;
 
-    &__content {
-        grid-column: 1 / span 4;
-    }
+	position: relative;
+	height: 50vh;
+	overflow: visible;
+	background-image: inline-svg(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+            <g fill="none">
+                <polygon fill="#ffca27" points="0 0 0 500 1000 500 700 200"/>
+                <polygon fill="#ffb200" points="0 0 0 500 250 500 0 0"/>
+            </g>
+		</svg>'
+	);
 
-    &__button {
-        width: auto;
-        padding: 1.7rem;
-        background-color: $color-background; 
-        color: $color-brand-2; 
-        border: 2px solid $color-brand-2;
-    }
+	&__content {
+		grid-column: 1 / span 4;
+	}
 
-    @include media-medium-min {
-        &__content {
-            grid-column: 2 / span 7;
-        }
-    }
+	&__button {
+		width: auto;
+		padding: 1.7rem;
+		color: $color-brand-2;
+		border: 2px solid $color-brand-2;
+		background-color: $color-background;
+	}
+
+	@include media-medium-min {
+		&__content {
+			grid-column: 2 / span 7;
+		}
+	}
 }
