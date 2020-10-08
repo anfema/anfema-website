@@ -1,8 +1,11 @@
 .project-text {
-	@include grid-base;
-	@include offset-content-bottom;
-	@include offset-content-top;
-	@include customer-colors;
+	&--left,
+	&--right {
+		@include grid-base;
+		@include offset-content-bottom;
+		@include offset-content-top;
+		@include customer-colors;
+	}
 
 	&__title,
 	&__description,
@@ -14,45 +17,45 @@
 		width: 80%;
 	}
 
-	&--alt {
-		background: $color-background-darker;
-	}
-
 	@include media-medium-min {
 		&__title {
 			grid-row: 1 / span 1;
 			align-self: end;
-
-			&--left {
-				grid-column: 2 / span 4;
-			}
-
-			&--right {
-				grid-column: 4 / span 4;
-			}
 		}
 
 		&__description {
 			grid-row: 2 / span 1;
-
-			&--left {
-				grid-column: 2 / span 4;
-			}
-
-			&--right {
-				grid-column: 4 / span 4;
-			}
 		}
 
 		&__img {
 			grid-row: 1 / span 2;
+		}
 
-			&--left {
-				grid-column: 6 / span 3;
+		&--left {
+			.project-text__title {
+				grid-column: 2 / span 4;
 			}
 
-			&--right {
-				grid-column: 1 / span 3;
+			.project-text__description {
+				grid-column: 2 / span 6;
+			}
+
+			.project-text__img {
+				grid-column: 8 / span 4;
+			}
+		}
+
+		&--right {
+			.project-text__title {
+				grid-column: 6 / span 4;
+			}
+
+			.project-text__description {
+				grid-column: 6 / span 6;
+			}
+
+			.project-text__img {
+				grid-column: 2 / span 4;
 			}
 		}
 	}

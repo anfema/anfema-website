@@ -13,7 +13,7 @@ module('Integration | Component | project-text', function(hooks) {
 
 		await render(hbs`{{project-text data=data}}`);
 
-		assert.dom('.project-text__title--left').exists();
+		assert.dom('.project-text--left').exists();
 		/* assert.dom('.project-text').containsText('foo'); */
 	});
 });
