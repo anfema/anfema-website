@@ -7,6 +7,10 @@ meta:
   hidden: false
 sections:
   -
+    component: 'project-header'
+    action:
+      scrollDown: 'Mehr erfahren'
+  -
     component: 'project-text'
     anchorId: 'msp-intro'
     orientation: 'left'
