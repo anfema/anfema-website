@@ -3,17 +3,17 @@
 	@include offset-content-bottom;
 	@include offset-content-top;
 
-	position: relative;
-	height: 50vh;
 	overflow: visible;
 	background-image: inline-svg(
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
             <g fill="none">
-                <polygon fill="#ffca27" points="0 0 0 500 1000 500 700 200"/>
-                <polygon fill="#ffb200" points="0 0 0 500 250 500 0 0"/>
+				<polygon fill="#ffca27" points="0 0 0 500 700 500 450 80 0 0"/>
+				<polygon fill="#ffb200" points="0 20 0 500 100 500 0 20"/>
             </g>
 		</svg>'
 	);
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	&__content {
 		grid-column: 1 / span 4;
@@ -29,7 +29,18 @@
 
 	@include media-medium-min {
 		&__content {
-			grid-column: 2 / span 7;
+			grid-column: 2 / span 8;
 		}
+	}
+
+	@include media-xlarge-min {
+		background-image: inline-svg(
+			'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 500">
+				<g fill="none">
+					<polygon fill="#ffca27" points="0 0 0 500 2100 500 1650 80 0 0"/>
+					<polygon fill="#ffb200" points="0 10 0 500 300 500 0 10"/>
+				</g>
+			</svg>'
+		)
 	}
 }
