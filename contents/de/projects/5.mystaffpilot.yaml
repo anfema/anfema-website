@@ -17,14 +17,17 @@ sections:
     titleColored: 'MYSTAFFPILOT'
     titleAfter: 'Plattform'
     subTitle: '2014 - Heute'
-    img: 'pingonaut-gallery-1.jpg'
+    img: 
+      one: 'msp-intro.png'
     description: 'Die Staffpilot GmbH hat es sich zur Aufgabe gemacht, für Agenturen mit Promotions ein Portal bereitzustellen. Dieses ermöglicht für die Abwicklung von Promotion-Aufträgen sowohl für die Agenturseite als auch für die Selbständigen einen tollen Rundum-Service. In enger Zusammenarbeit mit der Staffpilot GmbH haben wir dafür die Promoter Plattform MYSTAFFPILOT entwickelt. Diese betreuen und erweitern wir seitdem. Die erarbeitete Lösung umfasst eine öffentliche Android App, iOS App, ein Web-Portal für Promoter, sowie eine interne Anwendung. Damit ist es möglich, die umfangreichen Prozesse vollständig abzudecken: Vom Rekrutierungsprozess zukünftiger Promoter über Terminmanagement aller Aufträge und eingesetzten Personals, bis hin zur Rechnungsstellung. Mehrere tausend Nutzer verwenden das System regelmäßig.'
   -
     component: 'project-text'
     anchorId: 'msp-challenge'
     orientation: 'right'
     titleColored: 'Challenge'
-    img: 'pingonaut-gallery-1.jpg'
+    img: 
+      one: 'msp-challenge-ipad1.png'
+      two: 'msp-challenge-ipad2.png'
     description: 'Die größte Challenge bei diesem Projekt ist das Abbilden bestehender und das Erarbeiten neuer Prozesse des Kunden. Vermehrte Änderungen durch Anforderungen und Ansprüche an das System führen dazu, dass die Plattform stetig erweitert und mit neuen Funktionalitäten ausgestattet wird. Datensicherheit muss an höchster Stelle stehen: Verschiedene Personengruppen (Promoter, Innendienst, Kunden des Kunden) haben Zugriff auf die Plattform. Demzufolge werden in der Plattform personenbezogene, private, öffentliche, und interne Daten verarbeitet.'
   -
     component: 'project-text'
@@ -32,7 +35,9 @@ sections:
     orientation: 'left'
     titleBefore: 'How we made it '
     titleColored: 'awesome'
-    img: 'pingonaut-gallery-1.jpg'
+    img: 
+      one: 'msp-awesome-iphone.png'
+      two: 'msp-awesome-android.png'
     description: 'Ausschlaggebend für die erfolgreiche Konzipierung und Umsetzung des Systems
                   ist die enge Zusammenarbeit mit dem Kunden. Persönliche Kundenbetreuung
                   durch erfahrene Projektmanager führte zu einer individuellen, technischen
@@ -88,8 +93,8 @@ sections:
     titleColored: 'Technology'
     titleAfter: 'we used'
     img:
-      one: 'pingonaut-gallery-1.jpg'
-      two: 'pingonaut-gallery-3.jpg'
+      one: 'msp-technology-django.png'
+      two: 'msp-technology-postgresql.png'
     description: 'Für die Entwicklung des Backends der Plattform setzen wir auf das etablierte Django Framework zusammen mit einer PostgreSQL Datenbank. Ansprüche hinsichtlich Datenmengen, Sicherheit und der agilen, fortlaufenden Entwicklung können so perfekt bewältigt werden. Das Frontend setzt sich für Endnutzer aus der mystaffpilot.de Webseite und einer nativen Android sowie iOS App zusammen. Der Innendienst arbeitet im System mit einer modernen single-page Web-Anwendung, die auf Ember.js basiert.
                   Grundlegender Bestandteil des Systems ist Cosworth, ein von anfema entwickeltes
                   Export-funktionales Reporting Tool. Cosworth ermöglicht es, Daten auch außerhalb des Systems, beispielsweise in der Buchhaltung, zu verarbeiten. Dank mehrerer Test und
