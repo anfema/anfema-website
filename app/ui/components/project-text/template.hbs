@@ -8,9 +8,21 @@
 		<p>{{data.subTitle}}</p>
 	</div>
 
-	<div class="project-text__img">
-		{{#if data.img}}
-			{{responsive-image image=data.img}}
+	<div class="project-text__img project-text--{{data.img.alignment}}">
+		{{#if data.img.zero}}
+			<div>
+				{{responsive-image image=data.img.zero}}
+			</div>
+		{{/if}}
+		{{#if data.img.one}}
+			<div class="project-text__img-one">
+				{{responsive-image image=data.img.one}}
+			</div>
+		{{/if}}
+		{{#if data.img.two}}
+			<div class="project-text__img-two">
+				{{responsive-image image=data.img.two}}
+			</div>
 		{{/if}}
 	</div>
 
