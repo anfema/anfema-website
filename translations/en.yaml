@@ -33,7 +33,7 @@ component:
     offices:
       munich:
         title: Main office Munich
-        street: Seitzstr. 16
+        street: Prinzregentenstr. 11A
         postal: '80538'
         city: Munich
         country: Germany
@@ -43,7 +43,9 @@ component:
         postal: '86150'
         city: Augsburg
         country: Germany
-    email: contact@anfe.ma
+    email:
+      label: E-Mail
+      value: contact@anfe.ma
     phone:
       label: Phone
       value: +49 89 55269932

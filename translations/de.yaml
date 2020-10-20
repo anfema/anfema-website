@@ -33,7 +33,7 @@ component:
     offices:
       munich:
         title: Zentrale München
-        street: Seitzstr. 16
+        street: Prinzregentenstr. 11A
         postal: '80538'
         city: München
         country: Deutschland
@@ -43,7 +43,9 @@ component:
         postal: '86150'
         city: Augsburg
         country: Deutschland
-    email: kontakt@anfe.ma
+    email:
+      label: E-Mail
+      value: kontakt@anfe.ma
     phone:
       label: Telefon
       value: +49 89 55269932
