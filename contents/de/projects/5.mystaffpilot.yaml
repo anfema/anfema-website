@@ -18,7 +18,8 @@ sections:
     titleAfter: 'Plattform'
     subTitle: '2014 - Heute'
     img: 
-      one: 'msp-intro.png'
+      alignment: 'horizontal'
+      zero: 'msp-intro.png'
     description: 'Die Staffpilot GmbH hat es sich zur Aufgabe gemacht, für Agenturen mit Promotions ein Portal bereitzustellen. Dieses ermöglicht für die Abwicklung von Promotion-Aufträgen sowohl für die Agenturseite als auch für die Selbständigen einen tollen Rundum-Service. In enger Zusammenarbeit mit der Staffpilot GmbH haben wir dafür die Promoter Plattform MYSTAFFPILOT entwickelt. Diese betreuen und erweitern wir seitdem. Die erarbeitete Lösung umfasst eine öffentliche Android App, iOS App, ein Web-Portal für Promoter, sowie eine interne Anwendung. Damit ist es möglich, die umfangreichen Prozesse vollständig abzudecken: Vom Rekrutierungsprozess zukünftiger Promoter über Terminmanagement aller Aufträge und eingesetzten Personals, bis hin zur Rechnungsstellung. Mehrere tausend Nutzer verwenden das System regelmäßig.'
   -
     component: 'project-text'
@@ -26,6 +27,7 @@ sections:
     orientation: 'right'
     titleColored: 'Challenge'
     img: 
+      alignment: 'horizontal'
       one: 'msp-challenge-ipad1.png'
       two: 'msp-challenge-ipad2.png'
     description: 'Die größte Challenge bei diesem Projekt ist das Abbilden bestehender und das Erarbeiten neuer Prozesse des Kunden. Vermehrte Änderungen durch Anforderungen und Ansprüche an das System führen dazu, dass die Plattform stetig erweitert und mit neuen Funktionalitäten ausgestattet wird. Datensicherheit muss an höchster Stelle stehen: Verschiedene Personengruppen (Promoter, Innendienst, Kunden des Kunden) haben Zugriff auf die Plattform. Demzufolge werden in der Plattform personenbezogene, private, öffentliche, und interne Daten verarbeitet.'
@@ -36,6 +38,7 @@ sections:
     titleBefore: 'How we made it '
     titleColored: 'awesome'
     img: 
+      alignment: 'vertical'
       one: 'msp-awesome-iphone.png'
       two: 'msp-awesome-android.png'
     description: 'Ausschlaggebend für die erfolgreiche Konzipierung und Umsetzung des Systems

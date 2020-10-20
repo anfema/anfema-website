@@ -9,13 +9,18 @@
 	</div>
 
 	<div class="project-text__img">
-		{{#if data.img.one}}
+		{{#if data.img.zero}}
 			<div>
+				{{responsive-image image=data.img.zero}}
+			</div>
+		{{/if}}
+		{{#if data.img.one}}
+			<div class="project-text__img-one project-text--{{data.img.alignment}}">
 				{{responsive-image image=data.img.one}}
 			</div>
 		{{/if}}
 		{{#if data.img.two}}
-			<div>
+			<div class="project-text__img-two project-text--{{data.img.alignment}}">
 				{{responsive-image image=data.img.two}}
 			</div>
 		{{/if}}

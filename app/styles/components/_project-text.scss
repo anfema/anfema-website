@@ -14,10 +14,43 @@
 	}
 
 	img {
-		width: 80%;
+		width: 100%;
+		max-height: 400px;
+	}
+
+	&__img {
+		position: relative;
+		margin: 2rem 0;
+	}
+
+	&__img-one {
+		transform: rotate(-7deg);
+	}
+
+	&__img-two {
+		position: absolute;
+		top: 10rem;
+		z-index: 1;
+		width: 100%;
+		transform: rotate(7deg);
+	}
+
+	&--vertical {
+		margin: auto;
+		max-inline-size: max-content;
+	}
+
+	&--horizontal {
+		margin-bottom: 10rem;
 	}
 
 	@include media-medium-min {
+		img {
+			width: auto;
+			max-width: 100%;
+			max-height: 400px;
+		}
+
 		&__title {
 			grid-row: 1 / span 1;
 			align-self: end;
@@ -29,6 +62,10 @@
 
 		&__img {
 			grid-row: 1 / span 2;
+
+			div {
+				position: absolute;
+			}
 		}
 
 		&--left {
@@ -42,6 +79,10 @@
 
 			.project-text__img {
 				grid-column: 8 / span 4;
+
+				div {
+					right: -50%;
+				}
 			}
 		}
 
@@ -56,6 +97,10 @@
 
 			.project-text__img {
 				grid-column: 2 / span 4;
+
+				div {
+					left: -50%;
+				}
 			}
 		}
 	}
