@@ -2,6 +2,7 @@
 	@include grid-base;
 	@include offset-content-top;
 	@include offset-content-bottom;
+	@include customer-colors;
 
 	&--title,
 	&--description,
