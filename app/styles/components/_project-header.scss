@@ -2,7 +2,7 @@
 	@include grid-base;
 
 	position: relative;
-	height: 90vh;
+	height: 45vh;
 	overflow: visible;
 	grid-template-rows: 1fr fit-content(8.2rem) 1fr;
 	padding-bottom: 1rem;
@@ -59,15 +59,14 @@
 		position: absolute;
 		bottom: -2rem;
 		left: 50%;
+		display: none;
 		width: 4rem;
 		height: 4rem;
 		overflow: hidden;
 		margin-left: -2rem;
-		background: $color-background
-			inline-svg(
+		background: $color-background inline-svg(
 				'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><polygon fill="#3F3A40" fill-rule="evenodd" points="9.539 17 14 10 9.539 3 6 3 10.461 10 6 17" transform="rotate(90 10 10)"/></svg>'
-			)
-			center no-repeat;
+		) center no-repeat;
 		border: 0;
 		outline: 0;
 		box-shadow: 0 5px 20px 0 rgba(49, 41, 51, 0.15), 0 1px 2px 0 rgba(49, 41, 51, 0.17),
@@ -81,6 +80,10 @@
 		&:focus {
 			box-shadow: 0 3px 15px 0 rgba(49, 41, 51, 0.1), 0 1px 2px 0 rgba(49, 41, 51, 0.17),
 				0 1px 3px 0 rgba(49, 41, 51, 0.1);
+		}
+
+		@include media-large-min {
+			display: block;
 		}
 	}
 }
