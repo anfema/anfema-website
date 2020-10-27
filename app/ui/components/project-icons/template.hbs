@@ -1,7 +1,7 @@
 <div class="project-icons--title">
 	<h2>
 		<span>{{data.titleBefore}}</span>
-		<span>{{data.titleColored}}</span>
+		<span class="color--{{meta.id}}">{{data.titleColored}}</span>
 		<span>{{data.titleAfter}}</span>
 	</h2>
 </div>
@@ -30,7 +30,7 @@
 </div>
 
 <div class="project-icons--description">
-	<p>{{data.description}}</p>
+	<p>{{{data.description}}}</p>
 </div>
 
 {{yield}}
