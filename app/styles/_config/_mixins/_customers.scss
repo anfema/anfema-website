@@ -8,4 +8,28 @@
 			color: #f97e33;
 		}
 	}
+
+	.col-1 {
+		&--mystaffpilot {
+			fill: #72a3d2;
+		}
+	}
+
+	.col-2 {
+		&--mystaffpilot {
+			fill: #84b5e4;
+		}
+	}
+
+	.col-3 {
+		&--mystaffpilot {
+			fill: #0062c0;
+		}
+	}
+
+	.col-bg {
+		&--mystaffpilot {
+			background: #b73434 no-repeat;
+		}
+	}
 }

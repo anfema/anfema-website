@@ -1,7 +1,18 @@
-<h1 class="project-header__client">{{meta.client}}</h1>
-<h1 class="project-header__title">{{{meta.title}}}</h1>
+<div class="project-header__background">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 50">
+		<g>
+			<polygon class="col-1--{{meta.id}}" points="120 0 0 0 34 50 120 50 120 0"/>
+			<polygon class="col-2--{{meta.id}}" points="30 0 120 0 120 50 47 50 30 0"/>
+			<polygon class="col-3--{{meta.id}}" points="60 0 80 50 120 50 120 0 60 0"/>
+		</g>
+	</svg>
+</div>
 
-{{yield}}
+<div class="project-header__text">
+	<h1 class="project-header__client">{{meta.client}}</h1>
+	<h1 class="project-header__title">{{{meta.title}}}</h1>
+</div>
+
 
 <button class="project-header__scroll-down" {{action "scrollDown"}}>
 	{{t "component.content-lp-cover.action.scrollDown"}}
