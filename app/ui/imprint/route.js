@@ -9,6 +9,6 @@ export default Route.extend({
 	},
 
 	model() {
-		return this.get('staticContent').read('/imprint');
+		return this.staticContent.read('/imprint');
 	},
 });

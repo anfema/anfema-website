@@ -12,6 +12,6 @@ module('Integration | Component | contact', function(hooks) {
 
 		await render(hbs`{{contact}}`);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.dom(this.element).hasText('');
 	});
 });

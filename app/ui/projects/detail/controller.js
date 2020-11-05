@@ -20,7 +20,7 @@ export default Controller.extend({
 	sections: readOnly('model.sections'),
 
 	jumpSections: computed('sections.@each', function() {
-		return this.get('sections').reduce((acc, section) => {
+		return this.sections.reduce((acc, section) => {
 			if (section.anchorId) {
 				acc.push(section);
 			}
@@ -31,7 +31,7 @@ export default Controller.extend({
 
 	topfeatures: computed(function() {
 		return findByComponentNameAndPath(
-			this.get('staticContent').readShoebox('/detail'),
+			this.staticContent.readShoebox('/detail'),
 			'project-features',
 			'features.0.id'
 		);

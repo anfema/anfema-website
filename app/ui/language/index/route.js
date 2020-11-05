@@ -5,6 +5,6 @@ export default Route.extend({
 	staticContent: service(),
 
 	model() {
-		return this.get('staticContent').read('/index');
+		return this.staticContent.read('/index');
 	},
 });

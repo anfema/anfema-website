@@ -31,7 +31,7 @@ export default Route.extend({
 			expectedLocale = defaultLocale;
 		}
 
-		await this.get('intl').setLocale(expectedLocale);
+		await this.intl.setLocale(expectedLocale);
 	},
 
 	_guessLocale(expectedLocale, locales, defaultLocale) {

@@ -10,7 +10,7 @@ export default Route.extend({
 	sections: readOnly('model.sections'),
 
 	jumpSections: computed('sections.@each', function() {
-		return this.get('sections').reduce((acc, section) => {
+		return this.sections.reduce((acc, section) => {
 			if (section.anchorId) {
 				acc.push(section);
 			}
@@ -24,6 +24,6 @@ export default Route.extend({
 	},
 
 	model(params) {
-		return this.get('staticContent').read(`/projects/${params.project_id}`);
+		return this.staticContent.read(`/projects/${params.project_id}`);
 	},
 });

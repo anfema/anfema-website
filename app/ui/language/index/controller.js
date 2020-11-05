@@ -28,7 +28,7 @@ export default Controller.extend({
 	sections: readOnly('model.sections'),
 
 	jumpSections: computed('sections.@each', function() {
-		return this.get('sections').reduce((acc, section) => {
+		return this.sections.reduce((acc, section) => {
 			if (section.anchorId) {
 				acc.push(section);
 			}
@@ -39,7 +39,7 @@ export default Controller.extend({
 
 	service: computed(function() {
 		return findByComponentNameAndPath(
-			this.get('staticContent').readShoebox('/index'),
+			this.staticContent.readShoebox('/index'),
 			'content-lp-services',
 			'services.0.id'
 		);
@@ -47,7 +47,7 @@ export default Controller.extend({
 
 	team: computed(function() {
 		return findByComponentNameAndPath(
-			this.get('staticContent').readShoebox('/index'),
+			this.staticContent.readShoebox('/index'),
 			'content-lp-team',
 			'reasons.0.id'
 		);
