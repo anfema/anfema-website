@@ -1,9 +1,10 @@
 <div class="project-header__background">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 50">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 50">
 		<g>
-			<polygon class="col-1--{{meta.id}}" points="120 0 0 0 34 50 120 50 120 0"/>
-			<polygon class="col-2--{{meta.id}}" points="30 0 120 0 120 50 47 50 30 0"/>
-			<polygon class="col-3--{{meta.id}}" points="60 0 80 50 120 50 120 0 60 0"/>
+			<polygon class="{{meta.id}}-color--zero" points="0 0 0 50 600 50 600 0 0 0"/>
+			<polygon class="{{meta.id}}-color--one" points="480 0 514 50 600 50 600 0 480 0"/>
+			<polygon class="{{meta.id}}-color--two" points="510 0 527 50 600 50 600 0 510 0"/>
+			<polygon class="{{meta.id}}-color--three" points="539 0 560 50 600 50 600 0 540 0"/>
 		</g>
 	</svg>
 </div>
@@ -13,6 +14,11 @@
 	<h1 class="project-header__title">{{{meta.title}}}</h1>
 </div>
 
+<div class="project-header__image">
+	<div>
+		{{responsive-image image=data.img}}
+	</div>
+</div>
 
 <button class="project-header__scroll-down" {{action "scrollDown"}}>
 	{{t "component.content-lp-cover.action.scrollDown"}}
