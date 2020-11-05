@@ -1,7 +1,7 @@
 import Controller from '@ember/controller';
-import { inject as service } from '@ember/service';
 import { computed, get } from '@ember/object';
 import { readOnly } from '@ember/object/computed';
+import { inject as service } from '@ember/service';
 
 /**
  * Find the id for the first item in a list of contents
@@ -37,20 +37,30 @@ export default Controller.extend({
 		}, []);
 	}),
 
-	service: computed(function() {
-		return findByComponentNameAndPath(
-			this.staticContent.readShoebox('/index'),
-			'content-lp-services',
-			'services.0.id'
-		);
+	service: computed({
+		get() {
+			return findByComponentNameAndPath(
+				this.staticContent.readShoebox('/index'),
+				'content-lp-services',
+				'services.0.id'
+			);
+		},
+		// TODO: check if we set this somewhere
+		// https://deprecations.emberjs.com/v3.x/#toc_computed-property-override
+		set(key, value) {},
 	}),
 
-	team: computed(function() {
-		return findByComponentNameAndPath(
-			this.staticContent.readShoebox('/index'),
-			'content-lp-team',
-			'reasons.0.id'
-		);
+	team: computed({
+		get() {
+			return findByComponentNameAndPath(
+				this.staticContent.readShoebox('/index'),
+				'content-lp-team',
+				'reasons.0.id'
+			);
+		},
+		// TODO: check if we set this somewhere
+		// https://deprecations.emberjs.com/v3.x/#toc_computed-property-override
+		set(key, value) {},
 	}),
 
 	actions: {
