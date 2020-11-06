@@ -9,34 +9,19 @@
 		}
 	}
 
-	.col-1 {
-		&--mystaffpilot {
-			fill: #72a3d2;
-		}
-	}
-
-	.col-2 {
-		&--mystaffpilot {
-			fill: #84b5e4;
-		}
-	}
-
-	.col-3 {
-		&--mystaffpilot {
-			fill: #0062c0;
-		}
-	}
-
 	.mystaffpilot-color {
 		&--zero {
 			fill: #6291ba;
 		}
+
 		&--one {
 			fill: #72a3d2;
 		}
+
 		&--two {
 			fill: #84b5e4;
 		}
+
 		&--three {
 			fill: #0062c0;
 		}
