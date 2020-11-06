@@ -1,64 +1,90 @@
 .project-header {
 	@include grid-base;
+	@include customer-colors;
 
 	position: relative;
-	height: 45vh;
-	overflow: visible;
-	grid-template-rows: 1fr fit-content(8.2rem) 1fr;
-	padding-bottom: 1rem;
+	height: 90vw;
+	max-height: 92vh;
+	grid-template-rows: 1fr 10rem 1fr;
 	color: $color-text-inverted;
-	background: #363636 no-repeat;
-	background-position: right calc(-50vh + 10%) bottom 0, center;
-	background-size: auto 100vh, cover;
+	background: $color-grey no-repeat;
 
-	@include media-large-min {
-		height: auto;
-		min-height: 96vh;
-		background-position: right calc(-50vh) bottom -5vh, center;
-		background-size: auto 120vh, cover;
+	img {
+		width: 100%;
 	}
 
-	* {
-		position: relative;
-		grid-column: 1 / -1;
+	&__image {
+		position: absolute;
+		right: -8.5rem;
+		bottom: 0;
+		z-index: 1;
+		width: 100vh;
+		height: 100%;
+		max-width: 80vw;
+		overflow: hidden;
+
+		@include media-large-min {
+			right: -30rem;
+		}
+
+		@include media-xlarge-min {
+			right: -20rem;
+		}
+	}
+
+	&__background {
+		position: absolute;
+		right: -15rem;
+		z-index: 0;
+		height: 90vw;
+		max-height: 92vh;
+
+		svg {
+			height: -webkit-fill-available;
+		}
+
+		@include media-large-min {
+			right: -30rem;
+		}
+
+		@include media-xlarge-min {
+			right: -20rem;
+		}
+	}
+
+	&__text {
+		z-index: 2;
+		grid-column: 1 / span 4;
+		grid-row: 2 / span 1;
+
+		@include media-medium-min {
+			grid-column: 2 / span 7;
+		}
 	}
 
 	h1 {
-		grid-row: 2 / span 1;
-		margin: 0;
+		margin: 0.5rem 0;
 		color: $color-text-inverted;
 		font-size: 4.9rem;
 		line-height: 0.8;
-		text-shadow: 0 2px 5px rgba(49, 41, 51, 0.1), 0 1px 2px rgba(49, 41, 51, 0.17);
-		text-transform: uppercase;
+		text-shadow: 2px 4px 10px #333433;
 
 		@include media-large-min {
-			grid-column: 2 / span 10;
 			font-size: 11rem;
 			line-height: 0.8;
 			letter-spacing: 0.02em;
 		}
 	}
 
-	h2 {
-		grid-column: 1 / span 5;
-		grid-row: 3 / span 1;
-		margin-top: 3rem;
-		color: $color-text-inverted;
-		font-size: 1.9rem;
-		line-height: 2.5rem;
-
-		@include media-large-min {
-			grid-column: 2 / span 10;
-			font-size: 11rem;
-			line-height: 0.8;
-		}
+	&__client {
+		text-transform: uppercase;
 	}
 
 	&__scroll-down {
 		position: absolute;
 		bottom: -2rem;
 		left: 50%;
+		z-index: 3;
 		display: none;
 		width: 4rem;
 		height: 4rem;
