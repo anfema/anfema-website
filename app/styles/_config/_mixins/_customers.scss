@@ -4,6 +4,10 @@
 			color: #006ac9;
 		}
 
+		&--paulaner {
+			color: #003366;
+		}
+
 		&--knauf {
 			color: #f97e33;
 		}
@@ -23,7 +27,25 @@
 		}
 
 		&--three {
-			fill: #0062c0;
+			fill: #006ac9;
+		}
+	}
+
+	.paulaner-color {
+		&--zero {
+			fill: #60778e;
+		}
+
+		&--one {
+			fill: #748ba2;
+		}
+
+		&--two {
+			fill: #869db4;
+		}
+
+		&--three {
+			fill: #003366;
 		}
 	}
 }
