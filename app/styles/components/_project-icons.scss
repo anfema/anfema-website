@@ -4,15 +4,15 @@
 	@include offset-content-bottom;
 	@include customer-colors;
 
-	&--title,
-	&--description,
-	&--img {
+	&__title,
+	&__description,
+	&__img {
 		grid-column: 1 / span 4;
 	}
 
-	&--img {
+	&__img {
 		display: flex;
-		flex-flow: row wrap;
+		flex-flow: row nowrap;
 
 		div {
 			margin: auto;
@@ -25,18 +25,18 @@
 	}
 
 	@include media-medium-min {
-		&--title {
+		&__title {
 			grid-column: 2 / span 4;
 			grid-row: 1 / span 1;
 			align-self: end;
 		}
 
-		&--description {
+		&__description {
 			grid-column: 2 / span 6;
 			grid-row: 2 / span 2;
 		}
 
-		&--img {
+		&__img {
 			grid-column: 8 / span 4;
 			grid-row: 2 / span 2;
 		}
