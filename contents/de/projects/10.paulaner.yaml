@@ -46,14 +46,14 @@ sections:
       one: 'paulaner-challenge-ipad1.png'
       two: 'paulaner-challenge-ipad2.png'
     description: |
-       <p>Der User steht im Vordergrund – das ist eine unserer wichtigsten Devisen. Gerade bei diesem Projekt von Paulaner war es wichtig, die Zielgruppe in den Fokus zu stellen. Somit hatten wir eine intensive Konzeptionsphase, die sich bis jetzt bis jetzt erfolgreich auszahlte.
-        Die Zielgruppe gehört nicht zu den sogenannten Digital Natives.
-        Sie zeichnen sich durch eine hands-on Mentalität aus und stehen oft
-        unter Zeitdruck. Ein hohes Maß an Intuitivität hat somit oberste Priorität.
-        Dies und noch viele mehr Aspekte konnten wir bei der Möglichkeit,
-        die Vertriebler bei ihrem Daily Business zu begleiten, herausarbeiten.
-        Diese Einblicke über ihre Bedürfnisse und Interessen hat uns bei der Konzeptphase einen enormen Vorteil verschafft.
-        Die Challenge konnten wir damit erfolgreich meistern und freuen uns über Feedback um das Projekt fortlaufend zu verbessern und auszubauen.</p>
+      <p>Der User steht im Vordergrund – das ist eine unserer wichtigsten Devisen. Gerade bei diesem Projekt von Paulaner war es wichtig, die Zielgruppe in den Fokus zu stellen. Somit hatten wir eine intensive Konzeptionsphase, die sich bis jetzt bis jetzt erfolgreich auszahlte.
+       Die Zielgruppe gehört nicht zu den sogenannten Digital Natives.
+       Sie zeichnen sich durch eine hands-on Mentalität aus und stehen oft
+       unter Zeitdruck. Ein hohes Maß an Intuitivität hat somit oberste Priorität.
+       Dies und noch viele mehr Aspekte konnten wir bei der Möglichkeit,
+       die Vertriebler bei ihrem Daily Business zu begleiten, herausarbeiten.
+       Diese Einblicke über ihre Bedürfnisse und Interessen hat uns bei der Konzeptphase einen enormen Vorteil verschafft.
+       Die Challenge konnten wir damit erfolgreich meistern und freuen uns über Feedback um das Projekt fortlaufend zu verbessern und auszubauen.</p>
   -
     component: 'project-text'
     anchorId: 'paulaner-awesome'
@@ -62,7 +62,7 @@ sections:
     titleColored: 'awesome'
     img:
       alignment: 'horizontal'
-      two: 'paulaner-awesome.png'
+      zero: 'paulaner-awesome.png'
     description: |
       <p>Ein Punkt den die App auszeichnet: wir setzen auf natives Design und Entwicklungsstandards. Wir achten auf Aktualität und verbessern stetig die Funktionalität. Was die Zielgruppe von ihren Privatanwendungen kennt, wissen sie ebenfalls zügig in ihrer Arbeitssoftware zu schätzen.</p>
   -
@@ -98,10 +98,10 @@ sections:
     component: 'content-quote'
     anchorId: 'paulaner-quote'
     source: |
-      ??? <br>
-      ??
+      Heide Buchmann <br>
+      IMT Business Partner für den Vertrieb Informationsmanagement
     content: |
-      <p>?????</p>
+      <p>Es macht Spaß die App zu verwenden und wachsen zu sehen, wie sie immer noch besser zu unseren steigenden Anforderungen passt und den Vertrieb bei der täglichen Arbeit unterstützt. In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.</p>
   -
     component: 'project-icons'
     anchorId: 'paulaner-technology'
