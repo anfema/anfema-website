@@ -3,11 +3,8 @@
 	<p class="contact__description">{{data.description}}</p>
 	<a class="contact__button"
 	   href="mailto:{{t "component.page-footer.email.value"}}
-	   ?subject=Info%20über%20das%20Projekt%20{{meta.client}}%20{{meta.title}}
-	   &body=Hallo%20anfema%20Team,
-	   %0A%0Aich%20habe%20mir%20gerade%20Eure%20Seite%20zum%20Projekt%20{{meta.client}}%20{{meta.title}}%20angeschaut.%20Gerne%20würde%20ich%20darüber%20mehr%20erfahren%20und%20mit%20Euch%20in%20Kontakt%20treten.
-	   %0A%0AMit%20freundlichen%20Grüßen
-	   %0AMax%20Mustermann">
+	   ?subject={{data.subject}}%20{{meta.client}}%20{{meta.title}}
+	   &body={{data.body.partOne}}%20{{meta.client}}%20{{meta.title}}%20{{data.body.partTwo}}">
 		{{data.button}}
 	</a>
 </div>
