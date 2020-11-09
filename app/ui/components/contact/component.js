@@ -19,8 +19,6 @@ export default Component.extend({
 		const subject = `${data.subject} ${meta.client} ${meta.title}`;
 		const body = data.body.replace('{{projectInfo}}', `${meta.client} ${meta.title}`);
 
-		console.log(data.body.partTwo);
-
 		return this.createMailToLinkWithContent(email, subject, body);
 	}),
 });
