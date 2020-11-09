@@ -108,11 +108,10 @@ sections:
     description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
     button: 'Jetzt kontaktieren'
     subject: 'Info über das Projekt'
-    body:
-      partOne: |
-        Hallo anfema Team,
-        ich habe mir gerade Eure Seite zum Projekt
-      partTwo: |
-        angeschaut. Gerne würde ich darüber mehr erfahren und mit Euch in Kontakt treten.
-        Mit freundlichen Grüßen
-        Max Mustermann
+    body: |
+      Hallo anfema Team,
+      ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.
+      Gerne würde ich darüber mehr erfahren und mit Euch in Kontakt treten.
+
+      Mit freundlichen Grüßen
+      Max Mustermann
