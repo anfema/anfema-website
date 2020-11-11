@@ -2,9 +2,7 @@
 # coding styles between different editors and IDEs
 # editorconfig.org
 
-# Disabled because eslint-plugin-prettier chokes on this,
-# because ember-cli-eslint is naive
-# root = true
+root = true
 
 [*]
 end_of_line = lf

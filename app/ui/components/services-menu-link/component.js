@@ -28,7 +28,7 @@ export default Component.extend({
 	router: service('router'),
 
 	href: computed('queryParams', 'router.currentRouteName', function() {
-		const router = this.get('router');
+		const router = this.router;
 
 		return router.urlFor(router.get('currentRouteName'), {
 			queryParams: this.queryParams,

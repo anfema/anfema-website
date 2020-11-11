@@ -32,6 +32,8 @@ body {
 		font-family: Arial, sans-serif;
 	}
 
+	// TODO: move this to other class. .ember-view is global used by ember for components etc
+	// this will also be used (for example) on the footer. we don't want those sizes there :D
 	& > .ember-view {
 		display: grid;
 		height: 100%;
