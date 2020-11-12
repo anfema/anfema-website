@@ -10,7 +10,7 @@ sections:
     component: 'project-header'
     img: 'bmw-header.png'
     action:
-      scrollDown: 'See more'
+      scrollDown: 'More'
   -
     component: 'project-text'
     anchorId: 'bmw-intro'
@@ -39,7 +39,7 @@ sections:
       three: 'bmw-details3.png'
       four: 'bmw-details4.png'
     description: |
-      <p>Um die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben, wurden speziell für diese App Icons gestaltet.</p>
+      <p>In order to visually highlight the various possibilities and details of the vehicle, icons were especially designed for this app.</p>
   -
     component: 'project-text'
     anchorId: 'bmw-challenge'
@@ -82,14 +82,10 @@ sections:
       <p>The BMW 7 Series Presenter was developed in Swift for iOS. A specially developed server backend based on Django guarantees the fast and reliable delivery of new content, and controls the required security functions.</p>
   -
     component: 'contact'
-    title: 'Klingt interessant?'
-    description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
-    button: 'Jetzt kontaktieren'
-    subject: 'Info über das Projekt'
+    title: 'Sounds interesting?'
+    description: 'You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!'
+    button: 'Contact us now'
+    subject: 'Information about the project'
     body: |
-      Hallo anfema Team,
-      ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.
-      Gerne würde ich darüber mehr erfahren und mit Euch in Kontakt treten.
-
-      Mit freundlichen Grüßen
-      Max Mustermann
+      Hello anfema team,
+      I just had a look at your {{projectInfo}} project and ...
