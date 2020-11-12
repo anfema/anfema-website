@@ -31,15 +31,6 @@ body {
 	@include webfont-error {
 		font-family: Arial, sans-serif;
 	}
-
-	// TODO: move this to other class. .ember-view is global used by ember for components etc
-	// this will also be used (for example) on the footer. we don't want those sizes there :D
-	& > .ember-view {
-		display: grid;
-		height: 100%;
-		min-height: 100vh;
-		grid-template-rows: 1fr minmax(0, max-content);
-	}
 }
 
 .page {
