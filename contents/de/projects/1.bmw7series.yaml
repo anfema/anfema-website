@@ -1,20 +1,27 @@
 meta:
   color: '#0096DA'
   client: 'BMW'
-  title: '7 Series Presenter App'
-  id: 'bmw7series'
-  span: September 2014 - September 2015
+  title: 'iPad App'
+  id: 'bmw'
+  span: 'September 2014 - September 2015'
+  hidden: false
 sections:
   -
-    component: 'project-cover'
-    img: 'bmw7series-cover.jpg'
-    title: 'BMW 7 Series Presenter App'
+    component: 'project-header'
+    img: 'bmw-header.png'
+    action:
+      scrollDown: 'Mehr erfahren'
   -
     component: 'project-text'
-    assignmentText: true
-    content: |
-      <h3>Aufgabe</h3>
-
+    anchorId: 'bmw-intro'
+    orientation: 'left'
+    titleColored: 'BMW'
+    titleAfter: '7 Series Presenter App'
+    subTitle: '2014 - 2015'
+    img:
+      alignment: 'horizontal'
+      zero: 'bmw-intro.png'
+    description: |
       <p>Die Marke BMW steht seit jeher für Sportlichkeit, Fahrspaß und Komfort. Mit der Neuauflage des BMW 7er
       definierte der Premium-Automobilhersteller Luxus im Fahrzeugbereich neu. Für eine angemessene Präsentation
       des Fahrzeugs und seiner innovativen Features wurde eine iPad-App konzipiert und entwickelt. Die App besticht
@@ -22,19 +29,26 @@ sections:
       Medien, die den Komfort und den Spaß des BMW 7er auf das Tablet übertragen.</p>
   -
     component: 'project-icons'
-    useAlternateColor: true
-    title: 'Custom Icon Set'
-    icons:
-      - 'bmw7series-icon-1.svg'
-      - 'bmw7series-icon-2.svg'
-      - 'bmw7series-icon-3.svg'
-      - 'bmw7series-icon-4.svg'
-    text: 'Um die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben, wurden speziell für diese App Icons gestaltet.'
+    anchorId: 'bmw-details'
+    titleBefore: "It's all about the"
+    titleColored: 'Details'
+    img:
+      one: 'bmw-details1.png'
+      two: 'bmw-details2.png'
+      three: 'bmw-details3.png'
+      four: 'bmw-details4.png'
+    description: |
+      <p>Um die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben, wurden speziell für diese App Icons gestaltet.</p>
   -
     component: 'project-text'
-    content: |
-      <h3>Herausforderung</h3>
-
+    anchorId: 'bmw-challenge'
+    orientation: 'right'
+    titleColored: 'Challenge'
+    img:
+      alignment: 'horizontal'
+      one: 'bmw-challenge-ipad1.png'
+      two: 'bmw-challenge-ipad2.png'
+    description: |
       <p>Die Herausforderung bei dieser Applikation bestand darin, die Eleganz, den Komfort und die Eigenschaften
       des Fahrzeugs verständlich zu präsentieren. Mehrsprachigkeit und die Unterstützung von Layout-Varianten für
       Märkte wie die Vereinigte Arabische Emirate waren aufgrund der Internationalität des Produkts unbedingt erforderlich.
@@ -42,65 +56,49 @@ sections:
       gewährleistet werden.</p>
 
   -
-    component: 'content-project-triptych'
-    useAlternateColor: true
-    images:
-      - 'bmw7series-triptych-3.jpg'
-      - 'bmw7series-triptych-1.jpg'
-      - 'bmw7series-triptych-2.jpg'
-
-  -
     component: 'project-text'
-    content: |
-      <h3>Lösung</h3>
-
-      <p>Um das bestmögliche Ergebnis zu garantieren, entwickelten wir ein eigens angepasstes Datenmanagement-System, das
-      den Ansprüchen, der Datenvielfalt und dem Layout der App gerecht wird. Der BMW 7 Series Presenter ist eine iPad-App
-      für den weltweiten Markt an BMW-Vertragshändlern, die interessierten Kunden exklusive Einblicke in den neuen BMW 7er
-      gewährt. Durch verschiedene Themenbereiche und interaktive Inhalte vermittelt sie nicht nur Informationen über die
-      Produktion und Fahrzeugeigenschaften auf 10 verschiedenen Sprachen. Vielmehr erlaubt die App dem User das Eintauchen
-      in die Welt des 7er BMW. </p>
-  -
-    component: 'content-project-video'
-    useAlternateColor: true
-    width: 684
-    height: 513
-    poster: 'bmw7series-video-preview.jpg'
-    videos:
-    -
-      path: 'bmw7series-video.mp4'
-      type: 'mp4'
-    -
-      path: 'bmw7series-video.ogv'
-      type: 'ogv'
-    -
-      path: 'bmw7series-video.webm'
-      type: 'webm'
-
-  -
-    component: 'project-text'
-    content: |
-      <h3>Technologien</h3>
-
-      <p>Die App wurde als Innovationsprodukt mit Swift für iOS entwickelt. Ein eigenes Server-Backend basierend auf
-      Django garantiert eine schnelle und zuverlässige Auslieferung neuer Inhalte und kontrolliert die erforderlichen
-      Sicherheitsmaßnahmen.</p>
+    anchorId: 'bmw-awesome'
+    orientation: 'left'
+    titleBefore: 'How we made it '
+    titleColored: 'awesome'
+    img:
+      alignment: 'horizontal'
+      zero: 'bmw-awesome.png'
+    description: |
+      <p>Um das bestmögliche Ergebnis zu garantieren, entwickelten wir ein eigens angepasstes Datenmanagement-System. Dieses wird den Ansprüchen, der Datenvielfalt und dem Layout der App gerecht. Der BMW 7 Series Presenter ist eine iPad-App für den weltweiten Markt an BMW-Vertragshändlern. Interessierte Kunden erhalten exklusive Einblicke in den neuen BMW 7er. Durch verschiedene Themenbereiche und interaktive Inhalte vermittelt die App Informationen über die Produktion und Fahrzeugeigenschaften auf zehn verschiedenen Sprachen. Zudem erlaubt die App dem User das Eintauchen in die Welt des 7er BMW.</p>
   -
     component: 'content-quote'
-    source: Gunther Janeck, CoC Fuhrpark<br>BMW Group
+    anchorId: 'bmw-quote'
+    source: |
+      Gunther Janeck <br>
+      CoC Fuhrpark BMW Group
     content: |
       <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend.</p>
 
       <p>Großartig an der anfema ist neben der Qualität auch die Schnelligkeit, mit der sie Projekte verwirklicht.
       Deshalb ist und bleibt sie einer unserer viel geschätzten Partner.</p>
-
   -
-    component: 'content-project-gallery'
-    defaults:
-      width: 584
-      height: 438
-    images:
-      - 'bmw7series-gallery-1.jpg'
-      - 'bmw7series-gallery-2.jpg'
-      - 'bmw7series-gallery-3.jpg'
-      - 'bmw7series-gallery-4.jpg'
+    component: 'project-icons'
+    anchorId: 'bmw-technology'
+    titleColored: 'Technology'
+    titleAfter: 'we used'
+    img:
+      one: 'technology-swift.png'
+      two: 'technology-apple.png'
+    description: |
+      <p>Die App wurde als Innovationsprodukt mit Swift für iOS entwickelt. Ein eigenes Server-Backend basierend auf
+      Django garantiert eine schnelle und zuverlässige Auslieferung neuer Inhalte und kontrolliert die erforderlichen
+      Sicherheitsmaßnahmen.</p>
+  -
+    component: 'contact'
+    title: 'Klingt interessant?'
+    description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
+    button: 'Jetzt kontaktieren'
+    subject: 'Info über das Projekt'
+    body: |
+      Hallo anfema Team,
+      ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.
+      Gerne würde ich darüber mehr erfahren und mit Euch in Kontakt treten.
+
+      Mit freundlichen Grüßen
+      Max Mustermann
