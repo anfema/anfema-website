@@ -188,6 +188,8 @@ export default Component.extend({
 
 		element.addEventListener('transitionend', this.onTransitionEnd);
 		element.addEventListener('transitioncancel', this.onTransitionEnd);
+		/* element.addEventListener('mouseleave', this.handleMouseLeave);
+		element.addEventListener('click', this.handleClick); */
 	},
 
 	willDestroyElement() {
@@ -195,6 +197,8 @@ export default Component.extend({
 
 		element.removeEventListener('transitionend', this.onTransitionEnd);
 		element.removeEventListener('transitioncancel', this.onTransitionEnd);
+		/* element.removeEventListener('mouseLeave', this.handleMouseLeave);
+		element.removeEventListener('click', this.handleClick); */
 	},
 
 	/*
@@ -203,25 +207,36 @@ export default Component.extend({
 
 	// TODO: refactor to use template-based events
 	// https://deprecations.emberjs.com/v3.x/#toc_component-mouseenter-leave-move
-	touchStart(e) {
+	handleClick() {
+		console.log('handleClick');
+	},
+
+	handleTouchStart(e) {
 		this.startDrag(e.touches[0].clientX);
+		console.log('handleTouchStart');
 	},
-	touchEnd(/* e */) {
+	handleTouchEnd(/* e */) {
 		this.endDrag();
+		console.log('handleTouchEnd');
 	},
-	touchMove(e) {
+	handleTouchMove(e) {
 		this.updateDrag(e.touches[0].clientX);
+		console.log('handleTouchMove');
 	},
-	mouseDown(e) {
+	handleMouseDown(e) {
 		this.startDrag(e.clientX);
+		console.log('handleMouseDown');
 	},
-	mouseUp(/* e */) {
+	handleMouseUp(/* e */) {
+		this.endDrag();
+		console.log('handleTouchUp');
+	},
+	handleMouseLeave(/* e */) {
+		console.log('handleMouseLeave');
 		this.endDrag();
 	},
-	mouseLeave(/* e */) {
-		this.endDrag();
-	},
-	mouseMove(e) {
+	handleMouseMove(e) {
+		console.log('handleMouseMove');
 		this.updateDrag(e.clientX);
 	},
 

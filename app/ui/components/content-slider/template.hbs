@@ -1,6 +1,7 @@
 {{!-- template-lint-disable no-bare-strings no-inline-styles --}}
 
 {{yield}}
+<div class="content-slider" {{on "touchstart" this.handleTouchStart}} {{on "touchend" this.handleTouchEnd}} {{on "touchmove" this.handleTouchMove}} {{on "mousedown" this.handleMouseDown}} {{on "mouseup" this.handleMouseUp}} {{on "mousemove" this.handleMouseMove}} {{on "mouseleave" this.handleMouseLeave}}>
 
 <div class="content-slider__slidewindow">
 	<div class="content-slider__slider {{_sliderExtraClass}}" style={{_sliderStyle}}>
@@ -25,3 +26,5 @@
 	{{action "slideToNext" bubbles=false}}>
 	<img src="img/arrow-right.svg" alt="arrow-right" class="arrow-right">
 </button>
+
+</div>
