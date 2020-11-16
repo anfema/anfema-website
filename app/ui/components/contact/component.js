@@ -16,8 +16,11 @@ export default Component.extend({
 		const data = this.get('data');
 		const meta = this.get('meta');
 		const email = this.intl.t('component.page-footer.email.value');
-		const subject = `${data.subject} ${meta.client} ${meta.title}`;
-		const body = data.body.replace('{{projectInfo}}', `${meta.client} ${meta.title}`);
+		const subject = `${data.subject || ''} ${meta.client || ''} ${meta.title || ''}`;
+		const body = data.body.replace(
+			'{{projectInfo}}',
+			`${meta.client || ''} ${meta.title || ''}`
+		);
 
 		return this.createMailToLinkWithContent(email, subject, body);
 	}),
