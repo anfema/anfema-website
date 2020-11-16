@@ -51,9 +51,9 @@ sections:
     anchorId: 'msp-quote'
     source: |
       Iris Naudßus <br>
-      Mitglied der Geschäftsleitung STAFFPILOT GmbH
+      Member of the Executive Board, STAFFPILOT GmbH
     content: |
-      <p>Wir sind mit einer sehr komplexen Aufgabe an die anfema herangetreten: Programmierung einer Plattform, die für unsere Agentur-Partner und Kunden einen Komplett-Service zur Abwicklung von Promotion-Jobs bietet. Die anfema hat die Sätze "geht nicht", "gibt es nicht" nicht in Ihrem Portfolio,  daher haben wir per dato eine unseren Wünschen entsprechende Plattform, die unseren Agenturpartnern und unseren Kunden diesen kompletten Service liefert! Kurzfristige Änderungen und  Erweiterungen werden gut überlegt umgesetzt! Wir freuen uns, die anfema an unserer Seite als langjährigen Dienstleister zu wissen.</p>
+      <p>We approached anfema with a very complex task: Programming a platform that offers our agency partners and clients a complete service for handling promotion jobs. anfema does not have the phrases "doesn't work", "doesn't exist" in its portfolio. Therefore, we have a platform that meets our requirements as of today and provides our agency partners and customers with this complete service! Short-term changes and extensions are implemented with great consideration! We are happy to have anfema at our side as a longstanding service provider.</p>
   -
     component: 'project-icons'
     anchorId: 'msp-icons'
