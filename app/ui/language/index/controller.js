@@ -47,7 +47,7 @@ export default Controller.extend({
 		},
 		// TODO: check if we set this somewhere
 		// https://deprecations.emberjs.com/v3.x/#toc_computed-property-override
-		set(key, value) {},
+		set() {},
 	}),
 
 	team: computed({
@@ -60,7 +60,7 @@ export default Controller.extend({
 		},
 		// TODO: check if we set this somewhere
 		// https://deprecations.emberjs.com/v3.x/#toc_computed-property-override
-		set(key, value) {},
+		set() {},
 	}),
 
 	actions: {
