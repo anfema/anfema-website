@@ -1,7 +1,7 @@
 /* eslint-env node */
 
-module.exports = function (environment) {
-	let ENV = {
+module.exports = function(environment) {
+	const ENV = {
 		modulePrefix: 'anfema',
 		podModulePrefix: 'anfema/ui',
 		environment,

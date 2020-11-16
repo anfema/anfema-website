@@ -2,6 +2,7 @@ import EmberRouter from '@ember/routing/router';
 import { inject as service } from '@ember/service';
 import config from './config/environment';
 
+// eslint-disable-next-line import/exports-last
 export default class Router extends EmberRouter {
 	@service
 	headData;
@@ -13,8 +14,6 @@ export default class Router extends EmberRouter {
 		this.headData.title = title;
 	}
 }
-
-// eslint-disable-next-line array-callback-return
 
 Router.map(function() {
 	this.route('language', { path: '/:language_id' }, function() {
