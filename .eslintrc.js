@@ -11,11 +11,15 @@ module.exports = {
 		},
 	},
 	plugins: ['ember'],
-	extends: ['anfema/ember', 'eslint:recommended', 'plugin:ember/recommended'],
+	extends: ['eslint-config-anfema/ember', 'eslint:recommended', 'plugin:ember/recommended'],
 	env: {
 		browser: true,
 	},
-	rules: { 'no-console': 'off', 'import/no-anonymous-default-export': 'off' },
+	rules: {
+		'no-console': 'off',
+		'import/no-anonymous-default-export': 'off',
+		'ember/avoid-leaking-state-in-components': 'off',
+	},
 	overrides: [
 		// node files
 		{
@@ -36,13 +40,15 @@ module.exports = {
 				browser: false,
 				node: true,
 			},
-			plugins: ['node'],
-			extends: ['plugin:node/recommended'],
-			rules: {
-				// this can be removed once the following is fixed
-				// https://github.com/mysticatea/eslint-plugin-node/issues/77
-				'node/no-unpublished-require': 'off',
-			},
+			// disabled until we update eslint
+
+			// plugins: ['node'],
+			// extends: ['plugin:node/recommended'],
+			// rules: {
+			// 	// this can be removed once the following is fixed
+			// 	// https://github.com/mysticatea/eslint-plugin-node/issues/77
+			// 	'node/no-unpublished-require': 'off',
+			// },
 		},
 	],
 };
