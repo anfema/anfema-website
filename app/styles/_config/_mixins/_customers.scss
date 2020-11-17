@@ -11,6 +11,10 @@
 		&--bmw {
 			color: #0275b6;
 		}
+
+		&--pingonaut {
+			color: #ff7f00;
+		}
 	}
 
 	.mystaffpilot-color {
@@ -48,7 +52,7 @@
 			fill: #f97e33;
 		}
 	}
-	
+
 	.bmw-color {
 		&--zero {
 			fill: #6095b3;
@@ -64,6 +68,24 @@
 
 		&--three {
 			fill: #0275b6;
+		}
+	}
+
+	.pingonaut-color {
+		&--zero {
+			fill: #d59a60;
+		}
+
+		&--one {
+			fill: #e9ae74;
+		}
+
+		&--two {
+			fill: #fbc086;
+		}
+
+		&--three {
+			fill: #ff7f00;
 		}
 	}
 }
