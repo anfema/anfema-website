@@ -7,6 +7,10 @@
 		&--knauf {
 			color: #f97e33;
 		}
+
+		&--bmw {
+			color: #0275b6;
+		}
 	}
 
 	.mystaffpilot-color {
@@ -24,6 +28,24 @@
 
 		&--three {
 			fill: #0062c0;
+		}
+	}
+
+	.bmw-color {
+		&--zero {
+			fill: #6095b3;
+		}
+
+		&--one {
+			fill: #74a9c7;
+		}
+
+		&--two {
+			fill: #86bbd9;
+		}
+
+		&--three {
+			fill: #0275b6;
 		}
 	}
 }
