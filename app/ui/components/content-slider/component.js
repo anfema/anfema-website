@@ -5,14 +5,13 @@ import { htmlSafe } from '@ember/string';
 import { action } from '@ember/object';
 
 const FlickProportion = 0.15;
-let defaultElement = 1;
 
 function mod(n, m) {
 	return ((n % m) + m) % m;
 }
 
 export default Component.extend({
-	tagName: '',
+	tagName: 'div',
 	classNames: ['content-slider'],
 
 	/*
@@ -149,18 +148,18 @@ export default Component.extend({
 			: 'content-slider__slider--steady';
 	}),
 
-	actions: {
-		slideToPrevious() {
-			if (this.cycle || this._currentIndex > 0) {
-				this.transitionToPrevious();
-			}
-		},
+	@action
+	slideToPrevious() {
+		if (this.cycle || this._currentIndex > 0) {
+			this.transitionToPrevious();
+		}
+	},
 
-		slideToNext() {
-			if (this.cycle || this._currentIndex < this.data.length - 1) {
-				this.transitionToNext();
-			}
-		},
+	@action
+	slideToNext() {
+		if (this.cycle || this._currentIndex < this.data.length - 1) {
+			this.transitionToNext();
+		}
 	},
 
 	/*
@@ -187,13 +186,10 @@ export default Component.extend({
 	},
 
 	didInsertElement() {
-		console.log('element: ' + get(obj, 'undefinedKey') ?? defaultElement);
 		const element = this.element.querySelector('.content-slider__slider');
 
 		element.addEventListener('transitionend', this.onTransitionEnd);
 		element.addEventListener('transitioncancel', this.onTransitionEnd);
-		/* element.addEventListener('mouseleave', this.handleMouseLeave);
-		element.addEventListener('click', this.handleClick); */
 	},
 
 	willDestroyElement() {
@@ -201,8 +197,6 @@ export default Component.extend({
 
 		element.removeEventListener('transitionend', this.onTransitionEnd);
 		element.removeEventListener('transitioncancel', this.onTransitionEnd);
-		/* element.removeEventListener('mouseLeave', this.handleMouseLeave);
-		element.removeEventListener('click', this.handleClick); */
 	},
 
 	/*
@@ -211,55 +205,39 @@ export default Component.extend({
 
 	// TODO: refactor to use template-based events
 	// https://deprecations.emberjs.com/v3.x/#toc_component-mouseenter-leave-move
-	/* handleClick() {
-		console.log('handleClick');
-	} */
 
 	@action
 	handleTouchStart(e) {
 		this.startDrag(e.touches[0].clientX);
-		console.log('handleTouchStart');
 	},
 
 	@action
 	handleTouchEnd(e) {
-		// do something
-		console.log('handleTouchEnd test');
-	},
-
-	/* @action
-	handleTouchEnd(e) {
 		this.endDrag();
-		console.log('handleTouchEnd');
-	} */
+	},
 
 	@action
 	handleTouchMove(e) {
 		this.updateDrag(e.touches[0].clientX);
-		console.log('handleTouchMove');
 	},
 
 	@action
 	handleMouseDown(e) {
 		this.startDrag(e.clientX);
-		console.log('handleMouseDown');
 	},
 
 	@action
 	handleMouseUp(e) {
 		this.endDrag();
-		console.log('handleTouchUp');
 	},
 
 	@action
 	handleMouseLeave(e) {
-		console.log('handleMouseLeave');
 		this.endDrag();
 	},
 
 	@action
 	handleMouseMove(e) {
-		console.log('handleMouseMove');
 		this.updateDrag(e.clientX);
 	},
 
