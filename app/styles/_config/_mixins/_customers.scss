@@ -12,6 +12,10 @@
 			color: #0275b6;
 		}
 
+		&--tods {
+			color: #342524;
+		}
+
 		&--idnow {
 			color: #f95602;
 		}
@@ -52,7 +56,7 @@
 			fill: #f97e33;
 		}
 	}
-	
+
 	.bmw-color {
 		&--zero {
 			fill: #6095b3;
@@ -68,6 +72,24 @@
 
 		&--three {
 			fill: #0275b6;
+		}
+	}
+
+	.tods-color {
+		&--zero {
+			fill: #777070;
+		}
+
+		&--one {
+			fill: #8b8484;
+		}
+
+		&--two {
+			fill: #9d9696;
+		}
+
+		&--three {
+			fill: #342524;
 		}
 	}
 
