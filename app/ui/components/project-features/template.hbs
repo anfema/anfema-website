@@ -1,12 +1,13 @@
+<span>{{meta.client}}</span>
 <div class="project-features__text">
- <h2>
-  <span>{{data.titleBefore}}</span>
-  <span>{{data.titleColored}}</span>
- </h2>
+	<h2>
+		<span>{{data.titleBefore}}</span>
+		<span class="color--{{meta.id}}">{{data.titleColored}}</span>
+	</h2>
 
- {{#each data.features as |feature|}}
-  {{project-features-item data=feature selected=selected}}
- {{/each}}
+	{{#each data.features as |feature|}}
+		{{project-features-item data=feature selected=selected}}
+	{{/each}}
 </div>
 
 {{yield}}
