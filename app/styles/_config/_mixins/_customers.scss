@@ -15,6 +15,18 @@
 		&--ferchau {
 			color: #e62332;
 		}
+
+		&--pingonaut {
+			color: #ff7f00;
+		}
+
+		&--tods {
+			color: #342524;
+		}
+
+		&--idnow {
+			color: #f95602;
+		}
 	}
 
 	.mystaffpilot-color {
@@ -86,6 +98,60 @@
 
 		&--three {
 			fill: #e62332;
+		}
+	}
+
+	.pingonaut-color {
+		&--zero {
+			fill: #d59a60;
+		}
+
+		&--one {
+			fill: #e9ae74;
+		}
+
+		&--two {
+			fill: #fbc086;
+		}
+
+		&--three {
+			fill: #ff7f00;
+		}
+	}
+
+	.tods-color {
+		&--zero {
+			fill: #777070;
+		}
+
+		&--one {
+			fill: #8b8484;
+		}
+
+		&--two {
+			fill: #9d9696;
+		}
+
+		&--three {
+			fill: #342524;
+		}
+	}
+
+	.idnow-color {
+		&--zero {
+			fill: #d28760;
+		}
+
+		&--one {
+			fill: #e69b74;
+		}
+
+		&--two {
+			fill: #f8ad86;
+		}
+
+		&--three {
+			fill: #f95602;
 		}
 	}
 }

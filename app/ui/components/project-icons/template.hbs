@@ -29,8 +29,10 @@
 	{{/if}}
 </div>
 
-<div class="project-icons--description">
-	<p>{{{data.description}}}</p>
-</div>
+{{#if data.description}}
+	<div class="project-icons--description">
+		<p>{{{data.description}}}</p>
+	</div>
+{{/if}}
 
 {{yield}}
