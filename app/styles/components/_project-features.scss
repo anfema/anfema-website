@@ -5,43 +5,46 @@
 	@include customer-colors;
 
 	overflow: hidden;
-}
 
-.project-features__text,
-.project-features-item {
-	grid-column: 6 / span 6;
-}
+	&__text {
+		grid-column: 1 / span 4;
 
-.project-features-item {
-	&__navigation-link {
-		position: relative;
-		display: block;
-		width: 100%;
-		//overflow: hidden;
-		text-decoration: none;
-
-		&:focus,
-		&:hover {
-			color: inherit;
+		@include media-medium-min {
+			grid-column: 2 / -2;
 		}
 	}
 
-	&__title {
-		//position: absolute;
-		display: block;
-		transition: color 0.5s;
-	}
+	.project-features-item {
+		&__navigation-link {
+			position: relative;
+			display: block;
+			width: 100%;
+			//overflow: hidden;
+			text-decoration: none;
 
-	&__content {
-		height: 0;
-		overflow: hidden;
-		color: $color-text;
-		transition: height 1s;
-	}
+			&:focus,
+			&:hover {
+				color: inherit;
+			}
+		}
 
-	&--active {
-		.project-features-item__content {
-			height: auto;
+		&__title {
+			//position: absolute;
+			display: block;
+			transition: color 0.5s;
+		}
+
+		&__content {
+			height: 0;
+			overflow: hidden;
+			color: $color-text;
+			transition: height 1s;
+		}
+
+		&--active {
+			.project-features-item__content {
+				height: auto;
+			}
 		}
 	}
 }
