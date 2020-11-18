@@ -1,70 +1,87 @@
 meta:
-  color: '#F85720'
-  client: "IDnow"
-  title: 'Video Identification Web & App'
+  color: '#f95602'
+  client: 'IDnow'
+  title: 'Video Identification'
   id: 'idnow'
   span: 'July 2014 to date'
+  hidden: false
 sections:
   -
-    component: 'project-cover'
-    img: 'idnow-cover.jpg'
-    title: 'IDnow'
+    component: 'project-header'
+    img: 'idnow-header.png'
+    action:
+      scrollDown: 'More'
   -
     component: 'project-text'
-    assignmentText: true
-    content: |
-      <h3>Assignment</h3>
-
+    anchorId: 'idnow-intro'
+    orientation: 'left'
+    titleColored: 'IDnow'
+    titleAfter: 'Video Identification'
+    subTitle: 'July 2014 to date'
+    img:
+      alignment: 'horizontal'
+      zero: 'idnow-intro.png'
+    description: |
       <p>Deeming postal identity verification (“postident”) obsolete, the Munich-based Startup IDnow specialised in developing a digital solution that simplifies the extensive - and partially complicated - process. Using IDnow’s technology, the customer is, for example, spared a time-consuming trip to the post office. The online ident procedure is a secure, officially recognised and legal standard for identity verification. The user-friendly app and the specially developed SDK succeed in making identity and legitimation verification faster, more effective and available from anywhere.</p>
   -
     component: 'project-icons'
-    useAlternateColor: true
-    title: 'Custom Icon Set'
-    icons:
-      - 'idnow-icon-1.svg'
-      - 'idnow-icon-2.svg'
-      - 'idnow-icon-3.svg'
-      - 'idnow-icon-4.svg'
-    text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden speziell für diese App Icons gestaltet.'
+    anchorId: 'idnow-icons'
+    titleBefore: "It's all about the "
+    titleColored: 'Details'
+    img:
+      one: 'idnow-details1.png'
+      two: 'idnow-details2.png'
+      three: 'idnow-details3.png'
+      four: 'idnow-details4.png'
+    description: |
+      <p>Development of a clear, customer-specific visual language to emphasise the innovative character of the company.</p>
   -
     component: 'project-text'
-    content: |
-      <h3>Challenge</h3>
-
+    anchorId: 'idnow-challenge'
+    orientation: 'right'
+    titleColored: 'Challenge'
+    img:
+      alignment: 'horizontal'
+      one: 'idnow-challenge-android.png'
+      two: 'idnow-challenge-iphone.png'
+    description: |
       <p>anfema’s task in this project was to implement the online ident procedure in a user-friendly and platform independent way - for smart phones, tablets, PCs and laptops. Considering the system’s processing of sensitive data, it was a key requirement to ensure maximum data security.</p>
   -
-    component: 'content-project-triptych'
-    useAlternateColor: true
-    images:
-      - 'idnow-triptych-3.jpg'
-      - 'idnow-triptych-1.jpg'
-      - 'idnow-triptych-2.jpg'
-  -
     component: 'project-text'
-    content: |
-      <h3>Solution</h3>
-
-      <p>Using a straightforward navigation concept, the user interface was implemented in a simple and well-arranged way, speeding up the identification process yet again. In order to provide future customers with the highest degree of integrability, core functions were developed as a software development kit. Thus, customers can easily integrate the digital identity verification process into their existing systems, allowing for direct use. In order to guarantee maximum data security, a combination of cross-platform and platform independent components was applied - among them code obfuscation, prevention of caching inputs and encryption of all API requests.</p>
+    anchorId: 'idnow-awesome'
+    orientation: 'left'
+    titleBefore: 'How we made it '
+    titleColored: 'awesome'
+    img:
+      alignment: 'vertical'
+      zero: 'idnow-awesome.png'
+    description: |
+      <p>Using a straightforward navigation concept, the user interface was implemented in a simple and well-arranged way, speeding up the identification process yet again. In order to provide future customers with the highest degree of integrability, core functions were developed as a software development kit. Thus, customers can easily integrate the digital identity verification process into their existing systems, allowing for direct use. In order to guarantee maximum data security,
+         a combination of cross-platform and platform independent components was applied - among them code obfuscation, prevention of caching inputs and encryption of all API requests.</p>
   -
     component: 'content-quote'
+    anchorId: 'idnow-quote'
     source: |
-      Sebastian Bärhold, Managing Director & Co-Founder, IDnow GmbH
+      Sebastian Bärhold <br>
+      Managing Director & Co-Founder, IDnow GmbH
     content: |
       <p>anfema’s solution impresses with utmost usability. Your team understood exactly what we, the agents and the users needed, implemented it purposefully, and thereby made an essential contribution to our idea’s realisation and efficiency.</p>
   -
-    component: 'project-text'
-    content: |
-      <h3>Technology</h3>
-
+    component: 'project-icons'
+    anchorId: 'idnow-icons'
+    titleColored: 'Technology'
+    titleAfter: 'we used'
+    img:
+      one: 'technology-android.png'
+      two: 'technology-apple.png'
+    description: |
       <p>The apps and the software development kit were developed in native code for both Android and iOS. The video process itself is based on two technologies: While communication between the apps and the agents is implemented through WebSockets, the bidirectional audio and video transmission is facilitated by Icelink WebRTC.</p>
   -
-    component: 'content-project-gallery'
-    defaults:
-      width: 400
-      height: 600
-    images:
-      - 'idnow-gallery-1.jpg'
-      - 'idnow-gallery-2.jpg'
-      - 'idnow-gallery-3.jpg'
-      - 'idnow-gallery-4.jpg'
-      - 'idnow-gallery-5.jpg'
+    component: 'contact'
+    title: 'Sounds interesting?'
+    description: 'You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!'
+    button: 'Contact us now'
+    subject: 'Information about the project'
+    body: |
+      Hello anfema team,
+      I just had a look at your {{projectInfo}} project and ...
