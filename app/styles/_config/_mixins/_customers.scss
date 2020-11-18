@@ -12,6 +12,10 @@
 			color: #0275b6;
 		}
 
+		&--ferchau {
+			color: #e62332;
+		}
+
 		&--pingonaut {
 			color: #ff7f00;
 		}
@@ -76,6 +80,24 @@
 
 		&--three {
 			fill: #0275b6;
+		}
+	}
+
+	.ferchau-color {
+		&--zero {
+			fill: #c97076;
+		}
+
+		&--one {
+			fill: #dd848a;
+		}
+
+		&--two {
+			fill: #ef969c;
+		}
+
+		&--three {
+			fill: #e62332;
 		}
 	}
 
