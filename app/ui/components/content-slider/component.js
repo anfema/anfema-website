@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
+import { computed, action } from '@ember/object';
 import { next } from '@ember/runloop';
 import { htmlSafe } from '@ember/string';
 
@@ -10,6 +10,7 @@ function mod(n, m) {
 }
 
 export default Component.extend({
+	tagName: 'div',
 	classNames: ['content-slider'],
 
 	/*
@@ -146,18 +147,18 @@ export default Component.extend({
 			: 'content-slider__slider--steady';
 	}),
 
-	actions: {
-		slideToPrevious() {
-			if (this.cycle || this._currentIndex > 0) {
-				this.transitionToPrevious();
-			}
-		},
+	@action
+	slideToPrevious() {
+		if (this.cycle || this._currentIndex > 0) {
+			this.transitionToPrevious();
+		}
+	},
 
-		slideToNext() {
-			if (this.cycle || this._currentIndex < this.data.length - 1) {
-				this.transitionToNext();
-			}
-		},
+	@action
+	slideToNext() {
+		if (this.cycle || this._currentIndex < this.data.length - 1) {
+			this.transitionToNext();
+		}
 	},
 
 	/*
@@ -203,25 +204,39 @@ export default Component.extend({
 
 	// TODO: refactor to use template-based events
 	// https://deprecations.emberjs.com/v3.x/#toc_component-mouseenter-leave-move
-	touchStart(e) {
+
+	@action
+	handleTouchStart(e) {
 		this.startDrag(e.touches[0].clientX);
 	},
-	touchEnd(/* e */) {
+
+	@action
+	handleTouchEnd() {
 		this.endDrag();
 	},
-	touchMove(e) {
+
+	@action
+	handleTouchMove(e) {
 		this.updateDrag(e.touches[0].clientX);
 	},
-	mouseDown(e) {
+
+	@action
+	handleMouseDown(e) {
 		this.startDrag(e.clientX);
 	},
-	mouseUp(/* e */) {
+
+	@action
+	handleMouseUp() {
 		this.endDrag();
 	},
-	mouseLeave(/* e */) {
+
+	@action
+	handleMouseLeave() {
 		this.endDrag();
 	},
-	mouseMove(e) {
+
+	@action
+	handleMouseMove(e) {
 		this.updateDrag(e.clientX);
 	},
 
