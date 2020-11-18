@@ -1,8 +1,7 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
+import { computed, action } from '@ember/object';
 import { next } from '@ember/runloop';
 import { htmlSafe } from '@ember/string';
-import { action } from '@ember/object';
 
 const FlickProportion = 0.15;
 
@@ -212,7 +211,7 @@ export default Component.extend({
 	},
 
 	@action
-	handleTouchEnd(e) {
+	handleTouchEnd() {
 		this.endDrag();
 	},
 
@@ -227,12 +226,12 @@ export default Component.extend({
 	},
 
 	@action
-	handleMouseUp(e) {
+	handleMouseUp() {
 		this.endDrag();
 	},
 
 	@action
-	handleMouseLeave(e) {
+	handleMouseLeave() {
 		this.endDrag();
 	},
 
