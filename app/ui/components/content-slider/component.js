@@ -201,6 +201,8 @@ export default Component.extend({
 	 * event listeners
 	 */
 
+	// TODO: refactor to use template-based events
+	// https://deprecations.emberjs.com/v3.x/#toc_component-mouseenter-leave-move
 	touchStart(e) {
 		this.startDrag(e.touches[0].clientX);
 	},

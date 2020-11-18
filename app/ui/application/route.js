@@ -1,7 +1,7 @@
+import { makeArray } from '@ember/array';
+import { get } from '@ember/object';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
-import { get } from '@ember/object';
-import { makeArray } from '@ember/array';
 
 export default Route.extend({
 	intl: service(),
@@ -19,7 +19,7 @@ export default Route.extend({
 		const defaultLocale = locales[0];
 
 		let expectedLocale = this._guessLocale(
-			get(transition, 'params.language.language_id'),
+			get(transition, 'to.parent.params.language_id'),
 			locales,
 			defaultLocale
 		);
@@ -31,7 +31,7 @@ export default Route.extend({
 			expectedLocale = defaultLocale;
 		}
 
-		await this.get('intl').setLocale(expectedLocale);
+		await this.intl.setLocale(expectedLocale);
 	},
 
 	_guessLocale(expectedLocale, locales, defaultLocale) {

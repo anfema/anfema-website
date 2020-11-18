@@ -6,9 +6,9 @@ export default Route.extend({
 	win: service(),
 
 	model() {
-		return this.get('staticContent').read('/projects/index');
+		return this.staticContent.read('/projects/index');
 	},
 	afterModel() {
-		this.get('win').scrollToTop();
+		this.win.scrollToTop();
 	},
 });

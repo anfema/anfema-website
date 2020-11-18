@@ -25,7 +25,7 @@ module.exports = function(environment) {
 		},
 
 		fastboot: {
-			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/],
+			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/, /(\d.\d.\d.\d:\d+)$/],
 		},
 
 		'responsive-image': {

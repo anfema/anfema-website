@@ -19,20 +19,20 @@ export default Component.extend({
 	}),
 
 	englishLink: computed('router._router.currentURL', function() {
-		return generateLangUrl(this.get('router'), 'en');
+		return generateLangUrl(this.router, 'en');
 	}),
 
 	germanLink: computed('router._router.currentURL', function() {
-		return generateLangUrl(this.get('router'), 'de');
+		return generateLangUrl(this.router, 'de');
 	}),
 
 	actions: {
 		onLinkClick(targetLang, event) {
 			event.preventDefault();
 
-			this.get('router').transitionTo(generateLangUrl(this.get('router'), targetLang));
+			this.router.transitionTo(generateLangUrl(this.router, targetLang));
 
-			this.get('win').scrollToTop();
+			this.win.scrollToTop();
 		},
 	},
 });

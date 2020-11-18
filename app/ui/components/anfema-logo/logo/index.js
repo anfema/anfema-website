@@ -1,7 +1,7 @@
-import { easeInOut, expoEaseIn, expoEaseOut } from './easing';
 import * as animation from './animation';
+import { clearCanvas, computeScaleFactor, updateCanvas } from './canvas';
+import { easeInOut, expoEaseIn, expoEaseOut } from './easing';
 import { defaultOptions } from './options';
-import { computeScaleFactor, updateCanvas, clearCanvas } from './canvas';
 var State;
 (function(State) {
 	State[(State['Stopped'] = 0)] = 'Stopped';

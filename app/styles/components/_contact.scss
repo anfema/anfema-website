@@ -19,11 +19,16 @@
 		grid-column: 1 / span 4;
 	}
 
+	&__description {
+		margin-bottom: 4rem;
+	}
+
 	&__button {
 		width: auto;
 		padding: 1.4rem;
 		color: $color-brand-2;
 		border: 2px solid $color-brand-2;
+		text-decoration: none;
 		background-color: $color-background;
 	}
 
