@@ -12,8 +12,13 @@
 			color: #0275b6;
 		}
 
+<<<<<<< HEAD
 		&--tods {
 			color: #342524;
+=======
+		&--idnow {
+			color: #f95602;
+>>>>>>> develop
 		}
 	}
 
@@ -86,6 +91,24 @@
 
 		&--three {
 			fill: #342524;
+		}
+	}
+
+	.idnow-color {
+		&--zero {
+			fill: #d28760;
+		}
+
+		&--one {
+			fill: #e69b74;
+		}
+
+		&--two {
+			fill: #f8ad86;
+		}
+
+		&--three {
+			fill: #f95602;
 		}
 	}
 }
