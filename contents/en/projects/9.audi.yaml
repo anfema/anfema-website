@@ -1,0 +1,93 @@
+meta:
+  color: '#bb0a30'
+  client: 'Audi'
+  title: 'HR App'
+  id: 'audi'
+  span: '2018 - today'
+  hidden: false
+sections:
+  -
+    component: 'project-header'
+    img: 'audi-header.png'
+    action:
+      scrollDown: 'More'
+  -
+    component: 'project-text'
+    anchorId: 'audi-intro'
+    orientation: 'left'
+    titleColored: 'Audi'
+    titleAfter: 'HR Digitalisierung'
+    subTitle: '2018 - today'
+    img:
+      alignment: 'vertical'
+      one: 'audi-intro-iphone.png'
+      two: 'audi-intro-android.png'
+    description: |
+      <p>HR-Digitalisierung. Ein Thema welches seit Jahren an Beliebtheit gewinnt und das zurecht. Das Potential durch Automatismen effektiver zu werden und dennoch für den Mitarbeiter gefühlt greifbarer zu sein ist enorm! Neben einer bestehenden Webapplikation, die viele Prozesse digital abbildet, war das ein Grund, einen Schritt weiter zu gehen – hin zu einer nativen App.</p>
+
+      <p>Im Frühjahr 2018 starteten wir das Projekt HR-App mit einer klaren Anforderung: native Entwicklung von Apps für die beiden gängigen Betriebssysteme Android und iOS. Diese Herausforderung nahmen wir mit Begeisterung an. Auch heute noch freuen wir uns, die App stetig weiter zu entwickeln!</p>
+  -
+    component: 'project-icons'
+    anchorId: 'audi-details'
+    titleBefore: "It's all about "
+    titleColored: 'Motion'
+    img:
+      one: 'audi-motion.png'
+    description: |
+      <p>Daten und Fakten stehen bei dieser App klar im Vordergrund. Desto wichtiger ist es, den User Flow durch Animationen und Seitenübergänge zu unterstützen und aufzulockern.  Somit wird dem User schnell und einfach klar, wie tief er sich in der Informationsstruktur bewegt. Durch die stetige Anpassung und Erweiterung der App ist es umso wichtiger den Fokus auf die Benutzerfreundlichkeit zu setzen. Eine App sollte keine statische Ansicht sein, sondern ein Erlebnis, das bewegt und verbindet!</p>
+  -
+    component: 'project-text'
+    anchorId: 'audi-challenge'
+    orientation: 'right'
+    titleColored: 'Challenge'
+    img:
+      alignment: 'vertical'
+      one: 'audi-challenge-android.png'
+      two: 'audi-challenge-iphone.png'
+    description: |
+      <p>Die Herausforderung besteht darin, neue Features sinnvoll zu integrieren und dabei die User Experience, das User Interface und die Entwicklung für iOS und Android zu vereinen.</p>
+
+      <p>Zu Beginn als eine im Funktionsumfang reduzierte Applikation gestartet, wird sie stetig verbessert, neuen Gegebenheiten angepasst und um zahlreiche Features erweitert: Informationen erhalten, persönliche Präferenzen speichern oder Anträge stellen. Um derartige Funktionen schnell und mühelos zugänglich zu machen, wird die App auf Basis von Userfeedback angepasst. Dies erleichtert Arbeitsabläufe für den Endnutzer sowie für die Audi-Mitarbeiter in der HR- und Finance-Abteilung.</p>
+
+  -
+    component: 'project-text'
+    anchorId: 'audi-awesome'
+    orientation: 'left'
+    titleBefore: 'How we made it '
+    titleColored: 'awesome'
+    img:
+      alignment: 'vertical'
+      one: 'audi-awesome-iphone.png'
+      two: 'audi-awesome-android.png'
+    description: |
+      <p>Ausgehend von einem bereits entwickelten Konzept von Audi starteten wir die technische Umsetzung. Sukzessive konnten wir mit unserer Konzept-Expertise überzeugen.  Der Fokus wird nun verstärkt auf natives Design und Entwicklungsstandards gesetzt. Somit werden sowohl iOS als auch Android Endnutzer auf gewohnte Weise bedient. Geschätzte Funktionalitäten wie der Login mit FaceID/TouchID werden ebenso unterstützt wie die gewohnte Navigation oder das Verwenden von Selection Controls.</p>
+  -
+    component: 'content-quote'
+    anchorId: 'bmw-quote'
+    source: |
+      Gunther Janeck <br>
+      CoC Fuhrpark BMW Group
+    content: |
+      <p>Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend.</p>
+
+      <p>Großartig an der anfema ist neben der Qualität auch die Schnelligkeit, mit der sie Projekte verwirklicht.
+      Deshalb ist und bleibt sie einer unserer viel geschätzten Partner.</p>
+  -
+    component: 'project-icons'
+    anchorId: 'audi-technology'
+    titleColored: 'Technology'
+    titleAfter: 'we used'
+    img:
+      one: 'technology-android.png'
+      two: 'technology-apple.png'
+    description: |
+      <p>Bei diesem Projekt handelt es sich um eine nativ in Swift entwickelte iOS-App sowie einer in  Kotlin entwickelte Android-App. Diese passen wir regelmäßig an die neuesten Sprach-  und Framework Versionen an. Die Apps liegen einer, auf MVVM-basierenden, Architektur zugrunde und enthalten aktuelle Quelltext-Dokumentationen (nur bei iOS). Somit gewährleisten wir,  dass unsere Apps in Zukunft weiterhin den hohen Ansprüchen der Audi AG entsprechen. Jederzeit im Sinne der Leistungsfähigkeit und Wartbarkeit. Dies erlaubt uns flexibel und schnell auf Kundenwünsche zu reagieren.</p>
+  -
+    component: 'contact'
+    title: 'Sounds interesting?'
+    description: 'You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!'
+    button: 'Contact us now'
+    subject: 'Information about the project'
+    body: |
+      Hello anfema team,
+      I just had a look at your {{projectInfo}} project and ...

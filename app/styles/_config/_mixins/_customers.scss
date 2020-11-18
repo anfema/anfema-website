@@ -4,12 +4,36 @@
 			color: #006ac9;
 		}
 
+		&--paulaner {
+			color: #003366;
+		}
+
 		&--knauf {
 			color: #f97e33;
 		}
 
 		&--bmw {
 			color: #0275b6;
+		}
+
+		&--audi {
+			color: #bb0a30;
+		}
+
+		&--ferchau {
+			color: #e62332;
+		}
+
+		&--pingonaut {
+			color: #ff7f00;
+		}
+
+		&--tods {
+			color: #342524;
+		}
+
+		&--idnow {
+			color: #f95602;
 		}
 	}
 
@@ -27,7 +51,25 @@
 		}
 
 		&--three {
-			fill: #0062c0;
+			fill: #006ac9;
+		}
+	}
+
+	.paulaner-color {
+		&--zero {
+			fill: #60778e;
+		}
+
+		&--one {
+			fill: #748ba2;
+		}
+
+		&--two {
+			fill: #869db4;
+		}
+
+		&--three {
+			fill: #003366;
 		}
 	}
 
@@ -64,6 +106,96 @@
 
 		&--three {
 			fill: #0275b6;
+		}
+	}
+
+	.audi-color {
+		&--zero {
+			fill: #b56476;
+		}
+
+		&--one {
+			fill: #c9788a;
+		}
+
+		&--two {
+			fill: #db8a9c;
+		}
+
+		&--three {
+			fill: #bb0a30;
+		}
+	}
+
+	.ferchau-color {
+		&--zero {
+			fill: #c97076;
+		}
+
+		&--one {
+			fill: #dd848a;
+		}
+
+		&--two {
+			fill: #ef969c;
+		}
+
+		&--three {
+			fill: #e62332;
+		}
+	}
+
+	.pingonaut-color {
+		&--zero {
+			fill: #d59a60;
+		}
+
+		&--one {
+			fill: #e9ae74;
+		}
+
+		&--two {
+			fill: #fbc086;
+		}
+
+		&--three {
+			fill: #ff7f00;
+		}
+	}
+
+	.tods-color {
+		&--zero {
+			fill: #777070;
+		}
+
+		&--one {
+			fill: #8b8484;
+		}
+
+		&--two {
+			fill: #9d9696;
+		}
+
+		&--three {
+			fill: #342524;
+		}
+	}
+
+	.idnow-color {
+		&--zero {
+			fill: #d28760;
+		}
+
+		&--one {
+			fill: #e69b74;
+		}
+
+		&--two {
+			fill: #f8ad86;
+		}
+
+		&--three {
+			fill: #f95602;
 		}
 	}
 }
