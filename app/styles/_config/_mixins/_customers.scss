@@ -31,6 +31,24 @@
 		}
 	}
 
+	.knauf-color {
+		&--zero {
+			fill: #d29977;
+		}
+
+		&--one {
+			fill: #e6ad8b;
+		}
+
+		&--two {
+			fill: #f8bf9d;
+		}
+
+		&--three {
+			fill: #f97e33;
+		}
+	}
+
 	.bmw-color {
 		&--zero {
 			fill: #6095b3;
