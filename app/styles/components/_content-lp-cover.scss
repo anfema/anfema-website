@@ -44,6 +44,7 @@
 		line-height: 0.8;
 		text-shadow: 0 2px 5px rgba(49, 41, 51, 0.1), 0 1px 2px rgba(49, 41, 51, 0.17);
 		text-transform: uppercase;
+		animation: moveLeft 1.5s ease-in;
 
 		@include media-large-min {
 			font-size: 10.8vmax;
@@ -59,6 +60,7 @@
 		color: $color-text-inverted-60;
 		font-size: 1.9rem;
 		line-height: 2.5rem;
+		animation: moveLeft 1.5s ease-in;
 
 		@include media-large-min {
 			font-size: 2.5rem;
@@ -92,6 +94,22 @@
 		&:focus {
 			box-shadow: 0 3px 15px 0 rgba(49, 41, 51, 0.1), 0 1px 2px 0 rgba(49, 41, 51, 0.17),
 				0 1px 3px 0 rgba(49, 41, 51, 0.1);
+		}
+	}
+
+	@keyframes moveLeft {
+		0% {
+			transform: translateX(-100px);
+			opacity: 0;
+		}
+
+		80% {
+			transform: translateX(10px);
+		}
+
+		100% {
+			transform: translateX(0);
+			opacity: 1;
 		}
 	}
 }
