@@ -6,7 +6,7 @@
 		grid-column: 1 / -1;
 
 		@include media-large-min {
-			grid-column: 2 / span 5;
+			grid-column: 2 / span 8;
 		}
 	}
 
@@ -18,7 +18,7 @@
 		position: relative;
 		display: grid;
 		grid-column: 1 / -1;
-		grid-template-columns: repeat(8, 1fr);
+		grid-template-columns: repeat(12, 1fr);
 
 		> a {
 			position: absolute;
@@ -49,14 +49,17 @@
 	h2 {
 		grid-column: 1 / -1;
 		margin: 8rem 0 1rem;
+		text-transform: uppercase;
 
 		@include media-large-min {
-			grid-column: 2 / span 4;
+			grid-column: 2 / span 6;
 			margin: 17.5rem 0 1rem;
+			font-size: 3.6rem;
+			line-height: 4.4rem;
 		}
 
 		@include media-xlarge-min {
-			grid-column: 2 / span 3;
+			grid-column: 2 / span 5;
 		}
 	}
 }
@@ -64,7 +67,7 @@
 @include media-xlarge-min {
 	.content-lp-text {
 		& > * {
-			grid-column: 2 / span 4;
+			grid-column: 2 / span 6;
 		}
 	}
 }
@@ -72,7 +75,7 @@
 @include media-xxlarge-min {
 	.content-lp-text {
 		& > * {
-			grid-column: 2 / span 3;
+			grid-column: 2 / span 5;
 		}
 	}
 }
