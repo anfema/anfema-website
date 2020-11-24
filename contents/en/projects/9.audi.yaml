@@ -10,6 +10,7 @@ sections:
     img: "audi-header.png"
     action:
       scrollDown: "More"
+
   - component: "project-text"
     anchorId: "audi-intro"
     orientation: "left"
@@ -20,21 +21,24 @@ sections:
       alignment: "vertical"
       one: "audi-intro-iphone.png"
       two: "audi-intro-android.png"
-    description: |
-      <p>HR digitisation. A topic that has been gaining in popularity for years.</p>
+    description:markdown: |
+      HR digitisation. A topic that has been gaining in popularity for years.
 
-      <p>The potential is enormous! In addition to an existing web application, which digitally maps many processes, this is the reason for Audi to go one step further.</p>
-      <p>In spring 2018 we started the HR-App project with a clear requirement: native development for iOS and Android. We accepted this challenge with enthusiasm. We are looking forward to continuously developing the app.</p>
+      The potential is enormous! In addition to an existing web application, which digitally maps many processes, this is the reason for Audi to go one step further.
+
+      In spring 2018 we started the HR-App project with a clear requirement: native development for iOS and Android. We accepted this challenge with enthusiasm. We are looking forward to continuously developing the app.
+
   - component: "project-icons"
     anchorId: "audi-details"
     titleBefore: "It's all about "
     titleColored: "Motion"
     img:
       one: "audi-motion.png"
-    description: |
-      <p>Facts and figures are clearly the focus of this app. The more important it is to support and loosen up the user flow with animations and page transitions.</p>
+    description:markdown: |
+      Facts and figures are clearly the focus of this app. The more important it is to support and loosen up the user flow with animations and page transitions.
 
-      <p>In this way, the user quickly and easily realises how deep he or she is in the information structure. Due to the constant development of the app, it is important to set a focus here. An app should not be a static view, but an experience that moves and connects!</p>
+      In this way, the user quickly and easily realises how deep he or she is in the information structure. Due to the constant development of the app, it is important to set a focus here. An app should not be a static view, but an experience that moves and connects!
+
   - component: "project-text"
     anchorId: "audi-challenge"
     orientation: "right"
@@ -43,9 +47,11 @@ sections:
       alignment: "vertical"
       one: "audi-challenge-android.png"
       two: "audi-challenge-iphone.png"
-    description: |
-      <p>The challenge is to unite the user experience, the user interface and the development for iOS and Android.</p>
-      <p>Initially planned as an application with a reduced functional scope, it is constantly growing in features. Getting information, entering times, saving preferences or making requests. In order to make these functions accessible quickly and effortlessly, we are expanding the app together with the users. This simplifies workflows for the end user as well as for colleagues in the HR and finance departments.</p>
+    description:markdown: |
+      The challenge is to unite the user experience, the user interface and the development for iOS and Android.
+
+      Initially planned as an application with a reduced functional scope, it is constantly growing in features. Getting information, entering times, saving preferences or making requests. In order to make these functions accessible quickly and effortlessly, we are expanding the app together with the users. This simplifies workflows for the end user as well as for colleagues in the HR and finance departments.
+
   - component: "project-text"
     anchorId: "audi-awesome"
     orientation: "left"
@@ -55,8 +61,9 @@ sections:
       alignment: "vertical"
       one: "audi-awesome-iphone.png"
       two: "audi-awesome-android.png"
-    description: |
-      <p>Starting from an existing Audi concept, we started the technical implementation. We were gradually able to convince with our concept expertise. We increasingly focus on native design and development standards. Thus we catch iOS and Android end users excellently. They appreciate familiar functionalities: Login with FaceID/TouchID, navigation or the use of "selection controls". </p>
+    description:markdown: |
+      Starting from an existing Audi concept, we started the technical implementation. We were gradually able to convince with our concept expertise. We increasingly focus on native design and development standards. Thus we catch iOS and Android end users excellently. They appreciate familiar functionalities: Login with FaceID/TouchID, navigation or the use of "selection controls".
+
   - component: "project-icons"
     anchorId: "audi-technology"
     titleColored: "Technology"
@@ -64,8 +71,9 @@ sections:
     img:
       one: "technology-swift.png"
       two: "technology-apple.png"
-    description: |
-      <p>This project involves an iOS developed natively in Swift and an Android app developed in Kotlin. We regularly adapt this to the latest language and framework versions. The apps are based on a MVVM-based architecture and contain up-to-date source code documentation. This ensures that our apps will continue to meet the high standards of Audi AG in the future. At all times in terms of performance and maintainability. This allows us to react flexibly and quickly to customer requirements.</p>
+    description:markdown: |
+      This project involves an iOS developed natively in Swift and an Android app developed in Kotlin. We regularly adapt this to the latest language and framework versions. The apps are based on a MVVM-based architecture and contain up-to-date source code documentation. This ensures that our apps will continue to meet the high standards of Audi AG in the future. At all times in terms of performance and maintainability. This allows us to react flexibly and quickly to customer requirements.
+
   - component: "contact"
     title: "Sounds interesting?"
     description: "Would you like to learn more about the project and our implementation? Whether you are a customer or an applicant, please feel free to contact us! Come and visit us for a coffee either in Munich or Augsburg - we look forward to it!"

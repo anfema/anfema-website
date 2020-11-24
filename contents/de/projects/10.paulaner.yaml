@@ -10,6 +10,7 @@ sections:
     img: "paulaner-header.png"
     action:
       scrollDown: "Mehr erfahren"
+
   - component: "project-text"
     anchorId: "paulaner-intro"
     orientation: "left"
@@ -19,8 +20,9 @@ sections:
     img:
       alignment: "horizontal"
       zero: "paulaner-intro.png"
-    description: |
-      <p>Ein bundesweites Vertriebsnetz ist nicht immer leicht abzubilden und beinhaltet zahlreiche sensible Daten. Unser Ziel war es dies zu meistern und damit das Leben der Vertriebsmitarbeiter von Paulaner zu erleichtern. Jetzt bekommen sie einen Überblick über alle Termine, Kundendaten, Bestellungen und vielem mehr. Dieses herausfordernde und spannende Projekt startete im Frühjahr 2017 und erweitert sich bis heute stetig.</p>
+    description:markdown: |
+      Ein bundesweites Vertriebsnetz ist nicht immer leicht abzubilden und beinhaltet zahlreiche sensible Daten. Unser Ziel war es dies zu meistern und damit das Leben der Vertriebsmitarbeiter von Paulaner zu erleichtern. Jetzt bekommen sie einen Überblick über alle Termine, Kundendaten, Bestellungen und vielem mehr. Dieses herausfordernde und spannende Projekt startete im Frühjahr 2017 und erweitert sich bis heute stetig.
+
   - component: "project-icons"
     anchorId: "paulaner-details"
     titleBefore: |
@@ -31,8 +33,9 @@ sections:
       two: "paulaner-details2.png"
       three: "paulaner-details3.png"
       four: "paulaner-details4.png"
-    description: |
-      <p>Daten und Fakten stehen bei dieser App klar im Vordergrund. Um diese zu strukturieren wurde ein Iconset für Paulaner entwickelt. Somit kann der User Informationen effizient und leicht erfassen. Neben ihrem Informations-Charakter lockern sie die Thematik auf und sind ein Augenschmaus. Simple & smart!</p>
+    description:markdown: |
+      Daten und Fakten stehen bei dieser App klar im Vordergrund. Um diese zu strukturieren wurde ein Iconset für Paulaner entwickelt. Somit kann der User Informationen effizient und leicht erfassen. Neben ihrem Informations-Charakter lockern sie die Thematik auf und sind ein Augenschmaus. Simple & smart!
+
   - component: "project-text"
     anchorId: "paulaner-challenge"
     orientation: "right"
@@ -41,10 +44,13 @@ sections:
       alignment: "horizontal"
       one: "paulaner-challenge-ipad1.png"
       two: "paulaner-challenge-ipad2.png"
-    description: |
-      <p>Der User steht im Vordergrund – das ist eine unserer wichtigsten Devisen. Gerade bei diesem Projekt von Paulaner war es wichtig, die Zielgruppe in den Fokus zu stellen. Somit hatten wir eine intensive Konzeptionsphase, die sich bis jetzt bis jetzt erfolgreich auszahlte. </p>
-      <p>Die Zielgruppe gehört nicht zu den sogenannten Digital Natives. Sie zeichnen sich durch eine hands-on Mentalität aus und stehen oft unter Zeitdruck. Ein hohes Maß an Intuitivität hat somit oberste Priorität. Dies und noch viele mehr Aspekte konnten wir bei der Möglichkeit, die Vertriebler bei ihrem Daily Business zu begleiten, herausarbeiten. Diese Einblicke über ihre Bedürfnisse und Interessen hat uns bei der Konzeptphase einen enormen Vorteil verschafft.</p>
-      <p>Die Challenge konnten wir damit erfolgreich meistern und freuen uns über Feedback um das Projekt fortlaufend zu verbessern und auszubauen.</p>
+    description:markdown: |
+      Der User steht im Vordergrund – das ist eine unserer wichtigsten Devisen. Gerade bei diesem Projekt von Paulaner war es wichtig, die Zielgruppe in den Fokus zu stellen. Somit hatten wir eine intensive Konzeptionsphase, die sich bis jetzt bis jetzt erfolgreich auszahlte.
+
+      Die Zielgruppe gehört nicht zu den sogenannten Digital Natives. Sie zeichnen sich durch eine hands-on Mentalität aus und stehen oft unter Zeitdruck. Ein hohes Maß an Intuitivität hat somit oberste Priorität. Dies und noch viele mehr Aspekte konnten wir bei der Möglichkeit, die Vertriebler bei ihrem Daily Business zu begleiten, herausarbeiten. Diese Einblicke über ihre Bedürfnisse und Interessen hat uns bei der Konzeptphase einen enormen Vorteil verschafft.
+
+      Die Challenge konnten wir damit erfolgreich meistern und freuen uns über Feedback um das Projekt fortlaufend zu verbessern und auszubauen.
+
   - component: "project-text"
     anchorId: "paulaner-awesome"
     orientation: "left"
@@ -53,15 +59,17 @@ sections:
     img:
       alignment: "horizontal"
       zero: "paulaner-awesome.png"
-    description: |
-      <p>Ein Punkt den die App auszeichnet: wir setzen auf natives Design und Entwicklungsstandards. Wir achten auf Aktualität und verbessern stetig die Funktionalität. Was die Zielgruppe von ihren Privatanwendungen kennt, wissen sie ebenfalls zügig in ihrer Arbeitssoftware zu schätzen.</p>
+    description:markdown: |
+      Ein Punkt den die App auszeichnet: wir setzen auf natives Design und Entwicklungsstandards. Wir achten auf Aktualität und verbessern stetig die Funktionalität. Was die Zielgruppe von ihren Privatanwendungen kennt, wissen sie ebenfalls zügig in ihrer Arbeitssoftware zu schätzen.
+
   - component: "content-quote"
     anchorId: "paulaner-quote"
     source: |
       Heide Buchmann <br>
       IMT Business Partner für den VertriebInformationsmanagement
     content: |
-      <p>Es macht Spaß die App zu verwenden und wachsen zu sehen, wie sie immer noch besser zu unseren steigenden Anforderungen passt und den Vertrieb bei der täglichen Arbeit unterstützt. In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.</p>
+      Es macht Spaß die App zu verwenden und wachsen zu sehen, wie sie immer noch besser zu unseren steigenden Anforderungen passt und den Vertrieb bei der täglichen Arbeit unterstützt. In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
+
   - component: "project-icons"
     anchorId: "paulaner-technology"
     titleColored: "Technology"
@@ -69,8 +77,9 @@ sections:
     img:
       one: "technology-apple.png"
       two: "technology-swift.png"
-    description: |
-      <p>Bei diesem Projekt handelt es sich um eine nativ in Swift entwickelte iPad App. Diese passen wir regelmäßig an die aktuellsten iPadOS Versionen an. Diese datenzentrische App synchronisiert in mehreren Varianten mit einem auf der Salesforce Cloud basierenden Backend. Für eine gänzliche Offline-Fähigkeit sorgt eine indexierte Datenbank auf dem Gerät. Durch eine optimierte Abfrage steht einer Datensortierung und Filterfunktion im Offline-Modus nichts entgegen. Hinzu kommt, dass durch die in der App kumulierten Rohdaten aus Salesforce, durch Diagramme dargestellt werden können. Angelehnt an die Designsprache von iPadOS entwickelten wir mehrere Komponenten für die App-Oberfläche.</p>
+    description:markdown: |
+      Bei diesem Projekt handelt es sich um eine nativ in Swift entwickelte iPad App. Diese passen wir regelmäßig an die aktuellsten iPadOS Versionen an. Diese datenzentrische App synchronisiert in mehreren Varianten mit einem auf der Salesforce Cloud basierenden Backend. Für eine gänzliche Offline-Fähigkeit sorgt eine indexierte Datenbank auf dem Gerät. Durch eine optimierte Abfrage steht einer Datensortierung und Filterfunktion im Offline-Modus nichts entgegen. Hinzu kommt, dass durch die in der App kumulierten Rohdaten aus Salesforce, durch Diagramme dargestellt werden können. Angelehnt an die Designsprache von iPadOS entwickelten wir mehrere Komponenten für die App-Oberfläche.
+
   - component: "contact"
     title: "Klingt interessant?"
     description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
