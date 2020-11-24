@@ -1,91 +1,81 @@
 meta:
-  color: '#003366'
+  color: "#003366"
   client: "Paulaner"
-  title: 'iPad App'
-  id: 'paulaner'
-  span: '2017 - today'
+  title: "iPad App"
+  id: "paulaner"
+  span: "2017 - today"
   hidden: false
 sections:
-  -
-    component: 'project-header'
-    img: 'paulaner-header.png'
+  - component: "project-header"
+    img: "paulaner-header.png"
     action:
-      scrollDown: 'More'
-  -
-    component: 'project-text'
-    anchorId: 'paulaner-intro'
-    orientation: 'left'
-    titleColored: 'Paulaner'
-    titleAfter: 'iPad App'
-    subTitle: '2017 - today'
+      scrollDown: "More"
+  - component: "project-text"
+    anchorId: "paulaner-intro"
+    orientation: "left"
+    titleColored: "Paulaner"
+    titleAfter: "iPad App"
+    subTitle: "2017 - today"
     img:
-      alignment: 'horizontal'
-      zero: 'paulaner-intro.png'
+      alignment: "horizontal"
+      zero: "paulaner-intro.png"
     description: |
-      <p>A nationwide distribution network is not always easy to picture and contains numerous sensitive data. Our goal was to master this and thus make life easier for Paulaner's sales staff. Now they have an overview of all appointments, customer data, orders and much more. This challenging and exciting project started in spring 2017 and is still expanding today.</p>
-  -
-    component: 'project-icons'
-    anchorId: 'paulaner-details'
+      <p>A nationwide distribution network is not always easy to map and contains a lot of sensitive data. Our aim was to master this and thus make life easier for Paulaner's sales staff. Now they have an overview of all appointments, customer data, orders and much more. This challenging and exciting project started in spring 2017 and is still expanding today.</p>
+  - component: "project-icons"
+    anchorId: "paulaner-details"
     titleBefore: |
       It's all about the
-    titleColored: ' Details'
+    titleColored: " Details"
     img:
-      one: 'paulaner-details1.png'
-      two: 'paulaner-details2.png'
-      three: 'paulaner-details3.png'
-      four: 'paulaner-details4.png'
+      one: "paulaner-details1.png"
+      two: "paulaner-details2.png"
+      three: "paulaner-details3.png"
+      four: "paulaner-details4.png"
     description: |
-      <p>Facts and figures are clearly in the foreground of this App. An icon set was developed for Paulaner to structure these data and facts. This allows the user to enter information efficiently and easily. In addition to their information character, they ease up the subject matter and are a feast for the eyes. Simple & smart!</p>
-  -
-    component: 'project-text'
-    anchorId: 'paulaner-challenge'
-    orientation: 'right'
-    titleColored: 'Challenge'
+      <p>Facts and figures are clearly the focus of this app. An icon set was developed for Paulaner to structure them. This enables the user to enter information efficiently and easily. In addition to their informative character, they loosen up the subject matter and are a feast for the eyes. Simple & smart!</p>
+  - component: "project-text"
+    anchorId: "paulaner-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
     img:
-      alignment: 'horizontal'
-      one: 'paulaner-challenge-ipad1.png'
-      two: 'paulaner-challenge-ipad2.png'
+      alignment: "horizontal"
+      one: "paulaner-challenge-ipad1.png"
+      two: "paulaner-challenge-ipad2.png"
     description: |
-      <p>The user is in the foreground - this is one of our most important proclamations. It was especially important for this Paulaner project to put a maximum focus on the target group.  Thus we had an intensive conception phase, which has paid off successfully so far.
-
-         The target group is not one of the so-called digital natives. They are characterized by a hands-on mentality and are often under time pressure. A high degree of intuitiveness is therefore our top priority. This and many more aspects we were able to work out when we were able to accompany the sales people in their daily business. This insight into their needs and interests gave us an enormous advantage during the concept phase.
-
-         We were able to successfully master the challenge and are looking forward to receiving feedback to continuously improve and expand the project.</p>
-  -
-    component: 'project-text'
-    anchorId: 'paulaner-awesome'
-    orientation: 'left'
-    titleBefore: 'How we made it '
-    titleColored: 'awesome'
+      <p>The user is in the focus - that is one of our most important factors. Especially with this project by Paulaner it was important to focus on the target group. So we had an intensive conception phase, which has paid off successfully so far. </p>
+      <p>The target group is not one of the so-called digital natives. They are characterised by a hands-on mentality and are often under time pressure. A high degree of intuitiveness is therefore a top priority. This and many more aspects we were able to work out when we were able to accompany the sales people in their daily business. This insight into their needs and interests gave us an enormous advantage during the concept phase.</p>
+      <p>We were thus able to successfully master the challenge and are looking forward to receiving feedback in order to continuously improve and expand the project.</p>
+  - component: "project-text"
+    anchorId: "paulaner-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
     img:
-      alignment: 'horizontal'
-      zero: 'paulaner-awesome.png'
+      alignment: "horizontal"
+      zero: "paulaner-awesome.png"
     description: |
-      <p>A bullet that the app marks out: We rely on native design and development standards. We pay attention to actuality and constantly improve the functionality. What the target group knows from their private used software, they also appreciate in their working software.</p>
-  -
-    component: 'content-quote'
-    anchorId: 'paulaner-quote'
+      <p>One point that distinguishes the app: we rely on native design and development standards. We pay attention to actuality and constantly improve the functionality. What the target group knows from their private applications, they also quickly appreciate in their working software.</p>
+  - component: "content-quote"
+    anchorId: "paulaner-quote"
     source: |
       Heide Buchmann <br>
-      IMT Business Partner für den Vertrieb Informationsmanagement
+      IMT Business Partner for Sales Information Management
     content: |
-      <p>Es macht Spaß die App zu verwenden und wachsen zu sehen, wie sie immer noch besser zu unseren steigenden Anforderungen passt und den Vertrieb bei der täglichen Arbeit unterstützt. In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.</p>
-  -
-    component: 'project-icons'
-    anchorId: 'paulaner-technology'
-    titleColored: 'Technology'
-    titleAfter: 'we used'
+      <p>It's fun to use the app and to see it grow, how it fits even better to our increasing requirements and how it supports the sales department in their daily work. In our collaboration with anfema, we always find suitable solutions quickly and easily because they have understood us, the app and our business perfectly.</p>
+  - component: "project-icons"
+    anchorId: "paulaner-technology"
+    titleColored: "Technology"
+    titleAfter: "we used"
     img:
-      one: 'technology-apple.png'
-      two: 'technology-swift.png'
+      one: "technology-apple.png"
+      two: "technology-swift.png"
     description: |
-      <p>This project is an iPad App developed natively in Swift. We regularly adapt it to the latest iOS versions. This data-centric App synchronises in several variants with a backend based on the Salesforce Cloud. An indexed database on the device ensures complete offline capability. Thanks to an optimized query, there is nothing to prevent data sorting and filter functions in offline mode. In addition, the raw data from Salesforce accumulated in the app can be displayed in diagrams. Based on the design language of iOS, we developed several components for the App's user interface.</p>
-  -
-    component: 'contact'
-    title: 'Sounds interesting?'
-    description: 'You want to learn more about the project and our implementation? No matter if you are a customer or an applicant, feel free to contact us! Come and visit us for a coffee either in Munich or Augsburg - we look forward to it!'
-    button: 'Contact us now'
-    subject: 'Information about the project'
+      <p>This project is an iPad app developed natively in Swift. We regularly adapt it to the latest iPadOS versions. This data-centred app synchronises in several versions with a backend based on the Salesforce Cloud. An indexed database on the device ensures complete offline capability. Thanks to an optimised query, there is nothing to prevent data sorting and filter functions in offline mode. In addition, the raw data from Salesforce accumulated in the app can be displayed in the form of diagrams. Based on the design language of iPadOS, we developed several components for the app interface.</p>
+  - component: "contact"
+    title: "Sounds interesting?"
+    description: "Would you like to learn more about the project and our implementation? Whether you are a customer or an applicant, please feel free to contact us! Come and visit us for a coffee either in Munich or Augsburg - we look forward to it!"
+    button: "Contact us now"
+    subject: "Information about the project"
     body: |
       Hello anfema team,
       I just had a look at your {{projectInfo}} project and ...

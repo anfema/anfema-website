@@ -1,82 +1,75 @@
 meta:
-  color: '#bb0a30'
-  client: 'Audi'
-  title: 'HR App'
-  id: 'audi'
-  span: '2018 - heute'
+  color: "#bb0a30"
+  client: "Audi"
+  title: "HR App"
+  id: "audi"
+  span: "2018 - heute"
   hidden: false
 sections:
-  -
-    component: 'project-header'
-    img: 'audi-header.png'
+  - component: "project-header"
+    img: "audi-header.png"
     action:
-      scrollDown: 'Mehr erfahren'
-  -
-    component: 'project-text'
-    anchorId: 'audi-intro'
-    orientation: 'left'
-    titleColored: 'Audi'
-    titleAfter: 'HR Digitalisierung'
-    subTitle: '2018 - heute'
+      scrollDown: "Mehr erfahren"
+  - component: "project-text"
+    anchorId: "audi-intro"
+    orientation: "left"
+    titleColored: "Audi"
+    titleAfter: "HR Digitalisierung"
+    subTitle: "2018 - heute"
     img:
-      alignment: 'vertical'
-      one: 'audi-intro-iphone.png'
-      two: 'audi-intro-android.png'
+      alignment: "vertical"
+      one: "audi-intro-iphone.png"
+      two: "audi-intro-android.png"
     description: |
-      <p>HR-Digitalisierung. Ein Thema welches seit Jahren an großer Beliebtheit gewinnt. Das Potential ist enorm! Neben einer bestehenden Webapplikation, die viele Prozesse digital abbildet, ist das für Audi der Grund, einen Schritt weiter zu gehen.</p>
-
+      <p>HR-Digitalisierung. Ein Thema welches seit Jahren an großer Beliebtheit gewinnt.</p>
+      <p>Das Potential ist enorm! Neben einer bestehenden Webapplikation, die viele Prozesse digital abbildet, ist das für Audi der Grund, einen Schritt weiter zu gehen.</p>
       <p>Im Frühjahr 2018 starteten wir das Projekt HR-App mit einer klaren Anforderung: native Entwicklung für iOS und Android. Diese Herausforderung nahmen wir mit Begeisterung an. Wir freuen uns, die App stetig weiterzuentwickeln.</p>
-  -
-    component: 'project-icons'
-    anchorId: 'audi-details'
+  - component: "project-icons"
+    anchorId: "audi-details"
     titleBefore: "It's all about "
-    titleColored: 'Motion'
+    titleColored: "Motion"
     img:
-      one: 'audi-motion.png'
+      one: "audi-motion.png"
     description: |
       <p>Daten und Fakten stehen bei dieser App klar im Vordergrund. Desto wichtiger ist es, den User Flow durch Animationen und Seitenübergänge zu unterstützen und aufzulockern.</p>
 
       <p>Somit wird dem User schnell und einfach klar, wie tief er sich in der Informationsstruktur bewegt. Durch die konstante Weiterentwicklung der App ist es umso wichtiger hier einen Fokus zu setzen. Eine App sollte keine statische Ansicht sein, sondern ein Erlebnis, das bewegt und verbindet!</p>
-  -
-    component: 'project-text'
-    anchorId: 'audi-challenge'
-    orientation: 'right'
-    titleColored: 'Challenge'
+  - component: "project-text"
+    anchorId: "audi-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
     img:
-      alignment: 'vertical'
-      one: 'audi-challenge-android.png'
-      two: 'audi-challenge-iphone.png'
+      alignment: "vertical"
+      one: "audi-challenge-android.png"
+      two: "audi-challenge-iphone.png"
     description: |
-      <p>Die Herausforderung besteht darin, die User Experience, das User Interface und die Entwicklung für iOS und Android zu vereinen.
-         Zu Beginn als eine im Funktionsumfang reduzierte Applikation geplant, wächst sie stetig an Features. Informationen erhalten, Zeiten eintragen, Präferenzen speichern oder Anträge stellen. Um diese Funktionen schnell und mühelos zugänglich zu machen, bauen wir die App gemeinsam mit den Usern aus. Dies erleichtert Arbeitsabläufe für den Endnutzer sowie für die Kollegen in der HR- und Finance-Abteilung.</p>
-  -
-    component: 'project-text'
-    anchorId: 'audi-awesome'
-    orientation: 'left'
-    titleBefore: 'How we made it '
-    titleColored: 'awesome'
+      <p>Die Herausforderung besteht darin, die User Experience, das User Interface und die Entwicklung für iOS und Android zu vereinen.</p>
+      <p>Zu Beginn als eine im Funktionsumfang reduzierte Applikation geplant, wächst sie stetig an Features. Informationen erhalten, Zeiten eintragen, Präferenzen speichern oder Anträge stellen. Um diese Funktionen schnell und mühelos zugänglich zu machen, bauen wir die App gemeinsam mit den Usern aus. Dies erleichtert Arbeitsabläufe für den Endnutzer sowie für die Kollegen in der HR- und Finance-Abteilung.</p>
+  - component: "project-text"
+    anchorId: "audi-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
     img:
-      alignment: 'vertical'
-      one: 'audi-awesome-iphone.png'
-      two: 'audi-awesome-android.png'
+      alignment: "vertical"
+      one: "audi-awesome-iphone.png"
+      two: "audi-awesome-android.png"
     description: |
       <p>Ausgehend von einem bestehenden Konzept von Audi, starteten wir die technische Umsetzung. Sukzessive konnten wir mit unserer Konzept-Expertise überzeugen. Wir legen den Fokus verstärkt auf natives Design und Entwicklungsstandards. Somit fangen wir iOS und Android Endnutzer exzellent ab. Sie schätzen ihnen bekannte Funktionalitäten: Login mit FaceID/TouchID, die Navigation oder das Verwenden von "Selection Controls".</p>
-  -
-    component: 'project-icons'
-    anchorId: 'audi-technology'
-    titleColored: 'Technology'
-    titleAfter: 'we used'
+  - component: "project-icons"
+    anchorId: "audi-technology"
+    titleColored: "Technology"
+    titleAfter: "we used"
     img:
-      one: 'technology-swift.png'
-      two: 'technology-apple.png'
+      one: "technology-swift.png"
+      two: "technology-apple.png"
     description: |
       <p>Bei diesem Projekt handelt es sich um eine nativ in Swift entwickelte iOS sowie einer in Kotlin entwickelten Android App. Diese passen wir regelmäßig an die neuesten Sprach- und Framework Versionen an. Die Apps liegen einer, auf MVVM-basierenden, Architektur zugrunde und enthalten aktuelle Quelltext-Dokumentationen. Somit gewährleisten wir, dass unsere Apps in Zukunft weiterhin den hohen Ansprüchen der Audi AG entsprechen. Jederzeit im Sinne der Leistungsfähigkeit und Wartbarkeit. Dies erlaubt uns flexibel und schnell auf Kundenwünsche zu reagieren.</p>
-  -
-    component: 'contact'
-    title: 'Klingt interessant?'
-    description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
-    button: 'Jetzt kontaktieren'
-    subject: 'Info über das Projekt'
+  - component: "contact"
+    title: "Klingt interessant?"
+    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
+    button: "Jetzt kontaktieren"
+    subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,
       ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.
