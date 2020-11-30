@@ -4,6 +4,7 @@ meta:
   title: 'iPad App'
   id: 'bmw'
   span: 'September 2014 - September 2015'
+  img: 'bmw-header.png'
   hidden: false
 sections:
   -

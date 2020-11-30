@@ -4,6 +4,7 @@ meta:
   title: 'AR App'
   id: 'ferchau'
   span: 'Januar 2014 - September 2016'
+  img: 'ferchau-header.png'
   hidden: false
 sections:
   -

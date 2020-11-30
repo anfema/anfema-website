@@ -4,6 +4,7 @@ meta:
   title: 'Lookbook'
   id: 'knauf'
   span: März 2015 - heute
+  img: 'knauf-lookbook-header.png'
 sections:
   -
     component: 'project-header'

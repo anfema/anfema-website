@@ -27,8 +27,6 @@
 	@include customer-colors;
 
 	position: relative;
-	//background-color: $color-projects-list-item;
-	column-span: span 1;
 
 	&,
 	&:link,
@@ -72,26 +70,10 @@
 		}
 	}
 
-	&__client-background {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 180%;
-		transform: rotate(-56.3deg) translateY(83%); // arccos( (b² + c² - a²) / (2bc) )
-		transform-origin: 0% 100%;
-		overflow: hidden;
-		padding: 0;
-		opacity: 0.8;
-		font-size: 2 * 27.3vw;
-		font-weight: 700;
-		line-height: 2 * 27.3vw;
-		text-align: center;
-		text-transform: uppercase;
-		white-space: nowrap;
-
-		@include media-large-min {
-			font-size: 27.3vw;
-			line-height: 27.3vw;
+	&__img {
+		img {
+			width: 100%;
+			height: auto;
 		}
 	}
 }

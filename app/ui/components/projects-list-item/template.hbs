@@ -1,9 +1,11 @@
 <div class="projects-list-item__inner bgColor--{{project.id}}">
-	<h3 class="projects-list-item__client">{{project.client}}</h3>
-
-	<h4 class="projects-list-item__title">{{project.title}}</h4>
-
-	<div class="projects-list-item__client-background" aria-hidden="true">{{project.client}}</div>
+	<div>
+		<h3 class="projects-list-item__client">{{project.client}}</h3>
+		<h4 class="projects-list-item__title">{{project.title}}</h4>
+	</div>
+	<div class="project-list-item__img">
+		{{responsive-image image=project.img}}
+	</div>
 </div>
 
 {{yield}}

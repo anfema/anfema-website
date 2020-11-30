@@ -4,6 +4,7 @@ meta:
   title: 'HR App'
   id: 'audi'
   span: '2018 - heute'
+  img: 'audi-header.png'
   hidden: false
 sections:
   -

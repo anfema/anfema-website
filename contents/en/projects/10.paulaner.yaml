@@ -4,6 +4,7 @@ meta:
   title: 'iPad App'
   id: 'paulaner'
   span: '2017 - today'
+  img: 'paulaner-header.png'
   hidden: false
 sections:
   -
