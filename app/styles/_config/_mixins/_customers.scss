@@ -1,39 +1,49 @@
+$customerColor-msp: #006ac9;
+$customerColor-paulaner: #003366;
+$customerColor-knauf: #f97e33;
+$customerColor-bmw: #0275b6;
+$customerColor-audi: #bb0a30;
+$customerColor-ferchau: #e62332;
+$customerColor-pingonaut: #ff7f00;
+$customerColor-tods: #342524;
+$customerColor-idnow: #f95602;
+
 @mixin customer-colors {
 	.color {
 		&--mystaffpilot {
-			color: #006ac9;
+			color: $customerColor-msp;
 		}
 
 		&--paulaner {
-			color: #003366;
+			color: $customerColor-paulaner;
 		}
 
 		&--knauf {
-			color: #f97e33;
+			color: $customerColor-knauf;
 		}
 
 		&--bmw {
-			color: #0275b6;
+			color: $customerColor-bmw;
 		}
 
 		&--audi {
-			color: #bb0a30;
+			color: $customerColor-audi;
 		}
 
 		&--ferchau {
-			color: #e62332;
+			color: $customerColor-ferchau;
 		}
 
 		&--pingonaut {
-			color: #ff7f00;
+			color: $customerColor-pingonaut;
 		}
 
 		&--tods {
-			color: #342524;
+			color: $customerColor-tods;
 		}
 
 		&--idnow {
-			color: #f95602;
+			color: $customerColor-idnow;
 		}
 	}
 
@@ -51,7 +61,7 @@
 		}
 
 		&--three {
-			fill: #006ac9;
+			fill: $customerColor-msp;
 		}
 	}
 
@@ -69,7 +79,7 @@
 		}
 
 		&--three {
-			fill: #003366;
+			fill: $customerColor-paulaner;
 		}
 	}
 
@@ -87,7 +97,7 @@
 		}
 
 		&--three {
-			fill: #f97e33;
+			fill: $customerColor-knauf;
 		}
 	}
 
@@ -105,7 +115,7 @@
 		}
 
 		&--three {
-			fill: #0275b6;
+			fill: $customerColor-bmw;
 		}
 	}
 
@@ -123,7 +133,7 @@
 		}
 
 		&--three {
-			fill: #bb0a30;
+			fill: $customerColor-audi;
 		}
 	}
 
@@ -141,7 +151,7 @@
 		}
 
 		&--three {
-			fill: #e62332;
+			fill: $customerColor-ferchau;
 		}
 	}
 
@@ -159,7 +169,7 @@
 		}
 
 		&--three {
-			fill: #ff7f00;
+			fill: $customerColor-pingonaut;
 		}
 	}
 
@@ -177,7 +187,7 @@
 		}
 
 		&--three {
-			fill: #342524;
+			fill: $customerColor-tods;
 		}
 	}
 
@@ -195,7 +205,45 @@
 		}
 
 		&--three {
-			fill: #f95602;
+			fill: $customerColor-idnow;
+		}
+	}
+
+	.bgColor {
+		&--mystaffpilot {
+			background-color: $customerColor-msp;
+		}
+
+		&--paulaner {
+			background-color: $customerColor-paulaner;
+		}
+
+		&--knauf {
+			background-color: $customerColor-knauf;
+		}
+
+		&--bmw {
+			background-color: $customerColor-bmw;
+		}
+
+		&--audi {
+			background-color: $customerColor-audi;
+		}
+
+		&--ferchau {
+			background-color: $customerColor-ferchau;
+		}
+
+		&--pingonaut {
+			background-color: $customerColor-pingonaut;
+		}
+
+		&--tods {
+			background-color: $customerColor-tods;
+		}
+
+		&--idnow {
+			background-color: $customerColor-idnow;
 		}
 	}
 }
