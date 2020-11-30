@@ -24,8 +24,10 @@
 }
 
 .projects-list-item {
+	@include customer-colors;
+
 	position: relative;
-	background-color: $color-projects-list-item;
+	//background-color: $color-projects-list-item;
 	column-span: span 1;
 
 	&,
@@ -79,7 +81,7 @@
 		transform-origin: 0% 100%;
 		overflow: hidden;
 		padding: 0;
-		opacity: 0.1;
+		opacity: 0.8;
 		font-size: 2 * 27.3vw;
 		font-weight: 700;
 		line-height: 2 * 27.3vw;
