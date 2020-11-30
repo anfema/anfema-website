@@ -66,6 +66,40 @@ sections:
     description: |
       <p>Ein Punkt den die App auszeichnet: wir setzen auf natives Design und Entwicklungsstandards. Wir achten auf Aktualität und verbessern stetig die Funktionalität. Was die Zielgruppe von ihren Privatanwendungen kennt, wissen sie ebenfalls zügig in ihrer Arbeitssoftware zu schätzen.</p>
   -
+    component: "project-features"
+    anchorId: "topfeatures"
+    titleBefore: "Top "
+    titleColored: "features"
+    features:
+      - id: "one"
+        pagination: "#1"
+        subtitle: "Orientierung leicht gemacht"
+        video: "paulaner-awesome.png"
+        description: |
+          Bilder sagen mehr als 1.000 Worte – oder in diesem Falle ist es die Kartenansicht.
+          Um schnell einen Überblick zu bekommen, profitieren die Mitarbeiter des Vertriebs von Paulaner von verschiedenen Optionen:
+          1. Kundentypen sind durch Icons differenziert.
+          2. Die User erhalten sofort die wichtigsten Daten über den Kunden. Zugleich kann ein Besuch bearbeitet oder gestartet werden.
+          3. Die Bildung von Clustern verstärkt die Übersicht und kann bei Bedarf aufgeteilt werden oder vorab die Hauptinformation liefern.
+      - id: "two"
+        pagination: "#2"
+        subtitle: "Einmal von allem etwas bitte"
+        video: "paulaner-awesome.png"
+        description: |
+          Diese Aussage werden Vertriebsmitarbeiter eher selten bekommen. Somit wächst das Bedürfnis mehrere Artikel zu der Bestellung hinzuzufügen. Da die Produktpalette umfangreich ist, kann die Suche oder die Filter- und Sortierungsmöglichkeit helfen. Eine Schnellübersicht des Artikel liefert direkt die wichtigsten Informationen um den Kunden von einer neuen Sorte zu überzeugen.
+      - id: "three"
+        pagination: "#3"
+        subtitle: "Zahlen visuell verstehen"
+        video: "paulaner-awesome.png"
+        description: |
+          Wie auch bei der Kartenansicht, profitieren die Mitarbeiter bei den Absatzzahlen von einer visuellen Ansicht. Die Zielgruppe kann sich eine Übersicht über die  Produktvielfalt in einem Säulendiagramm anzeigen lassen. Wer sich für einen Jahresvergleich zwischen aktuellem und Vorjahr interessiert, wird hier ebenfalls bedient. Ob diese Ansicht die Marken oder ebenfalls die Artikelvielfalt beinhaltet, liegt in den Bedürfnissen des Mitarbeiters.
+      - id: "four"
+        pagination: "#4"
+        subtitle: "360-Grad-Kundenübersicht"
+        description: |
+          Der Rundumblick ist einer der wichtigsten Bedürfnisse unserer Zielgruppe.
+          Unsere Kundendarstellung bietet eine Übersichtsliste der Verträge sowie eine Detailansicht die keine Fragen offen lässt.
+  -
     component: 'content-quote'
     anchorId: 'paulaner-quote'
     source: |

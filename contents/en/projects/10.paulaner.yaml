@@ -63,6 +63,44 @@ sections:
     description: |
       <p>A bullet that the app marks out: We rely on native design and development standards. We pay attention to actuality and constantly improve the functionality. What the target group knows from their private used software, they also appreciate in their working software.</p>
   -
+    component: "project-features"
+    anchorId: "topfeatures"
+    titleBefore: "Top "
+    titleColored: "features"
+    features:
+      - id: "one"
+        pagination: "#1"
+        subtitle: "Orientation made easy"
+        video: "paulaner-awesome.png"
+        description: |
+          Pictures say more than 1,000 words - or in this case it is the map view.
+          To get a quick overview, Paulaner's sales staff benefit from various options:
+
+          1. Different types of customers are differentiated by different icons
+
+          2. The users immediately receive the most important data about the customer at a single point. At the same time a visit can be edited or started.
+
+          3. The formation of clusters strengthens the overview and can be split if required or provide the main information in advance.
+
+      - id: "two"
+        pagination: "#2"
+        subtitle: "A little bit of everything, please"
+        video: "paulaner-awesome.png"
+        description: |
+          Sales employees will rarely get this statement. Therefore the need to add several articles to the order grows. Since the product range is extensive, the search or the filter and sorting option can help. A quick overview of the article directly provides the most important information to convince the customer of a new variety.
+      - id: "three"
+        pagination: "#3"
+        subtitle: "Understanding numbers visually"
+        video: "paulaner-awesome.png"
+        description: |
+          As with the map view, employees benefit from a visual view of sales figures. The target group can have an overview of the product variety displayed in a bar chart. Anyone interested in a yearly comparison between current and previous year is also served here. Whether this view includes the brands or also the variety of articles is up to the needs of the employee.
+      - id: "four"
+        pagination: "#4"
+        subtitle: "360-degree customer overview"
+        description: |
+          The 360° view is one of the most important needs of our target group.
+          Our customer presentation offers an overview list of contracts as well as a detailed view that leaves no questions unanswered.
+  -
     component: 'content-quote'
     anchorId: 'paulaner-quote'
     source: |
