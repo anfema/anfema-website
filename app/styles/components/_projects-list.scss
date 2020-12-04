@@ -1,32 +1,32 @@
 .projects-list {
 	display: grid;
-	height: 800vw;
 	overflow: hidden;
-	grid-template-columns: repeat(1, 1fr);
+	//grid-auto-rows: 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 	padding: 0;
 
 	@include offset-menu-height;
 
-	@include media-medium-min {
-		height: 250vw;
-		grid-template-columns: repeat(2, 1fr);
-	}
-
 	@include media-large-min {
-		height: 100vw;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
 	}
+}
 
-	@include media-xxlarge-min {
-		height: 75vw;
-		grid-template-columns: repeat(4, 1fr);
-	}
+.projects-list::before {
+	width: 0;
+	grid-column: 1 / 1;
+	grid-row: 1 / 1;
+	padding-bottom: 100%;
+	content: '';
+}
+
+.projects-list > *:first-child {
+	grid-column: 1 / 1;
+	grid-row: 1 / 1;
 }
 
 .projects-list-item {
 	@include customer-colors;
-
-	position: relative;
 
 	&,
 	&:link,
@@ -35,16 +35,25 @@
 	&:hover,
 	&:active {
 		color: $color-text-inverted;
+		text-decoration: none;
 	}
 
 	&__inner {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
 		height: 100%;
 		overflow: hidden;
 		padding: 1.5rem 2rem;
+
+		.projects-list-item__image {
+			width: 80%;
+			height: 80%;
+			overflow: hidden;
+			margin: auto;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
 	}
 
 	&__client {
@@ -67,13 +76,6 @@
 		@include media-large-min {
 			font-size: 1.8rem;
 			line-height: 2rem;
-		}
-	}
-
-	&__img {
-		img {
-			width: 100%;
-			height: auto;
 		}
 	}
 }
