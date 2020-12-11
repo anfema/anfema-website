@@ -4,7 +4,7 @@ meta:
   title: 'Lookbook'
   id: 'knauf'
   span: March 2015 to date
-  img: 'knauf-lookbook-header.png'
+  img: 'knauf-lookbook-challenge-ipad1.png'
 sections:
   -
     component: 'project-header'

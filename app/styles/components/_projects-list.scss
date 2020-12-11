@@ -48,7 +48,7 @@
 
 	&__inner {
 		display: grid;
-		height: 100%;
+		height: 100vw;
 		overflow: hidden;
 		grid-template-columns: repeat(1 / 1fr);
 		padding: 1.5rem 2rem;
@@ -63,6 +63,18 @@
 				width: 100%;
 				height: auto;
 			}
+
+			@include media-large-min {
+				max-height: 30vw;
+			}
+		}
+
+		@include media-medium-min {
+			height: 100%;
+		}
+
+		@include media-large-min {
+			min-height: 33vw;
 		}
 	}
 
