@@ -1,6 +1,15 @@
 <div class="projects-list-item__inner bgColor--{{project.id}}">
-	<h3 class="projects-list-item__client">{{project.client}}</h3>
-	<h4 class="projects-list-item__title">{{project.title}}</h4>
+	<div>
+		<h3 class="projects-list-item__client">{{project.client}}</h3>
+		<h4 class="projects-list-item__title">{{project.title}}</h4>
+	</div>
+	{{#if project.introMessage}}
+		<div class="project-list-item__introMessage">
+			<div class="introQuote">
+				{{project.introMessage}}
+			</div>
+		</div>
+	{{/if}}
 	<div class="projects-list-item__image">
 		{{responsive-image image=project.img}}
 	</div>

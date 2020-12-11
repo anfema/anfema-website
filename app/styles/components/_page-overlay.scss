@@ -18,15 +18,11 @@
 	right: 0;
 	left: 0;
 	z-index: 100;
-	min-height: calc(100vh - 2 * 0.5rem);
 	background: $color-background;
 
 	//@include offset-overlay;
 	//@include shadow-floating;
 
-	@include media-medium-min {
-		min-height: calc(100vh - 2 * 1rem);
-	}
 
 	.page-menu {
 		/* &:before {

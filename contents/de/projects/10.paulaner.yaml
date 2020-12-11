@@ -4,6 +4,8 @@ meta:
   title: 'iPad App'
   id: 'paulaner'
   span: '2017 - heute'
+  introMessage: |
+     In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
   img: 'paulaner-header.png'
   hidden: false
 sections:
