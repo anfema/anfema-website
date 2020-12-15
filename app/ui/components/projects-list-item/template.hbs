@@ -3,12 +3,14 @@
 		<h3 class="projects-list-item__client">{{project.client}}</h3>
 		<h4 class="projects-list-item__title">{{project.title}}</h4>
 	</div>
-	{{#if project.introMessage}}
-		<div class="project-list-item__introMessage">
-			<div class="introQuote">
-				{{project.introMessage}}
+	{{#if project.overviewBig}}
+		{{#if project.introMessage}}
+			<div class="project-list-item__introMessage">
+				<div class="introQuote">
+					{{project.introMessage}}
+				</div>
 			</div>
-		</div>
+		{{/if}}
 	{{/if}}
 	<div class="projects-list-item__image">
 		{{responsive-image image=project.img}}

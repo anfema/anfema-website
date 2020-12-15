@@ -4,6 +4,7 @@ meta:
   title: 'Video Identification'
   id: 'idnow'
   span: 'July 2014 to date'
+  overviewBig: false
   img: 'idnow-intro.png'
   hidden: false
 sections:

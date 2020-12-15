@@ -4,6 +4,9 @@ meta:
   title: 'Lookbook'
   id: 'knauf'
   span: March 2015 to date
+  overviewBig: false
+  introMessage: |
+    anfema know what they do, how to do it, and they do it damn fast.
   img: 'knauf-lookbook-challenge-ipad1.png'
 sections:
   -

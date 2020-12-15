@@ -27,10 +27,6 @@
 	grid-row: 1 / 1;
 }
 
-.projects-list-item--paulaner {
-	grid-row: 2 / 4;
-}
-
 .projects-list-item {
 	@include customer-colors;
 
@@ -188,5 +184,9 @@
 		&:after {
 			opacity: 0;
 		}
+	}
+	
+	&--paulaner {
+		grid-row-end: span 2;
 	}
 }
