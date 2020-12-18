@@ -4,6 +4,8 @@ meta:
   title: 'Plattform'
   id: 'mystaffpilot'
   span: 'Anfang 2014 - heute'
+  overviewBig: false
+  img: 'msp-intro.png'
   hidden: false
 sections:
   -

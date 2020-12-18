@@ -1,9 +1,20 @@
-<div class="projects-list-item__inner">
-	<h3 class="projects-list-item__client">{{project.client}}</h3>
-
-	<h4 class="projects-list-item__title">{{project.title}}</h4>
-
-	<div class="projects-list-item__client-background" aria-hidden="true">{{project.client}}</div>
+<div class="projects-list-item__inner bgColor--{{project.id}}">
+	<div>
+		<h3 class="projects-list-item__client">{{project.client}}</h3>
+		<h4 class="projects-list-item__title">{{project.title}}</h4>
+	</div>
+	{{#if project.overviewBig}}
+		{{#if project.introMessage}}
+			<div class="project-list-item__introMessage">
+				<div class="introQuote">
+					{{project.introMessage}}
+				</div>
+			</div>
+		{{/if}}
+	{{/if}}
+	<div class="projects-list-item__image">
+		{{responsive-image image=project.img}}
+	</div>
 </div>
 
 {{yield}}

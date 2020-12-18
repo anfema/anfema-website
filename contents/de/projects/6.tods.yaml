@@ -4,6 +4,8 @@ meta:
   title: 'Configurator'
   id: 'tods'
   span: 'Juni 2015 - heute'
+  overviewBig: false
+  img: 'tods-awesome.png'
   hidden: false
 sections:
   -

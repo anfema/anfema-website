@@ -4,6 +4,8 @@ meta:
   title: 'AR App'
   id: 'ferchau'
   span: 'January 2014 - September 2016'
+  overviewBig: false
+  img: 'ferchau-challenge-ipad1.png'
   hidden: false
 sections:
   -

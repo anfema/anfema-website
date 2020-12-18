@@ -1,9 +1,11 @@
 meta:
-  color: "#bb0a30"
-  client: "Audi"
-  title: "HR App"
-  id: "audi"
-  span: "2018 - heute"
+  color: '#bb0a30'
+  client: 'Audi'
+  title: 'HR App'
+  id: 'audi'
+  span: '2018 - heute'
+  overviewBig: false
+  img: 'audi-intro-iphone.png'
   hidden: false
 sections:
   - component: "project-header"

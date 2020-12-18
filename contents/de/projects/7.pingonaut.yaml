@@ -4,6 +4,8 @@ meta:
   title: 'Kidswatch'
   id: 'pingonaut'
   span: 'Mai 2016 - heute'
+  overviewBig: false
+  img: 'pingonaut-header.png'
   hidden: false
 sections:
   -
