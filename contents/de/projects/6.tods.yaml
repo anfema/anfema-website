@@ -1,76 +1,77 @@
 meta:
-  color: '#342524'
+  color: "#342524"
   client: "TOD’S"
-  title: 'Configurator'
-  id: 'tods'
-  span: 'Juni 2015 - heute'
+  title: "Configurator"
+  id: "tods"
+  span: "Juni 2015 - heute"
   overviewBig: false
-  img: 'tods-awesome.png'
+  img: "tods-awesome.png"
   hidden: false
 sections:
   -
-    component: 'project-header'
-    img: 'tods-header.png'
+    component: "project-header"
+    img: "tods-header.png"
     action:
-      scrollDown: 'Mehr erfahren'
+      scrollDown: "Mehr erfahren"
   -
-    component: 'project-text'
-    anchorId: 'tods-intro'
-    orientation: 'left'
+    component: "project-text"
+    anchorId: "tods-intro"
+    orientation: "left"
     titleColored: "Tod's"
-    titleAfter: 'Shoe Configurator App'
-    subTitle: '2015 - Heute'
+    titleAfter: "Shoe Configurator App"
+    subTitle: "2015 - Heute"
     img:
-      alignment: 'horizontal'
-      zero: 'tods-intro.png'
-    description: |
-      <p>Personalisierte Schuhe selbst konfigurieren: Unter diesem Motto steht die App „TOD’S Custom Made“ des italienischen Herstellers. Zusammen mit einem Store-Mitarbeiter kann der Kunde hier seinen Schuh individuell nach seinem Geschmack gestalten und anschließend bestellen. Zusätzlich bietet die App dem Benutzer interessante Details über die Geschichte und die Marke TOD'S. Die TOD'S-App wurde als interaktiver Einkaufsbegleiter konzipiert, der die Qualität des Produkts und das Lebensgefühl der Marke widerspiegeln soll. Gleichzeitig muss die App performant und leicht zu bedienen sein, um den Verkäufer vor Ort zu unterstützen und ein angenehmes Verkaufsklima zu schaffen.</p>
+      alignment: "horizontal"
+      zero: "tods-intro.png"
+    description:markdown: |
+      Personalisierte Schuhe selbst konfigurieren: Unter diesem Motto steht die App „TOD’S Custom Made“ des italienischen Herstellers. Zusammen mit einem Store-Mitarbeiter kann der Kunde hier seinen Schuh individuell nach seinem Geschmack gestalten und anschließend bestellen. Zusätzlich bietet die App dem Benutzer interessante Details über die Geschichte und die Marke TOD'S. Die TOD'S-App wurde als interaktiver Einkaufsbegleiter konzipiert, der die Qualität des Produkts und das Lebensgefühl der Marke widerspiegeln soll. Gleichzeitig muss die App performant und leicht zu bedienen sein, um den Verkäufer vor Ort zu unterstützen und ein angenehmes Verkaufsklima zu schaffen.
   -
-    component: 'project-text'
-    anchorId: 'tods-challenge'
-    orientation: 'right'
-    titleColored: 'Challenge'
+    component: "project-text"
+    anchorId: "tods-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
     img:
-      alignment: 'horizontal'
-      one: 'tods-challenge-ipad1.png'
-      two: 'tods-challenge-ipad2.png'
-    description: |
-      <p>Die Herausforderung bei diesem Projekt war es, eine speicherplatzsparende und dennoch performante Lösung zu entwickeln, die die rund 16 Millionen unterschiedlichen Schuh-Konfigurationen in einer App abbilden kann. Zusätzlich müssen die Inhalte auch ohne bestehende Internetverbindung verfügbar sein, sodass Schuhe offline konfiguriert und bestellt werden können.</p>
+      alignment: "horizontal"
+      one: "tods-challenge-ipad1.png"
+      two: "tods-challenge-ipad2.png"
+    description:markdown: |
+      Die Herausforderung bei diesem Projekt war es, eine speicherplatzsparende und dennoch performante Lösung zu entwickeln, die die rund 16 Millionen unterschiedlichen Schuh-Konfigurationen in einer App abbilden kann. Zusätzlich müssen die Inhalte auch ohne bestehende Internetverbindung verfügbar sein, sodass Schuhe offline konfiguriert und bestellt werden können.
   -
-    component: 'project-text'
-    anchorId: 'tods-awesome'
-    orientation: 'left'
-    titleBefore: 'How we made it '
-    titleColored: 'awesome'
+    component: "project-text"
+    anchorId: "tods-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
     img:
-      alignment: 'horizontal'
-      zero: 'tods-awesome.png'
-    description: |
-      <p>Um die Funktionalität der App im Offline-Modus zu garantieren, werden alle benötigten Daten beim ersten Login auf das Gerät heruntergeladen. Als Grafikformat wird WebP eingesetzt, da der verfügbare Speicherplatz auf iPads für verbreitete Alternativformate nicht ausreicht. Selbst Bestellungen können offline angelegt und auf dem Gerät gespeichert werden und werden schließlich bei bestehender Internetverbindung übermittelt. Eine Internetverbindung ist darüber hinaus lediglich für Updates der Preise und die Ergänzung neuer Modelle erforderlich.</p>
+      alignment: "horizontal"
+      zero: "tods-awesome.png"
+    description:markdown: |
+      Um die Funktionalität der App im Offline-Modus zu garantieren, werden alle benötigten Daten beim ersten Login auf das Gerät heruntergeladen. Als Grafikformat wird WebP eingesetzt, da der verfügbare Speicherplatz auf iPads für verbreitete Alternativformate nicht ausreicht.
+      Selbst Bestellungen können offline angelegt und auf dem Gerät gespeichert werden und werden schließlich bei bestehender Internetverbindung übermittelt. Eine Internetverbindung ist darüber hinaus lediglich für Updates der Preise und die Ergänzung neuer Modelle erforderlich.
   -
-    component: 'content-quote'
-    anchorId: 'tods-quote'
-    source: |
-      Sebastian André Borowski <br>
+    component: "content-quote"
+    anchorId: "tods-quote"
+    source:markdown: |
+      Sebastian André Borowski
       Program Manager, Dassault Systèmes 3DEXCITE
-    content: |
-      <p>Ich möchte die Gelegenheit gerne dazu nutzen, jedem einzelnen von euch zu gratulieren und zu danken für eure geistige Arbeit, die Mühe und allem Voran eure unbezahlbare Coolness, d.h. eure Geduld und kontinuierliche Motivation. Nochmals vielen Dank für eure grenzenlosen Bemühungen!</p>
+    content:markdown: |
+      Ich möchte die Gelegenheit gerne dazu nutzen, jedem einzelnen von euch zu gratulieren und zu danken für eure geistige Arbeit, die Mühe und allem Voran eure unbezahlbare Coolness, d.h. eure Geduld und kontinuierliche Motivation. Nochmals vielen Dank für eure grenzenlosen Bemühungen!
   -
-    component: 'project-icons'
-    anchorId: 'tods-icons'
-    titleColored: 'Technology'
-    titleAfter: 'we used'
+    component: "project-icons"
+    anchorId: "tods-icons"
+    titleColored: "Technology"
+    titleAfter: "we used"
     img:
-      one: 'technology-apple.png'
-      two: 'technology-swift.png'
-    description: |
-      <p>Die App wurde ausschließlich für Apple iPads in Swift umgesetzt. Eine Serverkomponente auf Basis von ASP.NET liefert die benötigten Daten und verwaltet Bestellungen und Konfigurationen. Durch eine entsprechende Planung und Anlage der Datenstruktur kann das System jederzeit und einfach um neue Produktkategorien und Modelle erweitert werden.</p>
+      one: "technology-apple.png"
+      two: "technology-swift.png"
+    description:markdown: |
+      Die App wurde ausschließlich für Apple iPads in Swift umgesetzt. Eine Serverkomponente auf Basis von ASP.NET liefert die benötigten Daten und verwaltet Bestellungen und Konfigurationen. Durch eine entsprechende Planung und Anlage der Datenstruktur kann das System jederzeit und einfach um neue Produktkategorien und Modelle erweitert werden.
   -
-    component: 'contact'
-    title: 'Klingt interessant?'
-    description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
-    button: 'Jetzt kontaktieren'
-    subject: 'Info über das Projekt'
+    component: "contact"
+    title: "Klingt interessant?"
+    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
+    button: "Jetzt kontaktieren"
+    subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,
       ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.

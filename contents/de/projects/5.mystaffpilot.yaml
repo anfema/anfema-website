@@ -1,115 +1,116 @@
 meta:
-  color: '#006AC9'
+  color: "#006AC9"
   client: "MyStaffPilot"
-  title: 'Plattform'
-  id: 'mystaffpilot'
-  span: 'Anfang 2014 - heute'
+  title: "Plattform"
+  id: "mystaffpilot"
+  span: "Anfang 2014 - heute"
   overviewBig: false
-  img: 'msp-intro.png'
+  img: "msp-intro.png"
   hidden: false
 sections:
   -
-    component: 'project-header'
-    img: 'msp-header.png'
+    component: "project-header"
+    img: "msp-header.png"
     action:
-      scrollDown: 'Mehr erfahren'
+      scrollDown: "Mehr erfahren"
   -
-    component: 'project-text'
-    anchorId: 'msp-intro'
-    orientation: 'left'
-    titleColored: 'MYSTAFFPILOT'
-    titleAfter: 'Plattform'
-    subTitle: '2014 - Heute'
+    component: "project-text"
+    anchorId: "msp-intro"
+    orientation: "left"
+    titleColored: "MYSTAFFPILOT"
+    titleAfter: "Plattform"
+    subTitle: "2014 - Heute"
     img:
-      alignment: 'horizontal'
-      zero: 'msp-intro.png'
-    description: |
-      <p>Die Staffpilot GmbH hat es sich zur Aufgabe gemacht, für Agenturen mit Promotions ein Portal bereitzustellen. Dieses ermöglicht für die Abwicklung von Promotion-Aufträgen sowohl für die Agenturseite als auch für die Selbständigen einen tollen Rundum-Service.</p>
-      <p>In enger Zusammenarbeit mit der Staffpilot GmbH haben wir dafür die Promoter Plattform MYSTAFFPILOT entwickelt. Diese betreuen und erweitern wir seitdem. Die erarbeitete Lösung umfasst eine öffentliche Android App, iOS App, ein Web-Portal für Promoter, sowie eine interne Anwendung. Damit ist es möglich, die umfangreichen Prozesse vollständig abzudecken: Vom Rekrutierungsprozess zukünftiger Promoter über Terminmanagement aller Aufträge und eingesetzten Personals, bis hin zur Rechnungsstellung. Mehrere tausend Nutzer verwenden das System regelmäßig.</p>
+      alignment: "horizontal"
+      zero: "msp-intro.png"
+    description:markdown: |
+      Die Staffpilot GmbH hat es sich zur Aufgabe gemacht, für Agenturen mit Promotions ein Portal bereitzustellen. Dieses ermöglicht für die Abwicklung von Promotion-Aufträgen sowohl für die Agenturseite als auch für die Selbständigen einen tollen Rundum-Service.
+      In enger Zusammenarbeit mit der Staffpilot GmbH haben wir dafür die Promoter Plattform MYSTAFFPILOT entwickelt. Diese betreuen und erweitern wir seitdem. Die erarbeitete Lösung umfasst eine öffentliche Android App, iOS App, ein Web-Portal für Promoter, sowie eine interne Anwendung. Damit ist es möglich, die umfangreichen Prozesse vollständig abzudecken: Vom Rekrutierungsprozess zukünftiger Promoter über Terminmanagement aller Aufträge und eingesetzten Personals, bis hin zur Rechnungsstellung. Mehrere tausend Nutzer verwenden das System regelmäßig.
   -
-    component: 'project-text'
-    anchorId: 'msp-challenge'
-    orientation: 'right'
-    titleColored: 'Challenge'
+    component: "project-text"
+    anchorId: "msp-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
     img:
-      alignment: 'horizontal'
-      one: 'msp-challenge-ipad1.png'
-      two: 'msp-challenge-ipad2.png'
-    description: |
-      <p>Die größte Challenge bei diesem Projekt ist das Abbilden bestehender und das Erarbeiten neuer Prozesse des Kunden. Vermehrte Änderungen durch Anforderungen und Ansprüche an das System führen dazu, dass die Plattform stetig erweitert und mit neuen Funktionalitäten ausgestattet wird. Datensicherheit muss an höchster Stelle stehen: Verschiedene Personengruppen (Promoter, Innendienst, Kunden des Kunden) haben Zugriff auf die Plattform. Demzufolge werden in der Plattform personenbezogene, private, öffentliche, und interne Daten verarbeitet.</p>
+      alignment: "horizontal"
+      one: "msp-challenge-ipad1.png"
+      two: "msp-challenge-ipad2.png"
+    description:markdown: |
+      Die größte Challenge bei diesem Projekt ist das Abbilden bestehender und das Erarbeiten neuer Prozesse des Kunden. Vermehrte Änderungen durch Anforderungen und Ansprüche an das System führen dazu, dass die Plattform stetig erweitert und mit neuen Funktionalitäten ausgestattet wird.
+      Datensicherheit muss an höchster Stelle stehen: Verschiedene Personengruppen (Promoter, Innendienst, Kunden des Kunden) haben Zugriff auf die Plattform. Demzufolge werden in der Plattform personenbezogene, private, öffentliche, und interne Daten verarbeitet.
   -
-    component: 'project-text'
-    anchorId: 'msp-awesome'
-    orientation: 'left'
-    titleBefore: 'How we made it '
-    titleColored: 'awesome'
+    component: "project-text"
+    anchorId: "msp-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
     img:
-      alignment: 'vertical'
-      one: 'msp-awesome-android.png'
-      two: 'msp-awesome-iphone.png'
-    description: |
-      <p>Ausschlaggebend für die erfolgreiche Konzipierung und Umsetzung des Systems ist die enge Zusammenarbeit mit dem Kunden. Persönliche Kundenbetreuung durch erfahrene Projektmanager führte zu einer individuellen, technischen Lösung. Die komplett auf die Wünsche des Kunden angepasste Plattform ermöglicht weiterhin die stetige Erweiterung und Anbindung neuer sowie maßgeschneiderter Features.</p>
+      alignment: "vertical"
+      one: "msp-awesome-android.png"
+      two: "msp-awesome-iphone.png"
+    description:markdown: |
+      Ausschlaggebend für die erfolgreiche Konzipierung und Umsetzung des Systems ist die enge Zusammenarbeit mit dem Kunden. Persönliche Kundenbetreuung durch erfahrene Projektmanager führte zu einer individuellen, technischen Lösung. Die komplett auf die Wünsche des Kunden angepasste Plattform ermöglicht weiterhin die stetige Erweiterung und Anbindung neuer sowie maßgeschneiderter Features.
   -
-    component: 'project-features'
-    anchorId: 'msp-features'
-    titleBefore: 'Top'
-    titleColored: 'Features'
+    component: "project-features"
+    anchorId: "msp-features"
+    titleBefore: "Top"
+    titleColored: "Features"
     features:
       -
-        id: 'feature-one'
-        img: 'pingonaut-gallery-1.jpg'
-        title: 'Kartenansicht'
-        description: |
+        id: "feature-one"
+        img: "pingonaut-gallery-1.jpg"
+        title: "Kartenansicht"
+        description:markdown: |
           Bilder sagen mehr als 1.000 Worte – in diesem Falle ist es die Kartenansicht. Um schnell einen Überblick zu bekommen, profitieren die Mitarbeiter des Vertriebs von Paulaner von verschiedenen Optionen:
           1. Kundentypen sind durch Icons differenziert.
           2. Die User erhalten sofort die wichtigsten Daten über den Kunden. Zugleich kann ein Besuch bearbeitet oder gestartet werden.
           3. Die Bildung von Clustern verstärkt die Übersicht und kann bei Bedarf aufgeteilt werden oder vorab die Hauptinformation liefern.
       -
-        id: 'feature-two'
-        img: 'pingonaut-gallery-1.jpg'
-        title: 'Einmal von allem etwas bitte'
-        description: |
+        id: "feature-two"
+        img: "pingonaut-gallery-1.jpg"
+        title: "Einmal von allem etwas bitte"
+        description:markdown: |
           Diese Aussage werden Vertriebsmitarbeiter eher selten bekommen. Somit wächst das Bedürfnis mehrere Artikel zu der Bestellung hinzuzufügen. Da die Produktpalette umfangreich ist, kann die Suche oder die Filter- und Sortierungsmöglichkeit helfen. Eine Schnellübersicht des Artikel liefert direkt die wichtigsten Informationen um den Kunden von einer neuen Sorte zu überzeugen.
       -
-        id: 'feature-three'
-        img: 'pingonaut-gallery-1.jpg'
-        title: 'Zahlen visuell verstehen'
-        description: |
+        id: "feature-three"
+        img: "pingonaut-gallery-1.jpg"
+        title: "Zahlen visuell verstehen"
+        description:markdown: |
           Wie auch bei der Kartenansicht, profitieren die Mitarbeiter bei den Absatzzahlen von einer visuellen Ansicht. Die Zielgruppe kann sich eine Übersicht über die  Produktvielfalt in einem Säulendiagramm anzeigen lassen. Wer sich für einen Jahresvergleich zwischen aktuellem und Vorjahr interessiert, wird hier ebenfalls bedient. Ob diese Ansicht die Marken oder ebenfalls die Artikelvielfalt beinhaltet, liegt in den Bedürfnissen des Mitarbeiters.
       -
-        id: 'feature-four'
-        img: 'pingonaut-gallery-1.jpg'
-        title: '360-Grad-Kundenübersicht'
-        description: |
+        id: "feature-four"
+        img: "pingonaut-gallery-1.jpg"
+        title: "360-Grad-Kundenübersicht"
+        description:markdown: |
           Der Rundumblick ist einer der wichtigsten Bedürfnisse unserer Zielgruppe. Unsere Kundendarstellung bietet eine Übersichtsliste der Verträge sowie eine Detailansicht die keine Fragen offen lässt.
   -
-    component: 'content-quote'
-    anchorId: 'msp-quote'
-    source: |
-      Iris Naudßus <br>
+    component: "content-quote"
+    anchorId: "msp-quote"
+    source:markdown: |
+      Iris Naudßus
       Mitglied der Geschäftsleitung STAFFPILOT GmbH
-    content: |
-      <p>Wir sind mit einer sehr komplexen Aufgabe
-         an die anfema herangetreten: Programmierung
-         einer Plattform, die für unsere Agentur-Partner und Kunden einen Komplett-Service zur Abwicklung von Promotion-Jobs bietet.
-         Die anfema hat die Sätze "geht nicht", "gibt es nicht" nicht in Ihrem Portfolio,  daher haben wir per dato eine unseren Wünschen entsprechende Plattform, die unseren Agenturpartnern und unseren Kunden diesen kompletten Service liefert! Kurzfristige Änderungen und  Erweiterungen werden gut überlegt umgesetzt! Wir freuen uns, die anfema an unserer Seite als langjährigen Dienstleister zu wissen.</p>
+    content:markdown: |
+        Wir sind mit einer sehr komplexen Aufgabe an die anfema herangetreten
+        Programmierung einer Plattform, die für unsere Agentur-Partner und Kunden einen Komplett-Service zur Abwicklung von Promotion-Jobs bietet.
+        Die anfema hat die Sätze "geht nicht", "gibt es nicht" nicht in Ihrem Portfolio,  daher haben wir per dato eine unseren Wünschen entsprechende Plattform, die unseren Agenturpartnern und unseren Kunden diesen kompletten Service liefert!
+        Kurzfristige Änderungen und  Erweiterungen werden gut überlegt umgesetzt! Wir freuen uns, die anfema an unserer Seite als langjährigen Dienstleister zu wissen.
   -
-    component: 'project-icons'
-    anchorId: 'msp-icons'
-    titleColored: 'Technology'
-    titleAfter: 'we used'
+    component: "project-icons"
+    anchorId: "msp-icons"
+    titleColored: "Technology"
+    titleAfter: "we used"
     img:
-      one: 'technology-django.png'
-      two: 'technology-postgresql.png'
-    description: |
-      <p>Für die Entwicklung des Backends der Plattform setzen wir auf das etablierte Django Framework zusammen mit einer PostgreSQL Datenbank. Ansprüche hinsichtlich Datenmengen, Sicherheit und der agilen, fortlaufenden Entwicklung können so perfekt bewältigt werden. Das Frontend setzt sich für Endnutzer aus der mystaffpilot.de Webseite und einer nativen Android sowie iOS App zusammen. Der Innendienst arbeitet im System mit einer modernen single-page Web-Anwendung, die auf Ember.js basiert.</p>
-      <p>Grundlegender Bestandteil des Systems ist Cosworth, ein von anfema entwickeltes Export-funktionales Reporting Tool. Cosworth ermöglicht es, Daten auch außerhalb des Systems, beispielsweise in der Buchhaltung, zu verarbeiten. Dank mehrerer Test und Staging-Server entwickeln und veröffentlichen wir regelmäßige Updates ohne den laufenden Betrieb zu stören.</p>
+      one: "technology-django.png"
+      two: "technology-postgresql.png"
+    description:markdown: |
+      Für die Entwicklung des Backends der Plattform setzen wir auf das etablierte Django Framework zusammen mit einer PostgreSQL Datenbank. Ansprüche hinsichtlich Datenmengen, Sicherheit und der agilen, fortlaufenden Entwicklung können so perfekt bewältigt werden. Das Frontend setzt sich für Endnutzer aus der mystaffpilot.de Webseite und einer nativen Android sowie iOS App zusammen. Der Innendienst arbeitet im System mit einer modernen single-page Web-Anwendung, die auf Ember.js basiert.
+      Grundlegender Bestandteil des Systems ist Cosworth, ein von anfema entwickeltes Export-funktionales Reporting Tool. Cosworth ermöglicht es, Daten auch außerhalb des Systems, beispielsweise in der Buchhaltung, zu verarbeiten. Dank mehrerer Test und Staging-Server entwickeln und veröffentlichen wir regelmäßige Updates ohne den laufenden Betrieb zu stören.
   -
-    component: 'contact'
-    title: 'Klingt interessant?'
-    description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
-    button: 'Jetzt kontaktieren'
-    subject: 'Info über das Projekt'
+    component: "contact"
+    title: "Klingt interessant?"
+    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
+    button: "Jetzt kontaktieren"
+    subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,
       ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.

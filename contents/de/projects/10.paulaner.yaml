@@ -1,13 +1,13 @@
 meta:
   color: "#003366"
   client: "Paulaner"
-  title: 'iPad App'
-  id: 'paulaner'
-  span: '2017 - heute'
+  title: "iPad App"
+  id: "paulaner"
+  span: "2017 - heute"
   overviewBig: true
   introMessage: |
      In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
-  img: 'paulaner-intro.png'
+  img: "paulaner-intro.png"
   hidden: false
 sections:
   - component: "project-header"
@@ -50,9 +50,7 @@ sections:
       two: "paulaner-challenge-ipad2.png"
     description:markdown: |
       Der User steht im Vordergrund – das ist eine unserer wichtigsten Devisen. Gerade bei diesem Projekt von Paulaner war es wichtig, die Zielgruppe in den Fokus zu stellen. Somit hatten wir eine intensive Konzeptionsphase, die sich bis jetzt bis jetzt erfolgreich auszahlte.
-
       Die Zielgruppe gehört nicht zu den sogenannten Digital Natives. Sie zeichnen sich durch eine hands-on Mentalität aus und stehen oft unter Zeitdruck. Ein hohes Maß an Intuitivität hat somit oberste Priorität. Dies und noch viele mehr Aspekte konnten wir bei der Möglichkeit, die Vertriebler bei ihrem Daily Business zu begleiten, herausarbeiten. Diese Einblicke über ihre Bedürfnisse und Interessen hat uns bei der Konzeptphase einen enormen Vorteil verschafft.
-
       Die Challenge konnten wir damit erfolgreich meistern und freuen uns über Feedback um das Projekt fortlaufend zu verbessern und auszubauen.
 
   - component: "project-text"
@@ -64,15 +62,17 @@ sections:
       alignment: "horizontal"
       zero: "paulaner-awesome.png"
     description:markdown: |
-      Ein Punkt den die App auszeichnet: wir setzen auf natives Design und Entwicklungsstandards. Wir achten auf Aktualität und verbessern stetig die Funktionalität. Was die Zielgruppe von ihren Privatanwendungen kennt, wissen sie ebenfalls zügig in ihrer Arbeitssoftware zu schätzen.
+      Ein Punkt den die App auszeichnet:
+      wir setzen auf natives Design und Entwicklungsstandards. Wir achten auf Aktualität und verbessern stetig die Funktionalität. Was die Zielgruppe von ihren Privatanwendungen kennt, wissen sie ebenfalls zügig in ihrer Arbeitssoftware zu schätzen.
 
   - component: "content-quote"
     anchorId: "paulaner-quote"
-    source: |
-      Heide Buchmann <br>
+    source:markdown: |
+      Heide Buchmann
       IMT Business Partner für den VertriebInformationsmanagement
-    content: |
-      Es macht Spaß die App zu verwenden und wachsen zu sehen, wie sie immer noch besser zu unseren steigenden Anforderungen passt und den Vertrieb bei der täglichen Arbeit unterstützt. In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
+    content:markdown: |
+      Es macht Spaß die App zu verwenden und wachsen zu sehen, wie sie immer noch besser zu unseren steigenden Anforderungen passt und den Vertrieb bei der täglichen Arbeit unterstützt.
+      In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
 
   - component: "project-icons"
     anchorId: "paulaner-technology"
@@ -82,9 +82,18 @@ sections:
       one: "technology-apple.png"
       two: "technology-swift.png"
     description:markdown: |
-      Bei diesem Projekt handelt es sich um eine nativ in Swift entwickelte iPad App. Diese passen wir regelmäßig an die aktuellsten iPadOS Versionen an. Diese datenzentrische App synchronisiert in mehreren Varianten mit einem auf der Salesforce Cloud basierenden Backend. Für eine gänzliche Offline-Fähigkeit sorgt eine indexierte Datenbank auf dem Gerät. Durch eine optimierte Abfrage steht einer Datensortierung und Filterfunktion im Offline-Modus nichts entgegen. Hinzu kommt, dass durch die in der App kumulierten Rohdaten aus Salesforce, durch Diagramme dargestellt werden können. Angelehnt an die Designsprache von iPadOS entwickelten wir mehrere Komponenten für die App-Oberfläche.
+      Bei diesem Projekt handelt es sich um eine nativ in Swift entwickelte iPad App. Diese passen wir regelmäßig an die aktuellsten iPadOS Versionen an. Diese datenzentrische App synchronisiert in mehreren Varianten mit einem auf der Salesforce Cloud basierenden Backend.
+      Für eine gänzliche Offline-Fähigkeit sorgt eine indexierte Datenbank auf dem Gerät. Durch eine optimierte Abfrage steht einer Datensortierung und Filterfunktion im Offline-Modus nichts entgegen. Hinzu kommt, dass durch die in der App kumulierten Rohdaten aus Salesforce, durch Diagramme dargestellt werden können. Angelehnt an die Designsprache von iPadOS entwickelten wir mehrere Komponenten für die App-Oberfläche.
 
   - component: "contact"
     title: "Klingt interessant?"
     description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
     button: "Jetzt kontaktieren"
+    subject: "Info über das Projekt"
+    body: |
+      Hallo anfema Team,
+      ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.
+      Gerne würde ich darüber mehr erfahren und mit Euch in Kontakt treten.
+
+      Mit freundlichen Grüßen
+      Max Mustermann

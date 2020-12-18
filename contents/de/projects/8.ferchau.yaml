@@ -1,80 +1,76 @@
 meta:
-  color: '#e62332'
+  color: "#e62332"
   client: "Ferchau"
-  title: 'AR App'
-  id: 'ferchau'
-  span: 'Januar 2014 - September 2016'
+  title: "AR App"
+  id: "ferchau"
+  span: "Januar 2014 - September 2016"
   overviewBig: false
-  img: 'ferchau-challenge-ipad1.png'
+  img: "ferchau-challenge-ipad1.png"
   hidden: false
 sections:
   -
-    component: 'project-header'
-    img: 'ferchau-header.png'
+    component: "project-header"
+    img: "ferchau-header.png"
     action:
+      scrollDown: "Mehr erfahren"
   -
-    component: 'project-text'
-    anchorId: 'ferchau-intro'
-    orientation: 'left'
-    titleColored: 'Ferchau'
-    titleAfter: 'AR App'
-    subTitle: '2014 - 2016'
+    component: "project-text"
+    anchorId: "ferchau-intro"
+    orientation: "left"
+    titleColored: "Ferchau"
+    titleAfter: "AR App"
+    subTitle: "2014 - 2016"
     img:
-      alignment: 'horizontal'
-      zero: 'ferchau-intro.png'
-    description: |
-      <p>Technik zum Anfassen: Mit der Augmented Reality App lassen sich sieben 3D-Modelle aus dem vielfältigen
-      technischen Leistungsspektrum von FERCHAU aus allen Perspektiven entdecken. Um die Modelle „zum Leben zu
-      erwecken“ scannt man mit der Tablet- oder Handy-Kamera und der App spezielle Marker. Auf diesen Markern
-      entstehen - integriert in das aktuell erfasste Abbild der unmittelbaren Umgebung - die verschiedenen virtuellen
-      Modelle wie Hubschrauber, Schiff oder Roboter-Arm. Die App gibt damit eindrucksvoll Einblicke in die Arbeits-
-      und Produktwelt von FERCHAU und informiert interaktiv über die Bereiche, in denen die Firma aktiv ist.</p>
+      alignment: "horizontal"
+      zero: "ferchau-intro.png"
+    description:markdown: |
+      Technik zum Anfassen: Mit der Augmented Reality App lassen sich sieben 3D-Modelle aus dem vielfältigen technischen Leistungsspektrum von FERCHAU aus allen Perspektiven entdecken. Um die Modelle „zum Leben zu erwecken“ scannt man mit der Tablet- oder Handy-Kamera und der App spezielle Marker. Auf diesen Markern entstehen - integriert in das aktuell erfasste Abbild der unmittelbaren Umgebung - die verschiedenen virtuellen Modelle wie Hubschrauber, Schiff oder Roboter-Arm. Die App gibt damit eindrucksvoll Einblicke in die Arbeits- und Produktwelt von FERCHAU und informiert interaktiv über die Bereiche, in denen die Firma aktiv ist.
   -
-    component: 'project-text'
-    anchorId: 'ferchau-challenge'
-    orientation: 'right'
-    titleColored: 'Challenge'
+    component: "project-text"
+    anchorId: "ferchau-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
     img:
-      alignment: 'horizontal'
-      one: 'ferchau-challenge-ipad1.png'
-      two: 'ferchau-challenge-ipad2.png'
-    description: |
-      <p>Die Herausforderung der FERCHAU App bestand in der detaillierten und realistischen Darstellung der 3D-Modelle bei gleichzeitig hoher Bildwiederholrate. Zur Erstellung der dreidimensionalen Objekte ist ein sicheres, schnelles Tracking der verwendeten Marker darüber hinaus unbedingt erforderlich.</p>
+      alignment: "horizontal"
+      one: "ferchau-challenge-ipad1.png"
+      two: "ferchau-challenge-ipad2.png"
+    description:markdown: |
+      Die Herausforderung der FERCHAU App bestand in der detaillierten und realistischen Darstellung der 3D-Modelle bei gleichzeitig hoher Bildwiederholrate. Zur Erstellung der dreidimensionalen Objekte ist ein sicheres, schnelles Tracking der verwendeten Marker darüber hinaus unbedingt erforderlich.
   -
-    component: 'project-text'
-    anchorId: 'ferchau-awesome'
-    orientation: 'left'
-    titleBefore: 'How we made it '
-    titleColored: 'awesome'
+    component: "project-text"
+    anchorId: "ferchau-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
     img:
-      alignment: 'horizontal'
-      zero: 'ferchau-awesome.png'
-    description: |
-      <p>Die Performance der App ist konstant hoch. Das gelingt durch die Nutzung der  3D-Engine Unity3D in Kombination mit speziell angepassten Shadern.  Das eingesetzte Augmented Reality-SDK der führenden AR-Plattform Vuforia  sorgt für ein sicheres und performantes Tracken der Marker. On Top gewährt  Vuforia maximale gestalterische Freiheit und ermöglicht damit ein charakteristisches Design der 3D-Modelle, das die Marke FERCHAU widerspiegelt.</p>
+      alignment: "horizontal"
+      zero: "ferchau-awesome.png"
+    description:markdown: |
+      Die Performance der App ist konstant hoch. Das gelingt durch die Nutzung der  3D-Engine Unity3D in Kombination mit speziell angepassten Shadern.  Das eingesetzte Augmented Reality-SDK der führenden AR-Plattform Vuforia  sorgt für ein sicheres und performantes Tracken der Marker. On Top gewährt  Vuforia maximale gestalterische Freiheit und ermöglicht damit ein charakteristisches Design der 3D-Modelle, das die Marke FERCHAU widerspiegelt.
   -
-    component: 'content-quote'
-    anchorId: 'ferchau-quote'
-    source: |
-      Martin Spengler <br>
+    component: "content-quote"
+    anchorId: "ferchau-quote"
+    source:markdown: |
+      Martin Spengler
       Creative Technologist LAB BINÆR GBR
-    content: |
-      <p>Wir schätzen sehr, dass ihr mega Cracks seid und bauen unsere Konzepte voll auf euer Know-how auf.</p>
+    content:markdown: |
+      Wir schätzen sehr, dass ihr mega Cracks seid und bauen unsere Konzepte voll auf euer Know-how auf.
   -
-    component: 'project-icons'
-    anchorId: 'ferchau-icons'
-    titleColored: 'Technology'
-    titleAfter: 'we used'
+    component: "project-icons"
+    anchorId: "ferchau-icons"
+    titleColored: "Technology"
+    titleAfter: "we used"
     img:
-      one: 'technology-android.png'
-      two: 'technology-apple.png'
-    description: |
-      <p>Wir entwickelten die FERCHAU App nativ in Swift für iOS (iPhone, iPad, iPod Touch) und  für Android Phones und Tablets. Somit decken wir ein großes Publikum ab. Die Game  Engine Unity3D bildet zusammen mit dem AR-SDK Vuforia die Basis der Applikation.  Als internationaler Branchenführer bietet Unity3D optimiertes Shading und leistungsstarkes Rendering. Damit ermöglicht es die Konstruktion von realitätsnahen Animationen, und deren Einbettung, in die reale Welt in Echtzeit.</p>
+      one: "technology-android.png"
+      two: "technology-apple.png"
+    description:markdown: |
+      Wir entwickelten die FERCHAU App nativ in Swift für iOS (iPhone, iPad, iPod Touch) und  für Android Phones und Tablets. Somit decken wir ein großes Publikum ab. Die Game  Engine Unity3D bildet zusammen mit dem AR-SDK Vuforia die Basis der Applikation. Als internationaler Branchenführer bietet Unity3D optimiertes Shading und leistungsstarkes Rendering. Damit ermöglicht es die Konstruktion von realitätsnahen Animationen, und deren Einbettung, in die reale Welt in Echtzeit.
   -
-    component: 'contact'
-    title: 'Klingt interessant?'
-    description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
-    button: 'Jetzt kontaktieren'
-    subject: 'Info über das Projekt'
+    component: "contact"
+    title: "Klingt interessant?"
+    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
+    button: "Jetzt kontaktieren"
+    subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,
       ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.
