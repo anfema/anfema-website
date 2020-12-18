@@ -1,7 +1,7 @@
-import { module, test } from 'qunit';
-import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
+import { setupRenderingTest } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import { module, test } from 'qunit';
 
 const projects = [
 	{
@@ -11,12 +11,19 @@ const projects = [
 			color: '#0096DA',
 			id: 'bmw7series',
 			title: '7 Series Presenter App',
+			img: 'test.png',
 		},
 		sorting: '1',
 	},
 	{
 		file: 'knauf.json',
-		meta: { client: 'Knauf / AMF', color: '#F97E33', id: 'knauf', title: 'Lookbook App' },
+		meta: {
+			client: 'Knauf / AMF',
+			color: '#F97E33',
+			id: 'knauf',
+			title: 'Lookbook App',
+			img: 'test.png',
+		},
 		sorting: '2',
 	},
 	{
@@ -26,6 +33,7 @@ const projects = [
 			color: '#F85720',
 			id: 'idnow',
 			title: 'Video Identification Web & App',
+			img: 'test.png',
 		},
 		sorting: '3',
 	},
@@ -36,6 +44,7 @@ const projects = [
 			color: '#38ABBA',
 			id: 'takeda',
 			title: 'Voice to Patients Web & App',
+			img: 'test.png',
 		},
 		sorting: '4',
 	},
@@ -46,12 +55,19 @@ const projects = [
 			color: '#006AC9',
 			id: 'mystaffpilot',
 			title: 'Plattform',
+			img: 'test.png',
 		},
 		sorting: '5',
 	},
 	{
 		file: 'tods.json',
-		meta: { client: "TOD'S", color: '#342524', id: 'tods', title: 'Shoe Configurator App' },
+		meta: {
+			client: "TOD'S",
+			color: '#342524',
+			id: 'tods',
+			title: 'Shoe Configurator App',
+			img: 'test.png',
+		},
 		sorting: '6',
 	},
 	{
@@ -61,6 +77,7 @@ const projects = [
 			color: '#FF7F27',
 			id: 'pingonaut',
 			title: 'Kidswatch Web & App',
+			img: 'test.png',
 		},
 		sorting: '7',
 	},
@@ -71,6 +88,7 @@ const projects = [
 			color: '#EA2E3A',
 			id: 'ferchau',
 			title: 'Augmented Reality App',
+			img: 'test.png',
 		},
 		sorting: '8',
 	},
