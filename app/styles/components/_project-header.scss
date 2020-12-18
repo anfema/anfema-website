@@ -3,8 +3,8 @@
 	@include customer-colors;
 
 	position: relative;
-	height: 90vw;
-	max-height: 92vh;
+	height: 90vh;
+	max-height: 90vw;
 	grid-template-rows: 1fr 10rem 1fr;
 	color: $color-text-inverted;
 	background: $color-grey no-repeat;
@@ -37,12 +37,12 @@
 		position: absolute;
 		right: -15rem;
 		z-index: 0;
-		height: 90vw;
-		max-height: 92vh;
+		height: 100%;
+		overflow: hidden;
 		animation: zoomOut 1s ease-in;
 
 		svg {
-			height: -webkit-fill-available;
+			height: 100%;
 		}
 
 		@include media-large-min {
