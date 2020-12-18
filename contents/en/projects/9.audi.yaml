@@ -8,76 +8,79 @@ meta:
   img: 'audi-intro-iphone.png'
   hidden: false
 sections:
-  -
-    component: 'project-header'
-    img: 'audi-header.png'
+  - component: "project-header"
+    img: "audi-header.png"
     action:
-      scrollDown: 'More'
-  -
-    component: 'project-text'
-    anchorId: 'audi-intro'
-    orientation: 'left'
-    titleColored: 'Audi'
-    titleAfter: 'HR digitalization'
-    subTitle: '2018 - today'
-    img:
-      alignment: 'vertical'
-      one: 'audi-intro-iphone.png'
-      two: 'audi-intro-android.png'
-    description: |
-      <p>HR digitalization. A topic that has been gaining in popularity for years.</p>
+      scrollDown: "More"
 
-      <p>The potential is enormous! In addition to an existing web application that vitually illustrates many processes, this is the reason for Audi to go one step further.In spring 2018 we started the HR-App project with a clear requirement: native development for iOS and Android. We accepted this challenge with enthusiasm and continuously developing the App together with Audi.</p>
-  -
-    component: 'project-icons'
-    anchorId: 'audi-details'
+  - component: "project-text"
+    anchorId: "audi-intro"
+    orientation: "left"
+    titleColored: "Audi"
+    titleAfter: "HR digitalization"
+    subTitle: "2018 - today"
+    img:
+      alignment: "vertical"
+      one: "audi-intro-iphone.png"
+      two: "audi-intro-android.png"
+    description:markdown: |
+      HR digitisation. A topic that has been gaining in popularity for years.
+
+      The potential is enormous! In addition to an existing web application, which digitally maps many processes, this is the reason for Audi to go one step further.
+
+      In spring 2018 we started the HR-App project with a clear requirement: native development for iOS and Android. We accepted this challenge with enthusiasm. We are looking forward to continuously developing the app.
+
+  - component: "project-icons"
+    anchorId: "audi-details"
     titleBefore: "It's all about "
-    titleColored: 'Motion'
+    titleColored: "Motion"
     img:
-      one: 'audi-motion.png'
-    description: |
-      <p>Facts and figures are clearly in the foreground of this App. The more important it is to support and ease user flow through animations and page crossovers.</p>
+      one: "audi-motion.png"
+    description:markdown: |
+      Facts and figures are clearly the focus of this app. The more important it is to support and loosen up the user flow with animations and page transitions.
 
-      <p>Thus, the user quickly and easily realizes how deep he or she is in the information structure. Due to the constant development of the App it is even more important to set a focus on this. An App should not be a static view, but an experience that moves and connects!</p>
-  -
-    component: 'project-text'
-    anchorId: 'audi-challenge'
-    orientation: 'right'
-    titleColored: 'Challenge'
+      In this way, the user quickly and easily realises how deep he or she is in the information structure. Due to the constant development of the app, it is important to set a focus here. An app should not be a static view, but an experience that moves and connects!
+
+  - component: "project-text"
+    anchorId: "audi-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
     img:
-      alignment: 'vertical'
-      one: 'audi-challenge-android.png'
-      two: 'audi-challenge-iphone.png'
-    description: |
-      <p>The challenge is to unify the user experience, user interface and development for iOS and Android. Initially planned as an application with a reduced functional scope, it is constantly growing in features. Get information, enter times, save preferences or make requests. In order to make these functions quickly and easily accessible, we are expanding the App together with the users. This simplifies workflows for the end user as well as for colleagues in the HR and finance departments.</p>
-  -
-    component: 'project-text'
-    anchorId: 'audi-awesome'
-    orientation: 'left'
-    titleBefore: 'How we made it '
-    titleColored: 'awesome'
+      alignment: "vertical"
+      one: "audi-challenge-android.png"
+      two: "audi-challenge-iphone.png"
+    description:markdown: |
+      The challenge is to unite the user experience, the user interface and the development for iOS and Android.
+
+      Initially planned as an application with a reduced functional scope, it is constantly growing in features. Getting information, entering times, saving preferences or making requests. In order to make these functions accessible quickly and effortlessly, we are expanding the app together with the users. This simplifies workflows for the end user as well as for colleagues in the HR and finance departments.
+
+  - component: "project-text"
+    anchorId: "audi-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
     img:
-      alignment: 'vertical'
-      one: 'audi-awesome-iphone.png'
-      two: 'audi-awesome-android.png'
-    description: |
-      <p>Based on an existing Audi concept, we started the technical implementation. Successively, we were able to convince the project team of Audi  with our concept expertise. We are increasingly focusing on native design and development standards. Thus we catch iOS and Android end users excellently. They appreciate familiar functionalities: Login with FaceID/TouchID, navigation or the use of "selection controls".</p>
-  -
-    component: 'project-icons'
-    anchorId: 'audi-technology'
-    titleColored: 'Technology'
-    titleAfter: 'we used'
+      alignment: "vertical"
+      one: "audi-awesome-iphone.png"
+      two: "audi-awesome-android.png"
+    description:markdown: |
+      Starting from an existing Audi concept, we started the technical implementation. We were gradually able to convince with our concept expertise. We increasingly focus on native design and development standards. Thus we catch iOS and Android end users excellently. They appreciate familiar functionalities: Login with FaceID/TouchID, navigation or the use of "selection controls".
+
+  - component: "project-icons"
+    anchorId: "audi-technology"
+    titleColored: "Technology"
+    titleAfter: "we used"
     img:
-      one: 'technology-swift.png'
-      two: 'technology-apple.png'
-    description: |
-      <p>This project consists of an iOS developed natively in Swift and a Kotlin developed Android App. We regularly adapt them to the latest language and framework versions. The Apps are based on a MVVM-based architecture and contain up-to-date source code documentation. This ensures that our Apps will continue to meet the high standards of Audi AG in the future. At all times in terms of performance and maintainability. This allows us to react flexibly and quickly to customer requirements.</p>
-  -
-    component: 'contact'
-    title: 'Sounds interesting?'
-    description: 'You want to learn more about the project and our implementation? No matter if you are a customer or an applicant, feel free to contact us! Come and visit us for a coffee either in Munich or Augsburg - we look forward to it!'
-    button: 'Contact us now'
-    subject: 'Information about the project'
+      one: "technology-swift.png"
+      two: "technology-apple.png"
+    description:markdown: |
+      This project involves an iOS developed natively in Swift and an Android app developed in Kotlin. We regularly adapt this to the latest language and framework versions. The apps are based on a MVVM-based architecture and contain up-to-date source code documentation. This ensures that our apps will continue to meet the high standards of Audi AG in the future. At all times in terms of performance and maintainability. This allows us to react flexibly and quickly to customer requirements.
+
+  - component: "contact"
+    title: "Sounds interesting?"
+    description: "Would you like to learn more about the project and our implementation? Whether you are a customer or an applicant, please feel free to contact us! Come and visit us for a coffee either in Munich or Augsburg - we look forward to it!"
+    button: "Contact us now"
+    subject: "Information about the project"
     body: |
       Hello anfema team,
       I just had a look at your {{projectInfo}} project and ...
