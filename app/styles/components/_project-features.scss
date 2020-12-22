@@ -4,7 +4,9 @@
 	@include offset-content-top;
 	@include customer-colors;
 
+	max-width: 1216px;
 	overflow: hidden;
+	margin: auto;
 
 	&__text {
 		grid-column: 1 / span 4;

@@ -1,4 +1,7 @@
 .project-text {
+	max-width: 1216px;
+	margin: auto;
+
 	&--left,
 	&--right {
 		@include grid-base;
