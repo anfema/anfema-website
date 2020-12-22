@@ -3,9 +3,8 @@
 	@include customer-colors;
 
 	position: relative;
-	height: 90vh;
+	height: 85vh;
 	max-height: 90vw;
-	grid-template-rows: 1fr 10rem 1fr;
 	color: $color-text-inverted;
 	background: $color-grey no-repeat;
 
@@ -25,11 +24,7 @@
 		animation: moveRight 1.5s ease-in;
 
 		@include media-large-min {
-			right: -30rem;
-		}
-
-		@include media-xlarge-min {
-			right: -20rem;
+			right: -22rem;
 		}
 	}
 
@@ -46,18 +41,14 @@
 		}
 
 		@include media-large-min {
-			right: -30rem;
-		}
-
-		@include media-xlarge-min {
-			right: -20rem;
+			right: -14rem;
 		}
 	}
 
 	&__text {
 		z-index: 2;
 		grid-column: 1 / span 4;
-		grid-row: 2 / span 1;
+		margin: auto 0;
 		animation: moveLeft 1.5s ease-in;
 
 		@include media-medium-min {
