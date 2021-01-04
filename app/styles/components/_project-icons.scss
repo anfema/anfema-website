@@ -4,6 +4,9 @@
 	@include offset-content-bottom;
 	@include customer-colors;
 
+	max-width: 1216px;
+	margin: auto;
+
 	&__title,
 	&__description,
 	&__img {
@@ -30,6 +33,14 @@
 	}
 
 	@include media-medium-min {
+		&__title,
+		&__description,
+		&__img {
+			grid-column: 2 / -2;
+		}
+	}
+
+	@include media-large-min {
 		&__title {
 			grid-column: 2 / span 4;
 			grid-row: 1 / span 1;
@@ -44,6 +55,7 @@
 		&__img {
 			grid-column: 8 / span 4;
 			grid-row: 2 / span 2;
+			margin: auto;
 
 			img {
 				width: 80%;

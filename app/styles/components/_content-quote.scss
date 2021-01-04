@@ -1,11 +1,17 @@
 .content-quote {
-	@include grid-base;
 	@include offset-content-bottom;
 	@include offset-content-top;
 
 	position: relative;
 	overflow: hidden;
 	background-color: $color-grey-light;
+
+	&__container {
+		@include grid-base;
+
+		max-width: 1216px;
+		margin: auto;
+	}
 
 	&__text {
 		position: relative;
@@ -15,14 +21,10 @@
 		font-weight: 700;
 		line-height: 2.8rem;
 
-		@include media-large-min {
-			grid-column: 3 / -2;
+		@include media-medium-min {
+			grid-column: 2 / -2;
 			font-size: 3.4rem;
 			line-height: 3.5rem;
-		}
-
-		@include media-xlarge-min {
-			grid-column: 4 / -4;
 		}
 
 		& ~ * {
@@ -81,12 +83,8 @@
 		font-style: normal;
 		text-align: right;
 
-		@include media-large-min {
-			grid-column: -6 / span 4;
-		}
-
-		@include media-xlarge-min {
-			grid-column: -7 / span 3;
+		@include media-medium-min {
+			grid-column: -7 / span 5;
 		}
 	}
 
@@ -99,15 +97,11 @@
 		font-size: 1.8rem;
 		text-align: left;
 
-		@include media-large-min {
-			grid-column: 3 / span 3;
+		@include media-medium-min {
+			grid-column: 2 / span 3;
 			grid-row: 2 / span 1;
 			margin: 0;
 			padding: 0;
-		}
-
-		@include media-xlarge-min {
-			grid-column: 4 /span 3;
 		}
 
 		&,

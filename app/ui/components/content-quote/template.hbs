@@ -1,19 +1,22 @@
-<blockquote class="content-quote__text">
-	{{{data.content}}}
-</blockquote>
+<div class="content-quote__container">
+	<blockquote class="content-quote__text">
+		{{{data.content}}}
+	</blockquote>
 
-<cite class="content-quote__source">
-	{{{data.source}}}
-</cite>
+	<cite class="content-quote__source">
+		{{{data.source}}}
+	</cite>
 
-{{#if data.projectId}}
-	{{#link-to "projects.detail" data.projectId class="content-quote__project"}}
-		{{#if data.projectLinkLabel}}
-			{{data.projectLinkLabel}}
-		{{else}}
-			{{t "component.content-quote.action.showProject"}}
-		{{/if}}
-	{{/link-to}}
-{{/if}}
+	{{#if data.projectId}}
+		{{#link-to "projects.detail" data.projectId class="content-quote__project"}}
+			{{#if data.projectLinkLabel}}
+				{{data.projectLinkLabel}}
+			{{else}}
+				{{t "component.content-quote.action.showProject"}}
+			{{/if}}
+		{{/link-to}}
+	{{/if}}
+</div>
+
 
 {{yield}}
