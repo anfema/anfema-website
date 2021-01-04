@@ -1,77 +1,79 @@
 meta:
-  color: '#F97E33'
+  color: "#F97E33"
   client: "Knauf"
-  title: 'Lookbook'
-  id: 'knauf'
+  title: "Lookbook"
+  id: "knauf"
   span: März 2015 - heute
   overviewBig: false
   introMessage: |
     anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell!
-  img: 'knauf-lookbook-challenge-ipad1.png'
+  img: "knauf-lookbook-challenge-ipad1.png"
+  hidden: false
 sections:
   -
-    component: 'project-header'
-    img: 'knauf-lookbook-header.png'
+    component: "project-header"
+    img: "knauf-lookbook-header.png"
     action:
-      scrollDown: 'Mehr erfahren'
+      scrollDown: "Mehr erfahren"
   -
-    component: 'project-text'
-    anchorId: 'knauf-intro'
-    orientation: 'left'
-    titleColored: 'Knauf AMF'
-    titleAfter: 'Lookbook App'
-    subTitle: '2015 - Heute'
+    component: "project-text"
+    anchorId: "knauf-intro"
+    orientation: "left"
+    titleColored: "Knauf AMF"
+    titleAfter: "Lookbook App"
+    subTitle: "2015 - Heute"
     img:
-      alignment: 'horizontal'
-      zero: 'knauf-lookbook-intro.png'
-    description: |
-      <p>Knauf AMF ist einer der weltweit größten Produzenten innovativer Deckensysteme. Um das breitgefächerte Spektrum an angepassten Deckenlösungen in einem adäquaten Rahmen zu präsentieren, wurde eine universelle Applikation für Tablets und Phones mit Android bzw. iOS nativ konzipiert. Dabei werden in aufwendigen Fotografien eindrucksvolle Bauprojekte dargestellt, in denen mit Knauf AMF über zahlreiche Sparten hinweg außergewöhnliche architektonische Objekte entstanden. Ein besonders charakteristisches Feature der App ist neben ihrer Leistunggstärke der Einsatz der 360° View, die dem User ein vollumfängliches Raumgefühl vermittelt.</p>
+      alignment: "horizontal"
+      zero: "knauf-lookbook-intro.png"
+    description:markdown: |
+      Knauf AMF ist einer der weltweit größten Produzenten innovativer Deckensysteme. Um das breitgefächerte Spektrum an angepassten Deckenlösungen in einem adäquaten Rahmen zu präsentieren, wurde eine universelle Applikation für Tablets und Phones mit Android bzw. iOS nativ konzipiert. Dabei werden in aufwendigen Fotografien eindrucksvolle Bauprojekte dargestellt, in denen mit Knauf AMF über zahlreiche Sparten hinweg außergewöhnliche architektonische Objekte entstanden. Ein besonders charakteristisches Feature der App ist neben ihrer Leistunggstärke der Einsatz der 360° View, die dem User ein vollumfängliches Raumgefühl vermittelt.
   -
-    component: 'project-text'
-    anchorId: 'knauf-challenge'
-    orientation: 'right'
-    titleColored: 'Challenge'
+    component: "project-text"
+    anchorId: "knauf-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
     img:
-      alignment: 'horizontal'
-      one: 'knauf-lookbook-challenge-ipad1.png'
-      two: 'knauf-lookbook-challenge-ipad2.png'
-    description: |
-      <p>Die Herausforderung bestand darin, eine sehr informative Applikation zu schaffen, die Übersichtlichkeit und Bedienkomfort vereint. Um die hochwertigen Fotografien für sich sprechen zu lassen, sollten so wenige visuelle Steuerungselemente wie möglich verwendet werden. Zusätzlich musste bedacht werden, dass alle Features auch auf fest installierten Präsentationsdisplays (bspw. auf Messen) funktional und bedienbar sein müssen.</p>
+      alignment: "horizontal"
+      one: "knauf-lookbook-challenge-ipad1.png"
+      two: "knauf-lookbook-challenge-ipad2.png"
+    description:markdown: |
+      Die Herausforderung bestand darin, eine sehr informative Applikation zu schaffen, die Übersichtlichkeit und Bedienkomfort vereint. Um die hochwertigen Fotografien für sich sprechen zu lassen, sollten so wenige visuelle Steuerungselemente wie möglich verwendet werden. Zusätzlich musste bedacht werden, dass alle Features auch auf fest installierten Präsentationsdisplays (bspw. auf Messen) funktional und bedienbar sein müssen.
   -
-    component: 'project-text'
-    anchorId: 'knauf-awesome'
-    orientation: 'left'
-    titleBefore: 'How we made it '
-    titleColored: 'awesome'
+    component: "project-text"
+    anchorId: "knauf-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
     img:
-      alignment: 'horizontal'
-      zero: 'knauf-lookbook-awesome.png'
-    description: |
-      <p>Mit einem raffiniert angelegten Canvas Grid System setzt das Knauf AMF Lookbook auf intuitive Gestensteuerung und kommt so mit nur wenigen grafischen Steuerungselementen aus. Um zusätzliche Features in die Applikation integrieren zu können, wurde dieses Grid im weiteren Projektverlauf ausgebaut. Besonders nennenswert sind hierbei die Implementierung eines Musterbestellbereichs und einer 360° Ansicht von Projekten. Diese kann mit dem Finger auch auf fest installierten Devices bedient werden und macht die Produktwelten von Knauf AMF damit erlebbar.</p>
+      alignment: "horizontal"
+      zero: "knauf-lookbook-awesome.png"
+    description:markdown: |
+      Mit einem raffiniert angelegten Canvas Grid System setzt das Knauf AMF Lookbook auf intuitive Gestensteuerung und kommt so mit nur wenigen grafischen Steuerungselementen aus. Um zusätzliche Features in die Applikation integrieren zu können, wurde dieses Grid im weiteren Projektverlauf ausgebaut. Besonders nennenswert sind hierbei die Implementierung eines Musterbestellbereichs und einer 360° Ansicht von Projekten. Diese kann mit dem Finger auch auf fest installierten Devices bedient werden und macht die Produktwelten von Knauf AMF damit erlebbar.
   -
-    component: 'content-quote'
-    anchorId: 'knauf-quote'
-    source: |
-      Dominik Mandl, Online Marketing Manager<br>
+    component: "content-quote"
+    anchorId: "knauf-quote"
+    source:markdown: |
+      Dominik Mandl, Online Marketing Manager
       Knauf AMF GmbH & Co. KG
-    content: |
-      <p>anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in der App Entwicklung, denen ich je begegnet bin.</p>
+    content:markdown: |
+      anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell!
+      Einer der besten Partner in der App Entwicklung, denen ich je begegnet bin.
   -
-    component: 'project-icons'
-    anchorId: 'knauf-icons'
-    titleColored: 'Technology'
-    titleAfter: 'we used'
+    component: "project-icons"
+    anchorId: "knauf-icons"
+    titleColored: "Technology"
+    titleAfter: "we used"
     img:
-      one: 'technology-android.png'
-      two: 'technology-apple.png'
-    description: |
-      <p>Das Knauf AMF Lookbook wird dynamisch über ION befüllt und besticht durch seine Performance. Das von anfema entwickelte Content Management System ION ermöglicht es dem Kunden problemlos, tiefgreifende Änderungen an der Struktur und am Informationsgehalt der Applikation vorzunehmen. Darüber hinaus können Daten lokal auf den Geräten vorgehalten werden, sodass die App auch offline verwendet werden kann. Für die 360° Ansicht werden sphärische Panoramen auf die Innenfläche einer Kugel projiziert, die der User rotieren kann.</p>
+      one: "technology-android.png"
+      two: "technology-apple.png"
+    description:markdown: |
+      Das Knauf AMF Lookbook wird dynamisch über ION befüllt und besticht durch seine Performance. Das von anfema entwickelte Content Management System ION ermöglicht es dem Kunden problemlos, tiefgreifende Änderungen an der Struktur und am Informationsgehalt der Applikation vorzunehmen. Darüber hinaus können Daten lokal auf den Geräten vorgehalten werden, sodass die App auch offline verwendet werden kann. Für die 360° Ansicht werden sphärische Panoramen auf die Innenfläche einer Kugel projiziert, die der User rotieren kann.
   -
-    component: 'contact'
-    title: 'Klingt interessant?'
-    description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
-    button: 'Jetzt kontaktieren'
-    subject: 'Info über das Projekt'
+    component: "contact"
+    title: "Klingt interessant?"
+    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
+    button: "Jetzt kontaktieren"
+    subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,
       ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.

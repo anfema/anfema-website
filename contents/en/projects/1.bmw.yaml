@@ -1,93 +1,90 @@
 meta:
-  color: '#0096DA'
-  client: 'BMW'
-  title: 'iPad App'
-  id: 'bmw'
-  span: 'September 2014 - September 2015'
+  color: "#0096DA"
+  client: "BMW"
+  title: "iPad App"
+  id: "bmw"
+  span: "September 2014 - September 2015"
   overviewBig: false
-  img: 'bmw-intro.png'
+  img: "bmw-intro.png"
   hidden: false
 sections:
   -
-    component: 'project-header'
-    img: 'bmw-header.png'
+    component: "project-header"
+    img: "bmw-header.png"
     action:
-      scrollDown: 'More'
+      scrollDown: "More"
   -
-    component: 'project-text'
-    anchorId: 'bmw-intro'
-    orientation: 'left'
-    titleColored: 'BMW'
-    titleAfter: '7 Series Presenter App'
-    subTitle: '2014 - 2015'
+    component: "project-text"
+    anchorId: "bmw-intro"
+    orientation: "left"
+    titleColored: "BMW"
+    titleAfter: "7 Series Presenter App"
+    subTitle: "2014 - 2015"
     img:
-      alignment: 'horizontal'
-      zero: 'bmw-intro.png'
-    description: |
-      <p>Sportiness, driving pleasure and comfort - three attributes the premium car manufacturer BMW has always been
-      renowned for. The latest edition of the BMW 7 Series, however, takes luxury in the automotive area to a completely
-      new level.</p>
-      <p>anfema designed and developed an iPad app which aptly presents the car’s innovative features. The app
-      impresses with an unusual, yet intuitive control concept, artistic perfection and the integration of interactive
-      media, all of which convey the comfort and pleasure of the BMW 7 Series.</p>
+      alignment: "horizontal"
+      zero: "bmw-intro.png"
+    description:markdown: |
+      Sportiness, driving pleasure and comfort - three attributes the premium car manufacturer BMW has always been renowned for. The latest edition of the BMW 7 Series, however, takes luxury in the automotive area to a completely new level. anfema designed and developed an iPad app which aptly presents the car’s innovative features. The app impresses with an unusual, yet intuitive control concept, artistic perfection and the integration of interactive media, all of which convey the comfort and pleasure of the BMW 7 Series.
   -
-    component: 'project-icons'
-    anchorId: 'bmw-details'
+    component: "project-icons"
+    anchorId: "bmw-details"
     titleBefore: "It's all about the"
-    titleColored: 'Details'
+    titleColored: "Details"
     img:
-      one: 'bmw-details1.png'
-      two: 'bmw-details2.png'
-      three: 'bmw-details3.png'
-      four: 'bmw-details4.png'
-    description: |
-      <p>In order to visually highlight the various possibilities and details of the vehicle, icons were especially designed for this app.</p>
+      one: "bmw-details1.png"
+      two: "bmw-details2.png"
+      three: "bmw-details3.png"
+      four: "bmw-details4.png"
+    description:markdown: |
+      In order to visually highlight the various possibilities and details of the vehicle, icons were especially designed for this app.
   -
-    component: 'project-text'
-    anchorId: 'bmw-challenge'
-    orientation: 'right'
-    titleColored: 'Challenge'
+    component: "project-text"
+    anchorId: "bmw-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
     img:
-      alignment: 'horizontal'
-      one: 'bmw-challenge-ipad1.png'
-      two: 'bmw-challenge-ipad2.png'
-    description: |
-      <p>The challenging part about the BMW 7 Series application was to comprehensibly present the elegance, comfort and features of the car. Given the product’s internationality, multilingualism and the support of layout variants for markets such as the United Arab Emirates are among the app’s essential features. As, throughout the app's development, the car itself was top secret, secure data management needed to be safeguarded at all times.</p>
+      alignment: "horizontal"
+      one: "bmw-challenge-ipad1.png"
+      two: "bmw-challenge-ipad2.png"
+    description:markdown: |
+      The challenging part about the BMW 7 Series application was to comprehensibly present the elegance, comfort and features of the car. Given the product’s internationality, multilingualism and the support of layout variants for markets such as the United Arab Emirates are among the app’s essential features. As, throughout the app's development, the car itself was top secret, secure data management needed to be safeguarded at all times.
   -
-    component: 'project-text'
-    anchorId: 'bmw-awesome'
-    orientation: 'left'
-    titleBefore: 'How we made it '
-    titleColored: 'awesome'
+    component: "project-text"
+    anchorId: "bmw-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
     img:
-      alignment: 'horizontal'
-      zero: 'bmw-awesome.png'
-    description: |
-      <p>In order to guarantee the best possible outcome, and so as to fulfill the requirements concerning both diversity of content and the app’s layout, our team developed a tailor-made data management system in-house. The BMW 7 Series Presenter is an iPad app designed for the global market of authorised dealers, which enables them to provide interested customers with exclusive insights. Not only does it inform about production and the car’s features with various subjects and interactive content in 10 different languages. Moreover, the app allows the user to immerse themselves in the world of the BMW 7 Series.</p>
+      alignment: "horizontal"
+      zero: "bmw-awesome.png"
+    description:markdown: |
+      In order to guarantee the best possible outcome, and so as to fulfill the requirements concerning both diversity of content and the app’s layout, our team developed a tailor-made data management system in-house. The BMW 7 Series Presenter is an iPad app designed for the global market of authorised dealers, which enables them to provide interested customers with exclusive insights. Not only does it inform about production and the car’s features with various subjects and interactive content in 10 different languages. Moreover, the app allows the user to immerse themselves in the world of the BMW 7 Series.
   -
-    component: 'content-quote'
-    anchorId: 'bmw-quote'
-    source: |
-      Gunther Janeck <br>
+    component: "content-quote"
+    anchorId: "bmw-quote"
+    source:markdown: |
+      Gunther Janeck
       Head of BMW Product Argumentation, BMW Group
-    content: |
-      <p>Cooperation with anfema is excellent both in terms of content and implementation. The great thing about anfema besides quality is the rapidity they realise projects with. That’s why they continue to be one of our much appreciated partners.</p>
+    content:markdown: |
+      Cooperation with anfema is excellent both in terms of content and implementation.
+      The great thing about anfema besides quality is the rapidity they realise projects with.
+      That’s why they continue to be one of our much appreciated partners.
   -
-    component: 'project-icons'
-    anchorId: 'bmw-technology'
-    titleColored: 'Technology'
-    titleAfter: 'we used'
+    component: "project-icons"
+    anchorId: "bmw-technology"
+    titleColored: "Technology"
+    titleAfter: "we used"
     img:
-      one: 'technology-swift.png'
-      two: 'technology-apple.png'
-    description: |
-      <p>The BMW 7 Series Presenter was developed in Swift for iOS. A specially developed server backend based on Django guarantees the fast and reliable delivery of new content, and controls the required security functions.</p>
+      one: "technology-swift.png"
+      two: "technology-apple.png"
+    description:markdown: |
+      The BMW 7 Series Presenter was developed in Swift for iOS. A specially developed server backend based on Django guarantees the fast and reliable delivery of new content, and controls the required security functions.
   -
-    component: 'contact'
-    title: 'Sounds interesting?'
-    description: 'You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!'
-    button: 'Contact us now'
-    subject: 'Information about the project'
+    component: "contact"
+    title: "Sounds interesting?"
+    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!"
+    button: "Contact us now"
+    subject: "Information about the project"
     body: |
       Hello anfema team,
       I just had a look at your {{projectInfo}} project and ...

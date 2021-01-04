@@ -1,11 +1,11 @@
 meta:
-  color: '#bb0a30'
-  client: 'Audi'
-  title: 'HR App'
-  id: 'audi'
-  span: '2018 - heute'
+  color: "#bb0a30"
+  client: "Audi"
+  title: "HR App"
+  id: "audi"
+  span: "2018 - heute"
   overviewBig: false
-  img: 'audi-intro-iphone.png'
+  img: "audi-intro-iphone.png"
   hidden: false
 sections:
   - component: "project-header"
@@ -25,9 +25,7 @@ sections:
       two: "audi-intro-android.png"
     description:markdown: |
       HR-Digitalisierung. Ein Thema welches seit Jahren an großer Beliebtheit gewinnt.
-
       Das Potential ist enorm! Neben einer bestehenden Webapplikation, die viele Prozesse digital abbildet, ist das für Audi der Grund, einen Schritt weiter zu gehen.
-
       Im Frühjahr 2018 starteten wir das Projekt HR-App mit einer klaren Anforderung: native Entwicklung für iOS und Android. Diese Herausforderung nahmen wir mit Begeisterung an. Wir freuen uns, die App stetig weiterzuentwickeln.
 
   - component: "project-icons"
@@ -37,10 +35,7 @@ sections:
     img:
       one: "audi-motion.png"
     description:markdown: |
-      Daten und Fakten stehen bei dieser App klar im Vordergrund. Desto wichtiger ist es, den User Flow durch Animationen und Seitenübergänge zu unterstützen und aufzulockern.
-
-
-      Somit wird dem User schnell und einfach klar, wie tief er sich in der Informationsstruktur bewegt. Durch die konstante Weiterentwicklung der App ist es umso wichtiger hier einen Fokus zu setzen. Eine App sollte keine statische Ansicht sein, sondern ein Erlebnis, das bewegt und verbindet!
+      Daten und Fakten stehen bei dieser App klar im Vordergrund. Desto wichtiger ist es, den User Flow durch Animationen und Seitenübergänge zu unterstützen und aufzulockern. Somit wird dem User schnell und einfach klar, wie tief er sich in der Informationsstruktur bewegt. Durch die konstante Weiterentwicklung der App ist es umso wichtiger hier einen Fokus zu setzen. Eine App sollte keine statische Ansicht sein, sondern ein Erlebnis, das bewegt und verbindet!
 
   - component: "project-text"
     anchorId: "audi-challenge"
@@ -52,7 +47,6 @@ sections:
       two: "audi-challenge-iphone.png"
     description:markdown: |
       Die Herausforderung besteht darin, die User Experience, das User Interface und die Entwicklung für iOS und Android zu vereinen.
-
       Zu Beginn als eine im Funktionsumfang reduzierte Applikation geplant, wächst sie stetig an Features. Informationen erhalten, Zeiten eintragen, Präferenzen speichern oder Anträge stellen. Um diese Funktionen schnell und mühelos zugänglich zu machen, bauen wir die App gemeinsam mit den Usern aus. Dies erleichtert Arbeitsabläufe für den Endnutzer sowie für die Kollegen in der HR- und Finance-Abteilung.
 
   - component: "project-text"

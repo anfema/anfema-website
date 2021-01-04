@@ -1,90 +1,91 @@
 meta:
-  color: '#ff7f00'
+  color: "#ff7f00"
   client: "Pingonaut"
-  title: 'Kidswatch'
-  id: 'pingonaut'
-  span: 'May 2016 to date'
+  title: "Kidswatch"
+  id: "pingonaut"
+  span: "May 2016 to date"
   overviewBig: false
-  img: 'pingonaut-header.png'
+  img: "pingonaut-header.png"
   hidden: false
 sections:
   -
-    component: 'project-header'
-    img: 'pingonaut-header.png'
+    component: "project-header"
+    img: "pingonaut-header.png"
     action:
-      scrollDown: 'More'
+      scrollDown: "More"
   -
-    component: 'project-text'
-    anchorId: 'pingonaut-intro'
-    orientation: 'left'
-    titleColored: 'Pingonaut'
-    titleAfter: 'KidsWatch'
-    subTitle: 'May 2016 to date'
+    component: "project-text"
+    anchorId: "pingonaut-intro"
+    orientation: "left"
+    titleColored: "Pingonaut"
+    titleAfter: "KidsWatch"
+    subTitle: "2016 - today"
     img:
-      alignment: 'vertical'
-      one: 'pingonaut-intro-iphone.png'
-      two: 'pingonaut-intro-android.png'
-    description: |
-      <p>Pingonaut is a newly founded company specialised in the sales of devices for positioning. Their first product is a locatable kids’ watch intended for children aged 5-10. Combined with specially developed (web) apps, the watch’s functions needed to be adapted to the age of its target group. It was anfema’s task to develop an app that enables the worried user to constantly keep in touch with their child via (voice) messages or voice calls and to (retrospectively) track their movement on a map. Using geofences, parents can define safe zones, will be notified via PUSH if their child enters or leaves such areas, and thus will stay updated on their child’s whereabouts.</p>
+      alignment: "vertical"
+      one: "pingonaut-intro-iphone.png"
+      two: "pingonaut-intro-android.png"
+    description:markdown: |
+      Pingonaut is a newly founded company specialised in the sales of devices for positioning. Their first product is a locatable kids’ watch intended for children aged 5-10. Combined with specially developed (web) apps, the watch’s functions needed to be adapted to the age of its target group. It was anfema’s task to develop an app that enables the worried user to constantly keep in touch with their child via (voice) messages or voice calls and to (retrospectively) track their movement on a map. Using geofences, parents can define safe zones, will be notified via PUSH if their child enters or leaves such areas, and thus will stay updated on their child’s whereabouts.
   -
-    component: 'project-icons'
-    anchorId: 'pingonaut-details'
+    component: "project-icons"
+    anchorId: "pingonaut-details"
     titleBefore: "It's all about the"
-    titleColored: 'Details'
+    titleColored: "Details"
     img:
-      one: 'pingonaut-details1.png'
-      two: 'pingonaut-details2.png'
-      three: 'pingonaut-details3.png'
-      four: 'pingonaut-details4.png'
+      one: "pingonaut-details1.png"
+      two: "pingonaut-details2.png"
+      three: "pingonaut-details3.png"
+      four: "pingonaut-details4.png"
   -
-    component: 'project-text'
-    anchorId: 'pingonaut-challenge'
-    orientation: 'right'
-    titleColored: 'Challenge'
+    component: "project-text"
+    anchorId: "pingonaut-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
     img:
-      alignment: 'vertical'
-      one: 'pingonaut-challenge-panda.png'
-      two: 'pingonaut-challenge-puma.png'
-    description: |
-      <p>Pingonaut Kidswatch was our first-ever project to require the server backend to perform a flow of communication not only with the app, but also with the related hardware, or rather, firmware: Complex information requested from the Chinese-made watches needs to be accurately analysed, reliably processed and securely transferred.</p>
-
-      <p>As the time of the project’s initiation was concurrent with the outset of the product development itself, our software development was exposed to dynamic prioritisation, frequent changes in requirements, tight deadlines and a limited budget. Furthermore, the project demanded the set out of the requirements linked to the sales of electronic products in Germany as well as the rather difficult communication with the hardware manufacturer in China.</p>
+      alignment: "vertical"
+      one: "pingonaut-challenge-panda.png"
+      two: "pingonaut-challenge-puma.png"
+    description:markdown: |
+      Pingonaut Kidswatch was our first-ever project to require the server backend to perform a flow of communication not only with the app, but also with the related hardware, or rather, firmware: Complex information requested from the Chinese-made watches needs to be accurately analysed, reliably processed and securely transferred. As the time of the project’s initiation was concurrent with the outset of the product development itself, our software development was exposed to dynamic prioritisation, frequent changes in requirements, tight deadlines and a limited budget.
+      Furthermore, the project demanded the set out of the requirements linked to the sales of electronic products in Germany as well as the rather difficult communication with the hardware manufacturer in China.
   -
-    component: 'project-text'
-    anchorId: 'pingonaut-awesome'
-    orientation: 'left'
-    titleBefore: 'How we made it '
-    titleColored: 'awesome'
+    component: "project-text"
+    anchorId: "pingonaut-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
     img:
-      alignment: 'vertical'
-      one: 'pingonaut-awesome-android.png'
-      two: 'pingonaut-awesome-iphone.png'
-    description: |
-      <p>Our team’s great adaptability, their wide range of knowledge, and their excellent analytical skills, all were decisive for the project’s success. In response to a highly uncertain market volume for the Kidswatch’s launch, anfema scaled the server system horizontally ensuring its trouble-free expansion at any given time. In addition, we automated the entire server deployment so as to enable the system’s roll out on any number of servers. As a result of in-depth research of diverse mobile phone providers’ specifications and their integration into our software, a fully functional microservices-based system could be integrated into the European market. The Pingonaut Kidswatch is distinguished by software made and hosted in Germany conforming to the standards and data privacy of German law.</p>
+      alignment: "vertical"
+      one: "pingonaut-awesome-android.png"
+      two: "pingonaut-awesome-iphone.png"
+    description:markdown: |
+      Our team’s great adaptability, their wide range of knowledge, and their excellent analytical skills, all were decisive for the project’s success. In response to a highly uncertain market volume for the Kidswatch’s launch, anfema scaled the server system horizontally ensuring its trouble-free expansion at any given time. In addition, we automated the entire server deployment so as to enable the system’s roll out on any number of servers. As a result of in-depth research of diverse mobile phone providers’ specifications and their integration into our software, a fully functional microservices-based system could be integrated into the European market.
+      The Pingonaut Kidswatch is distinguished by software made and hosted in Germany conforming to the standards and data privacy of German law.
   -
-    component: 'content-quote'
-    anchorId: 'pingonaut-quote'
-    source: |
-      Stefan Hampel <br>
+    component: "content-quote"
+    anchorId: "pingonaut-quote"
+    source:markdown: |
+      Stefan Hampel
       Chief Operating Officer, Lokato GmbH
-    content: |
-      <p>If it wasn’t for anfema, there wouldn’t be a Kidswatch. The concept they created is thought through right down to the last detail, the platform they developed doesn’t leave a single question unanswered and exceeds all expectations. Expressing gigantic know-how, unusual flexibility and unlimited dedication, anfema is definitely is one of the best agencies in the digital industry.</p>
+    content:markdown: |
+      If it wasn’t for anfema, there wouldn’t be a Kidswatch.
+      The concept they created is through right down to the last detail, the platform they developed doesn’t leave a single question unanswered and exceeds all expectations. Expressing gigantic know-how, unusual flexibility and unlimited dedication, anfema is definitely is one of the best agencies in the digital industry.
   -
-    component: 'project-icons'
-    anchorId: 'pingonaut-icons'
-    titleColored: 'Technology'
-    titleAfter: 'we used'
+    component: "project-icons"
+    anchorId: "pingonaut-icons"
+    titleColored: "Technology"
+    titleAfter: "we used"
     img:
-      one: 'technology-android.png'
-      two: 'technology-apple.png'
-    description: |
-      <p>The Pingonaut Kids app was developed in native code for both iOS and Android. It’s backend PostgreSQL database simultaneously serves as the micro services’ message broker. An inexpensive alternative to GoogleMaps, Mapbox provides a learning API which uses both radio cells and WLANs for positioning.Node.js simultaneously and steadily maintains numerous (all or part idle) connections without blocking.</p>
+      one: "technology-android.png"
+      two: "technology-apple.png"
+    description:markdown: |
+      The Pingonaut Kids app was developed in native code for both iOS and Android. It’s backend PostgreSQL database simultaneously serves as the micro services’ message broker. An inexpensive alternative to GoogleMaps, Mapbox provides a learning API which uses both radio cells and WLANs for positioning.Node.js simultaneously and steadily maintains numerous (all or part idle) connections without blocking.
   -
-    component: 'contact'
-    title: 'Sounds interesting?'
-    description: 'You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!'
-    button: 'Contact us now'
-    subject: 'Information about the project'
+    component: "contact"
+    title: "Sounds interesting?"
+    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!"
+    button: "Contact us now"
+    subject: "Information about the project"
     body: |
       Hello anfema team,
       I just had a look at your {{projectInfo}} project and ...

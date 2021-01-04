@@ -1,13 +1,13 @@
 meta:
   color: "#003366"
   client: "Paulaner"
-  title: 'iPad App'
-  id: 'paulaner'
-  span: '2017 - today'
+  title: "iPad App"
+  id: "paulaner"
+  span: "2017 - today"
   overviewBig: true
   introMessage: |
     In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
-  img: 'paulaner-intro.png'
+  img: "paulaner-intro.png"
   hidden: false
 sections:
   - component: "project-header"
@@ -50,9 +50,7 @@ sections:
       two: "paulaner-challenge-ipad2.png"
     description:markdown: |
       The user is in the focus - that is one of our most important factors. Especially with this project by Paulaner it was important to focus on the target group. So we had an intensive conception phase, which has paid off successfully so far.
-
       The target group is not one of the so-called digital natives. They are characterised by a hands-on mentality and are often under time pressure. A high degree of intuitiveness is therefore a top priority. This and many more aspects we were able to work out when we were able to accompany the sales people in their daily business. This insight into their needs and interests gave us an enormous advantage during the concept phase.
-
       We were thus able to successfully master the challenge and are looking forward to receiving feedback in order to continuously improve and expand the project.
 
   - component: "project-text"
@@ -64,25 +62,28 @@ sections:
       alignment: "horizontal"
       zero: "paulaner-awesome.png"
     description:markdown: |
-      One point that distinguishes the app: we rely on native design and development standards. We pay attention to actuality and constantly improve the functionality. What the target group knows from their private applications, they also quickly appreciate in their working software.
+      One point that distinguishes the app:
+      we rely on native design and development standards. We pay attention to actuality and constantly improve the functionality. What the target group knows from their private applications, they also quickly appreciate in their working software.
 
   - component: "content-quote"
     anchorId: "paulaner-quote"
-    source: |
-      Heide Buchmann <br>
+    source:markdown: |
+      Heide Buchmann
       IMT Business Partner for Sales Information Management
-    content: |
-      It's fun to use the app and to see it grow, how it fits even better to our increasing requirements and how it supports the sales department in their daily work. In our collaboration with anfema, we always find suitable solutions quickly and easily because they have understood us, the app and our business perfectly.
+    content:markdown: |
+      It's fun to use the app and to see it grow, how it fits even better to our increasing requirements and how it supports the sales department in their daily work.
+      In our collaboration with anfema, we always find suitable solutions quickly and easily because they have understood us, the app and our business perfectly.
 
   - component: "project-icons"
     anchorId: "paulaner-technology"
     titleColored: "Technology"
-    titleAfter: "we used"
+    titleAfter: " we used"
     img:
       one: "technology-apple.png"
       two: "technology-swift.png"
     description:markdown: |
-      This project is an iPad app developed natively in Swift. We regularly adapt it to the latest iPadOS versions. This data-centred app synchronises in several versions with a backend based on the Salesforce Cloud. An indexed database on the device ensures complete offline capability. Thanks to an optimised query, there is nothing to prevent data sorting and filter functions in offline mode. In addition, the raw data from Salesforce accumulated in the app can be displayed in the form of diagrams. Based on the design language of iPadOS, we developed several components for the app interface.
+      This project is an iPad app developed natively in Swift. We regularly adapt it to the latest iPadOS versions. This data-centred app synchronises in several versions with a backend based on the Salesforce Cloud.
+      An indexed database on the device ensures complete offline capability. Thanks to an optimised query, there is nothing to prevent data sorting and filter functions in offline mode. In addition, the raw data from Salesforce accumulated in the app can be displayed in the form of diagrams. Based on the design language of iPadOS, we developed several components for the app interface.
 
   - component: "contact"
     title: "Sounds interesting?"
