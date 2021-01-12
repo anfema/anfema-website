@@ -1,11 +1,12 @@
-<div class="content-lp-team-item__content">
+<div class="{{unless this.isActive "content-lp-team-item__content"}} {{if this.isActive "content-lp-team-item--active"}}">
 	<h3>{{data.title}}</h3>
 	<p>{{data.text}}</p>
 </div>
 
-{{#link-to "language.index" (query-params team=data.id) class="content-lp-team-item__navigation-link"}}
+<button class="content-lp-team-item__navigation-link" {{on "click" (fn this.handleClick data.id)}}>
+	<p>this.isActive: {{this.isActive}}</p>
 	<span class="content-lp-team-item__title" aria-hidden="true">{{data.shortTitle}}</span>
 	<span class="content-lp-team-item__pagination">{{data.pagination}}</span>
-{{/link-to}}
+</button>
 
 {{yield}}
