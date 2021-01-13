@@ -49,6 +49,9 @@
 		width: 100%;
 		overflow: hidden;
 		padding-left: 0;
+		color: inherit;
+		background: none;
+		border: none;
 		text-decoration: none;
 
 		@include offset-base-padding;
@@ -63,6 +66,7 @@
 		&:hover,
 		&:active {
 			color: inherit;
+			outline: none;
 		}
 	}
 
