@@ -5,7 +5,7 @@ meta:
   id: "tods"
   span: "June 2015 to date"
   overviewBig: false
-  img: "tods-awesome.png"
+  img: "overview_tods.png"
   hidden: false
 sections:
   -
@@ -68,9 +68,6 @@ sections:
       The app was developed in Swift and exclusively for Apple iPads. A server component based on ASP.NET provides the required data and manages purchase orders and configurations. Anticipatory planning and the respective set-up of the data structure facilitate the system’s easy extension by further product categories and models at any time.
   -
     component: "contact"
-    title: "Sounds interesting?"
-    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!"
-    button: "Contact us now"
     subject: "Information about the project"
     body: |
       Hello anfema team,

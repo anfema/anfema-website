@@ -7,7 +7,7 @@ meta:
   overviewBig: false
   introMessage: |
     anfema know what they do, how to do it, and they do it damn fast.
-  img: "knauf-lookbook-challenge-ipad1.png"
+  img: "overview_knauf.png"
   hidden: false
 sections:
   -
@@ -70,9 +70,6 @@ sections:
       The Knauf AMF Lookbook app is dynamically populated by ION, and stands out because of its high performance. anfema’s in-house developed content management system ION enables the client to easily conduct profound changes in the application’s structure and its information content. In addition, data can be locally saved so that the app can also be used offline. In order to generate the 360 degree view, spherical panoramas are projected onto the inner surface of a ball, which can be rotated by the user.
   -
     component: "contact"
-    title: "Sounds interesting?"
-    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!"
-    button: "Contact us now"
     subject: "Information about the project"
     body: |
       Hello anfema team,

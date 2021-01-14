@@ -7,7 +7,7 @@ meta:
   overviewBig: false
   introMessage: |
     anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell!
-  img: "knauf-lookbook-challenge-ipad1.png"
+  img: "overview_knauf.png"
   hidden: false
 sections:
   -
@@ -70,9 +70,6 @@ sections:
       Das Knauf AMF Lookbook wird dynamisch über ION befüllt und besticht durch seine Performance. Das von anfema entwickelte Content Management System ION ermöglicht es dem Kunden problemlos, tiefgreifende Änderungen an der Struktur und am Informationsgehalt der Applikation vorzunehmen. Darüber hinaus können Daten lokal auf den Geräten vorgehalten werden, sodass die App auch offline verwendet werden kann. Für die 360° Ansicht werden sphärische Panoramen auf die Innenfläche einer Kugel projiziert, die der User rotieren kann.
   -
     component: "contact"
-    title: "Klingt interessant?"
-    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
-    button: "Jetzt kontaktieren"
     subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,

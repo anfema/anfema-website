@@ -4,7 +4,15 @@ meta:
   title: "Platform"
   id: "mystaffpilot"
   span: "Early 2014 to date"
-  overviewBig: false
+  overviewBig: true
+  overviewHorizontal: true
+  introMessage: |
+    anfema does not have the phrases "doesn't
+    work", "doesn't exist" in its portfolio.
+    Therefore, we have a platform
+    that meets our requirements as of today
+    and provides our agency partners and
+    customers with this complete service!
   img: "msp-intro.png"
   hidden: false
 sections:
@@ -74,9 +82,6 @@ sections:
       One of the system’s fundamental components is anfema’s in-house developed product Cosworth, a reporting tool with export functionality. Cosworth allows the processing of data outside of the system, for example in accounting. Thanks to multiple test and staging servers, we regularly develop and publish updates without interfering with the system’s ongoing operation.
   -
     component: "contact"
-    title: "Sounds interesting?"
-    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!"
-    button: "Contact us now"
     subject: "Information about the project"
     body: |
       Hello anfema team,

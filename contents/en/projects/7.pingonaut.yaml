@@ -4,8 +4,14 @@ meta:
   title: "Kidswatch"
   id: "pingonaut"
   span: "May 2016 to date"
-  overviewBig: false
-  img: "pingonaut-header.png"
+  overviewBig: true
+  introMessage: |
+    Expressing gigantic know-how,
+    unusual flexibility and
+    unlimited dedication,
+    anfema is definitely one of the best
+    agencies in the digital industry.
+  img: "overview_pingonaut.png"
   hidden: false
 sections:
   -
@@ -69,7 +75,7 @@ sections:
       Chief Operating Officer, Lokato GmbH
     content:markdown: |
       If it wasn’t for anfema, there wouldn’t be a Kidswatch.
-      The concept they created is through right down to the last detail, the platform they developed doesn’t leave a single question unanswered and exceeds all expectations. Expressing gigantic know-how, unusual flexibility and unlimited dedication, anfema is definitely is one of the best agencies in the digital industry.
+      The concept they created is thought right down to the last detail, the platform they developed doesn’t leave a single question unanswered and exceeds all expectations. Expressing gigantic know-how, unusual flexibility and unlimited dedication, anfema is definitely one of the best agencies in the digital industry.
   -
     component: "project-icons"
     anchorId: "pingonaut-icons"
@@ -82,9 +88,6 @@ sections:
       The Pingonaut Kids app was developed in native code for both iOS and Android. It’s backend PostgreSQL database simultaneously serves as the micro services’ message broker. An inexpensive alternative to GoogleMaps, Mapbox provides a learning API which uses both radio cells and WLANs for positioning.Node.js simultaneously and steadily maintains numerous (all or part idle) connections without blocking.
   -
     component: "contact"
-    title: "Sounds interesting?"
-    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!"
-    button: "Contact us now"
     subject: "Information about the project"
     body: |
       Hello anfema team,

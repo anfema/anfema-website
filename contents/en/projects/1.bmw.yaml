@@ -5,7 +5,7 @@ meta:
   id: "bmw"
   span: "September 2014 - September 2015"
   overviewBig: false
-  img: "bmw-intro.png"
+  img: "overview_bmw.png"
   hidden: false
 sections:
   -
@@ -81,9 +81,6 @@ sections:
       The BMW 7 Series Presenter was developed in Swift for iOS. A specially developed server backend based on Django guarantees the fast and reliable delivery of new content, and controls the required security functions.
   -
     component: "contact"
-    title: "Sounds interesting?"
-    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!"
-    button: "Contact us now"
     subject: "Information about the project"
     body: |
       Hello anfema team,
