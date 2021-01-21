@@ -4,6 +4,8 @@
 	@include offset-content-top;
 
 	overflow: visible;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
 	background-image: inline-svg(
 		'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
 			<g fill="none">
@@ -33,6 +35,9 @@
 	}
 
 	@include media-medium-min {
+		padding-top: 12rem;
+		padding-bottom: 10rem;
+
 		&__content {
 			grid-column: 2 / span 8;
 		}
