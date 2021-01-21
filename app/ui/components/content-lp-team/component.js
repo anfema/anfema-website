@@ -1,6 +1,11 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-	// data: null,
-	// selected: null,
+	activeItemIndex: null,
+
+	actions: {
+		setActiveItemIndex(index) {
+			this.set('activeItemIndex', index);
+		},
+	},
 });
