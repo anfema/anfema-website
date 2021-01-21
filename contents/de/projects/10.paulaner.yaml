@@ -4,10 +4,10 @@ meta:
   title: "iPad App"
   id: "paulaner"
   span: "2017 - heute"
-  overviewBig: true
+  overviewBig: false
   introMessage: |
      In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
-  img: "paulaner-intro.png"
+  img: "overview_paulaner.png"
   hidden: false
 sections:
   - component: "project-header"
@@ -86,9 +86,6 @@ sections:
       Für eine gänzliche Offline-Fähigkeit sorgt eine indexierte Datenbank auf dem Gerät. Durch eine optimierte Abfrage steht einer Datensortierung und Filterfunktion im Offline-Modus nichts entgegen. Hinzu kommt, dass durch die in der App kumulierten Rohdaten aus Salesforce, durch Diagramme dargestellt werden können. Angelehnt an die Designsprache von iPadOS entwickelten wir mehrere Komponenten für die App-Oberfläche.
 
   - component: "contact"
-    title: "Klingt interessant?"
-    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
-    button: "Jetzt kontaktieren"
     subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,

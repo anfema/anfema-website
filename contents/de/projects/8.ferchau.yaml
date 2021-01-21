@@ -5,7 +5,7 @@ meta:
   id: "ferchau"
   span: "Januar 2014 - September 2016"
   overviewBig: false
-  img: "ferchau-challenge-ipad1.png"
+  img: "overview_ferchau.png"
   hidden: false
 sections:
   -
@@ -67,9 +67,6 @@ sections:
       Wir entwickelten die FERCHAU App nativ in Swift für iOS (iPhone, iPad, iPod Touch) und  für Android Phones und Tablets. Somit decken wir ein großes Publikum ab. Die Game  Engine Unity3D bildet zusammen mit dem AR-SDK Vuforia die Basis der Applikation. Als internationaler Branchenführer bietet Unity3D optimiertes Shading und leistungsstarkes Rendering. Damit ermöglicht es die Konstruktion von realitätsnahen Animationen, und deren Einbettung, in die reale Welt in Echtzeit.
   -
     component: "contact"
-    title: "Klingt interessant?"
-    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
-    button: "Jetzt kontaktieren"
     subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,

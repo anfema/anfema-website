@@ -4,8 +4,14 @@ meta:
   title: "Kidswatch"
   id: "pingonaut"
   span: "Mai 2016 - heute"
-  overviewBig: false
-  img: "pingonaut-header.png"
+  overviewBig: true
+  introMessage: |
+    Mit gigantischem Know-How,
+    außergewöhnlicher Flexibilität &
+    uneingeschränktem Einsatz definitiv
+    eine der besten Agenturen der
+    digitalen Branche.
+  img: "overview_pingonaut.png"
   hidden: false
 sections:
   -
@@ -82,9 +88,6 @@ sections:
       Die Pingonaut Kids App wurde nativ für iOS und Android entwickelt. Die PostgreSQL Backend-Datenbank dient zugleich als Message-Broker für die Microservices. Mapbox wurde als preiswerte Alternative zu GoogleMaps eingesetzt und bietet eine umfassende API. Ergänzt wird der Lokalisierungsservice durch Unwired Labs, eine günstige, lernende Location API, die neben Funkzellen auch WLANs zur Positionsbestimmung mit einbezieht. Durch den Einsatz von Node.js kann simultan eine Vielzahl von Verbindungen (teilweise auch ohne Informationsfluss) stabil gehalten werden, ohne zu blockieren.
   -
     component: "contact"
-    title: "Klingt interessant?"
-    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
-    button: "Jetzt kontaktieren"
     subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,

@@ -1,11 +1,11 @@
 <div class="projects-list-item__inner bgColor--{{project.id}}">
-	<div>
+	<div class="projects-list-item__header">
 		<h3 class="projects-list-item__client">{{project.client}}</h3>
 		<h4 class="projects-list-item__title">{{project.title}}</h4>
 	</div>
 	{{#if project.overviewBig}}
 		{{#if project.introMessage}}
-			<div class="project-list-item__introMessage">
+			<div class="projects-list-item__introMessage">
 				<div class="introQuote">
 					{{project.introMessage}}
 				</div>

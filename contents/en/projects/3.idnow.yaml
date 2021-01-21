@@ -5,7 +5,7 @@ meta:
   id: "idnow"
   span: "July 2014 to date"
   overviewBig: false
-  img: "idnow-intro.png"
+  img: "overview_IDnow.png"
   hidden: false
 sections:
   -
@@ -82,9 +82,6 @@ sections:
       The apps and the software development kit were developed in native code for both Android and iOS. The video process itself is based on two technologies: While communication between the apps and the agents is implemented through WebSockets, the bidirectional audio and video transmission is facilitated by Icelink WebRTC.
   -
     component: "contact"
-    title: "Sounds interesting?"
-    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!"
-    button: "Contact us now"
     subject: "Information about the project"
     body: |
       Hello anfema team,

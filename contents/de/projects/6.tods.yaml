@@ -5,7 +5,7 @@ meta:
   id: "tods"
   span: "Juni 2015 - heute"
   overviewBig: false
-  img: "tods-awesome.png"
+  img: "overview_tods.png"
   hidden: false
 sections:
   -
@@ -68,9 +68,6 @@ sections:
       Die App wurde ausschließlich für Apple iPads in Swift umgesetzt. Eine Serverkomponente auf Basis von ASP.NET liefert die benötigten Daten und verwaltet Bestellungen und Konfigurationen. Durch eine entsprechende Planung und Anlage der Datenstruktur kann das System jederzeit und einfach um neue Produktkategorien und Modelle erweitert werden.
   -
     component: "contact"
-    title: "Klingt interessant?"
-    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
-    button: "Jetzt kontaktieren"
     subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,

@@ -5,7 +5,7 @@ meta:
   id: "audi"
   span: "2018 - today"
   overviewBig: false
-  img: "audi-intro-iphone.png"
+  img: "overview_audi.png"
   hidden: false
 sections:
   - component: "project-header"
@@ -72,9 +72,6 @@ sections:
       This project involves an iOS developed natively in Swift and an Android app developed in Kotlin. We regularly adapt this to the latest language and framework versions. The apps are based on a MVVM-based architecture and contain up-to-date source code documentation. This ensures that our apps will continue to meet the high standards of Audi AG in the future. At all times in terms of performance and maintainability. This allows us to react flexibly and quickly to customer requirements.
 
   - component: "contact"
-    title: "Sounds interesting?"
-    description: "Would you like to learn more about the project and our implementation? Whether you are a customer or an applicant, please feel free to contact us! Come and visit us for a coffee either in Munich or Augsburg - we look forward to it!"
-    button: "Contact us now"
     subject: "Information about the project"
     body: |
       Hello anfema team,

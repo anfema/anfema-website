@@ -5,7 +5,7 @@ meta:
   id: "bmw"
   span: "September 2014 - September 2015"
   overviewBig: false
-  img: "bmw-intro.png"
+  img: "overview_bmw.png"
   hidden: false
 sections:
   -
@@ -82,9 +82,6 @@ sections:
       Die App wurde als Innovationsprodukt mit Swift für iOS entwickelt. Ein eigenes Server-Backend basierend auf Django garantiert eine schnelle und zuverlässige Auslieferung neuer Inhalte und kontrolliert die erforderlichen Sicherheitsmaßnahmen.
   -
     component: "contact"
-    title: "Klingt interessant?"
-    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
-    button: "Jetzt kontaktieren"
     subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,

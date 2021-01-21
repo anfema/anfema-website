@@ -5,7 +5,7 @@ meta:
   id: "ferchau"
   span: "January 2014 - September 2016"
   overviewBig: false
-  img: "ferchau-challenge-ipad1.png"
+  img: "overview_ferchau.png"
   hidden: false
 sections:
   -
@@ -67,9 +67,6 @@ sections:
       In order to reach as large an audience as possible, the native app was developed in Swift for iOS (universal for iPhones, iPads and iPod Touch) and for Android phones and tablets. In combination, the game engine Unity 3D and the AR SDK Vuforia serve as the app’s basis. Being the international industry leader, Unity 3D provides optimal shading and high-performance rendering. Hence, it enables the construction of realistic animations and their embedding in the real world in real time.
   -
     component: "contact"
-    title: "Sounds interesting?"
-    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!"
-    button: "Contact us now"
     subject: "Information about the project"
     body: |
       Hello anfema team,

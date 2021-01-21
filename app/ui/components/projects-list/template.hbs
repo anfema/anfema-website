@@ -5,3 +5,17 @@
 		{{projects-list-item project=project.meta}}
 	{{/unless}}
 {{/each}}
+
+
+<div class="projects-list-item projects-list-item__contact">
+	<div class="projects-list-item__inner projects-list-item--contactInner">
+		<div>
+			<h3 class="projects-list-item__client">{{t "component.contact.titleMore"}}</h3>
+			<h4 class="projects-list-item__title">{{t "component.contact.descriptionMore"}}
+				<a href={{mailtoLink}}>
+					{{t "component.contact.email"}}
+				</a>
+			</h4>
+		</div>
+	</div>
+</div>
