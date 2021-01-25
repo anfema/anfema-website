@@ -45,14 +45,22 @@
 	&--horizontal {
 		.project-text__img-one {
 			transform: rotate(7deg);
-			margin-bottom: 15rem;
+			margin-bottom: 10rem;
+
+			@include media-large-min {
+				margin-bottom: 15rem;
+			}
 		}
 
 		.project-text__img-two {
 			position: absolute;
-			top: 18rem;
+			top: 10rem;
 			z-index: 1;
 			width: 100%;
+
+			@include media-large-min {
+				top: 18rem;
+			}
 		}
 	}
 
