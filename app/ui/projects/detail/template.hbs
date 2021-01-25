@@ -1,9 +1,11 @@
 {{#page-overlay}}
 	{{#page-menu forceOpaque=true class="page-menu--flat"}}
 		<header class="breadcrumbs">
-			<span class="breadcrumbs__crumb">{{t "projects.title"}}</span>
+			{{#link-to "projects"}}
+				<span class="breadcrumbs__crumb">{{t "index.nav.projects"}}</span>
+			{{/link-to}}
 			<span class="breadcrumbs__separator"> / </span>
-			<span class="breadcrumbs__crumb">{{model.meta.title}}</span>
+			<span class="breadcrumbs__crumb">{{model.meta.client}} {{model.meta.title}}</span>
 		</header>
 
 		<ul>
