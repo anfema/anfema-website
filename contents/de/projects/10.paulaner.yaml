@@ -83,7 +83,7 @@ sections:
       two: "technology-swift.png"
     description:markdown: |
       Bei diesem Projekt handelt es sich um eine nativ in Swift entwickelte iPad App. Diese passen wir regelmäßig an die aktuellsten iPadOS Versionen an. Diese datenzentrische App synchronisiert in mehreren Varianten mit einem auf der Salesforce Cloud basierenden Backend.
-      Für eine gänzliche Offline-Fähigkeit sorgt eine indexierte Datenbank auf dem Gerät. Durch eine optimierte Abfrage steht einer Datensortierung und Filterfunktion im Offline-Modus nichts entgegen. Hinzu kommt, dass durch die in der App kumulierten Rohdaten aus Salesforce, durch Diagramme dargestellt werden können. Angelehnt an die Designsprache von iPadOS entwickelten wir mehrere Komponenten für die App-Oberfläche.
+      Für eine gänzliche Offline-Fähigkeit sorgt eine indexierte Datenbank auf dem Gerät. Durch eine optimierte Abfrage steht einer Datensortierung und Filterfunktion im Offline-Modus nichts entgegen. Hinzu kommt, dass die in der App kumulierten Rohdaten aus Salesforce, durch Diagramme dargestellt werden können. Angelehnt an die Designsprache von iPadOS entwickelten wir mehrere Komponenten für die App-Oberfläche.
 
   - component: "contact"
     subject: "Info über das Projekt"
