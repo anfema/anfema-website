@@ -265,6 +265,11 @@
 		.projects-list-item__contactMessage {
 			z-index: 50;
 		}
+
+		.projects-list-item__contactInner {
+			grid-template-rows: auto;
+			align-content: center;
+		}
 	}
 
 	@include media-medium-min {
