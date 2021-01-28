@@ -2,6 +2,13 @@
 	{{#page-menu forceOpaque=true class="page-menu--flat"}}
 		<header>
 			{{t "projects.title"}}
+	{{!-- 		{{#link-to "projects"}}
+				<span class="breadcrumbs__crumb">{{t "projects.title"}}</span>
+			{{/link-to}}
+	--}}
+			<button class="" {{action "scrollToTop"}} type="button">
+				<span class="breadcrumbs__crumb">{{t "projects.title"}}</span>
+			</button>
 		</header>
 
 		<ul>
