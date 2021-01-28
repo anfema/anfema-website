@@ -240,23 +240,30 @@
 	}
 
 	&__contact {
+		position: relative;
+		overflow: hidden;
 		grid-area: contact;
-		background-color: $color-footer-bottom;
-		background-image: url(/img/logo-cutoff.png);
-		background-position: bottom right;
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-
-	&--contactInner {
-		display: flex;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		background-color: $color-footer-bottom;
 
 		a {
 			color: $color-text-inverted;
 			text-decoration: underline;
+		}
+
+		.projects-list-item__contactImage {
+			position: absolute;
+			right: -50px;
+			bottom: -40px;
+			margin: 0;
+			padding: 0;
+			transition: all 600ms 150ms ease;
+		}
+
+		.projects-list-item__contactMessage {
+			z-index: 50;
 		}
 	}
 
@@ -277,7 +284,8 @@
 
 		&:hover {
 			.projects-list-item__image,
-			.projects-list-item__contact {
+			.projects-list-item__contact,
+			.projects-list-item__contactImage {
 				transform: scale(1.1);
 			}
 
