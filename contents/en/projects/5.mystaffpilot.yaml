@@ -63,10 +63,9 @@ sections:
       Iris Naudßus
       Member of the Executive Board, STAFFPILOT GmbH
     content:markdown: |
-      We approached anfema with a very complex task:
-      Programming a platform that offers our agency partners and clients a complete service for handling promotion jobs.
-      anfema does not have the phrases "doesn't work", "doesn't exist" in its portfolio. Therefore, we have a platform that meets our requirements as of today and provides our agency partners and customers with this complete service!
-      Short-term changes and extensions are implemented with great consideration! We are happy to have anfema at our side as a longstanding service provider.
+      We approached anfema with a very complex task: Programming a platform that offers our agency partners and clients a complete service for handling promotion jobs.
+    contentSmall:markdown: |
+      anfema does not have the phrases "doesn't work", "doesn't exist" in its portfolio. Therefore, we have a platform that meets our requirements as of today and provides our agency partners and customers with this complete service! Short-term changes and extensions are implemented with great consideration! We are happy to have anfema at our side as a longstanding service provider.
   -
     component: "project-icons"
     anchorId: "msp-icons"
