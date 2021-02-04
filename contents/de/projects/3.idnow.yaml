@@ -44,7 +44,7 @@ sections:
     orientation: "right"
     titleColored: "Challenge"
     img:
-      alignment: "horizontal"
+      alignment: "vertical"
       one: "idnow-challenge-android.png"
       two: "idnow-challenge-iphone.png"
     description:markdown: |
@@ -57,7 +57,7 @@ sections:
     titleBefore: "How we made it "
     titleColored: "awesome"
     img:
-      alignment: "vertical"
+      alignment: "horizontal"
       zero: "idnow-awesome.png"
     description:markdown: |
       Das User Interface wurde mittels eines unkomplizierten Navigationskonzepts einfach und übersichtlich umgesetzt. So konnte der Identifizierungsprozess nochmals beschleunigt werden. Um zukünftigen Kunden eine hohe Integrierbarkeit anbieten zu können, wurde die Kernfunktionalität als Software Development Kit entwickelt. Somit können Kunden den Identifizierungsprozess einfach in ihre bestehenden Systeme einpflegen und direkt nutzen.

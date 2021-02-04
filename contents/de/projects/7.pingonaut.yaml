@@ -27,7 +27,7 @@ sections:
     titleAfter: "KidsWatch"
     subTitle: "2016 - Heute"
     img:
-      alignment: "vertical"
+      alignment: "straight"
       one: "pingonaut-intro-iphone.png"
       two: "pingonaut-intro-android.png"
     description:markdown: |

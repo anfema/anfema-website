@@ -20,7 +20,7 @@ sections:
     titleAfter: "HR digitalization"
     subTitle: "2018 - today"
     img:
-      alignment: "vertical"
+      alignment: "straight"
       one: "audi-intro-iphone.png"
       two: "audi-intro-android.png"
     description:markdown: |
