@@ -122,6 +122,14 @@
 			color: $color-brand-1;
 		}
 	}
+
+	@include media-large-min {
+		padding-top: 14rem;
+	}
+
+	@include media-xlarge-min {
+		padding-top: 16rem;
+	}
 }
 
 html[lang='de'] {
