@@ -21,6 +21,11 @@
 		font-weight: 700;
 		line-height: 2.8rem;
 
+		&--small {
+			font-size: 2.8rem;
+			line-height: 3.2rem;
+		}
+
 		@include media-medium-min {
 			grid-column: 2 / -2;
 			font-size: 3.4rem;
@@ -116,6 +121,14 @@
 		&:hover {
 			color: $color-brand-1;
 		}
+	}
+
+	@include media-large-min {
+		padding-top: 14rem;
+	}
+
+	@include media-xlarge-min {
+		padding-top: 16rem;
 	}
 }
 

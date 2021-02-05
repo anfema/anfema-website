@@ -54,49 +54,15 @@ sections:
     description:markdown: |
       Ausschlaggebend für die erfolgreiche Konzipierung und Umsetzung des Systems ist die enge Zusammenarbeit mit dem Kunden. Persönliche Kundenbetreuung durch erfahrene Projektmanager führte zu einer individuellen, technischen Lösung. Die komplett auf die Wünsche des Kunden angepasste Plattform ermöglicht weiterhin die stetige Erweiterung und Anbindung neuer sowie maßgeschneiderter Features.
   -
-    component: "project-features"
-    anchorId: "msp-features"
-    titleBefore: "Top"
-    titleColored: "Features"
-    features:
-      -
-        id: "feature-one"
-        img: "pingonaut-gallery-1.jpg"
-        title: "Kartenansicht"
-        description:markdown: |
-          Bilder sagen mehr als 1.000 Worte – in diesem Falle ist es die Kartenansicht. Um schnell einen Überblick zu bekommen, profitieren die Mitarbeiter des Vertriebs von Paulaner von verschiedenen Optionen:
-          1. Kundentypen sind durch Icons differenziert.
-          2. Die User erhalten sofort die wichtigsten Daten über den Kunden. Zugleich kann ein Besuch bearbeitet oder gestartet werden.
-          3. Die Bildung von Clustern verstärkt die Übersicht und kann bei Bedarf aufgeteilt werden oder vorab die Hauptinformation liefern.
-      -
-        id: "feature-two"
-        img: "pingonaut-gallery-1.jpg"
-        title: "Einmal von allem etwas bitte"
-        description:markdown: |
-          Diese Aussage werden Vertriebsmitarbeiter eher selten bekommen. Somit wächst das Bedürfnis mehrere Artikel zu der Bestellung hinzuzufügen. Da die Produktpalette umfangreich ist, kann die Suche oder die Filter- und Sortierungsmöglichkeit helfen. Eine Schnellübersicht des Artikel liefert direkt die wichtigsten Informationen um den Kunden von einer neuen Sorte zu überzeugen.
-      -
-        id: "feature-three"
-        img: "pingonaut-gallery-1.jpg"
-        title: "Zahlen visuell verstehen"
-        description:markdown: |
-          Wie auch bei der Kartenansicht, profitieren die Mitarbeiter bei den Absatzzahlen von einer visuellen Ansicht. Die Zielgruppe kann sich eine Übersicht über die  Produktvielfalt in einem Säulendiagramm anzeigen lassen. Wer sich für einen Jahresvergleich zwischen aktuellem und Vorjahr interessiert, wird hier ebenfalls bedient. Ob diese Ansicht die Marken oder ebenfalls die Artikelvielfalt beinhaltet, liegt in den Bedürfnissen des Mitarbeiters.
-      -
-        id: "feature-four"
-        img: "pingonaut-gallery-1.jpg"
-        title: "360-Grad-Kundenübersicht"
-        description:markdown: |
-          Der Rundumblick ist einer der wichtigsten Bedürfnisse unserer Zielgruppe. Unsere Kundendarstellung bietet eine Übersichtsliste der Verträge sowie eine Detailansicht die keine Fragen offen lässt.
-  -
     component: "content-quote"
     anchorId: "msp-quote"
     source:markdown: |
       Iris Naudßus
       Mitglied der Geschäftsleitung STAFFPILOT GmbH
     content:markdown: |
-        Wir sind mit einer sehr komplexen Aufgabe an die anfema herangetreten
-        Programmierung einer Plattform, die für unsere Agentur-Partner und Kunden einen Komplett-Service zur Abwicklung von Promotion-Jobs bietet.
-        Die anfema hat die Sätze "geht nicht", "gibt es nicht" nicht in Ihrem Portfolio,  daher haben wir per dato eine unseren Wünschen entsprechende Plattform, die unseren Agenturpartnern und unseren Kunden diesen kompletten Service liefert!
-        Kurzfristige Änderungen und  Erweiterungen werden gut überlegt umgesetzt! Wir freuen uns, die anfema an unserer Seite als langjährigen Dienstleister zu wissen.
+        Wir sind mit einer sehr komplexen Aufgabe an die anfema herangetreten: Programmierung einer Plattform, die für unsere Agentur-Partner und Kunden einen Komplett-Service zur Abwicklung von Promotion-Jobs bietet.
+    contentSmall:markdown: |
+        Die anfema hat die Sätze "geht nicht", "gibt es nicht" nicht in Ihrem Portfolio,  daher haben wir per dato eine unseren Wünschen entsprechende Plattform, die unseren Agenturpartnern und unseren Kunden diesen kompletten Service liefert! Kurzfristige Änderungen und  Erweiterungen werden gut überlegt umgesetzt! Wir freuen uns, die anfema an unserer Seite als langjährigen Dienstleister zu wissen.
   -
     component: "project-icons"
     anchorId: "msp-icons"

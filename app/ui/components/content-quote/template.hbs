@@ -1,6 +1,11 @@
 <div class="content-quote__container">
 	<blockquote class="content-quote__text">
 		{{{data.content}}}
+		{{#if data.contentSmall}}
+			<div class="content-quote__text--small">
+				{{{data.contentSmall}}}
+			</div>
+		{{/if}}
 	</blockquote>
 
 	<cite class="content-quote__source">
