@@ -7,15 +7,18 @@
 {{/each}}
 
 
-<div class="projects-list-item projects-list-item__contact">
-	<div class="projects-list-item__inner projects-list-item--contactInner">
-		<div>
+<a class="projects-list-item projects-list-item__contact" href="mailto:{{t "component.contact.email"}}">
+	<div class="projects-list-item__contactInner projects-list-item__inner">
+		<div class="projects-list-item__contactMessage">
 			<h3 class="projects-list-item__client">{{t "component.contact.titleMore"}}</h3>
 			<h4 class="projects-list-item__title">{{t "component.contact.descriptionMore"}}
-				<a href={{mailtoLink}}>
+				<a href="mailto:{{t "component.contact.email"}}">
 					{{t "component.contact.email"}}
 				</a>
 			</h4>
 		</div>
+		<div class="projects-list-item__contactImage">
+			<img src="/img/logo-cutoff.png" alt="anfema-logo" width="100%" height="100%">
+		</div>
 	</div>
-</div>
+</a>

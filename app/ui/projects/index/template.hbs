@@ -1,7 +1,9 @@
 {{#page-overlay}}
 	{{#page-menu forceOpaque=true class="page-menu--flat"}}
 		<header>
-			{{t "projects.title"}}
+			<a href="#{{projects}}" onclick={{action "scrollToTop"}}>
+				{{t "projects.title"}}
+			</a>
 		</header>
 
 		<ul>

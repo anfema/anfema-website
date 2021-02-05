@@ -8,7 +8,7 @@ meta:
   overviewHorizontal: true
   introMessage: |
     Kurzfristige Änderungen und  Erweiterungen werden gut überlegt umgesetzt! Wir freuen uns, die anfema an unserer Seite als langjährigen Dienstleister zu wissen.
-  img: "msp-intro.png"
+  img: "overview_msp.png"
   hidden: false
 sections:
   -
