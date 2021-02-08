@@ -110,19 +110,3 @@ ul.page-menu__lp-jump {
 		);
 	}
 } */
-
-.breadcrumbs {
-	* {
-		white-space: nowrap;
-	}
-
-	@include media-medium-max {
-		* {
-			display: none;
-		}
-
-		*:last-child {
-			display: inline;
-		}
-	}
-}
