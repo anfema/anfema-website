@@ -56,8 +56,8 @@ sections:
     content:markdown: |
       Wir schätzen sehr, dass ihr mega Cracks seid und bauen unsere Konzepte voll auf euer Know-how auf.
   -
-    component: "project-icons"
-    anchorId: "ferchau-icons"
+    component: "project-technology"
+    anchorId: "ferchau-technology"
     titleColored: "Technology"
     titleAfter: "we used"
     img:

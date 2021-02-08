@@ -59,8 +59,8 @@ sections:
       anfema know what they do, how to do it, and they do it damn fast.
       One of the best partners in app development I’ve ever seen.
   -
-    component: "project-icons"
-    anchorId: "knauf-icons"
+    component: "project-technology"
+    anchorId: "knauf-technology"
     titleColored: "Technology"
     titleAfter: "we used"
     img:

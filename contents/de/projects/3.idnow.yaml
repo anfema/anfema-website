@@ -71,8 +71,8 @@ sections:
     content:markdown: |
       anfemas Lösung besticht durch maximale Usability. Euer Team hat genau verstanden, was wir, die Agenten und die Nutzer brauchen, dies zielführend umgesetzt und hat damit maßgeblich zur Verwirklichung und Effizienz unserer Idee beigetragen.
   -
-    component: "project-icons"
-    anchorId: "idnow-icons"
+    component: "project-technology"
+    anchorId: "idnow-technology"
     titleColored: "Technology"
     titleAfter: "we used"
     img:

@@ -68,8 +68,8 @@ sections:
       anfema does not have the phrases "doesn't work", "doesn't exist" in its portfolio. Therefore, we have a platform that meets our requirements as of today and provides our agency partners and customers with this complete service!
       Short-term changes and extensions are implemented with great consideration! We are happy to have anfema at our side as a longstanding service provider.
   -
-    component: "project-icons"
-    anchorId: "msp-icons"
+    component: "project-technology"
+    anchorId: "msp-technology"
     titleColored: "Technology"
     titleAfter: "we used"
     img:
