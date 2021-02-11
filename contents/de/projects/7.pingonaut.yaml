@@ -42,6 +42,9 @@ sections:
       two: "pingonaut-details2.png"
       three: "pingonaut-details3.png"
       four: "pingonaut-details4.png"
+    description:markdown: |
+      Um den Charakter der Pingonaut visuell zu repräsentieren, fertigten wir spezielle Icons und Grafiken an.
+      Diese sprechen durch die zwei unterschiedlichen Stile, verspieltes Design und klare Linien, Kinder und Eltern gleichermaßen an. Dadurch ist die Freude bei der Nutzung von Uhr und App garantiert.
   -
     component: "project-text"
     anchorId: "pingonaut-challenge"

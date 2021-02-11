@@ -17,23 +17,19 @@
 	}
 
 	img {
-		max-width: 100%;
+		width: 100%;
 	}
 
 	&__img {
 		position: relative;
 	}
 
-	&--horizontal {
-		margin: 2rem auto;
-	}
-
 	&--straight {
 		display: flex;
-		margin: auto;
 
 		.project-text__img-one,
 		.project-text__img-two {
+			width: 50%;
 			transform: none;
 		}
 	}
@@ -58,6 +54,8 @@
 	}
 
 	&--horizontal {
+		margin-top: 1rem;
+
 		.project-text__img-one {
 			transform: rotate(7deg);
 			margin-bottom: 10rem;
@@ -116,7 +114,7 @@
 
 			.project-text--horizontal,
 			.project-text--vertical {
-				margin: auto -16rem auto -10rem;
+				margin: auto -21rem auto -7rem;
 			}
 
 			.project-text--straight {
@@ -139,7 +137,7 @@
 
 			.project-text--horizontal,
 			.project-text--vertical {
-				margin: auto -8rem auto -16rem;
+				margin: auto -7rem auto -21rem;
 			}
 		}
 	}
