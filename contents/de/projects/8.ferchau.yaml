@@ -46,7 +46,7 @@ sections:
       alignment: "horizontal"
       zero: "ferchau-awesome.png"
     description:markdown: |
-      Die Performance der App ist konstant hoch. Das gelingt durch die Nutzung der  3D-Engine Unity3D in Kombination mit speziell angepassten Shadern.  Das eingesetzte Augmented Reality-SDK der führenden AR-Plattform Vuforia  sorgt für ein sicheres und performantes Tracken der Marker. On Top gewährt  Vuforia maximale gestalterische Freiheit und ermöglicht damit ein charakteristisches Design der 3D-Modelle, das die Marke FERCHAU widerspiegelt.
+      Die Performance der App ist konstant hoch. Das gelingt durch die Nutzung der 3D-Engine Unity3D in Kombination mit speziell angepassten Shadern. Das eingesetzte Augmented Reality-SDK der führenden AR-Plattform Vuforia sorgt für ein sicheres und performantes Tracken der Marker. On Top gewährt Vuforia maximale gestalterische Freiheit und ermöglicht damit ein charakteristisches Design der 3D-Modelle, das die Marke FERCHAU widerspiegelt.
   -
     component: "content-quote"
     anchorId: "ferchau-quote"
@@ -56,15 +56,15 @@ sections:
     content:markdown: |
       Wir schätzen sehr, dass ihr mega Cracks seid und bauen unsere Konzepte voll auf euer Know-how auf.
   -
-    component: "project-icons"
-    anchorId: "ferchau-icons"
+    component: "project-technology"
+    anchorId: "ferchau-technology"
     titleColored: "Technology"
     titleAfter: "we used"
     img:
       one: "technology-android.png"
       two: "technology-apple.png"
     description:markdown: |
-      Wir entwickelten die FERCHAU App nativ in Swift für iOS (iPhone, iPad, iPod Touch) und  für Android Phones und Tablets. Somit decken wir ein großes Publikum ab. Die Game  Engine Unity3D bildet zusammen mit dem AR-SDK Vuforia die Basis der Applikation. Als internationaler Branchenführer bietet Unity3D optimiertes Shading und leistungsstarkes Rendering. Damit ermöglicht es die Konstruktion von realitätsnahen Animationen, und deren Einbettung, in die reale Welt in Echtzeit.
+      Wir entwickelten die FERCHAU App nativ in Swift für iOS (iPhone, iPad, iPod Touch) und für Android Phones und Tablets. Somit decken wir ein großes Publikum ab. Die Game Engine Unity3D bildet zusammen mit dem AR-SDK Vuforia die Basis der Applikation. Als internationaler Branchenführer bietet Unity3D optimiertes Shading und leistungsstarkes Rendering. Damit ermöglicht es die Konstruktion von realitätsnahen Animationen, und deren Einbettung, in die reale Welt in Echtzeit.
   -
     component: "contact"
     subject: "Info über das Projekt"

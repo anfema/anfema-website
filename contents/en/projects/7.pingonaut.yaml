@@ -27,7 +27,7 @@ sections:
     titleAfter: "KidsWatch"
     subTitle: "2016 - today"
     img:
-      alignment: "vertical"
+      alignment: "straight"
       one: "pingonaut-intro-iphone.png"
       two: "pingonaut-intro-android.png"
     description:markdown: |
@@ -77,8 +77,8 @@ sections:
       If it wasn’t for anfema, there wouldn’t be a Kidswatch.
       The concept they created is thought right down to the last detail, the platform they developed doesn’t leave a single question unanswered and exceeds all expectations. Expressing gigantic know-how, unusual flexibility and unlimited dedication, anfema is definitely one of the best agencies in the digital industry.
   -
-    component: "project-icons"
-    anchorId: "pingonaut-icons"
+    component: "project-technology"
+    anchorId: "pingonaut-technology"
     titleColored: "Technology"
     titleAfter: "we used"
     img:

@@ -57,8 +57,8 @@ sections:
     content:markdown: |
       Ich möchte die Gelegenheit gerne dazu nutzen, jedem einzelnen von euch zu gratulieren und zu danken für eure geistige Arbeit, die Mühe und allem Voran eure unbezahlbare Coolness, d.h. eure Geduld und kontinuierliche Motivation. Nochmals vielen Dank für eure grenzenlosen Bemühungen!
   -
-    component: "project-icons"
-    anchorId: "tods-icons"
+    component: "project-technology"
+    anchorId: "tods-technology"
     titleColored: "Technology"
     titleAfter: "we used"
     img:

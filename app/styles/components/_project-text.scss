@@ -22,10 +22,25 @@
 
 	&__img {
 		position: relative;
+	}
+
+	&--horizontal {
 		margin: 2rem auto;
 	}
 
+	&--straight {
+		display: flex;
+		margin: auto;
+
+		.project-text__img-one,
+		.project-text__img-two {
+			transform: none;
+		}
+	}
+
 	&--vertical {
+		margin: 2rem;
+
 		.project-text__img-one {
 			width: 50%;
 			transform: rotate(14deg);
@@ -97,9 +112,15 @@
 
 			.project-text__img {
 				grid-column-start: 9;
-				margin-top: auto;
-				margin-right: -30rem;
-				margin-bottom: auto;
+			}
+
+			.project-text--horizontal,
+			.project-text--vertical {
+				margin: auto -16rem auto -10rem;
+			}
+
+			.project-text--straight {
+				margin: auto -17rem auto -5rem;
 			}
 		}
 
@@ -114,8 +135,32 @@
 
 			.project-text__img {
 				grid-column-end: 5;
-				margin-top: auto;
-				margin-bottom: auto;
+			}
+
+			.project-text--horizontal,
+			.project-text--vertical {
+				margin: auto -8rem auto -16rem;
+			}
+		}
+	}
+
+	@include media-xlarge-min {
+		&--left {
+			.project-text--horizontal,
+			.project-text--vertical {
+				margin-right: -30rem;
+				margin-left: 0;
+			}
+
+			.project-text--straight {
+				margin: 0 -30rem 0 0;
+			}
+		}
+
+		&--right {
+			.project-text--horizontal,
+			.project-text--vertical {
+				margin-right: 0;
 				margin-left: -30rem;
 			}
 		}

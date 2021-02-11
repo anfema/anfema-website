@@ -1,0 +1,27 @@
+<div class="project-technology__title">
+	<h2>
+		<span>{{data.titleBefore}}</span>
+		<span class="color--{{meta.id}}">{{data.titleColored}}</span>
+		<span>{{data.titleAfter}}</span>
+	</h2>
+</div>
+
+<div class="project-technology__img">
+	{{#if data.img.one}}
+		<div class="project-technology__img--one">
+			{{responsive-image image=data.img.one}}
+		</div>
+	{{/if}}
+	{{#if data.img.two}}
+		<div class="project-technology__img--two">
+			{{responsive-image image=data.img.two}}
+		</div>
+	{{/if}}
+</div>
+
+
+<div class="project-technology__description">
+	<p>{{{data.description}}}</p>
+</div>
+
+{{yield}}

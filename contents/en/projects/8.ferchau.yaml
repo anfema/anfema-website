@@ -56,8 +56,8 @@ sections:
     content:markdown: |
       We very much appreciate that you are incredible geniuses and do completely base our concepts on your know-how.
   -
-    component: "project-icons"
-    anchorId: "ferchau-icons"
+    component: "project-technology"
+    anchorId: "ferchau-technology"
     titleColored: "Technology"
     titleAfter: "we used"
     img:

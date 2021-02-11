@@ -74,7 +74,7 @@ sections:
       It's fun to use the app and to see it grow, how it fits even better to our increasing requirements and how it supports the sales department in their daily work.
       In our collaboration with anfema, we always find suitable solutions quickly and easily because they have understood us, the app and our business perfectly.
 
-  - component: "project-icons"
+  - component: "project-technology"
     anchorId: "paulaner-technology"
     titleColored: "Technology"
     titleAfter: " we used"

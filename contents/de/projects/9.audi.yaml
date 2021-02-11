@@ -20,7 +20,7 @@ sections:
     titleAfter: "HR Digitalisierung"
     subTitle: "2018 - heute"
     img:
-      alignment: "vertical"
+      alignment: "straight"
       one: "audi-intro-iphone.png"
       two: "audi-intro-android.png"
     description:markdown: |
@@ -61,7 +61,7 @@ sections:
     description:markdown: |
       Ausgehend von einem bestehenden Konzept von Audi, starteten wir die technische Umsetzung. Sukzessive konnten wir mit unserer Konzept-Expertise überzeugen. Wir legen den Fokus verstärkt auf natives Design und Entwicklungsstandards. Somit fangen wir iOS und Android Endnutzer exzellent ab. Sie schätzen ihnen bekannte Funktionalitäten: Login mit FaceID/TouchID, die Navigation oder das Verwenden von "Selection Controls".
 
-  - component: "project-icons"
+  - component: "project-technology"
     anchorId: "audi-technology"
     titleColored: "Technology"
     titleAfter: "we used"

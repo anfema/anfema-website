@@ -44,7 +44,7 @@ sections:
     orientation: "right"
     titleColored: "Challenge"
     img:
-      alignment: "horizontal"
+      alignment: "vertical"
       one: "idnow-challenge-android.png"
       two: "idnow-challenge-iphone.png"
     description:markdown: |
@@ -57,7 +57,7 @@ sections:
     titleBefore: "How we made it "
     titleColored: "awesome"
     img:
-      alignment: "vertical"
+      alignment: "horizontal"
       zero: "idnow-awesome.png"
     description:markdown: |
       Using a straightforward navigation concept, the user interface was implemented in a simple and well-arranged way, speeding up the identification process yet again. In order to provide future customers with the highest degree of integrability, core functions were developed as a software development kit. Thus, customers can easily integrate the digital identity verification process into their existing systems, allowing for direct use.
@@ -71,8 +71,8 @@ sections:
     content:markdown: |
       anfema’s solution impresses with utmost usability. Your team understood exactly what we, the agents and the users needed, implemented it purposefully, and thereby made an essential contribution to our idea’s realisation and efficiency.
   -
-    component: "project-icons"
-    anchorId: "idnow-icons"
+    component: "project-technology"
+    anchorId: "idnow-technology"
     titleColored: "Technology"
     titleAfter: "we used"
     img:
