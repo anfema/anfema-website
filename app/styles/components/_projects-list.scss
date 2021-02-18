@@ -7,7 +7,7 @@
 	grid-template-areas:
 		'paulaner'
 		'audi'
-		'knauf'
+		'knaufLookbook'
 		'tods'
 		'msp'
 		'idnow'
@@ -19,7 +19,7 @@
 	@include media-medium-min {
 		grid-template-areas:
 			'paulaner audi'
-			'knauf tods'
+			'knaufLookbook tods'
 			'msp msp'
 			'idnow pingonaut'
 			'ferchau pingonaut'
@@ -29,7 +29,7 @@
 
 	@include media-large-min {
 		grid-template-areas:
-			'paulaner audi knauf'
+			'paulaner audi knaufLookbook'
 			'msp msp tods'
 			'idnow ferchau pingonaut'
 			'contact bmw pingonaut';
@@ -219,8 +219,8 @@
 		grid-area: audi;
 	}
 
-	&--knauf {
-		grid-area: knauf;
+	&--knaufLookbook {
+		grid-area: knaufLookbook;
 	}
 
 	&--tods {
