@@ -15,10 +15,11 @@
 
 	&__img {
 		display: flex;
+		width: 90%;
 		justify-self: start;
 
 		img {
-			width: 75%;
+			width: 100%;
 			height: auto;
 		}
 
@@ -48,9 +49,14 @@
 		}
 
 		&__img {
+			width: 100%;
 			grid-column: 9 / span 3;
 			grid-row: 2 / span 2;
 			margin: auto;
+
+			div {
+				margin-right: 4rem;
+			}
 		}
 	}
 }

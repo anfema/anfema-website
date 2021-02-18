@@ -84,4 +84,7 @@ sections:
     subject: "Information about the project"
     body: |
       Hello anfema team,
-      I just had a look at your {{projectInfo}} project and ...
+      I just had a look at your page about the {{projectInfo}} project.
+      I would love to learn more about it and get in touch with you.
+
+      With kind regards

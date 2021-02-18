@@ -34,7 +34,8 @@ component:
     description: 'You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!'
     button: 'Contact us now'
     titleMore: 'You want to see more?'
-    descriptionMore: 'Write us an email: '
+    descriptionMore: 'Write us an '
+    emailName: 'email'
     email: 'contact@anfe.ma'
   page-footer:
     offices:
