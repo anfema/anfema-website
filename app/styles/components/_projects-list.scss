@@ -7,13 +7,15 @@
 	grid-template-areas:
 		'paulaner'
 		'audi'
-		'knaufLookbook'
-		'tods'
 		'msp'
-		'idnow'
-		'pingonaut'
-		'ferchau'
+		'tods'
+		'knaufLookbook'
 		'bmw'
+		'pingonaut'
+		'bcg'
+		'ferchau'
+		'knaufAroom'
+		'idnow'
 		'contact';
 
 	@include media-medium-min {
@@ -21,18 +23,20 @@
 			'paulaner audi'
 			'knaufLookbook tods'
 			'msp msp'
-			'idnow pingonaut'
-			'ferchau pingonaut'
-			'bmw contact';
+			'bcg pingonaut'
+			'bmw pingonaut'
+			'ferchau knaufAroom'
+			'contact idnow';
 		grid-template-columns: repeat(2, 1fr);
 	}
 
 	@include media-large-min {
 		grid-template-areas:
 			'paulaner audi knaufLookbook'
-			'msp msp tods'
-			'idnow ferchau pingonaut'
-			'contact bmw pingonaut';
+			'msp msp bcg'
+			'ferchau tods pingonaut'
+			'idnow bmw pingonaut'
+			'contact knaufAroom knaufAroom';
 		grid-template-columns: repeat(3, 1fr);
 	}
 }

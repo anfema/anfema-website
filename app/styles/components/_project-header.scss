@@ -61,6 +61,10 @@
 		@include media-medium-min {
 			grid-column: 2 / span 7;
 		}
+
+		.project-header__title {
+			line-height: 1;
+		}
 	}
 
 	h1 {
@@ -72,7 +76,6 @@
 
 		@include media-medium-min {
 			font-size: 9rem;
-			line-height: 0.8;
 			letter-spacing: 0.02em;
 		}
 	}
