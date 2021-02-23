@@ -14,6 +14,7 @@ function findByComponentNameAndPath(model, name, path) {
 export default Controller.extend({
 	queryParams: 'topfeatures',
 
+	scrollPosition: service(),
 	staticContent: service(),
 	win: service(),
 
