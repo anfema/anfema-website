@@ -4,9 +4,9 @@ meta:
   title: "AROOM"
   id: "knaufAroom"
   span: "2015 - heute"
-  overviewBig: false
+  overviewBig: true
   introMessage: |
-     test
+    anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in der App Entwicklung, denen ich je begegnet bin.
   img: "overview_paulaner.png"
   hidden: false
 sections:

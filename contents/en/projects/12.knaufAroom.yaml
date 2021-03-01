@@ -4,9 +4,10 @@ meta:
   title: "AROOM"
   id: "knaufAroom"
   span: "2015 - today"
-  overviewBig: false
+  overviewBig: true
   introMessage: |
-    test
+    anfema know what they do, how to do it, and they do it damn fast.
+    One of the best partners in app development I’ve ever seen.
   img: "overview_paulaner.png"
   hidden: false
 sections:

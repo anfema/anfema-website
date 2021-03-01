@@ -8,13 +8,15 @@
 		'paulaner'
 		'audi'
 		'msp'
-		'tods'
+		'msp'
 		'knaufLookbook'
-		'bmw'
-		'pingonaut'
-		'bcg'
+		'tods'
 		'ferchau'
 		'knaufAroom'
+		'bcg'
+		'pingonaut'
+		'pingonaut'
+		'bmw'
 		'idnow'
 		'contact';
 
@@ -135,7 +137,7 @@
 			z-index: -1;
 			display: block;
 			overflow: visible;
-			color: #312933;
+			color: #f7f7f7;
 			opacity: 0.1;
 			font-size: 48rem;
 			font-weight: 700;
@@ -170,51 +172,6 @@
 		}
 	}
 
-	&--mystaffpilot {
-		grid-area: msp;
-
-		.introQuote {
-			&::before,
-			&::after {
-				color: #8c8c8c;
-				opacity: 0.35;
-			}
-		}
-
-		@include media-medium-min {
-			grid-column-end: span 2;
-
-			.projects-list-item__inner {
-				display: grid;
-				grid-template-columns: 50% 50%;
-
-				.projects-list-item__header {
-					grid-column: 1 / span 2;
-					grid-row: 1 / span 1;
-				}
-
-				.projects-list-item__introMessage {
-					grid-column: 1 / span 1;
-					grid-row: 2 / span 1;
-					align-self: center;
-				}
-
-				.projects-list-item__image {
-					grid-column: 2 / span 1;
-					grid-row: 2 / span 1;
-				}
-			}
-		}
-	}
-
-	&--pingonaut {
-		grid-area: pingonaut;
-
-		@include media-medium-min {
-			grid-row-end: span 2;
-		}
-	}
-
 	&--paulaner {
 		grid-area: paulaner;
 	}
@@ -241,6 +198,77 @@
 
 	&--bmw {
 		grid-area: bmw;
+	}
+
+	&--pingonaut {
+		grid-area: pingonaut;
+		grid-row-end: span 2;
+	}
+
+	&--mystaffpilot {
+		grid-area: msp;
+		grid-row-end: span 2;
+
+		@include media-medium-min {
+			grid-column-end: span 2;
+			grid-row-end: span 1;
+
+			.projects-list-item__inner {
+				display: grid;
+				grid-template-columns: 50% 50%;
+
+				.projects-list-item__header {
+					grid-column: 1 / span 2;
+					grid-row: 1 / span 1;
+				}
+
+				.projects-list-item__introMessage {
+					grid-column: 1 / span 1;
+					grid-row: 2 / span 1;
+					align-self: center;
+				}
+
+				.projects-list-item__image {
+					grid-column: 2 / span 1;
+					grid-row: 2 / span 1;
+				}
+			}
+		}
+	}
+
+	&--knaufAroom {
+		grid-area: knaufAroom;
+
+		.projects-list-item__introMessage {
+			display: none;
+		}
+
+		@include media-large-min {
+			grid-column-end: span 2;
+			grid-row-end: span 1;
+
+			.projects-list-item__inner {
+				display: grid;
+				grid-template-columns: 50% 50%;
+
+				.projects-list-item__header {
+					grid-column: 1 / span 2;
+					grid-row: 1 / span 1;
+				}
+
+				.projects-list-item__introMessage {
+					display: block;
+					grid-column: 1 / span 1;
+					grid-row: 2 / span 1;
+					align-self: center;
+				}
+
+				.projects-list-item__image {
+					grid-column: 2 / span 1;
+					grid-row: 2 / span 1;
+				}
+			}
+		}
 	}
 
 	&__contact {
