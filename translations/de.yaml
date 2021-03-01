@@ -34,8 +34,9 @@ component:
     description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
     button: 'Jetzt kontaktieren'
     titleMore: 'Du willst mehr sehen?'
-    descriptionMore: 'Schreibe uns eine E-Mail: '
-    email: 'contact@anfe.ma'
+    descriptionMore: 'Schreibe uns eine '
+    emailName: 'E-Mail'
+    email: 'kontakt@anfe.ma'
   page-footer:
     offices:
       munich:
@@ -53,6 +54,14 @@ component:
     email:
       label: E-Mail
       value: kontakt@anfe.ma
+      subject: "Informationen"
+      body: |
+        Liebes Anfema-Team,
+
+        eure Projekte klingen super spannend! Sehr gerne würde ich mehr über das eine oder andere Projekt erfahren.
+        Ich würde mich über einen Terminvorschlag für ein Telefonat, eine Webkonferenz oder irgendwann wieder in Person sehr freuen!
+
+        Viele Grüße
     phone:
       label: Telefon
       value: +49 89 55269932

@@ -54,6 +54,14 @@ component:
     email:
       label: E-Mail
       value: contact@anfe.ma
+      subject: "Informations"
+      body: |
+        Dear Anfema-Team,
+
+        you're projects are awesome!
+        Let's have a chat via telephone, web or maybe in person - in the nearly future ;)
+
+        See you soon
     phone:
       label: Phone
       value: +49 89 55269932
