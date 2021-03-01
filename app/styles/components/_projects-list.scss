@@ -7,32 +7,38 @@
 	grid-template-areas:
 		'paulaner'
 		'audi'
-		'knauf'
-		'tods'
 		'msp'
-		'idnow'
-		'pingonaut'
+		'msp'
+		'knaufLookbook'
+		'tods'
 		'ferchau'
+		'knaufAroom'
+		'bcg'
+		'pingonaut'
+		'pingonaut'
 		'bmw'
+		'idnow'
 		'contact';
 
 	@include media-medium-min {
 		grid-template-areas:
 			'paulaner audi'
-			'knauf tods'
+			'knaufLookbook tods'
 			'msp msp'
-			'idnow pingonaut'
-			'ferchau pingonaut'
-			'bmw contact';
+			'bcg pingonaut'
+			'bmw pingonaut'
+			'ferchau knaufAroom'
+			'contact idnow';
 		grid-template-columns: repeat(2, 1fr);
 	}
 
 	@include media-large-min {
 		grid-template-areas:
-			'paulaner audi knauf'
-			'msp msp tods'
-			'idnow ferchau pingonaut'
-			'contact bmw pingonaut';
+			'paulaner audi knaufLookbook'
+			'msp msp bcg'
+			'ferchau tods pingonaut'
+			'idnow bmw pingonaut'
+			'contact knaufAroom knaufAroom';
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
@@ -131,7 +137,7 @@
 			z-index: -1;
 			display: block;
 			overflow: visible;
-			color: #312933;
+			color: #f7f7f7;
 			opacity: 0.1;
 			font-size: 48rem;
 			font-weight: 700;
@@ -166,19 +172,46 @@
 		}
 	}
 
+	&--paulaner {
+		grid-area: paulaner;
+	}
+
+	&--audi {
+		grid-area: audi;
+	}
+
+	&--knaufLookbook {
+		grid-area: knaufLookbook;
+	}
+
+	&--tods {
+		grid-area: tods;
+	}
+
+	&--idnow {
+		grid-area: idnow;
+	}
+
+	&--ferchau {
+		grid-area: ferchau;
+	}
+
+	&--bmw {
+		grid-area: bmw;
+	}
+
+	&--pingonaut {
+		grid-area: pingonaut;
+		grid-row-end: span 2;
+	}
+
 	&--mystaffpilot {
 		grid-area: msp;
-
-		.introQuote {
-			&::before,
-			&::after {
-				color: #8c8c8c;
-				opacity: 0.35;
-			}
-		}
+		grid-row-end: span 2;
 
 		@include media-medium-min {
 			grid-column-end: span 2;
+			grid-row-end: span 1;
 
 			.projects-list-item__inner {
 				display: grid;
@@ -203,40 +236,39 @@
 		}
 	}
 
-	&--pingonaut {
-		grid-area: pingonaut;
+	&--knaufAroom {
+		grid-area: knaufAroom;
 
-		@include media-medium-min {
-			grid-row-end: span 2;
+		.projects-list-item__introMessage {
+			display: none;
 		}
-	}
 
-	&--paulaner {
-		grid-area: paulaner;
-	}
+		@include media-large-min {
+			grid-column-end: span 2;
+			grid-row-end: span 1;
 
-	&--audi {
-		grid-area: audi;
-	}
+			.projects-list-item__inner {
+				display: grid;
+				grid-template-columns: 50% 50%;
 
-	&--knauf {
-		grid-area: knauf;
-	}
+				.projects-list-item__header {
+					grid-column: 1 / span 2;
+					grid-row: 1 / span 1;
+				}
 
-	&--tods {
-		grid-area: tods;
-	}
+				.projects-list-item__introMessage {
+					display: block;
+					grid-column: 1 / span 1;
+					grid-row: 2 / span 1;
+					align-self: center;
+				}
 
-	&--idnow {
-		grid-area: idnow;
-	}
-
-	&--ferchau {
-		grid-area: ferchau;
-	}
-
-	&--bmw {
-		grid-area: bmw;
+				.projects-list-item__image {
+					grid-column: 2 / span 1;
+					grid-row: 2 / span 1;
+				}
+			}
+		}
 	}
 
 	&__contact {

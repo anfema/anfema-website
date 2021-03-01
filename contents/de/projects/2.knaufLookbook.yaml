@@ -2,7 +2,7 @@ meta:
   color: "#F97E33"
   client: "Knauf"
   title: "Lookbook"
-  id: "knauf"
+  id: "knaufLookbook"
   span: März 2015 - heute
   overviewBig: false
   introMessage: |

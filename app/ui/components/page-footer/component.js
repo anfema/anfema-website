@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import { inject as service } from '@ember/service';
-import { alias } from '@ember/object/computed';
+import { computed } from '@ember/object';
 
 export default Component.extend({
 	intl: service(),
@@ -9,5 +9,18 @@ export default Component.extend({
 
 	year: new Date().getFullYear(),
 
-	language: alias('intl.locale.0'),
+	createMailToLinkWithContent(email, subject, body) {
+		const subjectEncoded = encodeURIComponent(subject).trim();
+		const bodyEncoded = encodeURIComponent(body).trim();
+
+		return `mailto:${email}?subject=${subjectEncoded}&body=${bodyEncoded}`;
+	},
+
+	mailtoLink: computed('data', 'meta', function() {
+		const email = this.intl.t('component.page-footer.email.value');
+		const subject = this.intl.t('component.page-footer.email.subject');
+		const body = this.intl.t('component.page-footer.email.body');
+
+		return this.createMailToLinkWithContent(email, subject, body);
+	}),
 });

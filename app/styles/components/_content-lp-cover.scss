@@ -37,6 +37,7 @@
 	}
 
 	h1 {
+		grid-column: 1 / span 3;
 		grid-row: 2 / span 1;
 		margin: 0;
 		color: $color-text-inverted;
@@ -46,6 +47,10 @@
 		text-transform: uppercase;
 		animation: moveLeft 1.5s ease-in;
 
+		@include media-medium-min {
+			grid-column: 1 / span 11;
+		}
+
 		@include media-large-min {
 			font-size: 10.8vmax;
 			line-height: 0.8;
@@ -54,13 +59,17 @@
 	}
 
 	p {
-		grid-column: 1 / span 8;
+		grid-column: 1 / span 4;
 		grid-row: 3 / span 1;
 		margin-top: 3rem;
 		color: $color-text-inverted-60;
 		font-size: 1.9rem;
 		line-height: 2.5rem;
 		animation: moveLeft 1.5s ease-in;
+
+		@include media-medium-min {
+			grid-column: 1 / span 8;
+		}
 
 		@include media-large-min {
 			font-size: 2.5rem;

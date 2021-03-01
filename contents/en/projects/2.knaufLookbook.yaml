@@ -2,7 +2,7 @@ meta:
   color: "#F97E33"
   client: "Knauf"
   title: "Lookbook"
-  id: "knauf"
+  id: "knaufLookbook"
   span: March 2015 to date
   overviewBig: false
   introMessage: |
@@ -53,8 +53,8 @@ sections:
     component: "content-quote"
     anchorId: "knauf-quote"
     source:markdown: |
-      Dominik Mandl, Online Marketing Manager
-      Knauf AMF GmbH & Co. KG
+      Dominik Mandl
+      Online Marketing Manager Knauf AMF GmbH & Co. KG
     content:markdown: |
       anfema know what they do, how to do it, and they do it damn fast.
       One of the best partners in app development I’ve ever seen.
@@ -73,4 +73,7 @@ sections:
     subject: "Information about the project"
     body: |
       Hello anfema team,
-      I just had a look at your {{projectInfo}} project and ...
+      I just had a look at your page about the {{projectInfo}} project.
+      I would love to learn more about it and get in touch with you.
+
+      With kind regards

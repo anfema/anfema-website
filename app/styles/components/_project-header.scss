@@ -22,6 +22,10 @@
 		overflow: hidden;
 		animation: moveRight 1.5s ease-in;
 
+		@include media-medium-min {
+			right: -20rem;
+		}
+
 		@include media-large-min {
 			right: -22rem;
 		}
@@ -39,6 +43,10 @@
 			height: 100%;
 		}
 
+		@include media-medium-min {
+			right: -27rem;
+		}
+
 		@include media-large-min {
 			right: -14rem;
 		}
@@ -53,18 +61,21 @@
 		@include media-medium-min {
 			grid-column: 2 / span 7;
 		}
+
+		.project-header__title {
+			line-height: 1;
+		}
 	}
 
 	h1 {
 		margin: 0.5rem 0;
 		color: $color-text-inverted;
-		font-size: 4.9rem;
+		font-size: 4rem;
 		line-height: 0.8;
 		text-shadow: 2px 4px 10px #333433;
 
-		@include media-large-min {
-			font-size: 11rem;
-			line-height: 0.8;
+		@include media-medium-min {
+			font-size: 9rem;
 			letter-spacing: 0.02em;
 		}
 	}
@@ -145,5 +156,10 @@
 			transform: translateX(0);
 			opacity: 1;
 		}
+	}
+
+	@include media-large-min {
+		height: auto;
+		min-height: 89vh;
 	}
 }

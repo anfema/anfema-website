@@ -1,0 +1,79 @@
+meta:
+  color: "#6da4b7"
+  client: "Knauf"
+  title: "AROOM"
+  id: "knaufAroom"
+  span: "2015 - today"
+  overviewBig: true
+  introMessage: |
+    anfema know what they do, how to do it, and they do it damn fast.
+    One of the best partners in app development I’ve ever seen.
+  img: "overview_paulaner.png"
+  hidden: false
+sections:
+  - component: "project-header"
+    img: "knauf-aroom-header.png"
+    action:
+      scrollDown: "More"
+
+  - component: "project-text"
+    anchorId: "knaufAroom-intro"
+    orientation: "left"
+    titleColored: "Knauf"
+    titleAfter: "AMF AROOM App"
+    subTitle: "2015 - today"
+    img:
+      alignment: "horizontal"
+      zero: "knauf-aroom-intro.jpg"
+    description:markdown: |
+      test
+
+  - component: "project-text"
+    anchorId: "knaufAroom-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
+    img:
+      alignment: "horizontal"
+      one: "knauf-aroom-challenge-ipad1.png"
+      two: "knauf-aroom-challenge-ipad2.png"
+    description:markdown: |
+      test
+
+  - component: "project-text"
+    anchorId: "knaufAroom-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
+    img:
+      alignment: "horizontal"
+      zero: "knauf-aroom-awesome.jpg"
+    description:markdown: |
+      test
+
+  - component: "content-quote"
+    anchorId: "knaufAroom-quote"
+    source:markdown: |
+      Dominik Mandl
+      Online Marketing Manager Knauf AMF GmbH & Co. KG
+    content:markdown: |
+      anfema know what they do, how to do it, and they do it damn fast.
+      One of the best partners in app development I’ve ever seen.
+
+  - component: "project-technology"
+    anchorId: "knaufAroom-technology"
+    titleColored: "Technology"
+    titleAfter: " we used"
+    img:
+      one: "technology-unity.png"
+      two: "technology-csharpe.png"
+    description:markdown: |
+      test
+
+  - component: "contact"
+    subject: "Information about the project"
+    body: |
+      Hello anfema team,
+      I just had a look at your page about the {{projectInfo}} project.
+      I would love to learn more about it and get in touch with you.
+
+      With kind regards

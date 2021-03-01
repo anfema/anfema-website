@@ -1,12 +1,14 @@
 $customerColor-msp: #006ac9;
 $customerColor-paulaner: #003366;
-$customerColor-knauf: #f97e33;
+$customerColor-knaufLookbook: #f97e33;
 $customerColor-bmw: #0275b6;
 $customerColor-audi: #bb0a30;
 $customerColor-ferchau: #e62332;
 $customerColor-pingonaut: #ff7f00;
 $customerColor-tods: #342524;
 $customerColor-idnow: #f95602;
+$customerColor-bcg: #197a56;
+$customerColor-knaufAroom: #6da4b7;
 
 @mixin customer-colors {
 	.color {
@@ -18,8 +20,8 @@ $customerColor-idnow: #f95602;
 			color: $customerColor-paulaner;
 		}
 
-		&--knauf {
-			color: $customerColor-knauf;
+		&--knaufLookbook {
+			color: $customerColor-knaufLookbook;
 		}
 
 		&--bmw {
@@ -44,6 +46,14 @@ $customerColor-idnow: #f95602;
 
 		&--idnow {
 			color: $customerColor-idnow;
+		}
+
+		&--bcg {
+			color: $customerColor-bcg;
+		}
+
+		&--knaufAroom {
+			color: $customerColor-knaufAroom;
 		}
 	}
 
@@ -83,7 +93,7 @@ $customerColor-idnow: #f95602;
 		}
 	}
 
-	.knauf-color {
+	.knaufLookbook-color {
 		&--zero {
 			fill: #d29977;
 		}
@@ -97,7 +107,7 @@ $customerColor-idnow: #f95602;
 		}
 
 		&--three {
-			fill: $customerColor-knauf;
+			fill: $customerColor-knaufLookbook;
 		}
 	}
 
@@ -209,6 +219,42 @@ $customerColor-idnow: #f95602;
 		}
 	}
 
+	.bcg-color {
+		&--zero {
+			fill: #6c9481;
+		}
+
+		&--one {
+			fill: #7da492;
+		}
+
+		&--two {
+			fill: #7da492;
+		}
+
+		&--three {
+			fill: $customerColor-bcg;
+		}
+	}
+
+	.knaufAroom-color {
+		&--zero {
+			fill: #92abb3;
+		}
+
+		&--one {
+			fill: #a6bfc7;
+		}
+
+		&--two {
+			fill: #b8d1d9;
+		}
+
+		&--three {
+			fill: $customerColor-knaufAroom;
+		}
+	}
+
 	.bgColor {
 		&--mystaffpilot {
 			background-color: $customerColor-msp;
@@ -218,8 +264,8 @@ $customerColor-idnow: #f95602;
 			background-color: $customerColor-paulaner;
 		}
 
-		&--knauf {
-			background-color: $customerColor-knauf;
+		&--knaufLookbook {
+			background-color: $customerColor-knaufLookbook;
 		}
 
 		&--bmw {
@@ -244,6 +290,14 @@ $customerColor-idnow: #f95602;
 
 		&--idnow {
 			background-color: $customerColor-idnow;
+		}
+
+		&--bcg {
+			background-color: $customerColor-bcg;
+		}
+
+		&--knaufAroom {
+			background-color: $customerColor-knaufAroom;
 		}
 	}
 }
