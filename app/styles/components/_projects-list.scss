@@ -201,6 +201,10 @@
 		grid-area: bmw;
 	}
 
+	&--bcg {
+		pointer-events: none;
+	}
+
 	&--pingonaut {
 		grid-area: pingonaut;
 		grid-row-end: span 2;
