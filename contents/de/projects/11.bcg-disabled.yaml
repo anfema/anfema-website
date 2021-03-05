@@ -1,26 +1,26 @@
 meta:
   color: "#197a56"
-  client: "BCG"
+  client: "BCG - (Coming soon)"
   title: "Application Phone App"
   id: "bcg"
-  span: "20XX - today"
+  span: "20XX - heute"
   overviewBig: false
   introMessage: |
-    In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
+     In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
   img: "overview_paulaner.png"
   hidden: false
 sections:
   - component: "project-header"
     img: "bcg-header-iphone.png"
     action:
-      scrollDown: "More"
+      scrollDown: "Mehr erfahren"
 
   - component: "project-text"
     anchorId: "bcg-intro"
     orientation: "left"
     titleColored: "BCG"
     titleAfter: "Application Phone App"
-    subTitle: "20XX - today"
+    subTitle: "20XX - Heute"
     img:
       alignment: "straight"
       one: "bcg-intro-iphone.png"
@@ -75,7 +75,7 @@ sections:
   - component: "project-technology"
     anchorId: "bcg-technology"
     titleColored: "Technology"
-    titleAfter: " we used"
+    titleAfter: "we used"
     img:
       one: "technology-swift.png"
       two: "technology-apple.png"
@@ -83,10 +83,11 @@ sections:
       technology
 
   - component: "contact"
-    subject: "Information about the project"
+    subject: "Info über das Projekt"
     body: |
-      Hello anfema team,
-      I just had a look at your page about the {{projectInfo}} project.
-      I would love to learn more about it and get in touch with you.
+      Hallo anfema Team,
+      ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.
+      Gerne würde ich darüber mehr erfahren und mit Euch in Kontakt treten.
 
-      With kind regards
+      Mit freundlichen Grüßen
+      Max Mustermann
