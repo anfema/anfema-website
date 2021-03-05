@@ -25,7 +25,7 @@ sections:
       alignment: "horizontal"
       zero: "knauf-aroom-intro.jpg"
     description:markdown: |
-      Das Familienunternehmen Knauf ist ein deutscher Hersteller und Vertreiber von Systemen für Trockenbau, Boden, Pute und Fassaden. In diesem Bereich ist ein breites Spektrum an Gestaltungsmöglichkeiten verfügbar. Aus diesem Grund war Knauf auf der Suche nach einer digitalen Lösung. Mit dieser ist es möglich, Wandelemente zu planen und anschließend über Augmented Reality frei im Raum zu platzieren.
+      Das Familienunternehmen Knauf ist ein deutscher Hersteller und Vertreiber von Systemen für Trockenbau, Boden, Putz und Fassaden. In diesem Bereich ist ein breites Spektrum an Gestaltungsmöglichkeiten verfügbar. Aus diesem Grund war Knauf auf der Suche nach einer digitalen Lösung. Mit dieser ist es möglich, Wandelemente zu planen und anschließend über Augmented Reality frei im Raum zu platzieren.
 
   - component: "project-text"
     anchorId: "knaufAroom-challenge"
