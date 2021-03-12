@@ -70,5 +70,10 @@ module.exports = function(/* env */) {
 		 * @default "translations"
 		 */
 		inputPath: 'translations',
+
+		// Setting errorOnMissingTranslations to true will cause ember-intl to throw a build error if missing,
+		// required translations were detected. This changes the default behavior where
+		// missing translations are only logged as build warnings.
+		errorOnMissingTranslations: true,
 	};
 };
