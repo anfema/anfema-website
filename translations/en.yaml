@@ -1,67 +1,67 @@
 index:
-  title: 'Striving for Perfection'
+  title: "Striving for Perfection"
   nav:
-    projects: 'Projects'
+    projects: "Projects"
 
 projects:
-  title: 'Projects'
+  title: "Projects"
   index:
     nav:
-      back: 'Back'
+      back: "Back"
   detail:
     nav:
-      back: 'Back'
+      back: "Back"
 
 component:
   language-select:
     action:
-      de: 'DE'
-      en: 'EN'
+      de: "DE"
+      en: "EN"
   content-lp-cover:
     action:
-      scrollDown: 'More'
+      scrollDown: "More"
   content-quote:
     action:
-      showProject: 'View project'
+      showProject: "View project"
   job-advertisements-item:
     action:
-      details: 'Details'
-      email: 'Email'
+      details: "Details"
+      email: "Email"
   project-detail:
-    title: 'anfema Projects'
+    title: "anfema Projects"
   contact:
-    title: 'Sounds interesting?'
-    description: 'You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Come by for a coffee in our offices in Munich or Augsburg - we look forward to meeting you!'
-    button: 'Contact us now'
-    titleMore: 'You want to see more?'
-    descriptionMore: 'Write us an '
-    emailName: 'email'
-    email: 'contact@anfe.ma'
+    title: "Sounds interesting?"
+    description: "You want to know more about the project or our implementation? No matter if you are a customer or an applicant, contact us! Whether you are a customer or an applicant, please feel free to contact us! Drop by for a coffee either in Munich or Augsburg - we're looking forward to it!"
+    button: "Contact us now"
+    titleMore: "You want to see more?"
+    descriptionMore: "Write us an "
+    emailName: "email"
+    email: "contact@anfe.ma"
   page-footer:
     offices:
       munich:
         title: Main office Munich
         street: Prinzregentenstr. 11A
-        postal: '80538'
+        postal: "80538"
         city: Munich
         country: Germany
       augsburg:
         title: Branch office Augsburg
         street: Bahnhofstr. 10
-        postal: '86150'
+        postal: "86150"
         city: Augsburg
         country: Germany
     email:
       label: E-Mail
       value: contact@anfe.ma
-      subject: "Informations"
+      subject: "Information"
       body: |
-        Dear Anfema-Team,
+        Dear Anfema Team,
 
-        you're projects are awesome!
-        Let's have a chat via telephone, web or maybe in person - in the nearly future ;)
+        Your projects sound super exciting! I would love to hear more about one or the other project.
+        I would be very happy if you could suggest a date for a phone call, a web conference or sometime again in person!
 
-        See you soon
+        Many greetings
     phone:
       label: Phone
       value: +49 89 55269932
