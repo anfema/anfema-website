@@ -9,24 +9,18 @@ sections:
     anchorLabel: "1"
     sectionLabel: "01"
     title: Understanding Customers Like No Other
-    content: |
-      <p>We think nothing of generalised approach. Instead, putting ourselves in your position, we understand your
-      processes and needs before we’ll jointly develop a strategy. This way, we ensure that our customised software
-      becomes a solution that makes your life more convenient.</p>
+    content:markdown: |
+      We don't believe in blanket approaches. We want to understand your processes and needs before we develop a strategy together. This is how we ensure that customized software becomes the solution that lets you go through life more comfortably.
 
-      <h3>Innovation and Usability are our Identity</h3>
+      ### Innovation and Usability are our Identity
 
-      <p>We love technology! Indulging in our passion, we bring your ideas and procedures up to date, and, in combination
-      with our focus on user-friendliness, we enable your processes’ optimisation and the better achievement of your
-      goals.</p>
+      We love technology! As a digital agency, we live out this passion by adapting ideas and processes to the pulse of the times. Combined with our focus on usability, we enable you to optimize your processes and better achieve your goals.
 
-      <p>anfema - that’s the incredibly good job we do as a result of our team’s diverse experience and their
-      multidisciplinary competencies.</p>
+      anfema stands for the incredible work we deliver based on our team's diverse experience and multidisciplinary skills.
 
   - component: "content-quote"
-    content: |
-      anfema know what they do, how to do it, and they do it damn fast. One of the best partners in App
-      development I’ve ever seen.
+    content:markdown: |
+      anfema knows what they do, how to do it, and they do it damn fast. — One of the best partners in App development I’ve ever seen.
     source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
     projectId: knaufAroom
 
@@ -35,12 +29,8 @@ sections:
     anchorLabel: "2"
     sectionLabel: "02"
     title: Innovation. Enthusiasm. Drive. Team Spirit. Commitment. Diversity. Quality.
-    content: |
-      <p>Our services impress with quality and design, our team excels due to their profound
-      expertise revealing the years of experience gained in ambitious projects across diverse industries.</p>
-
-      <p>Internally, we trust in proven workflows, whereas in project management we keep relying on customer focus,
-      flexibility and individuality. This conjunction creates the space in which we accomplish superior solutions!</p>
+    content:markdown: |
+      Our services impress through quality and design. Our team through profound expertise, in which the years of experience from demanding projects in a wide variety of industries has manifested itself. Internally, we rely on proven workflows. In project management, we focus on customer proximity, flexibility and individuality. This is how we create outstanding solutions!
 
   - id: "services"
     component: "content-lp-services"
@@ -49,49 +39,37 @@ sections:
         title: "Simplifying Processes, Maximising Benefits"
         logoStep: 0
         text: |
-          By structured synchronising of your idea, our expertise and the end users’ needs, we create a concept that is
-          equally anticipatory and individual - and therewith the foundation for software that does what it says on
-          the tin.
+          By thoughtfully synchronizing your idea, our expertise, and the needs of users, we create a concept that is as forward-thinking as it is individual. Thereby it's the basis for software that delivers what it promises.
 
       - id: "design"
         title: "Usability, Creativity & Innovation"
         logoStep: 1
         text: |
-          Creating innovative visual designs and intuitive user interfaces, we bring the concept to life. Characterised
-          by maximal usability, our work regularly goes beyond our clients’ every expectation of just how good user
-          experience can be.
+          CWe bring the concept to life with innovative visual design and intuitive user interfaces. Our works are characterized by maximum usability. Our work regularly goes beyond our clients' imagination as to how good the user experience can be.
 
       - id: "development"
         title: "Custom-made & High Quality"
         logoStep: 2
         text: |
-          Your expectations are high? So are ours! Our team of developers impresses with their extensive skill set,
-          vast experience and uncompromising accuracy. Striving for perfection, we get to the core of your idea and
-          open up undreamed-of possibilities.
+          Your expectations are high? So are ours! Our development team impresses with its extensive skill set, countless experiences, and uncompromising accuracy. Striving for perfection, we hit your idea on the spot and open up unimagined possibilities for you.
 
       - id: "consulting"
         title: "Experience, Expertise & Foresight"
         logoStep: 3
         text: |
-          New technologies make our hearts skip a beat! As we constantly and happily explore the broad spectrum of
-          options, we know exactly which possible solutions are suitable for you, and add maximum value to your
-          project by providing honest and professional input.
+          New technologies make our hearts beat faster! We are constantly exploring the wide range of options with pleasure. Therefore, we know exactly which solutions are the right ones for you. Thus, we generate the greatest possible added value for your project through our honest, expert input.
 
       - id: "support"
         title: "Continually Progressive"
         logoStep: 4
         text: |
-          Knowing that a system will only be future-proof if it’s being serviced following its release, we act in a
-          far-sighted and proactive way. The anticipation of emerging changes in the digital world allows us to nip
-          future problems in the bud.
+          Knowing that a system will only be future-proof if it’s being serviced following its release, we act in a far-sighted and proactive way. The anticipation of emerging changes in the digital world allows us to nip future problems in the bud.
 
       - id: "management"
         title: "Customer-focused & Direct"
         logoStep: 5
         text: |
-          We rely on technically adept management, who put themselves in your position to fully understand your
-          requirements, and directly work out solutions. As your partner, we’ll assist you starting from the concept
-          and throughout the whole life cycle of the project, thus guaranteeing its long-term success.
+          We rely on technically experienced management that thinks its way into your needs and develops solutions directly. As your partner, we are at your side from the conception stage and throughout the entire life cycle of the project. In this way, we ensure its long-term success.
 
   - component: "content-lp-text"
     anchorId: "team"
@@ -106,45 +84,32 @@ sections:
         title: "A Great Team"
         shortTitle: "Great Team"
         text: |
-          We are a diverse and dynamic team characterised by our impressive skill set and demand of high standards
-          as well as by our unusually strong team spirit and motivation. Not only do we treat each other friendly,
-          but we are friends! As such, we enjoy common activities like cooking, eating or table soccer in our
-          everyday office life.
+          We are a diverse and dynamic team. We are characterized by high standards and an impressive skill set from several disciplines. Also by the cohesion and motivation. We treat each other not only friendly but we are friends! Cooking, eating and playing table soccer together are part of our daily office life.
+
       - id: "innovative-projects"
         pagination: "#2"
         title: "Innovative Projects and the Most Recent Technologies"
         shortTitle: "Projects & Technologies"
         text: |
-          We deliver digital developments across the full stack, servicing a large variety of industries. As a result,
-          we enjoy varying daily work routines featuring future-oriented and exciting projects which offer great
-          potential for development. For both work equipment and the applications used in our projects we rely on the
-          most recent technologies.
+          We deliver digital developments across the full stack, servicing a large variety of industries. As a result, we enjoy varying daily work routines featuring future-oriented and exciting projects which offer great potential for development. For both work equipment and the applications used in our projects we rely on the most recent technologies.
+
       - id: "structures-and-potential"
         pagination: "#3"
         title: "Agile Structures and Potential for Development"
         shortTitle: "Agile Structures & Learning"
         text: |
-          At anfema, flexibility doesn't only involve acting on the dynamics of the digital industry. It also means
-          agile team structures which are adjustable to current projects and methodologies of development. We are open
-          to great ideas, and we value innovation and creativity instead of rigid hierarchies. If you possess these
-          qualities and work independently, you can drive change and there will be no limits to either your
-          acquisition of skills or your personal and professional development.
+          For us, flexibility doesn't just mean responding to the dynamics of the digital industry. We also adapt structures within our team to current projects and the best development methods. We are open to good ideas. What counts here is innovation and creativity instead of rigid hierarchies. Those who bring these qualities to the table and work independently and on their own responsibility can drive change. There are no limits to steep learning curves and personal and professional development.
+
       - id: "location-and-culture"
         pagination: "#4"
         title: "Superb Location and Company Culture "
         shortTitle: "Location & Culture "
         text: |
-          Both of our offices are centrally located in the promising and lively cities of Munich and Augsburg.
-          This makes for a short commute and adds to a great work-life-balance. In combination with flexible work
-          hours, comfortable offices, and drinks provided free of charge, this makes for an enjoyable work climate.
+          Both of our offices are centrally located in the promising and lively cities of Munich and Augsburg. This makes for a short commute and adds to a great work-life-balance. In combination with flexible work hours, comfortable offices, and drinks provided free of charge, this makes for an enjoyable work climate.
 
   - component: "job-advertisements"
     jobs:
-      - title: "Android Developer (f/m/*)"
-        description: "from now on"
-        detailsLink: "/job-advertisements/Android_Developer_anfema_Augsburg.pdf"
-        team: "development"
-      # - title: "Working Student UX / UI Design (f/m/*)"
+      # - title: "Android Developer (f/m/*)"
       #   description: "from now on"
-      #   detailsLink: "/job-advertisements/Werkstudent_Design.pdf"
-      #   team: "design"
+      #   detailsLink: "/job-advertisements/Android_Developer_anfema_Augsburg.pdf"
+      #   team: "development"

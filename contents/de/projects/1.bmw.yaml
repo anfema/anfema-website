@@ -8,13 +8,11 @@ meta:
   img: "overview_bmw.png"
   hidden: false
 sections:
-  -
-    component: "project-header"
+  - component: "project-header"
     img: "bmw-header.png"
     action:
       scrollDown: "Mehr erfahren"
-  -
-    component: "project-text"
+  - component: "project-text"
     anchorId: "bmw-intro"
     orientation: "left"
     titleColored: "BMW"
@@ -25,8 +23,8 @@ sections:
       zero: "bmw-intro.png"
     description:markdown: |
       Die Marke BMW steht seit jeher für Sportlichkeit, Fahrspaß und Komfort. Mit der Neuauflage des BMW 7er definierte der Premium-Automobilhersteller Luxus im Fahrzeugbereich neu. Für eine angemessene Präsentation des Fahrzeugs und seiner innovativen Features wurde eine iPad-App konzipiert und entwickelt. Die App besticht durch ein außergewöhnliches, intuitives Bedienkonzept, gestalterische Perfektion und die Integration interaktiver Medien, die den Komfort und den Spaß des BMW 7er auf das Tablet übertragen.
-  -
-    component: "project-icons"
+
+  - component: "project-icons"
     anchorId: "bmw-details"
     titleBefore: "It's all about the"
     titleColored: "Details"
@@ -37,8 +35,8 @@ sections:
       four: "bmw-details4.png"
     description:markdown: |
       Um die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben, wurden speziell für diese App Icons gestaltet.
-  -
-    component: "project-text"
+
+  - component: "project-text"
     anchorId: "bmw-challenge"
     orientation: "right"
     titleColored: "Challenge"
@@ -49,8 +47,7 @@ sections:
     description:markdown: |
       Die Herausforderung bei dieser Applikation bestand darin, die Eleganz, den Komfort und die Eigenschaften des Fahrzeugs verständlich zu präsentieren. Mehrsprachigkeit und die Unterstützung von Layout-Varianten für Märkte wie die Vereinigte Arabische Emirate waren aufgrund der Internationalität des Produkts unbedingt erforderlich. Da das Fahrzeug während der Entwicklungsphase der App noch streng geheim war, musste darüber hinaus eine sichere Datenhaltung gewährleistet werden.
 
-  -
-    component: "project-text"
+  - component: "project-text"
     anchorId: "bmw-awesome"
     orientation: "left"
     titleBefore: "How we made it "
@@ -60,18 +57,16 @@ sections:
       zero: "bmw-awesome.png"
     description:markdown: |
       Um das bestmögliche Ergebnis zu garantieren, entwickelten wir ein eigens angepasstes Datenmanagement-System. Dieses wird den Ansprüchen, der Datenvielfalt und dem Layout der App gerecht. Der BMW 7 Series Presenter ist eine iPad-App für den weltweiten Markt an BMW-Vertragshändlern. Interessierte Kunden erhalten exklusive Einblicke in den neuen BMW 7er. Durch verschiedene Themenbereiche und interaktive Inhalte vermittelt die App Informationen über die Produktion und Fahrzeugeigenschaften auf zehn verschiedenen Sprachen. Zudem erlaubt die App dem User das Eintauchen in die Welt des 7er BMW.
-  -
-    component: "content-quote"
+
+  - component: "content-quote"
     anchorId: "bmw-quote"
     source:markdown: |
       Gunther Janeck
       CoC Fuhrpark BMW Group
     content:markdown: |
-      Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend.
-      Großartig an der anfema ist neben der Qualität auch die Schnelligkeit, mit der sie Projekte verwirklicht.
-      Deshalb ist und bleibt sie einer unserer viel geschätzten Partner.
-  -
-    component: "project-technology"
+      Die Zusammenarbeit mit anfema verlief sowohl inhaltlich als auch in der Umsetzung hervorragend. Großartig an der anfema ist neben der Qualität auch die Schnelligkeit, mit der sie Projekte verwirklicht. Deshalb ist und bleibt sie einer unserer viel geschätzten Partner.
+
+  - component: "project-technology"
     anchorId: "bmw-technology"
     titleColored: "Technology"
     titleAfter: "we used"
@@ -79,9 +74,9 @@ sections:
       one: "technology-swift.png"
       two: "technology-apple.png"
     description:markdown: |
-      Die App wurde als Innovationsprodukt mit Swift für iOS entwickelt. Ein eigenes Server-Backend basierend auf Django garantiert eine schnelle und zuverlässige Auslieferung neuer Inhalte und kontrolliert die erforderlichen Sicherheitsmaßnahmen.
-  -
-    component: "contact"
+      Die App entwickelten wir als Innovationsprodukt für iOS in Swift. Ein eigenes, auf Django basierendes, Server-Backend garantiert schnelle und zuverlässige Auslieferung neuer Inhalte. So ist es möglich, die erforderlichen Sicherheitsmaßnahmen stets zu kontrollieren.
+
+  - component: "contact"
     subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,
