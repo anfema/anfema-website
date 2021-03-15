@@ -8,13 +8,11 @@ meta:
   img: "overview_IDnow.png"
   hidden: false
 sections:
-  -
-    component: "project-header"
+  - component: "project-header"
     img: "idnow-header.png"
     action:
       scrollDown: "Mehr erfahren"
-  -
-    component: "project-text"
+  - component: "project-text"
     anchorId: "idnow-intro"
     orientation: "left"
     titleColored: "IDnow"
@@ -24,10 +22,9 @@ sections:
       alignment: "horizontal"
       zero: "idnow-intro.png"
     description:markdown: |
-      Das Postident Verfahren ist von gestern. Das Münchner Startup Unternehmen IDnow hat sich auf eine digitale Lösung dieses Verfahrens spezialisiert, die den umfangreichen und teils komplizierten Prozess vereinfacht. So spart sich der Kunde von IDnow beispielsweise den lästigen Gang zur nächsten Postfiliale.
-      Das Online-Ident-Verfahren ist ein sicherer, offiziell anerkannter Standard zum Nachweis der eigenen Identität. Die benutzerfreundliche App sowie das eigens entwickelte SDK schaffen es, die Legitimations- und Identitätsprüfung ortsunabhängig, schneller und effektiver zu machen.
-  -
-    component: "project-icons"
+      Das Münchner Startup IDnow hat sich auf eine digitale Lösung des Postident Verfahrens spezialisiert. Diese vereinfacht den umfangreichen und komplizierten Prozess. Das Online-Ident-Verfahren gilt als sicherer und offiziell anerkannter Standard zum Nachweis der eigenen Identität. Die IDnow-App ist eine benutzerfreundliche Applikation. Gemeinsam mit dem eigens entwickelten SDK ist die Legitimations- und Identitätsprüfung ortsunabhängig, schneller und effektiver zu handhaben.
+
+  - component: "project-icons"
     anchorId: "idnow-icons"
     titleBefore: "It's all about the "
     titleColored: "Details"
@@ -37,9 +34,9 @@ sections:
       three: "idnow-details3.png"
       four: "idnow-details4.png"
     description:markdown: |
-      Entwicklung einer klaren, kundenspezifischen Bildsprache zur Unterstreichung des innovativen Characters des Unternehmens.
-  -
-    component: "project-text"
+      Entwicklung einer klaren, kundenspezifischen Bildsprache zur Unterstreichung des innovativen Charakters des Unternehmens.
+
+  - component: "project-text"
     anchorId: "idnow-challenge"
     orientation: "right"
     titleColored: "Challenge"
@@ -48,10 +45,9 @@ sections:
       one: "idnow-challenge-android.png"
       two: "idnow-challenge-iphone.png"
     description:markdown: |
-      Die Aufgabe bestand darin, das Online-Ident Verfahren userfreundlich und plattformunabhängig (für Smartphones, Tablets, PC und Laptops) umzusetzen.
-      Eine große Herausforderung in diesem Projekt war es, aufgrund der sensiblen Daten die höchste Sicherheit zu gewährleisten.
-  -
-    component: "project-text"
+      Die Aufgabe bestand darin, das Online-Ident Verfahren nutzerfreundlich und plattform-unabhängig (Smartphone, Tablet, Desktop) umzusetzen. Eine große Herausforderung in diesem Projekt war es, aufgrund der sensiblen Daten, die höchste Sicherheit zu gewährleisten.
+
+  - component: "project-text"
     anchorId: "idnow-awesome"
     orientation: "left"
     titleBefore: "How we made it "
@@ -60,18 +56,16 @@ sections:
       alignment: "horizontal"
       zero: "idnow-awesome.png"
     description:markdown: |
-      Das User Interface wurde mittels eines unkomplizierten Navigationskonzepts einfach und übersichtlich umgesetzt. So konnte der Identifizierungsprozess nochmals beschleunigt werden. Um zukünftigen Kunden eine hohe Integrierbarkeit anbieten zu können, wurde die Kernfunktionalität als Software Development Kit entwickelt. Somit können Kunden den Identifizierungsprozess einfach in ihre bestehenden Systeme einpflegen und direkt nutzen.
-      Zur Garantie größtmöglicher Sicherheit wurde eine Kombination zahlreicher plattformabhängiger und -übergreifender Komponenten (unter anderen Code Obfuscation, das Unterbinden von Caching oder Mitlesen von Eingaben und die Verschlüsselung aller API Requests) eingesetzt.
-  -
-    component: "content-quote"
+      Das User Interface setzten wir mit einem unkomplizierten Navigationskonzept um. Gleichzeitig beschleunigten wir den Identifizierungs-Prozess. Um zukünftigen Kunden eine hohe Integrierbarkeit anzubieten, entwickelten wir die Kernfunktionalität als Software Development Kit. Somit ist der Identifizierungs-Prozess vom Kunden selbst in bestehende Systeme einpflegbar und direkt nutzbar. Zur Garantie größtmöglicher Sicherheit wurde eine Kombination zahlreicher plattformabhängiger und -übergreifender Komponenten eingesetzt. Beispielsweise "Code Obfuscation", das Unterbinden von Caching oder Mitlesen von Eingaben und die Verschlüsselung aller API Requests.
+  - component: "content-quote"
     anchorId: "idnow-quote"
     source:markdown: |
       Sebastian Bärhold
       Managing Director & Co-Founder, IDnow GmbH
     content:markdown: |
       anfemas Lösung besticht durch maximale Usability. Euer Team hat genau verstanden, was wir, die Agenten und die Nutzer brauchen, dies zielführend umgesetzt und hat damit maßgeblich zur Verwirklichung und Effizienz unserer Idee beigetragen.
-  -
-    component: "project-technology"
+
+  - component: "project-technology"
     anchorId: "idnow-technology"
     titleColored: "Technology"
     titleAfter: "we used"
@@ -79,9 +73,9 @@ sections:
       one: "technology-android.png"
       two: "technology-apple.png"
     description:markdown: |
-      Die Apps und das Software Development Kit wurden nativ unter Android und iOS entwickelt. Die Kommunikation zwischen den Apps und den Agenten während des Videoprozesses wird mit Hilfe von WebSockets umgesetzt, während für die bidirektionale Audio- und Videoübertragung während des Prozesses Icelink WebRTC eingesetzt wird.
-  -
-    component: "contact"
+      Die Apps und das Software Development Kit entwickelten wir nativ für Android und iOS. Die Kommunikation zwischen den Apps und den Agenten während des Videoprozesses realisierten wir mithilfe von WebSockets. Für die bidirektionale Audio- und Videoübertragung des Prozesses nutzen wir Icelink WebRTC.
+
+  - component: "contact"
     subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,

@@ -8,13 +8,11 @@ meta:
   img: "overview_tods.png"
   hidden: false
 sections:
-  -
-    component: "project-header"
+  - component: "project-header"
     img: "tods-header.png"
     action:
       scrollDown: "More"
-  -
-    component: "project-text"
+  - component: "project-text"
     anchorId: "tods-intro"
     orientation: "left"
     titleColored: "Tod's"
@@ -25,8 +23,8 @@ sections:
       zero: "tods-intro.png"
     description:markdown: |
       TOD’s is an Italian shoe and leather goods manufacturer renowned for remarkable craftsmanship and quality. The idea of the “TOD’S Custom Made” app is to enable in-store configuration of personalised shoes: Together with a store assistant customers can create individual shoes according to their taste, and order them subsequently. Designed to act as an interactive shopping assistant, the TOD’S app reflects the brand’s lifestyle and their products’ supreme quality, and provides interesting details about the brand and its history. Characterised by fast performance and ease of use, the app supports the shop assistant on location and facilitates a convenient shopping experience.
-  -
-    component: "project-text"
+
+  - component: "project-text"
     anchorId: "tods-challenge"
     orientation: "right"
     titleColored: "Challenge"
@@ -36,8 +34,8 @@ sections:
       two: "tods-challenge-ipad2.png"
     description:markdown: |
       The challenging part about this project was to develop a storage space efficient yet high-performance solution that can reproduce 16 million different shoe configurations in one app. Moreover, all content must be available without existing internet connection so that shoes can be configured and ordered offline.
-  -
-    component: "project-text"
+
+  - component: "project-text"
     anchorId: "tods-awesome"
     orientation: "left"
     titleBefore: "How we made it "
@@ -48,16 +46,16 @@ sections:
     description:markdown: |
       In order to guarantee the app’s offline functionality, all required data is downloaded to the device upon the first login. The image file format WebP proved to be an ideal solution where storage space on iPads wasn’t sufficient to support alternative formats.
       Even purchase orders can be created offline, are saved locally on the device and transmitted as soon as an internet connection is established. Apart from that, connection to the internet is only necessary for updates of prices and the addition of new models.
-  -
-    component: "content-quote"
+
+  - component: "content-quote"
     anchorId: "tods-quote"
     source:markdown: |
       Sebastian André Borowski
       Program Manager, Dassault Systèmes 3DEXCITE
     content:markdown: |
-      I would like to use this opportunity to congratulate and thank each of you for your brainwork, effort and - most importantly - your ‘priceless cool’, i.e. your patience and continuous motivation. Once again, thank you very much for your endless effort!
-  -
-    component: "project-technology"
+      I would like to use this opportunity to congratulate and thank each of you for your brain work, effort and - most importantly - your ‘priceless cool’, i.e. your patience and continuous motivation. Once again, thank you very much for your endless effort!
+
+  - component: "project-technology"
     anchorId: "tods-technology"
     titleColored: "Technology"
     titleAfter: "we used"
@@ -65,9 +63,9 @@ sections:
       one: "technology-apple.png"
       two: "technology-swift.png"
     description:markdown: |
-      The app was developed in Swift and exclusively for Apple iPads. A server component based on ASP.NET provides the required data and manages purchase orders and configurations. Anticipatory planning and the respective set-up of the data structure facilitate the system’s easy extension by further product categories and models at any time.
-  -
-    component: "contact"
+      We implemented the app exclusively for Apple iPads in Swift. A server component based on ASP.NET provides the required data and manages orders and configurations. Through appropriate planning and creation of the data structure, the system can be easily expanded at any time to include new product categories and models.
+
+  - component: "contact"
     subject: "Information about the project"
     body: |
       Hello anfema team,

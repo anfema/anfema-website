@@ -14,13 +14,11 @@ meta:
   img: "overview_msp.png"
   hidden: false
 sections:
-  -
-    component: "project-header"
+  - component: "project-header"
     img: "msp-header.png"
     action:
       scrollDown: "More"
-  -
-    component: "project-text"
+  - component: "project-text"
     anchorId: "msp-intro"
     orientation: "left"
     titleColored: "MYSTAFFPILOT"
@@ -30,10 +28,11 @@ sections:
       alignment: "horizontal"
       zero: "msp-intro.png"
     description:markdown: |
-      Taking a high-quality approach, POOL. DIE AGENTUR. is one of the leading promotion agencies in the German-speaking region. For 30 years, they have been offering professionally managed promotions based on customised concepts.
-      In cooperation with the client, anfema developed the promoter platform MYSTAFFPILOT, which we have been servicing and extending ever since. The compiled solution comprises a public Android app and a public web portal for promoters as well as an internal application. This combination covers the agency’s extensive processes – from future promoters’ recruiting processes, to the scheduling of all assignments and respective staff, to invoicing. Thousands of people use the system on a regular basis.
-  -
-    component: "project-text"
+      Staffpilot GmbH provides a portal for agencies with promotions. This enables the handling of promotion orders for the agency side as well as for the self-employed a great all-round service.
+
+      In close cooperation with Staffpilot GmbH we developed the promoter platform MYSTAFFPILOT. Since then, we have been maintaining and expanding this platform.The developed solution includes a public Android and iOS app, a web portal for promoters, as well as an internal application. This makes it possible to fully cover the extensive processes: from the recruitment process of future promoters to appointment management of all orders and deployed personnel, to invoicing. Several thousand users use the system on a regular basis.
+
+  - component: "project-text"
     anchorId: "msp-challenge"
     orientation: "right"
     titleColored: "Challenge"
@@ -42,10 +41,9 @@ sections:
       one: "msp-challenge-ipad1.png"
       two: "msp-challenge-ipad2.png"
     description:markdown: |
-      The main challenge in the MYSTAFFPILOT project is the mapping of existing processes and the developing of new processes in the digital platform. Numerous and frequent changes of requirements for, and demands on the system entail the platform’s constant extension, at all times ensuring its existing functionality.
-      Still, data security must be held dear as various groups of people (promoters, in-house staff and the agency’s clients) do have access to the platform which processes personal, private, public and internal data.
-  -
-    component: "project-text"
+      The biggest challenge in this project is the mapping of existing and the development of new processes of the customer. Due to requirements and demands on the system, we are making more and more changes. As a result, we are constantly expanding the platform and equipping it with new functionalities. Data security is the top priority: different groups of people (promoters, office staff, customers of the customer) have access to the platform. Consequently, personal, private, public, and internal data are processed in the platform.
+
+  - component: "project-text"
     anchorId: "msp-awesome"
     orientation: "left"
     titleBefore: "How we made it "
@@ -55,19 +53,19 @@ sections:
       one: "msp-awesome-android.png"
       two: "msp-awesome-iphone.png"
     description:markdown: |
-      The crucial factor for the system’s successful conceptual design and its implementation is the close collaboration with our client. Personal customer advisory service by technically adept project managers enabled the design of an individual, technical solution that meets the client’s every requirement. Furthermore, the developed system allows the continuing expansion and add-on of new, tailor-made features.
-  -
-    component: "content-quote"
+      The key factor for the successful design and implementation of the system is the close cooperation with the customer. Personal customer support by experienced project managers led to an individual, technical solution. The platform, which is completely customized to the customer's wishes, continues to allow for the constant expansion and integration of new as well as customized features.
+
+  - component: "content-quote"
     anchorId: "msp-quote"
     source:markdown: |
       Iris Naudßus
       Member of the Executive Board, STAFFPILOT GmbH
     content:markdown: |
       We approached anfema with a very complex task: Programming a platform that offers our agency partners and clients a complete service for handling promotion jobs.
-    contentSmall:markdown: |
+    contentSmall: |
       anfema does not have the phrases "doesn't work", "doesn't exist" in its portfolio. Therefore, we have a platform that meets our requirements as of today and provides our agency partners and customers with this complete service! Short-term changes and extensions are implemented with great consideration! We are happy to have anfema at our side as a longstanding service provider.
-  -
-    component: "project-technology"
+
+  - component: "project-technology"
     anchorId: "msp-technology"
     titleColored: "Technology"
     titleAfter: "we used"
@@ -75,10 +73,11 @@ sections:
       one: "technology-django.png"
       two: "technology-postgresql.png"
     description:markdown: |
-      The development of the platform’s backend is based on a combination of the well-established Django framework and a PostgreSQL database. This union fulfills the requirements for data volume and data security, and allows for the platform’s agile and continuous development. The end user’s front end comprises the mystaffpilot.de website and a native Android app. In-house staff uses a modern single-page web application based on Ember.js.
-      One of the system’s fundamental components is anfema’s in-house developed product Cosworth, a reporting tool with export functionality. Cosworth allows the processing of data outside of the system, for example in accounting. Thanks to multiple test and staging servers, we regularly develop and publish updates without interfering with the system’s ongoing operation.
-  -
-    component: "contact"
+      For the development of the backend of the platform, we rely on the established Django framework together with a PostgreSQL database. Thus, we perfectly cope with demands regarding data volumes, security and agile, continuous development. The frontend for end users consists of the mystaffpilot.de website and a native Android/iOS app. In-house staff works in the system with a modern single-page web application based on Ember.js.
+
+      The fundamental component of the system is Cosworth, an export-functional reporting tool developed by anfema. Cosworth allows data to be processed outside the system, for example in accounting. Thanks to multiple test and staging servers, we develop and release regular updates without disrupting ongoing operations.
+
+  - component: "contact"
     subject: "Information about the project"
     body: |
       Hello anfema team,

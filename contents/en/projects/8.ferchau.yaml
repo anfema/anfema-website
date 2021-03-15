@@ -8,13 +8,11 @@ meta:
   img: "overview_ferchau.png"
   hidden: false
 sections:
-  -
-    component: "project-header"
+  - component: "project-header"
     img: "ferchau-header.png"
     action:
       scrollDown: "More"
-  -
-    component: "project-text"
+  - component: "project-text"
     anchorId: "ferchau-intro"
     orientation: "left"
     titleColored: "Ferchau"
@@ -24,9 +22,11 @@ sections:
       alignment: "horizontal"
       zero: "ferchau-intro.png"
     description:markdown: |
-      Engineering right at your fingertips: The Augmented Reality App enables the exploring of seven 3D models out of FERCHAU’s diverse technical service portfolio. In order to animate the virtual helicopter, ship or robot arm, special markers are scanned using a phone’s or tablet’s camera. It is on those markers that the models come to life amidst the user’s direct environment. Interactively informing about their innovations, FERCHAU’s app delivers impressive insights into the company’s product range.
-  -
-    component: "project-text"
+      Hands-on technology: With the augmented reality app, seven 3D models from FERCHAU's diverse range of technical services can be discovered from all perspectives. In order to animate the virtual helicopter, ship or robot arm, special markers are scanned via phone or tablet camera.
+
+      The markers are integrated into the currently captured image of the direct environment. The markers can be used to capture various different virtual models. The app thus provides impressive insights into FERCHAU's world of work and products. It provides interactive information about the areas in which the company is active.
+
+  - component: "project-text"
     anchorId: "ferchau-challenge"
     orientation: "right"
     titleColored: "Challenge"
@@ -36,8 +36,8 @@ sections:
       two: "ferchau-challenge-ipad2.png"
     description:markdown: |
       The FERCHAU app demanded a particularly detailed and realistic demonstration of the 3D models at a high frame rate. In addition, reliable and fast tracking of the applied markers is indispensable for the creation of the three-dimensional objects.
-  -
-    component: "project-text"
+
+  - component: "project-text"
     anchorId: "ferchau-awesome"
     orientation: "left"
     titleBefore: "How we made it "
@@ -46,17 +46,17 @@ sections:
       alignment: "horizontal"
       zero: "ferchau-awesome.png"
     description:markdown: |
-      Thanks to a combination of the powerful 3D-engine Unity3D with specially aligned shaders, the app’s visual performance is consistently high. Reliable and high-performance tracking of the markers is enabled by the Augmented Reality SDK of the worldwide leading AR platform Vuforia. Granting a maximum of creative freedom, Vuforia also allowed for a characteristic design of the 3D models that reflects the brand FERCHAU.
-  -
-    component: "content-quote"
+      Thanks to a combination of the powerful 3D-engine Unity3D with specially aligned shaders, the app’s visual performance is consistently high. We used the Augmented Reality SDK, of the worldwide leading AR platform Vuforia. Thereby reliable and high-performance tracking of the markers is enabled. Vuforia allows a characteristic design of the 3D models and a maximum of creative freedom. With this, the app can perfectly reflects the brand FERCHAU.
+
+  - component: "content-quote"
     anchorId: "ferchau-quote"
     source:markdown: |
       Martin Spengler
       Creative Technologist LAB BINÆR GBR
     content:markdown: |
       We very much appreciate that you are incredible geniuses and do completely base our concepts on your know-how.
-  -
-    component: "project-technology"
+
+  - component: "project-technology"
     anchorId: "ferchau-technology"
     titleColored: "Technology"
     titleAfter: "we used"
@@ -65,8 +65,8 @@ sections:
       two: "technology-apple.png"
     description:markdown: |
       In order to reach as large an audience as possible, the native app was developed in Swift for iOS (universal for iPhones, iPads and iPod Touch) and for Android phones and tablets. In combination, the game engine Unity 3D and the AR SDK Vuforia serve as the app’s basis. Being the international industry leader, Unity 3D provides optimal shading and high-performance rendering. Hence, it enables the construction of realistic animations and their embedding in the real world in real time.
-  -
-    component: "contact"
+
+  - component: "contact"
     subject: "Information about the project"
     body: |
       Hello anfema team,
