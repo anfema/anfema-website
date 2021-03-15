@@ -7,7 +7,7 @@ meta:
   overviewBig: false
   introMessage: |
     anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell!
-  img: "overview_knauf.png"
+  img: "overview_knaufLookbook.png"
   hidden: false
 sections:
   -

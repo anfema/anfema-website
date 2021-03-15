@@ -7,7 +7,7 @@ meta:
   overviewBig: false
   introMessage: |
     In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
-  img: "overview_paulaner.png"
+  img: "overview_bcg.png"
   hidden: false
 sections:
   - component: "project-header"
