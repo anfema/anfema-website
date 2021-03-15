@@ -7,7 +7,7 @@ meta:
   overviewBig: false
   introMessage: |
     anfema know what they do, how to do it, and they do it damn fast.
-  img: "overview_knauf.png"
+  img: "overview_knaufLookbook.png"
   hidden: false
 sections:
   - component: "project-header"

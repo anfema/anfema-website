@@ -8,7 +8,7 @@ meta:
   introMessage: |
     anfema know what they do, how to do it, and they do it damn fast.
     One of the best partners in app development I’ve ever seen.
-  img: "overview_paulaner.png"
+  img: "overview_knaufAroom.png"
   hidden: false
 sections:
   - component: "project-header"
