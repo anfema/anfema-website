@@ -1,5 +1,34 @@
-<div class="project-text__content content">
-	{{{data.content}}}
+<div class="project-text project-text--{{data.orientation}}">
+	<div class="project-text__title">
+		<h2>
+			<span>{{data.titleBefore}}</span>
+			<span class="color--{{meta.id}}">{{data.titleColored}}</span>
+			<span>{{data.titleAfter}}</span>
+		</h2>
+		<p>{{data.subTitle}}</p>
+	</div>
+
+	<div class="project-text__img project-text--{{data.img.alignment}}">
+		{{#if data.img.zero}}
+			<div>
+				{{responsive-image image=data.img.zero}}
+			</div>
+		{{/if}}
+		{{#if data.img.one}}
+			<div class="project-text__img-one">
+				{{responsive-image image=data.img.one}}
+			</div>
+		{{/if}}
+		{{#if data.img.two}}
+			<div class="project-text__img-two">
+				{{responsive-image image=data.img.two}}
+			</div>
+		{{/if}}
+	</div>
+
+	<div class="project-text__description">
+		<p>{{{data.description}}}</p>
+	</div>
 </div>
 
 {{yield}}

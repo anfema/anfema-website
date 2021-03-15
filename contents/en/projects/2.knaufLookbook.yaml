@@ -1,0 +1,79 @@
+meta:
+  color: "#F97E33"
+  client: "Knauf"
+  title: "Lookbook"
+  id: "knaufLookbook"
+  span: March 2015 to date
+  overviewBig: false
+  introMessage: |
+    anfema know what they do, how to do it, and they do it damn fast.
+  img: "overview_knauf.png"
+  hidden: false
+sections:
+  -
+    component: "project-header"
+    img: "knauf-lookbook-header.png"
+    action:
+      scrollDown: "More"
+  -
+    component: "project-text"
+    anchorId: "knauf-intro"
+    orientation: "left"
+    titleColored: "Knauf AMF"
+    titleAfter: "Lookbook App"
+    subTitle: "2015 - today"
+    img:
+      alignment: "horizontal"
+      zero: "knauf-lookbook-intro.png"
+    description:markdown: |
+      Knauf AMF is one of the leading manufacturers of innovative ceiling systems worldwide. For an adequate presentation of their wide range of customised and extraordinary system solutions, anfema designed a universal application for tablets and phones, developed in native code for both Android and iOs. Elaborate photographs illustrate impressive architectural projects that were realised in cooperation with Knauf AMF across diverse industries. One of the app’s particularly characteristic features, the 360 degree view, provides the user with an exceptional and comprehensive spatial perception.
+  -
+    component: "project-text"
+    anchorId: "knauf-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
+    img:
+      alignment: "horizontal"
+      one: "knauf-lookbook-challenge-ipad1.png"
+      two: "knauf-lookbook-challenge-ipad2.png"
+    description:markdown: |
+      The challenge in this project was to create a highly informative application, which is well-arranged and easy to use. Allowing the premium photographs to tell their own tale, we intended to use the fewest possible visual control elements. Additionally, it had to be kept in mind that all features would also have to be functional and operable on static presentation displays, e.g. at trade fairs.
+  -
+    component: "project-text"
+    anchorId: "knauf-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
+    img:
+      alignment: "horizontal"
+      zero: "knauf-lookbook-awesome.png"
+    description:markdown: |
+      Based on the clever construction of a canvas grid system, the Knauf AMF Lookbook relies on intuitive gestural control and uses only few graphic control elements. Throughout the course of the project, this grid was extended in order to enable the integration of additional features and applications. Most noteworthy are the implementation of a sample order section and a special version of the 360 degree view for projects. Operable by both motion and one finger drag, the 360 degree view can also be controlled on static devices, and enables users to experience Knauf AMF’s product range.
+  -
+    component: "content-quote"
+    anchorId: "knauf-quote"
+    source:markdown: |
+      Dominik Mandl
+      Online Marketing Manager Knauf AMF GmbH & Co. KG
+    content:markdown: |
+      anfema know what they do, how to do it, and they do it damn fast.
+      One of the best partners in app development I’ve ever seen.
+  -
+    component: "project-technology"
+    anchorId: "knauf-technology"
+    titleColored: "Technology"
+    titleAfter: "we used"
+    img:
+      one: "technology-android.png"
+      two: "technology-apple.png"
+    description:markdown: |
+      The Knauf AMF Lookbook app is dynamically populated by ION, and stands out because of its high performance. anfema’s in-house developed content management system ION enables the client to easily conduct profound changes in the application’s structure and its information content. In addition, data can be locally saved so that the app can also be used offline. In order to generate the 360 degree view, spherical panoramas are projected onto the inner surface of a ball, which can be rotated by the user.
+  -
+    component: "contact"
+    subject: "Information about the project"
+    body: |
+      Hello anfema team,
+      I just had a look at your page about the {{projectInfo}} project.
+      I would love to learn more about it and get in touch with you.
+
+      With kind regards

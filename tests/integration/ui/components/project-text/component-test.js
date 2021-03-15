@@ -1,27 +1,19 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { find } from 'ember-native-dom-helpers';
 
-describe('Integration | Component | project text', function() {
-	setupComponentTest('project-text', {
-		integration: true,
-	});
+module('Integration | Component | project-text', function(hooks) {
+	setupRenderingTest(hooks);
 
-	const data = {
-		content: 'foo',
-	};
+	test('it renders', async function(assert) {
+		this.set('data', {
+			orientation: 'left',
+		});
 
-	beforeEach(function() {
-		this.set('data', data);
-	});
+		await render(hbs`{{project-text data=data}}`);
 
-	it('renders', function() {
-		this.render(hbs`
-			{{project-text data=data}}
-		`);
-
-		expect(find('.project-text').innerText).to.contain(data.content);
+		assert.dom('.project-text--left').exists();
+		/* assert.dom('.project-text').containsText('foo'); */
 	});
 });

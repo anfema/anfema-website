@@ -1,7 +1,7 @@
-import { easeInOut, expoEaseIn, expoEaseOut } from './easing';
 import * as animation from './animation';
+import { clearCanvas, computeScaleFactor, updateCanvas } from './canvas';
+import { easeInOut, expoEaseIn, expoEaseOut } from './easing';
 import { defaultOptions } from './options';
-import { computeScaleFactor, updateCanvas, clearCanvas } from './canvas';
 var State;
 (function(State) {
 	State[(State['Stopped'] = 0)] = 'Stopped';
@@ -173,7 +173,8 @@ export class AnfemaLogo {
 			case StepDirection.Forward:
 				return AnimationDirection.Forward;
 			case StepDirection.Shortest:
-				return mod(this.currentStep - toStep, this.numSteps) < mod(toStep - this.currentStep, this.numSteps)
+				return mod(this.currentStep - toStep, this.numSteps) <
+					mod(toStep - this.currentStep, this.numSteps)
 					? AnimationDirection.Backward
 					: AnimationDirection.Forward;
 		}
@@ -198,7 +199,9 @@ export class AnfemaLogo {
 		const prevState = this.currentState;
 		this.currentState = this.nextState ? this.nextState : state;
 		this.nextState = undefined;
-		this.currentAnimationProps = this.nextAnimationProps ? this.nextAnimationProps : this.currentAnimationProps;
+		this.currentAnimationProps = this.nextAnimationProps
+			? this.nextAnimationProps
+			: this.currentAnimationProps;
 		this.nextAnimationProps = undefined;
 		if (prevState !== this.currentState) {
 			this.startTime = undefined;
@@ -206,7 +209,8 @@ export class AnfemaLogo {
 				clearTimeout(this.timeoutId);
 			}
 			if (this.currentState === State.LoopingWaiting) {
-				const delay = this.currentStep === 0 ? this.options.loopDelay : this.options.stepDelay;
+				const delay =
+					this.currentStep === 0 ? this.options.loopDelay : this.options.stepDelay;
 				this.timeoutId = setTimeout(() => {
 					this.transitionToEnqueuedStateOr(State.LoopingAnimating);
 					this.scheduleRender();
@@ -222,7 +226,7 @@ export class AnfemaLogo {
 	}
 }
 function mod(n, m) {
-	return (n % m + m) % m;
+	return ((n % m) + m) % m;
 }
 function clamp(p) {
 	return p < 1.0 ? p : 1.0;

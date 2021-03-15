@@ -1,0 +1,41 @@
+<div class="project-icons__title">
+	<h2>
+		<span>{{data.titleBefore}}</span>
+		<span class="color--{{meta.id}}">{{data.titleColored}}</span>
+		<span>{{data.titleAfter}}</span>
+	</h2>
+</div>
+
+	<div class="project-icons__img">
+		<div class="project-icons__img-row">
+			{{#if data.img.one}}
+				<div>
+					{{responsive-image image=data.img.one}}
+				</div>
+			{{/if}}
+			{{#if data.img.two}}
+				<div>
+					{{responsive-image image=data.img.two}}
+				</div>
+			{{/if}}
+		</div>
+		<div class="project-icons__img-row">
+			{{#if data.img.three}}
+				<div>
+					{{responsive-image image=data.img.three}}
+				</div>
+			{{/if}}
+			{{#if data.img.four}}
+				<div>
+					{{responsive-image image=data.img.four}}
+				</div>
+			{{/if}}
+		</div>
+	</div>
+
+
+<div class="project-icons__description">
+	<p>{{{data.description}}}</p>
+</div>
+
+{{yield}}

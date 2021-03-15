@@ -1,0 +1,56 @@
+.contact {
+	@include grid-base;
+	@include offset-content-bottom;
+	@include offset-content-top;
+
+	overflow: visible;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	background-image: inline-svg(
+		'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+			<g fill="none">
+				<polygon fill="#ffca27" points="0 0 0 500 700 500 450 80 0 0"/>
+				<polygon fill="#ffb200" points="0 20 0 500 100 500 0 20"/>
+            </g>
+		</svg>'
+	);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__content {
+		grid-column: 1 / span 4;
+	}
+
+	&__description {
+		margin-bottom: 4rem;
+	}
+
+	&__button {
+		width: auto;
+		padding: 1.4rem;
+		color: $color-brand-2;
+		border: 2px solid $color-brand-2;
+		text-decoration: none;
+		background-color: $color-background;
+	}
+
+	@include media-medium-min {
+		padding-top: 12rem;
+		padding-bottom: 10rem;
+
+		&__content {
+			grid-column: 2 / span 8;
+		}
+	}
+
+	@include media-xlarge-min {
+		background-image: inline-svg(
+			'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 500">
+				<g fill="none">
+					<polygon fill="#ffca27" points="0 0 0 500 2100 500 1650 80 0 0"/>
+					<polygon fill="#ffb200" points="0 10 0 500 300 500 0 10"/>
+				</g>
+			</svg>'
+		)
+	}
+}

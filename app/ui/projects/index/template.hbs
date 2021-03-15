@@ -1,16 +1,10 @@
-{{title model.title}}
-
 {{#page-overlay}}
 	{{#page-menu forceOpaque=true class="page-menu--flat"}}
 		<header>
-			{{t 'projects.title'}}
+			<a href="#{{projects}}" onclick={{action "scrollToTop"}}>
+				{{t "projects.title"}}
+			</a>
 		</header>
-
-		<ul>
-			<li>
-				{{#link-to 'language'}}{{t 'projects.index.nav.back'}}{{/link-to}}
-			</li>
-		</ul>
 	{{/page-menu}}
 
 	{{projects-list projects=model.files}}

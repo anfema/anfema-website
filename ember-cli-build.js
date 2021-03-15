@@ -10,10 +10,15 @@ module.exports = function(defaults) {
 			extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'woff', 'woff2', 'eot'],
 			replaceExtensions: ['html', 'css', 'js', 'xml'],
 		},
+		'ember-cli-terser': {
+			enabled: true,
 
-		'ember-cli-uglify': {
 			exclude: ['contents/fastboot-data.js'],
 		},
+
+		// 'ember-cli-uglify': {
+		// 	exclude: ['contents/fastboot-data.js'],
+		// },
 
 		postcssOptions: {
 			compile: {

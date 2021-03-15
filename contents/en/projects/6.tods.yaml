@@ -1,75 +1,77 @@
 meta:
-  color: '#342524'
+  color: "#342524"
   client: "TOD’S"
-  title: 'Shoe Configurator App'
-  id: 'tods'
-  span: 'June 2015 to date'
+  title: "Configurator"
+  id: "tods"
+  span: "June 2015 to date"
+  overviewBig: false
+  img: "overview_tods.png"
+  hidden: false
 sections:
   -
-    component: 'project-cover'
-    img: 'tods-cover.jpg'
-    title: 'TOD’S Shoe Configurator'
+    component: "project-header"
+    img: "tods-header.png"
+    action:
+      scrollDown: "More"
   -
-    component: 'project-text'
-    assignmentText: true
-    content: |
-      <h3>Assignment</h3>
+    component: "project-text"
+    anchorId: "tods-intro"
+    orientation: "left"
+    titleColored: "Tod's"
+    titleAfter: "Shoe Configurator App"
+    subTitle: "2015 - today"
+    img:
+      alignment: "horizontal"
+      zero: "tods-intro.png"
+    description:markdown: |
+      TOD’s is an Italian shoe and leather goods manufacturer renowned for remarkable craftsmanship and quality. The idea of the “TOD’S Custom Made” app is to enable in-store configuration of personalised shoes: Together with a store assistant customers can create individual shoes according to their taste, and order them subsequently. Designed to act as an interactive shopping assistant, the TOD’S app reflects the brand’s lifestyle and their products’ supreme quality, and provides interesting details about the brand and its history. Characterised by fast performance and ease of use, the app supports the shop assistant on location and facilitates a convenient shopping experience.
+  -
+    component: "project-text"
+    anchorId: "tods-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
+    img:
+      alignment: "horizontal"
+      one: "tods-challenge-ipad1.png"
+      two: "tods-challenge-ipad2.png"
+    description:markdown: |
+      The challenging part about this project was to develop a storage space efficient yet high-performance solution that can reproduce 16 million different shoe configurations in one app. Moreover, all content must be available without existing internet connection so that shoes can be configured and ordered offline.
+  -
+    component: "project-text"
+    anchorId: "tods-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
+    img:
+      alignment: "horizontal"
+      zero: "tods-awesome.png"
+    description:markdown: |
+      In order to guarantee the app’s offline functionality, all required data is downloaded to the device upon the first login. The image file format WebP proved to be an ideal solution where storage space on iPads wasn’t sufficient to support alternative formats.
+      Even purchase orders can be created offline, are saved locally on the device and transmitted as soon as an internet connection is established. Apart from that, connection to the internet is only necessary for updates of prices and the addition of new models.
+  -
+    component: "content-quote"
+    anchorId: "tods-quote"
+    source:markdown: |
+      Sebastian André Borowski
+      Program Manager, Dassault Systèmes 3DEXCITE
+    content:markdown: |
+      I would like to use this opportunity to congratulate and thank each of you for your brainwork, effort and - most importantly - your ‘priceless cool’, i.e. your patience and continuous motivation. Once again, thank you very much for your endless effort!
+  -
+    component: "project-technology"
+    anchorId: "tods-technology"
+    titleColored: "Technology"
+    titleAfter: "we used"
+    img:
+      one: "technology-apple.png"
+      two: "technology-swift.png"
+    description:markdown: |
+      The app was developed in Swift and exclusively for Apple iPads. A server component based on ASP.NET provides the required data and manages purchase orders and configurations. Anticipatory planning and the respective set-up of the data structure facilitate the system’s easy extension by further product categories and models at any time.
+  -
+    component: "contact"
+    subject: "Information about the project"
+    body: |
+      Hello anfema team,
+      I just had a look at your page about the {{projectInfo}} project.
+      I would love to learn more about it and get in touch with you.
 
-      <p>TOD’s is an Italian shoe and leather goods manufacturer renowned for remarkable craftsmanship and quality.
-      The idea of the “TOD’S Custom Made” app is to enable in-store configuration of personalised shoes: Together with
-      a store assistant customers can create individual shoes according to their taste, and order them subsequently.
-      Designed to act as an interactive shopping assistant, the TOD’S app reflects the brand’s lifestyle and their
-      products’ supreme quality, and provides interesting details about the brand and its history. Characterised by
-      fast performance and ease of use, the app supports the shop assistant on location and facilitates a convenient
-      shopping experience.</p>
-  -
-      component: 'content-quote'
-      source: 'Sebastian André Borowski, Program Manager, Dassault Systèmes 3DEXCITE, our partner in the TOD’s project'
-      content: |
-        <p>I would like to use this opportunity to congratulate and thank each of you for your brainwork, effort and -
-        most importantly - your ‘priceless cool’, i.e. your patience and continuous motivation. Once again, thank you
-        very much for your endless effort!</p>
-  -
-    component: 'project-text'
-    content: |
-      <h3>Challenge</h3>
-
-      <p>The challenging part about this project was to develop a storage space efficient yet high-performance
-      solution that can reproduce 16 million different shoe configurations in one app. Moreover, all content must
-      be available without existing internet connection so that shoes can be configured and ordered offline.</p>
-  -
-    component: 'content-project-triptych'
-    useAlternateColor: true
-    images:
-      - 'tods-triptych-3.jpg'
-      - 'tods-triptych-1.jpg'
-      - 'tods-triptych-2.jpg'
-  -
-    component: 'project-text'
-    content: |
-      <h3>Solution</h3>
-
-      <p>In order to guarantee the app’s offline functionality, all required data is downloaded to the device upon
-      the first login. The image file format WebP proved to be an ideal solution where storage space on iPads wasn’t
-      sufficient to support alternative formats. Even purchase orders can be created offline, are saved locally on the
-      device and transmitted as soon as an internet connection is established. Apart from that, connection to the
-      internet is only necessary for updates of prices and the addition of new models.</p>
-  -
-    component: 'content-project-gallery'
-    defaults:
-      width: 584
-      height: 438
-    images:
-      - 'tods-gallery-1.jpg'
-      - 'tods-gallery-2.jpg'
-      - 'tods-gallery-3.jpg'
-      - 'tods-gallery-4.jpg'
-  -
-    component: 'project-text'
-    content: |
-      <h3>Technology</h3>
-
-      <p>The app was developed in Swift and exclusively for Apple iPads. A server component based on ASP.NET provides
-      the required data and manages purchase orders and configurations. Anticipatory planning and the respective set-up
-      of the data structure facilitate the system’s easy extension by further product categories and
-      models at any time.</p>
+      With kind regards

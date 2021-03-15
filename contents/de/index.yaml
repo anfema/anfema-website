@@ -1,16 +1,14 @@
 sections:
-  -
-    component: 'content-lp-cover'
-    headline: 'striving for perfection'
+  - component: "content-lp-cover"
+    headline: "striving for perfection"
     subtitle: |
       anfema ist ein außergewöhnliches Team, das mit Begeisterung individuelle und hervorragende digitale
       Lösungen erstellt.
 
-  -
-    component: 'content-lp-text'
-    anchorId: 'philosophie'
-    anchorLabel: '1'
-    sectionLabel: '01'
+  - component: "content-lp-text"
+    anchorId: "philosophie"
+    anchorLabel: "1"
+    sectionLabel: "01"
     title: Wir verstehen unsere Kunden wie kein Anderer
     content: |
       <p>Von pauschalen Ansätzen halten wir nichts. Wir wollen uns in Ihre Prozesse und Bedürfnisse eindenken, bevor
@@ -26,19 +24,17 @@ sections:
       <p>anfema steht für die unfassbar gute Arbeit, die wir aufgrund der vielfältigen Erfahrungen und der
       fachübergreifenden Kompetenzen unseres Teams liefern.</p>
 
-  -
-    component: 'content-quote'
+  - component: "content-quote"
     content: |
-     anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in
-     der App Entwicklung, denen ich je begegnet bin.
+      anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in
+      der App Entwicklung, denen ich je begegnet bin.
     source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
     projectId: knauf
 
-  -
-    component: 'content-lp-text'
-    anchorId: 'leistungen'
-    anchorLabel: '2'
-    sectionLabel: '02'
+  - component: "content-lp-text"
+    anchorId: "leistungen"
+    anchorLabel: "2"
+    sectionLabel: "02"
     title: Innovation. Begeisterung. Dynamik. Zusammenhalt. Hingabe. Vielfältigkeit. Qualität.
     content: |
       <p>Unsere Leistungen bestechen durch Qualität und Design, unser Team durch die tiefgreifende Expertise, in der
@@ -47,100 +43,88 @@ sections:
       <p>Während wir intern auf bewährte Workflows zurückgreifen, setzen wir im Projektmanagement weiterhin auf
       Kundennähe, Flexibilität und Individualität und schaffen damit Überragendes! </p>
 
-  -
-    id: 'services'
-    component: 'content-lp-services'
+  - id: "services"
+    component: "content-lp-services"
     services:
-      -
-        id: 'concept'
-        title: 'Prozesse vereinfachen, Nutzen maximieren'
+      - id: "concept"
+        title: "Prozesse vereinfachen, Nutzen maximieren"
         logoStep: 0
         text: |
           Durch das durchdachte Synchronisieren Ihrer Idee, unseres Sachverstands und der Bedürfnisse der Nutzer
           schaffen wir ein Konzept, das ebenso vorausschauend wie individuell ist - und damit die Grundlage für
           Software, die hält, was sie verspricht.
 
-      -
-        id: 'design'
-        title: 'Usability, Kreativität & Innovation'
+      - id: "design"
+        title: "Usability, Kreativität & Innovation"
         logoStep: 1
         text: |
           Mit innovativem Visual Design und intuitiven User Interfaces erwecken wir das Konzept zum Leben. Unsere
           Werke zeichnen sich durch maximale Benutzerfreundlichkeit aus und sprengen nicht selten die
           Vorstellungskraft unserer Kunden dahingehend, wie gut User Experience sein kann.
 
-      -
-        id: 'development'
-        title: 'Maßgeschneidert & hochqualitativ'
+      - id: "development"
+        title: "Maßgeschneidert & hochqualitativ"
         logoStep: 2
         text: |
           Sie erwarten Großes? Das sollten Sie auch! Unser Entwicklerteam besticht durch sein extensives Skill Set,
           unzählige Erfahrungen, und kompromisslose Genauigkeit. Im Streben nach Perfektion treffen wir Ihre Idee auf
           den Punkt und eröffnen Ihnen damit ungeahnte Möglichkeiten.
 
-      -
-        id: 'consulting'
-        title: 'Erfahrung, Sachverstand & Weitblick'
+      - id: "consulting"
+        title: "Erfahrung, Sachverstand & Weitblick"
         logoStep: 3
         text: |
           Neue Technologien lassen unser Herz höher schlagen! Weil wir das breite Spektrum an Optionen ständig und
           mit Freude erkunden, wissen wir genau, welche Lösungen für Sie geeignet sind und erzeugen durch unseren
           ehrlichen, fachkundigen Input den größtmöglichen Mehrwert für Ihr Projekt.
 
-      -
-        id: 'support'
-        title: 'Dauerhaft fortschrittlich'
+      - id: "support"
+        title: "Dauerhaft fortschrittlich"
         logoStep: 4
         text: |
-         Zukunftsträchtig ist ein System nur dann, wenn es auch nach seiner Release gepflegt wird. Wir agieren
-         vorausschauend und proaktiv, antizipieren entstehende Veränderungen in der digitalen Welt, und ersticken
-         Probleme so bereits im Keim.
+          Zukunftsträchtig ist ein System nur dann, wenn es auch nach seiner Release gepflegt wird. Wir agieren
+          vorausschauend und proaktiv, antizipieren entstehende Veränderungen in der digitalen Welt, und ersticken
+          Probleme so bereits im Keim.
 
-      -
-        id: 'management'
-        title: 'Kundennah & ohne Umwege'
+      - id: "management"
+        title: "Kundennah & ohne Umwege"
         logoStep: 5
         text: |
           Wir setzen auf technisch versiertes Management, das sich in Ihre Bedürfnisse eindenkt und Lösungen direkt
           erarbeitet. Als Partner stehen wir Ihnen damit von der Konzeption an und über den gesamten Lebenszyklus des
           Projekts hinweg zur Seite und sichern so dessen langfristigen Erfolg.
 
-  -
-    component: 'content-lp-text'
-    anchorId: 'team'
-    anchorLabel: '3'
-    title: 'Hier sind die 4 wichtigsten Gründe, warum Du laut unseres Teams bei uns einsteigen solltest:'
-    sectionLabel: '03'
+  - component: "content-lp-text"
+    anchorId: "team"
+    anchorLabel: "3"
+    title: "Hier sind die 4 wichtigsten Gründe, warum Du laut unseres Teams bei uns einsteigen solltest:"
+    sectionLabel: "03"
 
-  -
-    component: 'content-lp-team'
+  - component: "content-lp-team"
     reasons:
-      -
-        id: 'great-team'
-        pagination: '#1'
-        title: 'Ein großartiges Team'
-        shortTitle: 'Großartiges Team'
+      - id: "great-team"
+        pagination: "#1"
+        title: "Ein großartiges Team"
+        shortTitle: "Großartiges Team"
         text: |
           Wir sind ein bunt gemischtes und dynamisches Team, das sich durch hohe Ansprüche und ein beeindruckendes
           Skill Set aus mehreren Fachrichtungen ebenso auszeichnet, wie durch Zusammenhalt und Motivation. Wir gehen
           nicht nur freundlich sondern freundschaftlich miteinander um. So gehören gemeinsames Kochen, Essen und
           Kickern zu unserem Büroalltag.
-      -
-        id: 'innovative-projects'
-        pagination: '#2'
-        title: 'Innovative Projekte mit neuesten Technologien'
-        shortTitle: 'Innovative Projekte'
+      - id: "innovative-projects"
+        pagination: "#2"
+        title: "Innovative Projekte mit neuesten Technologien"
+        shortTitle: "Innovative Projekte"
         text: |
           Wir bedienen das gesamte Spektrum digitaler Entwicklungen und bewegen uns dabei in verschiedensten
           Branchen. Dies verspricht einen abwechslungsreichen Arbeitsalltag mit spannenden, zukunftsorientierten
           Projekten, die großes Entwicklungspotenzial bieten. Dafür bauen wir auf den Einsatz neuester und
           vielfältiger Technologien - sowohl in der Arbeitsausstattung als auch in der Anwendung für unsere Projekte.
 
-      -
-        id: 'structures-and-potential'
-        pagination: '#3'
-        title: 'Agile Strukturen und großes Entwicklungspotenzial'
-        shortTitle: 'Agile Strukturen'
+      - id: "structures-and-potential"
+        pagination: "#3"
+        title: "Agile Strukturen und großes Entwicklungspotenzial"
+        shortTitle: "Agile Strukturen"
         text: |
           Flexibilität bedeutet für uns nicht nur, auf die Dynamik der digitalen Branche zu reagieren. Auch innerhalb
           unseres Teams werden Strukturen an aktuelle Projekte und die besten Entwicklungsmethodiken angepasst. Guten
@@ -148,39 +132,23 @@ sections:
           diese Qualitäten mitbringt und selbstständig sowie eigenverantwortlich arbeitet, kann Veränderungen
           vorantreiben. Steilen Lernkurven und persönlichen und professionellen Entwicklungen sind damit keine
           Grenzen gesetzt.
-      -
-        id: 'location-and-culture'
-        pagination: '#4'
-        title: 'Unschlagbare Lage und Firmenkultur'
-        shortTitle: 'Unschlagbare Firmenkultur'
+      - id: "location-and-culture"
+        pagination: "#4"
+        title: "Unschlagbare Lage und Firmenkultur"
+        shortTitle: "Unschlagbare Firmenkultur"
         text: |
           Unsere beiden Büros liegen im Zentrum von München und Augsburg - zwei Städte, die sehr viel bieten! Neben
           kurzen Arbeitswegen verspricht dies eine optimale Work-Life-Balance. Flexible Arbeitszeiten, schöne und
           komfortable Büroräume sowie kostenlose Getränke tragen außerdem zu einer entspannten Arbeitsatmosphäre bei.
 
-  -
-    component: 'job-advertisements'
-    # jobs:
-    #   -
-    #     title: 'Praktikum Android Development (f/m/*)'
-    #     description: 'Ab 2018'
-    #     detailsLink: '#'
-    #     team: 'android'
-
-    #   -
-    #     title: 'Praktikum iOS Development (f/m/*)'
-    #     description: 'Ab 2018'
-    #     detailsLink: '#'
-    #     team: 'ios'
-
-    #   -
-    #     title: 'Senior Python Developer (f/m/*)'
-    #     description: 'Ab 2018'
-    #     detailsLink: '#'
-    #     team: 'python'
-
-    #   -
-    #     title: 'Office Manager (f/m/*)'
-    #     description: 'Ab 2018'
-    #     detailsLink: '#'
-    #     team: 'office'
+  - component: "job-advertisements"
+    jobs:
+      - title: "Android Developer (f/m/*)"
+        description: "Ab Sofort"
+        detailsLink: "/job-advertisements/Android_Developer_anfema_Augsburg.pdf"
+        team: "development"
+      # -
+      #   title: 'Senior UX / UI Designer - Vollzeit (f/m/*)'
+      #   description: 'Ab Sofort'
+      #   detailsLink: '#'
+      #   team: 'design'

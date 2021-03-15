@@ -1,22 +1,51 @@
 .projects-list {
-	display: grid;
-	height: calc(100vh - 1rem);
-	overflow: hidden;
-	grid-template-columns: repeat(2, 1fr);
-	padding: 0;
-
+	@include customer-colors;
 	@include offset-menu-height;
 
+	display: grid;
+	overflow: hidden;
+	grid-template-areas:
+		'paulaner'
+		'audi'
+		'msp'
+		'msp'
+		'knaufLookbook'
+		'tods'
+		'ferchau'
+		'knaufAroom'
+		'bcg'
+		'pingonaut'
+		'pingonaut'
+		'bmw'
+		'idnow'
+		'contact';
+
+	@include media-medium-min {
+		grid-template-areas:
+			'paulaner audi'
+			'knaufLookbook tods'
+			'msp msp'
+			'bcg pingonaut'
+			'bmw pingonaut'
+			'ferchau knaufAroom'
+			'contact idnow';
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	@include media-large-min {
-		height: calc(100vh - 2rem);
+		grid-template-areas:
+			'paulaner audi knaufLookbook'
+			'msp msp bcg'
+			'ferchau tods pingonaut'
+			'idnow bmw pingonaut'
+			'contact knaufAroom knaufAroom';
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
 .projects-list-item {
 	position: relative;
-	background-color: $color-projects-list-item;
-	column-span: span 1;
+	min-height: 32rem;
 
 	&,
 	&:link,
@@ -25,16 +54,50 @@
 	&:hover,
 	&:active {
 		color: $color-text-inverted;
+		text-decoration: none;
 	}
 
 	&__inner {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+		display: grid;
+		height: 100vw;
 		overflow: hidden;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 15% auto;
 		padding: 1.5rem 2rem;
+
+		.projects-list-item__image {
+			z-index: 1;
+			margin: auto 1rem;
+			padding: 2rem;
+			text-align: center;
+			transition: all 600ms 150ms ease;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			@include media-medium-min {
+				margin: auto;
+
+				img {
+					width: 80%;
+					height: auto;
+				}
+			}
+
+			@include media-large-min {
+				max-height: 30vw;
+			}
+		}
+
+		@include media-medium-min {
+			height: 100%;
+		}
+
+		@include media-large-min {
+			min-height: 35vw;
+		}
 	}
 
 	&__client {
@@ -53,33 +116,233 @@
 		font-size: 1.8rem;
 		font-weight: 400;
 		line-height: 2rem;
+	}
 
-		@include media-large-min {
-			font-size: 1.8rem;
-			line-height: 2rem;
+	.introQuote {
+		position: relative;
+		z-index: 1;
+		display: none;
+		margin: 4.5rem;
+		font-size: 1.8rem;
+		font-weight: 700;
+		line-height: 1.39;
+
+		& ~ * {
+			position: relative;
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			z-index: -1;
+			display: block;
+			overflow: visible;
+			color: #f7f7f7;
+			opacity: 0.1;
+			font-size: 48rem;
+			font-weight: 700;
+			line-height: 0.83;
+		}
+
+		&::before {
+			top: -11rem;
+			right: -11rem;
+			text-align: left;
+			content: '“';
+		}
+
+		&::after {
+			bottom: -28rem;
+			left: -10rem;
+			text-align: right;
+			content: '”';
+		}
+
+		@include media-medium-min {
+			display: block;
+		}
+
+		@include media-xlarge-min {
+			margin: 7rem;
+			font-size: 2.8rem;
+		}
+
+		@include media-xxlarge-min {
+			margin: 10rem;
 		}
 	}
 
-	&__client-background {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 180%;
-		transform: rotate(-56.3deg) translateY(83%); // arccos( (b² + c² - a²) / (2bc) )
-		transform-origin: 0% 100%;
-		overflow: hidden;
-		padding: 0;
-		opacity: 0.1;
-		font-size: 2 * 27.3vw;
-		font-weight: 700;
-		line-height: 2 * 27.3vw;
-		text-align: center;
-		text-transform: uppercase;
-		white-space: nowrap;
+	&--paulaner {
+		grid-area: paulaner;
+	}
+
+	&--audi {
+		grid-area: audi;
+		pointer-events: none;
+	}
+
+	&--knaufLookbook {
+		grid-area: knaufLookbook;
+	}
+
+	&--tods {
+		grid-area: tods;
+	}
+
+	&--idnow {
+		grid-area: idnow;
+	}
+
+	&--ferchau {
+		grid-area: ferchau;
+	}
+
+	&--bmw {
+		grid-area: bmw;
+	}
+
+	&--bcg {
+		pointer-events: none;
+	}
+
+	&--pingonaut {
+		grid-area: pingonaut;
+		grid-row-end: span 2;
+	}
+
+	&--mystaffpilot {
+		grid-area: msp;
+		grid-row-end: span 2;
+
+		@include media-medium-min {
+			grid-column-end: span 2;
+			grid-row-end: span 1;
+
+			.projects-list-item__inner {
+				display: grid;
+				grid-template-columns: 50% 50%;
+
+				.projects-list-item__header {
+					grid-column: 1 / span 2;
+					grid-row: 1 / span 1;
+				}
+
+				.projects-list-item__introMessage {
+					grid-column: 1 / span 1;
+					grid-row: 2 / span 1;
+					align-self: center;
+				}
+
+				.projects-list-item__image {
+					grid-column: 2 / span 1;
+					grid-row: 2 / span 1;
+				}
+			}
+		}
+	}
+
+	&--knaufAroom {
+		grid-area: knaufAroom;
+
+		.projects-list-item__introMessage {
+			display: none;
+		}
 
 		@include media-large-min {
-			font-size: 27.3vw;
-			line-height: 27.3vw;
+			grid-column-end: span 2;
+			grid-row-end: span 1;
+
+			.projects-list-item__inner {
+				display: grid;
+				grid-template-columns: 50% 50%;
+
+				.projects-list-item__header {
+					grid-column: 1 / span 2;
+					grid-row: 1 / span 1;
+				}
+
+				.projects-list-item__introMessage {
+					display: block;
+					grid-column: 1 / span 1;
+					grid-row: 2 / span 1;
+					align-self: center;
+				}
+
+				.projects-list-item__image {
+					grid-column: 2 / span 1;
+					grid-row: 2 / span 1;
+				}
+			}
 		}
+	}
+
+	&__contact {
+		position: relative;
+		overflow: hidden;
+		grid-area: contact;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		background-color: $color-footer-bottom;
+
+		a {
+			color: $color-text-inverted;
+			text-decoration: underline;
+		}
+
+		.projects-list-item__contactImage {
+			position: absolute;
+			bottom: -30px;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			transition: all 600ms 150ms ease;
+
+			img {
+				width: 160%;
+				height: auto;
+			}
+		}
+
+		.projects-list-item__contactMessage {
+			z-index: 50;
+		}
+
+		.projects-list-item__contactInner {
+			grid-template-rows: auto;
+			align-content: center;
+		}
+	}
+
+	@include media-medium-min {
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: rgb(63, 58, 64);
+			opacity: 0.3;
+			transition: opacity 0.3s ease-in;
+			content: '';
+		}
+
+		&:hover {
+			.projects-list-item__image,
+			.projects-list-item__contact,
+			.projects-list-item__contactImage {
+				transform: scale(1.1);
+			}
+
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
+
+	@include media-large-min {
+		min-height: 36rem;
 	}
 }

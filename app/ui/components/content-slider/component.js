@@ -1,15 +1,16 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
-import Ember from 'ember';
+import { computed, action } from '@ember/object';
+import { next } from '@ember/runloop';
 import { htmlSafe } from '@ember/string';
 
 const FlickProportion = 0.15;
 
 function mod(n, m) {
-	return (n % m + m) % m;
+	return ((n % m) + m) % m;
 }
 
 export default Component.extend({
+	tagName: 'div',
 	classNames: ['content-slider'],
 
 	/*
@@ -120,7 +121,7 @@ export default Component.extend({
 
 			if (initTransition || wasDragging) {
 				// immediately trigger a rerender to transition to the center pane
-				Ember.run.next(this, () => {
+				next(this, () => {
 					this.setProperties({
 						slideDirection: 0,
 						_dragStartPosition: undefined,
@@ -146,18 +147,18 @@ export default Component.extend({
 			: 'content-slider__slider--steady';
 	}),
 
-	actions: {
-		slideToPrevious() {
-			if (this.cycle || this._currentIndex > 0) {
-				this.transitionToPrevious();
-			}
-		},
+	@action
+	slideToPrevious() {
+		if (this.cycle || this._currentIndex > 0) {
+			this.transitionToPrevious();
+		}
+	},
 
-		slideToNext() {
-			if (this.cycle || this._currentIndex < this.data.length - 1) {
-				this.transitionToNext();
-			}
-		},
+	@action
+	slideToNext() {
+		if (this.cycle || this._currentIndex < this.data.length - 1) {
+			this.transitionToNext();
+		}
 	},
 
 	/*
@@ -201,25 +202,41 @@ export default Component.extend({
 	 * event listeners
 	 */
 
-	touchStart(e) {
+	// TODO: refactor to use template-based events
+	// https://deprecations.emberjs.com/v3.x/#toc_component-mouseenter-leave-move
+
+	@action
+	handleTouchStart(e) {
 		this.startDrag(e.touches[0].clientX);
 	},
-	touchEnd(/* e */) {
+
+	@action
+	handleTouchEnd() {
 		this.endDrag();
 	},
-	touchMove(e) {
+
+	@action
+	handleTouchMove(e) {
 		this.updateDrag(e.touches[0].clientX);
 	},
-	mouseDown(e) {
+
+	@action
+	handleMouseDown(e) {
 		this.startDrag(e.clientX);
 	},
-	mouseUp(/* e */) {
+
+	@action
+	handleMouseUp() {
 		this.endDrag();
 	},
-	mouseLeave(/* e */) {
+
+	@action
+	handleMouseLeave() {
 		this.endDrag();
 	},
-	mouseMove(e) {
+
+	@action
+	handleMouseMove(e) {
 		this.updateDrag(e.clientX);
 	},
 

@@ -1,63 +1,62 @@
-{{#link-to 'index' class="u-logo"}}
-	<img src="/img/logo.svg" width="130" height="60" alt="anfema">
-{{/link-to}}
+{{!-- template-lint-disable no-bare-strings --}}
 
-<div class="page-footer__office">
-	<h3 class="page-footer__office-title">{{t 'component.page-footer.offices.munich.title'}}</h3>
+<div class="page-footer__logo">
+	{{#link-to "index" class="u-logo"}}
+		<img src="/img/logo.svg" width="130" height="60" alt="anfema">
+	{{/link-to}}
+</div>
+
+<div class="page-footer__section page-footer__office">
+	<h3 class="page-footer__office-title">{{t "component.page-footer.offices.munich.title"}}</h3>
 
 	<p class="p-adr adr h-adr">
-		<span class="p-street-address">{{t 'component.page-footer.offices.munich.street'}}</span>
-
-		<br>
-
-		<span class="p-postal-code">{{t 'component.page-footer.offices.munich.postal'}}</span>
-		<span class="p-locality">{{t 'component.page-footer.offices.munich.city'}}</span>
-
-		<br>
-		<span class="p-country-name">{{t 'component.page-footer.offices.munich.country'}}</span>
+		<span class="p-street-address">{{t "component.page-footer.offices.munich.street"}}</span>
+		<span>&#124;</span>
+		<span class="p-postal-code">{{t "component.page-footer.offices.munich.postal"}}</span>
+		<span class="p-locality">{{t "component.page-footer.offices.munich.city"}}</span>
+		<span>&#124;</span>
+		<span class="p-country-name">{{t "component.page-footer.offices.munich.country"}}</span>
 	</p>
 </div>
 
-<div class="page-footer__office">
-	<h3 class="page-footer__office-title">{{t 'component.page-footer.offices.augsburg.title'}}</h3>
+<div class="page-footer__section page-footer__office">
+	<h3 class="page-footer__office-title">{{t "component.page-footer.offices.augsburg.title"}}</h3>
 
 	<p class="p-adr adr h-adr">
-		<span class="p-street-address">{{t 'component.page-footer.offices.augsburg.street'}}</span>
-
-		<br>
-
-		<span class="p-postal-code">{{t 'component.page-footer.offices.augsburg.postal'}}</span>
-		<span class="p-locality">{{t 'component.page-footer.offices.augsburg.city'}}</span>
-
-		<br>
-		<span class="p-country-name">{{t 'component.page-footer.offices.augsburg.country'}}</span>
+		<span class="p-street-address">{{t "component.page-footer.offices.augsburg.street"}}</span>
+		<span>&#124;</span>
+		<span class="p-postal-code">{{t "component.page-footer.offices.augsburg.postal"}}</span>
+		<span class="p-locality">{{t "component.page-footer.offices.augsburg.city"}}</span>
+		<span>&#124;</span>
+		<span class="p-country-name">{{t "component.page-footer.offices.augsburg.country"}}</span>
 	</p>
 </div>
 
-<div class="page-footer__contact">
-	<a class="u-email" href="mailto:{{t 'component.page-footer.email'}}">
-		{{t 'component.page-footer.email'}}
-	</a>
-
-	<p class="p-tel">
-		<span class="type">{{t 'component.page-footer.phone.label'}}</span>
-		<span class="value">{{t 'component.page-footer.phone.value'}}</span>
+<div class="page-footer__section page-footer__contact">
+	<p class="u-email">
+		<span class="type">{{t "component.page-footer.email.label"}}</span>
+		<a href={{mailtoLink}}>
+			{{t "component.page-footer.email.value"}}
+		</a>
 	</p>
 
 	<p class="p-tel">
-		<span class="type">{{t 'component.page-footer.fax.label'}}</span>
-		<span class="value">{{t 'component.page-footer.fax.value'}}</span>
+		<span class="type">{{t "component.page-footer.phone.label"}}</span>
+		<span class="value">{{t "component.page-footer.phone.value"}}</span>
+		<span>&#124;</span>
+		<span class="type">{{t "component.page-footer.fax.label"}}</span>
+		<span class="value">{{t "component.page-footer.fax.value"}}</span>
 	</p>
 </div>
 
-<div class="page-footer__meta">
+<div class="page-footer__section page-footer__meta">
 	{{language-select data-test-footer-language-select=true}}
 
 	<p class="copyright">1998&nbsp;&ndash;&nbsp;{{year}} anfema&nbsp;GmbH</p>
 
 	<p class="imprint">
-		{{#link-to 'imprint' language data-test-footer-imprint=true}}
-			{{t 'component.page-footer.imprint'}}
+		{{#link-to "imprint"}}
+			{{t "component.page-footer.imprint"}}
 		{{/link-to}}
 	</p>
 </div>

@@ -1,12 +1,19 @@
 import EmberRouter from '@ember/routing/router';
+import { inject as service } from '@ember/service';
 import config from './config/environment';
 
-const Router = EmberRouter.extend({
-	location: config.locationType,
-	rootURL: config.rootURL,
-});
+// eslint-disable-next-line import/exports-last
+export default class Router extends EmberRouter {
+	@service
+	headData;
 
-// eslint-disable-next-line array-callback-return
+	location = config.locationType;
+	rootURL = config.rootURL;
+
+	setTitle(title) {
+		this.headData.title = title;
+	}
+}
 
 Router.map(function() {
 	this.route('language', { path: '/:language_id' }, function() {
@@ -16,5 +23,3 @@ Router.map(function() {
 		this.route('imprint', { path: '/imprint', resetNamespace: true });
 	});
 });
-
-export default Router;

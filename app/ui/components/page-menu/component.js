@@ -3,8 +3,6 @@ import { throttle } from '@ember/runloop';
 import { computed } from '@ember/object';
 
 export default Component.extend({
-	classNameBindings: ['isTransparent:page-menu--transparent'],
-
 	scrollTop: 0,
 	forceOpaque: false,
 

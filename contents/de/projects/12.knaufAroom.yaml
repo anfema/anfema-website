@@ -1,0 +1,80 @@
+meta:
+  color: "#6da4b7"
+  client: "Knauf"
+  title: "AROOM"
+  id: "knaufAroom"
+  span: "2015 - heute"
+  overviewBig: true
+  introMessage: |
+    anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in der App Entwicklung, denen ich je begegnet bin.
+  img: "overview_paulaner.png"
+  hidden: false
+sections:
+  - component: "project-header"
+    img: "knauf-aroom-header.png"
+    action:
+      scrollDown: "Mehr erfahren"
+
+  - component: "project-text"
+    anchorId: "knaufAroom-intro"
+    orientation: "left"
+    titleColored: "Knauf"
+    titleAfter: "AMF AROOM App"
+    subTitle: "2015 - Heute"
+    img:
+      alignment: "horizontal"
+      zero: "knauf-aroom-intro.jpg"
+    description:markdown: |
+      Das Familienunternehmen Knauf ist ein deutscher Hersteller und Vertreiber von Systemen für Trockenbau, Boden, Putz und Fassaden. In diesem Bereich ist ein breites Spektrum an Gestaltungsmöglichkeiten verfügbar. Aus diesem Grund war Knauf auf der Suche nach einer digitalen Lösung. Mit dieser ist es möglich, Wandelemente zu planen und anschließend über Augmented Reality frei im Raum zu platzieren.
+
+  - component: "project-text"
+    anchorId: "knaufAroom-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
+    img:
+      alignment: "horizontal"
+      one: "knauf-aroom-challenge-ipad1.png"
+      two: "knauf-aroom-challenge-ipad2.png"
+    description:markdown: |
+      Die größte Herausforderung besteht darin, die enorme Anzahl an Variationen und Gestaltungselemente in ein überschaubares und verständliches Format zu bringen. Die App agiert technisch auf höchstem Niveau und bietet mit Markerless AR neue Möglichkeiten. Weshalb wir ein einfaches, für den Kunden klar verständliches, Konzept entwarfen.
+      Die App holt den Anwender direkt bei der Planung ab und nimmt ihn an die Hand. Über verschiedene Animationen wird schnell klar, welche Schritte auszuführen sind. Somit entstehen nach wenigen Konfigurationen beeindruckende und einzigartige Designs.
+
+  - component: "project-text"
+    anchorId: "knaufAroom-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
+    img:
+      alignment: "horizontal"
+      zero: "knauf-aroom-awesome.jpg"
+    description:markdown: |
+      Was macht die App besonders? Mit der Knauf Aroom App ist es möglich, die Planung direkt in Echtzeit, über Augmented Reality, in der späteren Umgebung zu begutachten. Dadurch bekommt der Nutzer ein besseres Bild, wie das finale Design im Raum wirkt. Er kann entweder direkt Änderungen vornehmen oder die Gestaltung zufriedenstellend abschließen. 
+
+  - component: "content-quote"
+    anchorId: "knaufAroom-quote"
+    source:markdown: |
+      Dominik Mandl
+      Online Marketing Manager Knauf AMF GmbH & Co. KG
+    content:markdown: |
+      anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in der App Entwicklung, denen ich je begegnet bin.
+
+  - component: "project-technology"
+    anchorId: "knaufAroom-technology"
+    titleColored: "Technology"
+    titleAfter: "we used"
+    img:
+      one: "technology-unity.png"
+      two: "technology-csharpe.png"
+    description:markdown: |
+      Für den Augmented Reality Modus setzen wir die neueste Technologie Markerless Augmented Reality ein. Bei dieser wird mittels SLAM (Simultaneous Localization And Mapping) eine virtuelle Karte der Umgebung erstellt. Sobald eine Wand erkannt wird, ist es möglich, die Konfigurationen darauf maßstabsgetreu abzubilden.
+      Die Entwicklung der App wurde mit Unity3D und hauptsächlich in C# umgesetzt. Mit einigen Anpassungen lässt sich die App auf die drei gewünschten Plattformen compilieren. Abhängig von der Plattform und der Größe des Geräts sind gegebenenfalls nur Teile der App verfügbar.
+
+  - component: "contact"
+    subject: "Info über das Projekt"
+    body: |
+      Hallo anfema Team,
+      ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.
+      Gerne würde ich darüber mehr erfahren und mit Euch in Kontakt treten.
+
+      Mit freundlichen Grüßen
+      Max Mustermann

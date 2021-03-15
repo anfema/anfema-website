@@ -1,14 +1,13 @@
-import Ember from 'ember';
+import Application from '@ember/application';
+import config from 'anfema/config/environment';
 import loadInitializers from 'ember-load-initializers';
-import Resolver from './resolver';
-import config from './config/environment';
+import Resolver from 'ember-resolver';
 
-const App = Ember.Application.extend({
-	modulePrefix: config.modulePrefix,
-	podModulePrefix: config.podModulePrefix,
-	Resolver,
-});
+// eslint-disable-next-line import/exports-last
+export default class App extends Application {
+	modulePrefix = config.modulePrefix;
+	podModulePrefix = config.podModulePrefix;
+	Resolver = Resolver;
+}
 
 loadInitializers(App, config.modulePrefix);
-
-export default App;

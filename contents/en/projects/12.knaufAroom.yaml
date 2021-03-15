@@ -1,0 +1,79 @@
+meta:
+  color: "#6da4b7"
+  client: "Knauf"
+  title: "AROOM"
+  id: "knaufAroom"
+  span: "2015 - today"
+  overviewBig: true
+  introMessage: |
+    anfema know what they do, how to do it, and they do it damn fast.
+    One of the best partners in app development I’ve ever seen.
+  img: "overview_paulaner.png"
+  hidden: false
+sections:
+  - component: "project-header"
+    img: "knauf-aroom-header.png"
+    action:
+      scrollDown: "More"
+
+  - component: "project-text"
+    anchorId: "knaufAroom-intro"
+    orientation: "left"
+    titleColored: "Knauf"
+    titleAfter: "AMF AROOM App"
+    subTitle: "2015 - today"
+    img:
+      alignment: "horizontal"
+      zero: "knauf-aroom-intro.jpg"
+    description:markdown: |
+      The family-owned company Knauf is a German manufacturer and distributor of systems for drywall, flooring, plaster and facades. In this area, a wide range of design options is available. For this reason, Knauf was looking for a digital solution. With this, it is possible to plan wall elements and then place them freely in the room via augmented reality.
+
+  - component: "project-text"
+    anchorId: "knaufAroom-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
+    img:
+      alignment: "horizontal"
+      one: "knauf-aroom-challenge-ipad1.png"
+      two: "knauf-aroom-challenge-ipad2.png"
+    description:markdown: |
+      The biggest challenge is to bring the enormous number of variations and design elements into a manageable and understandable format. The app operates at the highest technical level and offers new possibilities with Markerless AR. Which is why we designed a simple concept that is clearly understandable to the client.
+      The app picks up the user directly at the planning stage and takes him by the hand. Various animations quickly make it clear which steps need to be carried out. Thus, impressive and unique designs are created after just a few configurations.
+
+  - component: "project-text"
+    anchorId: "knaufAroom-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
+    img:
+      alignment: "horizontal"
+      zero: "knauf-aroom-awesome.jpg"
+    description:markdown: |
+      What makes the app special? With the Knauf ARoom app, it is possible to view the planning directly in real time, via augmented reality, in the future environment. This gives the user a better impression of how the final design will look in the room. He can either make changes directly or complete the design to his satisfaction.
+
+  - component: "content-quote"
+    anchorId: "knaufAroom-quote"
+    source:markdown: |
+      Dominik Mandl
+      Online Marketing Manager Knauf AMF GmbH & Co. KG
+    content:markdown: |
+      anfema knows what they're doing, how they're doing it, and they do it damn fast! One of the best app development partners I've ever come across.
+
+  - component: "project-technology"
+    anchorId: "knaufAroom-technology"
+    titleColored: "Technology"
+    titleAfter: " we used"
+    img:
+      one: "technology-unity.png"
+      two: "technology-csharpe.png"
+    description:markdown: |
+      For the Augmented Reality mode we use the latest technology Markerless Augmented Reality. This uses SLAM (Simultaneous Localization And Mapping) to create a virtual map of the environment. Once a wall is detected, it is possible to map the configurations on it accurately. The development of the app was implemented with Unity3D and mainly in C#. With some adjustments, the app can be compiled on the three desired platforms. Depending on the platform and the size of the device, only parts of the app may be available.
+
+  - component: "contact"
+    subject: "Information about the project"
+    body: |
+      Hello anfema team,
+      I just had a look at your page about the {{projectInfo}} project.
+      I would love to learn more about it and get in touch with you.
+
+      With kind regards

@@ -24,10 +24,10 @@
 }
 
 @mixin offset-content-top {
-	padding-top: 8rem;
+	padding-top: 3rem;
 
 	@include media-medium-min {
-		padding-top: 10rem;
+		padding-top: 6rem;
 	}
 
 	@include media-xlarge-min {
@@ -36,10 +36,10 @@
 }
 
 @mixin offset-content-bottom {
-	padding-bottom: 8rem;
+	padding-bottom: 3rem;
 
 	@include media-medium-min {
-		padding-bottom: 10rem;
+		padding-bottom: 6rem;
 	}
 
 	@include media-xlarge-min {

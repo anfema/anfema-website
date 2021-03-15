@@ -2,10 +2,14 @@
 	display: grid;
 	// overflow: hidden;
 	grid-column-gap: 1.6rem;
-	grid-template-columns: repeat(8, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	justify-content: center;
 
 	@include offset-base-padding;
+
+	@include media-medium-min {
+		grid-template-columns: repeat(12, 1fr);
+	}
 
 	@include media-large-min {
 		grid-column-gap: 3.2rem;

@@ -1,110 +1,101 @@
 meta:
-  color: '#FF7F27'
+  color: "#ff7f00"
   client: "Pingonaut"
-  title: 'Kidswatch Plattform & Apps'
-  id: 'pingonaut'
-  span: 'Mai 2016 - heute'
+  title: "Kidswatch"
+  id: "pingonaut"
+  span: "Mai 2016 - heute"
+  overviewBig: true
+  introMessage: |
+    Mit gigantischem Know-How,
+    außergewöhnlicher Flexibilität &
+    uneingeschränktem Einsatz definitiv
+    eine der besten Agenturen der
+    digitalen Branche.
+  img: "overview_pingonaut.png"
+  hidden: false
 sections:
   -
-    component: 'project-cover'
-    img: 'pingonaut-cover.jpg'
-    title: 'Pingonaut KidsWatch Plattform und Apps'
+    component: "project-header"
+    img: "pingonaut-header.png"
+    action:
+      scrollDown: "Mehr erfahren"
   -
-    component: 'project-text'
-    assignmentText: true
-    content: |
-      <h3>Aufgabe</h3>
+    component: "project-text"
+    anchorId: "pingonaut-intro"
+    orientation: "left"
+    titleColored: "Pingonaut"
+    titleAfter: "KidsWatch"
+    subTitle: "2016 - Heute"
+    img:
+      alignment: "straight"
+      one: "pingonaut-intro-iphone.png"
+      two: "pingonaut-intro-android.png"
+    description:markdown: |
+      Pingonaut ist eine neu gegründete Firma, die sich auf den Verkauf von Geräten zur Positionsbestimmung spezialisiert hat. Ihr erstes Produkt, eine lokalisierbare Kinderuhr, sollte im Funktionsumfang kombiniert mit speziell entwickelten (Web-)Apps genau auf die Zielgruppe von Kindern im Alter von 5-10 Jahren angepasst sein. Die Aufgabe der anfema bestand darin, eine App zu entwickeln, die es dem besorgten Nutzer ermöglicht, über (Sprach-)Nachrichten und Sprachanrufe in ständigem Kontakt mit seinem Kind zu bleiben und dessen Bewegung auch rückwirkend auf einer Karte nachvollziehen zu können. Über Geofences können die Eltern sichere Bereiche definieren, werden beim Betreten oder Verlassen dieser Bereiche via PUSH benachrichtigt und bleiben so über den Aufenthaltsort ihres Kindes up-to-date.
+  -
+    component: "project-icons"
+    anchorId: "pingonaut-details"
+    titleBefore: "It's all about the"
+    titleColored: "Details"
+    img:
+      one: "pingonaut-details1.png"
+      two: "pingonaut-details2.png"
+      three: "pingonaut-details3.png"
+      four: "pingonaut-details4.png"
+    description:markdown: |
+      Um den Charakter der Pingonaut visuell zu repräsentieren, fertigten wir spezielle Icons und Grafiken an.
+      Diese sprechen durch die zwei unterschiedlichen Stile, verspieltes Design und klare Linien, Kinder und Eltern gleichermaßen an. Dadurch ist die Freude bei der Nutzung von Uhr und App garantiert.
+  -
+    component: "project-text"
+    anchorId: "pingonaut-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
+    img:
+      alignment: "vertical"
+      one: "pingonaut-challenge-panda.png"
+      two: "pingonaut-challenge-puma.png"
+    description:markdown: |
+      Die Pingonaut Kidswatch war unser erstes Projekt, bei dem das Server-Backend neben dem Kommunikationsfluss mit der App auch den zur in China entwickelten Hard- bzw.  Firmware leisten muss. Teils komplexe Informationen müssen exakt ausgewertet, zuverlässig verarbeitet und sicher weitergeleitet werden. Da Pingonaut zu Projektbeginn am Anfang der gesamten Produktentwicklung stand, unterlagen die Anforderungen an die Softwareentwicklung dynamischer Priorisierung, häufigen Änderungen, straffen Zeitvorgaben und einem limitierten Budget.
+      Ebenso forderte die Entwicklung das Abstecken der Vorgaben, die mit dem Vertrieb eines elektronischen Produkts in Deutschland einhergehen sowie die vergleichsweise schwierige Kommunikation mit dem Hardware-Produzenten in China.
+  -
+    component: "project-text"
+    anchorId: "pingonaut-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
+    img:
+      alignment: "vertical"
+      one: "pingonaut-awesome-android.png"
+      two: "pingonaut-awesome-iphone.png"
+    description:markdown: |
+      Maßgebend für den Projekterfolg waren die hohe Anpassungsfähigkeit, das breite Wissensspektrum und die hervorragenden analytischen Fähigkeiten unseres gesamten Teams. Als Antwort auf das ungewisse Marktvolumen bei Markteinführung der Kidswatch setzte anfema auf ein Serversystem, das sich horizontal skalieren und somit problemlos erweitern lässt. Darüber hinaus wurde das Server Deployment komplett automatisiert, sodass das System auf beliebig vielen Servern ausgerollt werden kann. Durch intensive Recherche der Spezifikationen unterschiedlicher Mobilfunkanbieter und deren Einpflege in die Software, konnte ein funktionstüchtiges, Microservice-basiertes System in den europäischen Absatzmarkt integriert werden.
+      Die Pingonaut Kidswatch zeichnet sich durch Software made and hosted in Germany aus, die den Standards und dem Datenschutz nach deutschem Recht folgt.
+  -
+    component: "content-quote"
+    anchorId: "pingonaut-quote"
+    source:markdown: |
+      Stefan Hampel
+      Geschäftsführer Vertrieb, Lokato GmbH
+    content:markdown: |
+      Ohne anfema würde es die Kidswatch nicht geben!
+      anfema hat ein bis ins Detail durchdachtes Konzept geschaffen und eine Plattform entwickelt, die keine Fragen offen lässt und alle Erwartungen übertrifft. Mit gigantischem Know-How, außergewöhnlicher Flexibilität & uneingeschränktem Einsatz definitiv eine der besten Agenturen der digitalen Branche.
+  -
+    component: "project-technology"
+    anchorId: "pingonaut-technology"
+    titleColored: "Technology"
+    titleAfter: "we used"
+    img:
+      one: "technology-android.png"
+      two: "technology-apple.png"
+    description:markdown: |
+      Die Pingonaut Kids App wurde nativ für iOS und Android entwickelt. Die PostgreSQL Backend-Datenbank dient zugleich als Message-Broker für die Microservices. Mapbox wurde als preiswerte Alternative zu GoogleMaps eingesetzt und bietet eine umfassende API. Ergänzt wird der Lokalisierungsservice durch Unwired Labs, eine günstige, lernende Location API, die neben Funkzellen auch WLANs zur Positionsbestimmung mit einbezieht. Durch den Einsatz von Node.js kann simultan eine Vielzahl von Verbindungen (teilweise auch ohne Informationsfluss) stabil gehalten werden, ohne zu blockieren.
+  -
+    component: "contact"
+    subject: "Info über das Projekt"
+    body: |
+      Hallo anfema Team,
+      ich habe mir gerade Eure Seite zum Projekt {{projectInfo}} angeschaut.
+      Gerne würde ich darüber mehr erfahren und mit Euch in Kontakt treten.
 
-      <p>Pingonaut ist eine neu gegründete Firma, die sich auf den Verkauf von Geräten zur Positionsbestimmung
-      spezialisiert hat. Ihr erstes Produkt, eine lokalisierbare Kinderuhr, sollte im Funktionsumfang kombiniert mit
-      speziell entwickelten (Web-)Apps genau auf die Zielgruppe von Kindern im Alter von 5-10 Jahren angepasst sein.
-      Die Aufgabe der anfema bestand darin, eine App zu entwickeln, die es dem besorgten Nutzer ermöglicht, über
-      (Sprach-)Nachrichten und Sprachanrufe in ständigem Kontakt mit seinem Kind zu bleiben und dessen Bewegung auch
-      rückwirkend auf einer Karte nachvollziehen zu können. Über Geofences können die Eltern sichere Bereiche
-      definieren, werden beim Betreten oder Verlassen dieser Bereiche via PUSH benachrichtigt und bleiben so über
-      den Aufenthaltsort ihres Kindes up-to-date.</p>
-  -
-      component: 'content-project-icons'
-      useAlternateColor: true
-      title: 'Custom Icon Set'
-      icons:
-        - 'pingonaut-kids-icon-1.svg'
-        - 'pingonaut-kids-icon-2.svg'
-        - 'pingonaut-kids-icon-3.svg'
-        - 'pingonaut-kids-icon-4.svg'
-      text: 'Um die die vielseitigen Möglichkeiten und Details des Fahrzeugs auch visuell hervorzuheben wurden
-      speziell für diese App Icons gestaltet.'
-  -
-    component: 'project-text'
-    content: |
-      <h3>Herausforderung</h3>
-
-      <p>Die Pingonaut Kidswatch war unser erstes Projekt, bei dem das Server-Backend neben dem Kommunikationsfluss
-      mit der App auch den zur in China entwickelten Hard- bzw.  Firmware leisten muss. Teils komplexe Informationen
-      müssen exakt ausgewertet, zuverlässig verarbeitet und sicher weitergeleitet werden.</p>
-
-      <p>Da Pingonaut zu Projektbeginn am Anfang der gesamten Produktentwicklung stand, unterlagen die Anforderungen
-      an die Softwareentwicklung dynamischer Priorisierung, häufigen Änderungen, straffen Zeitvorgaben und einem
-      limitierten Budget.</p>
-
-      <p>Ebenso forderte die Entwicklung das Abstecken der Vorgaben, die mit dem Vertrieb eines elektronischen
-      Produkts in Deutschland einhergehen sowie die vergleichsweise schwierige Kommunikation mit dem
-      Hardware-Produzenten in China.</p>
-  -
-    component: 'content-project-gallery'
-    defaults:
-      width: 400
-      height: 600
-    images:
-      - 'pingonaut-gallery-1.jpg'
-      - 'pingonaut-gallery-2.jpg'
-      - 'pingonaut-gallery-3.jpg'
-      - 'pingonaut-gallery-4.jpg'
-      - 'pingonaut-gallery-5.jpg'
-  -
-    component: 'project-text'
-    content: |
-      <h3>Lösung</h3>
-
-      <p>Maßgebend für den Projekterfolg waren die hohe Anpassungsfähigkeit, das breite Wissensspektrum und die
-      hervorragenden analytischen Fähigkeiten unseres gesamten Teams. Als Antwort auf das ungewisse Marktvolumen
-      bei Markteinführung der Kidswatch setzte anfema auf ein Serversystem, das sich horizontal skalieren und somit
-      problemlos erweitern lässt. Darüber hinaus wurde das Server Deployment komplett automatisiert, sodass das
-      System auf beliebig vielen Servern ausgerollt werden kann. Durch intensive Recherche der Spezifikationen
-      unterschiedlicher Mobilfunkanbieter und deren Einpflege in die Software, konnte ein funktionstüchtiges,
-      Microservice-basiertes System in den europäischen Absatzmarkt integriert werden. Die Pingonaut Kidswatch
-      zeichnet sich durch Software made and hosted in Germany aus, die den Standards und dem Datenschutz nach
-      deutschem Recht folgt.</p>
-  -
-    component: 'content-quote'
-    source: 'Stefan Hampel, Geschäftsführer Vertrieb<br>Lokato GmbH'
-    content: |
-      <p>Ohne anfema würde es die Kidswatch nicht geben! anfema hat ein bis ins Detail durchdachtes Konzept geschaffen
-      und eine Plattform entwickelt, die keine Fragen offen lässt und alle Erwartungen übertrifft. Mit gigantischem
-      Know-How, außergewöhnlicher Flexibilität & uneingeschränktem Einsatz definitiv eine der besten Agenturen der
-      digitalen Branche.</p>
-  -
-    component: 'content-project-triptych'
-    useAlternateColor: true
-    images:
-      - 'pingonaut-triptych-3.jpg'
-      - 'pingonaut-triptych-1.jpg'
-      - 'pingonaut-triptych-2.jpg'
-  -
-    component: 'project-text'
-    content: |
-      <h3>Technologie</h3>
-
-      <p>Die Pingonaut Kids App wurde nativ für iOS und Android entwickelt. Die PostgreSQL Backend-Datenbank dient
-      zugleich als Message-Broker für die Microservices. Mapbox wurde als preiswerte Alternative zu GoogleMaps
-      eingesetzt und bietet eine umfassende API. Ergänzt wird der Lokalisierungsservice durch Unwired Labs, eine
-      günstige, lernende Location API, die neben Funkzellen auch WLANs zur Positionsbestimmung mit einbezieht.
-      Durch den Einsatz von Node.js kann simultan eine Vielzahl von Verbindungen (teilweise auch ohne Informationsfluss)
-      stabil gehalten werden, ohne zu blockieren.</p>
-  -
-    component: 'content-project-gallery'
-    defaults:
-      width: 584
-      height: 438
-    images:
-      - 'pingonaut-illustrations.svg'
+      Mit freundlichen Grüßen
+      Max Mustermann

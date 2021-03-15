@@ -1,63 +1,66 @@
-.content-project-icons {
+.project-icons {
 	@include grid-base;
 	@include offset-content-top;
 	@include offset-content-bottom;
+	@include customer-colors;
 
-	grid-template-columns: repeat(4, 1fr);
+	max-width: 1216px;
+	margin: auto;
 
-	&__title {
-		max-width: 100%;
+	&__title,
+	&__description,
+	&__img {
 		grid-column: 1 / span 4;
-		text-align: center;
 	}
 
-	&__container {
+	&__img {
+		div {
+			margin: auto;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__img-row {
 		display: flex;
-		max-width: 52rem;
-		grid-column: span 4;
-		flex-flow: wrap row;
-		justify-content: center;
-		margin: 5rem 0 3rem;
-		justify-self: center;
+
+		div {
+			padding: 1rem 0;
+		}
 	}
 
-	&__icon {
-		margin: 2.5rem 4rem;
+	@include media-medium-min {
+		&__title,
+		&__description,
+		&__img {
+			grid-column: 2 / -2;
+		}
 	}
 
-	&__text {
-		display: inline;
-		max-width: 100%;
-		grid-column: 1 / span 4;
-		text-align: center;
-	}
-
-	&--alt {
-		background: $color-background-darker;
-	}
-}
-
-@include media-large-min {
-	.content-project-icons {
-		grid-template-columns: repeat(8, 1fr);
-
+	@include media-large-min {
 		&__title {
-			grid-column: 1 / -1;
+			grid-column: 2 / span 4;
+			grid-row: 1 / span 1;
+			align-self: end;
 		}
 
-		&__container {
-			max-width: none;
-			grid-column: 1 / -1;
-			flex-wrap: nowrap;
-			justify-content: space-between;
+		&__description {
+			grid-column: 2 / span 6;
+			grid-row: 2 / span 2;
 		}
 
-		&__icons {
-			margin: 0;
-		}
+		&__img {
+			grid-column: 8 / span 4;
+			grid-row: 1 / span 2;
+			margin: auto;
 
-		&__text {
-			grid-column: 1 / -1;
+			img {
+				width: 80%;
+				height: auto;
+			}
 		}
 	}
 }

@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
 import { next } from '@ember/runloop';
 
 export default Component.extend({
@@ -8,9 +7,10 @@ export default Component.extend({
 	// data: null,
 	// selected: null,
 
-	isActive: computed('data.id', 'selected', function() {
+	/* isActive: computed('data.id', 'selected', function() {
+		console.log('selcted: ', this.selected);
 		return this.get('data.id') === this.selected;
-	}),
+	}), */
 
 	didReceiveAttrs() {
 		this._setContentHeight();

@@ -1,0 +1,92 @@
+meta:
+  color: "#197a56"
+  client: "BCG - (Coming soon)"
+  title: "Application Phone App"
+  id: "bcg"
+  span: "20XX - today"
+  overviewBig: false
+  introMessage: |
+    In der Zusammenarbeit mit anfema kommen wir immer schnell und unkompliziert zu passenden Lösungen, weil sie uns, die App und unser Geschäft perfekt verstanden haben.
+  img: "overview_paulaner.png"
+  hidden: false
+sections:
+  - component: "project-header"
+    img: "bcg-header-iphone.png"
+    action:
+      scrollDown: "More"
+
+  - component: "project-text"
+    anchorId: "bcg-intro"
+    orientation: "left"
+    titleColored: "BCG"
+    titleAfter: "Application Phone App"
+    subTitle: "20XX - today"
+    img:
+      alignment: "straight"
+      one: "bcg-intro-iphone.png"
+      two: "bcg-intro-android.png"
+    description:markdown: |
+      test
+
+  - component: "project-icons"
+    anchorId: "bcg-details"
+    titleBefore: |
+      It's all about the
+    titleColored: " Details"
+    img:
+      one: "bcg-details1.png"
+      two: "bcg-details2.png"
+      three: "bcg-details3.png"
+      four: "bcg-details4.png"
+    description:markdown: |
+      test
+
+  - component: "project-text"
+    anchorId: "bcg-challenge"
+    orientation: "right"
+    titleColored: "Challenge"
+    img:
+      alignment: "vertical"
+      one: "bcg-challenge-iphone.png"
+      two: "bcg-challenge-android.png"
+    description:markdown: |
+      test
+
+  - component: "project-text"
+    anchorId: "bcg-awesome"
+    orientation: "left"
+    titleBefore: "How we made it "
+    titleColored: "awesome"
+    img:
+      alignment: "vertical"
+      one: "bcg-awesome-iphone.png"
+      two: "bcg-awesome-android.png"
+    description:markdown: |
+      test
+
+  - component: "content-quote"
+    anchorId: "bcg-quote"
+    source:markdown: |
+      name
+      position
+    content:markdown: |
+      quote
+
+  - component: "project-technology"
+    anchorId: "bcg-technology"
+    titleColored: "Technology"
+    titleAfter: " we used"
+    img:
+      one: "technology-swift.png"
+      two: "technology-apple.png"
+    description:markdown: |
+      technology
+
+  - component: "contact"
+    subject: "Information about the project"
+    body: |
+      Hello anfema team,
+      I just had a look at your page about the {{projectInfo}} project.
+      I would love to learn more about it and get in touch with you.
+
+      With kind regards

@@ -25,13 +25,7 @@ module.exports = function(environment) {
 		},
 
 		fastboot: {
-			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/],
-		},
-
-		pageTitle: {
-			separator: ' - ',
-			prepend: true,
-			replace: false,
+			hostWhitelist: ['anfe.ma', 'www-dev.anfe.ma', /^localhost:\d+$/, /(\d.\d.\d.\d:\d+)$/],
 		},
 
 		'responsive-image': {
@@ -67,6 +61,7 @@ module.exports = function(environment) {
 		ENV.APP.LOG_VIEW_LOOKUPS = false;
 
 		ENV.APP.rootElement = '#ember-testing';
+		ENV.APP.autoboot = false;
 	}
 
 	if (environment === 'production') {

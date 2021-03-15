@@ -4,17 +4,14 @@
 	position: relative;
 	z-index: 10;
 	justify-content: center;
-	padding: 0 1.6rem 6rem;
+	padding: 3.6rem 1.6rem;
 	color: $color-text-inverted;
-	background: $color-footer-top linear-gradient(to bottom, $color-footer-top, $color-footer-bottom);
+	background: $color-footer-top
+		linear-gradient(to bottom, $color-footer-top, $color-footer-bottom);
 
 	@include media-small-max {
 		font-size: 1.6rem;
 		line-height: 3rem;
-	}
-
-	@include media-large-min {
-		grid-template-columns: repeat(3, 1fr) 2fr 1fr;
 	}
 
 	a {
@@ -22,15 +19,12 @@
 		&:link,
 		&:visited {
 			color: inherit;
+			text-decoration: none;
 		}
 	}
 
 	h3 {
-		margin: 3rem 0 0;
-
-		@include media-small-min {
-			margin: 6rem 0 1rem;
-		}
+		margin: 0;
 	}
 
 	p {
@@ -41,15 +35,10 @@
 	// This is done to have a pixel perfect logo in the browser and allows a user to drag the regular
 	// logo (the black version) to their desktop
 	.u-logo {
-		grid-column: 1 / -1;
 		margin: 3.4rem 0 0 -1rem;
 
 		@include media-small-min {
 			margin: 4.4rem 0 0;
-		}
-
-		@include media-large-min {
-			grid-column-end: span 1;
 		}
 
 		img {
@@ -64,44 +53,40 @@
 		}
 	}
 
-	&__office {
-		grid-column: 1 / 5;
-
-		@include media-large-min {
-			grid-column: 2 / span 1;
-		}
+	.type {
+		font-weight: 700;
 	}
 
-	&__office + &__office {
-		grid-column: 5 / -1;
-
-		@include media-large-min {
-			grid-column: 3 / span 1;
-		}
+	&__logo {
+		grid-column-end: span 4;
+		margin-left: -1rem;
 	}
 
-	&__meta,
-	&__contact {
-		margin-top: 2rem;
-
-		@include media-small-min {
-			margin-top: 9rem;
-		}
-	}
-
-	&__contact {
-		grid-column: 1 / -1;
-
-		@include media-large-min {
-			grid-column: -3 / span 1;
-		}
-	}
-
+	&__office,
+	&__contact,
 	&__meta {
-		grid-column: 1 / -1;
+		grid-column-end: span 4;
+		margin: 1rem 0;
+	}
 
-		@include media-large-min {
-			grid-column: -2 / span 1;
+	@include media-medium-min {
+		&__logo,
+		&__contact,
+		&__meta {
+			grid-column-end: span 12;
 		}
+
+		&__office {
+			grid-column-end: span 6;
+		}
+	}
+
+	@include media-large-min {
+		&__office,
+		&__contact,
+		&__meta {
+			grid-column-end: span 3;
+		}
+
 	}
 }

@@ -20,8 +20,12 @@ export class Vertex2 {
 	}
 	intersection(a0, a1, b0, b1) {
 		const determinant = (a0.x - a1.x) * (b0.y - b1.y) - (a0.y - a1.y) * (b0.x - b1.x);
-		const dividendX = (a0.x * a1.y - a0.y * a1.x) * (b0.x - b1.x) - (a0.x - a1.x) * (b0.x * b1.y - b0.y * b1.x);
-		const dividendY = (a0.x * a1.y - a0.y * a1.x) * (b0.y - b1.y) - (a0.y - a1.y) * (b0.x * b1.y - b0.y * b1.x);
+		const dividendX =
+			(a0.x * a1.y - a0.y * a1.x) * (b0.x - b1.x) -
+			(a0.x - a1.x) * (b0.x * b1.y - b0.y * b1.x);
+		const dividendY =
+			(a0.x * a1.y - a0.y * a1.x) * (b0.y - b1.y) -
+			(a0.y - a1.y) * (b0.x * b1.y - b0.y * b1.x);
 		this.x = dividendX / determinant;
 		this.y = dividendY / determinant;
 		return this;

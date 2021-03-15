@@ -10,7 +10,7 @@ export default Route.extend({
 			this.transitionTo('index');
 		}
 
-		this.get('intl').setLocale(language_id);
+		this.intl.setLocale(language_id);
 
 		return null;
 	},

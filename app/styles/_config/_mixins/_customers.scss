@@ -1,0 +1,303 @@
+$customerColor-msp: #006ac9;
+$customerColor-paulaner: #003366;
+$customerColor-knaufLookbook: #f97e33;
+$customerColor-bmw: #0275b6;
+$customerColor-audi: #bb0a30;
+$customerColor-ferchau: #e62332;
+$customerColor-pingonaut: #ff7f00;
+$customerColor-tods: #342524;
+$customerColor-idnow: #f95602;
+$customerColor-bcg: #197a56;
+$customerColor-knaufAroom: #6da4b7;
+
+@mixin customer-colors {
+	.color {
+		&--mystaffpilot {
+			color: $customerColor-msp;
+		}
+
+		&--paulaner {
+			color: $customerColor-paulaner;
+		}
+
+		&--knaufLookbook {
+			color: $customerColor-knaufLookbook;
+		}
+
+		&--bmw {
+			color: $customerColor-bmw;
+		}
+
+		&--audi {
+			color: $customerColor-audi;
+		}
+
+		&--ferchau {
+			color: $customerColor-ferchau;
+		}
+
+		&--pingonaut {
+			color: $customerColor-pingonaut;
+		}
+
+		&--tods {
+			color: $customerColor-tods;
+		}
+
+		&--idnow {
+			color: $customerColor-idnow;
+		}
+
+		&--bcg {
+			color: $customerColor-bcg;
+		}
+
+		&--knaufAroom {
+			color: $customerColor-knaufAroom;
+		}
+	}
+
+	.mystaffpilot-color {
+		&--zero {
+			fill: #6291ba;
+		}
+
+		&--one {
+			fill: #72a3d2;
+		}
+
+		&--two {
+			fill: #84b5e4;
+		}
+
+		&--three {
+			fill: $customerColor-msp;
+		}
+	}
+
+	.paulaner-color {
+		&--zero {
+			fill: #60778e;
+		}
+
+		&--one {
+			fill: #748ba2;
+		}
+
+		&--two {
+			fill: #869db4;
+		}
+
+		&--three {
+			fill: $customerColor-paulaner;
+		}
+	}
+
+	.knaufLookbook-color {
+		&--zero {
+			fill: #d29977;
+		}
+
+		&--one {
+			fill: #e6ad8b;
+		}
+
+		&--two {
+			fill: #f8bf9d;
+		}
+
+		&--three {
+			fill: $customerColor-knaufLookbook;
+		}
+	}
+
+	.bmw-color {
+		&--zero {
+			fill: #6095b3;
+		}
+
+		&--one {
+			fill: #74a9c7;
+		}
+
+		&--two {
+			fill: #86bbd9;
+		}
+
+		&--three {
+			fill: $customerColor-bmw;
+		}
+	}
+
+	.audi-color {
+		&--zero {
+			fill: #b56476;
+		}
+
+		&--one {
+			fill: #c9788a;
+		}
+
+		&--two {
+			fill: #db8a9c;
+		}
+
+		&--three {
+			fill: $customerColor-audi;
+		}
+	}
+
+	.ferchau-color {
+		&--zero {
+			fill: #c97076;
+		}
+
+		&--one {
+			fill: #dd848a;
+		}
+
+		&--two {
+			fill: #ef969c;
+		}
+
+		&--three {
+			fill: $customerColor-ferchau;
+		}
+	}
+
+	.pingonaut-color {
+		&--zero {
+			fill: #d59a60;
+		}
+
+		&--one {
+			fill: #e9ae74;
+		}
+
+		&--two {
+			fill: #fbc086;
+		}
+
+		&--three {
+			fill: $customerColor-pingonaut;
+		}
+	}
+
+	.tods-color {
+		&--zero {
+			fill: #777070;
+		}
+
+		&--one {
+			fill: #8b8484;
+		}
+
+		&--two {
+			fill: #9d9696;
+		}
+
+		&--three {
+			fill: $customerColor-tods;
+		}
+	}
+
+	.idnow-color {
+		&--zero {
+			fill: #d28760;
+		}
+
+		&--one {
+			fill: #e69b74;
+		}
+
+		&--two {
+			fill: #f8ad86;
+		}
+
+		&--three {
+			fill: $customerColor-idnow;
+		}
+	}
+
+	.bcg-color {
+		&--zero {
+			fill: #6c9481;
+		}
+
+		&--one {
+			fill: #7da492;
+		}
+
+		&--two {
+			fill: #7da492;
+		}
+
+		&--three {
+			fill: $customerColor-bcg;
+		}
+	}
+
+	.knaufAroom-color {
+		&--zero {
+			fill: #92abb3;
+		}
+
+		&--one {
+			fill: #a6bfc7;
+		}
+
+		&--two {
+			fill: #b8d1d9;
+		}
+
+		&--three {
+			fill: $customerColor-knaufAroom;
+		}
+	}
+
+	.bgColor {
+		&--mystaffpilot {
+			background-color: $customerColor-msp;
+		}
+
+		&--paulaner {
+			background-color: $customerColor-paulaner;
+		}
+
+		&--knaufLookbook {
+			background-color: $customerColor-knaufLookbook;
+		}
+
+		&--bmw {
+			background-color: $customerColor-bmw;
+		}
+
+		&--audi {
+			background-color: $customerColor-audi;
+		}
+
+		&--ferchau {
+			background-color: $customerColor-ferchau;
+		}
+
+		&--pingonaut {
+			background-color: $customerColor-pingonaut;
+		}
+
+		&--tods {
+			background-color: $customerColor-tods;
+		}
+
+		&--idnow {
+			background-color: $customerColor-idnow;
+		}
+
+		&--bcg {
+			background-color: $customerColor-bcg;
+		}
+
+		&--knaufAroom {
+			background-color: $customerColor-knaufAroom;
+		}
+	}
+}

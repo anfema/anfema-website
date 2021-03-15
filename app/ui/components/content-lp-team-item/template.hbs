@@ -1,11 +1,11 @@
-<div class="content-lp-team-item__content">
+<div class="content-lp-team-item__content {{if @isActive "content-lp-team-item--active"}}">
 	<h3>{{data.title}}</h3>
 	<p>{{data.text}}</p>
 </div>
 
-{{#link-to 'language.index' (query-params team=data.id) class='content-lp-team-item__navigation-link'}}
-	<span class="content-lp-team-item__title" aria-hidden=true>{{data.shortTitle}}</span>
+<button class="content-lp-team-item__navigation-link" {{on "click" (fn @setActiveItemIndex @index)}}>
+	<span class="content-lp-team-item__title" aria-hidden="true">{{data.shortTitle}}</span>
 	<span class="content-lp-team-item__pagination">{{data.pagination}}</span>
-{{/link-to}}
+</button>
 
 {{yield}}

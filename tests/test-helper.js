@@ -1,4 +1,8 @@
-import { setResolver } from 'ember-mocha';
-import resolver from './helpers/resolver';
+import Application from 'anfema/app';
+import config from 'anfema/config/environment';
+import { setApplication } from '@ember/test-helpers';
+import { start } from 'ember-qunit';
 
-setResolver(resolver);
+setApplication(Application.create(config.APP));
+
+start();
