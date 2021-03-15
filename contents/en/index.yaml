@@ -28,7 +28,7 @@ sections:
       anfema know what they do, how to do it, and they do it damn fast. One of the best partners in App
       development I’ve ever seen.
     source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
-    projectId: knauf
+    projectId: knaufAroom
 
   - component: "content-lp-text"
     anchorId: "services"
