@@ -1,6 +1,6 @@
 meta:
   color: "#006AC9"
-  client: "MYSTAFFPILOT"
+  client: "MyStaffPilot"
   title: "Platform"
   id: "mystaffpilot"
   span: "Early 2014 to date"
@@ -73,7 +73,7 @@ sections:
       one: "technology-django.png"
       two: "technology-postgresql.png"
     description:markdown: |
-      For the development of the backend of the platform, we rely on the established Django framework together with a PostgreSQL database. Thus, we perfectly cope with demands regarding data volumes, security and agile, continuous development. The frontend for end users consists of the MYSTAFFPILOT.de website and a native Android/iOS app. In-house staff works in the system with a modern single-page web application based on Ember.js.
+      For the development of the backend of the platform, we rely on the established Django framework together with a PostgreSQL database. Thus, we perfectly cope with demands regarding data volumes, security and agile, continuous development. The frontend for end users consists of the mystaffpilot.de website and a native Android/iOS app. In-house staff works in the system with a modern single-page web application based on Ember.js.
 
       The fundamental component of the system is Cosworth, an export-functional reporting tool developed by anfema. Cosworth allows data to be processed outside the system, for example in accounting. Thanks to multiple test and staging servers, we develop and release regular updates without disrupting ongoing operations.
 

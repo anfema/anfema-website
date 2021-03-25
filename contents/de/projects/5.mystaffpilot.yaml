@@ -1,6 +1,6 @@
 meta:
   color: "#006AC9"
-  client: "MYSTAFFPILOT"
+  client: "MyStaffPilot"
   title: "Plattform"
   id: "mystaffpilot"
   span: "Anfang 2014 - heute"
@@ -70,7 +70,7 @@ sections:
       one: "technology-django.png"
       two: "technology-postgresql.png"
     description:markdown: |
-      Für die Entwicklung des Backends der Plattform setzen wir auf das etablierte Django Framework zusammen mit einer PostgreSQL Datenbank. Somit bewältigen wir Ansprüche hinsichtlich Datenmengen, Sicherheit und der agilen, fortlaufenden Entwicklung perfekt. Das Frontend setzt sich für Endnutzer aus der MYSTAFFPILOT.de Webseite und einer nativen Android/iOS App zusammen. Der Innendienst arbeitet im System mit einer modernen single-page Web-Anwendung, die auf Ember.js basiert.
+      Für die Entwicklung des Backends der Plattform setzen wir auf das etablierte Django Framework zusammen mit einer PostgreSQL Datenbank. Somit bewältigen wir Ansprüche hinsichtlich Datenmengen, Sicherheit und der agilen, fortlaufenden Entwicklung perfekt. Das Frontend setzt sich für Endnutzer aus der mystaffpilot.de Webseite und einer nativen Android/iOS App zusammen. Der Innendienst arbeitet im System mit einer modernen single-page Web-Anwendung, die auf Ember.js basiert.
 
       Grundlegender Bestandteil des Systems ist Cosworth, ein von anfema entwickeltes Export-funktionales Reporting Tool. Cosworth ermöglicht es, Daten auch außerhalb des Systems, beispielsweise in der Buchhaltung, zu verarbeiten. Dank mehrerer Test und Staging-Server entwickeln und veröffentlichen wir regelmäßige Updates ohne den laufenden Betrieb zu stören.
 

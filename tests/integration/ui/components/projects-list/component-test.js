@@ -52,7 +52,7 @@ const projects = [
 	{
 		file: 'mystaffpilot.json',
 		meta: {
-			client: 'MYSTAFFPILOT',
+			client: 'MyStaffPilot',
 			color: '#006AC9',
 			id: 'mystaffpilot',
 			title: 'Plattform',
