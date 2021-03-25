@@ -13,6 +13,8 @@
 		'tods'
 		'ferchau'
 		'knaufAroom'
+		'bcg'
+		'pingonaut'
 		'pingonaut'
 		'bmw'
 		'idnow'
@@ -23,20 +25,20 @@
 			'paulaner audi'
 			'knaufLookbook tods'
 			'msp msp'
-			'contact pingonaut'
+			'bcg pingonaut'
 			'bmw pingonaut'
-			'idnow knaufAroom'
-			'idnow ferchau';
+			'ferchau knaufAroom'
+			'contact idnow';
 		grid-template-columns: repeat(2, 1fr);
 	}
 
 	@include media-large-min {
 		grid-template-areas:
-			'paulaner audi tods'
-			'knaufLookbook knaufAroom knaufAroom'
-			'bmw ferchau pingonaut'
-			'idnow contact pingonaut'
-			'idnow msp msp';
+			'paulaner audi knaufLookbook'
+			'msp msp bcg'
+			'ferchau tods pingonaut'
+			'idnow bmw pingonaut'
+			'contact knaufAroom knaufAroom';
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
@@ -60,7 +62,7 @@
 		height: 100vw;
 		overflow: hidden;
 		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: 10% auto;
+		grid-template-rows: 15% auto;
 		padding: 1.5rem 2rem;
 
 		.projects-list-item__image {
@@ -189,11 +191,6 @@
 
 	&--idnow {
 		grid-area: idnow;
-
-		@include media-medium-min {
-			grid-row-end: span 2;
-			padding-bottom: 4rem;
-		}
 	}
 
 	&--ferchau {
@@ -210,14 +207,12 @@
 
 	&--pingonaut {
 		grid-area: pingonaut;
-
-		@include media-medium-min {
-			grid-row-end: span 2;
-		}
+		grid-row-end: span 2;
 	}
 
 	&--mystaffpilot {
 		grid-area: msp;
+		grid-row-end: span 2;
 
 		@include media-medium-min {
 			grid-column-end: span 2;
@@ -310,7 +305,7 @@
 		}
 
 		.projects-list-item__contactMessage {
-			z-index: 7;
+			z-index: 50;
 		}
 
 		.projects-list-item__contactInner {
