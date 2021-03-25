@@ -24,9 +24,9 @@ sections:
       one: "audi-intro-iphone.png"
       two: "audi-intro-android.png"
     description:markdown: |
-      HR-Digitalisierung. Ein Thema welches seit Jahren an großer Beliebtheit gewinnt.
-      Das Potential ist enorm! Neben einer bestehenden Webapplikation, die viele Prozesse digital abbildet, ist das für Audi der Grund, einen Schritt weiter zu gehen.
-      Im Frühjahr 2018 starteten wir das Projekt HR-App mit einer klaren Anforderung: native Entwicklung für iOS und Android. Diese Herausforderung nahmen wir mit Begeisterung an. Wir freuen uns, die App stetig weiterzuentwickeln.
+      HR-Digitalisierung. Ein Thema welches seit Jahren an Beliebtheit gewinnt und das zurecht. Das Potential durch Automatismen effektiver zu werden und dennoch für den Mitarbeiter gefühlt greifbarer zu sein ist enorm! Neben einer bestehenden Webapplikation, die viele Prozesse digital abbildet, war das ein Grund, einen Schritt weiter zu gehen – hin zu einer nativen App.
+
+      Im Frühjahr 2018 starteten wir das Projekt HR-App mit einer klaren Anforderung: native Entwicklung von Apps für die beiden gängigen Betriebssysteme Android und iOS. Diese Herausforderung nahmen wir mit Begeisterung an. Auch heute noch freuen wir uns, die App stetig weiterzuentwickeln!
 
   - component: "project-icons"
     anchorId: "audi-details"
@@ -35,7 +35,7 @@ sections:
     img:
       one: "audi-motion.png"
     description:markdown: |
-      Daten und Fakten stehen bei dieser App klar im Vordergrund. Desto wichtiger ist es, den User Flow durch Animationen und Seitenübergänge zu unterstützen und aufzulockern. Somit wird dem User schnell und einfach klar, wie tief er sich in der Informationsstruktur bewegt. Durch die konstante Weiterentwicklung der App ist es umso wichtiger hier einen Fokus zu setzen. Eine App sollte keine statische Ansicht sein, sondern ein Erlebnis, das bewegt und verbindet!
+      Daten und Fakten stehen bei dieser App klar im Vordergrund. Desto wichtiger ist es, den User Flow durch Animationen und Seitenübergänge zu unterstützen und aufzulockern. Somit wird dem User schnell und einfach klar, wie tief er sich in der Informationsstruktur bewegt. Durch die stetige Anpassung und Erweiterung der App ist es umso wichtiger den Fokus auf die Benutzerfreundlichkeit zu setzen. Eine App sollte keine statische Ansicht sein, sondern ein Erlebnis, das bewegt und verbindet!
 
   - component: "project-text"
     anchorId: "audi-challenge"
@@ -46,8 +46,9 @@ sections:
       one: "audi-challenge-android.png"
       two: "audi-challenge-iphone.png"
     description:markdown: |
-      Die Herausforderung besteht darin, die User Experience, das User Interface und die Entwicklung für iOS und Android zu vereinen.
-      Zu Beginn als eine im Funktionsumfang reduzierte Applikation geplant, wächst sie stetig an Features. Informationen erhalten, Zeiten eintragen, Präferenzen speichern oder Anträge stellen. Um diese Funktionen schnell und mühelos zugänglich zu machen, bauen wir die App gemeinsam mit den Usern aus. Dies erleichtert Arbeitsabläufe für den Endnutzer sowie für die Kollegen in der HR- und Finance-Abteilung.
+      Die Herausforderung besteht darin, neue Features sinnvoll zu integrieren und dabei die User Experience, das User Interface und die Entwicklung für iOS und Android zu vereinen.
+
+      Zu Beginn als eine im Funktionsumfang reduzierte Applikation gestartet, wird sie stetig verbessert, neuen Gegebenheiten angepasst und um zahlreiche Features erweitert: Informationen erhalten, persönliche Präferenzen speichern oder Anträge stellen. Um derartige Funktionen schnell und mühelos zugänglich zu machen, wird die App auf Basis von Userfeedback angepasst. Dies erleichtert Arbeitsabläufe für den Endnutzer sowie für die Audi-Mitarbeiter in der HR- und Finance-Abteilung.
 
   - component: "project-text"
     anchorId: "audi-awesome"
@@ -59,7 +60,7 @@ sections:
       one: "audi-awesome-iphone.png"
       two: "audi-awesome-android.png"
     description:markdown: |
-      Ausgehend von einem bestehenden Konzept von Audi, starteten wir die technische Umsetzung. Sukzessive konnten wir mit unserer Konzept-Expertise überzeugen. Wir legen den Fokus verstärkt auf natives Design und Entwicklungsstandards. Somit fangen wir iOS und Android Endnutzer exzellent ab. Sie schätzen ihnen bekannte Funktionalitäten: Login mit FaceID/TouchID, die Navigation oder das Verwenden von "Selection Controls".
+      Ausgehend von einem bereits entwickelten Konzept von Audi starteten wir die technische Umsetzung. Sukzessive konnten wir mit unserer Konzept-Expertise überzeugen. Der Fokus wird nun verstärkt auf natives Design und Entwicklungsstandards gesetzt. Somit werden sowohl iOS als auch Android Endnutzer auf gewohnte Weise bedient. Geschätzte Funktionalitäten wie der Login mit FaceID/TouchID werden ebenso unterstützt wie die gewohnte Navigation oder das Verwenden von Selection Controls.
 
   - component: "project-technology"
     anchorId: "audi-technology"
@@ -69,7 +70,7 @@ sections:
       one: "technology-swift.png"
       two: "technology-apple.png"
     description:markdown: |
-      Bei diesem Projekt handelt es sich um eine nativ in Swift entwickelte iOS sowie einer in Kotlin entwickelten Android App. Diese passen wir regelmäßig an die neuesten Sprach- und Framework Versionen an. Die Apps liegen einer, auf MVVM-basierenden, Architektur zugrunde und enthalten aktuelle Quelltext-Dokumentationen. Somit gewährleisten wir, dass unsere Apps in Zukunft weiterhin den hohen Ansprüchen der Audi AG entsprechen. Jederzeit im Sinne der Leistungsfähigkeit und Wartbarkeit. Dies erlaubt uns flexibel und schnell auf Kundenwünsche zu reagieren.
+      Bei diesem Projekt handelt es sich um eine nativ in Swift entwickelte iOS-App sowie einer in Kotlin entwickelte Android-App. Diese passen wir regelmäßig an die neuesten Sprach- und Framework Versionen an. Die Apps liegen einer, auf MVVM-basierenden, Architektur zugrunde und enthalten aktuelle Quelltext-Dokumentationen (nur bei iOS). Somit gewährleisten wir,  dass unsere Apps in Zukunft weiterhin den hohen Ansprüchen der Audi AG entsprechen. Jederzeit im Sinne der Leistungsfähigkeit und Wartbarkeit. Dies erlaubt uns flexibel und schnell auf Kundenwünsche zu reagieren.
 
   - component: "contact"
     subject: "Info über das Projekt"
