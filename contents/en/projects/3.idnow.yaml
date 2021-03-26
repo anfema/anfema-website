@@ -4,7 +4,14 @@ meta:
   title: "Video Identification"
   id: "idnow"
   span: "July 2014 to date"
-  overviewBig: false
+  overviewBig: true
+  introMessage: |
+    anfema’s solution impresses with utmost usability.
+    Your team understood exactly what we,
+    the agents and the users needed,
+    implemented it purposefully,
+    and thereby made an essential contribution
+    to our idea’s realisation and efficiency.
   img: "overview_IDnow.png"
   hidden: false
 sections:
