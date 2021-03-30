@@ -209,7 +209,10 @@
 
 	&--pingonaut {
 		grid-area: pingonaut;
-		grid-row-end: span 2;
+
+		@include media-medium-min {
+			grid-row-end: span 2;
+		}
 	}
 
 	&--mystaffpilot {
@@ -307,7 +310,7 @@
 		}
 
 		.projects-list-item__contactMessage {
-			z-index: 50;
+			z-index: 7;
 		}
 
 		.projects-list-item__contactInner {
