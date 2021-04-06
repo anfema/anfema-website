@@ -45,6 +45,8 @@ module.exports = function(environment) {
 	};
 
 	if (environment === 'development') {
+		ENV.historySupportMiddleware = true; // this fixes the auto-reload bug with 'ember-router-scroll': https://github.com/DockYard/ember-router-scroll/issues/21
+
 		// ENV.APP.LOG_RESOLVER = true;
 		// ENV.APP.LOG_ACTIVE_GENERATION = true;
 		// ENV.APP.LOG_TRANSITIONS = true;
