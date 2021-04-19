@@ -23,7 +23,7 @@ sections:
     orientation: "left"
     titleColored: "IDnow"
     titleAfter: "Video Identification"
-    subTitle: "2014 - Heute"
+    subTitle: "2014 - 2018"
     img:
       alignment: "horizontal"
       zero: "idnow-intro.png"
