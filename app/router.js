@@ -17,9 +17,9 @@ export default class Router extends EmberRouter {
 
 Router.map(function() {
 	this.route('language', { path: '/:language_id' }, function() {
-		this.route('projects', { path: '/projects', resetNamespace: true }, function() {
+		this.route('projects', { resetNamespace: true }, function() {
 			this.route('detail', { path: '/:project_id' });
 		});
-		this.route('imprint', { path: '/imprint', resetNamespace: true });
+		this.route('imprint', { resetNamespace: true });
 	});
 });
