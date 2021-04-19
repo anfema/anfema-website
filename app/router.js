@@ -11,7 +11,7 @@ export default class Router extends EmberRouter {
 	rootURL = config.rootURL;
 
 	setTitle(title) {
-		this.headData.title = title;
+		this.headData.set('title', title);
 	}
 }
 
