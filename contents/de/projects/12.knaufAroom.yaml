@@ -7,7 +7,7 @@ meta:
   overviewBig: true
   introMessage: |
     anfema weiß was sie machen, wie sie es machen und sie machen es verdammt schnell! Einer der besten Partner in der App Entwicklung, denen ich je begegnet bin.
-  img: "overview_paulaner.png"
+  img: "overview_knaufAroom.png"
   hidden: false
 sections:
   - component: "project-header"
@@ -37,6 +37,7 @@ sections:
       two: "knauf-aroom-challenge-ipad2.png"
     description:markdown: |
       Die größte Herausforderung besteht darin, die enorme Anzahl an Variationen und Gestaltungselemente in ein überschaubares und verständliches Format zu bringen. Die App agiert technisch auf höchstem Niveau und bietet mit Markerless AR neue Möglichkeiten. Weshalb wir ein einfaches, für den Kunden klar verständliches, Konzept entwarfen.
+
       Die App holt den Anwender direkt bei der Planung ab und nimmt ihn an die Hand. Über verschiedene Animationen wird schnell klar, welche Schritte auszuführen sind. Somit entstehen nach wenigen Konfigurationen beeindruckende und einzigartige Designs.
 
   - component: "project-text"
@@ -48,7 +49,7 @@ sections:
       alignment: "horizontal"
       zero: "knauf-aroom-awesome.jpg"
     description:markdown: |
-      Was macht die App besonders? Mit der Knauf Aroom App ist es möglich, die Planung direkt in Echtzeit, über Augmented Reality, in der späteren Umgebung zu begutachten. Dadurch bekommt der Nutzer ein besseres Bild, wie das finale Design im Raum wirkt. Er kann entweder direkt Änderungen vornehmen oder die Gestaltung zufriedenstellend abschließen. 
+      Was macht die App besonders? Mit der Knauf Aroom App ist es möglich, die Planung direkt in Echtzeit, über Augmented Reality, in der späteren Umgebung zu begutachten. Dadurch bekommt der Nutzer ein besseres Bild, wie das finale Design im Raum wirkt. Er kann entweder direkt Änderungen vornehmen oder die Gestaltung zufriedenstellend abschließen.
 
   - component: "content-quote"
     anchorId: "knaufAroom-quote"
@@ -66,8 +67,7 @@ sections:
       one: "technology-unity.png"
       two: "technology-csharpe.png"
     description:markdown: |
-      Für den Augmented Reality Modus setzen wir die neueste Technologie Markerless Augmented Reality ein. Bei dieser wird mittels SLAM (Simultaneous Localization And Mapping) eine virtuelle Karte der Umgebung erstellt. Sobald eine Wand erkannt wird, ist es möglich, die Konfigurationen darauf maßstabsgetreu abzubilden.
-      Die Entwicklung der App wurde mit Unity3D und hauptsächlich in C# umgesetzt. Mit einigen Anpassungen lässt sich die App auf die drei gewünschten Plattformen compilieren. Abhängig von der Plattform und der Größe des Geräts sind gegebenenfalls nur Teile der App verfügbar.
+      Für den Augmented Reality Modus setzen wir die neueste Technologie Markerless Augmented Reality ein. Bei dieser wird mittels SLAM (Simultaneous Localization And Mapping) eine virtuelle Karte der Umgebung erstellt. Sobald eine Wand erkannt wird, ist es möglich, die Konfigurationen darauf maßstabsgetreu abzubilden. Die Entwicklung der App wurde mit Unity3D und hauptsächlich in C# umgesetzt. Mit einigen Anpassungen lässt sich die App auf die drei gewünschten Plattformen kompilieren. Abhängig von der Plattform und der Größe des Geräts sind gegebenenfalls nur Teile der App verfügbar.
 
   - component: "contact"
     subject: "Info über das Projekt"

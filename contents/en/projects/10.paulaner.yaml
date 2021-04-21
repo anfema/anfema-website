@@ -25,7 +25,7 @@ sections:
       alignment: "horizontal"
       zero: "paulaner-intro.png"
     description:markdown: |
-      A nationwide distribution network is not always easy to map and contains a lot of sensitive data. Our aim was to master this and thus make life easier for Paulaner's sales staff. Now they have an overview of all appointments, customer data, orders and much more. This challenging and exciting project started in spring 2017 and is still expanding today.
+      A nationwide distribution network contains a lot of sensitive data. This is not always easy to map. Our goal was to master this and thus make life easier for Paulaner's sales staff. They now have an overview of all appointments, customer data, orders and much more. This challenging and exciting project started in spring 2017 and continues to expand today.
 
   - component: "project-icons"
     anchorId: "paulaner-details"
@@ -38,7 +38,7 @@ sections:
       three: "paulaner-details3.png"
       four: "paulaner-details4.png"
     description:markdown: |
-      Facts and figures are clearly the focus of this app. An icon set was developed for Paulaner to structure them. This enables the user to enter information efficiently and easily. In addition to their informative character, they loosen up the subject matter and are a feast for the eyes. Simple & smart!</p>
+      Data and facts are clearly in the focus of this app. In order to structure these, we developed our own icon set for Paulaner. This makes information efficient and easy to grasp for the user. In addition to their informational character, they lighten up the subject matter and are a feast for the eyes. Simple & smart!
 
   - component: "project-text"
     anchorId: "paulaner-challenge"
@@ -49,9 +49,9 @@ sections:
       one: "paulaner-challenge-ipad1.png"
       two: "paulaner-challenge-ipad2.png"
     description:markdown: |
-      The user is in the focus - that is one of our most important factors. Especially with this project by Paulaner it was important to focus on the target group. So we had an intensive conception phase, which has paid off successfully so far.
-      The target group is not one of the so-called digital natives. They are characterised by a hands-on mentality and are often under time pressure. A high degree of intuitiveness is therefore a top priority. This and many more aspects we were able to work out when we were able to accompany the sales people in their daily business. This insight into their needs and interests gave us an enormous advantage during the concept phase.
-      We were thus able to successfully master the challenge and are looking forward to receiving feedback in order to continuously improve and expand the project.
+      The user is in the focus - that is one of our most important foreign currencies. For this Paulaner project in particular, it was important to focus on the target group. So we had an intensive conception phase, which has paid off successfully so far. The target group does not belong to the so-called digital natives. They are characterized by a hands-on mentality and are often under time pressure.
+
+      A high degree of intuitiveness is therefore a top priority. We were able to work out this and many more aspects during the opportunity to accompany the sales people in their daily business. This insight into their needs and interests gave us an enormous advantage during the concept phase. We were able to successfully master the challenge and are looking forward to feedback in order to continuously improve and expand the project.
 
   - component: "project-text"
     anchorId: "paulaner-awesome"
@@ -62,8 +62,7 @@ sections:
       alignment: "horizontal"
       zero: "paulaner-awesome.png"
     description:markdown: |
-      One point that distinguishes the app:
-      we rely on native design and development standards. We pay attention to actuality and constantly improve the functionality. What the target group knows from their private applications, they also quickly appreciate in their working software.
+      One point that distinguishes the app:We rely on native design and development standards. We pay attention to actuality and constantly improve the functionality. What the target group knows from their private applications, they also quickly appreciate in their working software.
 
   - component: "content-quote"
     anchorId: "paulaner-quote"
@@ -71,8 +70,7 @@ sections:
       Heide Buchmann
       IMT Business Partner for Sales Information Management
     content:markdown: |
-      It's fun to use the app and to see it grow, how it fits even better to our increasing requirements and how it supports the sales department in their daily work.
-      In our collaboration with anfema, we always find suitable solutions quickly and easily because they have understood us, the app and our business perfectly.
+      It's fun to use the app and to see it grow, how it fits even better to our increasing requirements and how it supports the sales department in their daily work. In our collaboration with anfema, we always find suitable solutions quickly and easily because they have understood us, the app and our business perfectly.
 
   - component: "project-technology"
     anchorId: "paulaner-technology"

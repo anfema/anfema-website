@@ -1,54 +1,54 @@
 index:
-  title: 'Striving for Perfection'
+  title: "Striving for Perfection"
   nav:
-    projects: 'Projekte'
+    projects: "Projekte"
 
 projects:
-  title: 'Projekte'
+  title: "Projekte"
   index:
     nav:
-      back: 'Zurück'
+      back: "Zurück"
   detail:
     nav:
-      back: 'Zurück'
+      back: "Zurück"
 
 component:
   language-select:
     action:
-      de: 'DE'
-      en: 'EN'
+      de: "DE"
+      en: "EN"
   content-lp-cover:
     action:
-      scrollDown: 'Mehr erfahren'
+      scrollDown: "Mehr erfahren"
   content-quote:
     action:
-      showProject: 'Projekt ansehen'
+      showProject: "Projekt ansehen"
   job-advertisements-item:
     action:
-      details: 'Details'
-      email: 'Email'
+      details: "Details"
+      email: "Email"
   project-detail:
-    title: 'anfema Projekte'
+    title: "anfema Projekte"
   contact:
-    title: 'Klingt interessant?'
-    description: 'Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!'
-    button: 'Jetzt kontaktieren'
-    titleMore: 'Du willst mehr sehen?'
-    descriptionMore: 'Schreibe uns eine '
-    emailName: 'E-Mail'
-    email: 'kontakt@anfe.ma'
+    title: "Klingt interessant?"
+    description: "Du möchtest mehr über das Projekt und unsere Umsetzung erfahren? Egal ob als Kunde oder als Bewerber, kontaktiere uns gerne! Komm auf einen Kaffee entweder in München oder in Augsburg bei uns vorbei – wir freuen uns!"
+    button: "Jetzt kontaktieren"
+    titleMore: "Du willst mehr sehen?"
+    descriptionMore: "Schreibe uns eine "
+    emailName: "E-Mail"
+    email: "kontakt@anfe.ma"
   page-footer:
     offices:
       munich:
         title: Zentrale München
         street: Prinzregentenstr. 11A
-        postal: '80538'
+        postal: "80538"
         city: München
         country: Deutschland
       augsburg:
         title: Zweigstelle Augsburg
         street: Bahnhofstr. 10
-        postal: '86150'
+        postal: "86150"
         city: Augsburg
         country: Deutschland
     email:
@@ -56,12 +56,11 @@ component:
       value: kontakt@anfe.ma
       subject: "Informationen"
       body: |
-        Liebes Anfema-Team,
-
-        eure Projekte klingen super spannend! Sehr gerne würde ich mehr über das eine oder andere Projekt erfahren.
-        Ich würde mich über einen Terminvorschlag für ein Telefonat, eine Webkonferenz oder irgendwann wieder in Person sehr freuen!
+        Liebes anfema-Team,
+        eure Projekte klingen super spannend! Sehr gerne würde ich mehr über das eine oder andere Projekt erfahren. Ich würde mich sehr über einen Terminvorschlag für ein Telefonat, eine Webkonferenz, oder irgendwann wieder in Person, freuen!
 
         Viele Grüße
+
     phone:
       label: Telefon
       value: +49 89 55269932
@@ -69,5 +68,3 @@ component:
       label: Fax
       value: +49 89 55269933
     imprint: Impressum
-
-

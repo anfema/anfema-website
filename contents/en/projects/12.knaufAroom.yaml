@@ -8,7 +8,7 @@ meta:
   introMessage: |
     anfema know what they do, how to do it, and they do it damn fast.
     One of the best partners in app development I’ve ever seen.
-  img: "overview_paulaner.png"
+  img: "overview_knaufAroom.png"
   hidden: false
 sections:
   - component: "project-header"
@@ -38,6 +38,7 @@ sections:
       two: "knauf-aroom-challenge-ipad2.png"
     description:markdown: |
       The biggest challenge is to bring the enormous number of variations and design elements into a manageable and understandable format. The app operates at the highest technical level and offers new possibilities with Markerless AR. Which is why we designed a simple concept that is clearly understandable to the client.
+
       The app picks up the user directly at the planning stage and takes him by the hand. Various animations quickly make it clear which steps need to be carried out. Thus, impressive and unique designs are created after just a few configurations.
 
   - component: "project-text"

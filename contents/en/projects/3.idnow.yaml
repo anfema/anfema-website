@@ -3,31 +3,35 @@ meta:
   client: "IDnow"
   title: "Video Identification"
   id: "idnow"
-  span: "July 2014 to date"
-  overviewBig: false
+  span: "July 2014 - 2018"
+  overviewBig: true
+  introMessage: |
+    anfema’s solution impresses with utmost usability.
+    Your team understood exactly what we,
+    the agents and the users needed,
+    implemented it purposefully,
+    and thereby made an essential contribution
+    to our idea’s realisation and efficiency.
   img: "overview_IDnow.png"
   hidden: false
 sections:
-  -
-    component: "project-header"
+  - component: "project-header"
     img: "idnow-header.png"
     action:
       scrollDown: "More"
-  -
-    component: "project-text"
+  - component: "project-text"
     anchorId: "idnow-intro"
     orientation: "left"
     titleColored: "IDnow"
     titleAfter: "Video Identification"
-    subTitle: "2014 - today"
+    subTitle: "2014 - 2018"
     img:
       alignment: "horizontal"
       zero: "idnow-intro.png"
     description:markdown: |
-      Deeming postal identity verification (“postident”) obsolete, the Munich-based Startup IDnow specialised in developing a digital solution that simplifies the extensive - and partially complicated - process. Using IDnow’s technology, the customer is, for example, spared a time-consuming trip to the post office.
-      The online ident procedure is a secure, officially recognised and legal standard for identity verification. The user-friendly app and the specially developed SDK succeed in making identity and legitimation verification faster, more effective and available from anywhere.
-  -
-    component: "project-icons"
+      Die Apps und das Software Development Kit entwickelten wir nativ für Android und iOS. Die Kommunikation zwischen den Apps und den Agenten während des Videoprozesses realisierten wir mithilfe von WebSockets. Für die bidirektionale Audio- und Videoübertragung des Prozesses nutzen wir Icelink WebRTC.
+
+  - component: "project-icons"
     anchorId: "idnow-icons"
     titleBefore: "It's all about the "
     titleColored: "Details"
@@ -38,8 +42,8 @@ sections:
       four: "idnow-details4.png"
     description:markdown: |
       Development of a clear, customer-specific visual language to emphasise the innovative character of the company.
-  -
-    component: "project-text"
+
+  - component: "project-text"
     anchorId: "idnow-challenge"
     orientation: "right"
     titleColored: "Challenge"
@@ -48,10 +52,9 @@ sections:
       one: "idnow-challenge-android.png"
       two: "idnow-challenge-iphone.png"
     description:markdown: |
-      anfema’s task in this project was to implement the online ident procedure in a user-friendly and platform independent way - for smart phones, tablets, PCs and laptops.
-      Considering the system’s processing of sensitive data, it was a key requirement to ensure maximum data security.
-  -
-    component: "project-text"
+      Our task in this project was to implement the online ident procedure in a user-friendly and platform independent way - for smartphones, tablets and desktops. Considering the system’s processing of sensitive data, it was a key requirement to ensure maximum data security.
+
+  - component: "project-text"
     anchorId: "idnow-awesome"
     orientation: "left"
     titleBefore: "How we made it "
@@ -60,18 +63,17 @@ sections:
       alignment: "horizontal"
       zero: "idnow-awesome.png"
     description:markdown: |
-      Using a straightforward navigation concept, the user interface was implemented in a simple and well-arranged way, speeding up the identification process yet again. In order to provide future customers with the highest degree of integrability, core functions were developed as a software development kit. Thus, customers can easily integrate the digital identity verification process into their existing systems, allowing for direct use.
-      In order to guarantee maximum data security, a combination of cross-platform and platform independent components was applied - among them code obfuscation, prevention of caching inputs and encryption of all API requests.</p>
-  -
-    component: "content-quote"
+      We implemented the user interface with an uncomplicated navigation concept. At the same time, we speeded up the identification process. We developed the core functionality as a software development kit. In order to offer future customers a high degree of integrability. Thus, customers can easily integrate the digital identity verification process into their existing systems, allowing for direct use. To guarantee the highest possible security, a combination of numerous platform-dependent and cross-platform components was applied. For example, "code obfuscation", the prevention of caching or reading of input and the encryption of all API requests.
+
+  - component: "content-quote"
     anchorId: "idnow-quote"
     source:markdown: |
       Sebastian Bärhold
       Managing Director & Co-Founder, IDnow GmbH
     content:markdown: |
       anfema’s solution impresses with utmost usability. Your team understood exactly what we, the agents and the users needed, implemented it purposefully, and thereby made an essential contribution to our idea’s realisation and efficiency.
-  -
-    component: "project-technology"
+
+  - component: "project-technology"
     anchorId: "idnow-technology"
     titleColored: "Technology"
     titleAfter: "we used"
@@ -79,9 +81,9 @@ sections:
       one: "technology-android.png"
       two: "technology-apple.png"
     description:markdown: |
-      The apps and the software development kit were developed in native code for both Android and iOS. The video process itself is based on two technologies: While communication between the apps and the agents is implemented through WebSockets, the bidirectional audio and video transmission is facilitated by Icelink WebRTC.
-  -
-    component: "contact"
+      The apps and the software development kit were developed in native code for both Android and iOS. The video process itself is based on two technologies: The communication between the apps and the agents is implemented through WebSockets. The bidirectional audio and video transmission is facilitated by Icelink WebRTC.
+
+  - component: "contact"
     subject: "Information about the project"
     body: |
       Hello anfema team,

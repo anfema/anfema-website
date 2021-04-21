@@ -7,16 +7,14 @@ meta:
   overviewBig: false
   introMessage: |
     anfema know what they do, how to do it, and they do it damn fast.
-  img: "overview_knauf.png"
+  img: "overview_knaufLookbook.png"
   hidden: false
 sections:
-  -
-    component: "project-header"
+  - component: "project-header"
     img: "knauf-lookbook-header.png"
     action:
       scrollDown: "More"
-  -
-    component: "project-text"
+  - component: "project-text"
     anchorId: "knauf-intro"
     orientation: "left"
     titleColored: "Knauf AMF"
@@ -26,9 +24,9 @@ sections:
       alignment: "horizontal"
       zero: "knauf-lookbook-intro.png"
     description:markdown: |
-      Knauf AMF is one of the leading manufacturers of innovative ceiling systems worldwide. For an adequate presentation of their wide range of customised and extraordinary system solutions, anfema designed a universal application for tablets and phones, developed in native code for both Android and iOs. Elaborate photographs illustrate impressive architectural projects that were realised in cooperation with Knauf AMF across diverse industries. One of the app’s particularly characteristic features, the 360 degree view, provides the user with an exceptional and comprehensive spatial perception.
-  -
-    component: "project-text"
+      Knauf AMF is one of the world's largest producers of innovative ceiling systems. We designed a universal application for tablets and phones with Android and iOS native. In this way, we present the wide range of customized ceiling solutions in an adequate setting. In the process, elaborate photographs showcase impressive construction projects. With these, Knauf AMF created extraordinary architectural objects across numerous divisions. A particularly characteristic feature of the app, in addition to its performance, is the use of the 360° View. This gives the user a full sense of space.
+
+  - component: "project-text"
     anchorId: "knauf-challenge"
     orientation: "right"
     titleColored: "Challenge"
@@ -37,9 +35,9 @@ sections:
       one: "knauf-lookbook-challenge-ipad1.png"
       two: "knauf-lookbook-challenge-ipad2.png"
     description:markdown: |
-      The challenge in this project was to create a highly informative application, which is well-arranged and easy to use. Allowing the premium photographs to tell their own tale, we intended to use the fewest possible visual control elements. Additionally, it had to be kept in mind that all features would also have to be functional and operable on static presentation displays, e.g. at trade fairs.
-  -
-    component: "project-text"
+      The challenge was to create a very informative application that combined clarity and ease of use. To let the high-quality photographs speak for themselves, we used as few visual control elements as possible. In addition, we had to keep in mind that all features should also be functional and usable on permanently installed presentation displays (for example at exhibitions).
+
+  - component: "project-text"
     anchorId: "knauf-awesome"
     orientation: "left"
     titleBefore: "How we made it "
@@ -48,18 +46,17 @@ sections:
       alignment: "horizontal"
       zero: "knauf-lookbook-awesome.png"
     description:markdown: |
-      Based on the clever construction of a canvas grid system, the Knauf AMF Lookbook relies on intuitive gestural control and uses only few graphic control elements. Throughout the course of the project, this grid was extended in order to enable the integration of additional features and applications. Most noteworthy are the implementation of a sample order section and a special version of the 360 degree view for projects. Operable by both motion and one finger drag, the 360 degree view can also be controlled on static devices, and enables users to experience Knauf AMF’s product range.
-  -
-    component: "content-quote"
+      One point that distinguishes the app: We rely on native design and development standards. We pay attention to up-to-dateness and constantly improve functionality. What the target group knows from their private applications, they also quickly appreciate in their work software.
+
+  - component: "content-quote"
     anchorId: "knauf-quote"
     source:markdown: |
       Dominik Mandl
       Online Marketing Manager Knauf AMF GmbH & Co. KG
     content:markdown: |
-      anfema know what they do, how to do it, and they do it damn fast.
-      One of the best partners in app development I’ve ever seen.
-  -
-    component: "project-technology"
+      anfema knows what they're doing, how they're doing it and they do it damn fast! One of the best app development partners I've ever come across.
+
+  - component: "project-technology"
     anchorId: "knauf-technology"
     titleColored: "Technology"
     titleAfter: "we used"
@@ -67,9 +64,9 @@ sections:
       one: "technology-android.png"
       two: "technology-apple.png"
     description:markdown: |
-      The Knauf AMF Lookbook app is dynamically populated by ION, and stands out because of its high performance. anfema’s in-house developed content management system ION enables the client to easily conduct profound changes in the application’s structure and its information content. In addition, data can be locally saved so that the app can also be used offline. In order to generate the 360 degree view, spherical panoramas are projected onto the inner surface of a ball, which can be rotated by the user.
-  -
-    component: "contact"
+      For this project we used our specially developed content management system ION. This dynamically fills Knauf AMF Lookbook and impresses with its performance. It allows the customer to easily make profound changes to the structure and information content of the application. In addition, it is possible to keep data locally on the devices so that the app can also be used offline. For the 360° view, spherical panoramas are projected onto the inner surface of a sphere, which can be rotated.
+
+  - component: "contact"
     subject: "Information about the project"
     body: |
       Hello anfema team,

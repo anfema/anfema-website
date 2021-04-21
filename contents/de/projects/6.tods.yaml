@@ -3,30 +3,28 @@ meta:
   client: "TOD’S"
   title: "Configurator"
   id: "tods"
-  span: "Juni 2015 - heute"
+  span: "Juni 2015 - 2019"
   overviewBig: false
   img: "overview_tods.png"
   hidden: false
 sections:
-  -
-    component: "project-header"
+  - component: "project-header"
     img: "tods-header.png"
     action:
       scrollDown: "Mehr erfahren"
-  -
-    component: "project-text"
+  - component: "project-text"
     anchorId: "tods-intro"
     orientation: "left"
     titleColored: "Tod's"
     titleAfter: "Shoe Configurator App"
-    subTitle: "2015 - Heute"
+    subTitle: "2015 - 2019"
     img:
       alignment: "horizontal"
       zero: "tods-intro.png"
     description:markdown: |
-      Personalisierte Schuhe selbst konfigurieren: Unter diesem Motto steht die App „TOD’S Custom Made“ des italienischen Herstellers. Zusammen mit einem Store-Mitarbeiter kann der Kunde hier seinen Schuh individuell nach seinem Geschmack gestalten und anschließend bestellen. Zusätzlich bietet die App dem Benutzer interessante Details über die Geschichte und die Marke TOD'S. Die TOD'S-App wurde als interaktiver Einkaufsbegleiter konzipiert, der die Qualität des Produkts und das Lebensgefühl der Marke widerspiegeln soll. Gleichzeitig muss die App performant und leicht zu bedienen sein, um den Verkäufer vor Ort zu unterstützen und ein angenehmes Verkaufsklima zu schaffen.
-  -
-    component: "project-text"
+      Personalisierte Schuhe selbst konfigurieren: Unter diesem Motto steht die App „TOD’S Custom Made“ des italienischen Herstellers. Der Kunde ist in der Lage zusammen mit einem Store-Mitarbeiter Schuhe individuell zu gestalten und anschließend zu bestellen. Zusätzlich enthält die App interessante Details über die Geschichte und die Marke TOD'S. Die App wurde als interaktiver Einkaufsbegleiter konzipiert, der die Qualität des Produkts und das Lebensgefühl der Marke widerspiegelt. Gleichzeitig ist sie performant und leicht zu bedienen. So unterstützt sie Verkäufer vor Ort und schafft ein angenehmes Verkaufsklima.
+
+  - component: "project-text"
     anchorId: "tods-challenge"
     orientation: "right"
     titleColored: "Challenge"
@@ -35,9 +33,9 @@ sections:
       one: "tods-challenge-ipad1.png"
       two: "tods-challenge-ipad2.png"
     description:markdown: |
-      Die Herausforderung bei diesem Projekt war es, eine speicherplatzsparende und dennoch performante Lösung zu entwickeln, die die rund 16 Millionen unterschiedlichen Schuh-Konfigurationen in einer App abbilden kann. Zusätzlich müssen die Inhalte auch ohne bestehende Internetverbindung verfügbar sein, sodass Schuhe offline konfiguriert und bestellt werden können.
-  -
-    component: "project-text"
+      Bei diesem Projekt bestand die Herausforderung darin, eine speicherplatz-sparende und performante Applikation zu entwickeln. Rund 16 Millionen unterschiedliche Schuh-Konfigurationen müssen in der App abbildbar sein. Damit Schuhe offline konfigurierbar und bestellbar sind, müssen die Inhalte auch ohne bestehende Internetverbindung verfügbar sein.
+
+  - component: "project-text"
     anchorId: "tods-awesome"
     orientation: "left"
     titleBefore: "How we made it "
@@ -46,18 +44,17 @@ sections:
       alignment: "horizontal"
       zero: "tods-awesome.png"
     description:markdown: |
-      Um die Funktionalität der App im Offline-Modus zu garantieren, werden alle benötigten Daten beim ersten Login auf das Gerät heruntergeladen. Als Grafikformat wird WebP eingesetzt, da der verfügbare Speicherplatz auf iPads für verbreitete Alternativformate nicht ausreicht.
-      Selbst Bestellungen können offline angelegt und auf dem Gerät gespeichert werden und werden schließlich bei bestehender Internetverbindung übermittelt. Eine Internetverbindung ist darüber hinaus lediglich für Updates der Preise und die Ergänzung neuer Modelle erforderlich.
-  -
-    component: "content-quote"
+      Um die Funktionalität der App im Offline-Modus zu garantieren, werden alle benötigten Daten beim ersten Login auf das Gerät heruntergeladen. Als Grafikformat setzten wir WebP ein, da der verfügbare Speicherplatz auf iPads für verbreitete alternative Formate nicht ausreicht. Selbst Bestellungen sind offline angelegt und auf dem Gerät speicherbar. Bei bestehender Internetverbindung werden sie übermittelt. Eine Internetverbindung ist darüber hinaus lediglich für Updates der Preise und die Ergänzung neuer Modelle erforderlich.
+
+  - component: "content-quote"
     anchorId: "tods-quote"
     source:markdown: |
       Sebastian André Borowski
       Program Manager, Dassault Systèmes 3DEXCITE
     content:markdown: |
       Ich möchte die Gelegenheit gerne dazu nutzen, jedem einzelnen von euch zu gratulieren und zu danken für eure geistige Arbeit, die Mühe und allem Voran eure unbezahlbare Coolness, d.h. eure Geduld und kontinuierliche Motivation. Nochmals vielen Dank für eure grenzenlosen Bemühungen!
-  -
-    component: "project-technology"
+
+  - component: "project-technology"
     anchorId: "tods-technology"
     titleColored: "Technology"
     titleAfter: "we used"
@@ -65,9 +62,9 @@ sections:
       one: "technology-apple.png"
       two: "technology-swift.png"
     description:markdown: |
-      Die App wurde ausschließlich für Apple iPads in Swift umgesetzt. Eine Serverkomponente auf Basis von ASP.NET liefert die benötigten Daten und verwaltet Bestellungen und Konfigurationen. Durch eine entsprechende Planung und Anlage der Datenstruktur kann das System jederzeit und einfach um neue Produktkategorien und Modelle erweitert werden.
-  -
-    component: "contact"
+      Die App setzten wir ausschließlich für Apple iPads in Swift um. Eine Serverkomponente auf Basis von ASP.NET liefert die benötigten Daten und verwaltet Bestellungen und Konfigurationen. Durch eine entsprechende Planung und Anlage der Datenstruktur, ist das System jederzeit und einfach um neue Produktkategorien und Modelle erweiterbar.
+
+  - component: "contact"
     subject: "Info über das Projekt"
     body: |
       Hallo anfema Team,
