@@ -1,0 +1,117 @@
+meta:
+  title: About
+sections:
+  - component: "content-lp-cover"
+    headline: "striving for perfection"
+    subtitle: |
+      anfema are a highly capable team who avidly create individual and sophisticated digital solutions.
+
+  - component: "content-lp-text"
+    anchorId: "philosophy"
+    anchorLabel: "1"
+    sectionLabel: "01"
+    title: Understanding Customers Like No Other
+    content:markdown: |
+      We don't believe in blanket approaches. We want to understand your processes and needs before we develop a strategy together. This is how we ensure that customized software becomes the solution that lets you go through life more comfortably.
+
+      ### Innovation and Usability are our Identity
+
+      We love technology! As a digital agency, we live out this passion by adapting ideas and processes to the pulse of the times. Combined with our focus on usability, we enable you to optimize your processes and better achieve your goals.
+
+      anfema stands for the incredible work we deliver based on our team's diverse experience and multidisciplinary skills.
+
+  - component: "content-quote"
+    content:markdown: |
+      anfema knows what they do, how to do it, and they do it damn fast. — One of the best partners in App development I’ve ever seen.
+    source: Dominik Mandl, Online Marketing Manager, Knauf AMF GmbH & Co. KG
+    projectId: knaufAroom
+
+  - component: "content-lp-text"
+    anchorId: "services"
+    anchorLabel: "2"
+    sectionLabel: "02"
+    title: Innovation. Enthusiasm. Drive. Team Spirit. Commitment. Diversity. Quality.
+    content:markdown: |
+      Our services impress through quality and design. Our team through profound expertise, in which the years of experience from demanding projects in a wide variety of industries has manifested itself. Internally, we rely on proven workflows. In project management, we focus on customer proximity, flexibility and individuality. This is how we create outstanding solutions!
+
+  - id: "services"
+    component: "content-lp-services"
+    services:
+      - id: "concept"
+        title: "Simplifying Processes, Maximising Benefits"
+        logoStep: 0
+        text: |
+          By thoughtfully synchronizing your idea, our expertise, and the needs of users, we create a concept that is as forward-thinking as it is individual. Thereby it's the basis for software that delivers what it promises.
+
+      - id: "design"
+        title: "Usability, Creativity & Innovation"
+        logoStep: 1
+        text: |
+          CWe bring the concept to life with innovative visual design and intuitive user interfaces. Our works are characterized by maximum usability. Our work regularly goes beyond our clients' imagination as to how good the user experience can be.
+
+      - id: "development"
+        title: "Custom-made & High Quality"
+        logoStep: 2
+        text: |
+          Your expectations are high? So are ours! Our development team impresses with its extensive skill set, countless experiences, and uncompromising accuracy. Striving for perfection, we hit your idea on the spot and open up unimagined possibilities for you.
+
+      - id: "consulting"
+        title: "Experience, Expertise & Foresight"
+        logoStep: 3
+        text: |
+          New technologies make our hearts beat faster! We are constantly exploring the wide range of options with pleasure. Therefore, we know exactly which solutions are the right ones for you. Thus, we generate the greatest possible added value for your project through our honest, expert input.
+
+      - id: "support"
+        title: "Continually Progressive"
+        logoStep: 4
+        text: |
+          Knowing that a system will only be future-proof if it’s being serviced following its release, we act in a far-sighted and proactive way. The anticipation of emerging changes in the digital world allows us to nip future problems in the bud.
+
+      - id: "management"
+        title: "Customer-focused & Direct"
+        logoStep: 5
+        text: |
+          We rely on technically experienced management that thinks its way into your needs and develops solutions directly. As your partner, we are at your side from the conception stage and throughout the entire life cycle of the project. In this way, we ensure its long-term success.
+
+  - component: "content-lp-text"
+    anchorId: "team"
+    anchorLabel: "3"
+    sectionLabel: "03"
+    title: "According to our team, these are the top 4 reasons why you should join us:"
+
+  - component: "content-lp-team"
+    reasons:
+      - id: "great-team"
+        pagination: "#1"
+        title: "A Great Team"
+        shortTitle: "Great Team"
+        text: |
+          We are a diverse and dynamic team. We are characterized by high standards and an impressive skill set from several disciplines. Also by the cohesion and motivation. We treat each other not only friendly but we are friends! Cooking, eating and playing table soccer together are part of our daily office life.
+
+      - id: "innovative-projects"
+        pagination: "#2"
+        title: "Innovative Projects and the Most Recent Technologies"
+        shortTitle: "Projects & Technologies"
+        text: |
+          We deliver digital developments across the full stack, servicing a large variety of industries. As a result, we enjoy varying daily work routines featuring future-oriented and exciting projects which offer great potential for development. For both work equipment and the applications used in our projects we rely on the most recent technologies.
+
+      - id: "structures-and-potential"
+        pagination: "#3"
+        title: "Agile Structures and Potential for Development"
+        shortTitle: "Agile Structures & Learning"
+        text: |
+          For us, flexibility doesn't just mean responding to the dynamics of the digital industry. We also adapt structures within our team to current projects and the best development methods. We are open to good ideas. What counts here is innovation and creativity instead of rigid hierarchies. Those who bring these qualities to the table and work independently and on their own responsibility can drive change. There are no limits to steep learning curves and personal and professional development.
+
+      - id: "location-and-culture"
+        pagination: "#4"
+        title: "Superb Location and Company Culture "
+        shortTitle: "Location & Culture "
+        text: |
+          Both of our offices are centrally located in the promising and lively cities of Munich and Augsburg. This makes for a short commute and adds to a great work-life-balance. In combination with flexible work hours, comfortable offices, and drinks provided free of charge, this makes for an enjoyable work climate.
+
+  - component: "job-advertisements"
+    jobs:
+      # - title: "Android Developer (f/m/*)"
+      #   description: "from now on"
+      #   detailsLink: "/job-advertisements/Android_Developer_anfema_Augsburg.pdf"
+      #   team: "development"

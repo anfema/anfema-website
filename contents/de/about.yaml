@@ -1,0 +1,96 @@
+meta:
+  title: About
+sections:
+  - component: "content-lp-cover"
+    headline: "striving for perfection"
+    subtitle: |
+      anfema ist ein außergewöhnliches Team, das mit Begeisterung individuelle und hervorragende digitale Lösungen erstellt.
+  - component: "project-icons"
+    anchorId: "bmw-details"
+    titleBefore: "It's all about the"
+    titleColored: "Details"
+    img:
+      one: "bmw-details1.png"
+      two: "bmw-details2.png"
+      three: "bmw-details3.png"
+      four: "bmw-details4.png"
+    description:markdown: |
+      In order to visually highlight the various possibilities and details of the vehicle, icons were especially designed for this app.
+  - component: "content-lp-text"
+    title: Unsere Kunden stehen im Mittelpunkt
+    content:markdown: |
+      ### Kunden sehen wir als Partner, mit denen wir gemeinsam ein Ziel erreichen wollen.
+
+      Deshalb sind wir bestrebt, unseren Kunden einen kompletten Service zu offerieren, der eine fundierte Beratung sowie eine partnerschaftliche Projektrealisierung umfasst.
+  - component: "content-lp-text"
+    title: Unsere Herangehensweise
+    content:markdown: |
+      Wir lieben Technologie! Als Digitalagentur passen wir Ideen und Vorgänge an den Puls der Zeit an.
+
+  - component: "projects-list-container"
+
+  - component: "content-lp-text"
+    title: Unsere Unternehmenskultur
+    content:markdown: |
+      Wir sind ein Team! Gemeinsam schaffen wir einzigartige Produkte. Durch regelmäßige interne und externe Schulungen erweitern wir stetig unser Wissen. Das geben wir untereinander weiter. Wir sind nicht nur Kollegen, sondern Freunde. Zu unserem Alltag gehören auch gemeinsames Kickern und Kochen.
+  - component: "content-lp-text"
+    title: Unsere Firmenpolitik
+    content:markdown: |
+      Wir sind stolz auf unsere Kunden und Firma. Durch souveränes, zuverlässiges Handeln und agile Strukturen erarbeiten wir kundenorientierte Lösungen. Das höchstes Ziel ist ein zufriedener Kunde!
+  - component: "content-lp-team"
+    reasons:
+      - id: "customers"
+        pagination: "#1"
+        title: "Umgang mit Mitarbeitern, Kunden und Geschäftspartnern"
+        shortTitle: "Umgang mit Mitarbeitern, Kunden und Geschäftspartnern"
+        text: |
+          Der Umgang mit unseren Geschäftspartnern und Kunden muss durch Fairness und Offenheit geprägt sein. Wir erwarten, dass alle Mitarbeiter, Kunden und Geschäftspartner fair miteinander umgehen und ihre gegenseitigen Rechte sowie ihre Privatsphäre respektieren. Die anfema GmbH pflegt langfristige Kundenbeziehungen, die von nachhaltiger Zusammenarbeit geprägt sind. Als international agierendes Unternehmen begegnen wir unseren Kunden, Mitarbeitern und Geschäftspartnern fair und offen sowie mit Verständnis und Toleranz. Daraus resultiert ein respektvoller Umgang mit Kunden und anderen externen Personen, die mit dem Unternehmen in einer Geschäftsbeziehung stehen.
+
+      - id: "human-rights"
+        pagination: "#1"
+        title: "Menschenrechte"
+        shortTitle: "Menschenrechte"
+        text: |
+          Der Umgang mit unseren Geschäftspartnern und Kunden muss durch Fairness und Offenheit geprägt sein. Wir erwarten, dass alle Mitarbeiter, Kunden und Geschäftspartner fair miteinander umgehen und ihre gegenseitigen Rechte sowie ihre Privatsphäre respektieren. Die anfema GmbH pflegt langfristige Kundenbeziehungen, die von nachhaltiger Zusammenarbeit geprägt sind. Als international agierendes Unternehmen begegnen wir unseren Kunden, Mitarbeitern und Geschäftspartnern fair und offen sowie mit Verständnis und Toleranz. Daraus resultiert ein respektvoller Umgang mit Kunden und anderen externen Personen, die mit dem Unternehmen in einer Geschäftsbeziehung stehen.
+
+      - id: "wellbeing"
+        pagination: "#1"
+        title: "Sicherheit, Gesundheit, Umwelt und Qualität"
+        shortTitle: "Sicherheit, Gesundheit, Umwelt und Qualität"
+        text: |
+          Der Umgang mit unseren Geschäftspartnern und Kunden muss durch Fairness und Offenheit geprägt sein. Wir erwarten, dass alle Mitarbeiter, Kunden und Geschäftspartner fair miteinander umgehen und ihre gegenseitigen Rechte sowie ihre Privatsphäre respektieren. Die anfema GmbH pflegt langfristige Kundenbeziehungen, die von nachhaltiger Zusammenarbeit geprägt sind. Als international agierendes Unternehmen begegnen wir unseren Kunden, Mitarbeitern und Geschäftspartnern fair und offen sowie mit Verständnis und Toleranz. Daraus resultiert ein respektvoller Umgang mit Kunden und anderen externen Personen, die mit dem Unternehmen in einer Geschäftsbeziehung stehen.
+
+      - id: "fairness"
+        pagination: "#1"
+        title: "Fairer Wettbewerb"
+        shortTitle: "Fairer Wettbewerb"
+        text: |
+          Der Umgang mit unseren Geschäftspartnern und Kunden muss durch Fairness und Offenheit geprägt sein. Wir erwarten, dass alle Mitarbeiter, Kunden und Geschäftspartner fair miteinander umgehen und ihre gegenseitigen Rechte sowie ihre Privatsphäre respektieren. Die anfema GmbH pflegt langfristige Kundenbeziehungen, die von nachhaltiger Zusammenarbeit geprägt sind. Als international agierendes Unternehmen begegnen wir unseren Kunden, Mitarbeitern und Geschäftspartnern fair und offen sowie mit Verständnis und Toleranz. Daraus resultiert ein respektvoller Umgang mit Kunden und anderen externen Personen, die mit dem Unternehmen in einer Geschäftsbeziehung stehen.
+
+      - id: "compliance"
+        pagination: "#1"
+        title: "Grundsätze zur Bekämpfung von Wirtschaftskriminalität und Bestechung"
+        shortTitle: "Grundsätze zur Bekämpfung von Wirtschaftskriminalität und Bestechung"
+        text: |
+          Der Umgang mit unseren Geschäftspartnern und Kunden muss durch Fairness und Offenheit geprägt sein. Wir erwarten, dass alle Mitarbeiter, Kunden und Geschäftspartner fair miteinander umgehen und ihre gegenseitigen Rechte sowie ihre Privatsphäre respektieren. Die anfema GmbH pflegt langfristige Kundenbeziehungen, die von nachhaltiger Zusammenarbeit geprägt sind. Als international agierendes Unternehmen begegnen wir unseren Kunden, Mitarbeitern und Geschäftspartnern fair und offen sowie mit Verständnis und Toleranz. Daraus resultiert ein respektvoller Umgang mit Kunden und anderen externen Personen, die mit dem Unternehmen in einer Geschäftsbeziehung stehen.
+
+      - id: "mediation"
+        pagination: "#1"
+        title: "Interessenskonflikte"
+        shortTitle: "Interessenskonflikte"
+        text: |
+          Der Umgang mit unseren Geschäftspartnern und Kunden muss durch Fairness und Offenheit geprägt sein. Wir erwarten, dass alle Mitarbeiter, Kunden und Geschäftspartner fair miteinander umgehen und ihre gegenseitigen Rechte sowie ihre Privatsphäre respektieren. Die anfema GmbH pflegt langfristige Kundenbeziehungen, die von nachhaltiger Zusammenarbeit geprägt sind. Als international agierendes Unternehmen begegnen wir unseren Kunden, Mitarbeitern und Geschäftspartnern fair und offen sowie mit Verständnis und Toleranz. Daraus resultiert ein respektvoller Umgang mit Kunden und anderen externen Personen, die mit dem Unternehmen in einer Geschäftsbeziehung stehen.
+
+      - id: "data-security"
+        pagination: "#1"
+        title: "Handhabung von Informationen, Datensicherheit und Datenschutz"
+        shortTitle: "Handhabung von Informationen, Datensicherheit und Datenschutz"
+        text: |
+          Der Umgang mit unseren Geschäftspartnern und Kunden muss durch Fairness und Offenheit geprägt sein. Wir erwarten, dass alle Mitarbeiter, Kunden und Geschäftspartner fair miteinander umgehen und ihre gegenseitigen Rechte sowie ihre Privatsphäre respektieren. Die anfema GmbH pflegt langfristige Kundenbeziehungen, die von nachhaltiger Zusammenarbeit geprägt sind. Als international agierendes Unternehmen begegnen wir unseren Kunden, Mitarbeitern und Geschäftspartnern fair und offen sowie mit Verständnis und Toleranz. Daraus resultiert ein respektvoller Umgang mit Kunden und anderen externen Personen, die mit dem Unternehmen in einer Geschäftsbeziehung stehen.
+
+      - id: "organization"
+        pagination: "#1"
+        title: "Umsetzung und Organisation"
+        shortTitle: "Umsetzung und Organisation"
+        text: |
+          Der Umgang mit unseren Geschäftspartnern und Kunden muss durch Fairness und Offenheit geprägt sein. Wir erwarten, dass alle Mitarbeiter, Kunden und Geschäftspartner fair miteinander umgehen und ihre gegenseitigen Rechte sowie ihre Privatsphäre respektieren. Die anfema GmbH pflegt langfristige Kundenbeziehungen, die von nachhaltiger Zusammenarbeit geprägt sind. Als international agierendes Unternehmen begegnen wir unseren Kunden, Mitarbeitern und Geschäftspartnern fair und offen sowie mit Verständnis und Toleranz. Daraus resultiert ein respektvoller Umgang mit Kunden und anderen externen Personen, die mit dem Unternehmen in einer Geschäftsbeziehung stehen.

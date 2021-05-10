@@ -1,0 +1,6 @@
+
+	{{#each @model.sections as |data|}}
+		{{component data.component data=data meta=model.meta}}
+	{{/each}}
+
+{{outlet}}

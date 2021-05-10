@@ -21,5 +21,6 @@ Router.map(function() {
 			this.route('detail', { path: '/:project_id' });
 		});
 		this.route('imprint', { resetNamespace: true });
+		this.route('about', { resetNamespace: true });
 	});
 });
